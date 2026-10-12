@@ -1,0 +1,706 @@
+{
+ "date": "2026-10-12",
+ "generated_utc": "2026-10-12T08:39:36+00:00",
+ "first_run": false,
+ "windows": {
+  "arxiv_submitted": [
+   "2026-10-04",
+   "2026-10-12"
+  ],
+  "journal_doi_created": [
+   "2026-10-04",
+   "2026-10-12"
+  ]
+ },
+ "sources": [
+  {
+   "source": "arXiv eess.SY",
+   "status": "ok",
+   "in_window": 208,
+   "new": 28,
+   "candidates": 1
+  },
+  {
+   "source": "arXiv cs.DC",
+   "status": "ok",
+   "in_window": 106,
+   "new": 19,
+   "candidates": 6
+  },
+  {
+   "source": "arXiv eess.SP",
+   "status": "ok",
+   "in_window": 140,
+   "new": 26,
+   "candidates": 1
+  },
+  {
+   "source": "TSG",
+   "journal": "IEEE Transactions on Smart Grid",
+   "status": "ok",
+   "in_window": 14,
+   "new": 0,
+   "candidates": 0,
+   "new_with_abstract": 0
+  },
+  {
+   "source": "TPWRS",
+   "journal": "IEEE Transactions on Power Systems",
+   "status": "ok",
+   "in_window": 7,
+   "new": 0,
+   "candidates": 0,
+   "new_with_abstract": 0
+  },
+  {
+   "source": "Applied Energy",
+   "journal": "Applied Energy",
+   "status": "ok",
+   "in_window": 38,
+   "new": 10,
+   "candidates": 0,
+   "new_with_abstract": 0
+  },
+  {
+   "source": "Nature Energy",
+   "journal": "Nature Energy",
+   "status": "ok",
+   "in_window": 2,
+   "new": 0,
+   "candidates": 0,
+   "new_with_abstract": 0
+  },
+  {
+   "source": "Nature Communications",
+   "journal": "Nature Communications",
+   "status": "ok",
+   "in_window": 207,
+   "new": 30,
+   "candidates": 0,
+   "new_with_abstract": 14
+  },
+  {
+   "source": "Nature Rev. EE",
+   "journal": "Nature Reviews Electrical Engineering",
+   "status": "ok",
+   "in_window": 4,
+   "new": 0,
+   "candidates": 0,
+   "new_with_abstract": 0
+  }
+ ],
+ "errors": [],
+ "candidates": [
+  {
+   "key": "arxiv:2610.13830",
+   "source": "arXiv",
+   "id": "2610.13830",
+   "title": "Scheduling in Cloud,Fog, and Edge Computing: A Comparative Analysis and Decision Framework for Technique Selection",
+   "abstract": "The increasing heterogeneity and dynamism of cloud, fog, and edge computing make scheduling a challenging problem involving diverse resource capabilities, workload characteristics, latency and energy constraints, and competing optimization objectives. Although numerous scheduling methods have been proposed, existing reviews often provide fragmented coverage of computing environments, scheduling granularities, or technique families, offering limited guidance on selecting an appropriate approach for specific requirements. This review presents a comparative analysis of task, job, and workflow scheduling across the cloud, fog, and edge paradigms, covering heuristic, metaheuristic, learning-based, and hybrid techniques. Studies published between 2020 and 2026 are analyzed according to scheduling granularity, computing environment, optimization objectives, constraints, performance metrics, and evaluation tools. The analysis highlights trade-offs among computational efficiency, optimization capability, adaptability, and implementation complexity across technique families. Heuristic methods offer low computational overhead for relatively stable scheduling conditions, whereas metaheuristic methods are suited to complex and multi-objective optimization problems. Learning-based methods provide greater adaptability to dynamic and uncertain environments but introduce data, training, inference, and convergence requirements. Hybrid methods combine complementary capabilities but generally increase computational and implementation complexity. Based on these findings, a decision framework is developed to guide technique selection according to workload characteristics, environmental conditions, optimization objectives, resource constraints, and computational requirements.",
+   "authors": [
+    {
+     "name": "Rana Ghazali",
+     "affiliations": []
+    },
+    {
+     "name": "Douglas G. Down",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-09",
+   "url": "https://arxiv.org/abs/2610.13830",
+   "matched_terms": [
+    "edge computing"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(HTML version not available: HTTPError)"
+  },
+  {
+   "key": "arxiv:2610.13307",
+   "source": "arXiv",
+   "id": "2610.13307",
+   "title": "Sustainable Cloud-Fog-Edge Systems for Smart Buildings: Algorithmic Adaptation under Memory Constraints and Dynamic Orchestration Strategies",
+   "abstract": "The escalating environmental footprint of the Information and Communication Technol- ogy (ICT) sectorwith global Data Center electric- ity usage potentially reaching 3% by 2030 and the imperative for real-time responsiveness in smart buildings demand a foundational shift towards Edge Computing. This article proposes a holis- tic architectural and algorithmic approach for cre- ating autonomous, resilient, and privacy-preserving learning systems within smart buildings, advancing the core concept of the building itself as the data center. Our contributions, demonstrating originality compared to conventional centralized systems, are structured around three main pillars: 1) Validation of resilient data acquisition chains using the af- fordable Arduino ecosystem (Uno R4 WiFi/BME280) and secure persistence solutions including centralized archiving (Node-RED/MySQL) and secure remote transfer (Python/rsync/SSH). 2). The proposal of a lightweight, KOptim orchestration framework, inter- operable with the FIWARE standard, for the dynamic management of Service Level Agreements (SLA). 3) The adaptation and experimental valida- tion of the Generalized Hebbian Algorithm (GHA) for Principal Component Analysis (PCA) on low- power microcontrollers,We introduce and compare an iterative learning strategy using data buffers, featuring sorting and explicit preservation of extreme samples to maintain diversity. Experimental results on the high-dimensional Tour Perret sensor data confirm that this novel method, despite introducing a necessary temporal complexity of O(W log W ) due to sorting, achieves convergence and final result quality that is visually equivalent to processing the entire dataset in full memory, reliably identifying two distinct operational states.",
+   "authors": [
+    {
+     "name": "Mamadou Sow",
+     "affiliations": []
+    },
+    {
+     "name": "Christophe Cerin",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.LG",
+    "cs.DC",
+    "math.NA"
+   ],
+   "primary_category": "cs.LG",
+   "date": "2026-10-09",
+   "url": "https://arxiv.org/abs/2610.13307",
+   "matched_terms": [
+    "data center"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Sustainable Cloud-Fog-Edge Systems for Smart Buildings: Algorithmic Adaptation under Memory Constraints and Dynamic Orchestration Strategies Mamadou Sow Affiliation: University Sorbonne Paris Nord LIPN, UMR CNRS 7030 Villetaneuse, France mamadou.sow@univ-paris13.fr Christophe Cérin Affiliation: University Sorbonne Paris Nord LIPN, UMR CNRS 7030 INRIA DATAMOVE Paris/Grenoble, France christophe.cerin@univ-paris13.fr Abstract The escalating environmental footprint of the Information and Communication Technology (ICT) sector—with global Data Center electricity usage potentially reaching 3% by 2030 [ 1 ] and the imperative for real-time responsiveness in smart buildings demand a foundational shift towards Edge Computing [ 2 ] . This article proposes a holistic architectural and algorithmic approach for creating autonomous, resilient, and privacy-preserving learning systems within smart buildings, advancing the core concept of the building itself as the data center. Our contributions, demonstrating originality compared to conventional centralized systems, are structured around three main pillars: 1) Validation of resilient data acquisition chains using the affordable Arduino ecosystem (Uno R4 WiFi/BME280) and secure persistence solutions including centralized archiving (Node-RED/MySQL) and secure remote transfer (Python/rsync/SSH). 2) The proposal of a lightweight, KOptim orchestration framework, interoperable with the FIWARE standard [ 3 ] , for the dynamic management of Service Level Agreements (SLA). 3) The adaptation and experimental validation of the Generalized Hebbian Algorithm (GHA) for Principal Component Analysis (PCA) on low-power microcontrollers. We introduce and compare an iterative learning strategy using data buffers, featuring sorting and explicit preservation of extreme samples to maintain diversity. Experimental results on the high-dimensional Tour Perret sensor data confirm that this novel method, despite introducing a necessary temporal complexity of O ⁡ ( W ​ log ⁡ W ) O(W\\log W) due to sorting, achieves convergence and final result quality that is visually equivalent to processing the entire dataset in full memory, reliably identifying two distinct operational states. This analysis explicitly incorporates a critical review of the limitations inherent in the Edge-Fog paradigm, detailing security vulnerabilities and the higher power consumption of Fog nodes [ 4 ] . Index Terms: Cloud-Fog-Edge [ 5 ] , Smart Building, Embedded Artificial Intel"
+  },
+  {
+   "key": "arxiv:2610.13298",
+   "source": "arXiv",
+   "id": "2610.13298",
+   "title": "Multi-Source and Multi-Dimensional Information Fusion in Resource-Constrained Edge Networks",
+   "abstract": "Multi-source semantic information fusion enables edge networks to support global inference using observations collected by distributed terminals. However, limited communication and computation resources restrict semantic uploading, leaving the edge server with incomplete tokens that differ in modality, semantic granularity, arrival time, and channel condition. The value of these tokens also depends on the complementary or redundant information provided by other terminals. In this paper, we propose a multi-source and multi-dimensional semantic information fusion framework that coordinates terminal uploading and edge-side fusion under resource constraints. We develop Hyper-Slot to combine semantic content with available token attributes through iterative token-to-slot assignment and slot-to-token feedback, producing a compact representation for global inference. To encourage useful semantic uploading, we further design a contribution-based incentive mechanism that uses Hyper-Slot assignments to evaluate information coverage and cross-type complementarity. A bi-level Stackelberg-Nash game determines the server reward pool and terminal transmission-quality strategies while accounting for computation and communication energy costs. Experiments on a tri-modal extension of COCO2014 and image-text retrieval on Flickr30K show that Hyper-Slot improves mAP by 3.66 percentage points and RSum by 15.9 points over the strongest evaluated baselines, respectively, while reducing the number of parameters by more than 80% compared with a naive concatenation-based fusion baseline.",
+   "authors": [
+    {
+     "name": "Yushi Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Zhengxin Yu",
+     "affiliations": []
+    },
+    {
+     "name": "Guhan Zheng",
+     "affiliations": []
+    },
+    {
+     "name": "Wang Miao",
+     "affiliations": []
+    },
+    {
+     "name": "Merouane Debbah",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.CV"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-09",
+   "url": "https://arxiv.org/abs/2610.13298",
+   "matched_terms": [
+    "edge server"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Multi-Source and Multi-Dimensional Information Fusion in Resource-Constrained Edge Networks Thanks: Yushi Wang and Zhengxin Yu are with the School of Computing and Communications, Lancaster University, LA1 4YW, U.K. (e-mail: y.wang216@lancaster.ac.uk; z.yu8@lancaster.ac.uk). Thanks: Guhan Zheng is with the School of Communication and Information Engineering, Shanghai University, 200444, China. (e-mail: gzheng@shu.edu.cn). Thanks: Wang Miao is with the Department of Computer Science, University of Exeter, EX4 4QF, U.K. (e-mail: wang.miao@exeter.ac.uk). Thanks: Merouane Debbah is with KU 6G Research Center, Khalifa University of Science and Technology, 127788, Abu Dhabi, UAE. (e-mail: merouane.debbah@ku.ac.ae). Yushi Wang Zhengxin Yu Guhan Zheng Wang Miao Affiliation: Merouane Debbah, Abstract Multi-source semantic information fusion enables edge networks to support global inference using observations collected by distributed terminals. However, limited communication and computation resources restrict semantic uploading, leaving the edge server with incomplete tokens that differ in modality, semantic granularity, arrival time, and channel condition. The value of these tokens also depends on the complementary or redundant information provided by other terminals. In this paper, we propose a multi-source and multi-dimensional semantic information fusion framework that coordinates terminal uploading and edge-side fusion under resource constraints. We develop Hyper-Slot to combine semantic content with available token attributes through iterative token-to-slot assignment and slot-to-token feedback, producing a compact representation for global inference. To encourage useful semantic uploading, we further design a contribution-based incentive mechanism that uses Hyper-Slot assignments to evaluate information coverage and cross-type complementarity. A bi-level Stackelberg–Nash game determines the server reward pool and terminal transmission-quality strategies while accounting for computation and communication energy costs. Experiments on a tri-modal extension of COCO2014 and image-text retrieval on Flickr30K show that Hyper-Slot improves mAP by 3.66 percentage points and RSum by 15.9 points over the strongest evaluated baselines, respectively, while reducing the number of parameters by more than 80% compared with a naive concatenation-based fusion baseline. Index Terms: Multi-source information fusion, multi-dimensional heterogeneity, Semantic communications, ."
+  },
+  {
+   "key": "arxiv:2610.13108",
+   "source": "arXiv",
+   "id": "2610.13108",
+   "title": "LLM-Assisted Hierarchical Interference Control for Satellite-Terrestrial Integrated Networks",
+   "abstract": "Time-varying aggregate interference from low-Earth-orbit (LEO) satellites challenges terrestrial-network (TN) protection, whereas conservative control degrades LEO quality of service (QoS). This letter proposes a hierarchical framework combining geometry-based interference estimation, QoS-constrained power control, adaptive energy detection, large language model (LLM)-assisted candidate ranking, stay-or-switch decisions, and target-band selection, with deterministic verification. The current band is retained only when both spectrum-hole and power-feasibility conditions hold, with periodic reevaluation. Over a 300-s horizon with 0.5-s sampling, the proposed method keeps the aggregate INR from exceeding the $-12.2$~dB threshold and achieves a time-averaged mean LEO-link rate of $320.97$~Mbps with $100\\%$ QoS satisfaction. It markedly outperforms power-only and satellite-muting in jointly protecting the TN and preserving LEO QoS.",
+   "authors": [
+    {
+     "name": "Heying Cao",
+     "affiliations": []
+    },
+    {
+     "name": "Hao Yuan",
+     "affiliations": []
+    },
+    {
+     "name": "Xing Zhang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SP"
+   ],
+   "primary_category": "eess.SP",
+   "date": "2026-10-09",
+   "url": "https://arxiv.org/abs/2610.13108",
+   "matched_terms": [
+    "large language model",
+    "llm"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "LLM-Assisted Hierarchical Interference Control for Satellite-Terrestrial Integrated Networks Thanks: Heying Cao, Hao Yuan, and Xing Zhang are with the School of Information and Communication Engineering, Beijing University of Posts and Telecommunications, Beijing 100876, China (e-mail: heying@bupt.edu.cn; yuan_hao@bupt.edu.cn; hszhang@bupt.edu.cn). Heying Cao , Hao Yuan , and Xing Zhang Affiliation: Abstract Time-varying aggregate interference from low-Earth-orbit (LEO) satellites challenges terrestrial-network (TN) protection, whereas conservative control degrades LEO quality of service (QoS). This letter proposes a hierarchical framework combining geometry-based interference estimation, QoS-constrained power control, adaptive energy detection, large language model (LLM)-assisted candidate ranking, stay-or-switch decisions, and target-band selection, with deterministic verification. The current band is retained only when both spectrum-hole and power-feasibility conditions hold, with periodic reevaluation. Over a 300-s horizon with 0.5-s sampling, the proposed method keeps the aggregate INR from exceeding the − 12.2 -12.2 dB threshold and achieves a time-averaged mean LEO-link rate of 320.97 320.97 Mbps with 100 % 100\\% QoS satisfaction. It markedly outperforms power-only and satellite-muting in jointly protecting the TN and preserving LEO QoS. Index Terms: LEO–TN coexistence, aggregate interference control, spectrum sensing, LLM."
+  },
+  {
+   "key": "arxiv:2610.13061",
+   "source": "arXiv",
+   "id": "2610.13061",
+   "title": "Capturing Electrical Windows Through Reconfigurable Optical Networks: Transfer-aware Scheduling of Multi-Region AI Data Centers",
+   "abstract": "Artificial-intelligence data centers (AIDCs) can provide spatiotemporal load flexibility by migrating training workloads in response to regional electricity prices and renewable-energy (RE) availability. However, transfer-blind scheduling may overestimate migration benefits by overlooking transfer time or prevent training from resuming within renewable-rich or low-price windows when considering transfer time. This paper proposes a transfer-aware compute-electricity-network scheduling framework that coordinates training placement, checkpoint transmission, and optical circuit switching (OCS) to improve local RE utilization and reduce grid-purchase cost. A compact compute-electricity master problem generates candidate schedules using estimated transfer delays. The framework then schedules optical circuits, verifies checkpoint delivery under shared-link capacity constraints, and revises infeasible schedules using updated delay estimates. It integrates day-ahead planning, event-triggered intraday updates, and real-time dispatch. In a five-AIDC benchmark with equal completed work and network resources, the proposed method reduces the real-time grid purchase cost by 12.50% and increases the local RE utilization by 2.724 percentage points relative to static optical operation. Sensitivity and ablation analyses indicate that OCS is particularly beneficial when renewable-rich or low-price windows shift across sites and network bottlenecks hinder timely checkpoint delivery.",
+   "authors": [
+    {
+     "name": "Xi Tong",
+     "affiliations": []
+    },
+    {
+     "name": "Zijian Li",
+     "affiliations": []
+    },
+    {
+     "name": "Xiaoyi Fan",
+     "affiliations": []
+    },
+    {
+     "name": "Cong Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Ershun Du",
+     "affiliations": []
+    },
+    {
+     "name": "Qin Wang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-09",
+   "url": "https://arxiv.org/abs/2610.13061",
+   "matched_terms": [
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Capturing Electrical Windows Through Reconfigurable Optical Networks: Transfer-aware Scheduling of Multi-Region AI Data Centers Xi Tong Zijian Li Xiaoyi Fan Cong Zhang Ershun Du * Qin Wang * † † thanks: Corresponding authors: Ershun Du and Qin Wang. † † thanks: X. Tong and Q. Wang are with the Department of Electrical and Electronic Engineering, The Hong Kong Polytechnic University, Hong Kong SAR, China (e-mail: polyu-eee-xi.tong@connect.polyu.hk; qin-ee.wang@polyu.edu.hk). † † thanks: Z. Li is with the College of Computer Science and Artificial Intelligence, Fudan University, Shanghai, China (e-mail: lizj21@m.fudan.edu.cn). † † thanks: X. Fan is with the Department of Electrical Engineering, Tsinghua University, Beijing, China (e-mail: fan-xy25@mails.tsinghua.edu.cn). † † thanks: C. Zhang is with the Sichuan Energy Internet Research Institute, Tsinghua University, Chengdu, China (email: zhangcong@tsinghua-eiri.org). † † thanks: E. Du is with the Lab of Low Carbon Energy, Tsinghua University, Beijing, China (e-mail: duershun@tsinghua.edu.cn). Abstract Artificial-intelligence data centers (AIDCs) can provide spatiotemporal load flexibility by migrating training workloads in response to regional electricity prices and renewable-energy (RE) availability. However, transfer-blind scheduling may overestimate migration benefits by overlooking transfer time or prevent training from resuming within renewable-rich or low-price windows when considering transfer time. This paper proposed a transfer-aware compute–electricity–network scheduling framework that coordinates training placement, checkpoint transmission, and optical circuit switching (OCS) to improve local RE utilization and reduce grid-purchase cost. A compact compute–electricity master problem generates candidate schedules using estimated transfer delays. The framework then schedules optical circuits, verifies checkpoint delivery under shared-link capacity constraints, and revises infeasible schedules using updated delay estimates. It integrates day-ahead planning, event-triggered intraday updates, and real-time dispatch. In a five AIDCs benchmark with equal completed work and network resources, the proposed method reduces the real-time grid purchase cost by 12.50% and increases the local RE utilization by 2.724 percentage points relative to static optical operation. Sensitivity and ablation analyses indicate that OCS is particularly beneficial when renewable-rich or low-price windows shift across sites and"
+  },
+  {
+   "key": "arxiv:2610.13047",
+   "source": "arXiv",
+   "id": "2610.13047",
+   "title": "Execution-Feasible Dispatch of LLM Pre-training Loads for Renewable-Dominant AI Data Centers",
+   "abstract": "AI data centers (AIDCs) are emerging as large power-system loads, making their operational flexibility increasingly valuable. Existing studies often treat AIDC demand as continuously adjustable or generically delay-tolerant, which overstating the flexibility of large language model (LLM) pretraining. This paper proposes an execution-feasible dispatch framework for LLM pre-training in renewable-dominant AIDCs. LLM descriptors are first converted into checkpoint-domain daily workloads, then mapped to feasible 3D-parallel GPU modes with explicit throughput, GPU-capacity, memory, and IT-power limits. The resulting checkpoint- and mode-constrained load states are embedded into a day-ahead power dispatch model. Case studies on a 2048 GPUs AIDC with two LLaMA pretraining tasks show that checkpoint-aware 3D dispatch reduces operating cost by 20.02% and renewable curtailment from 1.077 to 0.014 MWh relative to fixed continuous training. Related results also show that checkpoint records alone do not create load flexibility,practical grid-interactive flexibility arises from checkpoint waiting combined with execution-feasible 3D-mode compensation.",
+   "authors": [
+    {
+     "name": "Xi Tong",
+     "affiliations": []
+    },
+    {
+     "name": "Ershun Du",
+     "affiliations": []
+    },
+    {
+     "name": "Haiyang Jiang",
+     "affiliations": []
+    },
+    {
+     "name": "Long Chen",
+     "affiliations": []
+    },
+    {
+     "name": "Qin Wang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-09",
+   "url": "https://arxiv.org/abs/2610.13047",
+   "matched_terms": [
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Execution-Feasible Dispatch of LLM Pre-training Loads for Renewable-Dominant AI Data Centers Xi Tong Ershun Du* Haiyang Jiang Long Chen Qin Wang* † † thanks: Corresponding authors: Ershun Du and Qin Wang. † † thanks: X. Tong and Q. Wang are with the Department of Electrical and Electronic Engineering, The Hong Kong Polytechnic University, Hong Kong SAR, China.(e-mail:polyu-eee-xi.tong@connect.polyu.hk, qin-ee.wang@polyu.edu.hk.) † † thanks: E. Du is with the Lab of Low Carbon Energy, Tsinghua University, Beijing, China.(e-mail:duershun@tsinghua.edu.cn) † † thanks: H. Jiang is with the Department of Electrical Engineering, Tsinghua University, Beijing, China.(e-mail:jiang_hy@tsinghua.edu.cn) † † thanks: L. Chen is with Tsinghua University and the Department of Computing, The Hong Kong Polytechnic University, China.(e-mail:longchen.cs@ieee.org) Abstract AI data centers (AIDCs) are emerging as large power-system loads, making their operational flexibility increasingly valuable. Existing studies often treat AIDC demand as continuously adjustable or generically delay-tolerant, which overstating the flexibility of large language model (LLM) pre-training. This paper proposes an execution-feasible dispatch framework for LLM pre-training in renewable-dominant AIDCs. LLM descriptors are first converted into checkpoint-domain daily workloads, then mapped to feasible 3D-parallel GPU modes with explicit throughput, GPU-capacity, memory, and IT-power limits. The resulting checkpoint- and mode-constrained load states are embedded into a day-ahead power dispatch model. Case studies on a 2048 GPUs AIDC with two LLaMA pre-training tasks show that checkpoint-aware 3D dispatch reduces operating cost by 20.02% and renewable curtailment from 1.077 to 0.014 MWh relative to fixed continuous training. Related results also show that checkpoint records alone do not create load flexibility,practical grid-interactive flexibility arises from checkpoint waiting combined with execution-feasible 3D-mode compensation. Index Terms: AI data center, LLM pre-training load, execution-feasible dispatch, checkpoint-aware flexibility, 3D parallelism, renewable-dominant AIDC."
+  },
+  {
+   "key": "arxiv:2610.13032",
+   "source": "arXiv",
+   "id": "2610.13032",
+   "title": "Virtual Transmission Lines from Data Center Workload Migration: Coordinated Multi-Year Transmission Expansion Planning",
+   "abstract": "The rapid growth of electricity demand from AI data centers is creating a dual mismatch in power systems: a temporal mismatch between fast-rising demand and slow transmission expansion, and a spatial mismatch between concentrated data-center loads and geographically dispersed renewable resources. These mismatches can exacerbate transmission congestion, resulting in unserved data-center load and renewable-energy curtailment. This study models geographic workload migration as a virtual transmission line (VTL) that changes nodal data-center demand without transferring physical electricity. A mixed-integer linear programming model is then developed to co-optimize multi-year candidate-line construction and workload migration, subject to construction delays, renewable-energy curtailment, unserved data-center load, workload-balance requirements, communication-bandwidth constraints, and link-latency limits. The model is evaluated over an eight-year planning horizon on a modified IEEE 14-bus system. The results show that coordinating VTL with physical transmission expansion reduces total system cost, unserved data-center load, and renewable-energy curtailment while alleviating transmission congestion. VTL-aware planning also requires one fewer candidate line than build-only planning. However, VTL alone cannot meet system demand and does not eliminate the need for physical transmission reinforcement. Sensitivity analysis indicates that VTL provides the greatest value when transfer capacity is tight, construction costs are high, load growth is rapid, and data-center flexibility is greater. Additional validation on the IEEE 118-bus system over a five-year planning horizon shows that coordinated planning retains its cost and reliability benefits while reducing physical expansion requirements.",
+   "authors": [
+    {
+     "name": "Mengxin Zhu",
+     "affiliations": []
+    },
+    {
+     "name": "Qian Kai",
+     "affiliations": []
+    },
+    {
+     "name": "Yadong Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Yingjie Yan",
+     "affiliations": []
+    },
+    {
+     "name": "Haoyu Zhao",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-10-09",
+   "url": "https://arxiv.org/abs/2610.13032",
+   "matched_terms": [
+    "data center",
+    "data centers",
+    "data-center"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Virtual Transmission Lines from Data Center Workload Migration: Coordinated Multi-Year Transmission Expansion Planning Mengxin Zhu mxzhu@sjtu.edu.cn Qian Kai kaiqian02@sjtu.edu.cn Yadong Liu lyd@sjtu.edu.cn Yingjie Yan yanyingjie@sjtu.edu.cn Haoyu Zhao zhaohaoyu@sjtu.edu.cn organization=Shanghai Jiao Tong University, city=Shanghai, country=China Abstract The rapid growth of electricity demand from AI data centers is creating a dual mismatch in power systems: a temporal mismatch between fast-rising demand and slow transmission expansion, and a spatial mismatch between concentrated data-center loads and geographically dispersed renewable resources. These mismatches can exacerbate transmission congestion, resulting in unserved data-center load and renewable-energy curtailment. This study models geographic workload migration as a virtual transmission line (VTL) that changes nodal data-center demand without transferring physical electricity. A mixed-integer linear programming model is then developed to co-optimize multi-year candidate-line construction and workload migration, subject to construction delays, renewable-energy curtailment, unserved data-center load, workload-balance requirements, communication-bandwidth constraints, and link-latency limits. The model is evaluated over an eight-year planning horizon on a modified IEEE 14-bus system. The results show that coordinating VTL with physical transmission expansion reduces total system cost, unserved data-center load, and renewable-energy curtailment while alleviating transmission congestion. VTL-aware planning also requires one fewer candidate line than build-only planning. However, VTL alone cannot meet system demand and does not eliminate the need for physical transmission reinforcement. Sensitivity analysis indicates that VTL provides the greatest value when transfer capacity is tight, construction costs are high, load growth is rapid, and data-center flexibility is greater. Additional validation on the IEEE 118-bus system over a five-year planning horizon shows that coordinated planning retains its cost and reliability benefits while reducing physical expansion requirements. keywords data center ,virtual transmission line ,transmission expansion planning ,workload migration ,renewable curtailment ,mixed-integer linear programming † † corresponding: Corresponding author: Yingjie Yan"
+  },
+  {
+   "key": "arxiv:2610.12970",
+   "source": "arXiv",
+   "id": "2610.12970",
+   "title": "Minions: A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices",
+   "abstract": "The increasing demand for GPU-accelerated machine learning inference has exposed limitations in centralized GPU infrastructures, including high cost, limited elasticity, and long wait times under resource constraints. At the same time, modern Apple Silicon-based macOS devices are equipped with powerful GPUs that remain largely idle during normal usage. This paper presents Minions, a dynamic and distributed virtual GPU cloud that aggregates idle Apple Silicon GPUs across macOS devices to execute large-scale machine learning inference workloads. Minions enables teams to leverage existing hardware without requiring additional GPU procurement. The system provides flexible GPU inference task execution, fault tolerance, and efficient resource utilization. Our experience shows that idle macOS devices can be transformed into a practical distributed GPU inference platform in environments where centralized GPU resources are constrained.",
+   "authors": [
+    {
+     "name": "Jianhua Li",
+     "affiliations": []
+    },
+    {
+     "name": "Yun Xing",
+     "affiliations": []
+    },
+    {
+     "name": "Girisha De Silva",
+     "affiliations": []
+    },
+    {
+     "name": "Ryan Flint",
+     "affiliations": []
+    },
+    {
+     "name": "Kai Yuan",
+     "affiliations": []
+    },
+    {
+     "name": "Sean Suchter",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.LG"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-09",
+   "url": "https://arxiv.org/abs/2610.12970",
+   "matched_terms": [
+    "gpu",
+    "gpus"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Minions: A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices Jianhua Li Affiliation: Apple , USA email: jianhua_li3@apple.com , Yun Xing Affiliation: Apple , USA email: yun_xing@apple.com , Girisha De Silva Affiliation: Apple , USA email: girisha_desilva@apple.com , Ryan Flint Affiliation: Apple , USA email: rflint@apple.com , Kai Yuan Affiliation: Apple , USA email: kai_yuan@apple.com and Sean Suchter Affiliation: Apple , USA email: ssuchter@apple.com Abstract. The increasing demand for GPU-accelerated machine learning inference has exposed limitations in centralized GPU infrastructures, including high cost, limited elasticity, and long wait times under resource constraints. At the same time, modern Apple Silicon–based macOS devices are equipped with powerful GPUs that remain largely idle during normal usage. This paper presents Minions, a dynamic and distributed virtual GPU cloud that aggregates idle Apple Silicon GPUs across macOS devices to execute large-scale machine learning inference workloads. Minions enables teams to leverage existing hardware without requiring additional GPU procurement. The system provides flexible GPU inference task execution, fault tolerance, and efficient resource utilization. Our experience shows that idle macOS devices can be transformed into a practical distributed GPU inference platform in environments where centralized GPU resources are constrained. Keywords: GPU inference, distributed systems, Apple Silicon, information retrieval systems, large language models"
+  }
+ ],
+ "title_only_final": [],
+ "pending_items": [
+  {
+   "source": "TSG",
+   "title": "Geometric Characterization of Zero-Sequence Voltage Responses for Faulty-Phase Identification in Asymmetric Resonant Distribution Networks",
+   "url": "https://doi.org/10.1109/tsg.2026.3739892",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "TSG",
+   "title": "Foresight-enhanced Adaptive Safe Hierarchical Reinforcement Learning for Real-Time Voltage Regulation in Active Distribution Networks",
+   "url": "https://doi.org/10.1109/tsg.2026.3740287",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "TSG",
+   "title": "Resilience Enhancement Planning of Hydrogen-Electricity Systems Against Coordinated Power Line Outages and Load Redistribution Attacks",
+   "url": "https://doi.org/10.1109/tsg.2026.3740898",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "TSG",
+   "title": "A Dual-Guided Predict-then-Optimize Method for Real-Time EV Charging under Uncertainty",
+   "url": "https://doi.org/10.1109/tsg.2026.3740758",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "TSG",
+   "title": "Model-Data Fusion-Driven Multi-Harmonic Source Localization in Low-Observable Distribution Networks",
+   "url": "https://doi.org/10.1109/tsg.2026.3740865",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "TSG",
+   "title": "Active Admittance Probing-Assisted Inverter Dispatch Command Manipulation Attack: A Grid Stability-Oriented Approach",
+   "url": "https://doi.org/10.1109/tsg.2026.3740933",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "TSG",
+   "title": "A Coordinated Multi-Frequency Harmonic Injection Scheme for Active Protection in IBR-Rich Distribution Networks",
+   "url": "https://doi.org/10.1109/tsg.2026.3739708",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "TSG",
+   "title": "Stealthy Time Synchronization Attacks on Voltage Stability Monitoring: Modeling, Impact, and Detection",
+   "url": "https://doi.org/10.1109/tsg.2026.3741704",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "TSG",
+   "title": "Game-Theoretic Reinforcement Learning based Topology-Agnostic Defense for Virtual Power Plants",
+   "url": "https://doi.org/10.1109/tsg.2026.3741535",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "TSG",
+   "title": "Implicit Category Projection-Enhanced Multimodal Seq2Seq for Ensuring Accurate Day-Ahead PV Forecasting under Transitional Weather",
+   "url": "https://doi.org/10.1109/tsg.2026.3741462",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "TSG",
+   "title": "Group and Flow-Based Centrality Measures for Power Grid Vulnerability Analysis",
+   "url": "https://doi.org/10.1109/tsg.2026.3738400",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "TSG",
+   "title": "Low-Voltage Distribution Grid Topology Identification and Parameter Estimation with Heterogeneous Cable Sizes and Dense Noise: A Prior Knowledge-Guided Adaptive Search Approach",
+   "url": "https://doi.org/10.1109/tsg.2026.3738092",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "TPWRS",
+   "title": "A Data-Driven Practical Four-Stage μPMU and Facilities Placement for Distribution Systems: A Stochastic Reliability-Oriented Framework",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3740319",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Closed-Loop Predict-then-Optimize for Unit Commitment via Distributed Prediction-Optimization Coordination",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3740835",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Nodal Frequency Security-Constrained Optimal Power System Virtual Inertia and Damping Dispatch",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3740874",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Transient Stability Analysis of AC/DC Power Systems with MMC-HVDC Based on Estimation of Domain of Attraction",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3740037",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Screening-based siting and metocean-aware O&M routing for floating offshore wind farms",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128978",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "Nature Energy",
+   "title": "From gigawatts to critical mineral demands for EU solar and wind",
+   "url": "https://doi.org/10.1038/s41560-026-02147-x",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "Nature Energy",
+   "title": "All-organic mixed-matrix membranes with single-crystal covalent organic frameworks for carbon capture",
+   "url": "https://doi.org/10.1038/s41560-026-02149-9",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "Nature Rev. EE",
+   "title": "Nobel Symposium on Metamaterials Science and Technology",
+   "url": "https://doi.org/10.1038/s44287-026-00343-1",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "Nature Rev. EE",
+   "title": "Multimodal semantic communications",
+   "url": "https://doi.org/10.1038/s44287-026-00336-0",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "Nature Rev. EE",
+   "title": "Transferable predictive maintenance for battery energy storage systems",
+   "url": "https://doi.org/10.1038/s44287-026-00337-z",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "Nature Rev. EE",
+   "title": "Unlocking battery boundaries",
+   "url": "https://doi.org/10.1038/s44287-026-00346-y",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "Nature Rev. EE",
+   "title": "End-to-end cyber resilience enhancement for renewable-dominated power grids",
+   "url": "https://doi.org/10.1038/s44287-026-00334-2",
+   "first_seen": "2026-10-10"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Variational Bayes-based multiple neural network method for battery SOC estimation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129011",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "A methodology for long-term hourly electricity demand forecasting driven by GDP and invariant load profiles",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128981",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Downside-risk pre-positioning for resilient scheduling of an off-grid deep-offshore electricity-hydrogen integrated energy system under extreme weather",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128988",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Editorial Board",
+   "url": "https://doi.org/10.1016/s0306-2619(26)01677-6",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Bridging deterministic and stochastic scheduling: Learning risk-aware forecast adjustments for PV-BESS operation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128975",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Theory-guided lightweight decomposition for efficient and robust day-ahead electrical load forecasting",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128995",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Dual-time-scale predictive hierarchical electro-thermal coordination for thermal-load reshaping in heavy-duty electric-drive hybrid vehicles",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129015",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Transport characteristics and formation mechanism of voltage inconsistency in 200-cell PEMFC stack: Numerical reconstruction and experimental investigation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129016",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "A probability-box framework for quantifying office building air conditioning flexibility under multi-source uncertainty",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129030",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Self-regenerating photocatalytic water treatment systems: integrating cognitive AI control, bio-inspired self-healing, and thermoelectric energy harvesting",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128984",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Intrinsically flexible inorganic piezoelectric subnanowire enables wireless wearable bioelectronics for non-invasive multimodal human-machine interfacing",
+   "url": "https://doi.org/10.1038/s41467-026-78557-y",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Quantum-sensing-based super-resolution live cell microenvironment imaging",
+   "url": "https://doi.org/10.1038/s41467-026-78321-2",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A dual-attribution framework reveals how foreign investment and trade redistribute cobalt availability",
+   "url": "https://doi.org/10.1038/s41467-026-78222-4",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "PRPF19 drives hepatic stellate cell activation and liver fibrosis via PKM2-mediated glycolytic reprogramming",
+   "url": "https://doi.org/10.1038/s41467-026-78341-y",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Corpus Callosum Dysgenesis is concomitant with reduced metacognitive efficiency and sensitivity across multiple cohorts and modalities",
+   "url": "https://doi.org/10.1038/s41467-026-78475-z",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A self-limiting mechanotransduction feedback loop ensures robust organ formation",
+   "url": "https://doi.org/10.1038/s41467-026-78535-4",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Transposable element-mediated structural variations shape gene expression and agronomic trait diversity in Brassica napus",
+   "url": "https://doi.org/10.1038/s41467-026-78567-w",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Long-term nitrous acid evolution modulates ozone and secondary aerosol variations in global megacities",
+   "url": "https://doi.org/10.1038/s41467-026-78349-4",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Giant step-boundary-triggered nonlocal modulation of magnetization reversal in multi-stepped van der Waals ferromagnet Fe3GaTe2",
+   "url": "https://doi.org/10.1038/s41467-026-78522-9",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Asymmetric bloom lengthening drives high-latitude ocean chlorophyll accumulation imbalance",
+   "url": "https://doi.org/10.1038/s41467-026-78603-9",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "In situ reduction-driven formation of sub-nanometer alternating heterostructures",
+   "url": "https://doi.org/10.1038/s41467-026-78575-w",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Intensification of near-inertial currents in the Atlantic Ocean over the past two decades",
+   "url": "https://doi.org/10.1038/s41467-026-78555-0",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "An automated operon refactoring workflow for heterologous expression of non-ribosomal peptide biosynthetic gene clusters",
+   "url": "https://doi.org/10.1038/s41467-026-78648-w",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Targeting MDA5 induces immunogenic cell death and promotes anti-tumor immunity",
+   "url": "https://doi.org/10.1038/s41467-026-78587-6",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Plant invasions are associated with lower community stability at multiple spatial scales",
+   "url": "https://doi.org/10.1038/s41467-026-78617-3",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "ETSAM: effectively segmenting cell membranes in cryo-electron tomograms",
+   "url": "https://doi.org/10.1038/s41467-026-77962-7",
+   "first_seen": "2026-10-12"
+  }
+ ],
+ "pending_abstract": 50,
+ "runs_utc": [
+  "2026-10-12T08:39:36+00:00"
+ ]
+}
