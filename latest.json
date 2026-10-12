@@ -1,6 +1,6 @@
 {
  "date": "2026-10-12",
- "generated_utc": "2026-10-12T08:39:36+00:00",
+ "generated_utc": "2026-10-12T12:59:27+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
@@ -16,21 +16,21 @@
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-   "in_window": 208,
+   "in_window": 56,
    "new": 28,
    "candidates": 1
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-   "in_window": 106,
+   "in_window": 27,
    "new": 19,
    "candidates": 6
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-   "in_window": 140,
+   "in_window": 53,
    "new": 26,
    "candidates": 1
   },
@@ -38,7 +38,7 @@
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-   "in_window": 14,
+   "in_window": 13,
    "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
@@ -47,7 +47,7 @@
    "source": "TPWRS",
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
-   "in_window": 7,
+   "in_window": 6,
    "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
@@ -56,8 +56,8 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 38,
-   "new": 10,
+   "in_window": 35,
+   "new": 15,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -65,7 +65,7 @@
    "source": "Nature Energy",
    "journal": "Nature Energy",
    "status": "ok",
-   "in_window": 2,
+   "in_window": 1,
    "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
@@ -74,7 +74,7 @@
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 207,
+   "in_window": 162,
    "new": 30,
    "candidates": 0,
    "new_with_abstract": 14
@@ -574,12 +574,6 @@
   },
   {
    "source": "Applied Energy",
-   "title": "Theory-guided lightweight decomposition for efficient and robust day-ahead electrical load forecasting",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.128995",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Dual-time-scale predictive hierarchical electro-thermal coordination for thermal-load reshaping in heavy-duty electric-drive hybrid vehicles",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129015",
    "first_seen": "2026-10-12"
@@ -652,12 +646,6 @@
   },
   {
    "source": "Nature Communications",
-   "title": "Giant step-boundary-triggered nonlocal modulation of magnetization reversal in multi-stepped van der Waals ferromagnet Fe3GaTe2",
-   "url": "https://doi.org/10.1038/s41467-026-78522-9",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Nature Communications",
    "title": "Asymmetric bloom lengthening drives high-latitude ocean chlorophyll accumulation imbalance",
    "url": "https://doi.org/10.1038/s41467-026-78603-9",
    "first_seen": "2026-10-12"
@@ -666,12 +654,6 @@
    "source": "Nature Communications",
    "title": "In situ reduction-driven formation of sub-nanometer alternating heterostructures",
    "url": "https://doi.org/10.1038/s41467-026-78575-w",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Intensification of near-inertial currents in the Atlantic Ocean over the past two decades",
-   "url": "https://doi.org/10.1038/s41467-026-78555-0",
    "first_seen": "2026-10-12"
   },
   {
@@ -697,10 +679,41 @@
    "title": "ETSAM: effectively segmenting cell membranes in cryo-electron tomograms",
    "url": "https://doi.org/10.1038/s41467-026-77962-7",
    "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Frequency security-aware production scheduling of utility-scale off-grid renewable P2H systems coordinating heterogeneous electrolyzers",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128990",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Risk-aware and network-compatible bidding of aggregated DER under energy-as-a-service model",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129001",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Life cycle and techno-economic analysis of hydrogen-based ship propulsion concepts in light of future regulatory environments",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128979",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Tokenizing battery degradation: a physics-informed and uncertainty-aware framework for state-of-health estimation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129000",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Using cross-regional grid interconnection to relieve growing energy storage demand in renewable energy integration: A case study from China",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129009",
+   "first_seen": "2026-10-12"
   }
  ],
- "pending_abstract": 50,
+ "pending_abstract": 52,
  "runs_utc": [
-  "2026-10-12T08:39:36+00:00"
+  "2026-10-12T08:39:36+00:00",
+  "2026-10-12T12:59:27+00:00"
  ]
 }
