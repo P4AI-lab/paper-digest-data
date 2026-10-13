@@ -1,6 +1,6 @@
 {
  "date": "2026-10-13",
- "generated_utc": "2026-10-13T08:32:35+00:00",
+ "generated_utc": "2026-10-13T12:35:19+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
@@ -56,8 +56,8 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 35,
-   "new": 5,
+   "in_window": 37,
+   "new": 7,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -244,51 +244,9 @@
    "first_seen": "2026-10-12"
   },
   {
-   "source": "Nature Communications",
-   "title": "Targeting MDA5 induces immunogenic cell death and promotes anti-tumor immunity",
-   "url": "https://doi.org/10.1038/s41467-026-78587-6",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Plant invasions are associated with lower community stability at multiple spatial scales",
-   "url": "https://doi.org/10.1038/s41467-026-78617-3",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "ETSAM: effectively segmenting cell membranes in cryo-electron tomograms",
-   "url": "https://doi.org/10.1038/s41467-026-77962-7",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Frequency security-aware production scheduling of utility-scale off-grid renewable P2H systems coordinating heterogeneous electrolyzers",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.128990",
-   "first_seen": "2026-10-12"
-  },
-  {
    "source": "Applied Energy",
    "title": "Risk-aware and network-compatible bidding of aggregated DER under energy-as-a-service model",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129001",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Life cycle and techno-economic analysis of hydrogen-based ship propulsion concepts in light of future regulatory environments",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.128979",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Tokenizing battery degradation: a physics-informed and uncertainty-aware framework for state-of-health estimation",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129000",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Using cross-regional grid interconnection to relieve growing energy storage demand in renewable energy integration: A case study from China",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129009",
    "first_seen": "2026-10-12"
   },
   {
@@ -317,12 +275,6 @@
   },
   {
    "source": "Applied Energy",
-   "title": "AC OPF learning via modular decomposition and adaptation to topology changes",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.128996",
-   "first_seen": "2026-10-13"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Optimal design and thermodynamic performance analysis of a novel isothermal reservoir supercritical compressed CO2 energy storage system",
    "url": "https://doi.org/10.1016/j.apenergy.2026.128982",
    "first_seen": "2026-10-13"
@@ -343,12 +295,6 @@
    "source": "Applied Energy",
    "title": "A physics-informed causal learning framework for power consumption of logistics drones",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129014",
-   "first_seen": "2026-10-13"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "GlycoStamp-seq: Single-cell nascent sialoglycometabolomics captures sialylation dynamics in immune cells of an oxaliplatin-treated bladder cancer mouse model",
-   "url": "https://doi.org/10.1038/s41467-026-78101-y",
    "first_seen": "2026-10-13"
   },
   {
@@ -464,10 +410,23 @@
    "title": "Scellmate enables contamination aware curation and host mobilome linkage analysis of large SAG datasets",
    "url": "https://doi.org/10.1038/s41467-026-78527-4",
    "first_seen": "2026-10-13"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "China’s dynamic layouts of carbon capture utilization and storage",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128896",
+   "first_seen": "2026-10-13"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Environmental synergies and trade-offs in the rapid transition of China's electricity system",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129044",
+   "first_seen": "2026-10-13"
   }
  ],
- "pending_abstract": 62,
+ "pending_abstract": 55,
  "runs_utc": [
-  "2026-10-13T08:32:35+00:00"
+  "2026-10-13T08:32:35+00:00",
+  "2026-10-13T12:35:19+00:00"
  ]
 }
