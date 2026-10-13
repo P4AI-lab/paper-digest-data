@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
- "date": "2026-10-12",
- "generated_utc": "2026-10-12T12:59:27+00:00",
-=======
  "date": "2026-10-13",
- "generated_utc": "2026-10-13T08:28:01+00:00",
->>>>>>> ec800a2 (data: collection 2026-10-13T08:29Z)
+ "generated_utc": "2026-10-13T08:32:35+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
@@ -21,53 +16,30 @@
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-<<<<<<< HEAD
-   "in_window": 56,
-   "new": 28,
-   "candidates": 1
-=======
    "in_window": 18,
    "new": 0,
    "candidates": 0
->>>>>>> ec800a2 (data: collection 2026-10-13T08:29Z)
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-<<<<<<< HEAD
-   "in_window": 27,
-   "new": 19,
-   "candidates": 6
-=======
    "in_window": 17,
    "new": 0,
    "candidates": 0
->>>>>>> ec800a2 (data: collection 2026-10-13T08:29Z)
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-<<<<<<< HEAD
-   "in_window": 53,
-   "new": 26,
-   "candidates": 1
-=======
    "in_window": 20,
    "new": 0,
    "candidates": 0
->>>>>>> ec800a2 (data: collection 2026-10-13T08:29Z)
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-<<<<<<< HEAD
-   "in_window": 13,
-   "new": 0,
-=======
    "in_window": 8,
    "new": 3,
->>>>>>> ec800a2 (data: collection 2026-10-13T08:29Z)
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -75,13 +47,8 @@
    "source": "TPWRS",
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
-<<<<<<< HEAD
-   "in_window": 6,
-   "new": 0,
-=======
    "in_window": 3,
    "new": 1,
->>>>>>> ec800a2 (data: collection 2026-10-13T08:29Z)
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -90,11 +57,7 @@
    "journal": "Applied Energy",
    "status": "ok",
    "in_window": 35,
-<<<<<<< HEAD
-   "new": 15,
-=======
-   "new": 10,
->>>>>>> ec800a2 (data: collection 2026-10-13T08:29Z)
+   "new": 5,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -111,13 +74,8 @@
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-<<<<<<< HEAD
-   "in_window": 162,
-   "new": 30,
-=======
    "in_window": 170,
    "new": 38,
->>>>>>> ec800a2 (data: collection 2026-10-13T08:29Z)
    "candidates": 0,
    "new_with_abstract": 18
   },
@@ -286,105 +244,6 @@
    "first_seen": "2026-10-12"
   },
   {
-<<<<<<< HEAD
-   "source": "Applied Energy",
-   "title": "Bridging deterministic and stochastic scheduling: Learning risk-aware forecast adjustments for PV-BESS operation",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.128975",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Dual-time-scale predictive hierarchical electro-thermal coordination for thermal-load reshaping in heavy-duty electric-drive hybrid vehicles",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129015",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Transport characteristics and formation mechanism of voltage inconsistency in 200-cell PEMFC stack: Numerical reconstruction and experimental investigation",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129016",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "A probability-box framework for quantifying office building air conditioning flexibility under multi-source uncertainty",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129030",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Self-regenerating photocatalytic water treatment systems: integrating cognitive AI control, bio-inspired self-healing, and thermoelectric energy harvesting",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.128984",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Intrinsically flexible inorganic piezoelectric subnanowire enables wireless wearable bioelectronics for non-invasive multimodal human-machine interfacing",
-   "url": "https://doi.org/10.1038/s41467-026-78557-y",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Quantum-sensing-based super-resolution live cell microenvironment imaging",
-   "url": "https://doi.org/10.1038/s41467-026-78321-2",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "A dual-attribution framework reveals how foreign investment and trade redistribute cobalt availability",
-   "url": "https://doi.org/10.1038/s41467-026-78222-4",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "PRPF19 drives hepatic stellate cell activation and liver fibrosis via PKM2-mediated glycolytic reprogramming",
-   "url": "https://doi.org/10.1038/s41467-026-78341-y",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Corpus Callosum Dysgenesis is concomitant with reduced metacognitive efficiency and sensitivity across multiple cohorts and modalities",
-   "url": "https://doi.org/10.1038/s41467-026-78475-z",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "A self-limiting mechanotransduction feedback loop ensures robust organ formation",
-   "url": "https://doi.org/10.1038/s41467-026-78535-4",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Transposable element-mediated structural variations shape gene expression and agronomic trait diversity in Brassica napus",
-   "url": "https://doi.org/10.1038/s41467-026-78567-w",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Long-term nitrous acid evolution modulates ozone and secondary aerosol variations in global megacities",
-   "url": "https://doi.org/10.1038/s41467-026-78349-4",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Asymmetric bloom lengthening drives high-latitude ocean chlorophyll accumulation imbalance",
-   "url": "https://doi.org/10.1038/s41467-026-78603-9",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "In situ reduction-driven formation of sub-nanometer alternating heterostructures",
-   "url": "https://doi.org/10.1038/s41467-026-78575-w",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "An automated operon refactoring workflow for heterologous expression of non-ribosomal peptide biosynthetic gene clusters",
-   "url": "https://doi.org/10.1038/s41467-026-78648-w",
-   "first_seen": "2026-10-12"
-  },
-  {
-=======
->>>>>>> ec800a2 (data: collection 2026-10-13T08:29Z)
    "source": "Nature Communications",
    "title": "Targeting MDA5 induces immunogenic cell death and promotes anti-tumor immunity",
    "url": "https://doi.org/10.1038/s41467-026-78587-6",
@@ -403,12 +262,36 @@
    "first_seen": "2026-10-12"
   },
   {
-<<<<<<< HEAD
    "source": "Applied Energy",
    "title": "Frequency security-aware production scheduling of utility-scale off-grid renewable P2H systems coordinating heterogeneous electrolyzers",
    "url": "https://doi.org/10.1016/j.apenergy.2026.128990",
    "first_seen": "2026-10-12"
-=======
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Risk-aware and network-compatible bidding of aggregated DER under energy-as-a-service model",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129001",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Life cycle and techno-economic analysis of hydrogen-based ship propulsion concepts in light of future regulatory environments",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128979",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Tokenizing battery degradation: a physics-informed and uncertainty-aware framework for state-of-health estimation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129000",
+   "first_seen": "2026-10-12"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Using cross-regional grid interconnection to relieve growing energy storage demand in renewable energy integration: A case study from China",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129009",
+   "first_seen": "2026-10-12"
+  },
+  {
    "source": "TSG",
    "title": "Decentralized Inertia Emulation Method in Hybrid AC/DC Microgrid With Small AC Signal Perturbation",
    "url": "https://doi.org/10.1109/tsg.2026.3741940",
@@ -430,58 +313,6 @@
    "source": "TPWRS",
    "title": "Model Reduction for Synchronizing Stability of BPS-Connected IBRs: Constant Impedance-based Network Assumption",
    "url": "https://doi.org/10.1109/tpwrs.2026.3742596",
-   "first_seen": "2026-10-13"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Frequency security-aware production scheduling of utility-scale off-grid renewable P2H systems coordinating heterogeneous electrolyzers",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.128990",
-   "first_seen": "2026-10-13"
->>>>>>> ec800a2 (data: collection 2026-10-13T08:29Z)
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Risk-aware and network-compatible bidding of aggregated DER under energy-as-a-service model",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129001",
-<<<<<<< HEAD
-   "first_seen": "2026-10-12"
-=======
-   "first_seen": "2026-10-13"
->>>>>>> ec800a2 (data: collection 2026-10-13T08:29Z)
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Life cycle and techno-economic analysis of hydrogen-based ship propulsion concepts in light of future regulatory environments",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.128979",
-<<<<<<< HEAD
-   "first_seen": "2026-10-12"
-=======
-   "first_seen": "2026-10-13"
->>>>>>> ec800a2 (data: collection 2026-10-13T08:29Z)
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Tokenizing battery degradation: a physics-informed and uncertainty-aware framework for state-of-health estimation",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129000",
-<<<<<<< HEAD
-   "first_seen": "2026-10-12"
-=======
-   "first_seen": "2026-10-13"
->>>>>>> ec800a2 (data: collection 2026-10-13T08:29Z)
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Using cross-regional grid interconnection to relieve growing energy storage demand in renewable energy integration: A case study from China",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129009",
-<<<<<<< HEAD
-   "first_seen": "2026-10-12"
-  }
- ],
- "pending_abstract": 52,
- "runs_utc": [
-  "2026-10-12T08:39:36+00:00",
-  "2026-10-12T12:59:27+00:00"
-=======
    "first_seen": "2026-10-13"
   },
   {
@@ -637,7 +468,6 @@
  ],
  "pending_abstract": 62,
  "runs_utc": [
-  "2026-10-13T08:28:01+00:00"
->>>>>>> ec800a2 (data: collection 2026-10-13T08:29Z)
+  "2026-10-13T08:32:35+00:00"
  ]
 }
