@@ -1,45 +1,45 @@
 {
- "date": "2026-10-13",
- "generated_utc": "2026-10-13T12:35:19+00:00",
+ "date": "2026-10-14",
+ "generated_utc": "2026-10-14T10:02:54+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-10-09",
-   "2026-10-13"
+   "2026-10-10",
+   "2026-10-14"
   ],
   "journal_doi_created": [
-   "2026-10-07",
-   "2026-10-13"
+   "2026-10-08",
+   "2026-10-14"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-   "in_window": 18,
-   "new": 0,
-   "candidates": 0
+   "in_window": 96,
+   "new": 96,
+   "candidates": 5
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-   "in_window": 17,
-   "new": 0,
-   "candidates": 0
+   "in_window": 71,
+   "new": 71,
+   "candidates": 9
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-   "in_window": 20,
-   "new": 0,
-   "candidates": 0
+   "in_window": 76,
+   "new": 76,
+   "candidates": 1
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-   "in_window": 8,
-   "new": 3,
+   "in_window": 14,
+   "new": 6,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -48,7 +48,7 @@
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
    "in_window": 3,
-   "new": 1,
+   "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -56,8 +56,8 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 37,
-   "new": 7,
+   "in_window": 39,
+   "new": 8,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -65,7 +65,7 @@
    "source": "Nature Energy",
    "journal": "Nature Energy",
    "status": "ok",
-   "in_window": 1,
+   "in_window": 0,
    "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
@@ -74,23 +74,636 @@
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 170,
-   "new": 38,
+   "in_window": 162,
+   "new": 23,
    "candidates": 0,
-   "new_with_abstract": 18
+   "new_with_abstract": 8
   },
   {
    "source": "Nature Rev. EE",
    "journal": "Nature Reviews Electrical Engineering",
    "status": "ok",
-   "in_window": 4,
+   "in_window": 3,
    "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
   }
  ],
  "errors": [],
- "candidates": [],
+ "candidates": [
+  {
+   "key": "arxiv:2610.18405",
+   "source": "arXiv",
+   "id": "2610.18405",
+   "title": "Impact of Security Modeling Fidelity on Hyperscale Data Center Hosting Capacity Assessment",
+   "abstract": "This paper assesses hyperscale data center hosting capacity in transmission grids. Hosting capacity (HC) analysis quantifies the maximum additional load a bus can accommodate without violating operational constraints. This paper defines data center HC as the maximum time-invariant active power demand at a single target bus over a 24-hour peak-day horizon, and evaluates it under four models of increasing fidelity (i.e., the extent to which the model enforces real-world operational security requirements) on the modified IEEE 24-bus system: (i) DC optimal power flow (DC-OPF) without unit commitment (UC), (ii) basic SCUC (security-constrained unit commitment) without reliability constraints, (iii) SCUC with spinning reserve, and (iv) N-SCUC with both reserve and branch-contingency security. Comparing these models quantifies the impact of unit commitment, reserve requirements, and N-1 security on bus-level HC estimates. The N-SCUC yields an average HC of 444 MW; omitting N-1 security raises this to 532 MW, a 19.8% overestimation. The DC-OPF and basic SCUC models further overestimate HC, indicating a trade-off between model complexity and estimation accuracy.",
+   "authors": [
+    {
+     "name": "Haoxiang Wan",
+     "affiliations": []
+    },
+    {
+     "name": "Linhan Fang",
+     "affiliations": []
+    },
+    {
+     "name": "Jonghwan Kwon",
+     "affiliations": []
+    },
+    {
+     "name": "Jesus Silva-Rodriguez",
+     "affiliations": []
+    },
+    {
+     "name": "Jianyi Yang",
+     "affiliations": []
+    },
+    {
+     "name": "Jaya Yellajosula",
+     "affiliations": []
+    },
+    {
+     "name": "Fan Jiang",
+     "affiliations": []
+    },
+    {
+     "name": "Xingpeng Li",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-10-13",
+   "url": "https://arxiv.org/abs/2610.18405",
+   "matched_terms": [
+    "data center",
+    "hyperscale"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(HTML version not available: HTTPError)"
+  },
+  {
+   "key": "arxiv:2610.18385",
+   "source": "arXiv",
+   "id": "2610.18385",
+   "title": "Impact of Data Center Load on Co-Optimized Generation and Transmission Expansion Planning with Embedded Unit Commitment",
+   "abstract": "The rapid growth of hyperscale data centers challenges grid expansion planning, yet existing studies focus largely on operational flexibility rather than long-term investment decisions. This paper examines how large data center loads sited at multiple buses affect co-optimized Transmission Expansion Planning (TEP) and Generation Expansion Planning (GEP). The problem is formulated as a multi-year, Unit Commitment (UC)-embedded mixed-integer linear program on the modified IEEE 24-bus Reliability Test System (RTS-24) with Electric Reliability Council of Texas (ERCOT)-calibrated renewable energy profiles. A 500 MW data center load, about 17.5% of the base-year peak, is allocated across four buses by voltage level, generation headroom, renewable co-location, and network connectivity. Integrating this load raises the 15-year net present value of total system cost by 1,794 million USD (+61.6%) and the system-average locational marginal price (LMP) by 45.2%, with operating cost dominating capital investment (84.2% versus 15.8%). Renewable curtailment remains negligible: existing renewables are already near full utilization, so the added demand is served almost entirely by incremental thermal generation. Most notably, the load shifts the optimal plan from transmission-only to generation-only, replacing the base-case 230 kV reinforcement with a new 400 MW combined-cycle gas turbine and showing that strategically sited generation can substitute for network reinforcement.",
+   "authors": [
+    {
+     "name": "Haoxiang Wan",
+     "affiliations": []
+    },
+    {
+     "name": "Xingpeng Li",
+     "affiliations": []
+    },
+    {
+     "name": "Jonghwan Kwon",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-10-13",
+   "url": "https://arxiv.org/abs/2610.18385",
+   "matched_terms": [
+    "data center",
+    "data centers",
+    "hyperscale"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Impact of Data Center Load on Co-Optimized Generation and Transmission Expansion Planning with Embedded Unit Commitment Haoxiang Wan Affiliation: Department of Electrical and Computer Engineering University of Houston Houston, TX, USA hwan6@cougarnet.uh.edu Xingpeng Li Affiliation: Department of Electrical and Computer Engineering University of Houston Houston, TX, USA xli83@central.uh.edu Jonghwan Kwon Affiliation: Energy Systems and Infrastructure Analysis Division Argonne National Laboratory Lemont, IL, USA kwonj@anl.gov Abstract The rapid growth of hyperscale data centers challenges grid expansion planning, yet existing studies focus largely on operational flexibility rather than long-term investment decisions. This paper examines how large data center loads sited at multiple buses affect co-optimized Transmission Expansion Planning (TEP) and Generation Expansion Planning (GEP). The problem is formulated as a multi-year, Unit Commitment (UC)-embedded mixed-integer linear program on the modified IEEE 24-bus Reliability Test System (RTS-24) with Electric Reliability Council of Texas (ERCOT)-calibrated renewable energy profiles. A 500 MW data center load, about 17.5% of the base-year peak, is allocated across four buses by voltage level, generation headroom, renewable co-location, and network connectivity. Integrating this load raises the 15-year net present value of total system cost by $1,794M (+61.6%) and the system-average locational marginal price (LMP) by 45.2%, with operating cost dominating capital investment (84.2% versus 15.8%). Renewable curtailment remains negligible: existing renewables are already near full utilization, so the added demand is served almost entirely by incremental thermal generation. Most notably, the load shifts the optimal plan from transmission-only to generation-only, replacing the base-case 230 kV reinforcement with a new 400 MW combined-cycle gas turbine and showing that strategically sited generation can substitute for network reinforcement. Index Terms: Data center, generation expansion planning, transmission expansion planning, unit commitment."
+  },
+  {
+   "key": "arxiv:2610.17942",
+   "source": "arXiv",
+   "id": "2610.17942",
+   "title": "Space-Time Parallel Direct Numerical Simulation of Rayleigh-Bénard Convection",
+   "abstract": "Rayleigh-Bénard convection (RBC) is a model for turbulent flow and challenging to simulate by direct numerical simulation (DNS). Adequate resolution of all relevant length scales requires very fine grids in space and stability restrictions can dictate small step sizes. In this paper, we investigate the use of parallel spectral deferred correction (SDC) as a high-order time-stepping method to reduce wall-clock times of direct numerical simulation of RBC. Performance results on JUSUF (CPUs) and JUPITER (GPUs) with two different codes show parallel SDC can offer some concurrency along the temporal axis plus larger maximum stable time steps. Taken together, this allows for a reduction of wall-clock time required for simulations over one free-fall time by having to compute fewer steps and being able to mitigate the higher cost per time step through temporal parallelization.",
+   "authors": [
+    {
+     "name": "Thomas Saupe",
+     "affiliations": []
+    },
+    {
+     "name": "Thibaut Lunet",
+     "affiliations": []
+    },
+    {
+     "name": "Mathis Bode",
+     "affiliations": []
+    },
+    {
+     "name": "Robert Speck",
+     "affiliations": []
+    },
+    {
+     "name": "Sebastian Götschel",
+     "affiliations": []
+    },
+    {
+     "name": "Daniel Ruprecht",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "math.NA",
+    "cs.DC",
+    "physics.flu-dyn"
+   ],
+   "primary_category": "math.NA",
+   "date": "2026-10-13",
+   "url": "https://arxiv.org/abs/2610.17942",
+   "matched_terms": [
+    "gpus"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Space-Time Parallel Direct Numerical Simulation of Rayleigh-Bénard Convection Thomas Saupe t.baumann@fz-juelich.de Thibaut Lunet thibaut.lunet@tuhh.de Mathis Bode m.bode@fz-juelich.de Robert Speck r.speck@fz-juelich.de Sebastian Götschel sebastian.goetschel@tuhh.de Daniel Ruprecht ruprecht@tuhh.de organization=Forschungszentrum Jülich GmbH,addressline=Wilhelm-Johnen-Straße,city=Jülich, postcode=52428, country=Germany organization=Hamburg University of Technology,addressline=Am Schwarzenberg-Campus 1,city=Hamburg,postcode=21073,country=Germany Abstract Rayleigh-Bénard convection (RBC) is a model for turbulent flow and challenging to simulate by direct numerical simulation (DNS). Adequate resolution of all relevant length scales requires very fine grids in space and stability restrictions can dictate small step sizes. In this paper, we investigate the use of parallel spectral deferred correction (SDC) as a high-order time-stepping method to reduce wall-clock times of direct numerical simulation of RBC. Performance results on JUSUF (CPUs) and JUPITER (GPUs) with two different codes show parallel SDC can offer some concurrency along the temporal axis plus larger maximum stable time steps. Taken together, this allows for a reduction of wall-clock time required for simulations over one free-fall time by having to compute fewer steps and being able to mitigate the higher cost per time step through temporal parallelization. keywords Rayleigh-Bénard convection ,spectral deferred correction ,parallel-in-time ,JUPITER ,GPU computing † † credit: Software, Validation, Investigation, Writing - Original Draft † † credit: Software, Validation, Investigation, Writing - Original Draft † † credit: Conceptualization, Resources † † credit: Conceptualization, Funding acquisition, Resources † † credit: Conceptualization † † credit: Conceptualization, Supervision, Funding acquisition, Writing - Review & Editing † † corresponding: Corresponding author"
+  },
+  {
+   "key": "arxiv:2610.17645",
+   "source": "arXiv",
+   "id": "2610.17645",
+   "title": "Service-Aware Hosting Capacity Assessment of Edge Data Centers with Workload Flexibility",
+   "abstract": "The growing demand for edge computing, content delivery, and AI services is driving the interconnection of edge data centers (DCs) with distribution networks. Before interconnection, utilities evaluate how much DC capacity can be accommodated without violating feeder current and voltage limits. Fixed peak load representations can overlook service dependent demand patterns, cooling related facility demand, and delay tolerant computing tasks. This paper develops a hosting capacity (HC) assessment model for edge DCs with shiftable workload scheduling. Three representative types are considered: mobile edge computing (MEC), content delivery network (CDN), and AI DCs. Facility demand is modeled by combining fixed base demand, service driven demand, prescribed cooling-overhead coefficient, and a shiftable workload component. Workload execution is optimized under arrival causality, maximum delay, daily energy balance constraints, and the resulting active and reactive loads are embedded in a distribution power flow model. Compared with the baseline without load shifting, the maximum bus level HC gain on the IEEE 33-bus system reaches 4.46% for MEC DCs and 9.89% for AI DCs, while CDN case shows negligible gain under the assumed cache management windows.",
+   "authors": [
+    {
+     "name": "Linhan Fang",
+     "affiliations": []
+    },
+    {
+     "name": "Haoxiang Wan",
+     "affiliations": []
+    },
+    {
+     "name": "Anurag Srivastava",
+     "affiliations": []
+    },
+    {
+     "name": "Xingpeng Li",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-10-13",
+   "url": "https://arxiv.org/abs/2610.17645",
+   "matched_terms": [
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(HTML version not available: HTTPError)"
+  },
+  {
+   "key": "arxiv:2610.17551",
+   "source": "arXiv",
+   "id": "2610.17551",
+   "title": "Capacity over TFLOPS: Memory-Centric Deployment of Large Clinical Language Models on Consumer CPUs",
+   "abstract": "The dominant barrier to running large clinical language models at the point of care is not arithmetic throughput but graphics memory: consumer GPUs cap at 4-16 GB, while the working set of a 27-billion-parameter model in 4-bit precision is 17-25 GB. We argue that the edge node should be treated as capacity-enabled (system RAM) rather than compute-limited (GPU VRAM), and we test this on commodity hardware. Using an INT4 build of a 27B open model as an architecture-faithful stand-in for a 27B medical model, we measure the memory footprint, inference latency, energy, and federated communication cost of a fully CPU-based pipeline driven by synthetic Fast Healthcare Interoperability Resources (FHIR) prompts. On two independent consumer machines (a desktop-class machine with 67 GB of RAM and a 6 GB GPU, and a mobile workstation with 34 GB of RAM and a 4 GB GPU) the model loads entirely into system RAM (37% and 60% utilization, respectively) while both GPUs are out-of-memory before the first step. Inference runs at overnight-batch speed (0.6-2.4 tokens/s for the 27B model), and federated fine-tuning would transmit only a 22.6 MB low-rank adapter, a 99.96% reduction over full weights. The capacity result is independent of CPU microarchitecture, RAM size, operating system, and GPU. We further identify an open, CPU- and NPU-optimized inference runtime as the natural production path for this approach, indicating a privacy-preserving and broadly deployable route for on-premises clinical AI. All data is synthetic; this is a research artifact and not a medical device.",
+   "authors": [
+    {
+     "name": "Eli Yune",
+     "affiliations": []
+    },
+    {
+     "name": "Umer Majeed",
+     "affiliations": []
+    },
+    {
+     "name": "Mahesh Balan",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-13",
+   "url": "https://arxiv.org/abs/2610.17551",
+   "matched_terms": [
+    "gpu",
+    "gpus"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Capacity over TFLOPS: Memory-Centric Deployment of Large Clinical Language Models on Consumer CPUs Thanks: Code, synthetic-data generator, and reproduction scripts: https://github.com/balkeumlabs/LLM-on-CPU Eli Yune Affiliation: Balkeum Labs Seongnam, South Korea eli.yune@balkeumlabs.ai Umer Majeed Affiliation: Balkeum Labs Seongnam, South Korea umer.majeed@balkeumlabs.ai Mahesh Balan Affiliation: Claremont Graduate University Claremont, CA, USA balan.mahesh@cgu.edu Abstract The dominant barrier to running large clinical language models at the point of care is not arithmetic throughput but graphics memory: consumer GPUs cap at 4–16 GB, while the working set of a 27-billion-parameter model in 4-bit precision is 17–25 GB. We argue that the edge node should be treated as capacity-enabled (system RAM) rather than compute-limited (GPU VRAM), and we test this on commodity hardware. Using an INT4 build of a 27B open model as an architecture-faithful stand-in for a 27B medical model, we measure the memory footprint, inference latency, energy, and federated communication cost of a fully CPU-based pipeline driven by synthetic Fast Healthcare Interoperability Resources (FHIR) prompts. On two independent consumer machines—a desktop-class machine with 67 GB of RAM and a 6 GB GPU, and a mobile workstation with 34 GB of RAM and a 4 GB GPU—the model loads entirely into system RAM (37% and 60% utilization, respectively) while both GPUs are out-of-memory before the first step. Inference runs at overnight-batch speed (0.6–2.4 tokens/s for the 27B model), and federated fine-tuning would transmit only a 22.6 MB low-rank adapter, a 99.96% reduction over full weights. The capacity result is independent of CPU microarchitecture, RAM size, operating system, and GPU. We further identify an open, CPU- and NPU-optimized inference runtime as the natural production path for this approach, indicating a privacy-preserving and broadly deployable route for on-premises clinical AI. All data is synthetic; this is a research artifact and not a medical device. Index Terms: edge AI, large language models, CPU inference, quantization, low-rank adaptation, federated learning, clinical natural language processing, memory hierarchy"
+  },
+  {
+   "key": "arxiv:2610.17118",
+   "source": "arXiv",
+   "id": "2610.17118",
+   "title": "When LLM Agents See a Conflict but Still Proceed: Cross-Domain Dependencies in Network Slicing",
+   "abstract": "Future AI-native networks are being designed to apply autonomous agents built on large language models (LLMs) in network management through intents. When intents from different domains meet on the same resource, an agent must recognize the cross-domain dependency before taking an irreversible action. We investigate this problem through a smart-grid use case, in which a power utility holds an active intent on a backup slice for protection traffic. This slice appears idle by design, which is precisely the profile targeted by a cost-reduction intent. We built a tool-based environment in which the dependency must be either queried by the agent or read from an inventory annotation, together with a negative control, and evaluated ten models from four different providers in 600 runs. Most models acted against the dependency they had observed: seven of the ten models removed the protection slice at least once after receiving the cross-domain dependency, and in the high-harm tier the slice was removed in 76% of the exposed runs, while four models practically never did. Only one of ten models never removed the slice. We identify two failure modes, not querying the dependency and querying it but proceeding anyway, and show that agents often reported no conflict after observing it. These results indicate that, in AI-native networks, visibility of cross-domain dependencies is not a sufficient safeguard, and that dependency verification should be enforced by the management architecture before irreversible actions rather than delegated to the LLM's judgment.",
+   "authors": [
+    {
+     "name": "Marcos Lima Romero",
+     "affiliations": []
+    },
+    {
+     "name": "Ricardo Suyama",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG",
+    "eess.SY"
+   ],
+   "primary_category": "cs.AI",
+   "date": "2026-10-12",
+   "url": "https://arxiv.org/abs/2610.17118",
+   "matched_terms": [
+    "large language models",
+    "llm",
+    "llms"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "When LLM Agents See a Conflict but Still Proceed: Cross-Domain Dependencies in Network Slicing Marcos Lima Romero 1 ,Ricardo Suyama Affiliation: NEXt-Gen AI-Native Networks - NEXA, Federal University of ABC - UFABC Affiliation: Email: marcos.romero@ufabc.edu.br 1 Abstract Future AI-native networks are being designed to apply autonomous agents built on large language models (LLMs) in network management through intents. When intents from different domains meet on the same resource, an agent must recognize the cross-domain dependency before taking an irreversible action. We investigate this problem through a smart-grid use case, in which a power utility holds an active intent on a backup slice for protection traffic. This slice appears idle by design, which is precisely the profile targeted by a cost-reduction intent. We built a tool-based environment in which the dependency must be either queried by the agent or read from an inventory annotation, together with a negative control, and evaluated ten models from four different providers in 600 runs. Most models acted against the dependency they had observed: seven of the ten models removed the protection slice at least once after receiving the cross-domain dependency, and in the high-harm tier the slice was removed in 76% of the exposed runs, while four models practically never did. Only one of ten models never removed the slice. We identify two failure modes, not querying the dependency and querying it but proceeding anyway, and show that agents often reported no conflict after observing it. These results indicate that, in AI-native networks, visibility of cross-domain dependencies is not a sufficient safeguard, and that dependency verification should be enforced by the management architecture before irreversible actions rather than delegated to the LLM’s judgment. Keywords: 6G, AI-native networks, large language models, AI agents, network slicing, intent-based networking, smart grid."
+  },
+  {
+   "key": "arxiv:2610.17035",
+   "source": "arXiv",
+   "id": "2610.17035",
+   "title": "FlashT2S: GPU-Accelerated Tensor-to-Spike Conversion Operators for Heterogeneous Neuromorphic LLM Backends",
+   "abstract": "Artificial intelligence faces two growing challenges: computational bottlenecks and energy inefficiency inherent to the von Neumann architecture. Neuromorphic computing offers a promising alternative, yet its immature ecosystem still relies on conventional systems for data supply, requiring efficient conversion between tensor and spike dataflow. We observe a clear mismatch, where data conversion is slow while downstream computation is fast. As data size grows quadratically with large language models, this mismatch becomes a major bottleneck. In this work, we examine the data-conversion components that appear on the critical path of training and inference in neuromorphic LLMs. The work presents FlashT2S (Flash Tensor-to-Spike): GPU-Accelerated Tensor-to-Spike Conversion Operators, which applies architecture-aware and data-centric optimizations to reduce conversion latency. Experimental results show that FlashT2S delivers an average speedup of 850.78x over the native operators across individual operators and 802.83x in realistic workloads. Additionally, compared with GPU kernels automatically generated by torch.compile, our kernels achieve 5-11x speedups. Notably, it achieves near-optimal absolute performance: large-scale conversions are reduced to tens of microseconds (10-99 us), while small-scale conversions reach single-digit microsecond levels (less than 10 us). Furthermore, its standardized output enables seamless integration across heterogeneous backends, including diverse neuromorphic hardware.",
+   "authors": [
+    {
+     "name": "Rongyuan Guo",
+     "affiliations": []
+    },
+    {
+     "name": "Haotian Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Yufeng Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Wangdong Yang",
+     "affiliations": []
+    },
+    {
+     "name": "Kenli Li",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-12",
+   "url": "https://arxiv.org/abs/2610.17035",
+   "matched_terms": [
+    "gpu",
+    "large language models",
+    "llm",
+    "llms"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "FlashT2S: GPU-Accelerated Tensor-to-Spike Conversion Operators for Heterogeneous Neuromorphic LLM Backends Rongyuan Guo rongyuanguo@hnu.edu.cn Haotian Wang wanghaotian@hnu.edu.cn Yufeng Zhang yufengzhang@hnu.edu.cn Wangdong Yang yangwangdong@hnu.edu.cn Kenli Li lkl@hnu.edu.cn organization=College of Computer Science and Electronic Engineering, Hunan University, city=Changsha, country=China organization=Yuelushan Center for Industrial Innovation, city=Changsha, state=Hunan, country=China Abstract Artificial intelligence faces two growing challenges: computational bottlenecks and energy inefficiency inherent to the von Neumann architecture. Neuromorphic computing offers a promising alternative, yet its immature ecosystem still relies on conventional systems for data supply, requiring efficient conversion between tensor and spike dataflow. We observe a clear mismatch , where data conversion is slow while downstream computation is fast. As data size grows quadratically with large language models, this mismatch becomes a major bottleneck. In this work, we examine the data-conversion components that appear on the critical path of training and inference in neuromorphic LLMs. The work presents FlashT2S (Flash Tensor-to-Spike): GPU-Accelerated Tensor-to-Spike Conversion Operators, which applies architecture-aware and data-centric optimizations to reduce conversion latency. Experimental results show that FlashT2S delivers an average speedup of 850.78 × \\times over the native operators across individual operators and 802.83 × \\times in realistic workloads. Additionally, compared with GPU kernels automatically generated by torch.compile , our kernels achieve 5–11 × \\times speedups. Notably, it achieves near-optimal absolute performance: large-scale conversions are reduced to tens of microseconds (10–99 μ \\mu s) , while small-scale conversions reach single-digit microsecond levels (¡10 μ \\mu s) . Furthermore, its standardized output enables seamless integration across heterogeneous backends, including diverse neuromorphic hardware. keywords GPU acceleration ,CUDA optimization ,tensor-to-spike conversion ,heterogeneous computing ,neuromorphic large language models † † corresponding: Corresponding author"
+  },
+  {
+   "key": "arxiv:2610.16918",
+   "source": "arXiv",
+   "id": "2610.16918",
+   "title": "A Power-Trajectory Framework for Data Center Participation in Day-Ahead Markets",
+   "abstract": "The rapid expansion of artificial intelligence (AI) is driving substantial growth in data center electricity demand. Interval-based energy blocks in day-ahead markets do not explicitly retain predictable intra-interval demand evolution, potentially creating mismatches with ramp-feasible generation trajectories and affecting settlement. This paper proposes a power-trajectory framework in which data centers declare predictable aggregate demand evolution through continuous demand-side power trajectories before market clearing. The declared trajectories are treated as exogenous inputs for constructing generation trajectories and the corresponding price trajectory. For feasible market-clearing outcomes, physical temporal consistency is established through continuous-time power balance and satisfaction of the modeled generation operating constraints, while economic temporal consistency is established by preserving the dispatch-price correspondence in energy settlement on a common temporal basis. Under the adopted settlement definitions, a trajectory-based settlement analysis separately quantifies the monetary magnitude of representation-induced power imbalances and the supply-side compensation that may remain under temporally consistent clearing and settlement. An illustrative 5-bus case demonstrates the elimination of representation-induced power imbalance and identifies the timing and physical sources of supply-side compensation. A modified IEEE RTS-GMLC case further illustrates these compensation effects across multiple generating units under workload-driven data center demand variations.",
+   "authors": [
+    {
+     "name": "Menghan Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Caisheng Wang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-10-12",
+   "url": "https://arxiv.org/abs/2610.16918",
+   "matched_terms": [
+    "data center",
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(HTML version not available: HTTPError)"
+  },
+  {
+   "key": "arxiv:2610.16395",
+   "source": "arXiv",
+   "id": "2610.16395",
+   "title": "Space AI Infrastructure: Where the Edge Meets the Orbital Cloud",
+   "abstract": "The fusion of artificial intelligence (AI) and space technologies is extending spaceborne intelligence beyond onboard payloads toward a global infrastructure, here termed Space AI infrastructure (SpaceAI-Infra). Its promise rests on two distinctive advantages of space systems: abundant solar energy in orbit and the global reach of satellite constellations. Realizing this promise hinges on a fundamental systems question: How should satellite constellations be designed and orchestrated to deliver data-center-scale AI services competitive with their terrestrial counterparts? This article develops a roadmap-oriented answer. We first chart the evolution of SpaceAI-Infra through three progressive stages: onboard AI, Space Edge AI, and Space Cloud AI. By revisiting the space-constrained fundamentals for end-to-end token services, we derive enabling design principles and translate them into an integrated space edge--cloud architecture. The communication-centric space edge comprises free-flying LEO constellations that provide user-proximate computing and form the access and backhaul fabric for cloud AI services. Complementing the edge, the computing-centric space cloud comprises formation-flying satellite constellations organized as space data centers in dawn--dusk sun-synchronous orbits. A case study demonstrates that the proposed architecture can support data-center-scale foundation-model inference for millions of concurrent users worldwide.",
+   "authors": [
+    {
+     "name": "Zhanwei Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Jianhao Huang",
+     "affiliations": []
+    },
+    {
+     "name": "Min Sheng",
+     "affiliations": []
+    },
+    {
+     "name": "Kaibin Huang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-12",
+   "url": "https://arxiv.org/abs/2610.16395",
+   "matched_terms": [
+    "ai infrastructure",
+    "data centers",
+    "data-center"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Space AI Infrastructure: Where the Edge Meets the Orbital Cloud Zhanwei Wang, Jianhao Huang, Min Sheng, and Kaibin Huang † † thanks: Z.˜Wang, J.˜Huang, and K.˜Huang are with the Department of Electrical and Computer Engineering, The University of Hong Kong (HKU), Hong Kong SAR, China (e-mail: zhanwei.wang@hku.hk; Jianhaoh@hku.hk; huangkb@eee.hku.hk). Corresponding author: K.˜Huang. † † thanks: M.˜Sheng is with the State Key Laboratory of Integrated Service Networks, Xidian University (XDU), Xi’an, Shaanxi, China (e-mail: msheng@mail.xidian.edu.cn). Abstract The fusion of artificial intelligence (AI) and space technologies is extending spaceborne intelligence beyond onboard payloads toward a global infrastructure, here termed Space AI infrastructure (SpaceAI-Infra). Its promise rests on two distinctive advantages of space systems: abundant solar energy in orbit and the global reach of satellite constellations. Realizing this promise hinges on a fundamental systems question: How should satellite constellations be designed and orchestrated to deliver data-center-scale AI services competitive with their terrestrial counterparts? This article develops a roadmap-oriented answer. We first chart the evolution of SpaceAI-Infra through three progressive stages: onboard AI, Space Edge AI, and Space Cloud AI. By revisiting the space-constrained fundamentals for end-to-end token services, we derive enabling design principles and translate them into an integrated space edge–cloud architecture. The communication-centric space edge comprises free-flying LEO constellations that provide user-proximate computing and form the access and backhaul fabric for cloud AI services. Complementing the edge, the computing-centric space cloud comprises formation-flying satellite constellations organized as space data centers in dawn–dusk sun-synchronous orbits. A case study demonstrates that the proposed architecture can support data-center-scale foundation-model inference for millions of concurrent users worldwide. Index Terms: AI infrastructure, Edge and cloud computing in space, Formation-flying satellite constellations, and Space-based token services."
+  },
+  {
+   "key": "arxiv:2610.16374",
+   "source": "arXiv",
+   "id": "2610.16374",
+   "title": "From Nominal Capacity to Deliverable Compute: Design, Calibration and Validation of the D-PIN SCU Dynamic Metering System",
+   "abstract": "Nominal chip specifications do not capture the compute deliverable by heterogeneous distributed networks under communication, runtime and verification constraints. We formalize D-PIN Standardized Compute Units (D-PIN SCU) as a dynamic metering system for deliverable compute. The system combines five-dimensional resource normalization with topology-aware and runtime-corrected metering. A cluster-scale Roofline model yields a closed-form communication ridge, while runtime factors describe thermal, fault and load effects. We show that runtime deviations cannot be identified from nominal specifications alone. Uniform re-anchoring preserves relative metering results, and a simplex-constrained calibration algorithm estimates resource weights. The framework couples Proof-of-Physical-Work verification to a no-arbitrage condition for over-claiming and electricity-aware pricing. An end-to-end recomputation on the Zhangjiang Science Gate production node covers ten heterogeneous 8-GPU servers totaling 59.5 D-PIN SCU. Billed throughput of approximately 33,000 D-PIN SCU-hours is consistent with the physical upper bound at 78% utilization over 720 hours. Derived metrics are 3.02 kW per D-PIN SCU at the supply-and-distribution design boundary and 0.26 D-PIN SCU-hours per delivered kWh. Empirically calibrated chip values differ materially from datasheet projections; the published calibration is not independently reproducible from vendor specifications. Validation is limited to one production node, and the originality claim concerns the integrated system rather than the SCU terminology or individual components. The framework provides a basis for scheduling, verification and pricing of deliverable compute in distributed heterogeneous networks.",
+   "authors": [
+    {
+     "name": "Cheng Li",
+     "affiliations": []
+    },
+    {
+     "name": "Jiexiong Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Shikun Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Feiyu Ren",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-12",
+   "url": "https://arxiv.org/abs/2610.16374",
+   "matched_terms": [
+    "gpu"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(author block not found in HTML)"
+  },
+  {
+   "key": "arxiv:2610.15886",
+   "source": "arXiv",
+   "id": "2610.15886",
+   "title": "Learning based Scalable Multi-Objective Scheduling of Workflows across UD-IaaS-FaaS Systems",
+   "abstract": "Workflow scheduling in user device-centric edge-cloud computing has emerged as a challenging problem due to the need to jointly optimize execution performance, energy consumption, and monetary cost. Modern workflows consist of heterogeneous tasks, where compute-intensive components are well-suited for Infrastructure-as-a-Service (IaaS) resources, while fine-grained, event-driven tasks are more efficiently executed using the Function-as-a-Service (FaaS) model. We formulate this scheduling problem for application workflows over a hybrid User Device (UD)-IaaS-FaaS computing continuum as a multi-objective Mixed-Integer Linear Program (MILP). The formulation models the workflow execution mechanism by incorporating cumulative capacity constraints for IaaS resources and elastic resource provisioning for FaaS. To overcome the intractability of MILP, we propose a learning-based framework that combines graph neural networks, surrogate performance modeling, and a multi-sample REINFORCE approach. The proposed approach is workflow-aware, leveraging task pairing to improve data locality and structured task placement decisions. Agent training is organized into three stages: small-scale learning of UD-IaaS trade-offs, intermediate locality aware co-location, and large-scale handling of parallelism and aggregation bottlenecks in workflows. The proposed framework is validated through real-world experiments using the Pegasus Montage workflow on a custom UD-IaaS-FaaS testbed comprising a user device, multiple IaaS nodes, and serverless FaaS instances. Extensive experimental results demonstrate the improved trade-offs across makespan, energy consumption, and cost. Compared with the genetic algorithm and greedy scheduling approaches, the proposed approach reduces makespan by 10-17.5%, energy consumption by 3-9%, and cost by 4-10%, while remaining within 3.5-5.6% of the MILP optimum.",
+   "authors": [
+    {
+     "name": "G Vasantha Reddy",
+     "affiliations": []
+    },
+    {
+     "name": "Ram Bansal",
+     "affiliations": []
+    },
+    {
+     "name": "Krashna",
+     "affiliations": []
+    },
+    {
+     "name": "Suvarthi Sarkar",
+     "affiliations": []
+    },
+    {
+     "name": "Aryabartta Sahu",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.PF"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-11",
+   "url": "https://arxiv.org/abs/2610.15886",
+   "matched_terms": [
+    "cloud computing"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Learning based Scalable Multi-Objective Scheduling of Workflows across UD-IaaS-FaaS Systems Conference: 28th International Conference on Distributed Computing and Networking; January 4–7, 2027; Surathkal, India CCS: Computer systems organization Cloud computing CCS: Software and its engineering Allocation and scheduling G Vasantha Reddy Affiliation: IIT Guwahati , Guwahati , India email: r.vasantha@iitg.ac.in , Ram Bansal Note: These authors contributed equally to this work. Affiliation: IIT Guwahati , Guwahati , India email: ram.bansal@iitg.ac.in , Krashna Affiliation: IIT Guwahati , Guwahati , India email: krashna@iitg.ac.in , Suvarthi Sarkar Affiliation: University of Western Australia India , Mumbai , India email: suvarthi.sarkar@india.uwa.edu.au and Aryabartta Sahu Affiliation: IIT Guwahati , Guwahati , India email: asahu@iitg.ac.in © none Abstract. Workflow scheduling in user device-centric edge–cloud computing has emerged as a challenging problem due to the need to jointly optimize execution performance, energy consumption, and monetary cost. Modern workflows consist of heterogeneous tasks, where compute-intensive components are well-suited for Infrastructure-as-a-Service (IaaS) resources, while fine-grained, event-driven tasks are more efficiently executed using the Function-as-a-Service (FaaS) model. We formulate this scheduling problem for application workflows over a hybrid User Device (UD)-IaaS-FaaS computing continuum as a multi-objective Mixed-Integer Linear Program (MILP). The formulation models the workflow execution mechanism by incorporating cumulative capacity constraints for IaaS resources and elastic resource provisioning for FaaS. To overcome the intractability of MILP, we propose a learning-based framework that combines graph neural networks, surrogate performance modeling, and a multi-sample REINFORCE approach. The proposed approach is workflow-aware, leveraging task pairing to improve data locality and structured task placement decisions. Agent training is organized into three stages: small-scale learning of UD-IaaS trade-offs, intermediate locality aware co-location, and large-scale handling of parallelism and aggregation bottlenecks in workflows. The proposed framework is validated through real-world experiments using the Pegasus Montage workflow on a custom UD-IaaS–FaaS testbed comprising a user device, multiple IaaS nodes, and serverless FaaS instances. Extensive experimental results demonstrate the improved trade-offs across m"
+  },
+  {
+   "key": "arxiv:2610.15872",
+   "source": "arXiv",
+   "id": "2610.15872",
+   "title": "The Role of Generative Artificial Intelligence in Testing and Automation of Open RAN Systems: GNG-OTA Framework",
+   "abstract": "Open Radio Access Networks (O-RAN) empower operators with choice and customization through their disaggregated and interoperable architecture. However, ensuring interoperability in O-RAN presents challenges due to complex testing environments and evolving specifications. This paper addresses these challenges by proposing the Generative AI and Graph Neural Network-based Open RAN Testing and Automation (GNG-OTA) framework. GNG-OTA utilizes state-of-the-art AI techniques including generative AI, natural language processing, and graph neural networks to enable accurate, reliable, efficient, and automatic O-RAN interoperability and performance testing.",
+   "authors": [
+    {
+     "name": "Aly Sabri Abdalla",
+     "affiliations": []
+    },
+    {
+     "name": "Vuk Marojevic",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SP",
+    "cs.CR"
+   ],
+   "primary_category": "eess.SP",
+   "date": "2026-10-11",
+   "url": "https://arxiv.org/abs/2610.15872",
+   "matched_terms": [
+    "generative ai"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "The Role of Generative Artificial Intelligence in Testing and Automation of Open RAN Systems: GNG-OTA Framework PubID: pubid: 979-8-3315-2037-3/25/0̇0 ©2025 IEEE Aly Sabri Abdalla and Vuk Marojevic Affiliation: Affiliation: Department of Electrical and Computer Engineering, Mississippi State University, USA Affiliation: Affiliation: {asa298,vm602}@msstate.edu Abstract Open Radio Access Networks (O-RAN) empower operators with choice and customization through their disaggregated and interoperable architecture. However, ensuring interoperability in O-RAN presents challenges due to complex testing environments and evolving specifications. This paper addresses these challenges by proposing the Generative AI and Graph Neural Network-based Open RAN Testing and Automation (GNG-OTA) framework. GNG-OTA utilizes state-of-the-art AI techniques including generative AI, natural language processing, and graph neural networks to enable accurate, reliable, efficient, and automatic O-RAN interoperability and performance testing. Index Terms: O-RAN, testing, automation, AI, interoperability, performance, conformance, GAI, NLP, GNN."
+  },
+  {
+   "key": "arxiv:2610.15730",
+   "source": "arXiv",
+   "id": "2610.15730",
+   "title": "A Dependency-Aware Multi-GPU Training Framework for Temporal Graph Neural Networks",
+   "abstract": "Temporal graph neural networks (TGNNs) achieve superior performance in many dynamic graph learning tasks. These models use node state vectors (i.e., memories) to capture and record graph changes (i.e., events), and then exploit these memories to assist prediction. However, this memory-centric design makes multi-GPU training challenging because predictions for later events often depend on memory updates from earlier events. To maintain model quality, existing multi-GPU TGNN training schemes strictly preserve all event dependencies, which limits parallelism and causes expensive cross-GPU memory synchronization. In this work, we observe that many of these dependencies can be handled more flexibly without harming training quality. Specifically, (a) dependencies in TGNN training have high locality in both time and graph topology, (b) the short-range dependencies missed within a large batch can often be recovered cheaply, and (c) many memory updates are not immediately needed. Based on these observations, we propose DepBloom to accelerate multi-GPU TGNN training with three techniques: (1) temporally bounded spatial partitioning to reduce unnecessary cross-GPU synchronization and improve parallelism; (2) intra-batch memory refinement to recover missing short-range temporal dependencies inside enlarged batches; and (3) critical-path optimization to prioritize urgent memory updates while deferring non-critical work during multi-GPU pipeline execution. Experimental results across representative models and diverse datasets show that DepBloom achieves an average speedup of 2.84$\\times$ and up to 5.16$\\times$ over state-of-the-art methods, while maintaining comparable or better model accuracy.",
+   "authors": [
+    {
+     "name": "Yang Zhao",
+     "affiliations": []
+    },
+    {
+     "name": "Yue Dai",
+     "affiliations": []
+    },
+    {
+     "name": "Liang Qiao",
+     "affiliations": []
+    },
+    {
+     "name": "Buxin Tu",
+     "affiliations": []
+    },
+    {
+     "name": "Bo Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Sen Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Yi Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Xiaoyu Hao",
+     "affiliations": []
+    },
+    {
+     "name": "Jun Shi",
+     "affiliations": []
+    },
+    {
+     "name": "Junshi Chen",
+     "affiliations": []
+    },
+    {
+     "name": "Hong An",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.LG",
+    "cs.DC"
+   ],
+   "primary_category": "cs.LG",
+   "date": "2026-10-11",
+   "url": "https://arxiv.org/abs/2610.15730",
+   "matched_terms": [
+    "gpu"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "A Dependency-Aware Multi-GPU Training Framework for Temporal Graph Neural Networks Conference: Make sure to enter the correct conference title from your rights confirmation emai; June 03–05, 2018; Woodstock, NY Yang Zhao Note: Both authors contributed equally to this research. email: yang_zhao@mail.ustc.edu.cn Affiliation: University of Science and Technology of China , Hefei , Anhui , China , Yue Dai email: ydai21@illinoistech.edu Affiliation: Illinois Institute of Technology , Chicago , Illinois , USA , Liang Qiao email: ql1an9@mail.ustc.edu.cn Affiliation: University of Science and Technology of China , Hefei , Anhui , China , Buxin Tu email: tubuxin@mail.ustc.edu.cn Affiliation: University of Science and Technology of China , Hefei , Anhui , China , Bo Liu email: liubo22@mail.ustc.edu.cn Affiliation: University of Science and Technology of China , Hefei , Anhui , China , Sen Zhang email: sen@mail.ustc.edu.cn Affiliation: University of Science and Technology of China , Hefei , Anhui , China , Yi Zhang email: yi_zhang@mail.ustc.edu.cn Affiliation: University of Science and Technology of China , Hefei , Anhui , China , Xiaoyu Hao email: haoxiaoyu@mail.ustc.edu.cn Affiliation: University of Science and Technology of China , Hefei , Anhui , China , Jun Shi email: shijun18@ustc.edu.cn Affiliation: University of Science and Technology of China , Hefei , Anhui , China , Junshi Chen email: cjuns@ustc.edu.cn Affiliation: University of Science and Technology of China , Hefei , Anhui , China and Hong An email: han@ustc.edu.cn Affiliation: University of Science and Technology of China , Hefei , Anhui , China Abstract. Temporal graph neural networks (TGNNs) achieve superior performance in many dynamic graph learning tasks. These models use node state vectors (i.e., memories) to capture and record graph changes (i.e., events), and then exploit these memories to assist prediction. However, this memory-centric design makes multi-GPU training challenging because predictions for later events often depend on memory updates from earlier events. To maintain model quality, existing multi-GPU TGNN training schemes strictly preserve all event dependencies, which limits parallelism and causes expensive cross-GPU memory synchronization. In this work, we observe that many of these dependencies can be handled more flexibly without harming training quality. Specifically, (a) dependencies in TGNN training have high locality in both time and graph topology, (b) the short-range depend"
+  },
+  {
+   "key": "arxiv:2610.14793",
+   "source": "arXiv",
+   "id": "2610.14793",
+   "title": "Energy-Aware Agentic Orchestration for Multi-Site Service Deployment",
+   "abstract": "Energy-aware orchestration across geographically distributed infrastructures is increasingly important as data centers absorb growing Artificial Intelligence (AI) workloads. However, existing approaches often exclude the energy cost of automated decision-making from system-level sustainability assessments. This paper presents an energy-aware agentic orchestration framework that treats Large Language Model (LLM) reasoning as a measurable component of the control loop. We compare single-shot tool calling, ReAct, and plan-and-execute strategies on a multi-site Kubernetes testbed spanning two European data centers and instrumented at layers ranging from power distribution units to per-pod energy attribution. Using ten natural-language orchestration intents with varying decision complexity, we show that reasoning strategy and intent complexity strongly influence graphics processing unit (GPU) energy consumption during orchestration decisions. ReAct and plan-and-execute generated executable tool calls across all evaluated intents but required multiple LLM inferences, whereas the single-shot configuration was less costly but non-actionable. Prefix caching reduced mean ReAct GPU energy consumption by 29.4%. For the evaluated lightweight workload, the infrastructure-energy changes observed within the one-second measurement window were insufficient to offset the measured GPU decision energy. These findings demonstrate the importance of accounting for reasoning overhead when assessing the sustainability of AI-native orchestration and motivate energy-budgeted selection of agent strategies.",
+   "authors": [
+    {
+     "name": "Rodrigo Moreira",
+     "affiliations": []
+    },
+    {
+     "name": "Alisson Chaves",
+     "affiliations": []
+    },
+    {
+     "name": "Larissa F. Rodrigues Moreira",
+     "affiliations": []
+    },
+    {
+     "name": "Tereza Carvalho",
+     "affiliations": []
+    },
+    {
+     "name": "Tiago Barros",
+     "affiliations": []
+    },
+    {
+     "name": "Daniel Corujo",
+     "affiliations": []
+    },
+    {
+     "name": "Rui Aguiar",
+     "affiliations": []
+    },
+    {
+     "name": "David Gomez-Barquero",
+     "affiliations": []
+    },
+    {
+     "name": "Flávio de Oliveira Silva",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.NI",
+    "cs.DC"
+   ],
+   "primary_category": "cs.NI",
+   "date": "2026-10-10",
+   "url": "https://arxiv.org/abs/2610.14793",
+   "matched_terms": [
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Energy-Aware Agentic Orchestration for Multi-Site Service Deployment Rodrigo Moreira 1 , Alisson Chaves 2, 3 , Larissa F. Rodrigues Moreira 1 , Tereza Carvalho 4 , Tiago Barros 3 , Daniel Corujo 3 , Rui Aguiar 3 , David Gomez-Barquero 5 , Flávio de Oliveira Silva 6 Affiliation: 1 Federal University of Viçosa (UFV), Minas Gerais, Brazil 2 Federal University of Uberlândia (UFU), Minas Gerais, Brazil 3 Instituto de Telecomunicações and Universidade de Aveiro (UA), Aveiro, Portugal 4 University of São Paulo (USP), São Paulo, Brazil 5 Universitat Politecnica de València (UPV) Valencia, Spain 6 University of Minho (UMinho), Braga, Portugal Emails: {rodrigo, larissa.f.rodrigues}@ufv.br, alisson@ufu.br, terezacarvalho@usp.br, {aoc.alisson, tiagobarros, dcorujo, ruilaa}@av.it.pt, dagobar@iteam.upv.es, flavio@di.uminho.pt Abstract Energy-aware orchestration across geographically distributed infrastructures is increasingly important as data centers absorb growing Artificial Intelligence (AI) workloads. However, existing approaches often exclude the energy cost of automated decision-making from system-level sustainability assessments. This paper presents an energy-aware agentic orchestration framework that treats Large Language Model (LLM) reasoning as a measurable component of the control loop. We compare single-shot tool calling, ReAct, and plan-and-execute strategies on a multi-site Kubernetes testbed spanning two European data centers and instrumented at layers ranging from power distribution units to per-pod energy attribution. Using ten natural-language orchestration intents with varying decision complexity, we show that reasoning strategy and intent complexity strongly influence graphics processing unit (GPU) energy consumption during orchestration decisions. ReAct and plan-and-execute generated executable tool calls across all evaluated intents but required multiple LLM inferences, whereas the single-shot configuration was less costly but non-actionable. Prefix caching reduced mean ReAct GPU energy consumption by 29.4%. For the evaluated lightweight workload, the infrastructure-energy changes observed within the one-second measurement window were insufficient to offset the measured GPU decision energy. These findings demonstrate the importance of accounting for reasoning overhead when assessing the sustainability of AI-native orchestration and motivate energy-budgeted selection of agent strategies. Index Terms: Green networking, Energy-aware orchestration, Age"
+  },
+  {
+   "key": "arxiv:2610.14571",
+   "source": "arXiv",
+   "id": "2610.14571",
+   "title": "Dissecting the Carbon-SLO Tension in Geo-Distributed LLM Serving",
+   "abstract": "Large Language Model (LLM) inference is driving a growing share of datacenter carbon emissions. Although carbon-aware scheduling can reduce these emissions in geo-distributed datacenters by exploiting the spatiotemporal variations in grid carbon intensity, the latency-sensitive nature of LLM serving constrains this design space. While prior studies investigate the carbon savings achievable through spatial scheduling, they oversimplify the dynamics of modern inference engines, such as queueing and continuous batching, which strongly shape inference latency. We address this issue by designing and evaluating a latency-centric, geo-distributed inference simulator, calibrated with hardware-grounded latency and power measurements, that reproduces these dynamics and enables the study of carbon savings under strict service-level objectives (SLOs). We then formulate a series of SLO- and carbon-aware schedulers of increasing sophistication, from per-request heuristics to batch-level optimization: (i) a greedy heuristic, (ii) an integer linear programming (ILP)-based scheduler jointly assigning batches of requests, (iii) an iterative ILP-based solution projecting its own assignments back into the load estimates to capture load coupling, and (iv) a facility mixed-integer linear programming (MILP) scheduler pricing the energy of batched requests collectively rather than in isolation. Across three LLMs under MLPerf SLOs and varying system loads, the MILP-based option offers the best carbon-SLO balance, reducing carbon emissions by up to 60% relative to the round-robin policy, with an average SLO violation of 3%. Our characterization further shows that savings grow with the spread of carbon intensity across datacenters and shrink as system load increases, while SLO attainment depends on how frequently schedulers receive datacenters' load updates.",
+   "authors": [
+    {
+     "name": "Burak Topcu",
+     "affiliations": []
+    },
+    {
+     "name": "Musa Cim",
+     "affiliations": []
+    },
+    {
+     "name": "Zuhal Ozturk",
+     "affiliations": []
+    },
+    {
+     "name": "Mahmut Taylan Kandemir",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.LG",
+    "cs.PF"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-10",
+   "url": "https://arxiv.org/abs/2610.14571",
+   "matched_terms": [
+    "datacenter",
+    "datacenters"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Dissecting the Carbon–SLO Tension in Geo-Distributed LLM Serving Burak Topcu, Musa Cim, Zuhal Ozturk, Mahmut Taylan Kandemir Affiliation: Department of Computer Science and Engineering The Pennsylvania State University State College, PA 16801, USA {bvt5283, mtc5693, zbo5031, mtk2}@psu.edu Abstract Large Language Model (LLM) inference is driving a growing share of datacenter carbon emissions. Although carbon-aware scheduling can reduce these emissions in geo-distributed datacenters by exploiting the spatiotemporal variations in grid carbon intensity, the latency-sensitive nature of LLM serving constrains this design space. While prior studies investigate the carbon savings achievable through spatial scheduling, they oversimplify the dynamics of modern inference engines, such as queueing and continuous batching, which strongly shape inference latency. We address this issue by designing and evaluating a latency-centric, geo-distributed inference simulator, calibrated with hardware-grounded latency and power measurements, that reproduces these dynamics and enables the study of carbon savings under strict service-level objectives (SLOs). We then formulate a series of SLO- and carbon-aware schedulers of increasing sophistication, from per-request heuristics to batch-level optimization: (i) a greedy heuristic, (ii) an integer linear programming (ILP)-based scheduler jointly assigning batches of requests, (iii) an iterative ILP-based solution projecting its own assignments back into the load estimates to capture load coupling, and (iv) a facility mixed-integer linear programming (MILP) scheduler pricing the energy of batched requests collectively rather than in isolation. Across three LLMs under MLPerf SLOs and varying system loads, the MILP-based option offers the best carbon–SLO balance, reducing carbon emissions by up to 60% relative to the round-robin policy, with an average SLO violation of 3%. Our characterization further shows that savings grow with the spread of carbon intensity across datacenters and shrink as system load increases, while SLO attainment depends on how frequently schedulers receive datacenters’ load updates. Index Terms: Geo-distributed LLM Services, Carbon-Aware Inference Scheduling, LLM Inference."
+  }
+ ],
  "title_only_final": [],
  "pending_items": [
   {
@@ -299,12 +912,6 @@
   },
   {
    "source": "Nature Communications",
-   "title": "Exocomets in a planet nursery",
-   "url": "https://doi.org/10.1038/s41467-026-78757-6",
-   "first_seen": "2026-10-13"
-  },
-  {
-   "source": "Nature Communications",
    "title": "Author Correction: UNCOVERseq enables sensitive and controlled gene editing off-target nomination across CRISPR-Cas modalities and systems",
    "url": "https://doi.org/10.1038/s41467-026-78544-3",
    "first_seen": "2026-10-13"
@@ -422,11 +1029,184 @@
    "title": "Environmental synergies and trade-offs in the rapid transition of China's electricity system",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129044",
    "first_seen": "2026-10-13"
+  },
+  {
+   "source": "TSG",
+   "title": "Multi-Timescale Energy Management Strategy for Microgrid Considering Bidirectional Prediction Bias Risks",
+   "url": "https://doi.org/10.1109/tsg.2026.3743214",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "TSG",
+   "title": "Correlation-assisted Anomaly Detection and Localization in Distributed Energy Resource Sensor Data",
+   "url": "https://doi.org/10.1109/tsg.2026.3743229",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "TSG",
+   "title": "Decision-Dependent Wasserstein Distributionally Robust Dispatch for Incentive-Based Coordination of Active Distribution Networks and Microgrids",
+   "url": "https://doi.org/10.1109/tsg.2026.3743138",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "TSG",
+   "title": "Coordinated Optimal Charging Scheduling of Multiple Electric Aircraft Battery Swapping Stations Under Grid Security Constraints",
+   "url": "https://doi.org/10.1109/tsg.2026.3742633",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "TSG",
+   "title": "Uncertainty Allocation-based Tube Model Predictive Control for Building Energy Management",
+   "url": "https://doi.org/10.1109/tsg.2026.3743186",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "TSG",
+   "title": "Dispatch Deviation Reduction-oriented Virtual Power Plant Aggregation",
+   "url": "https://doi.org/10.1109/tsg.2026.3742828",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Risk-aware cooperative planning of energy storage in multi-regional power systems under extreme weather: CVaR-based transfer pricing and contribution-based Nash bargaining",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128987",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Learning scheduling-relevant joint uncertainty: Decision-aware compound-risk forecasting for microgrid dispatch",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129026",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Causality-constrained hierarchical LLM agents for online rule adaptation in building HVAC control",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129012",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Transferable state-of-charge prediction across temperature domains for lithium-ion and semi-solid batteries",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129031",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Accurately modeling long-term storage with minimum representative hours in large-scale renewable energy systems",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128989",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Epeditor: A scalable platform for large-ensemble building energy simulation enabling agent-assisted automation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129029",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Strategic scenario planning for hydrogen supply chains via graph convolutional networks: overcoming mid-stream infrastructure bottlenecks in energy transitions",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128999",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "A stochastic techno-economic framework for hydrogen-based maritime decarbonisation under market and policy uncertainty",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129002",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Unmet care needs at the end-of-life among older adults with activity limitations",
+   "url": "https://doi.org/10.1038/s41467-026-74719-0",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "NiCLIP: neuroimaging contrastive language-image pretraining model for predicting text from brain activation images",
+   "url": "https://doi.org/10.1038/s41467-026-78451-7",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: Improved pharmacodynamics of epidermal growth factor via microneedles-based self-powered transcutaneous electrical stimulation",
+   "url": "https://doi.org/10.1038/s41467-026-78566-x",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Securing critical rare-earth supply through end-of-life NdFeB magnets recycling via molten salt electrolysis with consumable Mg-cathode",
+   "url": "https://doi.org/10.1038/s41467-026-78305-2",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: Engineered CRISPR-OsCas12f1 and RhCas12f1 with robust activities and expanded target range for genome editing",
+   "url": "https://doi.org/10.1038/s41467-026-78550-5",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Population-resolved single-emitter spectroscopy",
+   "url": "https://doi.org/10.1038/s41467-026-78155-y",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A multi-stage engineering framework for feasible scheduling of large-scale energy batch transport systems",
+   "url": "https://doi.org/10.1038/s41467-026-78556-z",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Colossal visible birefringence and ultraviolet hyperbolicity in wide bandgap semiconductor CuAlO2",
+   "url": "https://doi.org/10.1038/s41467-026-78383-2",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Controlled crosslink cleavage and phase separation enable highly stretchable and strong 3D-printed hydrogel for soft robotics",
+   "url": "https://doi.org/10.1038/s41467-026-78658-8",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Gamma-alumina as a highly active hydrogenation catalyst deciphered by molecular nitrogen",
+   "url": "https://doi.org/10.1038/s41467-026-78512-x",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Disrupting the NAD+/NAM metabolic ratio driven by IL-1β inflammatory response potentiates chemotherapy and chemoimmunotherapy in mice",
+   "url": "https://doi.org/10.1038/s41467-026-78491-z",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Metabolically reprogrammed blastoids from totipotent-like stem cells exhibit enhanced tissue-specific organ-like development and placental formation",
+   "url": "https://doi.org/10.1038/s41467-026-78227-z",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Wireless, optoelectronic, multimodal skin sensor for simultaneous monitoring of mechanical stress and vascular responses",
+   "url": "https://doi.org/10.1038/s41467-026-77832-2",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Precise construction of antiparallel-stacked 2D imine covalent organic frameworks for atmospheric water harvesting",
+   "url": "https://doi.org/10.1038/s41467-026-78318-x",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "High average and linear scaling of Ecological Footprint in cities",
+   "url": "https://doi.org/10.1038/s41467-026-78515-8",
+   "first_seen": "2026-10-14"
   }
  ],
- "pending_abstract": 55,
+ "pending_abstract": 83,
  "runs_utc": [
-  "2026-10-13T08:32:35+00:00",
-  "2026-10-13T12:35:19+00:00"
+  "2026-10-14T10:02:54+00:00"
  ]
 }
