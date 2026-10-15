@@ -1,6 +1,6 @@
 {
  "date": "2026-10-15",
- "generated_utc": "2026-10-15T07:43:34+00:00",
+ "generated_utc": "2026-10-15T09:45:34+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
@@ -56,8 +56,8 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 37,
-   "new": 4,
+   "in_window": 39,
+   "new": 6,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -805,10 +805,23 @@
    "title": "A swing-type solid-state host–guest system enabling spontaneous adsorption–desorption cycling",
    "url": "https://doi.org/10.1038/s41467-026-78693-5",
    "first_seen": "2026-10-15"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Multi-head actor-critic proximal policy optimization for coordinated control of EV charging and battery storage in PV-integrated microgrids",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129008",
+   "first_seen": "2026-10-15"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Maximising self-consumption in energy communities: a comparative study of demand flexibility and dynamic sharing strategies",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129027",
+   "first_seen": "2026-10-15"
   }
  ],
- "pending_abstract": 59,
+ "pending_abstract": 61,
  "runs_utc": [
-  "2026-10-15T07:43:34+00:00"
+  "2026-10-15T07:43:34+00:00",
+  "2026-10-15T09:45:34+00:00"
  ]
 }
