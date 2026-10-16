@@ -1,45 +1,45 @@
 {
- "date": "2026-10-15",
- "generated_utc": "2026-10-15T09:45:34+00:00",
+ "date": "2026-10-16",
+ "generated_utc": "2026-10-16T09:38:15+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-10-11",
-   "2026-10-15"
+   "2026-10-12",
+   "2026-10-16"
   ],
   "journal_doi_created": [
-   "2026-10-09",
-   "2026-10-15"
+   "2026-10-10",
+   "2026-10-16"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-   "in_window": 120,
-   "new": 38,
-   "candidates": 4
+   "in_window": 139,
+   "new": 35,
+   "candidates": 2
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-   "in_window": 69,
+   "in_window": 74,
    "new": 15,
-   "candidates": 1
+   "candidates": 2
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-   "in_window": 91,
-   "new": 30,
-   "candidates": 0
+   "in_window": 106,
+   "new": 33,
+   "candidates": 2
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-   "in_window": 12,
-   "new": 2,
+   "in_window": 11,
+   "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -48,17 +48,17 @@
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
    "in_window": 2,
-   "new": 0,
-   "candidates": 0,
+   "new": 1,
+   "candidates": 1,
    "new_with_abstract": 0
   },
   {
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 39,
+   "in_window": 42,
    "new": 6,
-   "candidates": 0,
+   "candidates": 1,
    "new_with_abstract": 0
   },
   {
@@ -74,110 +74,353 @@
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 174,
-   "new": 43,
+   "in_window": 184,
+   "new": 49,
    "candidates": 0,
-   "new_with_abstract": 21
+   "new_with_abstract": 17
   },
   {
    "source": "Nature Rev. EE",
    "journal": "Nature Reviews Electrical Engineering",
    "status": "ok",
    "in_window": 1,
-   "new": 0,
+   "new": 1,
    "candidates": 0,
-   "new_with_abstract": 0
+   "new_with_abstract": 1
   }
  ],
  "errors": [],
  "candidates": [
   {
-   "key": "arxiv:2610.20525",
+   "key": "arxiv:2610.22230",
    "source": "arXiv",
-   "id": "2610.20525",
-   "title": "The Physics Is the Network: Fast, Training-Free Neural Emulation",
-   "abstract": "Neural emulation need not require learning a substitute for known physics. We investigate PolyNets that couple a continuous-time neural representation of polynomial dynamics with a simple recurrent network for discrete-time integration. When the governing coefficients are known, the resulting tensor graph requires no training and preserves the prescribed numerical scheme while enabling efficient hardware execution and parallel simulation. Using the one-dimensional Korteweg-de Vries equation, we compare PolyNet with CPU and GPU finite-difference Runge-Kutta solvers and three trained neural models: a state-map emulator, a physics-informed predictor, and a learned-tendency integrator. Analytical soliton solutions provide a reference for amplitude and phase errors across grid resolutions, 10^6 dispersively scaled time steps, ensembles of up to 10^4 trajectories, and varying initial amplitudes. PolyNet achieves accuracy comparable to the numerical solvers, including at amplitudes outside the learned models' training conditions. It combines this fidelity with high GPU throughput, approximately constant over the tested resolution range, and favorable ensemble scaling.",
+   "id": "2610.22230",
+   "title": "Architecting for Hardware Diversity: Meta's End-to-End Co-Design for High-Performance AI Training on AMD GPUs",
+   "abstract": "Meta deploys a heterogeneous fleet comprising NVIDIA GPUs, AMD GPUs, and proprietary MTIA accelerators to reduce costs and mitigate vendor lock-in. However, the extensive history of NVIDIA-specific optimizations hinders performance portability to other hardware. This paper presents our methods for optimizing alternative accelerators, using AMD Instinct MI350X versus NVIDIA B200 for recommendation model training as a case study. We propose three reusable principles. First, hardware-model co-design is essential: rather than directly porting models from NVIDIA GPUs, revising model structures and software recipes allows full exploitation of accelerator-specific strengths (e.g., MI350X's 1.6x HBM capacity relative to B200). Second, our analytical performance model enables zero-warmup optimal kernel selection across diverse datatypes and matrix shapes in production models, drastically simplifying tuning. Third, increasingly mature agentic workflows have lowered the barrier to porting from the CUDA ecosystem; we extend these workflows for microarchitecture-aware kernel optimizations and custom shim generation. Compared to the directly ported baseline, these methods deliver up to 1.5x improvement in end-to-end training throughput. To our knowledge, this is the first hyperscaler report on productionizing AMD GPUs for large-scale training. Our contributions have been upstreamed to the open-source PyTorch, Triton, and ROCm ecosystems.",
    "authors": [
     {
-     "name": "Luka Todorovic",
+     "name": "Haoyu Zhang",
      "affiliations": []
     },
     {
-     "name": "Kaushal Gianchandani",
+     "name": "Arshad Rahman",
      "affiliations": []
     },
     {
-     "name": "Sai Ravela",
+     "name": "Adnan Aziz",
+     "affiliations": []
+    },
+    {
+     "name": "Ajith Prabhudev",
+     "affiliations": []
+    },
+    {
+     "name": "Amin Farmahini",
+     "affiliations": []
+    },
+    {
+     "name": "Ben Rhoads",
+     "affiliations": []
+    },
+    {
+     "name": "Benson Ma",
+     "affiliations": []
+    },
+    {
+     "name": "Brian Shi",
+     "affiliations": []
+    },
+    {
+     "name": "Cen Zhao",
+     "affiliations": []
+    },
+    {
+     "name": "CK Luk",
+     "affiliations": []
+    },
+    {
+     "name": "Dingming Wu",
+     "affiliations": []
+    },
+    {
+     "name": "Emad El-Haraty",
+     "affiliations": []
+    },
+    {
+     "name": "Eric Chen",
+     "affiliations": []
+    },
+    {
+     "name": "Frank Li",
+     "affiliations": []
+    },
+    {
+     "name": "Gary Huang",
+     "affiliations": []
+    },
+    {
+     "name": "Gefei Zuo",
+     "affiliations": []
+    },
+    {
+     "name": "Haoran Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Hiwot Kassa",
+     "affiliations": []
+    },
+    {
+     "name": "Hongyi Zeng",
+     "affiliations": []
+    },
+    {
+     "name": "Jack Taylor",
+     "affiliations": []
+    },
+    {
+     "name": "Jeremy Hadidjojo",
+     "affiliations": []
+    },
+    {
+     "name": "John Donati",
+     "affiliations": []
+    },
+    {
+     "name": "Jonathan Sheffield",
+     "affiliations": []
+    },
+    {
+     "name": "Julio Machado Silva",
+     "affiliations": []
+    },
+    {
+     "name": "Karthik Ganesan",
+     "affiliations": []
+    },
+    {
+     "name": "Kent Russell",
+     "affiliations": []
+    },
+    {
+     "name": "KR Kishore",
+     "affiliations": []
+    },
+    {
+     "name": "Lei Tian",
+     "affiliations": []
+    },
+    {
+     "name": "Liu Ke",
+     "affiliations": []
+    },
+    {
+     "name": "Muhammad Osama",
+     "affiliations": []
+    },
+    {
+     "name": "Peng Chen",
+     "affiliations": []
+    },
+    {
+     "name": "Rakesh Hemnani",
+     "affiliations": []
+    },
+    {
+     "name": "Ryan Swann",
+     "affiliations": []
+    },
+    {
+     "name": "Saleel Kudchadker",
+     "affiliations": []
+    },
+    {
+     "name": "Shankar Yanamandram",
+     "affiliations": []
+    },
+    {
+     "name": "Shobhit Kanaujia",
+     "affiliations": []
+    },
+    {
+     "name": "Shucai Xiao",
+     "affiliations": []
+    },
+    {
+     "name": "Srinath Bayareddy",
+     "affiliations": []
+    },
+    {
+     "name": "Srinivas Vaidyanathan",
+     "affiliations": []
+    },
+    {
+     "name": "Sudharssun Subramanian",
+     "affiliations": []
+    },
+    {
+     "name": "Supadchaya Puangpontip",
+     "affiliations": []
+    },
+    {
+     "name": "Taylor Robie",
+     "affiliations": []
+    },
+    {
+     "name": "Tianhao Huang",
+     "affiliations": []
+    },
+    {
+     "name": "Tyler Hart",
+     "affiliations": []
+    },
+    {
+     "name": "Viswesh Sankaran",
+     "affiliations": []
+    },
+    {
+     "name": "Weijun Jiang",
+     "affiliations": []
+    },
+    {
+     "name": "Wenkai Du",
+     "affiliations": []
+    },
+    {
+     "name": "Xiaodong Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Xiaohu Guo",
+     "affiliations": []
+    },
+    {
+     "name": "Yao Rong",
+     "affiliations": []
+    },
+    {
+     "name": "Yinbin Ma",
+     "affiliations": []
+    },
+    {
+     "name": "Yue Dong",
+     "affiliations": []
+    },
+    {
+     "name": "Yuzhen Huang",
+     "affiliations": []
+    },
+    {
+     "name": "Yvonne Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Zhan Shu",
+     "affiliations": []
+    },
+    {
+     "name": "Dan Rabinovitsj",
+     "affiliations": []
+    },
+    {
+     "name": "Ajit Mathews",
+     "affiliations": []
+    },
+    {
+     "name": "Chunqiang Tang",
      "affiliations": []
     }
    ],
    "categories": [
-    "cs.LG",
-    "eess.SY",
-    "nlin.CD",
-    "stat.AP"
-   ],
-   "primary_category": "cs.LG",
-   "date": "2026-10-14",
-   "url": "https://arxiv.org/abs/2610.20525",
-   "matched_terms": [
-    "gpu"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "The Physics Is the Network: Fast, Training-Free Neural Emulation Preprint: APS/123-QED Luka Todorovic Email: lukat@umich.edu Affiliation: Department of Mathematics and Department of Statistics, University of Michigan, Ann Arbor, MI Kaushal Gianchandani Affiliation: NASA Postdoctoral Program Fellow, NASA Goddard Institute for Space Studies, New York, NY Sai Ravela Email: ravela@mit.edu Affiliation: Department of Earth, Atmospheric, and Planetary Sciences, Massachusetts Institute of Technology, Cambridge, MA October 14, 2026 Abstract Neural emulation need not require learning a substitute for known physics. We investigate PolyNets that couple a continuous-time neural representation of polynomial dynamics with a simple recurrent network for discrete-time integration. When the governing coefficients are known, the resulting tensor graph requires no training and preserves the prescribed numerical scheme while enabling efficient hardware execution and parallel simulation. Using the one-dimensional Korteweg–de Vries equation, we compare PolyNet with CPU and GPU finite-difference Runge–Kutta solvers and three trained neural models: a state-map emulator, a physics-informed predictor, and a learned-tendency integrator. Analytical soliton solutions provide a reference for amplitude and phase errors across grid resolutions, 10 6 10^{6} dispersively scaled time steps, ensembles of up to 10 4 10^{4} trajectories, and varying initial amplitudes. PolyNet achieves accuracy comparable to the numerical solvers, including at amplitudes outside the learned models’ training conditions. It combines this fidelity with high GPU throughput, approximately constant over the tested resolution range, and favorable ensemble scaling."
-  },
-  {
-   "key": "arxiv:2610.19819",
-   "source": "arXiv",
-   "id": "2610.19819",
-   "title": "The Cost of Context: Profiling the Energy Footprint of Input Tokens in Large Language Models",
-   "abstract": "The rapid adoption of Retrieval-Augmented Generation (RAG) and long-context LLMs has shifted the computational burden toward the prefill phase---the initial stage where the model processes all input tokens in parallel before generating a response---yet its energy impact remains poorly characterised. We investigate the contradiction between massive hardware-level power spikes and the sub-linear marginal cost of input tokens reported in system-level studies. Through high-resolution telemetry of Llama-3.1 and Qwen-2 models on NVIDIA A100 hardware, we identify the efficiency threshold where $O(n^2)$ attention complexity overcomes GPU parallelisation. Our results quantify how optimised memory orchestration (PagedAttention) delays this scaling bottleneck across three orders of context scaling, yielding up to an 8.9$\\times$ energy efficiency advantage at 112,000 tokens compared to standard baselines. Furthermore, we characterise the energy disparity between input and output tokens, demonstrating that optimised serving (vLLM) causes this ratio to narrow (from $\\approx$850$\\times$ to 750$\\times$) as context scales due to high decode efficiency, whereas unoptimised baselines show a much smaller, roughly constant gap ($\\approx$150--230$\\times$) because their prefill is itself expensive. This work establishes context-scaling laws that differentiate engine-level optimisations from inherent model constraints, providing an empirical framework for sustainable LLM deployment.",
-   "authors": [
-    {
-     "name": "Boris Ruf",
-     "affiliations": []
-    },
-    {
-     "name": "Marcin Detyniecki",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC"
+    "cs.DC",
+    "cs.AR",
+    "cs.LG"
    ],
    "primary_category": "cs.DC",
-   "date": "2026-10-14",
-   "url": "https://arxiv.org/abs/2610.19819",
+   "date": "2026-10-15",
+   "url": "https://arxiv.org/abs/2610.22230",
    "matched_terms": [
-    "gpu",
+    "hyperscaler"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Haoyu Zhang 1 , Arshad Rahman 2 , Adnan Aziz 1 , Ajith Prabhudev 1 , Amin Farmahini 1 , Ben Rhoads 1 , Benson Ma 1 , Brian Shi 2 , Cen Zhao 1 , CK Luk 1 , Dingming Wu 1 , Emad El-Haraty 1 , Eric Chen 1 , Frank Li 1 , Gary Huang 1 , Gefei Zuo 1 , Haoran Zhang 1 , Hiwot Kassa 1 , Hongyi Zeng 1 , Jack Taylor 2 , Jeremy Hadidjojo 1 , John Donati 1 , Jonathan Sheffield 1 , Julio Machado Silva 2 , Karthik Ganesan 1 , Kent Russell 2 , KR Kishore 1 , Lei Tian 1 , Liu Ke 1 , Muhammad Osama 2 , Peng Chen 1 , Rakesh Hemnani 1 , Ryan Swann 2 , Saleel Kudchadker 2 , Shankar Yanamandram 1 , Shobhit Kanaujia 1 , Shucai Xiao 2 , Srinath Bayareddy 1 , Srinivas Vaidyanathan 1 , Sudharssun Subramanian 1 , Supadchaya Puangpontip 1 , Taylor Robie 1 , Tianhao Huang 1 , Tyler Hart 1 , Viswesh Sankaran 1 , Weijun Jiang 2 , Wenkai Du 2 , Xiaodong Wang 1 , Xiaohu Guo 2 , Yao Rong 1 , Yinbin Ma 1 , Yue Dong 1 , Yuzhen Huang 1 , Yvonne Liu 1 , Zhan Shu 1 , Dan Rabinovitsj 1 , Ajit Mathews 1 , Chunqiang Tang 1 Affiliation: 1 Meta 2 AMD Abstract Meta deploys a heterogeneous fleet comprising NVIDIA GPUs, AMD GPUs, and proprietary MTIA accelerators to reduce costs and mitigate vendor lock-in. However, the extensive history of NVIDIA-specific optimizations hinders performance portability to other hardware. This paper presents our methods for optimizing alternative accelerators, using AMD Instinct™ MI350X versus NVIDIA B200 for recommendation model training as a case study. We propose three reusable principles. First, hardware-model co-design is essential: rather than directly porting models from NVIDIA GPUs, revising model structures and software recipes allows full exploitation of accelerator-specific strengths (e.g., MI350X’s 1.6 × 1.6\\times HBM capacity relative to B200). Second, our analytical performance model enables zero-warmup optimal kernel selection across diverse datatypes and matrix shapes in production models, drastically simplifying tuning. Third, increasingly mature agentic workflows have lowered the barrier to porting from the CUDA ecosystem; we extend these workflows for microarchitecture-aware kernel optimizations and custom shim generation. Compared to the directly ported baseline, these methods deliver up to 1.5 × 1.5\\times improvement in end-to-end training throughput. To our knowledge, this is the first hyperscaler report on productionizing AMD GPUs for large-scale training. Our contributions have been upstreamed to the open-source PyTorch, Triton, and ROCm ecosystem"
+  },
+  {
+   "key": "arxiv:2610.22064",
+   "source": "arXiv",
+   "id": "2610.22064",
+   "title": "From Signals to Evidence: Interpretable Underwater Acoustic Target Sensing with Large Language Models - Part I: Framework and Recognition",
+   "abstract": "Underwater acoustic target detection and recognition are essential to marine surveillance and intelligent ocean sensing. Despite substantial advances in deep learning, existing systems typically produce binary detection decisions, categorical labels, or scalar confidence scores, offering limited insight into the physical evidence underlying their outputs. Large language models (LLMs) offer an opportunity to move underwater acoustic sensing toward interpretable, evidence-grounded understanding; however, generic audio encoders struggle to capture the distinctive physical characteristics of underwater acoustics, and physically annotated data are scarce. In this paper, the first of a two-part series, we propose a from-signals-to-evidence framework that integrates physics-aware acoustic encoding with a pretrained LLM, organized around a unified feature-evidence-decision chain with a shared reasoning core. An open input layer accommodates heterogeneous information-raw waveforms, time-frequency representations, environmental and geographic data, and textual physical priors-unifying detection and recognition within a common formulation. In Part I, we instantiate this framework for target recognition through an Underwater Acoustic Physics-aware Transformer (UPT), which tokenizes complementary acoustic representations and learns task-disentangled physical representations through four physics-oriented learning tasks. We develop a physics-parameterized data engine that provides traceable supervision at two levels of granularity and introduce an attribute-level evaluation protocol to assess the physical fidelity of generated descriptions. Experiments on simulated recordings of four vessels demonstrate accurate vessel recognition and reliable estimation of shaft frequency, blade-passing frequency, and machinery-related attributes.",
+   "authors": [
+    {
+     "name": "Yuge Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Jie Chen",
+     "affiliations": []
+    },
+    {
+     "name": "Zhengqiao Zhao",
+     "affiliations": []
+    },
+    {
+     "name": "Xiling Yao",
+     "affiliations": []
+    },
+    {
+     "name": "Lingji Xu",
+     "affiliations": []
+    },
+    {
+     "name": "Jingdong Chen",
+     "affiliations": []
+    },
+    {
+     "name": "Yixin Yang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.SD",
+    "eess.SP"
+   ],
+   "primary_category": "cs.SD",
+   "date": "2026-10-15",
+   "url": "https://arxiv.org/abs/2610.22064",
+   "matched_terms": [
     "large language models",
     "llm",
     "llms"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "The Cost of Context: Profiling the Energy Footprint of Input Tokens in Large Language Models Note: Author’s version. Accepted at HotCarbon’26, the 5th Workshop on Sustainable Computer Systems; to appear in ACM SIGENERGY Energy Informatics Review, Vol. 6, Issue 2. CCS: Hardware Power and energy CCS: Computing methodologies Natural language processing CCS: Computing methodologies Machine learning Boris Ruf email: boris.ruf@axa.com Affiliation: AXA AI Research , Paris , France and Marcin Detyniecki email: marcin.detyniecki@axa.com Affiliation: AXA AI Research , Paris , France Abstract. The rapid adoption of Retrieval-Augmented Generation (RAG) and long-context LLMs has shifted the computational burden toward the prefill phase—the initial stage where the model processes all input tokens in parallel before generating a response—yet its energy impact remains poorly characterised. We investigate the contradiction between massive hardware-level power spikes and the sub-linear marginal cost of input tokens reported in system-level studies. Through high-resolution telemetry of Llama-3.1 and Qwen-2 models on NVIDIA A100 hardware, we identify the efficiency threshold where O ⁡ ( n 2 ) O(n^{2}) attention complexity overcomes GPU parallelisation. Our results quantify how optimised memory orchestration (PagedAttention) delays this scaling bottleneck across three orders of context scaling, yielding up to an 8.9 × \\times energy efficiency advantage at 112,000 tokens compared to standard baselines. Furthermore, we characterise the energy disparity between input and output tokens, demonstrating that optimised serving (vLLM) causes this ratio to narrow (from ≈ \\approx 850 × \\times to 750 × \\times ) as context scales due to high decode efficiency, whereas unoptimised baselines show a much smaller, roughly constant gap ( ≈ \\approx 150–230 × \\times ) because their prefill is itself expensive. This work establishes context-scaling laws that differentiate engine-level optimisations from inherent model constraints, providing an empirical framework for sustainable LLM deployment. Keywords: Large Language Models, Energy Efficiency, Sustainability, PagedAttention, Prefill Phase"
+   "affiliation_block": "Yuge Zhang Jie Chen Zhengqiao Zhao Xiling Yao Affiliation: Lingji Xu, Jingdong Chen, Yixin Yang Abstract Underwater acoustic target detection and recognition are essential to marine surveillance and intelligent ocean sensing. Despite substantial advances in deep learning, existing systems typically produce binary detection decisions, categorical labels, or scalar confidence scores, offering limited insight into the physical evidence underlying their outputs. Recent advances in large language models (LLMs) present an opportunity to move underwater acoustic sensing toward interpretable, evidence-grounded understanding. However, generic audio encoders often fail to capture the distinctive physical characteristics of underwater acoustics, while the scarcity of physically annotated data remains a major obstacle. In this paper, the first of a two-part series, we propose a from-signals-to-evidence framework that integrates physics-aware acoustic encoding with a pretrained LLM. The framework is built around a unified feature–evidence–decision chain and a shared reasoning core. Its open, extensible input layer accommodates heterogeneous information, including raw waveforms, time–frequency representations, environmental and geographic data, and textual physical priors, enabling detection and recognition to be formulated within a common framework. In Part I, we instantiate this framework for target recognition through an Underwater Acoustic Physics-aware Transformer (UPT), which tokenizes complementary acoustic representations and learns task-disentangled physical representations through four physics-oriented learning tasks. To support this process, we develop a physics-parameterized data engine that provides traceable supervision at two levels of granularity and introduce an attribute-level evaluation protocol to assess the physical fidelity of generated descriptions. Experiments on simulated recordings of four vessels demonstrate accurate vessel recognition and reliable estimation of shaft frequency, blade-passing frequency, and machinery-related attributes. These results establish the feasibility of evidence-grounded underwater acoustic recognition and lay the foundation for Part II, which extends the framework to target detection under low signal-to-noise ratio conditions. Index Terms: Underwater acoustic target recognition, Interpretable recognition, Large language models, Physics-aware acoustic encoding, Physics-based acoustic simulation, Evidence-grounded desc"
   },
   {
-   "key": "arxiv:2610.19565",
+   "key": "arxiv:2610.21772",
    "source": "arXiv",
-   "id": "2610.19565",
-   "title": "Identifiability-Guided Composite Load Modeling of AI Data Centers",
-   "abstract": "The rapid growth of AI data centers introduces large, workload-dependent loads whose protection and reconnection behavior can affect power-system transient stability. Calibrating dynamic models of such loads is challenging because treating all associated elements as freely estimable may lead to weakly identified or physically confounded parameterizations. This paper proposes an identifiability-guided calibration framework for a composite load model with separate IT, cooling, and auxiliary branches. A nuisance-projected Fisher-information criterion characterizes the local identifiability of the cooling-motor composition, while a workload non-equivalence result shows that voltage-only recalibration cannot reproduce workload-dependent responses. Guided by these results, a grey-box estimator trained with branch-level supervision learns the workload-to-power relation and the cooling composition, while retaining a prescribed UPS protection law and an externally anchored reconnect-ramp duration. The learned workload relation is then distilled into a closed form for transient-stability simulation. Evaluation using 300,000 MIT Supercloud GPU power-utilization samples and 12,600 IEEE 39-bus fault scenarios yields an aggregate active-power $R^2$ of 0.948, compared with 0.856 for an LSTM baseline. Removing branch-level supervision preserves relatively high aggregate accuracy but substantially degrades cooling-component recovery. Under unseen deep voltage sags, the proposed model achieves a transient $R^2$ of 0.750, compared with 0.033 for the LSTM. Closed-loop simulations further show that cooling composition and protection behavior can affect retained-load states and voltage responses near protection thresholds.",
+   "id": "2610.21772",
+   "title": "Scaling up statistical model checking of cyber-physical systems via algorithm ensemble and parallel simulations over HPC infrastructures",
+   "abstract": "Model-based formal verification of industry-relevant Cyber-Physical Systems (CPSs) is often a computationally prohibitive task. In most cases, the complexity of the models precludes any prospect of symbolic analysis, leaving numerical simulation as the only viable option. Unfortunately, exhaustive simulation of a CPS model over the entire set of plausible operational scenarios is rarely possible in practice, and alternative strategies such as Statistical Model Checking (SMC) must be used instead. In this article, we show that the number of model simulations (samples) required by SMC techniques to converge can be significantly reduced by considering multiple (an ensemble of) Adaptive Stopping Algorithms (SAs) at once, and that the simulations themselves (by far the most expensive step of the entire workload) can be efficiently sped up by exploiting massively parallel platforms. With three industry-scale CPS models, we experimentally show that the use of an ensemble of two state-of-the-art SAs (AA and EBGStop) may require dozens of millions fewer samples when compared to running a single algorithm, with reductions in sample size of up to 78%. Furthermore, we show that our implementation, by massively parallelizing system model simulations on a HPC infrastructure, yields speed-ups for the completion time of the verification tasks which are practically linear with respect to the number of computational nodes, thus achieving an efficiency of virtually 100%, even on very large platforms. This makes it possible to complete tasks of model-based SMC verification for complex CPSs in a matter of hours or days, whereas a naïve sequential execution would require from months to many years.",
    "authors": [
     {
-     "name": "Ding Lin",
+     "name": "Leonardo Picchiami",
      "affiliations": []
     },
     {
-     "name": "Jianhui Wang",
+     "name": "Maxime Parmentier",
      "affiliations": []
     },
     {
-     "name": "Meng Yue",
+     "name": "Axel Legay",
      "affiliations": []
     },
     {
-     "name": "Tianqiao Zhao",
+     "name": "Toni Mancini",
+     "affiliations": []
+    },
+    {
+     "name": "Enrico Tronci",
      "affiliations": []
     }
    ],
@@ -185,272 +428,220 @@
     "eess.SY"
    ],
    "primary_category": "eess.SY",
-   "date": "2026-10-14",
-   "url": "https://arxiv.org/abs/2610.19565",
+   "date": "2026-10-15",
+   "url": "https://arxiv.org/abs/2610.21772",
    "matched_terms": [
-    "data centers"
+    "hpc"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Identifiability-Guided Composite Load Modeling of AI Data Centers Ding Lin Jianhui Wang Meng Yue Tianqiao Zhao Abstract The rapid growth of AI data centers introduces large, workload-dependent loads whose protection and reconnection behavior can affect power-system transient stability. Calibrating dynamic models of such loads is challenging because treating all associated elements as freely estimable may lead to weakly identified or physically confounded parameterizations. This paper proposes an identifiability-guided calibration framework for a composite load model with separate IT, cooling, and auxiliary branches. A nuisance-projected Fisher-information criterion characterizes the local identifiability of the cooling-motor composition, while a workload non-equivalence result shows that voltage-only recalibration cannot reproduce workload-dependent responses. Guided by these results, a grey-box estimator trained with branch-level supervision learns the workload-to-power relation and the cooling composition, while retaining a prescribed UPS protection law and an externally anchored reconnect-ramp duration. The learned workload relation is then distilled into a closed form for transient-stability simulation. Evaluation using 300,000 MIT Supercloud GPU power-utilization samples and 12,600 IEEE 39-bus fault scenarios yields an aggregate active-power R 2 R^{2} of 0.948, compared with 0.856 for an LSTM baseline. Removing branch-level supervision preserves relatively high aggregate accuracy but substantially degrades cooling-component recovery. Under unseen deep voltage sags, the proposed model achieves a transient R 2 R^{2} of 0.750, compared with 0.033 for the LSTM. Closed-loop simulations further show that cooling composition and protection behavior can affect retained-load states and voltage responses near protection thresholds. Index Terms: Data centers, dynamic load modeling, parameter identifiability, identifiability-guided modeling, transient stability."
+   "affiliation_block": "Scaling Up Statistical Model Checking of Cyber-Physical Systems via Algorithm Ensemble and Parallel Simulations over HPC Infrastructures Journal: Journal of Systems and Software Leonardo Picchiami Email: picchiami@di.uniroma1.it Corresponding author: Corresponding author Affiliation: Computer Science Department, Sapienza University of Rome, Via Salaria 113, Rome, 00198, Italy Maxime Parmentier Email: maxime.parmentier Corresponding author: Corresponding author Affiliation: Computer Science Deparment, Universite Catholique de Louvain, Place Sainte Barbe 2, Louvain-la-Neuve, 1348, Brabant Wallon, Belgium Axel Legay Email: axel.legay Affiliation: Computer Science Deparment, Universite Catholique de Louvain, Place Sainte Barbe 2, Louvain-la-Neuve, 1348, Brabant Wallon, Belgium Toni Mancini Email: tmancini@di.uniroma1.it Affiliation: Computer Science Department, Sapienza University of Rome, Via Salaria 113, Rome, 00198, Italy Enrico Tronci Email: tronci@di.uniroma1.it Affiliation: Computer Science Department, Sapienza University of Rome, Via Salaria 113, Rome, 00198, Italy Abstract Model-based formal verification of industry-relevant Cyber-Physical Systems (CPSs) is often a computationally prohibitive task. In most cases, the complexity of the models precludes any prospect of symbolic analysis, leaving numerical simulation as the only viable option. Unfortunately, exhaustive simulation of a CPS model over the entire set of plausible operational scenarios is rarely possible in practice, and alternative strategies such as Statistical Model Checking (SMC) must be used instead. In this article, we show that the number of model simulations (samples) required by SMC techniques to converge can be significantly reduced by considering multiple (an ensemble of) Adaptive Stopping Algorithms (SAs) at once, and that the simulations themselves (by far the most expensive step of the entire workload) can be efficiently sped up by exploiting massively parallel platforms. With three industry-scale CPS models, we experimentally show that the use of an ensemble of two state-of-the-art SAs ( 𝒜 ​ 𝒜 \\mathcal{AA} and EBGStop) may require dozens of millions fewer samples when compared to running a single algorithm, with reductions in sample size of up to 78%. Furthermore, we show that our implementation, by massively parallelizing system model simulations on a HPC infrastructure, yields speed-ups for the completion time of the verification tasks which are practically linear with respec"
   },
   {
-   "key": "arxiv:2610.19374",
+   "key": "arxiv:2610.21096",
    "source": "arXiv",
-   "id": "2610.19374",
-   "title": "A Critical Review of Grid Integration Challenges and Flexibility Opportunities for Large-Scale Data Centers",
-   "abstract": "The rapid proliferation of cloud computing and artificial intelligence workloads is fundamentally reshaping the magnitude, spatial concentration, and electrical characteristics of data center power demand. Data centers differ from conventional commercial loads because they combine high rack densities, converter-dominated interfaces, thermally coupled cooling, uninterruptible power supplies, programmable workloads, and increasingly complex behind-the-meter generation and storage within a single facility. This review examines their grid integration from utility and sustainable-energy perspectives across resource planning, large-load interconnection, distribution feeders, market operation, real-time dynamics, power quality, and asset management. Particular attention is given to distribution-level issues that receive limited treatment in broader energy reviews: bidirectional operation on renewable-rich feeders, harmonic propagation and resonance, ride-through and reconnection, transformer derating, cable ampacity, neutral-conductor heating, protection, and measurement. Static, composite, physics-based dynamic, calibrated, impedance, electromagnetic transient, and hybrid load models are compared according to study purpose and data requirements, and utility coordination platforms, uninterruptible power supply and battery control, workload flexibility, renewable co-location, cogeneration, fuel cells, thermal storage, and clean firm supply are assessed. The central finding is that requested peak demand and annual energy matching alone cannot establish reliable or sustainable integration. Credible assessment must consider hourly and locational supply, network deliverability, marginal emissions, lifecycle and water impacts, backup obligations, rebound, asset health, and verified operating capability.",
+   "id": "2610.21096",
+   "title": "Helix: A Unified Programmable Accelerator for Diverse Krylov Subspace Solvers",
+   "abstract": "Domain-specific accelerators deliver high performance and energy efficiency through specialization but often lack support for extensible algorithm families. Existing FPGA accelerators for Krylov subspace methods, which iteratively solve sparse linear systems, typically support a single solver or require separate hardware configurations. Helix follows a systematic algorithm-family design methodology that first abstracts common computational primitives from diverse Krylov solvers and builds the architecture around efficient, programmable primitive kernels. Helix then introduces programmable datapaths to coordinate these primitives. Its architecture decouples hardware implementation from solver-specific execution, enabling HBM reuse and zero solver-switching latency. Finally, Helix provides a DSL compiler that efficiently maps different solvers onto the architecture while optimizing vector-operation performance for each solver. We prototype Helix on a Xilinx Alveo U55C FPGA and evaluate Helix's practicality and performance by using it to compile and execute eight solvers. Helix achieves up to 7.91x and 1.16x speedups over Xilinx XcgSolver and the state-of-the-art FPGA accelerator Callipepla, respectively, both of which support only JPCG. Across the eight solvers, Helix sustains 47.5% - 96.9% of the throughput of an NVIDIA RTX PRO 6000 GPU while delivering 2.29x - 4.66x higher energy efficiency and 1.89x - 3.85x higher throughput per unit peak memory bandwidth. The programmable components incur 0.25% - 0.57% execution-time overhead and 4.7% LUT and 4.0% FF overhead, demonstrating negligible overhead for programmability.",
    "authors": [
     {
-     "name": "Bibek Dhakal",
+     "name": "Wei Chen",
      "affiliations": []
     },
     {
-     "name": "Manohar Chamana",
+     "name": "Yizhi Yuan",
      "affiliations": []
     },
     {
-     "name": "Biswambhar Gayen",
-     "affiliations": []
-    },
-    {
-     "name": "Jatendar Kumar",
-     "affiliations": []
-    },
-    {
-     "name": "S M Shams Rahman",
-     "affiliations": []
-    },
-    {
-     "name": "Aaqib Peerzada",
-     "affiliations": []
-    },
-    {
-     "name": "Ki Yeob Lee",
-     "affiliations": []
-    },
-    {
-     "name": "Olatunji M. Adeyanju",
-     "affiliations": []
-    },
-    {
-     "name": "Bhaskar Mitra",
-     "affiliations": []
-    },
-    {
-     "name": "Soumya Kundu",
-     "affiliations": []
-    },
-    {
-     "name": "Stephen Bayne",
+     "name": "Linghao Song",
      "affiliations": []
     }
    ],
    "categories": [
-    "eess.SY"
+    "cs.AR",
+    "cs.DC"
    ],
-   "primary_category": "eess.SY",
-   "date": "2026-10-14",
-   "url": "https://arxiv.org/abs/2610.19374",
-   "matched_terms": [
-    "data center",
-    "data centers"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "A Critical Review of Grid Integration Challenges and Flexibility Opportunities for Large-Scale Data Centers Journal: Renewable and Sustainable Energy Reviews Bibek Dhakal Email: bibedhak@ttu.edu Corresponding author: Corresponding author. Affiliation: Wind Science and Engineering Program, National Wind Institute, Texas Tech University, Lubbock, 79409, TX, USA Manohar Chamana Affiliation: Renewable Energy Program, National Wind Institute, Texas Tech University, Lubbock, 79409, TX, USA Biswambhar Gayen Affiliation: Renewable Energy Program, National Wind Institute, Texas Tech University, Lubbock, 79409, TX, USA Jatendar Kumar Affiliation: Department of Electrical and Computer Engineering, Texas Tech University, Lubbock, 79409, TX, USA S M Shams Rahman Affiliation: Department of Electrical and Computer Engineering, Texas Tech University, Lubbock, 79409, TX, USA Aaqib Peerzada Affiliation: Electrical Infrastructure and Buildings Division, Pacific Northwest National Laboratory, Richland, 99352, WA, USA Ki Yeob Lee Affiliation: Electrical Infrastructure and Buildings Division, Pacific Northwest National Laboratory, Richland, 99352, WA, USA Olatunji M. Adeyanju Affiliation: National Wind Institute, Texas Tech University, Lubbock, 79409, TX, USA Bhaskar Mitra Affiliation: Electrical Infrastructure and Buildings Division, Pacific Northwest National Laboratory, Richland, 99352, WA, USA Soumya Kundu Affiliation: Electrical Infrastructure and Buildings Division, Pacific Northwest National Laboratory, Richland, 99352, WA, USA Stephen Bayne Affiliation: Department of Electrical and Computer Engineering, Texas Tech University, Lubbock, 79409, TX, USA Abstract The rapid proliferation of cloud computing and artificial intelligence workloads is fundamentally reshaping the magnitude, spatial concentration, and electrical characteristics of data center power demand. Data centers differ from conventional commercial loads because they combine high rack densities, converter-dominated interfaces, thermally coupled cooling, uninterruptible power supplies, programmable workloads, and increasingly complex behind-the-meter generation and storage within a single facility. This review examines their grid integration from utility and sustainable-energy perspectives across resource planning, large-load interconnection, distribution feeders, market operation, real-time dynamics, power quality, and asset management. Particular attention is given to distribution-level issues that receive li"
-  },
-  {
-   "key": "arxiv:2610.19122",
-   "source": "arXiv",
-   "id": "2610.19122",
-   "title": "Learning in Orbit: Onboard Training and Closed-Loop Attitude Control with a Thermal Segmentation Model on a Spacecraft",
-   "abstract": "Deep space missions increasingly require spacecraft capable of autonomously operating in environments with communication delays and bandwidth limitations. A key enabler of such autonomy is the ability to run learning-based algorithms directly onboard. In this work, we present a flight deployment on a 6U CubeSat that demonstrates (1) onboard training and inference of a thermal segmentation model on an NVIDIA Jetson TX2 NX GPU in space and (2) closed-loop attitude control using the segmentation model on a real-time, thermal image feed to track the Moon. In addition to this demonstration, we implement ROS 2 Foxy as a data transport middleware and integrate an open-source file system that provides strong data integrity guarantees and self-healing features. Over the course of approximately one year, we performed 12 experiments on the spacecraft, advancing the state of the art in autonomous spacecraft systems by showing how modern learning-based pipelines, commercially available hardware, and open-source software can operate reliably under the compute and environmental constraints of Low Earth Orbit (LEO).",
-   "authors": [
-    {
-     "name": "Elena Sorina Lupu",
-     "affiliations": []
-    },
-    {
-     "name": "Hannah Grauer",
-     "affiliations": []
-    },
-    {
-     "name": "Phaedrus Leeds",
-     "affiliations": []
-    },
-    {
-     "name": "Nikhil Ranganathan",
-     "affiliations": []
-    },
-    {
-     "name": "Connor Lee",
-     "affiliations": []
-    },
-    {
-     "name": "Sulekha Kishore",
-     "affiliations": []
-    },
-    {
-     "name": "Cailyn Smith",
-     "affiliations": []
-    },
-    {
-     "name": "Shon Cortes",
-     "affiliations": []
-    },
-    {
-     "name": "Brian Hardy",
-     "affiliations": []
-    },
-    {
-     "name": "Benjamen Bycroft",
-     "affiliations": []
-    },
-    {
-     "name": "Darren W. Rowen",
-     "affiliations": []
-    },
-    {
-     "name": "Soon-Jo Chung",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.RO",
-    "cs.AI",
-    "eess.SY"
-   ],
-   "primary_category": "cs.RO",
-   "date": "2026-10-13",
-   "url": "https://arxiv.org/abs/2610.19122",
+   "primary_category": "cs.AR",
+   "date": "2026-10-15",
+   "url": "https://arxiv.org/abs/2610.21096",
    "matched_terms": [
     "gpu"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Learning in Orbit: Onboard Training and Closed-Loop Attitude Control with a Thermal Segmentation Model on a Spacecraft Elena Sorina Lupu 1, ⋆ \\star Hannah Grauer 1, ⋆ \\star Phaedrus Leeds 2, ⋆ \\star Nikhil Ranganathan 1, ⋆ \\star Connor Lee 1 Sulekha Kishore 1 Cailyn Smith 1 Shon Cortes 2 Brian Hardy 2 Benjamen Bycroft 2 Darren W. Rowen 2 Soon-Jo Chung 1 Affiliation: California Institute of Technology, Pasadena, CA 91125, USA Affiliation: The Aerospace Corporation, 2310 E. El Segundo Blvd., El Segundo, CA 90245-4609, USA Abstract Deep space missions increasingly require spacecraft capable of autonomously operating in environments with communication delays and bandwidth limitations. A key enabler of such autonomy is the ability to run learning-based algorithms directly onboard. In this work, we present a flight deployment on a 6U CubeSat that demonstrates (1) onboard training and inference of a thermal segmentation model on an NVIDIA Jetson TX2 NX GPU in space and (2) closed-loop attitude control using the segmentation model on a real-time, thermal image feed to track the Moon. In addition to this demonstration, we implement ROS 2 Foxy as a data transport middleware and integrate an open-source file system that provides strong data integrity guarantees and self-healing features. Over the course of approximately one year, we performed 12 experiments on the spacecraft, advancing the state of the art in autonomous spacecraft systems by showing how modern learning-based pipelines, commercially available hardware, and open-source software can operate reliably under the compute and environmental constraints of Low Earth Orbit (LEO). † † note: This work was supported by The Aerospace Corporation. ⋆ Co-first authors. † † corresponding: Corresponding author: Soon-Jo Chung (email: sjchung@caltech.edu). \\titlefont \\authorfont \\afffont \\@affil \\@IEEEspecialpapernotice \\corfont \\@corresp \\afffont \\@authornote \\abstractbox \\keybox"
+   "affiliation_block": "(HTML version not available: HTTPError)"
+  },
+  {
+   "key": "arxiv:2610.20950",
+   "source": "arXiv",
+   "id": "2610.20950",
+   "title": "Congestion Price Uncertainty From Interconnection Queue by Monte Carlo Sampling",
+   "abstract": "The generation interconnection queue adds discrete uncertainty to power grid congestion price estimates on the project planning timescale. The conventional approach to this uncertainty is to make an informed guess of the single or few most likely configurations of generators that interconnect. In this paper, we show that Monte Carlo sampling is a more effective alternative. Given an estimate of the joint probability distribution of generator interconnections, a small number of samples yields good estimates of the congestion distribution. Crucially, this problem is not about rare events, but rather about the expected congestion over the worst times of the year, which makes congestion a common outcome over the distribution of interconnection events. We give empirical results on a 2000-bus network, averaging price outcomes from security-constrained DCOPF over eight different loading scenarios. For each line and contingency of the network, we estimate the full distribution as well as mean price and probability of exceeding a price threshold. Single-point estimates are unreliable and can be misleading about whether a line is likely to be congested. Combining the top k probability configurations yields improved estimates; however, sampling the same number from a distribution gives a more robust result of similar accuracy, as well as error estimates. Including correlation in the distribution model introduces small changes, showing that standard Bernoulli distributions suffice in most cases. The sampling approach is also applicable to large-load interconnection and should be of interest for planning both generation and large-load projects.",
+   "authors": [
+    {
+     "name": "William A. Wheeler",
+     "affiliations": []
+    },
+    {
+     "name": "Samuel Chevalier",
+     "affiliations": []
+    },
+    {
+     "name": "Amritanshu Pandey",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-10-14",
+   "url": "https://arxiv.org/abs/2610.20950",
+   "matched_terms": [
+    "large-load"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Congestion Price Uncertainty From Interconnection Queue by Monte Carlo Sampling William A. Wheeler Samuel Chevalier Amritanshu Pandey † † thanks: This work has been submitted to the IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible. † † thanks: This work was supported by a grant from the Leahy Institute for Rural Partnerships at the University of Vermont. (Corresponding author: William A. Wheeler) † † thanks: The authors are with the Department of Electrical and Biomedical Engineering, University of Vermont, Burlington, VT 05405 USA (email: wwheele1@uvm.edu; schevali@uvm.edu; amritanshu.pandey@uvm.edu). August 2026 Abstract The generation interconnection queue adds discrete uncertainty to power grid congestion price estimates on the project planning timescale. The conventional approach to this uncertainty is to make an informed guess of the single or few most likely configurations of generators that interconnect. In this paper, we show that Monte Carlo sampling is a more effective alternative. Given an estimate of the joint probability distribution of generator interconnections, a small number of samples yields good estimates of the congestion distribution. Crucially, this problem is not about rare events, but rather about the expected congestion over the worst times of the year, which makes congestion a common outcome over the distribution of interconnection events. We give empirical results on a 2000-bus network, averaging price outcomes from security-constrained DCOPF over eight different loading scenarios. For each line and contingency of the network, we estimate the full distribution as well as mean price and probability of exceeding a price threshold. Single-point estimates are unreliable and can be misleading about whether a line is likely to be congested. Combining the top k k probability configurations yields improved estimates; however, sampling the same number from a distribution gives a more robust result of similar accuracy, as well as error estimates. Including correlation in the distribution model introduces small changes, showing that standard Bernoulli distributions suffice in most cases. The sampling approach is also applicable to large-load interconnection and should be of interest for planning both generation and large-load projects. Index Terms: Congestion pricing, DCOPF, forecasting, interconnection queue, Monte Carlo, production cost modeling, sampling, un"
+  },
+  {
+   "key": "arxiv:2610.20841",
+   "source": "arXiv",
+   "id": "2610.20841",
+   "title": "Analog RF Computing for Integrated Data and AI Flows Over Wireless Networks",
+   "abstract": "Many resource-constrained edge devices require artificial intelligence (AI) services but are not powerful enough to store or execute neural networks (NNs). Analog radio frequency (RF) computing addresses this limitation by letting a base station (BS) multicast a waveform encoding NN weights to different clients. Each client then multiplies the received weight-encoded waveform with its locally generated input-encoded waveform through a passive mixer in its RF frontend, thereby realizing the matrix-vector multiplications (MVMs) needed for AI inference with an extremely low power and memory requirement. This can enable telecom operators to provide AI inference services to the edge devices connected to their networks. In practice, however, this multicast AI flow must share the spectrum, power, and spatial resources with other data flows. This paper considers a multi-user multiple-input multiple-output (MU-MIMO) downlink scenario and studies the resulting relative aggregate data rate reduction from integrating the multicast AI flow with the unicast data flows. We formulate a joint beamforming problem for the data and AI flows to maximize the aggregate data rate subject to computing accuracy, client energy, total power, and hardware-related constraints. We develop a weighted minimum mean-square error (WMMSE)-based algorithm to solve the problem. Numerical results based on 3rd Generation Partnership Project (3GPP) channels show that the relative aggregate data rate reduction from integrating an AI flow with data flows is below 5% in representative settings. This indicates that telecom operators can use analog RF computing to provide edge AI services while providing data communication services simultaneously.",
+   "authors": [
+    {
+     "name": "Wentao Yu",
+     "affiliations": []
+    },
+    {
+     "name": "Vincent W. S. Wong",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.IT",
+    "cs.ET",
+    "cs.LG",
+    "eess.SP"
+   ],
+   "primary_category": "cs.IT",
+   "date": "2026-10-14",
+   "url": "https://arxiv.org/abs/2610.20841",
+   "matched_terms": [
+    "ai inference",
+    "edge ai"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Analog RF Computing for Integrated Data and AI Flows Over Wireless Networks Wentao Yu and Vincent W.S. Wong Affiliation: Department of Electrical and Computer Engineering, The University of British Columbia, Vancouver, BC, Canada Email: {wentaoyu, vincentw}@ece.ubc.ca Abstract Many resource-constrained edge devices require artificial intelligence (AI) services but are not powerful enough to store or execute neural networks (NNs). Analog radio frequency (RF) computing addresses this limitation by letting a base station (BS) multicast a waveform encoding NN weights to different clients. Each client then multiplies the received weight-encoded waveform with its locally generated input-encoded waveform through a passive mixer in its RF frontend, thereby realizing the matrix-vector multiplications (MVMs) needed for AI inference with an extremely low power and memory requirement. This can enable telecom operators to provide AI inference services to the edge devices connected to their networks. In practice, however, this multicast AI flow must share the spectrum, power, and spatial resources with other data flows. This paper considers a multi-user multiple-input multiple-output (MU-MIMO) downlink scenario and studies the resulting relative aggregate data rate reduction from integrating the multicast AI flow with the unicast data flows. We formulate a joint beamforming problem for the data and AI flows to maximize the aggregate data rate subject to computing accuracy, client energy, total power, and hardware-related constraints. We develop a weighted minimum mean-square error (WMMSE)-based algorithm to solve the problem. Numerical results based on 3rd Generation Partnership Project ( 3GPP ) channels show that the relative aggregate data rate reduction from integrating an AI flow with data flows is below 5% in representative settings. This indicates that telecom operators can use analog RF computing to provide edge AI services while providing data communication services simultaneously."
+  },
+  {
+   "key": "doi:10.1109/tpwrs.2026.3744210",
+   "source": "journal",
+   "journal": "IEEE Transactions on Power Systems",
+   "journal_short": "TPWRS",
+   "doi": "10.1109/tpwrs.2026.3744210",
+   "title": "Discrete-Mode-Aware Optimal Power Flow for AI Data Centers in Distribution Networks",
+   "abstract": "",
+   "abstract_source": "",
+   "authors": [
+    {
+     "name": "Yunpeng Jiang",
+     "affiliations": [
+      "Tsinghua University"
+     ]
+    },
+    {
+     "name": "Chenhui Lin",
+     "affiliations": [
+      "Tsinghua University"
+     ]
+    },
+    {
+     "name": "Kai Hou",
+     "affiliations": [
+      "Tianjin University"
+     ]
+    },
+    {
+     "name": "Tianyang Zhao",
+     "affiliations": [
+      "Xi'an Jiaotong University"
+     ]
+    },
+    {
+     "name": "Qian Wang",
+     "affiliations": [
+      "Kunming University of Science and Technology"
+     ]
+    },
+    {
+     "name": "Le Liu",
+     "affiliations": [
+      "Xi'an Jiaotong University"
+     ]
+    },
+    {
+     "name": "Wenchuan Wu",
+     "affiliations": [
+      "Tsinghua University"
+     ]
+    },
+    {
+     "name": "Weiye Zheng",
+     "affiliations": [
+      "University of Macao"
+     ]
+    }
+   ],
+   "type": "journal-article",
+   "date": "2026-10-15",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3744210",
+   "matched_terms": [
+    "data centers"
+   ],
+   "screened_on": "title only",
+   "affiliation_source": "crossref"
+  },
+  {
+   "key": "doi:10.1016/j.apenergy.2026.129012",
+   "source": "journal",
+   "journal": "Applied Energy",
+   "journal_short": "Applied Energy",
+   "doi": "10.1016/j.apenergy.2026.129012",
+   "title": "Causality-constrained hierarchical LLM agents for online rule adaptation in building HVAC control",
+   "abstract": "Adaptive multi-zone HVAC control often requires identifying a building-specific predictive model or training a policy through environment interaction. These requirements increase the effort needed to deploy adaptive controllers across buildings with different HVAC configurations. To address this challenge, we propose a causality-constrained hierarchical large language model (LLM) agent framework for online cooling-setpoint rule adaptation. The framework operates in two stages. Offline onboarding standardizes building management system (BMS) points and establishes a human-confirmed causal graph. During online rule adaptation, hierarchical agents propose hourly updates to rule-based controllers (RBCs), while the RBCs generate 15-min setpoints. Structural and causal checks, together with zone cooling allowances, determine whether each proposed update is incorporated into the RBC. We evaluate the framework in three BOPTEST cases with one, two, and five zones against basic and enhanced RBCs, hierarchical model predictive control, proximal policy optimization (PPO), and multi-agent PPO. The framework achieved the highest mean reward and the lowest mean energy use among the compared controllers in all three cases. Energy use was 2.2–43.2% lower than that of the baselines, accompanied by small accumulated PMV deviations of 0.0192–0.4542 PMV ⋅ h. The causal experiments showed that the complete causal layer reduced accumulated PMV deviation and safety interventions in every case, primarily by constraining and stabilizing rule adaptation. Further ablations quantified the effects of memory, cross-zone coordination, and LLM thinking on rule adaptation, control performance, and LLM inference overhead. Overall, the framework combines competitive energy and comfort performance with explicit, reviewable online rule adaptation, supporting its potential for adaptive multi-zone HVAC control across the evaluated HVAC configurations.",
+   "abstract_source": "openalex",
+   "authors": [
+    {
+     "name": "Weilin Xin",
+     "affiliations": [
+      "National University of Singapore"
+     ]
+    },
+    {
+     "name": "Wei Liang",
+     "affiliations": [
+      "National University of Singapore"
+     ]
+    },
+    {
+     "name": "Adrian Chong",
+     "affiliations": [
+      "National University of Singapore"
+     ]
+    }
+   ],
+   "type": "journal-article",
+   "date": "2026-10-13",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129012",
+   "matched_terms": [
+    "large language model",
+    "llm"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_source": "openalex"
   }
  ],
- "title_only_final": [
-  {
-   "source": "TSG",
-   "title": "Low-Voltage Distribution Grid Topology Identification and Parameter Estimation with Heterogeneous Cable Sizes and Dense Noise: A Prior Knowledge-Guided Adaptive Search Approach",
-   "url": "https://doi.org/10.1109/tsg.2026.3738092"
-  },
-  {
-   "source": "TPWRS",
-   "title": "Transient Stability Analysis of AC/DC Power Systems with MMC-HVDC Based on Estimation of Domain of Attraction",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3740037"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Screening-based siting and metocean-aware O&M routing for floating offshore wind farms",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.128978"
-  },
-  {
-   "source": "Nature Rev. EE",
-   "title": "End-to-end cyber resilience enhancement for renewable-dominated power grids",
-   "url": "https://doi.org/10.1038/s44287-026-00334-2"
-  },
-  {
-   "source": "TSG",
-   "title": "Geometric Characterization of Zero-Sequence Voltage Responses for Faulty-Phase Identification in Asymmetric Resonant Distribution Networks",
-   "url": "https://doi.org/10.1109/tsg.2026.3739892"
-  },
-  {
-   "source": "TSG",
-   "title": "Foresight-enhanced Adaptive Safe Hierarchical Reinforcement Learning for Real-Time Voltage Regulation in Active Distribution Networks",
-   "url": "https://doi.org/10.1109/tsg.2026.3740287"
-  },
-  {
-   "source": "TSG",
-   "title": "Resilience Enhancement Planning of Hydrogen-Electricity Systems Against Coordinated Power Line Outages and Load Redistribution Attacks",
-   "url": "https://doi.org/10.1109/tsg.2026.3740898"
-  },
-  {
-   "source": "TSG",
-   "title": "A Dual-Guided Predict-then-Optimize Method for Real-Time EV Charging under Uncertainty",
-   "url": "https://doi.org/10.1109/tsg.2026.3740758"
-  },
-  {
-   "source": "TSG",
-   "title": "Model-Data Fusion-Driven Multi-Harmonic Source Localization in Low-Observable Distribution Networks",
-   "url": "https://doi.org/10.1109/tsg.2026.3740865"
-  },
-  {
-   "source": "TSG",
-   "title": "Active Admittance Probing-Assisted Inverter Dispatch Command Manipulation Attack: A Grid Stability-Oriented Approach",
-   "url": "https://doi.org/10.1109/tsg.2026.3740933"
-  },
-  {
-   "source": "TSG",
-   "title": "A Coordinated Multi-Frequency Harmonic Injection Scheme for Active Protection in IBR-Rich Distribution Networks",
-   "url": "https://doi.org/10.1109/tsg.2026.3739708"
-  },
-  {
-   "source": "TSG",
-   "title": "Stealthy Time Synchronization Attacks on Voltage Stability Monitoring: Modeling, Impact, and Detection",
-   "url": "https://doi.org/10.1109/tsg.2026.3741704"
-  },
-  {
-   "source": "TSG",
-   "title": "Game-Theoretic Reinforcement Learning based Topology-Agnostic Defense for Virtual Power Plants",
-   "url": "https://doi.org/10.1109/tsg.2026.3741535"
-  },
-  {
-   "source": "TSG",
-   "title": "Implicit Category Projection-Enhanced Multimodal Seq2Seq for Ensuring Accurate Day-Ahead PV Forecasting under Transitional Weather",
-   "url": "https://doi.org/10.1109/tsg.2026.3741462"
-  },
-  {
-   "source": "TSG",
-   "title": "Group and Flow-Based Centrality Measures for Power Grid Vulnerability Analysis",
-   "url": "https://doi.org/10.1109/tsg.2026.3738400"
-  },
-  {
-   "source": "TPWRS",
-   "title": "A Data-Driven Practical Four-Stage μPMU and Facilities Placement for Distribution Systems: A Stochastic Reliability-Oriented Framework",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3740319"
-  },
-  {
-   "source": "TPWRS",
-   "title": "Closed-Loop Predict-then-Optimize for Unit Commitment via Distributed Prediction-Optimization Coordination",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3740835"
-  },
-  {
-   "source": "TPWRS",
-   "title": "Nodal Frequency Security-Constrained Optimal Power System Virtual Inertia and Damping Dispatch",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3740874"
-  },
-  {
-   "source": "Nature Energy",
-   "title": "From gigawatts to critical mineral demands for EU solar and wind",
-   "url": "https://doi.org/10.1038/s41560-026-02147-x"
-  },
-  {
-   "source": "Nature Energy",
-   "title": "All-organic mixed-matrix membranes with single-crystal covalent organic frameworks for carbon capture",
-   "url": "https://doi.org/10.1038/s41560-026-02149-9"
-  },
-  {
-   "source": "Nature Rev. EE",
-   "title": "Nobel Symposium on Metamaterials Science and Technology",
-   "url": "https://doi.org/10.1038/s44287-026-00343-1"
-  },
-  {
-   "source": "Nature Rev. EE",
-   "title": "Multimodal semantic communications",
-   "url": "https://doi.org/10.1038/s44287-026-00336-0"
-  },
-  {
-   "source": "Nature Rev. EE",
-   "title": "Transferable predictive maintenance for battery energy storage systems",
-   "url": "https://doi.org/10.1038/s44287-026-00337-z"
-  },
-  {
-   "source": "Nature Rev. EE",
-   "title": "Unlocking battery boundaries",
-   "url": "https://doi.org/10.1038/s44287-026-00346-y"
-  }
- ],
+ "title_only_final": [],
  "pending_items": [
   {
    "source": "Applied Energy",
@@ -526,116 +717,8 @@
   },
   {
    "source": "Applied Energy",
-   "title": "Causality-constrained hierarchical LLM agents for online rule adaptation in building HVAC control",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129012",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Transferable state-of-charge prediction across temperature domains for lithium-ion and semi-solid batteries",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129031",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Epeditor: A scalable platform for large-ensemble building energy simulation enabling agent-assisted automation",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129029",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Strategic scenario planning for hydrogen supply chains via graph convolutional networks: overcoming mid-stream infrastructure bottlenecks in energy transitions",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.128999",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Applied Energy",
    "title": "A stochastic techno-economic framework for hydrogen-based maritime decarbonisation under market and policy uncertainty",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129002",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "NiCLIP: neuroimaging contrastive language-image pretraining model for predicting text from brain activation images",
-   "url": "https://doi.org/10.1038/s41467-026-78451-7",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Author Correction: Improved pharmacodynamics of epidermal growth factor via microneedles-based self-powered transcutaneous electrical stimulation",
-   "url": "https://doi.org/10.1038/s41467-026-78566-x",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Securing critical rare-earth supply through end-of-life NdFeB magnets recycling via molten salt electrolysis with consumable Mg-cathode",
-   "url": "https://doi.org/10.1038/s41467-026-78305-2",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Author Correction: Engineered CRISPR-OsCas12f1 and RhCas12f1 with robust activities and expanded target range for genome editing",
-   "url": "https://doi.org/10.1038/s41467-026-78550-5",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Population-resolved single-emitter spectroscopy",
-   "url": "https://doi.org/10.1038/s41467-026-78155-y",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "A multi-stage engineering framework for feasible scheduling of large-scale energy batch transport systems",
-   "url": "https://doi.org/10.1038/s41467-026-78556-z",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Colossal visible birefringence and ultraviolet hyperbolicity in wide bandgap semiconductor CuAlO2",
-   "url": "https://doi.org/10.1038/s41467-026-78383-2",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Controlled crosslink cleavage and phase separation enable highly stretchable and strong 3D-printed hydrogel for soft robotics",
-   "url": "https://doi.org/10.1038/s41467-026-78658-8",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Gamma-alumina as a highly active hydrogenation catalyst deciphered by molecular nitrogen",
-   "url": "https://doi.org/10.1038/s41467-026-78512-x",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Disrupting the NAD+/NAM metabolic ratio driven by IL-1β inflammatory response potentiates chemotherapy and chemoimmunotherapy in mice",
-   "url": "https://doi.org/10.1038/s41467-026-78491-z",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Metabolically reprogrammed blastoids from totipotent-like stem cells exhibit enhanced tissue-specific organ-like development and placental formation",
-   "url": "https://doi.org/10.1038/s41467-026-78227-z",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Wireless, optoelectronic, multimodal skin sensor for simultaneous monitoring of mechanical stress and vascular responses",
-   "url": "https://doi.org/10.1038/s41467-026-77832-2",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Precise construction of antiparallel-stacked 2D imine covalent organic frameworks for atmospheric water harvesting",
-   "url": "https://doi.org/10.1038/s41467-026-78318-x",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "High average and linear scaling of Ecological Footprint in cities",
-   "url": "https://doi.org/10.1038/s41467-026-78515-8",
    "first_seen": "2026-10-14"
   },
   {
@@ -652,18 +735,6 @@
   },
   {
    "source": "Applied Energy",
-   "title": "Node-aware spatiotemporal carbon tracing and carbon-responsive control of electrified railways for emission reduction and tertiary reserves",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.128985",
-   "first_seen": "2026-10-15"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Adaptive dead-zone dual sliding mode observer for reliable electrochemical model-based SOC estimation",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129043",
-   "first_seen": "2026-10-15"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Mechanisms of capacity decay in iron‑chromium flow batteries: unraveling the role of electrolyte imbalance",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129003",
    "first_seen": "2026-10-15"
@@ -672,12 +743,6 @@
    "source": "Applied Energy",
    "title": "A reference-electrode-free adaptive AC heating framework for lithium-ion batteries accounting for cold-spot temperature prediction",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129010",
-   "first_seen": "2026-10-15"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "A nanosystem manipulates angiocrine signaling for cardioprotection in male mice by relocalizing endothelial exosomes",
-   "url": "https://doi.org/10.1038/s41467-026-78706-3",
    "first_seen": "2026-10-15"
   },
   {
@@ -760,18 +825,6 @@
   },
   {
    "source": "Nature Communications",
-   "title": "Spectral sensing at a glance",
-   "url": "https://doi.org/10.1038/s41467-026-78586-7",
-   "first_seen": "2026-10-15"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Author Correction: A microbial platform for selective biosynthesis of monoterpene esters",
-   "url": "https://doi.org/10.1038/s41467-026-78589-4",
-   "first_seen": "2026-10-15"
-  },
-  {
-   "source": "Nature Communications",
    "title": "Interpretable and scalable spatial gene set activity analysis with GESSO uncovers functional tissue architecture",
    "url": "https://doi.org/10.1038/s41467-026-78316-z",
    "first_seen": "2026-10-15"
@@ -817,11 +870,238 @@
    "title": "Maximising self-consumption in energy communities: a comparative study of demand flexibility and dynamic sharing strategies",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129027",
    "first_seen": "2026-10-15"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Battery degradation and frequency stability considerations in the design of off-grid mining microgrids",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129007",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "A comprehensive review of global advanced metering infrastructure cost-benefit evidence and a data-integration framework for master-metered high-voltage apartment complexes",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129037",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Graph neural networks for transmission grid topology control: Busbar information asymmetry and heterogeneous representations",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128983",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Co-optimizing revenue generation and lifetime degradation of lithium-ion batteries in energy markets using physics-based modeling",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129004",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "A physics-informed deep clustering framework with single-cell voltage features for early fault identification in automotive PEM fuel cell",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129102",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Hydrogen integration for sustainable aviation propulsion: Evaluating recirculation efficiency in PEMFC systems",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129005",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Electronic tuning of dynamic imine bonds enables programmable pore gating in metal–organic frameworks",
+   "url": "https://doi.org/10.1038/s41467-026-78657-9",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Asymmetric synthesis of azabicyclo[2.1.1]hexanes via electrochemical haloamination of methylenecyclobutanes",
+   "url": "https://doi.org/10.1038/s41467-026-78484-y",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Nationwide implementation of digital non-communicable diseases screening in Indonesia’s primary care system",
+   "url": "https://doi.org/10.1038/s41467-026-78301-6",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Genome-wide studies define genetic mechanisms of IgA vasculitis",
+   "url": "https://doi.org/10.1038/s41467-026-78026-6",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "RNF130 ameliorates renal injury and inflammation by inhibiting macrophage pyroptosis through ubiquitination degradation of PDCD4 in male mice",
+   "url": "https://doi.org/10.1038/s41467-026-78398-9",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Designing nonlinear perturbative metamaterials that compute",
+   "url": "https://doi.org/10.1038/s41467-026-78595-6",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A robust and accurate two-sample Mendelian randomization method with a large number of genetic variants",
+   "url": "https://doi.org/10.1038/s41467-026-78442-8",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Human-enhanced tsunami hazard in large lakes",
+   "url": "https://doi.org/10.1038/s41467-026-78272-8",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Spatial transcriptomics unveils the in situ cellular and molecular hallmarks of the lung in fatal COVID-19",
+   "url": "https://doi.org/10.1038/s41467-026-78188-3",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Thromboxane A2 receptor signalling amplifies osteoclastogenesis in rheumatoid arthritis through ACSL1 associated mitochondrial oxidative metabolism",
+   "url": "https://doi.org/10.1038/s41467-026-78259-5",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A multi-model analysis of hydrogen uptake in a climate-neutral Europe",
+   "url": "https://doi.org/10.1038/s41467-026-78681-9",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Regulating sodium deposition and interfacial chemistry via sulfur-embedded carbon spheres enables high-power Ah-level sodium-metal batteries",
+   "url": "https://doi.org/10.1038/s41467-026-78242-0",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: Obesity-associated macrophages dictate adipose stem cell ferroptosis and visceral fat dysfunction by propagating mitochondrial fragmentation",
+   "url": "https://doi.org/10.1038/s41467-026-70344-z",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Absorbing exceptional point of coherent vortex beams",
+   "url": "https://doi.org/10.1038/s41467-026-78506-9",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Acute priming using elevated fluid viscosity recovers young-like single-cell surveillance behaviors in aged human T cells",
+   "url": "https://doi.org/10.1038/s41467-026-78411-1",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Brain-wide pathways for object identity and location are dominated by internal strategies",
+   "url": "https://doi.org/10.1038/s41467-026-78597-4",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Myosin filaments of vertebrate skeletal and cardiac muscle are highly similar, but not identical",
+   "url": "https://doi.org/10.1038/s41467-026-78643-1",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Revisiting genome-guided RNA localization in bacteria",
+   "url": "https://doi.org/10.1038/s41467-026-78703-6",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Uhrf1 loss disrupts CTCF-associated chromatin organization during early mouse embryogenesis",
+   "url": "https://doi.org/10.1038/s41467-026-78565-y",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Dendritic computation bridges neuroscience and foundation models",
+   "url": "https://doi.org/10.1038/s41467-026-77929-8",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Microscale spatial fragmentation promotes bacterial survival under antibiotics",
+   "url": "https://doi.org/10.1038/s41467-026-78690-8",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Comparison of three pangolin coronaviruses showing distinct pathogenicity, transmissibility and potential for cross-species infection",
+   "url": "https://doi.org/10.1038/s41467-026-78125-4",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Archean subduction-derived noble gases in the lithospheric mantle beneath the São Francisco Craton",
+   "url": "https://doi.org/10.1038/s41467-026-78667-7",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Spatial targeting and expansion prevention offer effective pathways to protect African maize from parasitic weeds",
+   "url": "https://doi.org/10.1038/s41467-026-78614-6",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Rapid and versatile water-promoted oxidative [3+2] cycloaddition",
+   "url": "https://doi.org/10.1038/s41467-026-78630-6",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Mechanistic insights into NET1–UNC5B complex formation and Its targeted disruption by NP137 fab and NET1 peptide competitors",
+   "url": "https://doi.org/10.1038/s41467-026-78641-3",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Inherited lithospheric weakness enabled rapid stress transmission across Tibet",
+   "url": "https://doi.org/10.1038/s41467-026-78650-2",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Genetic diversity and low-level infection of Malawi polyomavirus in pediatric patients in Brazil",
+   "url": "https://doi.org/10.1038/s41467-026-78615-5",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Coupling hfCas13d with Circular gRNA Array Precursors Extends RNA Knockdown and Improves Biocatalysis in Yeast",
+   "url": "https://doi.org/10.1038/s41467-026-78647-x",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Precision RNAi for fibrodysplasia ossificans progressiva in mice using a combinatorial unimolecular allele selective approach",
+   "url": "https://doi.org/10.1038/s41467-026-78738-9",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Structural basis for loop-dependent inhibition by AcrIIC1 anti-CRISPR proteins",
+   "url": "https://doi.org/10.1038/s41467-026-78817-x",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Hydroxy artificial water channels enable ultraselective reverse osmosis membranes for N-nitrosamine removal in water reuse",
+   "url": "https://doi.org/10.1038/s41467-026-78721-4",
+   "first_seen": "2026-10-16"
   }
  ],
- "pending_abstract": 61,
+ "pending_abstract": 76,
  "runs_utc": [
-  "2026-10-15T07:43:34+00:00",
-  "2026-10-15T09:45:34+00:00"
+  "2026-10-16T09:38:15+00:00"
  ]
 }
