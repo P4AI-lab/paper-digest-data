@@ -1,45 +1,45 @@
 {
- "date": "2026-10-21",
- "generated_utc": "2026-10-21T09:59:54+00:00",
+ "date": "2026-10-22",
+ "generated_utc": "2026-10-22T10:00:06+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-10-17",
-   "2026-10-21"
+   "2026-10-18",
+   "2026-10-22"
   ],
   "journal_doi_created": [
-   "2026-10-15",
-   "2026-10-21"
+   "2026-10-16",
+   "2026-10-22"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-   "in_window": 74,
-   "new": 29,
-   "candidates": 1
+   "in_window": 86,
+   "new": 28,
+   "candidates": 0
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-   "in_window": 54,
+   "in_window": 66,
    "new": 18,
-   "candidates": 4
+   "candidates": 2
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-   "in_window": 65,
-   "new": 24,
-   "candidates": 1
+   "in_window": 78,
+   "new": 28,
+   "candidates": 0
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-   "in_window": 3,
-   "new": 0,
+   "in_window": 7,
+   "new": 4,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -47,16 +47,16 @@
    "source": "TPWRS",
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
-   "in_window": 7,
-   "new": 1,
-   "candidates": 1,
+   "in_window": 8,
+   "new": 2,
+   "candidates": 0,
    "new_with_abstract": 0
   },
   {
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 53,
+   "in_window": 62,
    "new": 15,
    "candidates": 2,
    "new_with_abstract": 0
@@ -65,26 +65,26 @@
    "source": "Nature Energy",
    "journal": "Nature Energy",
    "status": "ok",
-   "in_window": 1,
-   "new": 0,
+   "in_window": 2,
+   "new": 1,
    "candidates": 0,
-   "new_with_abstract": 0
+   "new_with_abstract": 1
   },
   {
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 229,
-   "new": 18,
-   "candidates": 0,
-   "new_with_abstract": 9
+   "in_window": 191,
+   "new": 34,
+   "candidates": 1,
+   "new_with_abstract": 12
   },
   {
    "source": "Nature Rev. EE",
    "journal": "Nature Reviews Electrical Engineering",
    "status": "ok",
    "in_window": 2,
-   "new": 0,
+   "new": 1,
    "candidates": 0,
    "new_with_abstract": 0
   }
@@ -92,359 +92,217 @@
  "errors": [],
  "candidates": [
   {
-   "key": "arxiv:2610.28620",
+   "key": "arxiv:2610.29873",
    "source": "arXiv",
-   "id": "2610.28620",
-   "title": "Weight Placement Is Not Enough: Synchronization in Multi-Node CPU Decoding of Ternary LLMs",
-   "abstract": "Ternary LLMs read only a few gigabytes per decoded token, yet on dual-socket servers with four NUMA nodes the fastest ternary runtime we found uses less than half of the memory bandwidth. Placing each weight on the node of the thread that reads it is necessary but not enough: in a decode engine with node-local weights that reuses ik_llama.cpp's kernels, threads on two generations of Xeon servers still spend 20-48% of each token waiting at synchronization points. Per-thread barrier traces show that most of the wait is for the slowest threads of each node; the barriers' own latency (microseconds each, but up to 12% of the token for the smallest model) and serial per-node work are smaller parts. On identical kernels, a Megatron-style column split beats a row-owned split without cross-node reductions in every configuration we measured, and isolating the number of barriers shows that most of its gain comes from its threads waiting less for each other and for their node leaders, and only a minority from having fewer barriers. Where decoding is DRAM-bound, the resulting engine is 1.5-2.1x faster than ik_llama.cpp with all cores and 1.5-1.9x faster than ik_llama.cpp at its fastest thread count (3.2x and 2.8x for a small model that runs from the L3 cache), at the same accuracy and with less energy per token.",
+   "id": "2610.29873",
+   "title": "HAWK: Heterogeneity-Aware KV Cache Transfer for Efficient GPU-NPU Phase-Disaggregated LLM Inference",
+   "abstract": "Large language model (LLM) inference exhibits distinct computational characteristics across its two phases: prefill is compute-intensive, whereas decode is more memory-bound. As a result, AI accelerators achieve varying levels of efficiency across the two phases. GPUs are well suited to prefill, but are often underutilized during decode. By contrast, NPUs can utilize their compute resources more effectively during decode. Motivated by this observation, we explore a heterogeneous architecture that integrates GPUs and NPUs, mapping prefill to GPUs and decode to NPUs to achieve high performance and efficiency. However, realizing such heterogeneous integration is challenging because LLM phase disaggregation requires KV cache transfer from prefill to decode (that is, from GPUs to NPUs), which is complicated by differences in inter-device communication mechanisms and KV cache tensor layouts. To address this, we propose HAWK, a transfer mechanism that enables rapid KV cache transfer across heterogeneous devices. HAWK establishes a remote direct memory access (RDMA) path for direct cross-device transfers while handling inter-device tensor layout discrepancies as part of the transfer process. In particular, HAWK allocates tensor-layout-aware RDMA buffers on the NPU side to match the target tensor layout. Leveraging these buffers, HAWK orchestrates data transfer from a conventional contiguous GPU RDMA buffer to the corresponding NPU buffers, allowing transferred tensors to be consumed directly without additional data rearrangement while maintaining transfer efficiency. We implement and evaluate HAWK on a system built with commercially available GPUs and NPUs, demonstrating performance within 7.88% of a GPU-only system under the same SLO constraints while achieving up to 1.26$\\times$ higher power efficiency and 1.72$\\times$ higher cost efficiency.",
    "authors": [
     {
-     "name": "Runguo Li",
+     "name": "Junhyeok Park",
      "affiliations": []
     },
     {
-     "name": "Dezhen Lu",
+     "name": "Jungeun Yoon",
+     "affiliations": []
+    },
+    {
+     "name": "Kyungmin Kim",
+     "affiliations": []
+    },
+    {
+     "name": "Hunsoon Lee",
+     "affiliations": []
+    },
+    {
+     "name": "Shinyoung Ahn",
+     "affiliations": []
+    },
+    {
+     "name": "Kangho Kim",
      "affiliations": []
     }
    ],
    "categories": [
+    "cs.AR",
     "cs.DC"
    ],
-   "primary_category": "cs.DC",
-   "date": "2026-10-20",
-   "url": "https://arxiv.org/abs/2610.28620",
+   "primary_category": "cs.AR",
+   "date": "2026-10-21",
+   "url": "https://arxiv.org/abs/2610.29873",
    "matched_terms": [
-    "llms"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "(author block not found in HTML)"
-  },
-  {
-   "key": "arxiv:2610.28576",
-   "source": "arXiv",
-   "id": "2610.28576",
-   "title": "The Token-Energy Law of LLM Decode: Active Bytes and Realized Time Account for Joules per Token",
-   "abstract": "Energy-efficient deployment of large language models requires understanding how model architecture, hardware, and serving settings shape energy per generated token. We introduce the Token-Energy Law, a compact, interpretable model of GPU-board energy per output token for dense, full-history decoding. It relates token energy to two core dimensions: active bytes and realized decode time. Active bytes describe logical byte demand per output, separating dense weights shared within a decode iteration from private key--value (KV) histories read and updated for each request. Realized decode time is the elapsed decode duration divided by the number of output tokens produced. We combine the two byte coordinates and time in a common affine form, with coefficients calibrated for each model and hardware/runtime configuration. This formulation explains how batching amortizes shared-weight work, longer attended histories increase private KV demand, and throughput determines the time-associated cost per output. Our experiments cover three models under BF16 decoding on NVIDIA Hopper and Blackwell GPUs, including two-GPU tensor parallelism on Hopper. Using fixed coefficients and observed decode time, held-out condition-mean energy estimates differ from measurements by at most 3.73%.",
-   "authors": [
-    {
-     "name": "Chenxu Niu",
-     "affiliations": []
-    },
-    {
-     "name": "Batuhan Sencer",
-     "affiliations": []
-    },
-    {
-     "name": "Wei Zhang",
-     "affiliations": []
-    },
-    {
-     "name": "Yong Chen",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.LG",
-    "cs.DC",
-    "cs.PF"
-   ],
-   "primary_category": "cs.LG",
-   "date": "2026-10-20",
-   "url": "https://arxiv.org/abs/2610.28576",
-   "matched_terms": [
+    "ai accelerators",
     "gpu",
     "gpus",
-    "large language models",
+    "large language model",
     "llm"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "The Token-Energy Law of LLM Decode: Active Bytes and Realized Time Account for Joules per Token Chenxu Niu Affiliation: NVIDIA Corporation , USA email: chenxun@nvidia.com , Batuhan Sencer Affiliation: Texas Tech University , USA email: batuhan.sencer@ttu.edu , Wei Zhang Affiliation: Texas Advanced Computing Center , USA email: wei.zhang@tacc.utexas.edu and Yong Chen Affiliation: Texas Tech University , USA email: yong.chen@ttu.edu © none Abstract. Energy-efficient deployment of large language models requires understanding how model architecture, hardware, and serving settings shape energy per generated token. We introduce the Token-Energy Law, a compact, interpretable model of GPU-board energy per output token for dense, full-history decoding. It relates token energy to two core dimensions: active bytes and realized decode time. Active bytes describe logical byte demand per output, separating dense weights shared within a decode iteration from private key–value (KV) histories read and updated for each request. Realized decode time is the elapsed decode duration divided by the number of output tokens produced. We combine the two byte coordinates and time in a common affine form, with coefficients calibrated for each model and hardware/runtime configuration. This formulation explains how batching amortizes shared-weight work, longer attended histories increase private KV demand, and throughput determines the time-associated cost per output. Our experiments cover three models under BF16 decoding on NVIDIA Hopper and Blackwell GPUs, including two-GPU tensor parallelism on Hopper. Using fixed coefficients and observed decode time, held-out condition-mean energy estimates differ from measurements by at most 3.73%. Controlled request-departure tests further show that previously identified model-specific coefficients remain effective as batch membership changes, without recalibration for departure patterns. The central contribution is a reusable work–time relationship whose structure remains consistent across configurations while its coefficients describe local energy responses. It provides researchers and practitioners with a quantitative basis for interpreting inference energy and comparing serving trade-offs. Combined with independently validated performance models, the law can also support prospective energy estimation and energy-efficient deployment planning. Keywords: large language model inference, energy measurement, scaling law, decode inference, KV cache"
+   "affiliation_block": "HAWK: Heterogeneity-Aware KV Cache Transfer for Efficient GPU-NPU Phase-Disaggregated LLM Inference Junhyeok Park Note: Work completed while the auther was at ETRI; the author is the corresponding author. Affiliation: Georgia Institute of Technology , Atlanta , USA email: junhyeokpark@gatech.edu , Jungeun Yoon Affiliation: Electronics and Telecommunications Research Institute (ETRI) , Daejeon , Republic of Korea email: jeyoon@etri.re.kr , Kyungmin Kim Affiliation: Electronics and Telecommunications Research Institute (ETRI) , Daejeon , Republic of Korea email: kyungmin.kim@etri.re.kr , Hunsoon Lee Affiliation: Electronics and Telecommunications Research Institute (ETRI) , Daejeon , Republic of Korea email: hunsoon@etri.re.kr , Shinyoung Ahn Affiliation: Electronics and Telecommunications Research Institute (ETRI) , Daejeon , Republic of Korea email: syahn@etri.re.kr and Kangho Kim Affiliation: Electronics and Telecommunications Research Institute (ETRI) , Daejeon , Republic of Korea email: khk@etri.re.kr © none Abstract. Large language model (LLM) inference exhibits distinct computational characteristics across its two phases: prefill is compute-intensive, whereas decode is more memory-bound. As a result, AI accelerators achieve varying levels of efficiency across the two phases. GPUs are well suited to prefill, but are often underutilized during decode. By contrast, NPUs can utilize their compute resources more effectively during decode. Motivated by this observation, we explore a heterogeneous architecture that integrates GPUs and NPUs, mapping prefill to GPUs and decode to NPUs to achieve high performance and efficiency. However, realizing such heterogeneous integration is challenging because LLM phase disaggregation requires KV cache transfer from prefill to decode—that is, from GPUs to NPUs—which is complicated by differences in inter-device communication mechanisms and KV cache tensor layouts. To address this, we propose HAWK , a transfer mechanism that enables rapid KV cache transfer across heterogeneous devices. HAWK establishes a remote direct memory access (RDMA) path for direct cross-device transfers while handling inter-device tensor layout discrepancies as part of the transfer process. In particular, HAWK allocates tensor-layout-aware RDMA buffers on the NPU side to match the target tensor layout. Leveraging these buffers, HAWK orchestrates data transfer from a conventional contiguous GPU RDMA buffer to the corresponding NPU buffers, allowing "
   },
   {
-   "key": "arxiv:2610.27930",
+   "key": "arxiv:2610.28867",
    "source": "arXiv",
-   "id": "2610.27930",
-   "title": "Benchmarking CPU, GPU, and ML Power-Flow Solvers from 14 to 70,000 Buses",
-   "abstract": "Learned surrogates for power-flow (PF) computation are usually motivated by speed, compared against a single CPU-based baseline. We show this comparison is fragile: across 7 open-source CPU-based solvers evaluated on identical inputs, throughput varies by roughly 2.5-3 orders of magnitude, so the choice of baseline alone can flip the conclusion. We build a benchmark spanning 9 physics-based solvers: 7 CPU-based and 2 GPU-based, including a new batched GPU solver, gumsim2grid - and 3 published ML surrogates, evaluated under a shared, independently implemented KCL-mismatch check across 15 grids from 14 to 70,000 buses. On the PF task itself, a sufficiently parallelized CPU solver or gpusim2grid matches or exceeds the throughput of the ML surrogates we test while remaining orders of magnitude more accurate; we find no evidence that these GNN-style surrogates are yet competitive for PF specifically, though prior work reports genuine gains on related but more combinatorial tasks such as optimal power flow or power grid control. Beyond this finding, we hope the benchmark suite, code and reference evaluator released at https://github.com/Grid2op/gpusim2grid helps close a broader reproducibility gap in this space, where batched GPU-based PF solvers are rarely open-sourced or evaluated against a common set of baselines.",
+   "id": "2610.28867",
+   "title": "Engineering Low-Latency, High-Throughput Quantum Decoders on NVIDIA GPUs",
+   "abstract": "We design and optimize a quantum error correction (QEC) decoder for NVIDIA GPUs, combining Relay belief propagation, a state-of-the-art message-passing algorithm, with order-zero ordered statistics post-processing. Our implementation uses CUDA Graphs to control GPU execution, stops updates for converged samples, and collects unresolved samples in queues for post-processing. We optimize sparse traversal through coalesced message accesses, prefetching, and register reuse, and accelerate binary post-processing with warp-level collectives. In addition, mixed FP16-FP32 arithmetic and INT8 quantization reduce message storage and traffic while retaining accuracy using accumulators at higher precision. We evaluate surface, hypergraph product, and bivariate bicycle code workloads on NVIDIA A100 and GH200 data-center GPUs and a commodity RTX 5080. On the bivariate bicycle code at error probability 0.003, INT8 halves amortized decoding time relative to independently tuned FP32 with a negligible logical error rate increase on RTX 5080. With independent syndrome batches submitted back-to-back to concurrent decoder instances, RTX 5080 delivers 91% of GH200's highest measured throughput with an 8.9x shorter median submission-to-correction latency. The combination of performance optimization, mixed precision, INT8 quantization, and concurrent decoder instances opens a path toward QEC decoder clusters built from commodity GPUs.",
    "authors": [
     {
-     "name": "Benjamin Donnot",
+     "name": "Stefano Markidis",
      "affiliations": []
     },
     {
-     "name": "Sami Tazi",
+     "name": "Luca Pennati",
      "affiliations": []
     },
     {
-     "name": "Eva Boguslawski",
-     "affiliations": []
-    },
-    {
-     "name": "Nourredine Henka",
+     "name": "Ivy Peng",
      "affiliations": []
     }
    ],
    "categories": [
     "cs.DC",
-    "cs.SE"
+    "quant-ph"
    ],
    "primary_category": "cs.DC",
    "date": "2026-10-20",
-   "url": "https://arxiv.org/abs/2610.27930",
+   "url": "https://arxiv.org/abs/2610.28867",
    "matched_terms": [
-    "gpu"
+    "data-center"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Benchmarking CPU, GPU, and ML Power-Flow Solvers from 14 to 70,000 Buses Benjamin Donnot Sami Tazi Eva Boguslawski Nourredine Henka Affiliation: RTE France Affiliation: benjamin.donnot, sami.tazi, eva.boguslawski, nourredine.henka @rte-france.com Abstract Learned surrogates for power-flow (PF) computation are usually motivated by speed, compared against a single CPU-based baseline. We show this comparison is fragile: across 7 open-source CPU-based solvers evaluated on identical inputs, throughput varies by roughly 2.5–3 orders of magnitude, so the choice of baseline alone can flip the conclusion. We build a benchmark spanning 9 physics-based solvers – 7 CPU-based and 2 GPU-based, including a new batched GPU solver, gumsim2grid – and 3 published ML surrogates, evaluated under a shared, independently implemented KCL-mismatch check across 15 grids from 14 to 70,000 buses. On the PF task itself, a sufficiently parallelized CPU solver or gpusim2grid matches or exceeds the throughput of the ML surrogates we test while remaining orders of magnitude more accurate; we find no evidence that these GNN-style surrogates are yet competitive for PF specifically, though prior work reports genuine gains on related but more combinatorial tasks such as optimal power flow or power grid control. Beyond this finding, we hope the benchmark suite – code and reference evaluator released at an anonymized repository – helps close a broader reproducibility gap in this space, where batched GPU-based PF solvers are rarely open-sourced or evaluated against a common set of baselines."
+   "affiliation_block": "Engineering Low-Latency, High-Throughput Quantum Decoders on NVIDIA GPUs Stefano Markidis, Luca Pennati, Ivy Peng Affiliation: KTH Royal Institute of Technology Abstract We design and optimize a quantum error correction (QEC) decoder for NVIDIA GPUs, combining Relay belief propagation, a state-of-the-art message-passing algorithm, with order-zero ordered statistics post-processing. Our implementation uses CUDA Graphs to control GPU execution, stops updates for converged samples, and collects unresolved samples in queues for post-processing. We optimize sparse traversal through coalesced message accesses, prefetching, and register reuse, and accelerate binary post-processing with warp-level collectives. In addition, mixed FP16–FP32 arithmetic and INT8 quantization reduce message storage and traffic while retaining accuracy using accumulators at higher precision. We evaluate surface, hypergraph product, and bivariate bicycle code workloads on NVIDIA A100 and GH200 data-center GPUs and a commodity RTX 5080. On the bivariate bicycle code at error probability 0.003, INT8 halves amortized decoding time relative to independently tuned FP32 with a negligible logical error rate increase on RTX 5080. With independent syndrome batches submitted back-to-back to concurrent decoder instances, RTX 5080 delivers 91% of GH200’s highest measured throughput with an 8.9 × \\times shorter median submission-to-correction latency. The combination of performance optimization, mixed precision, INT8 quantization, and concurrent decoder instances opens a path toward QEC decoder clusters built from commodity GPUs. Index Terms: NVIDIA GPUs, quantum error correction"
   },
   {
-   "key": "arxiv:2610.27797",
-   "source": "arXiv",
-   "id": "2610.27797",
-   "title": "Toward Agentic AI for the 6G Physical Layer: From Algorithm Discovery to Verified Baseband Silicon",
-   "abstract": "6G will be designed faster than it can be built: AI-driven search already proposes physical-layer algorithms at machine speed, while carrying a single one onto embedded baseband silicon remains specialist work. That silicon imposes hard memory and numeric limits, but also exposes cost structures a GPU lacks, and a design flow that never runs on the target sees neither. We present an agentic workflow in which an LLM coding agent implements algorithms on a commercial baseband SoC, optimizes them down to agent-written vector assembly, and validates them on silicon. The agent is guided by a knowledge base of measured platform facts, checked at every step against evaluators it is instructed never to edit, and metered per phase. We showcase the workflow on an AI-discovered orthogonal time frequency space (OTFS) detector portfolio on the open 6G4All platform. It yields twelve kernels that run cycle-exactly on silicon, their optimized versions at 18k-405k cycles (30-660 $μ$s) per frame. It also yields a new detector shaped by the chip's measured costs that needs 13.9% fewer cycles than the port of the discovered detector while matching its error rate, with a measured edge our evaluation cannot statistically resolve, a structure that a hardware-blind search objective had no reason to find. What is not specific to OTFS is the workflow: an LLM agent exploring an implementation space under real hardware limits, with the cost of every choice measured rather than assumed.",
-   "authors": [
-    {
-     "name": "Eric Mittag",
-     "affiliations": []
-    },
-    {
-     "name": "Lukas Brechtel",
-     "affiliations": []
-    },
-    {
-     "name": "Maximilian Stark",
-     "affiliations": []
-    },
-    {
-     "name": "Hans D. Schotten",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.AI",
-    "cs.NI",
-    "eess.SP"
-   ],
-   "primary_category": "cs.AI",
-   "date": "2026-10-20",
-   "url": "https://arxiv.org/abs/2610.27797",
-   "matched_terms": [
-    "gpu",
-    "llm"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Toward Agentic AI for the 6G Physical Layer: From Algorithm Discovery to Verified Baseband Silicon Thanks: 3 These authors contributed equally. Eric Mittag 1 3 , Lukas Brechtel 1 3 , Maximilian Stark 2 , Hans D. Schotten 1 5 Affiliation: 1 German Research Center for Artificial Intelligence (DFKI), Kaiserslautern, Germany Affiliation: 2 CTO System Innovation, NXP Semiconductors, Hamburg, Germany Affiliation: 5 RPTU University Kaiserslautern-Landau, Germany Affiliation: Abstract 6G will be designed faster than it can be built: AI-driven search already proposes physical-layer algorithms at machine speed, while carrying a single one onto embedded baseband silicon remains specialist work. That silicon imposes hard memory and numeric limits, but also exposes cost structures a GPU lacks, and a design flow that never runs on the target sees neither. We present an agentic workflow in which an LLM coding agent implements algorithms on a commercial baseband SoC, optimizes them down to agent-written vector assembly, and validates them on silicon. The agent is guided by a knowledge base of measured platform facts, checked at every step against evaluators it is instructed never to edit, and metered per phase. We showcase the workflow on an AI-discovered orthogonal time frequency space (OTFS) detector portfolio on the open 6G4All platform. It yields twelve kernels that run cycle-exactly on silicon, their optimized versions at 18 k–405 k cycles (30–660 𝝁 \\boldsymbol{\\mu} s) per frame. It also yields a new detector shaped by the chip’s measured costs that needs 13.9% fewer cycles than the port of the discovered detector while matching its error rate, with a measured edge our evaluation cannot statistically resolve, a structure that a hardware-blind search objective had no reason to find. What is not specific to OTFS is the workflow: an LLM agent exploring an implementation space under real hardware limits, with the cost of every choice measured rather than assumed. Index Terms: Agentic AI, 6G, large language models, physical layer, baseband processing, OTFS, hardware-in-the-loop"
-  },
-  {
-   "key": "arxiv:2610.27739",
-   "source": "arXiv",
-   "id": "2610.27739",
-   "title": "Make the Adversary Spend More Energy: Generative Deception against Language-Model Attackers in Critical Infrastructure",
-   "abstract": "Language-model attackers consume computational resources as they explore and interact with a target, creating an opportunity for cyber deception to impose costs. Whether such engagements favor the defender requires measuring both sides. We evaluate an autonomous language-model attacker against a decoy that uses a defending language model to analyze attacker commands and select defensive responses. Across 330 sessions, eight model pairs, two attacker profiles and three counter-injection levels, both sides run on identical GPUs and their energy is measured above idle. With runtime thinking disabled, the attacker-to-defender energy ratio has a 95% interval above one in 41 of 48 configurations under an allocation excluding attacker diagnostic calls, and in all 48 when those calls are included. Token ratios remain within approximately a factor of two in configurations without generation-cap truncation, showing that token counts can obscure substantial energy asymmetry. Counter-injection increases attacker tokens by approximately 9% per level without a detectable pooled change in energy consumption. Enabling thinking on both sides increases defender energy by 8--17 times and reverses the exchange for one model pair in the original campaign. We use these findings to motivate a proposed SCADA deception architecture with private physical state per identified adversary and deterministic protocol and process emulation.",
-   "authors": [
-    {
-     "name": "Vlad Mihal",
-     "affiliations": []
-    },
-    {
-     "name": "Hosam Alamleh",
-     "affiliations": []
-    },
-    {
-     "name": "Alessandro Cantelli-Forti",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.CR",
-    "eess.SY"
-   ],
-   "primary_category": "cs.CR",
-   "date": "2026-10-20",
-   "url": "https://arxiv.org/abs/2610.27739",
-   "matched_terms": [
-    "gpus"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Make the Adversary Spend More Energy: Generative Deception against Language-Model Attackers in Critical Infrastructure Thanks: This article extends the workshop paper [ 5 ] (AD&D 2026, co-located with ESORICS 2026) with a two-sided energy measurement, the grid architecture and the mission-value scenario; the measurements reported here are new. Vlad Mihal Affiliation: Department of Engineering and Architecture, University of Parma, Parma, Italy Affiliation: CNIT, RaSS National Laboratory, Pisa, Italy Hosam Alamleh † † thanks: Corresponding author. E-mail: alamlehh@uncw.edu Affiliation: Department of Computer Science, University of North Carolina Wilmington, Wilmington, NC, USA Alessandro Cantelli-Forti Affiliation: CNIT, RaSS National Laboratory, Pisa, Italy Preprint, 16 October 2026. Submitted for publication. Abstract Language-model attackers consume computational resources as they explore and interact with a target, creating an opportunity for cyber deception to impose costs. Whether such engagements favor the defender requires measuring both sides. We evaluate an autonomous language-model attacker against a decoy that uses a defending language model to analyze attacker commands and select defensive responses. Across 330 sessions, eight model pairs, two attacker profiles and three counter-injection levels, both sides run on identical GPUs and their energy is measured above idle. With runtime thinking disabled, the attacker-to-defender energy ratio has a 95% interval above one in 41 of 48 configurations under an allocation excluding attacker diagnostic calls, and in all 48 when those calls are included. Token ratios remain within approximately a factor of two in configurations without generation-cap truncation, showing that token counts can obscure substantial energy asymmetry. Counter-injection increases attacker tokens by approximately 9% per level without a detectable pooled change in energy consumption. Enabling thinking on both sides increases defender energy by 8–17 times and reverses the exchange for one model pair in the original campaign. We use these findings to motivate a proposed SCADA deception architecture with private physical state per identified adversary and deterministic protocol and process emulation. Keywords: Cyber deception; Honeypots; Large language models; GPU energy; SCADA; Critical infrastructure protection"
-  },
-  {
-   "key": "arxiv:2610.26945",
-   "source": "arXiv",
-   "id": "2610.26945",
-   "title": "Emulating DGEMM and ZGEMM with INT8 Matrix Engines on Intel Arc GPUs: Ozaki Scheme II on the Xe2 Architecture",
-   "abstract": "Double-precision matrix multiplication, real (DGEMM) and complex (ZGEMM), dominates the run time of dense linear algebra and electronic-structure codes. On affordable GPUs, however, FP64 throughput is a small and shrinking fraction of the throughput of the low-precision matrix engines. Ozaki scheme II closes this gap by reducing a floating-point matrix product to a handful of exact INT8 products followed by a Chinese-remainder reconstruction; the number of products sets the accuracy. We present what is, to our knowledge, the first implementation of Ozaki scheme II for Intel GPUs. Written in SYCL on top of oneMKL, it runs entirely on the device and exposes the full BLAS dgemm/zgemm interface. Making the scheme fast on the Xe2 (Battlemage) architecture required keeping FP64 arithmetic out of all memory-bound kernels, a branch-free residue computation, an FP32 evaluation of the CRT quotient with a proven safety margin, 16-bit limb arithmetic in the reconstruction, and work-arounds for performance cliffs of the vendor INT8 GEMM. On an Intel Arc Pro B60 (24 GB) the emulated DGEMM reaches 17.3, 12.1 and 9.3 TFLOP/s with $s=8$, 12 and 16 moduli at $N=8192$, and up to 21.1 TFLOP/s overall, i.e. 12-28x the native FP64 DGEMM of the same board. The emulated ZGEMM, which uses the 3M form exactly in integer arithmetic, reaches up to 27.4 TFLOP/s and is 13.7-17.8x faster than native ZGEMM for $N\\ge4096$ at $s=16$. With $s\\ge16$ the results are correctly rounded for well-scaled inputs and, using an extended-width residue path ($s=20$-24), also for inputs with wide exponent ranges, whereas native DGEMM rounds only 2-13% of the entries correctly. We also report worst-case accuracy, phase breakdowns, energy, an ablation study, a comparison with Ozaki scheme I, and a validated performance model.",
-   "authors": [
-    {
-     "name": "Rostislavs Rostovskis",
-     "affiliations": []
-    },
-    {
-     "name": "Aleksandrs Platonenko",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.MS",
-    "cs.DC",
-    "math.NA"
-   ],
-   "primary_category": "cs.MS",
-   "date": "2026-10-18",
-   "url": "https://arxiv.org/abs/2610.26945",
-   "matched_terms": [
-    "gpus"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Emulating DGEMM and ZGEMM with INT8 Matrix Engines on Intel Arc GPUs: Ozaki Scheme II on the Xe2 Architecture Rostislavs Rostovskis † † thanks: Corresponding author: rostislavs.rostovskis@cfi.lu.lv Affiliation: Institute of Solid State Physics, University of Latvia, Riga, Latvia Aleksandrs Platonenko Affiliation: Institute of Solid State Physics, University of Latvia, Riga, Latvia October 18, 2026 Abstract Double-precision matrix multiplication, real (DGEMM) and complex (ZGEMM), dominates the run time of dense linear algebra and electronic-structure codes. On affordable GPUs, however, FP64 throughput is a small and shrinking fraction of the throughput of the low-precision matrix engines. Ozaki scheme II closes this gap by reducing a floating-point matrix product to a handful of exact INT8 products followed by a Chinese-remainder reconstruction; the number of products sets the accuracy. We present what is, to our knowledge, the first implementation of Ozaki scheme II for Intel GPUs. Written in SYCL on top of oneMKL, it runs entirely on the device and exposes the full BLAS dgemm / zgemm interface, including transposition, conjugation, α \\alpha , β \\beta and arbitrary problem sizes through memory-aware tiling. Making the scheme fast on the Xe2 (Battlemage) architecture required keeping FP64 arithmetic out of all memory-bound kernels, a branch-free residue computation, an FP32 evaluation of the CRT quotient with a proven safety margin, 16-bit limb arithmetic in the reconstruction, and work-arounds for performance cliffs of the vendor INT8 GEMM. On an Intel Arc Pro B60 (24 GB) the emulated DGEMM reaches 17.3, 12.1 and 9.3 TFLOP/s with s = 8 s=8 , 12 and 16 moduli at N = 8192 N=8192 , and up to 21.1 TFLOP/s overall, i.e. 12–28 × \\times the native FP64 DGEMM of the same board; 75–90% of the run time is spent in INT8 GEMM at ≈ \\approx 95% of its attainable rate. The emulated ZGEMM, which uses the 3M form exactly in integer arithmetic, reaches up to 27.4 TFLOP/s and is 13.7–17.8 × \\times faster than native ZGEMM for N ≥ 4096 N\\geq 4096 at s = 16 s=16 . With s ≥ 16 s\\geq 16 the results are correctly rounded for well-scaled inputs and, using an extended-width residue path ( s = 20 s=20 – 24 24 ), also for inputs with wide exponent ranges, whereas native DGEMM on GPU or CPU rounds only 2–13% of the entries correctly. We further report worst-case accuracy, phase breakdowns, energy, an ablation of the pipeline-level decisions, a comparison with Ozaki scheme I on the sam"
-  },
-  {
-   "key": "doi:10.1109/tpwrs.2026.3745666",
-   "source": "journal",
-   "journal": "IEEE Transactions on Power Systems",
-   "journal_short": "TPWRS",
-   "doi": "10.1109/tpwrs.2026.3745666",
-   "title": "Exploiting the Flexibility of LLM Inference for Frequency Regulation Service",
-   "abstract": "",
-   "abstract_source": "",
-   "authors": [
-    {
-     "name": "Yimeng Sun",
-     "affiliations": [
-      "North China Electric Power University"
-     ]
-    },
-    {
-     "name": "Zhaohao Ding",
-     "affiliations": [
-      "North China Electric Power University"
-     ]
-    }
-   ],
-   "type": "journal-article",
-   "date": "2026-10-20",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3745666",
-   "matched_terms": [
-    "llm"
-   ],
-   "screened_on": "title only",
-   "affiliation_source": "crossref"
-  },
-  {
-   "key": "doi:10.1016/j.apenergy.2026.129053",
+   "key": "doi:10.1016/j.apenergy.2026.129082",
    "source": "journal",
    "journal": "Applied Energy",
    "journal_short": "Applied Energy",
-   "doi": "10.1016/j.apenergy.2026.129053",
-   "title": "Bridging the grid-thermal-computational nexus via physics-informed hierarchical multi-agent reinforcement learning for data center co-optimization",
+   "doi": "10.1016/j.apenergy.2026.129082",
+   "title": "An LLM-guided multi-objective optimization framework for cluster-aware electric vehicle charging management toward sustainable grid operation",
    "abstract": "",
    "abstract_source": "",
    "authors": [
     {
-     "name": "Zekai Jin",
+     "name": "Muhammad Waqar",
      "affiliations": []
     },
     {
-     "name": "Yue Zhou",
+     "name": "Yong-Woon Kim",
      "affiliations": []
     },
     {
-     "name": "Haiyang You",
-     "affiliations": []
-    },
-    {
-     "name": "Jin Yang",
-     "affiliations": []
-    },
-    {
-     "name": "Wei Tang",
-     "affiliations": []
-    },
-    {
-     "name": "Lu Zhang",
-     "affiliations": []
-    },
-    {
-     "name": "Chengwei Lou",
+     "name": "Yung-Cheol Byun",
      "affiliations": []
     }
    ],
    "type": "journal-article",
-   "date": "2026-10-20",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129053",
+   "date": "2026-10-21",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129082",
    "matched_terms": [
-    "data center"
+    "llm"
    ],
    "screened_on": "title only",
    "affiliation_source": "not available yet"
   },
   {
-   "key": "doi:10.1016/j.apenergy.2026.129073",
+   "key": "doi:10.1016/j.apenergy.2026.129094",
    "source": "journal",
    "journal": "Applied Energy",
    "journal_short": "Applied Energy",
-   "doi": "10.1016/j.apenergy.2026.129073",
-   "title": "Human-in-the-loop preference calibration for home energy management via LLM-enabled contract-constrained language interfaces",
+   "doi": "10.1016/j.apenergy.2026.129094",
+   "title": "Spatio-temporal large language model for zero-shot EV charging demand prediction: Beneficial to station energy management under data scarcity",
    "abstract": "",
    "abstract_source": "",
    "authors": [
     {
-     "name": "Zeqing Wu",
+     "name": "Zhe Zhang",
      "affiliations": []
     },
     {
-     "name": "Yunfei Mu",
+     "name": "Hongyi Lin",
      "affiliations": []
     },
     {
-     "name": "Jiarui Zhang",
+     "name": "Jingchun Zhang",
      "affiliations": []
     },
     {
-     "name": "Yue Zhou",
+     "name": "Bangyang Wei",
      "affiliations": []
     },
     {
-     "name": "Hongjie Jia",
+     "name": "Bo-wen Li",
      "affiliations": []
     },
     {
-     "name": "Yanze Xu",
+     "name": "Yang Liu",
      "affiliations": []
     },
     {
-     "name": "Yilun Du",
+     "name": "Qing Yu",
      "affiliations": []
     }
    ],
    "type": "journal-article",
-   "date": "2026-10-20",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129073",
+   "date": "2026-10-22",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129094",
    "matched_terms": [
-    "llm"
+    "large language model"
    ],
    "screened_on": "title only",
    "affiliation_source": "not available yet"
-  }
- ],
- "title_only_final": [
-  {
-   "source": "Applied Energy",
-   "title": "Battery degradation and frequency stability considerations in the design of off-grid mining microgrids",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129007"
   },
   {
-   "source": "Applied Energy",
-   "title": "Co-optimizing revenue generation and lifetime degradation of lithium-ion batteries in energy markets using physics-based modeling",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129004"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Hydrogen integration for sustainable aviation propulsion: Evaluating recirculation efficiency in PEMFC systems",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129005"
+   "key": "doi:10.1038/s41467-026-78128-1",
+   "source": "journal",
+   "journal": "Nature Communications",
+   "journal_short": "Nature Communications",
+   "doi": "10.1038/s41467-026-78128-1",
+   "title": "Reduced-DSP 200G/λ low-voltage slow-light silicon modulator enabled by built-in EO equalizer",
+   "abstract": "Abstract Multi-Tb/s optical interconnects for artificial intelligence data centers necessitate high-speed, energy-efficient, and compact transceivers. However, conventional silicon Mach-Zehnder modulators are fundamentally limited by low modulation efficiency and large physical dimensions that typically extend several millimeters, requiring high-swing drivers and power-intensive digital signal processing to achieve data rates exceeding 100 Gb/s per lane. Here we show a silicon photonic crystal waveguide slow-light modulator that overcomes the bandwidth-efficiency trade-off via a built-in electro-optic equalizer. By monolithically integrating optical delay lines and crossings within segmented slow-light phase shifters, we synthesized an on-chip feedforward response that extends the 3-dB bandwidth. The fabricated modulator with a small device length of 320 µm demonstrated 140-Gb/s on-off keying operation with an energy consumption of 26 fJ/bit using drive voltages compatible with fin field-effect transistor-based complementary metal-oxide-semiconductor technology. Furthermore, four-level pulse amplitude modulation achieved 180 Gb/s without digital signal processing and 200 Gb/s with a low-complexity 11-tap digital equalizer. By reducing reliance on power-dissipating electronics, this strategy provides a potential route toward future dense multi-Tb/s co-packaged optics for energy-constrained switching systems.",
+   "abstract_source": "crossref",
+   "authors": [
+    {
+     "name": "Keisuke Kawahara",
+     "affiliations": []
+    },
+    {
+     "name": "Tai Tsuchizawa",
+     "affiliations": []
+    },
+    {
+     "name": "Noritsugu Yamamoto",
+     "affiliations": []
+    },
+    {
+     "name": "Yuriko Maegami",
+     "affiliations": []
+    },
+    {
+     "name": "Koji Yamada",
+     "affiliations": []
+    },
+    {
+     "name": "Nobuhiko Nishiyama",
+     "affiliations": []
+    },
+    {
+     "name": "Toshihiko Baba",
+     "affiliations": []
+    }
+   ],
+   "type": "journal-article",
+   "date": "2026-10-22",
+   "url": "https://doi.org/10.1038/s41467-026-78128-1",
+   "matched_terms": [
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_source": "not available yet"
   }
  ],
+ "title_only_final": [],
  "pending_items": [
   {
    "source": "TPWRS",
@@ -526,12 +384,6 @@
   },
   {
    "source": "Applied Energy",
-   "title": "State-of-health estimation of lithium-ion batteries from random local charging fragments: A reliability-aware local-global fusion framework",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129134",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Unlocking the potential benefits of intertemporal resources via explicit embedding future value of the end-of-day state in day-ahead dispatch",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129039",
    "first_seen": "2026-10-20"
@@ -544,116 +396,14 @@
   },
   {
    "source": "Applied Energy",
-   "title": "Constructing reliable clean energy facility network under ambiguous distribution information",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129056",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Applied Energy",
    "title": "A systematic review of cross-sectoral life cycle assessments of carbon capture, utilization, and storage systems",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129040",
    "first_seen": "2026-10-20"
   },
   {
    "source": "Applied Energy",
-   "title": "Is more aggregated better? Balancing power generation, employment accessibility, and climate mitigation in photovoltaic deployment",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129103",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Alkali hydrides catalyze hydrogenolysis of polystyrene to alkylbenzenes under mild conditions",
-   "url": "https://doi.org/10.1038/s41467-026-78624-4",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "A prophage-encoded anti-phage defence system that prevents DNA packaging by targeting the terminase complex",
-   "url": "https://doi.org/10.1038/s41467-026-78609-3",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Three-photon population imaging of subcortical brain regions",
-   "url": "https://doi.org/10.1038/s41467-026-78585-8",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Balancing the Performance Trade-off of Polymer Blends with Heterogeneously Dispersed Nanodomains via Reactive Processing",
-   "url": "https://doi.org/10.1038/s41467-026-78704-5",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Nutrient stress-driven ACSS1 controls metabolic flexibility and bone formation",
-   "url": "https://doi.org/10.1038/s41467-026-77684-w",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Production of abundant defective viral genomes by an insect-specific alphavirus revealed by nanopore sequencing",
-   "url": "https://doi.org/10.1038/s41467-026-78770-9",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "The Emirati pangenome featuring a diploid chromosome-level reference",
-   "url": "https://doi.org/10.1038/s41467-026-78776-3",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Anterior cingulate input tunes striatal dynamics for context-dependent social preference in a mouse model of autism",
-   "url": "https://doi.org/10.1038/s41467-026-79022-6",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Fatty acids in the tumor microenvironment reprogram neutrophils to induce adenosine-mediated immunosuppression in mice",
-   "url": "https://doi.org/10.1038/s41467-026-78771-8",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Divergent anaerobic fates of biodegradable plastics in landfill leachate",
-   "url": "https://doi.org/10.1038/s41467-026-78850-w",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Large-scale proteomic characterization reveals clinically relevant subtypes of early-stage papillary thyroid cancer for prognostic prediction",
-   "url": "https://doi.org/10.1038/s41467-026-78559-w",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Human hemoglobin protects the parasite cytoskeleton during Plasmodium falciparum gametocyte development",
-   "url": "https://doi.org/10.1038/s41467-026-78694-4",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Type I IFN promotes ILC2-to-ILC1 plasticity in pre-clinical radiation-induced lung injury",
-   "url": "https://doi.org/10.1038/s41467-026-77637-3",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Label-efficient global centralized and distributed photovoltaic segmentation via hierarchical CLIP-calibrated active learning",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129110",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Reinforcement learning based dual population evolutionary algorithm for multi objective optimal power flow with wind and photovoltaic uncertainties and contingencies",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129058",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Interface engineering of Pt-based catalysts toward enhanced methanol oxidation in direct methanol fuel cells",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129104",
    "first_seen": "2026-10-21"
   },
   {
@@ -718,18 +468,6 @@
   },
   {
    "source": "Nature Communications",
-   "title": "Exploring healthy aging through preclinical Alzheimer disease in the Knight Alzheimer Research Imaging dataset",
-   "url": "https://doi.org/10.1038/s41467-026-78439-3",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Author Correction: Ecdysone signaling-induced dumpless1 expression controls nurse cell dumping in Drosophila oogenesis",
-   "url": "https://doi.org/10.1038/s41467-026-78747-8",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "Nature Communications",
    "title": "Universal platform for rapid green surface functionalization of diverse porous membranes for sustainable water treatment",
    "url": "https://doi.org/10.1038/s41467-026-78651-1",
    "first_seen": "2026-10-21"
@@ -769,10 +507,262 @@
    "title": "Silk fibroin intrinsically activates Ccl27⁺ migratory-paracrine keratinocytes to orchestrate epidermal–dermal crosstalk for regenerative wound healing",
    "url": "https://doi.org/10.1038/s41467-026-78745-w",
    "first_seen": "2026-10-21"
+  },
+  {
+   "source": "TSG",
+   "title": "Reduced-Order Observer-Based Load Frequency Control for Interconnected Power Systems Under Imperfect Communication",
+   "url": "https://doi.org/10.1109/tsg.2026.3745120",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "TSG",
+   "title": "Integer-Clustering Optimization and Energy Hub Co-Design of Hydrogen and Battery EV Fleets",
+   "url": "https://doi.org/10.1109/tsg.2026.3745289",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "TSG",
+   "title": "Hybrid DRL-SOCP Based Two-Stage Co-Optimization of GFM Siting and Multi-Resource Routing for Cyber-Physical-Transportation Resilience",
+   "url": "https://doi.org/10.1109/tsg.2026.3745141",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "TSG",
+   "title": "A Multi-Round FDIAs Approach Triggering Power System Blackouts based on POORL and GBCGAN: Frequency as a State Indicatorz",
+   "url": "https://doi.org/10.1109/tsg.2026.3745161",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Matrix-Recursive Synergistic Power-Carbon Flow Tracing via Holomorphic Embedding",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3745733",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Bi-Level Learning-Enabled Control Framework for Power Systems with High Inverter-Based Resource Penetration: Theory and Implementation",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3745993",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Editorial Board",
+   "url": "https://doi.org/10.1016/s0306-2619(26)01778-2",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Data-driven design of hybrid energy systems: Insights from a high-resolution nationwide geospatial assessment",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129085",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Bridging the climate to energy data gap: simulated annealing for representative climate year selection",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129090",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Source-attributed DLMP settlement with price-anticipating load response",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129109",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "A novel unsupervised anomaly detection and traceability method for battery voltage inconsistency based on the time-segmented DBSCAN algorithm",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129125",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Coordinated secondary frequency regulation of thermal power units and feeder loads under high renewable penetration: Joint economy-performance optimization and distribution network PCC power tracking",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129133",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Coordinated supply scheduling of offshore and onshore hydrogen considering power and transportation networks",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129148",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Electrode crosstalk in rechargeable aqueous zinc batteries: species transport, interfacial reactions and coupled full-cell failure",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129149",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Physics-constrained multi-task energy consumption prediction for the safe operation of embodied mobile robots",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129151",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Cold start of proton exchange membrane fuel cells in high-altitude cold regions: coupled heat-water-oxygen mechanisms, system constraints, and engineering validation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129116",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "A hierarchical framework and Bayesian game model for multi-load aggregator strategic interaction under incomplete information",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129140",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Feasibility assessment of solar-driven underground hydrogen storage through integrated surface and subsurface modelling",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129052",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Quantifying the power system benefits of building upgrades for passive survivability in a changing climate",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129057",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Tumor-intrinsic PTPN12 suppresses anti-tumor immunity in colorectal cancer by restraining a dual epigenetic and cytoskeletal dsRNA sensing program",
+   "url": "https://doi.org/10.1038/s41467-026-78487-9",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Orbital coupling effect enables low-chloride concentration electrolyte for four-electron redox in aqueous zinc | |iodine batteries",
+   "url": "https://doi.org/10.1038/s41467-026-78918-7",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "PARG inhibition elicits cytotoxicity by sequestering XRCC1 and other PAR-binding proteins into PAR-dependent nuclear condensates",
+   "url": "https://doi.org/10.1038/s41467-026-78665-9",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Field-induced near-unity spin polarization in a highly emissive organic diradical",
+   "url": "https://doi.org/10.1038/s41467-026-78882-2",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Low-valine diet ameliorates pathological cardiac hypertrophy by inhibiting LONP1-mediated degradation of ATP5F1B in male rodents",
+   "url": "https://doi.org/10.1038/s41467-026-78676-6",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: Released palmitic acid–mediated TLR4/NF-κB activation enhances the virulence of Bordetella pertussis MT28 lineage",
+   "url": "https://doi.org/10.1038/s41467-026-78626-2",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: Exercise-induced anti-obesity effects in male mice generated by a FOXO1-KLF10 reinforcing loop promoting adipose lipolysis",
+   "url": "https://doi.org/10.1038/s41467-026-78551-4",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: Solving the Hubbard model with neural quantum states",
+   "url": "https://doi.org/10.1038/s41467-026-79114-3",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A 700-kilometre copper supply network in Bronze Age China revealed by multi-proxy ore fingerprinting",
+   "url": "https://doi.org/10.1038/s41467-026-78864-4",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Lipids intercalate and mediate multi-channel assemblies of connexin-46/50 gap junctions",
+   "url": "https://doi.org/10.1038/s41467-026-78903-0",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Tensor-space joint optimisation of topology-role configuration in multi-agent systems",
+   "url": "https://doi.org/10.1038/s41467-026-78717-0",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Molecular characterization of large cell neuroendocrine carcinoma of the lung by multilayered omics analysis",
+   "url": "https://doi.org/10.1038/s41467-026-78485-x",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Inter‑symbiont horizontal gene transfer and functional partitioning in globally sampled lichen metagenomes",
+   "url": "https://doi.org/10.1038/s41467-026-79043-1",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "DNA CODEC: compressed obfuscated DNA encoding in cells for secure in vivo data storage",
+   "url": "https://doi.org/10.1038/s41467-026-78917-8",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Pristine isolation of sixfold-symmetric oblate C72 fullerene validating the isolated pentagon rule and the spherical-saturation principle",
+   "url": "https://doi.org/10.1038/s41467-026-78886-y",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "2D-PELSA maps multidimensional target landscapes and reveals E2-GPX4 engagement associated with ferroptosis",
+   "url": "https://doi.org/10.1038/s41467-026-78546-1",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A porous solid electrolyte interface enables efficient electroreduction of captured carbon to CO",
+   "url": "https://doi.org/10.1038/s41467-026-78954-3",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Enhancing bosonic qubit protection by squeezing",
+   "url": "https://doi.org/10.1038/s41467-026-78025-7",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Determining depth-resolved spatial distribution of solid–electrolyte interphase using non-destructive angle-resolved X-ray photoelectron spectroscopy for lithium-metal batteries",
+   "url": "https://doi.org/10.1038/s41467-026-78168-7",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Observation of inherent chiral Smith–Purcell effect via symmetry breaking",
+   "url": "https://doi.org/10.1038/s41467-026-78729-w",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Ocean acidification, reduced silicate availability and declines in Ocean productivity",
+   "url": "https://doi.org/10.1038/s41467-026-78463-3",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Light-powered photosynthetic living actuator",
+   "url": "https://doi.org/10.1038/s41467-026-78653-z",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "Nature Rev. EE",
+   "title": "Topological highways for light",
+   "url": "https://doi.org/10.1038/s44287-026-00339-x",
+   "first_seen": "2026-10-22"
   }
  ],
- "pending_abstract": 54,
+ "pending_abstract": 76,
  "runs_utc": [
-  "2026-10-21T09:59:54+00:00"
+  "2026-10-22T10:00:06+00:00"
  ]
 }
