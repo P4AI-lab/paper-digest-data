@@ -1,44 +1,44 @@
 {
- "date": "2026-10-22",
- "generated_utc": "2026-10-22T10:00:06+00:00",
+ "date": "2026-10-23",
+ "generated_utc": "2026-10-23T09:54:58+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-10-18",
-   "2026-10-22"
+   "2026-10-19",
+   "2026-10-23"
   ],
   "journal_doi_created": [
-   "2026-10-16",
-   "2026-10-22"
+   "2026-10-17",
+   "2026-10-23"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-   "in_window": 86,
-   "new": 28,
-   "candidates": 0
+   "in_window": 116,
+   "new": 39,
+   "candidates": 1
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-   "in_window": 66,
-   "new": 18,
-   "candidates": 2
+   "in_window": 59,
+   "new": 11,
+   "candidates": 1
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-   "in_window": 78,
-   "new": 28,
+   "in_window": 85,
+   "new": 17,
    "candidates": 0
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-   "in_window": 7,
+   "in_window": 11,
    "new": 4,
    "candidates": 0,
    "new_with_abstract": 0
@@ -47,8 +47,8 @@
    "source": "TPWRS",
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
-   "in_window": 8,
-   "new": 2,
+   "in_window": 11,
+   "new": 4,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -56,9 +56,9 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 62,
-   "new": 15,
-   "candidates": 2,
+   "in_window": 61,
+   "new": 6,
+   "candidates": 0,
    "new_with_abstract": 0
   },
   {
@@ -66,25 +66,25 @@
    "journal": "Nature Energy",
    "status": "ok",
    "in_window": 2,
-   "new": 1,
+   "new": 0,
    "candidates": 0,
-   "new_with_abstract": 1
+   "new_with_abstract": 0
   },
   {
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 191,
-   "new": 34,
-   "candidates": 1,
-   "new_with_abstract": 12
+   "in_window": 187,
+   "new": 30,
+   "candidates": 0,
+   "new_with_abstract": 15
   },
   {
    "source": "Nature Rev. EE",
    "journal": "Nature Reviews Electrical Engineering",
    "status": "ok",
-   "in_window": 2,
-   "new": 1,
+   "in_window": 1,
+   "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
   }
@@ -92,214 +92,81 @@
  "errors": [],
  "candidates": [
   {
-   "key": "arxiv:2610.29873",
+   "key": "arxiv:2610.31192",
    "source": "arXiv",
-   "id": "2610.29873",
-   "title": "HAWK: Heterogeneity-Aware KV Cache Transfer for Efficient GPU-NPU Phase-Disaggregated LLM Inference",
-   "abstract": "Large language model (LLM) inference exhibits distinct computational characteristics across its two phases: prefill is compute-intensive, whereas decode is more memory-bound. As a result, AI accelerators achieve varying levels of efficiency across the two phases. GPUs are well suited to prefill, but are often underutilized during decode. By contrast, NPUs can utilize their compute resources more effectively during decode. Motivated by this observation, we explore a heterogeneous architecture that integrates GPUs and NPUs, mapping prefill to GPUs and decode to NPUs to achieve high performance and efficiency. However, realizing such heterogeneous integration is challenging because LLM phase disaggregation requires KV cache transfer from prefill to decode (that is, from GPUs to NPUs), which is complicated by differences in inter-device communication mechanisms and KV cache tensor layouts. To address this, we propose HAWK, a transfer mechanism that enables rapid KV cache transfer across heterogeneous devices. HAWK establishes a remote direct memory access (RDMA) path for direct cross-device transfers while handling inter-device tensor layout discrepancies as part of the transfer process. In particular, HAWK allocates tensor-layout-aware RDMA buffers on the NPU side to match the target tensor layout. Leveraging these buffers, HAWK orchestrates data transfer from a conventional contiguous GPU RDMA buffer to the corresponding NPU buffers, allowing transferred tensors to be consumed directly without additional data rearrangement while maintaining transfer efficiency. We implement and evaluate HAWK on a system built with commercially available GPUs and NPUs, demonstrating performance within 7.88% of a GPU-only system under the same SLO constraints while achieving up to 1.26$\\times$ higher power efficiency and 1.72$\\times$ higher cost efficiency.",
+   "id": "2610.31192",
+   "title": "Large Language Models Meet Bayesian Optimization: Towards Self-evolving Wireless Digital Twins",
+   "abstract": "Wireless digital twins (DTs) are increasingly integrated with artificial intelligence to support online modeling, prediction, and network optimization. However, most existing approaches perform adaptation within predefined learning or optimization structures, which may become unsuitable when wireless tasks and operating conditions change. In this article, we investigate the integration of large language models (LLMs) and Bayesian optimization (BO) to extend wireless DTs from online adaptation towards algorithm-level self-evolution. We introduce an LLM-assisted BO framework in which BO provides a stable and sample-efficient optimization backbone, while the LLM determines whether selected BO components should be retained or adapted based on the current task and accumulated optimization experience. In simulations, we apply the framework to Gaussian process (GP) kernel discovery for a multi-user wireless beam-selection problem. Simulation results show that the LLM-discovered kernel improves the final BO performance by 19.7% on the training tasks compared with the strongest standard kernel baseline. The results demonstrate the potential of combining LLM flexibility with structured BO for self-evolving wireless DTs.",
    "authors": [
     {
-     "name": "Junhyeok Park",
+     "name": "Yingzhuo Sun",
      "affiliations": []
     },
     {
-     "name": "Jungeun Yoon",
+     "name": "Haoyun Li",
      "affiliations": []
     },
     {
-     "name": "Kyungmin Kim",
+     "name": "Ming Xiao",
      "affiliations": []
     },
     {
-     "name": "Hunsoon Lee",
+     "name": "Francisco J. Ferrao",
      "affiliations": []
     },
     {
-     "name": "Shinyoung Ahn",
-     "affiliations": []
-    },
-    {
-     "name": "Kangho Kim",
+     "name": "Berna Ozbek",
      "affiliations": []
     }
    ],
    "categories": [
-    "cs.AR",
-    "cs.DC"
+    "eess.SY",
+    "cs.IT"
    ],
-   "primary_category": "cs.AR",
-   "date": "2026-10-21",
-   "url": "https://arxiv.org/abs/2610.29873",
+   "primary_category": "eess.SY",
+   "date": "2026-10-22",
+   "url": "https://arxiv.org/abs/2610.31192",
    "matched_terms": [
-    "ai accelerators",
-    "gpu",
-    "gpus",
-    "large language model",
-    "llm"
+    "large language models",
+    "llm",
+    "llms"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "HAWK: Heterogeneity-Aware KV Cache Transfer for Efficient GPU-NPU Phase-Disaggregated LLM Inference Junhyeok Park Note: Work completed while the auther was at ETRI; the author is the corresponding author. Affiliation: Georgia Institute of Technology , Atlanta , USA email: junhyeokpark@gatech.edu , Jungeun Yoon Affiliation: Electronics and Telecommunications Research Institute (ETRI) , Daejeon , Republic of Korea email: jeyoon@etri.re.kr , Kyungmin Kim Affiliation: Electronics and Telecommunications Research Institute (ETRI) , Daejeon , Republic of Korea email: kyungmin.kim@etri.re.kr , Hunsoon Lee Affiliation: Electronics and Telecommunications Research Institute (ETRI) , Daejeon , Republic of Korea email: hunsoon@etri.re.kr , Shinyoung Ahn Affiliation: Electronics and Telecommunications Research Institute (ETRI) , Daejeon , Republic of Korea email: syahn@etri.re.kr and Kangho Kim Affiliation: Electronics and Telecommunications Research Institute (ETRI) , Daejeon , Republic of Korea email: khk@etri.re.kr © none Abstract. Large language model (LLM) inference exhibits distinct computational characteristics across its two phases: prefill is compute-intensive, whereas decode is more memory-bound. As a result, AI accelerators achieve varying levels of efficiency across the two phases. GPUs are well suited to prefill, but are often underutilized during decode. By contrast, NPUs can utilize their compute resources more effectively during decode. Motivated by this observation, we explore a heterogeneous architecture that integrates GPUs and NPUs, mapping prefill to GPUs and decode to NPUs to achieve high performance and efficiency. However, realizing such heterogeneous integration is challenging because LLM phase disaggregation requires KV cache transfer from prefill to decode—that is, from GPUs to NPUs—which is complicated by differences in inter-device communication mechanisms and KV cache tensor layouts. To address this, we propose HAWK , a transfer mechanism that enables rapid KV cache transfer across heterogeneous devices. HAWK establishes a remote direct memory access (RDMA) path for direct cross-device transfers while handling inter-device tensor layout discrepancies as part of the transfer process. In particular, HAWK allocates tensor-layout-aware RDMA buffers on the NPU side to match the target tensor layout. Leveraging these buffers, HAWK orchestrates data transfer from a conventional contiguous GPU RDMA buffer to the corresponding NPU buffers, allowing "
+   "affiliation_block": "Large Language Models Meet Bayesian Optimization: Towards Self-evolving Wireless Digital Twins Yingzhuo Sun Haoyun Li Ming Xiao Francisco J. Ferrão Berna Özbek † † thanks: Y. Sun, H. Li, and M. Xiao are with the Division of Information Science and Engineering, KTH Royal Institute of Technology, 100 44 Stockholm, Sweden (e-mail: {yingzhuo, haoyunl, mingx}@kth.se). † † thanks: F. J. Ferrão is with Data Machine Elite, 2580-654 Lisbon, Portugal (e-mail: francisco.ferrao@datamachineelite.com). † † thanks: B. Özbek with the Department of Electrical and Electronics Engineering, İzmir Institute of Technology, 35430 İzmir, Türkiye (e-mail: bernaozbek@iyte.edu.tr). Abstract Wireless digital twins (DTs) are increasingly integrated with artificial intelligence to support online modeling, prediction, and network optimization. However, most existing approaches perform adaptation within predefined learning or optimization structures, which may become unsuitable when wireless tasks and operating conditions change. In this article, we investigate the integration of large language models (LLMs) and Bayesian optimization (BO) to extend wireless DTs from online adaptation towards algorithm-level self-evolution. We introduce an LLM-assisted BO framework in which BO provides a stable and sample-efficient optimization backbone, while the LLM determines whether selected BO components should be retained or adapted based on the current task and accumulated optimization experience. In simulations, we apply the framework to Gaussian process (GP) kernel discovery for a multi-user wireless beam-selection problem. Simulation results show that the LLM-discovered kernel improves the final BO performance by 19.7% on the training tasks compared with the strongest standard kernel baseline. The results demonstrate the potential of combining LLM flexibility with structured BO for self-evolving wireless DTs. Index Terms: Wireless digital twin, large language models, Bayesian optimization, algorithm adaptation."
   },
   {
-   "key": "arxiv:2610.28867",
+   "key": "arxiv:2610.30923",
    "source": "arXiv",
-   "id": "2610.28867",
-   "title": "Engineering Low-Latency, High-Throughput Quantum Decoders on NVIDIA GPUs",
-   "abstract": "We design and optimize a quantum error correction (QEC) decoder for NVIDIA GPUs, combining Relay belief propagation, a state-of-the-art message-passing algorithm, with order-zero ordered statistics post-processing. Our implementation uses CUDA Graphs to control GPU execution, stops updates for converged samples, and collects unresolved samples in queues for post-processing. We optimize sparse traversal through coalesced message accesses, prefetching, and register reuse, and accelerate binary post-processing with warp-level collectives. In addition, mixed FP16-FP32 arithmetic and INT8 quantization reduce message storage and traffic while retaining accuracy using accumulators at higher precision. We evaluate surface, hypergraph product, and bivariate bicycle code workloads on NVIDIA A100 and GH200 data-center GPUs and a commodity RTX 5080. On the bivariate bicycle code at error probability 0.003, INT8 halves amortized decoding time relative to independently tuned FP32 with a negligible logical error rate increase on RTX 5080. With independent syndrome batches submitted back-to-back to concurrent decoder instances, RTX 5080 delivers 91% of GH200's highest measured throughput with an 8.9x shorter median submission-to-correction latency. The combination of performance optimization, mixed precision, INT8 quantization, and concurrent decoder instances opens a path toward QEC decoder clusters built from commodity GPUs.",
+   "id": "2610.30923",
+   "title": "Low-Latency MoE Inference in Space Data Centers: A Wireless-Power-Transfer Perspective",
+   "abstract": "Space data centers (SpaceDCs) are emerging as platforms for large language models (LLMs), supported by continuous solar-energy harvesting and high-speed interconnections. The mixture-of-experts (MoE) architecture supports distributed LLM inference by deploying experts across satellites. However, skewed expert activation creates uneven computation power demands despite uniform solar-power supply at the dawn-dusk sun-synchronous orbit (SSO). Consequently, active experts remain power-constrained while harvested power at idle experts is underused. These reduce inference efficiency and increase latency. To address this supply-demand mismatch, we propose the SpaceWPT framework, which uses inter-satellite laser-based wireless power transfer (WPT) to redistribute harvested power. The key design challenge is to balance the computation demands of power-donating and power-receiving satellites under WPT losses: transferring more power accelerates computation at the receiver but leaves less power for the donor. After deriving design principles that simplify WPT control, we characterize the resulting latency tradeoff through a tractable surrogate of average inference latency. Minimizing the surrogate yields a novel two-sided water-filling strategy that determines whether each active expert donates, retains, or receives power according to the water level and its WPT link efficiency. Simulations with Mixtral-8x7B and Phi-3.5-MoE show up to 29.25% lower inference latency than without WPT, with larger gains under more compact formations and higher transfer efficiencies.",
    "authors": [
     {
-     "name": "Stefano Markidis",
+     "name": "Haotian Zheng",
      "affiliations": []
     },
     {
-     "name": "Luca Pennati",
+     "name": "Zhanwei Wang",
      "affiliations": []
     },
     {
-     "name": "Ivy Peng",
+     "name": "Kaibin Huang",
      "affiliations": []
     }
    ],
    "categories": [
     "cs.DC",
-    "quant-ph"
+    "cs.AI",
+    "cs.NI"
    ],
    "primary_category": "cs.DC",
-   "date": "2026-10-20",
-   "url": "https://arxiv.org/abs/2610.28867",
-   "matched_terms": [
-    "data-center"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Engineering Low-Latency, High-Throughput Quantum Decoders on NVIDIA GPUs Stefano Markidis, Luca Pennati, Ivy Peng Affiliation: KTH Royal Institute of Technology Abstract We design and optimize a quantum error correction (QEC) decoder for NVIDIA GPUs, combining Relay belief propagation, a state-of-the-art message-passing algorithm, with order-zero ordered statistics post-processing. Our implementation uses CUDA Graphs to control GPU execution, stops updates for converged samples, and collects unresolved samples in queues for post-processing. We optimize sparse traversal through coalesced message accesses, prefetching, and register reuse, and accelerate binary post-processing with warp-level collectives. In addition, mixed FP16–FP32 arithmetic and INT8 quantization reduce message storage and traffic while retaining accuracy using accumulators at higher precision. We evaluate surface, hypergraph product, and bivariate bicycle code workloads on NVIDIA A100 and GH200 data-center GPUs and a commodity RTX 5080. On the bivariate bicycle code at error probability 0.003, INT8 halves amortized decoding time relative to independently tuned FP32 with a negligible logical error rate increase on RTX 5080. With independent syndrome batches submitted back-to-back to concurrent decoder instances, RTX 5080 delivers 91% of GH200’s highest measured throughput with an 8.9 × \\times shorter median submission-to-correction latency. The combination of performance optimization, mixed precision, INT8 quantization, and concurrent decoder instances opens a path toward QEC decoder clusters built from commodity GPUs. Index Terms: NVIDIA GPUs, quantum error correction"
-  },
-  {
-   "key": "doi:10.1016/j.apenergy.2026.129082",
-   "source": "journal",
-   "journal": "Applied Energy",
-   "journal_short": "Applied Energy",
-   "doi": "10.1016/j.apenergy.2026.129082",
-   "title": "An LLM-guided multi-objective optimization framework for cluster-aware electric vehicle charging management toward sustainable grid operation",
-   "abstract": "",
-   "abstract_source": "",
-   "authors": [
-    {
-     "name": "Muhammad Waqar",
-     "affiliations": []
-    },
-    {
-     "name": "Yong-Woon Kim",
-     "affiliations": []
-    },
-    {
-     "name": "Yung-Cheol Byun",
-     "affiliations": []
-    }
-   ],
-   "type": "journal-article",
-   "date": "2026-10-21",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129082",
-   "matched_terms": [
-    "llm"
-   ],
-   "screened_on": "title only",
-   "affiliation_source": "not available yet"
-  },
-  {
-   "key": "doi:10.1016/j.apenergy.2026.129094",
-   "source": "journal",
-   "journal": "Applied Energy",
-   "journal_short": "Applied Energy",
-   "doi": "10.1016/j.apenergy.2026.129094",
-   "title": "Spatio-temporal large language model for zero-shot EV charging demand prediction: Beneficial to station energy management under data scarcity",
-   "abstract": "",
-   "abstract_source": "",
-   "authors": [
-    {
-     "name": "Zhe Zhang",
-     "affiliations": []
-    },
-    {
-     "name": "Hongyi Lin",
-     "affiliations": []
-    },
-    {
-     "name": "Jingchun Zhang",
-     "affiliations": []
-    },
-    {
-     "name": "Bangyang Wei",
-     "affiliations": []
-    },
-    {
-     "name": "Bo-wen Li",
-     "affiliations": []
-    },
-    {
-     "name": "Yang Liu",
-     "affiliations": []
-    },
-    {
-     "name": "Qing Yu",
-     "affiliations": []
-    }
-   ],
-   "type": "journal-article",
    "date": "2026-10-22",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129094",
-   "matched_terms": [
-    "large language model"
-   ],
-   "screened_on": "title only",
-   "affiliation_source": "not available yet"
-  },
-  {
-   "key": "doi:10.1038/s41467-026-78128-1",
-   "source": "journal",
-   "journal": "Nature Communications",
-   "journal_short": "Nature Communications",
-   "doi": "10.1038/s41467-026-78128-1",
-   "title": "Reduced-DSP 200G/λ low-voltage slow-light silicon modulator enabled by built-in EO equalizer",
-   "abstract": "Abstract Multi-Tb/s optical interconnects for artificial intelligence data centers necessitate high-speed, energy-efficient, and compact transceivers. However, conventional silicon Mach-Zehnder modulators are fundamentally limited by low modulation efficiency and large physical dimensions that typically extend several millimeters, requiring high-swing drivers and power-intensive digital signal processing to achieve data rates exceeding 100 Gb/s per lane. Here we show a silicon photonic crystal waveguide slow-light modulator that overcomes the bandwidth-efficiency trade-off via a built-in electro-optic equalizer. By monolithically integrating optical delay lines and crossings within segmented slow-light phase shifters, we synthesized an on-chip feedforward response that extends the 3-dB bandwidth. The fabricated modulator with a small device length of 320 µm demonstrated 140-Gb/s on-off keying operation with an energy consumption of 26 fJ/bit using drive voltages compatible with fin field-effect transistor-based complementary metal-oxide-semiconductor technology. Furthermore, four-level pulse amplitude modulation achieved 180 Gb/s without digital signal processing and 200 Gb/s with a low-complexity 11-tap digital equalizer. By reducing reliance on power-dissipating electronics, this strategy provides a potential route toward future dense multi-Tb/s co-packaged optics for energy-constrained switching systems.",
-   "abstract_source": "crossref",
-   "authors": [
-    {
-     "name": "Keisuke Kawahara",
-     "affiliations": []
-    },
-    {
-     "name": "Tai Tsuchizawa",
-     "affiliations": []
-    },
-    {
-     "name": "Noritsugu Yamamoto",
-     "affiliations": []
-    },
-    {
-     "name": "Yuriko Maegami",
-     "affiliations": []
-    },
-    {
-     "name": "Koji Yamada",
-     "affiliations": []
-    },
-    {
-     "name": "Nobuhiko Nishiyama",
-     "affiliations": []
-    },
-    {
-     "name": "Toshihiko Baba",
-     "affiliations": []
-    }
-   ],
-   "type": "journal-article",
-   "date": "2026-10-22",
-   "url": "https://doi.org/10.1038/s41467-026-78128-1",
+   "url": "https://arxiv.org/abs/2610.30923",
    "matched_terms": [
     "data centers"
    ],
    "screened_on": "title+abstract",
-   "affiliation_source": "not available yet"
+   "affiliation_block": "Low-Latency MoE Inference in Space Data Centers: A Wireless-Power-Transfer Perspective Haotian Zheng Zhanwei Wang Kaibin Huang † † thanks: H. Zheng, Z. Wang, and K. Huang are with the Department of Electrical and Computer Engineering, The University of Hong Kong, Hong Kong SAR, China (Email: {htzheng, zhanweiw, huangkb}@eee.hku.hk). Corresponding authors: K. Huang; Z. Wang. Abstract Space data centers (SpaceDCs) are emerging as platforms for large language models (LLMs), supported by continuous solar-energy harvesting and high-speed interconnections. The mixture-of-experts (MoE) architecture supports distributed LLM inference by deploying experts across satellites. However, skewed expert activation creates uneven computation power demands despite uniform solar-power supply at the dawn–dusk sun-synchronous orbit (SSO). Consequently, active experts remain power-constrained while harvested power at idle experts is underused. These reduce inference efficiency and increase latency. To address this supply–demand mismatch, we propose the SpaceWPT framework, which uses inter-satellite laser-based wireless power transfer (WPT) to redistribute harvested power. The key design challenge is to balance the computation demands of power-donating and power-receiving satellites under WPT losses: transferring more power accelerates computation at the receiver but leaves less power for the donor. After deriving design principles that simplify WPT control, we characterize the resulting latency tradeoff through a tractable surrogate of average inference latency. Minimizing the surrogate yields a novel two-sided water-filling strategy that determines whether each active expert donates, retains, or receives power according to the water level and its WPT link efficiency. Simulations with Mixtral-8x7B and Phi-3.5-MoE show up to 29.25% lower inference latency than without WPT, with larger gains under more compact formations and higher transfer efficiencies. Index Terms: Space data centers, Wireless Power Transfer, Mixture of Experts, Power Control."
   }
  ],
  "title_only_final": [],
@@ -396,12 +263,6 @@
   },
   {
    "source": "Applied Energy",
-   "title": "A systematic review of cross-sectoral life cycle assessments of carbon capture, utilization, and storage systems",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129040",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Reinforcement learning based dual population evolutionary algorithm for multi objective optimal power flow with wind and photovoltaic uncertainties and contingencies",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129058",
    "first_seen": "2026-10-21"
@@ -410,12 +271,6 @@
    "source": "Applied Energy",
    "title": "Electrochemical-guided time-frequency transformer for battery state-of-health estimation",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129042",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Multi-objective stochastic optimization of off-grid hybrid renewable energy systems in fragile states",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129081",
    "first_seen": "2026-10-21"
   },
   {
@@ -438,74 +293,14 @@
   },
   {
    "source": "Applied Energy",
-   "title": "Online probabilistic early warning for power system dynamic congestion events with enhanced trustworthiness",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129050",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "A region-aware field reliability prediction method for power batteries under heterogeneous conditions using improved deep clustering",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129051",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Constraint-first energy-efficient indoor environmental control with multi-agent device coordination and knowledge-graph memory",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129054",
    "first_seen": "2026-10-21"
   },
   {
    "source": "Applied Energy",
-   "title": "Calibrated uncertainty quantification for prosumer flexibility aggregation in ancillary service markets",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129059",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Entropic risk-aware end-to-end learning for stochastic optimization of renewable-rich integrated energy systems",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129096",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Universal platform for rapid green surface functionalization of diverse porous membranes for sustainable water treatment",
-   "url": "https://doi.org/10.1038/s41467-026-78651-1",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Kinetic acceleration of phosphate remediation in dilute aquatic environments via photovoltaic-driven solid-state electrolyte electrocoagulation",
-   "url": "https://doi.org/10.1038/s41467-026-78830-0",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "A dynamically tunable diamine ligand enables Cu-catalyzed enantioselective nucleophilic substitution at P(V)",
-   "url": "https://doi.org/10.1038/s41467-026-75855-3",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Ethnoracial disparities in emergency department triage are more pronounced in lower-risk visits: a multicenter study",
-   "url": "https://doi.org/10.1038/s41467-026-78526-5",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Controlled living ring expansion polymerization for the precision synthesis of cyclic poly(aryl isocyanides)",
-   "url": "https://doi.org/10.1038/s41467-026-78466-0",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Longitudinal ctDNA profiling reveals genomic risk and molecular response to bireociclib in advanced breast cancer",
-   "url": "https://doi.org/10.1038/s41467-026-78782-5",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Silk fibroin intrinsically activates Ccl27⁺ migratory-paracrine keratinocytes to orchestrate epidermal–dermal crosstalk for regenerative wound healing",
-   "url": "https://doi.org/10.1038/s41467-026-78745-w",
    "first_seen": "2026-10-21"
   },
   {
@@ -552,62 +347,8 @@
   },
   {
    "source": "Applied Energy",
-   "title": "Data-driven design of hybrid energy systems: Insights from a high-resolution nationwide geospatial assessment",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129085",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Bridging the climate to energy data gap: simulated annealing for representative climate year selection",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129090",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Source-attributed DLMP settlement with price-anticipating load response",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129109",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "A novel unsupervised anomaly detection and traceability method for battery voltage inconsistency based on the time-segmented DBSCAN algorithm",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129125",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Coordinated secondary frequency regulation of thermal power units and feeder loads under high renewable penetration: Joint economy-performance optimization and distribution network PCC power tracking",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129133",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Coordinated supply scheduling of offshore and onshore hydrogen considering power and transportation networks",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129148",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Electrode crosstalk in rechargeable aqueous zinc batteries: species transport, interfacial reactions and coupled full-cell failure",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129149",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Physics-constrained multi-task energy consumption prediction for the safe operation of embodied mobile robots",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129151",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Cold start of proton exchange membrane fuel cells in high-altitude cold regions: coupled heat-water-oxygen mechanisms, system constraints, and engineering validation",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129116",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "A hierarchical framework and Bayesian game model for multi-load aggregator strategic interaction under incomplete information",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129140",
    "first_seen": "2026-10-22"
   },
   {
@@ -620,126 +361,6 @@
    "source": "Applied Energy",
    "title": "Quantifying the power system benefits of building upgrades for passive survivability in a changing climate",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129057",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Tumor-intrinsic PTPN12 suppresses anti-tumor immunity in colorectal cancer by restraining a dual epigenetic and cytoskeletal dsRNA sensing program",
-   "url": "https://doi.org/10.1038/s41467-026-78487-9",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Orbital coupling effect enables low-chloride concentration electrolyte for four-electron redox in aqueous zinc | |iodine batteries",
-   "url": "https://doi.org/10.1038/s41467-026-78918-7",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "PARG inhibition elicits cytotoxicity by sequestering XRCC1 and other PAR-binding proteins into PAR-dependent nuclear condensates",
-   "url": "https://doi.org/10.1038/s41467-026-78665-9",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Field-induced near-unity spin polarization in a highly emissive organic diradical",
-   "url": "https://doi.org/10.1038/s41467-026-78882-2",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Low-valine diet ameliorates pathological cardiac hypertrophy by inhibiting LONP1-mediated degradation of ATP5F1B in male rodents",
-   "url": "https://doi.org/10.1038/s41467-026-78676-6",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Author Correction: Released palmitic acid–mediated TLR4/NF-κB activation enhances the virulence of Bordetella pertussis MT28 lineage",
-   "url": "https://doi.org/10.1038/s41467-026-78626-2",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Author Correction: Exercise-induced anti-obesity effects in male mice generated by a FOXO1-KLF10 reinforcing loop promoting adipose lipolysis",
-   "url": "https://doi.org/10.1038/s41467-026-78551-4",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Author Correction: Solving the Hubbard model with neural quantum states",
-   "url": "https://doi.org/10.1038/s41467-026-79114-3",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "A 700-kilometre copper supply network in Bronze Age China revealed by multi-proxy ore fingerprinting",
-   "url": "https://doi.org/10.1038/s41467-026-78864-4",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Lipids intercalate and mediate multi-channel assemblies of connexin-46/50 gap junctions",
-   "url": "https://doi.org/10.1038/s41467-026-78903-0",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Tensor-space joint optimisation of topology-role configuration in multi-agent systems",
-   "url": "https://doi.org/10.1038/s41467-026-78717-0",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Molecular characterization of large cell neuroendocrine carcinoma of the lung by multilayered omics analysis",
-   "url": "https://doi.org/10.1038/s41467-026-78485-x",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Inter‑symbiont horizontal gene transfer and functional partitioning in globally sampled lichen metagenomes",
-   "url": "https://doi.org/10.1038/s41467-026-79043-1",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "DNA CODEC: compressed obfuscated DNA encoding in cells for secure in vivo data storage",
-   "url": "https://doi.org/10.1038/s41467-026-78917-8",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Pristine isolation of sixfold-symmetric oblate C72 fullerene validating the isolated pentagon rule and the spherical-saturation principle",
-   "url": "https://doi.org/10.1038/s41467-026-78886-y",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "2D-PELSA maps multidimensional target landscapes and reveals E2-GPX4 engagement associated with ferroptosis",
-   "url": "https://doi.org/10.1038/s41467-026-78546-1",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "A porous solid electrolyte interface enables efficient electroreduction of captured carbon to CO",
-   "url": "https://doi.org/10.1038/s41467-026-78954-3",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Enhancing bosonic qubit protection by squeezing",
-   "url": "https://doi.org/10.1038/s41467-026-78025-7",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Determining depth-resolved spatial distribution of solid–electrolyte interphase using non-destructive angle-resolved X-ray photoelectron spectroscopy for lithium-metal batteries",
-   "url": "https://doi.org/10.1038/s41467-026-78168-7",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Observation of inherent chiral Smith–Purcell effect via symmetry breaking",
-   "url": "https://doi.org/10.1038/s41467-026-78729-w",
    "first_seen": "2026-10-22"
   },
   {
@@ -759,10 +380,184 @@
    "title": "Topological highways for light",
    "url": "https://doi.org/10.1038/s44287-026-00339-x",
    "first_seen": "2026-10-22"
+  },
+  {
+   "source": "TSG",
+   "title": "Coordinated State Estimation of Integrated Electricity and Heating System Based on Thermal Circuit Method for Variable Mass Flow",
+   "url": "https://doi.org/10.1109/tsg.2026.3745745",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "TSG",
+   "title": "Secure Distributed Control of Wind Turbine Systems: A Smooth State Recovery and Active Boundary Expansion Performance Approach",
+   "url": "https://doi.org/10.1109/tsg.2026.3745774",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "TSG",
+   "title": "Resilient Data-Driven LFC With Event-Triggering for Power Systems Against DoS Attacks",
+   "url": "https://doi.org/10.1109/tsg.2026.3745620",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "TSG",
+   "title": "Interpretable Failure Rate Prediction for Grouped Smart Meters using Bayesian Network–enhanced Survival Modeling",
+   "url": "https://doi.org/10.1109/tsg.2026.3745893",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "TPWRS",
+   "title": "IEEE Power & Energy Society Publication Information",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3741435",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Blank Page",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3741439",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "TPWRS",
+   "title": "IEEE Transactions on Power Systems Information for Authors",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3741437",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Table of Contents",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3741433",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Energy management of pumped thermal electricity storage: a framework integrating a rule-based expert system with robust data-driven control",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129115",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Coopetition and coordination mechanisms between energy and peak-shaving benefits in giant cascade hydropower systems: From mechanism identification to operational application",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129126",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Optimizing biochar quality and economics across feedstocks and pyrolysis temperatures in a 50,000 t/year carbonization demonstration",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129089",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Static reconfiguration techniques for PV under the corn canopy with deep reinforcement learning",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129144",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "From atomic structure to catalytic function: Morphology engineering of MXene for Electrocatalytic energy conversion",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129145",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Synthesis of ammonia and its application in the sustainable steel process: A review",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129154",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: Coaxially printed magnetic mechanical electrical hybrid structures with actuation and sensing functionalities",
+   "url": "https://doi.org/10.1038/s41467-026-78963-2",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Evidence of optical Aharonov-Bohm interference in spin-polarized moiré excitonic complexes",
+   "url": "https://doi.org/10.1038/s41467-026-78018-6",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Topology and evolution of global transcriptional regulatory networks across the Klebsiella pneumoniae pan-genome",
+   "url": "https://doi.org/10.1038/s41467-026-78154-z",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Deconvoluting the mode of action of antileishmanial aminopyrazoles through chemical mutagenesis",
+   "url": "https://doi.org/10.1038/s41467-026-78576-9",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Live-cell 3D mapping reveals the organized architecture of FG-nucleoporins within the nuclear pore complex",
+   "url": "https://doi.org/10.1038/s41467-026-78936-5",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Renewable-compatible urea electrosynthesis enabled by dynamic asymmetric catalytic domains",
+   "url": "https://doi.org/10.1038/s41467-026-77513-0",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "O-antigen loss modulates meropenem resistance in Klebsiella pneumoniae through metabolic and redox reprogramming",
+   "url": "https://doi.org/10.1038/s41467-026-78472-2",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Genome-wide mapping of genetic suppression events in Streptococcus pneumoniae",
+   "url": "https://doi.org/10.1038/s41467-026-78840-y",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Water in kimberlitic olivine provides insights into kimberlite ascent and diamond transport",
+   "url": "https://doi.org/10.1038/s41467-026-78870-6",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Asymmetric total synthesis of veraflorizine, peimine and peiminine",
+   "url": "https://doi.org/10.1038/s41467-026-78741-0",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Molecular basis of coupled peptidoglycan synthesis by the FtsWIQLB divisome complex from Vibrio cholerae",
+   "url": "https://doi.org/10.1038/s41467-026-78795-0",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Illusory disagreement over socialism and capitalism in the United States and Brazil",
+   "url": "https://doi.org/10.1038/s41467-026-78853-7",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Fine-tuning of polygenic score to local data improves risk prediction and clinical implementation",
+   "url": "https://doi.org/10.1038/s41467-026-77770-z",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A receptor switch between discoidin domain receptors underlies orthobunyavirus entry and host range",
+   "url": "https://doi.org/10.1038/s41467-026-78781-6",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "LUBAC PUB domain interactions restrict Met1-linked ubiquitination to prevent murine embryonic lethality and immune pathology",
+   "url": "https://doi.org/10.1038/s41467-026-78827-9",
+   "first_seen": "2026-10-23"
   }
  ],
- "pending_abstract": 76,
+ "pending_abstract": 64,
  "runs_utc": [
-  "2026-10-22T10:00:06+00:00"
+  "2026-10-23T09:54:58+00:00"
  ]
 }
