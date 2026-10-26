@@ -1,45 +1,45 @@
 {
- "date": "2026-10-23",
- "generated_utc": "2026-10-23T09:54:58+00:00",
+ "date": "2026-10-26",
+ "generated_utc": "2026-10-26T10:56:54+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-10-19",
-   "2026-10-23"
+   "2026-10-22",
+   "2026-10-26"
   ],
   "journal_doi_created": [
-   "2026-10-17",
-   "2026-10-23"
+   "2026-10-20",
+   "2026-10-26"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-   "in_window": 116,
-   "new": 39,
-   "candidates": 1
+   "in_window": 61,
+   "new": 30,
+   "candidates": 3
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-   "in_window": 59,
-   "new": 11,
-   "candidates": 1
+   "in_window": 30,
+   "new": 20,
+   "candidates": 5
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-   "in_window": 85,
-   "new": 17,
+   "in_window": 31,
+   "new": 18,
    "candidates": 0
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-   "in_window": 11,
-   "new": 4,
+   "in_window": 15,
+   "new": 7,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -47,8 +47,8 @@
    "source": "TPWRS",
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
-   "in_window": 11,
-   "new": 4,
+   "in_window": 8,
+   "new": 1,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -56,10 +56,10 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 61,
-   "new": 6,
-   "candidates": 0,
-   "new_with_abstract": 0
+   "in_window": 60,
+   "new": 20,
+   "candidates": 2,
+   "new_with_abstract": 2
   },
   {
    "source": "Nature Energy",
@@ -74,17 +74,17 @@
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 187,
-   "new": 30,
-   "candidates": 0,
-   "new_with_abstract": 15
+   "in_window": 186,
+   "new": 81,
+   "candidates": 1,
+   "new_with_abstract": 63
   },
   {
    "source": "Nature Rev. EE",
    "journal": "Nature Reviews Electrical Engineering",
    "status": "ok",
-   "in_window": 1,
-   "new": 0,
+   "in_window": 2,
+   "new": 1,
    "candidates": 0,
    "new_with_abstract": 0
   }
@@ -92,217 +92,816 @@
  "errors": [],
  "candidates": [
   {
-   "key": "arxiv:2610.31192",
+   "key": "arxiv:2610.32711",
    "source": "arXiv",
-   "id": "2610.31192",
-   "title": "Large Language Models Meet Bayesian Optimization: Towards Self-evolving Wireless Digital Twins",
-   "abstract": "Wireless digital twins (DTs) are increasingly integrated with artificial intelligence to support online modeling, prediction, and network optimization. However, most existing approaches perform adaptation within predefined learning or optimization structures, which may become unsuitable when wireless tasks and operating conditions change. In this article, we investigate the integration of large language models (LLMs) and Bayesian optimization (BO) to extend wireless DTs from online adaptation towards algorithm-level self-evolution. We introduce an LLM-assisted BO framework in which BO provides a stable and sample-efficient optimization backbone, while the LLM determines whether selected BO components should be retained or adapted based on the current task and accumulated optimization experience. In simulations, we apply the framework to Gaussian process (GP) kernel discovery for a multi-user wireless beam-selection problem. Simulation results show that the LLM-discovered kernel improves the final BO performance by 19.7% on the training tasks compared with the strongest standard kernel baseline. The results demonstrate the potential of combining LLM flexibility with structured BO for self-evolving wireless DTs.",
+   "id": "2610.32711",
+   "title": "Beyond Hotness: High-Resolution Memory Characterization of Cloud and LLM Workloads for Tiered Memory with ARM SPE",
+   "abstract": "Memory demands from data analytics and LLM workloads grow rapidly, driving up memory costs in cloud and data centers. Multi-tier memory has emerged as a promising solution to balance performance and cost. However, effectively leveraging it requires a deep understanding of workload memory behaviors. This work introduces a high-resolution memory characterization methodology for analyzing workload-specific opportunities for multi-tier memory usage. In response to the increasing deployment of ARM-based processors in data centers, we implement our methodology using the recent Statistical Profiling Extension (SPE) for ARM. By characterizing eight memory-intensive workloads from CloudSuite and LLM applications, we identify region-specific access patterns, evaluate the effectiveness of cloud-oriented cache hierarchies, and propose new metrics based on memory idle periods and latency profiles to determine suitable data placement for tiered memory.",
    "authors": [
     {
-     "name": "Yingzhuo Sun",
+     "name": "Jie Ren",
      "affiliations": []
     },
     {
-     "name": "Haoyun Li",
-     "affiliations": []
-    },
-    {
-     "name": "Ming Xiao",
-     "affiliations": []
-    },
-    {
-     "name": "Francisco J. Ferrao",
-     "affiliations": []
-    },
-    {
-     "name": "Berna Ozbek",
+     "name": "Ivy Peng",
      "affiliations": []
     }
    ],
    "categories": [
-    "eess.SY",
-    "cs.IT"
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-23",
+   "url": "https://arxiv.org/abs/2610.32711",
+   "matched_terms": [
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Beyond Hotness: High-Resolution Memory Characterization of Cloud and LLM Workloads for Tiered Memory with ARM SPE DOI: XXXXXXX.XXXXXXX Conference: Make sure to enter the correct conference title from your rights confirmation email; June 03–05, 2018; Woodstock, NY ISBN: 978-1-4503-XXXX-X/2018/06 Jie Ren Affiliation: William & Mary , USA email: jren03@wm.edu and Ivy Peng Affiliation: KTH , Sweden email: ivybopeng@kth.se 2018 Abstract. Memory demands from data analytics and LLM workloads grow rapidly, driving up memory costs in cloud and data centers. Multi-tier memory has emerged as a promising solution to balance performance and cost. However, effectively leveraging it requires a deep understanding of workload memory behaviors. This work introduces a high-resolution memory characterization methodology for analyzing workload-specific opportunities for multi-tier memory usage. In response to the increasing deployment of ARM-based processors in data centers, we implement our methodology using the recent Statistical Profiling Extension (SPE) for ARM. By characterizing eight memory-intensive workloads from CloudSuite and LLM applications, we identify region-specific access patterns, evaluate the effectiveness of cloud-oriented cache hierarchies, and propose new metrics based on memory idle periods and latency profiles to determine suitable data placement for tiered memory. Keywords: ARM SPE, tiered memory, LLM, cloud"
+  },
+  {
+   "key": "arxiv:2610.32696",
+   "source": "arXiv",
+   "id": "2610.32696",
+   "title": "Foundation Models Meet Power Grid Topology for Cascade Prediction",
+   "abstract": "Accurate early-stage prediction of cascading failure severity is essential for assessing the vulnerability of power transmission networks. However, existing data-driven approaches often rely on network-specific representations, limiting their generalizability across power system topologies. This work investigates the complementary capabilities of Large Language Models (LLMs) and Graph Neural Networks (GNNs) for cascading failure severity prediction. First, standalone LLM predictors are developed using a LoRA-fine-tuned LLaMA-3-8B-Instruct model with varying degrees of topological information. A hybrid Graph-LLM fusion framework is then proposed, integrating a Topology-Aware Graph Attention Transformer (TAGAT) with the LLM through confidence-gated fusion. TAGAT captures structural dependencies among transmission lines, while the LLM extracts representations from early-stage power-flow observations and aggregated cascade descriptors. The frameworks are evaluated on 30,000 simulated cascading failure scenarios for each of the IEEE 118-bus and IEEE 300-bus systems. Using only the first four cascade steps, the hybrid framework achieves weighted F1 scores of 0.94 and 0.92, respectively. In cross-system transfer from IEEE 118-bus to IEEE 300-bus, it achieves 0.72 zero-shot accuracy, improving to 0.83 with limited target-system calibration, outperforming standalone models and conventional baselines. These results show the potential of combining graph-based structural learning with foundation models to improve cascading failure severity prediction and cross-system transferability.",
+   "authors": [
+    {
+     "name": "Soumav Biswas",
+     "affiliations": []
+    },
+    {
+     "name": "Mia Naeini",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
    ],
    "primary_category": "eess.SY",
-   "date": "2026-10-22",
-   "url": "https://arxiv.org/abs/2610.31192",
+   "date": "2026-10-23",
+   "url": "https://arxiv.org/abs/2610.32696",
    "matched_terms": [
     "large language models",
     "llm",
     "llms"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Large Language Models Meet Bayesian Optimization: Towards Self-evolving Wireless Digital Twins Yingzhuo Sun Haoyun Li Ming Xiao Francisco J. Ferrão Berna Özbek † † thanks: Y. Sun, H. Li, and M. Xiao are with the Division of Information Science and Engineering, KTH Royal Institute of Technology, 100 44 Stockholm, Sweden (e-mail: {yingzhuo, haoyunl, mingx}@kth.se). † † thanks: F. J. Ferrão is with Data Machine Elite, 2580-654 Lisbon, Portugal (e-mail: francisco.ferrao@datamachineelite.com). † † thanks: B. Özbek with the Department of Electrical and Electronics Engineering, İzmir Institute of Technology, 35430 İzmir, Türkiye (e-mail: bernaozbek@iyte.edu.tr). Abstract Wireless digital twins (DTs) are increasingly integrated with artificial intelligence to support online modeling, prediction, and network optimization. However, most existing approaches perform adaptation within predefined learning or optimization structures, which may become unsuitable when wireless tasks and operating conditions change. In this article, we investigate the integration of large language models (LLMs) and Bayesian optimization (BO) to extend wireless DTs from online adaptation towards algorithm-level self-evolution. We introduce an LLM-assisted BO framework in which BO provides a stable and sample-efficient optimization backbone, while the LLM determines whether selected BO components should be retained or adapted based on the current task and accumulated optimization experience. In simulations, we apply the framework to Gaussian process (GP) kernel discovery for a multi-user wireless beam-selection problem. Simulation results show that the LLM-discovered kernel improves the final BO performance by 19.7% on the training tasks compared with the strongest standard kernel baseline. The results demonstrate the potential of combining LLM flexibility with structured BO for self-evolving wireless DTs. Index Terms: Wireless digital twin, large language models, Bayesian optimization, algorithm adaptation."
+   "affiliation_block": "Foundation Models Meet Power Grid Topology for Cascade Prediction Soumav Biswas and Mia Naeini Affiliation: Affiliation: Electrical Engineering Department, University of South Florida, Tampa, Florida, USA soumavbiswas@usf.edu, mnaeini@usf.edu Abstract Accurate early-stage prediction of cascading failure severity is essential for assessing the vulnerability of power transmission networks. However, existing data-driven approaches often rely on network-specific representations, limiting their generalizability across power system topologies. This work investigates the complementary capabilities of Large Language Models (LLMs) and Graph Neural Networks (GNNs) for cascading failure severity prediction. First, standalone LLM predictors are developed using a LoRA-fine-tuned LLaMA-3-8B-Instruct model with varying degrees of topological information. A hybrid Graph-LLM fusion framework is then proposed, integrating a Topology-Aware Graph Attention Transformer (TAGAT) with the LLM through confidence-gated fusion. TAGAT captures structural dependencies among transmission lines, while the LLM extracts representations from early-stage power-flow observations and aggregated cascade descriptors. The frameworks are evaluated on 30,000 simulated cascading failure scenarios for each of the IEEE 118-bus and IEEE 300-bus systems. Using only the first four cascade steps, the hybrid framework achieves weighted F1 scores of 0.94 and 0.92, respectively. In cross-system transfer from IEEE 118-bus to IEEE 300-bus, it achieves 0.72 zero-shot accuracy, improving to 0.83 with limited target-system calibration, outperforming standalone models and conventional baselines. These results show the potential of combining graph-based structural learning with foundation models to improve cascading failure severity prediction and cross-system transferability. Index Terms: Large Language Model, Graph Neural Networks, Graph Signal Processing, Cascade Size Prediction."
   },
   {
-   "key": "arxiv:2610.30923",
+   "key": "arxiv:2610.32638",
    "source": "arXiv",
-   "id": "2610.30923",
-   "title": "Low-Latency MoE Inference in Space Data Centers: A Wireless-Power-Transfer Perspective",
-   "abstract": "Space data centers (SpaceDCs) are emerging as platforms for large language models (LLMs), supported by continuous solar-energy harvesting and high-speed interconnections. The mixture-of-experts (MoE) architecture supports distributed LLM inference by deploying experts across satellites. However, skewed expert activation creates uneven computation power demands despite uniform solar-power supply at the dawn-dusk sun-synchronous orbit (SSO). Consequently, active experts remain power-constrained while harvested power at idle experts is underused. These reduce inference efficiency and increase latency. To address this supply-demand mismatch, we propose the SpaceWPT framework, which uses inter-satellite laser-based wireless power transfer (WPT) to redistribute harvested power. The key design challenge is to balance the computation demands of power-donating and power-receiving satellites under WPT losses: transferring more power accelerates computation at the receiver but leaves less power for the donor. After deriving design principles that simplify WPT control, we characterize the resulting latency tradeoff through a tractable surrogate of average inference latency. Minimizing the surrogate yields a novel two-sided water-filling strategy that determines whether each active expert donates, retains, or receives power according to the water level and its WPT link efficiency. Simulations with Mixtral-8x7B and Phi-3.5-MoE show up to 29.25% lower inference latency than without WPT, with larger gains under more compact formations and higher transfer efficiencies.",
+   "id": "2610.32638",
+   "title": "InferSlice: A Reference Architecture for SLO-driven LLM Inference over a Telco Wide-Area Network",
+   "abstract": "LLM inference is increasingly deployed as a core service for enterprise and interactive applications, but sovereignty, compliance, latency and resource-locality requirements can limit the suitability of centralised cloud deployments. Telco operators offer geographically distributed compute and network infrastructure for addressing these constraints. However, existing LLM serving frameworks are designed for tightly coupled data centres and provide limited support for coordinating geographically distributed and heterogeneous resources. We present InferSlice, a reference architecture for Service-Level Objective (SLO)-driven LLM inference over a telco infrastructure, integrating network slicing, GPU partitioning, elastic serving and observability. Led by BT in collaboration with the University of Bristol and NVIDIA, and realised on the JOINER UK national-scale wide-area network (WAN), InferSlice is evaluated on service differentiation across tiers, elastic scale-out, client-edge bandwidth as a bottleneck, and the reach of tensor, pipeline, data parallelism, and prefill/decode disaggregation over the WAN. Our results show that, on a general-purpose telco network, tiers yield distinct latency-throughput regimes, and weight streaming shortens scale-out time. Replication is placement-insensitive but memory-bound; pipeline parallelism tolerates near- and mid-cross-site hops, while tensor parallelism and disaggregation fail beyond a single subnet hop. We share practical insights from operating SLO-driven inference on a telco network, lessons learned and open questions, and hope to encourage further research on distributed and heterogeneous LLM inference systems.",
    "authors": [
     {
-     "name": "Haotian Zheng",
+     "name": "Juan Parra-Ullauri",
      "affiliations": []
     },
     {
-     "name": "Zhanwei Wang",
+     "name": "Anthony Chiu",
      "affiliations": []
     },
     {
-     "name": "Kaibin Huang",
+     "name": "Hari Madhukumar",
+     "affiliations": []
+    },
+    {
+     "name": "Zhaozhou Wu",
+     "affiliations": []
+    },
+    {
+     "name": "Anderson Bravalheri",
+     "affiliations": []
+    },
+    {
+     "name": "Alex Healing",
+     "affiliations": []
+    },
+    {
+     "name": "Andy Corston-Petrie",
+     "affiliations": []
+    },
+    {
+     "name": "Dimitra Simeonidou",
+     "affiliations": []
+    },
+    {
+     "name": "Nektaria Efthymiou",
      "affiliations": []
     }
    ],
    "categories": [
     "cs.DC",
-    "cs.AI",
-    "cs.NI"
+    "cs.AI"
    ],
    "primary_category": "cs.DC",
-   "date": "2026-10-22",
-   "url": "https://arxiv.org/abs/2610.30923",
+   "date": "2026-10-23",
+   "url": "https://arxiv.org/abs/2610.32638",
+   "matched_terms": [
+    "data centres"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(HTML version not available: HTTPError)"
+  },
+  {
+   "key": "arxiv:2610.32632",
+   "source": "arXiv",
+   "id": "2610.32632",
+   "title": "Toward Open ISA Supercomputing: A Comparative Study of RISC-V, Arm, and x86 Architectures on HPC Workloads",
+   "abstract": "RISC-V is emerging as a candidate architecture for high-performance computing (HPC), but its competitiveness against established x86 and Arm processors remains difficult to assess because existing studies use different platforms, workloads, and methodologies, and rarely consider energy efficiency. Our work provides an evaluation of contemporary HPC RISC-V, Arm, and x86 processors using a common software stack and methodology. We characterize the Sophgo SG2044 and compare it with the NVIDIA Grace CPU Superchip and Intel Xeon Platinum 8480+ across four HPC benchmarks (STREAM, HPL, HPL-MxP, and HPCG) and four representative applications (iPIC3D, PLUTO, OpenFOAM, and llama.cpp). The version of HPL-MxP linked to OpenBLAS built and used for this work is made available as open-source software. The SG2044 reaches 8.02 GFLOP/s of FP64 performance and 7.8 GB/s of memory bandwidth per core, increasing to 294 GFLOP/s and 107 GB/s at 64 cores. L2-cache-aware process placement enables near-linear scaling up to 16 cores, beyond which memory-bandwidth saturation limits further gains. Across generations of RISC-V hardware, in the context of the Monte Cimone (MC) project, the SG2044-based MCv3 doubles both single-core performance and peak memory bandwidth relative to MCv2, while improving memory bandwidth, node-level FP64 performance, and energy efficiency by approximately 100x, 158x, and 10x, over MCv1. Against the Arm and x86 systems, the SG2044 shows 8-15x less absolute performance, reflecting its narrower vector resources and less advanced technology node, but delivers competitive scaling and energy efficiency on several workloads. Its most notable result is LLM decode, where 64-core execution provides the highest relative scaling and energy efficiency among the evaluated platforms while exceeding Intel in throughput. Our results show that RISC-V processors are closing the gap with the competition.",
+   "authors": [
+    {
+     "name": "Emanuele Venieri",
+     "affiliations": []
+    },
+    {
+     "name": "Giacomo Madella",
+     "affiliations": []
+    },
+    {
+     "name": "Gabriele Ceccolini",
+     "affiliations": []
+    },
+    {
+     "name": "Simone Manoni",
+     "affiliations": []
+    },
+    {
+     "name": "Federico Ficarelli",
+     "affiliations": []
+    },
+    {
+     "name": "Filippo Barbari",
+     "affiliations": []
+    },
+    {
+     "name": "Jenny Lynn Almerol",
+     "affiliations": []
+    },
+    {
+     "name": "Elisabetta Boella",
+     "affiliations": []
+    },
+    {
+     "name": "Nitin Shukla",
+     "affiliations": []
+    },
+    {
+     "name": "Simone Bnà",
+     "affiliations": []
+    },
+    {
+     "name": "Luca Benini",
+     "affiliations": []
+    },
+    {
+     "name": "Andrea bartolini",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.AR",
+    "cs.PF"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-23",
+   "url": "https://arxiv.org/abs/2610.32632",
+   "matched_terms": [
+    "hpc",
+    "llm",
+    "supercomputing"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Toward Open ISA Supercomputing: A Comparative Study of RISC-V, Arm, and x86 Architectures on HPC Workloads Emanuele Venieri emanuele.venieri2@unibo.it Giacomo Madella Gabriele Ceccolini Simone Manoni Federico Ficarelli Filippo Barbari Jenny Lynn Almerol Elisabetta Boella Nitin Shukla Simone Bnà Luca Benini Andrea Bartolini organization=University of Bologna, city=Bologna, country=Italy organization=CINECA, city=Casalecchio di Reno, country=Italy organization=University of Trento, city=Trento, country=Italy organization=E4 Computer Engineering, city=Scandiano, country=Italy organization=ETH, city=Zurich, country=Switzerland Abstract RISC-V is emerging as a candidate architecture for high-performance computing (HPC), but its competitiveness against established x86 and Arm processors remains difficult to assess because existing studies use different platforms, workloads, and methodologies, and rarely consider energy efficiency. Our work provides an evaluation of contemporary HPC RISC-V, Arm, and x86 processors using a common software stack and methodology. We characterize the Sophgo SG2044 and compare it with the NVIDIA Grace CPU Superchip and Intel Xeon Platinum 8480+ across four HPC benchmarks (STREAM, HPL, HPL-MxP, and HPCG) and four representative scientific and industrial applications (iPIC3D, PLUTO, OpenFOAM, and llama.cpp). The version of HPL-MxP linked to OpenBLAS built and used for this work is made available as open-source software. The SG2044 reaches 8.02 GFLOP/s of FP64 performance and 7.8 GB/s of memory bandwidth per core, increasing to 294 GFLOP/s and 107 GB/s at 64 cores. L2-cache-aware process placement enables near-linear scaling up to 16 cores, beyond which memory-bandwidth saturation limits further gains. Across generations of RISC-V hardware, in the context of the Monte Cimone (MC) project, the SG2044-based MCv3 doubles both single-core performance and peak memory bandwidth relative to MCv2, while improving memory bandwidth, node-level FP64 performance, and energy efficiency by approximately 100 × 100\\times , 158 × 158\\times , and 10 × 10\\times , respectively, over MCv1. Against the Arm and x86 systems, the SG2044 shows 8-15 × \\times less absolute performance, reflecting its narrower vector resources and less advanced technology node, but delivers competitive scaling and energy efficiency on several workloads. Its most notable result is LLM decode, where 64-core execution provides the highest relative scaling and energy efficiency among th"
+  },
+  {
+   "key": "arxiv:2610.32389",
+   "source": "arXiv",
+   "id": "2610.32389",
+   "title": "KnitTrans: Coordinated Trajectory Transfer for Effective and Efficient LLM Reinforcement Learning",
+   "abstract": "Trajectory transfer from rollout to training affects both learning quality and system efficiency in large language model reinforcement learning (RL). Enforcing batch-wide training requirements can delay the admission of completed trajectories, resulting in higher architectural staleness: the additional parameter-version gap from disaggregated pipelining relative to colocated execution. Beyond admission, misalignment between data access and training consumption causes redundant movement and unnecessary waiting when transferring large trajectory payloads. We present KnitTrans, a system that coordinates the rollout-to-training path through three designs. First, constraint-preserving mini-batch admission allows flexibility in early mini-batch composition, while checking that enough capacity remains to satisfy the remaining quotas. Second, on-demand trajectory data access matches storage units to consumer assignments and overlaps micro-batch data preparation with computation. Third, multimodal encoding deduplication supports reuse across a mini-batch while preserving gradient contributions from all backbone micro-batches. Experiments show up to 93% lower architectural staleness than with train-batch admission, narrowing the learning-quality gap between disaggregated execution and colocated execution. On multimodal workloads, KnitTrans reduces transfer latency by two orders of magnitude and achieves a speedup of up to 5.8 times in transfer plus training over the baseline.",
+   "authors": [
+    {
+     "name": "Bangjun Xiao",
+     "affiliations": []
+    },
+    {
+     "name": "Chiheng Lou",
+     "affiliations": []
+    },
+    {
+     "name": "Xiaodong Ji",
+     "affiliations": []
+    },
+    {
+     "name": "Xiangwei Deng",
+     "affiliations": []
+    },
+    {
+     "name": "Yikai Zhao",
+     "affiliations": []
+    },
+    {
+     "name": "Gang Huang",
+     "affiliations": []
+    },
+    {
+     "name": "Hailin Zhang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.LG"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-23",
+   "url": "https://arxiv.org/abs/2610.32389",
+   "matched_terms": [
+    "large language model",
+    "llm"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "KnitTrans: Coordinated Trajectory Transfer for Effective and Efficient LLM Reinforcement Learning Thanks: ∗ Work done during internship at Xiaomi Corporation. Thanks: ⋄ Corresponding author. Conference: ; ; Bangjun Xiao †∗ Chiheng Lou †∗ Xiaodong Ji ‡ Xiangwei Deng ‡ Yikai Zhao ‡ Gang Huang † Yun Ma † Hailin Zhang ‡⋄ Affiliation: [ © , Abstract. Trajectory transfer from rollout to training affects both learning quality and system efficiency in large language model reinforcement learning (RL). Enforcing batch-wide training requirements can delay the admission of completed trajectories, resulting in higher architectural staleness—the additional parameter-version gap from disaggregated pipelining relative to colocated execution. Beyond admission, misalignment between data access and training consumption causes redundant movement and unnecessary waiting when transferring large trajectory payloads. We present KnitTrans, a system that coordinates the rollout-to-training path through three designs. First, constraint-preserving mini-batch admission allows flexibility in early mini-batch composition, while checking that enough capacity remains to satisfy the remaining quotas. Second, on-demand trajectory data access matches storage units to consumer assignments and overlaps micro-batch data preparation with computation. Third, multimodal encoding deduplication supports reuse across a mini-batch while preserving gradient contributions from all backbone micro-batches. Experiments show up to 93% lower architectural staleness than with train-batch admission, narrowing the learning-quality gap between disaggregated execution and colocated execution. On multimodal workloads, KnitTrans reduces transfer latency by two orders of magnitude and achieves a speedup of up to 5.8 × 5.8\\times in transfer plus training over the baseline."
+  },
+  {
+   "key": "arxiv:2610.32379",
+   "source": "arXiv",
+   "id": "2610.32379",
+   "title": "Do LLM-derived text features improve electricity price forecasts beyond document activity? Evidence from Australia's National Electricity Market",
+   "abstract": "Large language models (LLMs) can turn market notices and news into features for electricity price forecasting. Such features also record when documents arrive and whether their extraction failed, so a gain measured against a model without text can reflect document activity as well as content. We add the counts of the same documents and of their failed extractions to a no-text LightGBM model and measure each LLM representation against this activity reference, which needs no additional LLM requests. With gpt-6-luna as the extractor, we forecast Australian electricity prices from operator notices (5-30 minutes ahead) and WattClarity news (day-ahead) after the extractor's documented knowledge cutoff, averaging forecasts over three training seeds. For news, the counts alone lower mean absolute error (MAE) by 3.0%, most of the 3.6% reduction that the better LLM representation achieves relative to the no-text model; its increment beyond the counts is not significant. For notices, two of the three LLM representations lower MAE beyond the counts, by 0.14-0.21% and 0.45-0.52%, whether the counts are cumulative or cover recent windows, whereas the third shows no significant reduction. Time-shifted placebos give mixed evidence on whether these gains require text aligned with the target. Benchmarks using the operator's pre-dispatch forecasts (notices) or price history alone (news) are more accurate than all these text models. Gains against the no-text model and the activity reference differ in sign at individual seeds and, for notices with cumulative counts, in seed-averaged forecasts. Text gains should be reported against both references.",
+   "authors": [
+    {
+     "name": "Fanxing Ning",
+     "affiliations": []
+    },
+    {
+     "name": "Jianguo Zhu",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-10-23",
+   "url": "https://arxiv.org/abs/2610.32379",
+   "matched_terms": [
+    "large language models",
+    "llm",
+    "llms"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Do LLM-derived text features improve electricity price forecasts beyond document activity? Evidence from Australia’s National Electricity Market Fanxing Ning † † thanks: School of Electrical and Computer Engineering, The University of Sydney, Sydney, Australia. Email: fnin0084@uni.sydney.edu.au Jianguo Zhu † † thanks: School of Electrical and Computer Engineering, The University of Sydney, Sydney, Australia. Corresponding author. Email: jianguo.zhu@sydney.edu.au Abstract Large language models (LLMs) can turn market notices and news into features for electricity price forecasting. Such features also record when documents arrive and whether their extraction failed, so a gain measured against a model without text can reflect document activity as well as content. We add the counts of the same documents and of their failed extractions to a no-text LightGBM model and measure each LLM representation against this activity reference, which needs no additional LLM requests. With gpt-6-luna as the extractor, we forecast Australian electricity prices from operator notices (5–30 minutes ahead) and WattClarity news (day-ahead) after the extractor’s documented knowledge cutoff, averaging forecasts over three training seeds. For news, the counts alone lower mean absolute error (MAE) by 3.0%, most of the 3.6% reduction that the better LLM representation achieves relative to the no-text model; its increment beyond the counts is not significant. For notices, two of the three LLM representations lower MAE beyond the counts, by 0.14–0.21% and 0.45–0.52%, whether the counts are cumulative or cover recent windows, whereas the third shows no significant reduction. Time-shifted placebos give mixed evidence on whether these gains require text aligned with the target. Benchmarks using the operator’s pre-dispatch forecasts (notices) or price history alone (news) are more accurate than all these text models. Gains against the no-text model and the activity reference differ in sign at individual seeds and, for notices with cumulative counts, in seed-averaged forecasts. Text gains should be reported against both references. Keywords: Energy forecasting; Evaluating forecasts; Large language models; Text as data; Market notices; Look-ahead bias"
+  },
+  {
+   "key": "arxiv:2610.32260",
+   "source": "arXiv",
+   "id": "2610.32260",
+   "title": "Heterogeneous Space Data Centers: A Key Paradigm for Future Non-Terrestrial and In-Orbit Services",
+   "abstract": "Lower space-launch cost and advances in AI are driving space-based data centers (SDCs) that provide AI-centric computing and communication services to in-orbit and non-terrestrial assets. However, architectural principles, service models, and energy provisioning for such SDCs, particularly in low-Earth orbit (LEO), remain largely unexplored. We introduce heterogeneous SDCs composed of large and small nodes, differentiated by computing capability, size, and power budget, to support applications spanning ground, aerial, and in-orbit users. We define use cases, node sizing and placement strategies, and interconnection topologies integrating space-to-space and space-to-ground links. Focusing on dawn-dusk LEO configurations, we analyze solar power availability, visibility windows, and latency-aware coverage. Using baseline workloads for typical scenarios, we evaluate latency and service reliability. We quantify energy requirements of different SDC roles and deployment scales, highlighting trade-offs among node size, orbit selection, and service portfolio, and provide design guidance and future research directions for AI infrastructure in space.",
+   "authors": [
+    {
+     "name": "Peng Hu",
+     "affiliations": []
+    },
+    {
+     "name": "Mustafa Alhassan",
+     "affiliations": []
+    },
+    {
+     "name": "Amjad Iqbal",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY",
+    "cs.AI"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-10-23",
+   "url": "https://arxiv.org/abs/2610.32260",
+   "matched_terms": [
+    "ai infrastructure",
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Heterogeneous Space Data Centers: A Key Paradigm for Future Non-Terrestrial and In-Orbit Services Peng Hu* Mustafa Alhassan Amjad Iqbal Affiliation: Department of Electrical and Computer Engineering, University of Manitoba, Winnipeg, MB, R3T 5V6, Canada 2026 Abstract Lower space-launch cost and advances in AI are driving space-based data centers (SDCs) that provide AI-centric computing and communication services to in-orbit and non-terrestrial assets. However, architectural principles, service models, and energy provisioning for such SDCs, particularly in low-Earth orbit (LEO), remain largely unexplored. We introduce heterogeneous SDCs composed of large and small nodes, differentiated by computing capability, size, and power budget, to support applications spanning ground, aerial, and in-orbit users. We define use cases, node sizing and placement strategies, and interconnection topologies integrating space-to-space and space-to-ground links. Focusing on dawn-dusk LEO configurations, we analyze solar power availability, visibility windows, and latency-aware coverage. Using baseline workloads for typical scenarios, we evaluate latency and service reliability. We quantify energy requirements of different SDC roles and deployment scales, highlighting trade-offs among node size, orbit selection, and service portfolio, and provide design guidance and future research directions for AI infrastructure in space. \\chapteri Orbital artificial artificial intelligence (AI) infrastructure has attracted growing interest from industry and research communities. For example, on August 04, 2026, SpaceX and NVIDIA jointly announced the Starmind AI1 satellite, and SpaceX’s regulatory filings indicate an eventual constellation of up to one million such nodes [ 1 ] . Google proposed Suncatcher, a constellation of solar-powered satellites equipped with Tensor Processing Unit (TPU) accelerators, motivated by the finding that photovoltaic arrays in a dawn–dusk sun-synchronous orbit (SSO) can generate substantially more power than comparable terrestrial installations [ 2 ] . Axiom Space, Starcloud, and China’s Three-Body Computing Constellation are pursuing comparable architectures [ 3 , 4 ] , building on Hewlett Packard Enterprise’s Spaceborne Computer-2, which has hosted edge-computing and AI experiments aboard the International Space Station since 2021. These developments collectively signal lower-cost access to space, driven by reusable launch vehicles and advances in physical AI"
+  },
+  {
+   "key": "arxiv:2610.32215",
+   "source": "arXiv",
+   "id": "2610.32215",
+   "title": "Democratizing LLM Training with the Edge: Challenges, Systems, and the Road Ahead",
+   "abstract": "The growing computational power of modern GPU data centers has let a few industrial giants train and deploy large language models (LLMs) on massive amounts of data. Yet the sheer scale of these models and their training data makes centralized development increasingly hard to sustain, and at the same time shuts out smaller institutions that hold relevant private data but lack comparable infrastructure. In this paper, we organize our positions on distributed LLM training around the pretraining and fine-tuning paradigms, covering federated learning, split learning, and decentralized approaches, and we assess their readiness for geo-distributed settings with heterogeneous hardware and unreliable connectivity. We then present a {\\em unified} system architecture built around a cloud-hosted parameter server that coordinates heterogeneous clients over outbound gRPC connections, reusing one communication, compression, and fault-tolerance stack for both pretraining and a family of fine-tuning methods. We validate the design with real geo-distributed experiments on GPT-2 Medium and Llama3-1B pretraining across multiple university sites, showing stable convergence under realistic conditions. Finally, we chart the road ahead, identifying open problems that span frontier model support, elastic fault tolerance, adaptive compression, federated alignment, privacy and trust, incentive design, and system--algorithm co-design, all of which must be addressed to make democratized LLM training a reality.",
+   "authors": [
+    {
+     "name": "Ziyue Luo",
+     "affiliations": []
+    },
+    {
+     "name": "Jiaxuan Cai",
+     "affiliations": []
+    },
+    {
+     "name": "Cedric LeDenmat",
+     "affiliations": []
+    },
+    {
+     "name": "Srijith Nair",
+     "affiliations": []
+    },
+    {
+     "name": "Fatemeh Nourzad",
+     "affiliations": []
+    },
+    {
+     "name": "Rohith Krishnan",
+     "affiliations": []
+    },
+    {
+     "name": "Qinhang Wu",
+     "affiliations": []
+    },
+    {
+     "name": "Jifan Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Sungjae Lee",
+     "affiliations": []
+    },
+    {
+     "name": "Zhe Li",
+     "affiliations": []
+    },
+    {
+     "name": "Peiwen Qiu",
+     "affiliations": []
+    },
+    {
+     "name": "Siddharth Shah",
+     "affiliations": []
+    },
+    {
+     "name": "Rishabh Sharma",
+     "affiliations": []
+    },
+    {
+     "name": "Sundararajan Srinivasan",
+     "affiliations": []
+    },
+    {
+     "name": "Yinglun Xia",
+     "affiliations": []
+    },
+    {
+     "name": "Xue Zheng",
+     "affiliations": []
+    },
+    {
+     "name": "Zidong Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Bicheng Ying",
+     "affiliations": []
+    },
+    {
+     "name": "Kaushik Chowdhury",
+     "affiliations": []
+    },
+    {
+     "name": "Gauri Joshi",
+     "affiliations": []
+    },
+    {
+     "name": "Yingbin Liang",
+     "affiliations": []
+    },
+    {
+     "name": "Robert Nowak",
+     "affiliations": []
+    },
+    {
+     "name": "Srinivasan Parthasarathy",
+     "affiliations": []
+    },
+    {
+     "name": "Saurav Prakash",
+     "affiliations": []
+    },
+    {
+     "name": "Balaraman Ravindran",
+     "affiliations": []
+    },
+    {
+     "name": "Sanjay Shakkottai",
+     "affiliations": []
+    },
+    {
+     "name": "Ness B. Shroff",
+     "affiliations": []
+    },
+    {
+     "name": "Haibo Yang",
+     "affiliations": []
+    },
+    {
+     "name": "Aylin Yener",
+     "affiliations": []
+    },
+    {
+     "name": "Jia Liu",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.LG"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-23",
+   "url": "https://arxiv.org/abs/2610.32215",
    "matched_terms": [
     "data centers"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Low-Latency MoE Inference in Space Data Centers: A Wireless-Power-Transfer Perspective Haotian Zheng Zhanwei Wang Kaibin Huang † † thanks: H. Zheng, Z. Wang, and K. Huang are with the Department of Electrical and Computer Engineering, The University of Hong Kong, Hong Kong SAR, China (Email: {htzheng, zhanweiw, huangkb}@eee.hku.hk). Corresponding authors: K. Huang; Z. Wang. Abstract Space data centers (SpaceDCs) are emerging as platforms for large language models (LLMs), supported by continuous solar-energy harvesting and high-speed interconnections. The mixture-of-experts (MoE) architecture supports distributed LLM inference by deploying experts across satellites. However, skewed expert activation creates uneven computation power demands despite uniform solar-power supply at the dawn–dusk sun-synchronous orbit (SSO). Consequently, active experts remain power-constrained while harvested power at idle experts is underused. These reduce inference efficiency and increase latency. To address this supply–demand mismatch, we propose the SpaceWPT framework, which uses inter-satellite laser-based wireless power transfer (WPT) to redistribute harvested power. The key design challenge is to balance the computation demands of power-donating and power-receiving satellites under WPT losses: transferring more power accelerates computation at the receiver but leaves less power for the donor. After deriving design principles that simplify WPT control, we characterize the resulting latency tradeoff through a tractable surrogate of average inference latency. Minimizing the surrogate yields a novel two-sided water-filling strategy that determines whether each active expert donates, retains, or receives power according to the water level and its WPT link efficiency. Simulations with Mixtral-8x7B and Phi-3.5-MoE show up to 29.25% lower inference latency than without WPT, with larger gains under more compact formations and higher transfer efficiencies. Index Terms: Space data centers, Wireless Power Transfer, Mixture of Experts, Power Control."
+   "affiliation_block": "Democratizing LLM Training with the Edge: Challenges, Systems, and the Road Ahead Ziyue Luo Affiliation: The Ohio State University; Jiaxuan Cai Affiliation: The Ohio State University; Cedric Le Denmat Affiliation: The Ohio State University; Srijith Nair Affiliation: The Ohio State University; Fatemeh Nourzad Affiliation: The Ohio State University; Rohith Krishnan Sudha Affiliation: The Ohio State University; Qinhang Wu Affiliation: The Ohio State University; Jifan Zhang Affiliation: University of Wisconsin–Madison; Sungjae Lee Affiliation: The Ohio State University; Zhe Li Affiliation: Rochester Institute of Technology; Peiwen Qiu Affiliation: The Ohio State University; Siddharth Shah Affiliation: Carnegie Mellon University; Rishabh Sharma Affiliation: University of Wisconsin–Madison; Sundararajan Srinivasan Affiliation: The University of Texas at Austin; Yinglun Xia Affiliation: The Ohio State University; Xue Zheng Affiliation: The Ohio State University; Zidong Liu Affiliation: ComboCurve; Bicheng Ying Affiliation: Google; Kaushik Chowdhury Affiliation: The University of Texas at Austin; Gauri Joshi Affiliation: Carnegie Mellon University; Yingbin Liang Affiliation: The Ohio State University; Robert Nowak Affiliation: University of Wisconsin–Madison; Srinivasan Parthasarathy Affiliation: The Ohio State University; Saurav Prakash Affiliation: Indian Institute of Technology Madras. * Co-primary authors with equal contribution. Balaraman Ravindran Affiliation: Indian Institute of Technology Madras. * Co-primary authors with equal contribution. Sanjay Shakkottai Affiliation: The University of Texas at Austin; Ness B. Shroff Affiliation: The Ohio State University; Haibo Yang Affiliation: Rochester Institute of Technology; Aylin Yener Affiliation: The Ohio State University; Jia Liu † † thanks: This work is supported in part by NSF Grant 2112471. Affiliation: The Ohio State University; Abstract The growing computational power of modern GPU data centers has let a few industrial giants train and deploy large language models (LLMs) on massive amounts of data. Yet the sheer scale of these models and their training data makes centralized development increasingly hard to sustain, and at the same time shuts out smaller institutions that hold relevant private data but lack comparable infrastructure. In this paper, we organize our positions on distributed LLM training around the pretraining and fine-tuning paradigms, covering federated learning, split learning, and decen"
+  },
+  {
+   "key": "doi:10.1016/j.apenergy.2026.129132",
+   "source": "journal",
+   "journal": "Applied Energy",
+   "journal_short": "Applied Energy",
+   "doi": "10.1016/j.apenergy.2026.129132",
+   "title": "Coordinating data centre microgrids and mobile power sources for distribution network resilience: A data-driven distributionally robust optimisation approach",
+   "abstract": "",
+   "abstract_source": "",
+   "authors": [
+    {
+     "name": "Yi Wang",
+     "affiliations": [
+      "Wuhan University"
+     ]
+    },
+    {
+     "name": "Liangzhong Yao",
+     "affiliations": [
+      "Wuhan University"
+     ]
+    },
+    {
+     "name": "Goran Štrbac",
+     "affiliations": [
+      "Imperial College London"
+     ]
+    }
+   ],
+   "type": "journal-article",
+   "date": "2026-10-23",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129132",
+   "matched_terms": [
+    "data centre"
+   ],
+   "screened_on": "title only",
+   "affiliation_source": "openalex"
+  },
+  {
+   "key": "doi:10.1016/j.apenergy.2026.129075",
+   "source": "journal",
+   "journal": "Applied Energy",
+   "journal_short": "Applied Energy",
+   "doi": "10.1016/j.apenergy.2026.129075",
+   "title": "Large language model-guided multi-agent reinforcement learning for low-carbon data center scheduling considering distribution-network constraint",
+   "abstract": "",
+   "abstract_source": "",
+   "authors": [
+    {
+     "name": "Chenyue Xia",
+     "affiliations": []
+    },
+    {
+     "name": "Yinliang Xu",
+     "affiliations": []
+    },
+    {
+     "name": "Hongbin Sun",
+     "affiliations": []
+    }
+   ],
+   "type": "journal-article",
+   "date": "2026-10-26",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129075",
+   "matched_terms": [
+    "data center"
+   ],
+   "screened_on": "title only",
+   "affiliation_source": "not available yet"
+  },
+  {
+   "key": "doi:10.1038/s41467-026-78509-6",
+   "source": "journal",
+   "journal": "Nature Communications",
+   "journal_short": "Nature Communications",
+   "doi": "10.1038/s41467-026-78509-6",
+   "title": "Democratizing reliable knowledge-seeking with MyGPT: a privacy-first, open-source retrieval-augmented generation platform",
+   "abstract": "Abstract Large language models (LLMs) have transformed knowledge discovery, but their use in sensitive domains is limited by privacy concerns and risks of data leakage. Moreover, LLMs may hallucinate when queried about information outside their training data, undermining their reliability for scientific, clinical, or policy-related tasks. We present MyGPT, a fully open-source, privacy-preserving retrieval-augmented-generation (RAG) platform that uses open-source LLMs and operates locally or within secure institutional environments. MyGPT empowers users to query user-defined libraries such as biomedical literature, confidential clinical documents, and multilingual global health policies, while ensuring that sensitive data never leaves the secure environment. We introduce confidence metrics, including “relevance scores” and “hallucination index,” and provide explicit source citation from the library within a single interface to assess contextual support for generated answers. MyGPT offers a cost-effective, modular, open-source alternative to commercial LLM services and democratizes knowledge-seeking across multiple domains, including use at remote facilities without internet access.",
+   "abstract_source": "crossref",
+   "authors": [
+    {
+     "name": "Jaimin N Patel",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Jude Downing",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Hugh Ferguson",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Thika You",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Duccio Malinverni",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Steve Mathew",
+     "affiliations": [
+      "St. Jude Children's Research Hospital",
+      "University of Tennessee Health Science Center"
+     ]
+    },
+    {
+     "name": "Inês Chen",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Madison Sluter",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Beth Moorefield",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Katalin Paréj",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Mukundan Ragavan",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Cindy Morris",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Dinesh Keerthi",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Desiree Becerra Armada",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Bálint Mészáros",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Vikas D. Trivedi",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Shahinur Alam",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Anthony Woodard",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Dan Alford",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Sagar Pathak",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Cai Li",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Renato Umeton",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Carlos Rodríguez‐Galindo",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Catherine G. Lam",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Stephen M Gottschalk",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "Charalampos G. Kalodimos",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    },
+    {
+     "name": "M. Madan Babu",
+     "affiliations": [
+      "St. Jude Children's Research Hospital"
+     ]
+    }
+   ],
+   "type": "journal-article",
+   "date": "2026-10-24",
+   "url": "https://doi.org/10.1038/s41467-026-78509-6",
+   "matched_terms": [
+    "large language models",
+    "llm",
+    "llms"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_source": "openalex"
   }
  ],
- "title_only_final": [],
- "pending_items": [
-  {
-   "source": "TPWRS",
-   "title": "Inverse Derivation of Locational Marginal Carbon Emission using Open-Access Incomplete Information",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3744526",
-   "first_seen": "2026-10-19"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Dynamic start-up and operating window analysis of an ammonia-fueled SOFC system with flexible cracking ratio operation",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129107",
-   "first_seen": "2026-10-19"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Sustainable aviation fuel production from electrified biogas reforming and SOEC-assisted Fischer-Tropsch process: Multi-product configurations and long-term projections",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129038",
-   "first_seen": "2026-10-19"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "MERIF: a market-informed electricity-price risk and interval forecasting framework for renewable-rich power markets",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.128993",
-   "first_seen": "2026-10-19"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Physics-constrained state-space modeling for battery state-of-charge estimation using embedded fiber-optic multiphysics sensing",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129025",
-   "first_seen": "2026-10-19"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Effects of cell aspect ratio and geometric orientation on performance and thermal behavior of cross-flow planar SOFCs",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129117",
-   "first_seen": "2026-10-19"
-  },
-  {
-   "source": "Nature Rev. EE",
-   "title": "Battery integration as function reassignment",
-   "url": "https://doi.org/10.1038/s44287-026-00342-2",
-   "first_seen": "2026-10-19"
-  },
-  {
-   "source": "TSG",
-   "title": "Representative Photovoltaic Scenario Extraction for Multiple Stations via Anchor-Guided Bipartite Graph Clustering",
-   "url": "https://doi.org/10.1109/tsg.2026.3744799",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "TSG",
-   "title": "Unstructured Information-Aware Load Forecasting with Sparse Fine-Tuning of Large Language Models",
-   "url": "https://doi.org/10.1109/tsg.2026.3744756",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "TPWRS",
-   "title": "A New Neural Network Paradigm for Scalable and Generalizable Stability Analysis of Power Systems",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3744794",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "TPWRS",
-   "title": "Privacy-Preserving Coordinated Expansion Planning of Transmission and Distribution Systems",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3744973",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "TPWRS",
-   "title": "Robust Transient Stability-Constrained Multi-Objective Optimal Power Flow under Uncertain Load Dynamics",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3744758",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "TPWRS",
-   "title": "A Novel Resilient Load Frequency Control with Prescribed Performance for Constrained Multi-Area Power Systems",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3745084",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Unlocking the potential benefits of intertemporal resources via explicit embedding future value of the end-of-day state in day-ahead dispatch",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129039",
-   "first_seen": "2026-10-20"
-  },
+ "title_only_final": [
   {
    "source": "Applied Energy",
    "title": "A cooperative framework for building cluster, charging cluster, and microgrid park with coordinated sharing of energy, carbon allowances, and green electricity certificates",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129079",
-   "first_seen": "2026-10-20"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129079"
   },
   {
    "source": "Applied Energy",
    "title": "Reinforcement learning based dual population evolutionary algorithm for multi objective optimal power flow with wind and photovoltaic uncertainties and contingencies",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129058",
-   "first_seen": "2026-10-21"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129058"
   },
   {
    "source": "Applied Energy",
    "title": "Electrochemical-guided time-frequency transformer for battery state-of-health estimation",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129042",
-   "first_seen": "2026-10-21"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129042"
   },
   {
    "source": "Applied Energy",
    "title": "Game-theoretic and multi-agent reinforcement learning-based adaptive optimization of multi-aggregator virtual power plants in coupled electricity, carbon, and green certificate markets",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129067",
-   "first_seen": "2026-10-21"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129067"
   },
   {
    "source": "Applied Energy",
    "title": "Dynamic evolution of effective thermophysical parameters in lithium-ion batteries during overcharge-induced thermal runaway",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129074",
-   "first_seen": "2026-10-21"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129074"
   },
   {
    "source": "Applied Energy",
    "title": "Resilient transmission proactive-hardening and post-recovery against cascading failures during typhoons under decision-dependent uncertainty",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129076",
-   "first_seen": "2026-10-21"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129076"
   },
   {
    "source": "Applied Energy",
    "title": "Constraint-first energy-efficient indoor environmental control with multi-agent device coordination and knowledge-graph memory",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129054",
-   "first_seen": "2026-10-21"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129054"
   },
   {
    "source": "Applied Energy",
    "title": "Entropic risk-aware end-to-end learning for stochastic optimization of renewable-rich integrated energy systems",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129096",
-   "first_seen": "2026-10-21"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129096"
   },
+  {
+   "source": "TPWRS",
+   "title": "Inverse Derivation of Locational Marginal Carbon Emission using Open-Access Incomplete Information",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3744526"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Dynamic start-up and operating window analysis of an ammonia-fueled SOFC system with flexible cracking ratio operation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129107"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Sustainable aviation fuel production from electrified biogas reforming and SOEC-assisted Fischer-Tropsch process: Multi-product configurations and long-term projections",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129038"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "MERIF: a market-informed electricity-price risk and interval forecasting framework for renewable-rich power markets",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128993"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Physics-constrained state-space modeling for battery state-of-charge estimation using embedded fiber-optic multiphysics sensing",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129025"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Effects of cell aspect ratio and geometric orientation on performance and thermal behavior of cross-flow planar SOFCs",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129117"
+  },
+  {
+   "source": "Nature Rev. EE",
+   "title": "Battery integration as function reassignment",
+   "url": "https://doi.org/10.1038/s44287-026-00342-2"
+  },
+  {
+   "source": "TSG",
+   "title": "Representative Photovoltaic Scenario Extraction for Multiple Stations via Anchor-Guided Bipartite Graph Clustering",
+   "url": "https://doi.org/10.1109/tsg.2026.3744799"
+  },
+  {
+   "source": "TSG",
+   "title": "Unstructured Information-Aware Load Forecasting with Sparse Fine-Tuning of Large Language Models",
+   "url": "https://doi.org/10.1109/tsg.2026.3744756"
+  },
+  {
+   "source": "TPWRS",
+   "title": "A New Neural Network Paradigm for Scalable and Generalizable Stability Analysis of Power Systems",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3744794"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Privacy-Preserving Coordinated Expansion Planning of Transmission and Distribution Systems",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3744973"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Robust Transient Stability-Constrained Multi-Objective Optimal Power Flow under Uncertain Load Dynamics",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3744758"
+  },
+  {
+   "source": "TPWRS",
+   "title": "A Novel Resilient Load Frequency Control with Prescribed Performance for Constrained Multi-Area Power Systems",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3745084"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Unlocking the potential benefits of intertemporal resources via explicit embedding future value of the end-of-day state in day-ahead dispatch",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129039"
+  }
+ ],
+ "pending_items": [
   {
    "source": "TSG",
    "title": "Reduced-Order Observer-Based Load Frequency Control for Interconnected Power Systems Under Imperfect Communication",
@@ -361,18 +960,6 @@
    "source": "Applied Energy",
    "title": "Quantifying the power system benefits of building upgrades for passive survivability in a changing climate",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129057",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Ocean acidification, reduced silicate availability and declines in Ocean productivity",
-   "url": "https://doi.org/10.1038/s41467-026-78463-3",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Light-powered photosynthetic living actuator",
-   "url": "https://doi.org/10.1038/s41467-026-78653-z",
    "first_seen": "2026-10-22"
   },
   {
@@ -467,97 +1054,271 @@
   },
   {
    "source": "Nature Communications",
-   "title": "Author Correction: Coaxially printed magnetic mechanical electrical hybrid structures with actuation and sensing functionalities",
-   "url": "https://doi.org/10.1038/s41467-026-78963-2",
-   "first_seen": "2026-10-23"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Evidence of optical Aharonov-Bohm interference in spin-polarized moiré excitonic complexes",
-   "url": "https://doi.org/10.1038/s41467-026-78018-6",
-   "first_seen": "2026-10-23"
-  },
-  {
-   "source": "Nature Communications",
    "title": "Topology and evolution of global transcriptional regulatory networks across the Klebsiella pneumoniae pan-genome",
    "url": "https://doi.org/10.1038/s41467-026-78154-z",
    "first_seen": "2026-10-23"
   },
   {
-   "source": "Nature Communications",
-   "title": "Deconvoluting the mode of action of antileishmanial aminopyrazoles through chemical mutagenesis",
-   "url": "https://doi.org/10.1038/s41467-026-78576-9",
-   "first_seen": "2026-10-23"
+   "source": "TSG",
+   "title": "Blank Page",
+   "url": "https://doi.org/10.1109/tsg.2026.3739918",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "TSG",
+   "title": "IEEE Transactions on Smart Grid Information for Authors",
+   "url": "https://doi.org/10.1109/tsg.2026.3739916",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "TSG",
+   "title": "Table of Contents",
+   "url": "https://doi.org/10.1109/tsg.2026.3739912",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "TSG",
+   "title": "Outage-Aware Resilient Energy Trading in Interconnected Microgrids via Lyapunov Optimization Considering Battery Energy Storage System Degradation",
+   "url": "https://doi.org/10.1109/tsg.2026.3745580",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "TSG",
+   "title": "Multi-Orbit Availability-Aware Coordinated Optimization of Space-Ground Computing-Electricity Microgrids",
+   "url": "https://doi.org/10.1109/tsg.2026.3746322",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "TSG",
+   "title": "IEEE Transactions on Smart Grid Publication Information",
+   "url": "https://doi.org/10.1109/tsg.2026.3739914",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "TSG",
+   "title": "GFM and GFL Battery Energy Storage Systems for Spatial Virtual Inertia Optimization in Renewable Energy Power Systems",
+   "url": "https://doi.org/10.1109/tsg.2026.3746277",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Renewable and Load Capacity Set for Infeasibility Identification and Recovery in Security-Constrained Economic Dispatch under Uncertainties",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3746616",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Characterizing the inter-temporal flexibility region of multi-source district heating systems for power system support",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129129",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Mechanism-dependent antagonism of auxiliary information in substation-level load disaggregation for distribution network planning",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129131",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Energy cascade utilization in SOFC-GT hybrids: the approach to ultra-high efficiency and multi-generation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129142",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Techno-economic perspective on emerging cryogenic and non-cryogenic boil-off hydrogen compression systems",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129146",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Renewable power-to-heat for low-rank coal upgrading: a 4E analysis of an electrified pyrolysis polygeneration system",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129086",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Economic and emissions analysis of natural gas power with high-efficiency CO2 capture",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129139",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Dynamic response and multi-scale transport behaviour of megawatt-scale seawater electrolysers driven by wind power",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129113",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Risk-averse optimal scheduling of renewable-powered hydrogen-ammonia-methanol co-production systems",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129101",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Long-term P2P trading among hydrogen refuelling stations: an online optimization method",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129130",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Performance investigation on pumped thermal electricity storage system with pressurized fluidized particle bed heat exchanger",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129105",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "A hybrid robust resilience defense strategy for cyber-physical distribution systems considering typhoon scenario probability ambiguity and decision-dependent uncertainty",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129150",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "FASTPolicy: Fairness-aware spatio-temporal adaptive cooperative energy management of the multi-energy microgrid coalition",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128930",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Household willingness to accept reverse demand response for renewable curtailment mitigation: a choice experiment in South Korea",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129065",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Integrated energy trading system for three types of coastal-resilient ZEBs with multiple stakeholders of novel flexibility and grid sharing resources",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129092",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Angular solar absorption and thermal energy storage seasonally modulate radiative cooling",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129152",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "A two-stage real-time equalization control strategy for off-grid multi-electrolyzer systems considering electrolyzer degradation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129156",
+   "first_seen": "2026-10-26"
   },
   {
    "source": "Nature Communications",
-   "title": "Live-cell 3D mapping reveals the organized architecture of FG-nucleoporins within the nuclear pore complex",
-   "url": "https://doi.org/10.1038/s41467-026-78936-5",
-   "first_seen": "2026-10-23"
+   "title": "Structure and function of cyanobacterial Omp85 reveal Toc159/Toc90 as a chloroplast protein import pore",
+   "url": "https://doi.org/10.1038/s41467-026-78967-y",
+   "first_seen": "2026-10-26"
   },
   {
    "source": "Nature Communications",
-   "title": "Renewable-compatible urea electrosynthesis enabled by dynamic asymmetric catalytic domains",
-   "url": "https://doi.org/10.1038/s41467-026-77513-0",
-   "first_seen": "2026-10-23"
+   "title": "A multi-functionally integrated modular catalyst for efficient chemoselective hydrogenation",
+   "url": "https://doi.org/10.1038/s41467-026-79017-3",
+   "first_seen": "2026-10-26"
   },
   {
    "source": "Nature Communications",
-   "title": "O-antigen loss modulates meropenem resistance in Klebsiella pneumoniae through metabolic and redox reprogramming",
-   "url": "https://doi.org/10.1038/s41467-026-78472-2",
-   "first_seen": "2026-10-23"
+   "title": "Superior energy-storage performance in BaTiO3-based MLCCs via high-entropy driven multiscale optimization",
+   "url": "https://doi.org/10.1038/s41467-026-79047-x",
+   "first_seen": "2026-10-26"
   },
   {
    "source": "Nature Communications",
-   "title": "Genome-wide mapping of genetic suppression events in Streptococcus pneumoniae",
-   "url": "https://doi.org/10.1038/s41467-026-78840-y",
-   "first_seen": "2026-10-23"
+   "title": "From microstructure to function: spatial visualization of magnetic permeability",
+   "url": "https://doi.org/10.1038/s41467-026-79271-5",
+   "first_seen": "2026-10-26"
   },
   {
    "source": "Nature Communications",
-   "title": "Water in kimberlitic olivine provides insights into kimberlite ascent and diamond transport",
-   "url": "https://doi.org/10.1038/s41467-026-78870-6",
-   "first_seen": "2026-10-23"
+   "title": "NYNRIN safeguards leukemia stem cells by sustaining thioredoxin activity to maintain redox homeostasis",
+   "url": "https://doi.org/10.1038/s41467-026-78678-4",
+   "first_seen": "2026-10-26"
   },
   {
    "source": "Nature Communications",
-   "title": "Asymmetric total synthesis of veraflorizine, peimine and peiminine",
-   "url": "https://doi.org/10.1038/s41467-026-78741-0",
-   "first_seen": "2026-10-23"
+   "title": "Dual-point-groups engineering enable multi-ultrahigh-Q resonances via Brillouin zone folding in tetramer metasurfaces",
+   "url": "https://doi.org/10.1038/s41467-026-78953-4",
+   "first_seen": "2026-10-26"
   },
   {
    "source": "Nature Communications",
-   "title": "Molecular basis of coupled peptidoglycan synthesis by the FtsWIQLB divisome complex from Vibrio cholerae",
-   "url": "https://doi.org/10.1038/s41467-026-78795-0",
-   "first_seen": "2026-10-23"
+   "title": "Arabian hydroclimate and hominin population dynamics over the last 500,000 years",
+   "url": "https://doi.org/10.1038/s41467-026-78983-y",
+   "first_seen": "2026-10-26"
   },
   {
    "source": "Nature Communications",
-   "title": "Illusory disagreement over socialism and capitalism in the United States and Brazil",
-   "url": "https://doi.org/10.1038/s41467-026-78853-7",
-   "first_seen": "2026-10-23"
+   "title": "Holographic focused ultrasound enables multitarget EV and MSC delivery for neurovascular repair after ischemic stroke",
+   "url": "https://doi.org/10.1038/s41467-026-78847-5",
+   "first_seen": "2026-10-26"
   },
   {
    "source": "Nature Communications",
-   "title": "Fine-tuning of polygenic score to local data improves risk prediction and clinical implementation",
-   "url": "https://doi.org/10.1038/s41467-026-77770-z",
-   "first_seen": "2026-10-23"
+   "title": "Complementary axes of functional system integrity and integration with divergent clinical correlates characterize focal epilepsy",
+   "url": "https://doi.org/10.1038/s41467-026-79018-2",
+   "first_seen": "2026-10-26"
   },
   {
    "source": "Nature Communications",
-   "title": "A receptor switch between discoidin domain receptors underlies orthobunyavirus entry and host range",
-   "url": "https://doi.org/10.1038/s41467-026-78781-6",
-   "first_seen": "2026-10-23"
+   "title": "Molecular basis for DNA cleavage by the mini-RNA-guided endonuclease Casδ−1",
+   "url": "https://doi.org/10.1038/s41467-026-79084-6",
+   "first_seen": "2026-10-26"
   },
   {
    "source": "Nature Communications",
-   "title": "LUBAC PUB domain interactions restrict Met1-linked ubiquitination to prevent murine embryonic lethality and immune pathology",
-   "url": "https://doi.org/10.1038/s41467-026-78827-9",
-   "first_seen": "2026-10-23"
+   "title": "Trace H2O2-triggered Fenton-like reaction by secondary coordination sphere in iron-based metal-organic frameworks",
+   "url": "https://doi.org/10.1038/s41467-026-79095-3",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Ureterovesical junction: a stem cell niche for ureteral urothelial renewal and bladder urothelial injury repair",
+   "url": "https://doi.org/10.1038/s41467-026-78820-2",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Platelet-engineered AAV silencing of myocardial CD36 reprograms fatty acid metabolism to promote cardiac regeneration in male mice",
+   "url": "https://doi.org/10.1038/s41467-026-79082-8",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Engineered d-p orbital hybridization unlocks dilute CO2 electrolysis to byproduct-free CH4-rich syngas",
+   "url": "https://doi.org/10.1038/s41467-026-79041-3",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Multiproperty optimization of therapeutic antibodies through sequence editing via large language model and reinforcement learning",
+   "url": "https://doi.org/10.1038/s41467-026-78533-6",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Cephalopod-inspired embodied camouflage system for simultaneous evasion of artificial and human visual perception",
+   "url": "https://doi.org/10.1038/s41467-026-78334-x",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "The intermediate hippocampus integrates shock-observation and spatial information during observational fear memory in male rats",
+   "url": "https://doi.org/10.1038/s41467-026-78482-0",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A tri-modular feline infectious peritonitis virus nanoparticle vaccine confers complete protection in female cats without detectable antibody-dependent enhancement",
+   "url": "https://doi.org/10.1038/s41467-026-78999-4",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "Nature Rev. EE",
+   "title": "Three-dimensional dynamic random-access memory beyond two-dimensional scaling limits",
+   "url": "https://doi.org/10.1038/s44287-026-00347-x",
+   "first_seen": "2026-10-26"
   }
  ],
- "pending_abstract": 64,
+ "pending_abstract": 69,
  "runs_utc": [
-  "2026-10-23T09:54:58+00:00"
+  "2026-10-26T10:56:54+00:00"
  ]
 }
