@@ -1,45 +1,45 @@
 {
- "date": "2026-10-26",
- "generated_utc": "2026-10-26T10:56:54+00:00",
+ "date": "2026-10-27",
+ "generated_utc": "2026-10-27T10:21:48+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-10-22",
-   "2026-10-26"
+   "2026-10-23",
+   "2026-10-27"
   ],
   "journal_doi_created": [
-   "2026-10-20",
-   "2026-10-26"
+   "2026-10-21",
+   "2026-10-27"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-   "in_window": 61,
-   "new": 30,
-   "candidates": 3
+   "in_window": 83,
+   "new": 60,
+   "candidates": 8
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-   "in_window": 30,
-   "new": 20,
-   "candidates": 5
+   "in_window": 59,
+   "new": 42,
+   "candidates": 7
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-   "in_window": 31,
-   "new": 18,
-   "candidates": 0
+   "in_window": 67,
+   "new": 50,
+   "candidates": 3
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-   "in_window": 15,
-   "new": 7,
+   "in_window": 19,
+   "new": 4,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -56,16 +56,16 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 60,
-   "new": 20,
-   "candidates": 2,
-   "new_with_abstract": 2
+   "in_window": 55,
+   "new": 10,
+   "candidates": 0,
+   "new_with_abstract": 0
   },
   {
    "source": "Nature Energy",
    "journal": "Nature Energy",
    "status": "ok",
-   "in_window": 2,
+   "in_window": 1,
    "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
@@ -74,17 +74,17 @@
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 186,
-   "new": 81,
-   "candidates": 1,
-   "new_with_abstract": 63
+   "in_window": 188,
+   "new": 28,
+   "candidates": 0,
+   "new_with_abstract": 14
   },
   {
    "source": "Nature Rev. EE",
    "journal": "Nature Reviews Electrical Engineering",
    "status": "ok",
    "in_window": 2,
-   "new": 1,
+   "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
   }
@@ -92,18 +92,263 @@
  "errors": [],
  "candidates": [
   {
-   "key": "arxiv:2610.32711",
+   "key": "arxiv:2610.35569",
    "source": "arXiv",
-   "id": "2610.32711",
-   "title": "Beyond Hotness: High-Resolution Memory Characterization of Cloud and LLM Workloads for Tiered Memory with ARM SPE",
-   "abstract": "Memory demands from data analytics and LLM workloads grow rapidly, driving up memory costs in cloud and data centers. Multi-tier memory has emerged as a promising solution to balance performance and cost. However, effectively leveraging it requires a deep understanding of workload memory behaviors. This work introduces a high-resolution memory characterization methodology for analyzing workload-specific opportunities for multi-tier memory usage. In response to the increasing deployment of ARM-based processors in data centers, we implement our methodology using the recent Statistical Profiling Extension (SPE) for ARM. By characterizing eight memory-intensive workloads from CloudSuite and LLM applications, we identify region-specific access patterns, evaluate the effectiveness of cloud-oriented cache hierarchies, and propose new metrics based on memory idle periods and latency profiles to determine suitable data placement for tiered memory.",
+   "id": "2610.35569",
+   "title": "ADACT: PDE-Constrained Thermal Hardware/Software Co-Design Adjoint-Driven Optimal Control via Finite Difference Discretization",
+   "abstract": "By virtue of the sheer compute demands of large-scale artificial intelligence (AI) and high-performance computing (HPC), modern multi-core microprocessors suffer from severe power density limits and thermal throttling, entailing an urgent need for principled methods for predictive, physics-informed dynamical thermal management (DTM). Here, we introduce a hardware/software co-design physics-informed PDE-constrained DTM throttling optimal control algorithm, ADACT (Adjoint-Driven Adaptive Co-Design Thermal Control), that minimizes thermal risk and cooling energy overhead while maximizing core execution throughput. The underlying physical temperature field is governed by a two-dimensional nonhomogeneous parabolic reaction-diffusion equation with spatially localized, time-varying power source terms and variable convective cooling subject to nonhomogeneous Dirichlet boundary conditions. We employ a discretization of the continuous state PDE via a Crank-Nicolson finite difference scheme with a 5-point discrete Laplacian operator on a uniform spatial mesh, which preserves unconditional numerical stability and $O(Δx^2 + Δy^2 + Δt^2)$ second-order temporal and spatial accuracy. To efficiently compute exact gradients, we construct and implement a continuous backward-in-time adjoint state method with L-BFGS as our optimization algorithm of choice. The accuracy and second-order convergence rates of both forward state and backward adjoint solvers are quantitatively verified via the Method of Manufactured Solutions (MMS), and gradient accuracy is validated using directional derivative Taylor tests. Numerical experiments demonstrate that ADACT dynamically throttles software power workloads and modulates hardware cooling efforts to strictly uphold physical thermal thresholds while maintaining operational throughput.",
    "authors": [
     {
-     "name": "Jie Ren",
+     "name": "Don Li",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "math.OC",
+    "cs.AR",
+    "eess.SY",
+    "math.NA"
+   ],
+   "primary_category": "math.OC",
+   "date": "2026-10-26",
+   "url": "https://arxiv.org/abs/2610.35569",
+   "matched_terms": [
+    "compute demand",
+    "hpc"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "ADACT: PDE-Constrained Thermal Hardware/Software Co-Design Adjoint-Driven Optimal Control via Finite Difference Discretization Don Li Affiliation: Dept. Mathematics & Statistics Affiliation: Portland State University Email: don@pdx.edu October 26, 2026 Abstract By virtue of the sheer compute demands of large-scale artificial intelligence (AI) and high-performance computing (HPC), modern multi-core microprocessors suffer from severe power density limits and thermal throttling, entailing an urgent need for principled methods for predictive, physics-informed dynamical thermal management (DTM). Here, we introduce a hardware/software co-design physics-informed PDE-constrained DTM throttling optimal control algorithm, ADACT (Adjoint-Driven Adaptive Co-Design Thermal Control), that minimizes thermal risk and cooling energy overhead while maximizing core execution throughput. The underlying physical temperature field is governed by a two-dimensional nonhomogeneous parabolic reaction-diffusion equation with spatially localized, time-varying power source terms and variable convective cooling subject to nonhomogeneous Dirichlet boundary conditions. We employ a discretization of the continuous state PDE via a Crank-Nicolson finite difference scheme with a 5-point discrete Laplacian operator on a uniform spatial mesh, which preserves unconditional numerical stability and O ⁡ ( Δ ​ x 2 + Δ ​ y 2 + Δ ​ t 2 ) O(\\Delta x^{2}+\\Delta y^{2}+\\Delta t^{2}) second-order temporal and spatial accuracy. To efficiently compute exact gradients, we construct and implement a continuous backward-in-time adjoint state method with L-BFGS as our optimization algorithm of choice. The accuracy and second-order convergence rates of both forward state and backward adjoint solvers are quantitatively verified via the Method of Manufactured Solutions (MMS), and gradient accuracy is validated using directional derivative Taylor tests. Numerical experiments demonstrate that ADACT dynamically throttles software power workloads and modulates hardware cooling efforts to strictly uphold physical thermal thresholds while maintaining operational throughput. Keywords PDE-constrained optimization, Adjoint state method, Hardware/software co-design, Thermal management, Crank-Nicolson method AMS Subject Classifications: Primary 49M41; Secondary 49K20, 65M06, 35K57, 93C20, 68M07"
+  },
+  {
+   "key": "arxiv:2610.35230",
+   "source": "arXiv",
+   "id": "2610.35230",
+   "title": "Context Is Not Free: Carbon-Aware LLM Routing for Multi-Turn LLM Web Services across Geo-Distributed Data Centers",
+   "abstract": "The sustainability of the Web has drawn growing attention, as large language model (LLM)-based web services leave a substantial carbon footprint. These services typically run in geo-distributed data centers whose grid carbon intensity varies across regions and over time, so routing each query to a cleaner region or a smaller model can reduce emissions. A conversation, however, is a stateful web session: each turn reuses the key--value (KV) cache of its history, which resides only where earlier turns were served. Serving a turn on another deployment requires recomputing this history, whose carbon cost grows with the conversation and can outweigh the saving of the move. Existing carbon-aware LLM routers treat a conversation's queries as independent and ignore this cost. We present CarbonRouter, an online framework that jointly selects the model, GPU type, and region for each query to minimize carbon emissions. CarbonRouter introduces a cache-aware carbon cost model, which charges history recomputation to every candidate deployment using cached-token counts from the serving backends, and uses a lightweight gate that keeps a session on its cached deployment when it would likely move back at the next turn and rebuild its history again. We evaluate CarbonRouter in trace-driven experiments on two real-world conversation datasets with five LLMs, three GPU types, and four regions, where it achieves the lowest carbon of all policies. CarbonRouter reduces CO$_2$ by 16.1\\% on average relative to FairCarbon, a state-of-the-art carbon-aware router with the same action space, while also improving predicted answer quality and estimated latency. Moreover, the saving rises further to 23.1\\% for sessions longer than 30 turns.",
+   "authors": [
+    {
+     "name": "Xiaoyang Zhang",
      "affiliations": []
     },
     {
-     "name": "Ivy Peng",
+     "name": "Yuejun Yan",
+     "affiliations": []
+    },
+    {
+     "name": "Qingang Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Yonggang Wen",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.AI",
+    "cs.CY"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-26",
+   "url": "https://arxiv.org/abs/2610.35230",
+   "matched_terms": [
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Context Is Not Free: Carbon-Aware LLM Routing for Multi-Turn LLM Web Services across Geo-Distributed Data Centers Xiaoyang Zhang Affiliation: Nanyang Technological University , Yuejun Yan Affiliation: Alibaba Group , Qingang Zhang Affiliation: Nanyang Technological University and Yonggang Wen Affiliation: Nanyang Technological University © acmcopyright Abstract. The sustainability of the Web has drawn growing attention, as large language model (LLM)-based web services leave a substantial carbon footprint. These services typically run in geo-distributed data centers whose grid carbon intensity varies across regions and over time, so routing each query to a cleaner region or a smaller model can reduce emissions. A conversation, however, is a stateful web session: each turn reuses the key–value (KV) cache of its history, which resides only where earlier turns were served. Serving a turn on another deployment requires recomputing this history, whose carbon cost grows with the conversation and can outweigh the saving of the move. Existing carbon-aware LLM routers treat a conversation’s queries as independent and ignore this cost. We present CarbonRouter, an online framework that jointly selects the model, GPU type, and region for each query to minimize carbon emissions. CarbonRouter introduces a cache-aware carbon cost model, which charges history recomputation to every candidate deployment using cached-token counts from the serving backends, and uses a lightweight gate that keeps a session on its cached deployment when it would likely move back at the next turn and rebuild its history again. We evaluate CarbonRouter in trace-driven experiments on two real-world conversation datasets with five LLMs, three GPU types, and four regions, where it achieves the lowest carbon of all policies. CarbonRouter reduces CO 2 by 16.1% on average relative to FairCarbon, a state-of-the-art carbon-aware router with the same action space, while also improving predicted answer quality and estimated latency. Moreover, the saving rises further to 23.1% for sessions longer than 30 turns. Keywords: Sustainability of Web, Carbon-aware Computing, LLM Routing"
+  },
+  {
+   "key": "arxiv:2610.35189",
+   "source": "arXiv",
+   "id": "2610.35189",
+   "title": "Right Model, Right Task: Capability-Constrained Carbon Labeling to Decarbonize Generative AI",
+   "abstract": "The carbon footprint of generative-AI inference depends not only on hardware efficiency and electricity supply, but also on whether the selected model is appropriate for the task. A frontier model may expend unnecessary computation on a routine request, whereas an under-capable model may increase energy use through failure, retries, extended reasoning and escalation. However, a standardized evaluation framework that accounts for task-specific capability requirements and the carbon emissions associated with successful task remains lacking. In this Perspective, we argue for a capability-constrained carbon labeling framework that shifts environmental assessment from carbon intensity per inference towards the expected carbon emissions per successfully completed task at the required capability level. Under this framework, models would first be assessed against task-specific capability requirements, and only models capable of meeting those requirements would be compared on their expected energy use and operational carbon emissions. By linking service quality to carbon cost, this approach could enable more informed matching of the right model to the right task, offering a demand-side pathway to reducing emissions associated with generative-AI token use. Realizing this vision will require standardized capability-based service assessments, comprehensive energy accounting and transparent carbon disclosures.",
+   "authors": [
+    {
+     "name": "Jiawei Qu",
+     "affiliations": []
+    },
+    {
+     "name": "Kai Hou",
+     "affiliations": []
+    },
+    {
+     "name": "Hongjie Jia",
+     "affiliations": []
+    },
+    {
+     "name": "Jinyue Yan",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-10-26",
+   "url": "https://arxiv.org/abs/2610.35189",
+   "matched_terms": [
+    "generative ai",
+    "generative-ai"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(HTML version not available: HTTPError)"
+  },
+  {
+   "key": "arxiv:2610.35088",
+   "source": "arXiv",
+   "id": "2610.35088",
+   "title": "Moving bits instead of watts: Accelerating global AI data-centre deployment at the energy-digital-water-land nexus",
+   "abstract": "Artificial intelligence is driving an unprecedented expansion of data centres. However, this growth is increasingly stalled by grid transmission constraints that trap new data centres in years-long connection queues. Unlike electricity, computation can be moved across the globe through fibre-optic networks, but whether this spatial transfer can bypass constrained grids and accelerate global AI data-centre deployment remains unknown. Here we develop a global framework that places future data-centre capacity in energy-abundant regions and routes computational workloads through fibre-optic networks rather than transmitting electricity. We evaluate the framework through more than 11 million hourly operation simulations at subnational resolution, integrating constraints on energy systems, water, digital connectivity, land and financing risk. Results show that across multiple data-centre development and climate-policy scenarios, leveraging global data transfer allows new data centres to be sited where these conditions are favourable, lowering construction costs by 44-47% and carbon emissions by 38%. By treating the global fibre-optic network as an energy-system asset, it avoids 34-67 GW of high-voltage transmission capacity, comparable in magnitude to Italy's national peak electricity demand. Crucially, this methodology could bring more than 95% of connection-delayed data centres online in 2030, with Canada, the Nordic countries and the Arabian Peninsula emerging as preferred locations for data-centre development. Our findings establish computational mobility as an alternative to energy-system expansion, informing the coordinated global development of energy and artificial-intelligence infrastructure.",
+   "authors": [
+    {
+     "name": "Jiawei Qu",
+     "affiliations": []
+    },
+    {
+     "name": "Xiaoying Shi",
+     "affiliations": []
+    },
+    {
+     "name": "Kai Hou",
+     "affiliations": []
+    },
+    {
+     "name": "Hongjie Jia",
+     "affiliations": []
+    },
+    {
+     "name": "Jinyue Yan",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-10-26",
+   "url": "https://arxiv.org/abs/2610.35088",
+   "matched_terms": [
+    "data centres",
+    "data-centre"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(HTML version not available: HTTPError)"
+  },
+  {
+   "key": "arxiv:2610.35047",
+   "source": "arXiv",
+   "id": "2610.35047",
+   "title": "Fluid Antennas Enabled UAV Communication Systems: Fundamentals, Challenges, and Future Directions",
+   "abstract": "Low-altitude wireless networks (LAWNs) require uncrewed aerial vehicle (UAV) communication systems to adapt to large-scale propagation changes and fast local channel fluctuations. Fluid antennas (FAs) provide an additional degree of freedom (DoF) by reconfiguring antenna positions within a compact aperture. This article investigates FA-enabled UAV communication systems from the perspectives of fundamentals, design challenges, and future research directions. We first introduce a dual-mobility perspective, in which UAV trajectory planning provides macro-mobility for large-scale air-to-ground geometry adaptation, and FA position reconfiguration provides micro-mobility for fine-grained local channel adaptation. We then identify key design challenges arising from the high computational complexity and information uncertainty in the joint optimization of UAV trajectory, FA positions, and beamforming under mobility, energy, hardware, and security constraints. To address these challenges, we present a hybrid offline-online optimization framework, where prior information such as environment maps, user mobility patterns, and statistical channel state information (CSI) supports long-term planning, while real-time information such as instantaneous CSI and UAV state enables fast online correction. A case study on FA-enabled UAV-assisted vehicular communications demonstrates the effectiveness of the proposed framework. Finally, we discuss future directions of FA-enabled UAV communication in integrated sensing and communication (ISAC), secure communication, mobile edge computing (MEC), and aerial relaying.",
+   "authors": [
+    {
+     "name": "Wenchao Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Weijie Yuan",
+     "affiliations": []
+    },
+    {
+     "name": "Jun Wu",
+     "affiliations": []
+    },
+    {
+     "name": "Jinke Ren",
+     "affiliations": []
+    },
+    {
+     "name": "Xuhui Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Changsheng You",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SP"
+   ],
+   "primary_category": "eess.SP",
+   "date": "2026-10-26",
+   "url": "https://arxiv.org/abs/2610.35047",
+   "matched_terms": [
+    "edge computing"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Fluid Antennas Enabled UAV Communication Systems: Fundamentals, Challenges, and Future Directions Wenchao Liu Weijie Yuan Jun Wu Jinke Ren Xuhui Zhang Changsheng You † † thanks: Wenchao Liu, Weijie Yuan, and Jun Wu are with the School of Automation and Intelligent Manufacturing, Southern University of Science and Technology, Shenzhen 518055, China. (e-mail: wc.liu@foxmail.com; yuanwj@sustech.edu.cn; wuj2021@mail.sustech.edu.cn). † † thanks: Jinke Ren and Xuhui Zhang are with the School of Science and Engineering, Shenzhen Future Network of Intelligence Institute, and Guangdong Provincial Key Laboratory of Future Networks of Intelligence, The Chinese University of Hong Kong (Shenzhen), Longgang, Shenzhen, Guangdong 518172, China. (e-mail: jinkeren@cuhk.edu.cn; xu.hui.zhang@foxmail.com). † † thanks: Changsheng You is with the Department of Electronic and Electrical Engineering, Southern University of Science and Technology, Shenzhen 518055, China. (e-mail: youcs@sustech.edu.cn). † † thanks: Corresponding author: Weijie Yuan Abstract Low-altitude wireless networks (LAWNs) require uncrewed aerial vehicle (UAV) communication systems to adapt to large-scale propagation changes and fast local channel fluctuations. Fluid antennas (FAs) provide an additional degree of freedom (DoF) by reconfiguring antenna positions within a compact aperture. This article investigates FA-enabled UAV communication systems from the perspectives of fundamentals, design challenges, and future research directions. We first introduce a dual-mobility perspective, in which UAV trajectory planning provides macro-mobility for large-scale air-to-ground geometry adaptation, and FA position reconfiguration provides micro-mobility for fine-grained local channel adaptation. We then identify key design challenges arising from the high computational complexity and information uncertainty in the joint optimization of UAV trajectory, FA positions, and beamforming under mobility, energy, hardware, and security constraints. To address these challenges, we present a hybrid offline-online optimization framework, where prior information such as environment maps, user mobility patterns, and statistical channel state information (CSI) supports long-term planning, while real-time information such as instantaneous CSI and UAV state enables fast online correction. A case study on FA-enabled UAV-assisted vehicular communications demonstrates the effectiveness of the proposed framework. Finally, we discuss futur"
+  },
+  {
+   "key": "arxiv:2610.34844",
+   "source": "arXiv",
+   "id": "2610.34844",
+   "title": "HiLO: Towards Product-Level Graceful Degradation with a Quality-Aware, Load-Aware Control Framework",
+   "abstract": "Graceful degradation is a key mechanism employed by large-scale systems to handle overload conditions. Its importance has grown further as GPU-intensive LLM inference introduces persistent capacity constraints that cannot be addressed through provisioning alone. Common degradation approaches rely on service-level mechanisms such as load shedding and circuit breakers, or on feature-level switches (some manually controlled) to preserve availability and quality. While effective at protecting services, such approaches lead to untestable product states and thereby unpredictable product quality. We present HiLO (High Load Optimizer), an automated product-level degradation system designed to handle graceful degradation at scale. HiLO maps observed load to a product state lattice: a small set of pre-validated product states, partially ordered by degradation severity. Dependencies are resolved at design time enabling deterministic and continuous control without requiring runtime dependency discovery. The same abstraction applies unchanged across heterogeneous services, including GPU-intensive deep models, LLMs and their serving layers. At Microsoft, HiLO is deployed in Bing (serving over a billion monthly active users), where it manages on average two traffic surges per week across all datacenters, bounding OneDCG (relevance) drop to under 0.5 points (the operational target) even under sustained load exceeding 2$\\times$ baseline peak. HiLO complements existing service-level protections with product-level coordination and makes product quality measurable, testable and predictable.",
+   "authors": [
+    {
+     "name": "Knut Magne Risvik",
+     "affiliations": []
+    },
+    {
+     "name": "Zhuowei Li",
+     "affiliations": []
+    },
+    {
+     "name": "Nirupam Purushothama",
+     "affiliations": []
+    },
+    {
+     "name": "Hunter Su",
+     "affiliations": []
+    },
+    {
+     "name": "Greg Dunham",
+     "affiliations": []
+    },
+    {
+     "name": "Yan Reznikov",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.NI"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-26",
+   "url": "https://arxiv.org/abs/2610.34844",
+   "matched_terms": [
+    "datacenters"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Knut Magne Risvik Affiliation: Microsoft Zhuowei Li Affiliation: Microsoft Nirupam Purushothama Affiliation: Microsoft Hunter Su Affiliation: Microsoft Greg Dunham Affiliation: Microsoft Yan Reznikov Affiliation: Microsoft Abstract Graceful degradation is a key mechanism employed by large-scale systems to handle overload conditions. Its importance has grown further as GPU-intensive LLM inference introduces persistent capacity constraints that cannot be addressed through provisioning alone. Common degradation approaches rely on service-level mechanisms such as load shedding and circuit breakers, or on feature-level switches (some manually controlled) to preserve availability and quality. While effective at protecting services, such approaches lead to untestable product states and thereby unpredictable product quality. We present HiLO (High Load Optimizer), an automated product-level degradation system designed to handle graceful degradation at scale. HiLO maps observed load to a product state lattice: a small set of pre-validated product states, partially ordered by degradation severity. Dependencies are resolved at design time enabling deterministic and continuous control without requiring runtime dependency discovery. The same abstraction applies unchanged across heterogeneous services, including GPU-intensive deep models, LLMs and their serving layers. At Microsoft, HiLO is deployed in Bing (serving over a billion monthly active users), where it manages on average two traffic surges per week across all datacenters, bounding OneDCG (relevance) drop to under 0.5 points (the operational target) even under sustained load exceeding 2 × \\times baseline peak. HiLO complements existing service-level protections with product-level coordination and makes product quality measurable, testable and predictable."
+  },
+  {
+   "key": "arxiv:2610.34658",
+   "source": "arXiv",
+   "id": "2610.34658",
+   "title": "Live Adaptation of Dataflow Stream Processing for Hybrid Edge-Cloud Analytics",
+   "abstract": "Dataflow streaming systems, like Apache Flink and Spark Streaming, are integral to modern business analytics, providing real-time insights across industries. However, for emerging hybrid edge-cloud analytics pipelines, neither processing everything in the cloud nor static edge offloading can reliably sustain the target rate under dynamic WAN conditions and limited edge resources. In this paper, we explore how these datacenter-centric platforms can be extended to support such hybrid analytics pipelines. Our goal is to maintain full transparency for user applications, while retaining built-in fault tolerance, out-of-order processing, and existing ecosystem integrations. Achieving this is challenging because existing dataflow engines assume homogeneous resources, rely on static task placement, and do not support adaptation under dynamic network and edge conditions. We introduce Sluice, an adaptive data stream processing system for hybrid clouds, compatible with dataflow streaming engines. Sluice's key contributions are: (i) an automatic query rewriter that decomposes applications into independent, fault-tolerant segments, and (ii) a live routing mechanism that shifts computations between edge and cloud without pausing execution while preserving event-time semantics. We implement Sluice on Apache Flink and evaluate it on a physical testbed with Raspberry Pi devices, as well as on a large simulated testbed of 100 VMs. Across five real-world applications, our results show that Sluice seamlessly shifts computations between edge and cloud, while consistently achieving higher throughput than baseline systems.",
+   "authors": [
+    {
+     "name": "Yuanli Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Prateek Jain",
+     "affiliations": []
+    },
+    {
+     "name": "Lei Huang",
+     "affiliations": []
+    },
+    {
+     "name": "Le Xu",
+     "affiliations": []
+    },
+    {
+     "name": "Vasiliki Kalavri",
      "affiliations": []
     }
    ],
@@ -111,27 +356,168 @@
     "cs.DC"
    ],
    "primary_category": "cs.DC",
-   "date": "2026-10-23",
-   "url": "https://arxiv.org/abs/2610.32711",
+   "date": "2026-10-26",
+   "url": "https://arxiv.org/abs/2610.34658",
    "matched_terms": [
-    "data centers"
+    "datacenter"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Beyond Hotness: High-Resolution Memory Characterization of Cloud and LLM Workloads for Tiered Memory with ARM SPE DOI: XXXXXXX.XXXXXXX Conference: Make sure to enter the correct conference title from your rights confirmation email; June 03–05, 2018; Woodstock, NY ISBN: 978-1-4503-XXXX-X/2018/06 Jie Ren Affiliation: William & Mary , USA email: jren03@wm.edu and Ivy Peng Affiliation: KTH , Sweden email: ivybopeng@kth.se 2018 Abstract. Memory demands from data analytics and LLM workloads grow rapidly, driving up memory costs in cloud and data centers. Multi-tier memory has emerged as a promising solution to balance performance and cost. However, effectively leveraging it requires a deep understanding of workload memory behaviors. This work introduces a high-resolution memory characterization methodology for analyzing workload-specific opportunities for multi-tier memory usage. In response to the increasing deployment of ARM-based processors in data centers, we implement our methodology using the recent Statistical Profiling Extension (SPE) for ARM. By characterizing eight memory-intensive workloads from CloudSuite and LLM applications, we identify region-specific access patterns, evaluate the effectiveness of cloud-oriented cache hierarchies, and propose new metrics based on memory idle periods and latency profiles to determine suitable data placement for tiered memory. Keywords: ARM SPE, tiered memory, LLM, cloud"
+   "affiliation_block": "Yuanli Wang, Prateek Jain, Lei Huang, Le Xu, Vasiliki Kalavri Affiliation: Boston University Affiliation: University of Edinburgh Abstract Dataflow streaming systems, like Apache Flink and Spark Streaming, are integral to modern business analytics, providing real-time insights across industries. However, for emerging hybrid edge-cloud analytics pipelines, neither processing everything in the cloud nor static edge offloading can reliably sustain the target rate under dynamic WAN conditions and limited edge resources. In this paper, we explore how these datacenter-centric platforms can be extended to support such hybrid analytics pipelines. Our goal is to maintain full transparency for user applications, while retaining built-in fault tolerance, out-of-order processing, and existing ecosystem integrations. Achieving this is challenging because existing dataflow engines assume homogeneous resources, rely on static task placement, and do not support adaptation under dynamic network and edge conditions. We introduce Sluice , an adaptive data stream processing system for hybrid clouds, compatible with dataflow streaming engines. Sluice ’s key contributions are: (i) an automatic query rewriter that decomposes applications into independent, fault-tolerant segments, and (ii) a live routing mechanism that shifts computations between edge and cloud without pausing execution while preserving event-time semantics. We implement Sluice on Apache Flink and evaluate it on a physical testbed with Raspberry Pi devices, as well as on a large simulated testbed of 100 VMs. Across five real-world applications, our results show that Sluice seamlessly shifts computations between edge and cloud, while consistently achieving higher throughput than baseline systems."
   },
   {
-   "key": "arxiv:2610.32696",
+   "key": "arxiv:2610.34436",
    "source": "arXiv",
-   "id": "2610.32696",
-   "title": "Foundation Models Meet Power Grid Topology for Cascade Prediction",
-   "abstract": "Accurate early-stage prediction of cascading failure severity is essential for assessing the vulnerability of power transmission networks. However, existing data-driven approaches often rely on network-specific representations, limiting their generalizability across power system topologies. This work investigates the complementary capabilities of Large Language Models (LLMs) and Graph Neural Networks (GNNs) for cascading failure severity prediction. First, standalone LLM predictors are developed using a LoRA-fine-tuned LLaMA-3-8B-Instruct model with varying degrees of topological information. A hybrid Graph-LLM fusion framework is then proposed, integrating a Topology-Aware Graph Attention Transformer (TAGAT) with the LLM through confidence-gated fusion. TAGAT captures structural dependencies among transmission lines, while the LLM extracts representations from early-stage power-flow observations and aggregated cascade descriptors. The frameworks are evaluated on 30,000 simulated cascading failure scenarios for each of the IEEE 118-bus and IEEE 300-bus systems. Using only the first four cascade steps, the hybrid framework achieves weighted F1 scores of 0.94 and 0.92, respectively. In cross-system transfer from IEEE 118-bus to IEEE 300-bus, it achieves 0.72 zero-shot accuracy, improving to 0.83 with limited target-system calibration, outperforming standalone models and conventional baselines. These results show the potential of combining graph-based structural learning with foundation models to improve cascading failure severity prediction and cross-system transferability.",
+   "id": "2610.34436",
+   "title": "Prefix Keys and Values Matter Late: RIPE Caching for Self-Speculative Decoding in Looped Language Models",
+   "abstract": "A looped language model runs one block of layers $R$ times per token, so its key-value (KV) cache holds $R$ planes per recurrent layer, and self-speculative decoding (draft with a few loops, verify with all $R$) reads them all. We find that prefix keys and values matter late: at equal perturbation size, loops 25-32 are $e^{15.0}$ (Huginn-0125) and $e^{12.8}$ (Raven-Llama) times more sensitive than loops 2-9, and the planes approach the last one geometrically, at 0.88 and 0.81 per loop. Whether the deepest plane alone suffices then depends on how ripe the late planes are: on Raven, storing only it is indistinguishable from a bf16-to-fp32 change; on Huginn, 1% of positions carry 74% of its error. We turn this into RIPE, which stores the deepest plane everywhere except a window of recent positions kept at full depth. On Huginn, a 64-position window removes 89% of the tail positions at 11.9% of the full cache's memory (1024-token context), and any window at least as long as the draft block makes batched verification block-independent by construction. Nine pre-registered GPU batches back these results. Simple models of acceptance, decoding cost and memory, two of them checked on held-out measurements, account for the measured self-speculative speed-ups ($2.09\\times$ with the full cache, $2.58\\times$ with the deepest plane) and decompose the $2.24\\times$ fixed-memory throughput gain of one shared plane.",
    "authors": [
     {
-     "name": "Soumav Biswas",
+     "name": "Dezhen Lu",
      "affiliations": []
     },
     {
-     "name": "Mia Naeini",
+     "name": "Runguo Li",
+     "affiliations": []
+    },
+    {
+     "name": "Zixiang Ni",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-25",
+   "url": "https://arxiv.org/abs/2610.34436",
+   "matched_terms": [
+    "gpu"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(author block not found in HTML)"
+  },
+  {
+   "key": "arxiv:2610.34285",
+   "source": "arXiv",
+   "id": "2610.34285",
+   "title": "Synergizing Wireless Foundation Models and LLMs: A Multi-Task Framework for MA Systems",
+   "abstract": "While movable antennas (MAs) provide enhanced spatial flexibility through dynamic repositioning, they confront critical challenges in acquiring complete channel state information (CSI) and efficiently optimizing antenna positions. Encouragingly, wireless foundation models (WFMs) capture generalizable channel priors for high-quality CSI extrapolation, while large language models (LLMs) enable parameter-efficient, token-level optimization for wireless tasks. In this paper, we synergistically integrate a WFM and an LLM into a multi-task framework for MA systems. First, to address the mismatch between existing WFM pre-training and MA channel characteristics, we develop an MA-oriented ``ExtLWM'' based on the large wireless model (LWM) architecture. Second, we design a unified ExtLWM-Connector-LLM architecture that flexibly adapts to different MA configurations without structural redesign. Third, we reformulate discrete MA positioning as a sequential decision-making problem, where candidate positions are represented by numerical tokens and optimized using group relative policy optimization (GRPO) to exploit the serial generation capability of the LLM. Finally, a multi-stage training strategy is developed to maintain multi-task performance under limited training samples while mitigating catastrophic forgetting. Simulation results show that ExtLWM can produce high-quality channel embeddings while outperforming various benchmarks in CSI extrapolation. Meanwhile, the proposed LLM-based approach achieves a favorable trade-off between performance and computational complexity.",
+   "authors": [
+    {
+     "name": "Haocheng Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Yang Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Mengzhen Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Qingqing Wu",
+     "affiliations": []
+    },
+    {
+     "name": "Qingjiang Shi",
+     "affiliations": []
+    },
+    {
+     "name": "Wei Wang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SP"
+   ],
+   "primary_category": "eess.SP",
+   "date": "2026-10-25",
+   "url": "https://arxiv.org/abs/2610.34285",
+   "matched_terms": [
+    "large language models",
+    "llm",
+    "llms"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Synergizing Wireless Foundation Models and LLMs: A Multi-Task Framework for MA Systems Thanks: Manuscript received 6 Mar 2026; revised 5 August 2026; accepted 23 October 2026. This work is supported in part by the open research fund of National Mobile Communications Research Laboratory, Southeast University (No. 2025D06), in part by NSFC 62271163, in part by NSFC U25A201852 and NSFC 62231019, in part by NSFC 62371289 and NSFC 62331022. The associate editor coordinating the review of this article and approving it for publication was Dr. J. Zhang. (Corresponding author: Yang Liu, Wei Wang.) Thanks: H. Zhang, Y. Liu, M. Liu, and W. Wang are with the School of Information and Communication Engineering, Dalian University of Technology, Dalian 116024, China (e-mail: dlutzhc@mail.dlut.edu.cn; yangliu_613@dlut.edu.cn; liumengzhen@mail.dlut.edu.cn; wangwei2023@dlut.edu.cn). Thanks: Q. Wu is with the School of Information Science and Electronic Engineering, Shanghai Jiao Tong University, 200240, China (e-mail: qingqingwu@sjtu.edu.cn) Thanks: Q. Shi is with the School of Computer Science and Technology, Tongji University, Shanghai 201804, China, and also with Shenzhen Research Institute of Big Data, Shenzhen 518172, China (e-mail: shiqj@tongji.edu.cn). Haocheng Zhang Yang Liu Mengzhen Liu Qingqing Wu Qingjiang Shi Wei Wang Abstract While movable antennas (MAs) provide enhanced spatial flexibility through dynamic repositioning, they confront critical challenges in acquiring complete channel state information (CSI) and efficiently optimizing antenna positions. Encouragingly, wireless foundation models (WFMs) capture generalizable channel priors for high-quality CSI extrapolation, while large language models (LLMs) enable parameter-efficient, token-level optimization for wireless tasks. In this paper, we synergistically integrate a WFM and an LLM into a multi-task framework for MA systems. First, to address the mismatch between existing WFM pre-training and MA channel characteristics, we develop an MA-oriented “ExtLWM” based on the large wireless model (LWM) architecture. Second, we design a unified ExtLWM-Connector-LLM architecture that flexibly adapts to different MA configurations without structural redesign. Third, we reformulate discrete MA positioning as a sequential decision-making problem, where candidate positions are represented by numerical tokens and optimized using group relative policy optimization (GRPO) to exploit the serial generation capability of the "
+  },
+  {
+   "key": "arxiv:2610.34131",
+   "source": "arXiv",
+   "id": "2610.34131",
+   "title": "AGENS: Agentic Link Construction for Environment and Intent Aware 6G Communication",
+   "abstract": "The emergence of diverse intelligent services is driving 6G networks toward an intelligent communication ecosystem with increasingly complex operating scenarios. However, existing AI-based communication methods mainly focus on isolated tasks or individual physical-layer mod- ules, which is insufficient for AI-native 6G systems that must jointly perceive dynamic environments, understand specific user intents, coordinate multiple coupled PHY-layer modules, and remain compatible with existing communication infrastructures. To address this gap, this paper, for the first time, explores auto- matic environment- and intent-aware full-link construction, which aims to generate executable PHY-layer configurations according to channel conditions and service requirements. We propose AGENS, an agentic communication decision-making framework for AI-native 6G link construction. Rather than replacing the existing PHY-layer protocol stack with a black-box end-to-end model, AGENS operates on top of the modular communication framework and jointly optimizes end-to-end PHY-layer configu- rations. Specifically, AGENS encodes CSI and natural-language user instructions, aligns communication states with user intents through cross-modal fusion, and leverages a pretrained LLM for intent-aware reasoning. An LSTM-based sequential action generator further captures dependencies among coupled sub- actions and produces structured full-link strategies. To enable stable training in the high-dimensional discrete action space, AGENS adopts a two-stage learning framework, where heuristic supervised initialization is followed by multi-objective reinforce- ment learning to jointly optimize reliability, throughput, and power consumption.",
+   "authors": [
+    {
+     "name": "Zhaoyang Li",
+     "affiliations": []
+    },
+    {
+     "name": "Shangzhuo Xie",
+     "affiliations": []
+    },
+    {
+     "name": "Qianqian Yang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SP"
+   ],
+   "primary_category": "eess.SP",
+   "date": "2026-10-25",
+   "url": "https://arxiv.org/abs/2610.34131",
+   "matched_terms": [
+    "llm"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "AGENS: Agentic Link Construction for Environment and Intent Aware 6G Communication Zhaoyang Li Shangzhuo Xie Qianqian Yang † † thanks: Part of this work has been accepted for presentation at the 2026 IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC), Singapore. Zhaoyang Li, Shangzhuo Xie and Qianqian Yang are with the College of Information Science and Electronic Engineering, Zhejiang University, Hangzhou, China. (e-mails: {zhaoyangli, sz_xie, qianqianyang20}@zju.edu.cn). This work is partly supported by the National Key R&D Program of China under Grant No. 2024YFE0200802, by the National Natural Science Foundation of China (NSFC) under Grant Nos. 62293481, and 62571487, by the Zhejiang Provincial Natural Science Foundation of China under Grant No. LZ25F010001. (Corresponding author: Qianqian Yang.) Abstract The emergence of diverse intelligent services is driving sixth-generation (6G) networks toward an intelligent communication ecosystem with increasingly complex operating scenarios. However, existing AI-based communication methods mainly focus on isolated tasks or individual physical-layer modules, which is insufficient for AI-native 6G systems that must jointly perceive dynamic environments, understand specific user intents, coordinate multiple coupled PHY-layer modules, and remain compatible with existing communication infrastructures. To address this gap, this paper, for the first time, explores automatic environment- and intent-aware full-link construction , which aims to generate executable PHY-layer configurations according to channel conditions and service requirements. We propose AGENS, an agentic communication decision-making framework for AI-native 6G link construction. Rather than replacing the existing PHY-layer protocol stack with a black-box end-to-end model, AGENS operates on top of the modular communication framework and jointly optimizes end-to-end PHY-layer configurations. Specifically, AGENS encodes CSI and natural-language user instructions, aligns communication states with user intents through cross-modal fusion, and leverages a pretrained LLM for intent-aware reasoning. An LSTM-based sequential action generator further captures dependencies among coupled sub-actions and produces structured full-link strategies. To enable stable training in the high-dimensional discrete action space, AGENS adopts a two-stage learning framework, where heuristic supervised initialization is followed by multi-obje"
+  },
+  {
+   "key": "arxiv:2610.34102",
+   "source": "arXiv",
+   "id": "2610.34102",
+   "title": "Do Bio-Inspired Algorithms Save Energy in Data Centres? Separating Server Packing from Migration Search in Virtual Machine Consolidation",
+   "abstract": "Energy-efficient virtual machine (VM) consolidation matters as data centre electricity demand rises. Bio-inspired metaheuristics, including ant colony optimisation (ACO), particle swarm optimisation (PSO), and genetic algorithms, have reported substantial energy savings. However, these improvements are commonly evaluated against conventional allocation policies that differ in both initial VM placement and subsequent migration optimisation, making it difficult to determine the contribution of metaheuristic search. This study reproduces an existing consolidation implementation in CloudSim Plus and introduces a matched control that retains the same initial packing and empty-host deactivation mechanisms but excludes migration search. ACO, PSO, and a modified genetic algorithm (MGA) are evaluated across two fleet configurations and four workload regimes, with ten stochastic replications per condition. The matched control achieves energy savings of 0.8-81.4% relative to the spreading baseline, the amount available falling sharply as load rises, without migrations or incomplete workload execution. Across 24 comparisons, metaheuristic search increases energy consumption in 11 cases, produces identical outcomes in seven, and reduces consumption in six. Of these, ten increases and five reductions remain statistically significant after Holm correction. Five of the six apparent reductions coincide with unfinished tasks and disappear after normalisation by delivered computational work. Only ACO under light heterogeneous load retains a 3.22-percentage-point improvement (95% CI 2.96-3.47). These findings demonstrate that initial packing and host deactivation account for most of the measured energy savings in the examined implementations, highlighting the importance of matched control conditions and workload-completion measures for reliable evaluation of VM consolidation algorithms.",
+   "authors": [
+    {
+     "name": "Yichiet Aun",
+     "affiliations": []
+    },
+    {
+     "name": "Yu Hang Woo",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.ET",
+    "eess.SY"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-25",
+   "url": "https://arxiv.org/abs/2610.34102",
+   "matched_terms": [
+    "data centre",
+    "data centres"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(author block not found in HTML)"
+  },
+  {
+   "key": "arxiv:2610.34089",
+   "source": "arXiv",
+   "id": "2610.34089",
+   "title": "Water as a Battery: Using Hydropower Flexibility to Support the Grid",
+   "abstract": "This study presents a two-layer optimization framework to determine the optimal sizing of PV, wind, and battery storage co-located with existing hydroelectric plants to support rapidly increasing data center loads while minimizing cost, grid reliance, and transmission upgrades. The outer layer uses Particle Swarm Optimization (PSO) to select capacity combinations, while the inner layer performs rolling-horizon dispatch simulations to model hourly energy balance among PV, wind, hydro, and BESS, considering operational constraints. Two case studies were analyzed. At The Dalles Dam (Oregon), favorable wind resources and land availability enabled deployment of 111.2 MW PV and 117.9 MW wind, with no BESS required. Hydro flexibility allowed the system to meet the load with minimal grid support. In contrast, Conowingo Dam (Maryland) faced land constraints and limited renewables to 130 MW PV, leading to higher grid dependence. Co-locating hydro with renewables significantly enhances reliability and cost effectiveness by leveraging hydro's dispatchability to balance daily and seasonal variable generation from PV + Wind, reducing the need for storage or costly grid imports. This analysis provides a framework to meet the 99.9% availability targets of this new load type on the grid with sustainable energy resources.",
+   "authors": [
+    {
+     "name": "Chinmay Morankar",
+     "affiliations": []
+    },
+    {
+     "name": "Abdullah Al Mehadi",
      "affiliations": []
     }
    ],
@@ -139,208 +525,23 @@
     "eess.SY"
    ],
    "primary_category": "eess.SY",
-   "date": "2026-10-23",
-   "url": "https://arxiv.org/abs/2610.32696",
+   "date": "2026-10-25",
+   "url": "https://arxiv.org/abs/2610.34089",
    "matched_terms": [
-    "large language models",
-    "llm",
-    "llms"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Foundation Models Meet Power Grid Topology for Cascade Prediction Soumav Biswas and Mia Naeini Affiliation: Affiliation: Electrical Engineering Department, University of South Florida, Tampa, Florida, USA soumavbiswas@usf.edu, mnaeini@usf.edu Abstract Accurate early-stage prediction of cascading failure severity is essential for assessing the vulnerability of power transmission networks. However, existing data-driven approaches often rely on network-specific representations, limiting their generalizability across power system topologies. This work investigates the complementary capabilities of Large Language Models (LLMs) and Graph Neural Networks (GNNs) for cascading failure severity prediction. First, standalone LLM predictors are developed using a LoRA-fine-tuned LLaMA-3-8B-Instruct model with varying degrees of topological information. A hybrid Graph-LLM fusion framework is then proposed, integrating a Topology-Aware Graph Attention Transformer (TAGAT) with the LLM through confidence-gated fusion. TAGAT captures structural dependencies among transmission lines, while the LLM extracts representations from early-stage power-flow observations and aggregated cascade descriptors. The frameworks are evaluated on 30,000 simulated cascading failure scenarios for each of the IEEE 118-bus and IEEE 300-bus systems. Using only the first four cascade steps, the hybrid framework achieves weighted F1 scores of 0.94 and 0.92, respectively. In cross-system transfer from IEEE 118-bus to IEEE 300-bus, it achieves 0.72 zero-shot accuracy, improving to 0.83 with limited target-system calibration, outperforming standalone models and conventional baselines. These results show the potential of combining graph-based structural learning with foundation models to improve cascading failure severity prediction and cross-system transferability. Index Terms: Large Language Model, Graph Neural Networks, Graph Signal Processing, Cascade Size Prediction."
-  },
-  {
-   "key": "arxiv:2610.32638",
-   "source": "arXiv",
-   "id": "2610.32638",
-   "title": "InferSlice: A Reference Architecture for SLO-driven LLM Inference over a Telco Wide-Area Network",
-   "abstract": "LLM inference is increasingly deployed as a core service for enterprise and interactive applications, but sovereignty, compliance, latency and resource-locality requirements can limit the suitability of centralised cloud deployments. Telco operators offer geographically distributed compute and network infrastructure for addressing these constraints. However, existing LLM serving frameworks are designed for tightly coupled data centres and provide limited support for coordinating geographically distributed and heterogeneous resources. We present InferSlice, a reference architecture for Service-Level Objective (SLO)-driven LLM inference over a telco infrastructure, integrating network slicing, GPU partitioning, elastic serving and observability. Led by BT in collaboration with the University of Bristol and NVIDIA, and realised on the JOINER UK national-scale wide-area network (WAN), InferSlice is evaluated on service differentiation across tiers, elastic scale-out, client-edge bandwidth as a bottleneck, and the reach of tensor, pipeline, data parallelism, and prefill/decode disaggregation over the WAN. Our results show that, on a general-purpose telco network, tiers yield distinct latency-throughput regimes, and weight streaming shortens scale-out time. Replication is placement-insensitive but memory-bound; pipeline parallelism tolerates near- and mid-cross-site hops, while tensor parallelism and disaggregation fail beyond a single subnet hop. We share practical insights from operating SLO-driven inference on a telco network, lessons learned and open questions, and hope to encourage further research on distributed and heterogeneous LLM inference systems.",
-   "authors": [
-    {
-     "name": "Juan Parra-Ullauri",
-     "affiliations": []
-    },
-    {
-     "name": "Anthony Chiu",
-     "affiliations": []
-    },
-    {
-     "name": "Hari Madhukumar",
-     "affiliations": []
-    },
-    {
-     "name": "Zhaozhou Wu",
-     "affiliations": []
-    },
-    {
-     "name": "Anderson Bravalheri",
-     "affiliations": []
-    },
-    {
-     "name": "Alex Healing",
-     "affiliations": []
-    },
-    {
-     "name": "Andy Corston-Petrie",
-     "affiliations": []
-    },
-    {
-     "name": "Dimitra Simeonidou",
-     "affiliations": []
-    },
-    {
-     "name": "Nektaria Efthymiou",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC",
-    "cs.AI"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-10-23",
-   "url": "https://arxiv.org/abs/2610.32638",
-   "matched_terms": [
-    "data centres"
+    "data center"
    ],
    "screened_on": "title+abstract",
    "affiliation_block": "(HTML version not available: HTTPError)"
   },
   {
-   "key": "arxiv:2610.32632",
+   "key": "arxiv:2610.33742",
    "source": "arXiv",
-   "id": "2610.32632",
-   "title": "Toward Open ISA Supercomputing: A Comparative Study of RISC-V, Arm, and x86 Architectures on HPC Workloads",
-   "abstract": "RISC-V is emerging as a candidate architecture for high-performance computing (HPC), but its competitiveness against established x86 and Arm processors remains difficult to assess because existing studies use different platforms, workloads, and methodologies, and rarely consider energy efficiency. Our work provides an evaluation of contemporary HPC RISC-V, Arm, and x86 processors using a common software stack and methodology. We characterize the Sophgo SG2044 and compare it with the NVIDIA Grace CPU Superchip and Intel Xeon Platinum 8480+ across four HPC benchmarks (STREAM, HPL, HPL-MxP, and HPCG) and four representative applications (iPIC3D, PLUTO, OpenFOAM, and llama.cpp). The version of HPL-MxP linked to OpenBLAS built and used for this work is made available as open-source software. The SG2044 reaches 8.02 GFLOP/s of FP64 performance and 7.8 GB/s of memory bandwidth per core, increasing to 294 GFLOP/s and 107 GB/s at 64 cores. L2-cache-aware process placement enables near-linear scaling up to 16 cores, beyond which memory-bandwidth saturation limits further gains. Across generations of RISC-V hardware, in the context of the Monte Cimone (MC) project, the SG2044-based MCv3 doubles both single-core performance and peak memory bandwidth relative to MCv2, while improving memory bandwidth, node-level FP64 performance, and energy efficiency by approximately 100x, 158x, and 10x, over MCv1. Against the Arm and x86 systems, the SG2044 shows 8-15x less absolute performance, reflecting its narrower vector resources and less advanced technology node, but delivers competitive scaling and energy efficiency on several workloads. Its most notable result is LLM decode, where 64-core execution provides the highest relative scaling and energy efficiency among the evaluated platforms while exceeding Intel in throughput. Our results show that RISC-V processors are closing the gap with the competition.",
+   "id": "2610.33742",
+   "title": "Hyperscale Data Centers as Wide-Area Damping Actuators for Low-Inertia Power Systems",
+   "abstract": "Low-inertia power systems need fast damping actuators as synchronous generation is displaced by inverter-based resources. This paper evaluates hyperscale data-center loads controlled through Dynamic Voltage and Frequency Scaling (DVFS) as wide-area damping actuators. A DAE-consistent bus-input matrix is validated against the ANDES reduced state matrix and a finite-difference input check. On the Kundur two-area benchmark, Bus 10 ranks highest among non-generator buses for the 0.647 Hz inter-area mode. A classical washout-plus-lead-lag controller raises damping from 3.43% to approximately 6%. Modern 10-50 ms battery and DVFS actuators require comparable peak modulation for the same small-signal damping target. Compared with a closest same-system data-center-frequency-droop baseline, the wide-area controller offers a clearer advantage: at comparable peak MW, droop reaches 4.76% damping, while reaching 6% requires approximately twice the peak modulation. In the Pade-delay model, damping crosses the open-loop value at 443 ms for the 10 ms DVFS actuator versus 374 ms for the 50 ms BESS case. Reduced-order saturation stress tests show that a 2 MW envelope is non-binding for modal, fault-cleared-equivalent, and line-outage-equivalent disturbances, but can bind under generator-trip-equivalent stress. IEEE 39-bus tests confirm the DAE-based ranking procedure and show that high-residue buses may require more phase compensation than a single lead-lag stage can supply.",
    "authors": [
     {
-     "name": "Emanuele Venieri",
-     "affiliations": []
-    },
-    {
-     "name": "Giacomo Madella",
-     "affiliations": []
-    },
-    {
-     "name": "Gabriele Ceccolini",
-     "affiliations": []
-    },
-    {
-     "name": "Simone Manoni",
-     "affiliations": []
-    },
-    {
-     "name": "Federico Ficarelli",
-     "affiliations": []
-    },
-    {
-     "name": "Filippo Barbari",
-     "affiliations": []
-    },
-    {
-     "name": "Jenny Lynn Almerol",
-     "affiliations": []
-    },
-    {
-     "name": "Elisabetta Boella",
-     "affiliations": []
-    },
-    {
-     "name": "Nitin Shukla",
-     "affiliations": []
-    },
-    {
-     "name": "Simone Bnà",
-     "affiliations": []
-    },
-    {
-     "name": "Luca Benini",
-     "affiliations": []
-    },
-    {
-     "name": "Andrea bartolini",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC",
-    "cs.AR",
-    "cs.PF"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-10-23",
-   "url": "https://arxiv.org/abs/2610.32632",
-   "matched_terms": [
-    "hpc",
-    "llm",
-    "supercomputing"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Toward Open ISA Supercomputing: A Comparative Study of RISC-V, Arm, and x86 Architectures on HPC Workloads Emanuele Venieri emanuele.venieri2@unibo.it Giacomo Madella Gabriele Ceccolini Simone Manoni Federico Ficarelli Filippo Barbari Jenny Lynn Almerol Elisabetta Boella Nitin Shukla Simone Bnà Luca Benini Andrea Bartolini organization=University of Bologna, city=Bologna, country=Italy organization=CINECA, city=Casalecchio di Reno, country=Italy organization=University of Trento, city=Trento, country=Italy organization=E4 Computer Engineering, city=Scandiano, country=Italy organization=ETH, city=Zurich, country=Switzerland Abstract RISC-V is emerging as a candidate architecture for high-performance computing (HPC), but its competitiveness against established x86 and Arm processors remains difficult to assess because existing studies use different platforms, workloads, and methodologies, and rarely consider energy efficiency. Our work provides an evaluation of contemporary HPC RISC-V, Arm, and x86 processors using a common software stack and methodology. We characterize the Sophgo SG2044 and compare it with the NVIDIA Grace CPU Superchip and Intel Xeon Platinum 8480+ across four HPC benchmarks (STREAM, HPL, HPL-MxP, and HPCG) and four representative scientific and industrial applications (iPIC3D, PLUTO, OpenFOAM, and llama.cpp). The version of HPL-MxP linked to OpenBLAS built and used for this work is made available as open-source software. The SG2044 reaches 8.02 GFLOP/s of FP64 performance and 7.8 GB/s of memory bandwidth per core, increasing to 294 GFLOP/s and 107 GB/s at 64 cores. L2-cache-aware process placement enables near-linear scaling up to 16 cores, beyond which memory-bandwidth saturation limits further gains. Across generations of RISC-V hardware, in the context of the Monte Cimone (MC) project, the SG2044-based MCv3 doubles both single-core performance and peak memory bandwidth relative to MCv2, while improving memory bandwidth, node-level FP64 performance, and energy efficiency by approximately 100 × 100\\times , 158 × 158\\times , and 10 × 10\\times , respectively, over MCv1. Against the Arm and x86 systems, the SG2044 shows 8-15 × \\times less absolute performance, reflecting its narrower vector resources and less advanced technology node, but delivers competitive scaling and energy efficiency on several workloads. Its most notable result is LLM decode, where 64-core execution provides the highest relative scaling and energy efficiency among th"
-  },
-  {
-   "key": "arxiv:2610.32389",
-   "source": "arXiv",
-   "id": "2610.32389",
-   "title": "KnitTrans: Coordinated Trajectory Transfer for Effective and Efficient LLM Reinforcement Learning",
-   "abstract": "Trajectory transfer from rollout to training affects both learning quality and system efficiency in large language model reinforcement learning (RL). Enforcing batch-wide training requirements can delay the admission of completed trajectories, resulting in higher architectural staleness: the additional parameter-version gap from disaggregated pipelining relative to colocated execution. Beyond admission, misalignment between data access and training consumption causes redundant movement and unnecessary waiting when transferring large trajectory payloads. We present KnitTrans, a system that coordinates the rollout-to-training path through three designs. First, constraint-preserving mini-batch admission allows flexibility in early mini-batch composition, while checking that enough capacity remains to satisfy the remaining quotas. Second, on-demand trajectory data access matches storage units to consumer assignments and overlaps micro-batch data preparation with computation. Third, multimodal encoding deduplication supports reuse across a mini-batch while preserving gradient contributions from all backbone micro-batches. Experiments show up to 93% lower architectural staleness than with train-batch admission, narrowing the learning-quality gap between disaggregated execution and colocated execution. On multimodal workloads, KnitTrans reduces transfer latency by two orders of magnitude and achieves a speedup of up to 5.8 times in transfer plus training over the baseline.",
-   "authors": [
-    {
-     "name": "Bangjun Xiao",
-     "affiliations": []
-    },
-    {
-     "name": "Chiheng Lou",
-     "affiliations": []
-    },
-    {
-     "name": "Xiaodong Ji",
-     "affiliations": []
-    },
-    {
-     "name": "Xiangwei Deng",
-     "affiliations": []
-    },
-    {
-     "name": "Yikai Zhao",
-     "affiliations": []
-    },
-    {
-     "name": "Gang Huang",
-     "affiliations": []
-    },
-    {
-     "name": "Hailin Zhang",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC",
-    "cs.LG"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-10-23",
-   "url": "https://arxiv.org/abs/2610.32389",
-   "matched_terms": [
-    "large language model",
-    "llm"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "KnitTrans: Coordinated Trajectory Transfer for Effective and Efficient LLM Reinforcement Learning Thanks: ∗ Work done during internship at Xiaomi Corporation. Thanks: ⋄ Corresponding author. Conference: ; ; Bangjun Xiao †∗ Chiheng Lou †∗ Xiaodong Ji ‡ Xiangwei Deng ‡ Yikai Zhao ‡ Gang Huang † Yun Ma † Hailin Zhang ‡⋄ Affiliation: [ © , Abstract. Trajectory transfer from rollout to training affects both learning quality and system efficiency in large language model reinforcement learning (RL). Enforcing batch-wide training requirements can delay the admission of completed trajectories, resulting in higher architectural staleness—the additional parameter-version gap from disaggregated pipelining relative to colocated execution. Beyond admission, misalignment between data access and training consumption causes redundant movement and unnecessary waiting when transferring large trajectory payloads. We present KnitTrans, a system that coordinates the rollout-to-training path through three designs. First, constraint-preserving mini-batch admission allows flexibility in early mini-batch composition, while checking that enough capacity remains to satisfy the remaining quotas. Second, on-demand trajectory data access matches storage units to consumer assignments and overlaps micro-batch data preparation with computation. Third, multimodal encoding deduplication supports reuse across a mini-batch while preserving gradient contributions from all backbone micro-batches. Experiments show up to 93% lower architectural staleness than with train-batch admission, narrowing the learning-quality gap between disaggregated execution and colocated execution. On multimodal workloads, KnitTrans reduces transfer latency by two orders of magnitude and achieves a speedup of up to 5.8 × 5.8\\times in transfer plus training over the baseline."
-  },
-  {
-   "key": "arxiv:2610.32379",
-   "source": "arXiv",
-   "id": "2610.32379",
-   "title": "Do LLM-derived text features improve electricity price forecasts beyond document activity? Evidence from Australia's National Electricity Market",
-   "abstract": "Large language models (LLMs) can turn market notices and news into features for electricity price forecasting. Such features also record when documents arrive and whether their extraction failed, so a gain measured against a model without text can reflect document activity as well as content. We add the counts of the same documents and of their failed extractions to a no-text LightGBM model and measure each LLM representation against this activity reference, which needs no additional LLM requests. With gpt-6-luna as the extractor, we forecast Australian electricity prices from operator notices (5-30 minutes ahead) and WattClarity news (day-ahead) after the extractor's documented knowledge cutoff, averaging forecasts over three training seeds. For news, the counts alone lower mean absolute error (MAE) by 3.0%, most of the 3.6% reduction that the better LLM representation achieves relative to the no-text model; its increment beyond the counts is not significant. For notices, two of the three LLM representations lower MAE beyond the counts, by 0.14-0.21% and 0.45-0.52%, whether the counts are cumulative or cover recent windows, whereas the third shows no significant reduction. Time-shifted placebos give mixed evidence on whether these gains require text aligned with the target. Benchmarks using the operator's pre-dispatch forecasts (notices) or price history alone (news) are more accurate than all these text models. Gains against the no-text model and the activity reference differ in sign at individual seeds and, for notices with cumulative counts, in seed-averaged forecasts. Text gains should be reported against both references.",
-   "authors": [
-    {
-     "name": "Fanxing Ning",
-     "affiliations": []
-    },
-    {
-     "name": "Jianguo Zhu",
+     "name": "Mohamed Shamseldein",
      "affiliations": []
     }
    ],
@@ -348,626 +549,206 @@
     "eess.SY"
    ],
    "primary_category": "eess.SY",
-   "date": "2026-10-23",
-   "url": "https://arxiv.org/abs/2610.32379",
+   "date": "2026-10-24",
+   "url": "https://arxiv.org/abs/2610.33742",
    "matched_terms": [
-    "large language models",
-    "llm",
-    "llms"
+    "data centers",
+    "data-center",
+    "hyperscale"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Do LLM-derived text features improve electricity price forecasts beyond document activity? Evidence from Australia’s National Electricity Market Fanxing Ning † † thanks: School of Electrical and Computer Engineering, The University of Sydney, Sydney, Australia. Email: fnin0084@uni.sydney.edu.au Jianguo Zhu † † thanks: School of Electrical and Computer Engineering, The University of Sydney, Sydney, Australia. Corresponding author. Email: jianguo.zhu@sydney.edu.au Abstract Large language models (LLMs) can turn market notices and news into features for electricity price forecasting. Such features also record when documents arrive and whether their extraction failed, so a gain measured against a model without text can reflect document activity as well as content. We add the counts of the same documents and of their failed extractions to a no-text LightGBM model and measure each LLM representation against this activity reference, which needs no additional LLM requests. With gpt-6-luna as the extractor, we forecast Australian electricity prices from operator notices (5–30 minutes ahead) and WattClarity news (day-ahead) after the extractor’s documented knowledge cutoff, averaging forecasts over three training seeds. For news, the counts alone lower mean absolute error (MAE) by 3.0%, most of the 3.6% reduction that the better LLM representation achieves relative to the no-text model; its increment beyond the counts is not significant. For notices, two of the three LLM representations lower MAE beyond the counts, by 0.14–0.21% and 0.45–0.52%, whether the counts are cumulative or cover recent windows, whereas the third shows no significant reduction. Time-shifted placebos give mixed evidence on whether these gains require text aligned with the target. Benchmarks using the operator’s pre-dispatch forecasts (notices) or price history alone (news) are more accurate than all these text models. Gains against the no-text model and the activity reference differ in sign at individual seeds and, for notices with cumulative counts, in seed-averaged forecasts. Text gains should be reported against both references. Keywords: Energy forecasting; Evaluating forecasts; Large language models; Text as data; Market notices; Look-ahead bias"
+   "affiliation_block": "Hyperscale Data Centers as Wide-Area Damping Actuators for Low-Inertia Power Systems Mohamed Shamseldein Email: mohamed.shamseldein@eng.asu.edu.eg Affiliation: Department of Electrical Power and Machines, Faculty of Engineering, Ain Shams University, Cairo, Egypt Abstract The decarbonization of electric power systems is displacing synchronous generation with inverter-based renewable resources, eroding the inertia and power-system-stabilizer-derived damping that historically suppressed inter-area oscillations. In parallel, hyperscale artificial-intelligence data centers have emerged as large, continuously operated loads whose power draw is controllable on the millisecond timescale through Dynamic Voltage and Frequency Scaling (DVFS). This paper evaluates whether these compute loads can act as wide-area damping actuators. The analysis uses a DAE-consistent bus-input matrix, 𝐁 b = − 𝐓 − 1 ​ 𝐟 y ​ 𝐠 y − 1 ​ 𝐠 u , b \\mathbf{B}_{b}=-\\mathbf{T}^{-1}\\mathbf{f}_{y}\\mathbf{g}_{y}^{-1}\\mathbf{g}_{u,b} , and validates the construction against the ANDES reduced state matrix and a finite-difference input check. On the Kundur two-area benchmark the DAE-consistent residue ranking preserves the main siting result: Bus 10 is the highest-ranked non-generator bus for the 0.647 Hz inter-area mode. A classical washout-plus-lead-lag controller raises damping from 3.43% to approximately 6% using the same DAE input. Under this model, modern 10–50 ms battery and DVFS actuators require comparable peak modulation for the same small-signal damping target. The data-center wide-area controller still improves on a closest same-system data-center-frequency-droop baseline: at comparable peak MW the droop baseline reaches 4.76% damping, and reaching 6% requires approximately twice the peak modulation. PMU-delay robustness is also improved, with the damping crossing the open-loop value at 443 ms for the 10 ms DVFS actuator versus 374 ms for the 50 ms BESS case in the Padé-delay model. Saturation stress tests show that ordinary 2 MW headroom does not bind for modal, fault-cleared-equivalent, and line-outage-equivalent disturbances, while generator-trip-equivalent stress can bind the actuator and must be treated as an operating constraint. IEEE 39-bus scale-up confirms the DAE-based ranking procedure and highlights a practical phase-feasibility issue: the best residue buses may require more phase compensation than a single lead-lag stage can supply. keywords Wide-area damping control, Inter-ar"
   },
   {
-   "key": "arxiv:2610.32260",
+   "key": "arxiv:2610.33475",
    "source": "arXiv",
-   "id": "2610.32260",
-   "title": "Heterogeneous Space Data Centers: A Key Paradigm for Future Non-Terrestrial and In-Orbit Services",
-   "abstract": "Lower space-launch cost and advances in AI are driving space-based data centers (SDCs) that provide AI-centric computing and communication services to in-orbit and non-terrestrial assets. However, architectural principles, service models, and energy provisioning for such SDCs, particularly in low-Earth orbit (LEO), remain largely unexplored. We introduce heterogeneous SDCs composed of large and small nodes, differentiated by computing capability, size, and power budget, to support applications spanning ground, aerial, and in-orbit users. We define use cases, node sizing and placement strategies, and interconnection topologies integrating space-to-space and space-to-ground links. Focusing on dawn-dusk LEO configurations, we analyze solar power availability, visibility windows, and latency-aware coverage. Using baseline workloads for typical scenarios, we evaluate latency and service reliability. We quantify energy requirements of different SDC roles and deployment scales, highlighting trade-offs among node size, orbit selection, and service portfolio, and provide design guidance and future research directions for AI infrastructure in space.",
+   "id": "2610.33475",
+   "title": "LLMs in Cloud: A Discussion on Architecture, Orchestration, and Inference",
+   "abstract": "The widespread deployment of foundational Large Language Models (LLM) across cloud datacenters marks a fundamental paradigm shift from stateless deep learning toward distributed, memory-intensive generative workloads. However, serving massive foundation models under stringent Service Level Objectives (SLO) exposes critical physical and system bottlenecks. These challenges include the persistent High Bandwidth Memory (HBM) wall, operational asymmetry between compute-bound prefilling and memory-bandwidth-bound decoding, explosive Key-Value (KV) cache expansion, prohibitive serverless cold starts, and hardware reliability vulnerabilities. Existing literature reviews remain layer-siloed, decoupling low-level accelerator virtualization from cluster orchestration and runtime inference, while largely overlooking defining advancements from 2024 to 2026. To address these limitations, this study presents a comprehensive, cross-layer systematic review guided by the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) 2020 framework. We synthesize a holistic taxonomy unifying hardware virtualization, cluster-level scheduling, and runtime inference optimizations, including iteration-level continuous batching, prefill-decoding disaggregation, and hierarchical KV cache offloading. Furthermore, we evaluate resilient cloud-native service architectures, examining scale-to-zero serverless paradigms, fault-tolerant checkpointing against silent data corruption, and hardware-enforced Trusted Execution Environments (TEEs) for multi-tenant isolation. Finally, we formalize the multi-dimensional Pareto trade-offs governing throughput, latency, monetary cost, and confidentiality, outlining a forward-looking research roadmap spanning Compute Express Link (CXL) memory pooling, in-memory computing, and autonomous multi-agent control planes to guide future cloud LLM infrastructure.",
    "authors": [
     {
-     "name": "Peng Hu",
+     "name": "Jannatun Noor",
      "affiliations": []
     },
     {
-     "name": "Mustafa Alhassan",
+     "name": "Athar Noor Mohammad Rafee",
      "affiliations": []
     },
     {
-     "name": "Amjad Iqbal",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SY",
-    "cs.AI"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-10-23",
-   "url": "https://arxiv.org/abs/2610.32260",
-   "matched_terms": [
-    "ai infrastructure",
-    "data centers"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Heterogeneous Space Data Centers: A Key Paradigm for Future Non-Terrestrial and In-Orbit Services Peng Hu* Mustafa Alhassan Amjad Iqbal Affiliation: Department of Electrical and Computer Engineering, University of Manitoba, Winnipeg, MB, R3T 5V6, Canada 2026 Abstract Lower space-launch cost and advances in AI are driving space-based data centers (SDCs) that provide AI-centric computing and communication services to in-orbit and non-terrestrial assets. However, architectural principles, service models, and energy provisioning for such SDCs, particularly in low-Earth orbit (LEO), remain largely unexplored. We introduce heterogeneous SDCs composed of large and small nodes, differentiated by computing capability, size, and power budget, to support applications spanning ground, aerial, and in-orbit users. We define use cases, node sizing and placement strategies, and interconnection topologies integrating space-to-space and space-to-ground links. Focusing on dawn-dusk LEO configurations, we analyze solar power availability, visibility windows, and latency-aware coverage. Using baseline workloads for typical scenarios, we evaluate latency and service reliability. We quantify energy requirements of different SDC roles and deployment scales, highlighting trade-offs among node size, orbit selection, and service portfolio, and provide design guidance and future research directions for AI infrastructure in space. \\chapteri Orbital artificial artificial intelligence (AI) infrastructure has attracted growing interest from industry and research communities. For example, on August 04, 2026, SpaceX and NVIDIA jointly announced the Starmind AI1 satellite, and SpaceX’s regulatory filings indicate an eventual constellation of up to one million such nodes [ 1 ] . Google proposed Suncatcher, a constellation of solar-powered satellites equipped with Tensor Processing Unit (TPU) accelerators, motivated by the finding that photovoltaic arrays in a dawn–dusk sun-synchronous orbit (SSO) can generate substantially more power than comparable terrestrial installations [ 2 ] . Axiom Space, Starcloud, and China’s Three-Body Computing Constellation are pursuing comparable architectures [ 3 , 4 ] , building on Hewlett Packard Enterprise’s Spaceborne Computer-2, which has hosted edge-computing and AI experiments aboard the International Space Station since 2021. These developments collectively signal lower-cost access to space, driven by reusable launch vehicles and advances in physical AI"
-  },
-  {
-   "key": "arxiv:2610.32215",
-   "source": "arXiv",
-   "id": "2610.32215",
-   "title": "Democratizing LLM Training with the Edge: Challenges, Systems, and the Road Ahead",
-   "abstract": "The growing computational power of modern GPU data centers has let a few industrial giants train and deploy large language models (LLMs) on massive amounts of data. Yet the sheer scale of these models and their training data makes centralized development increasingly hard to sustain, and at the same time shuts out smaller institutions that hold relevant private data but lack comparable infrastructure. In this paper, we organize our positions on distributed LLM training around the pretraining and fine-tuning paradigms, covering federated learning, split learning, and decentralized approaches, and we assess their readiness for geo-distributed settings with heterogeneous hardware and unreliable connectivity. We then present a {\\em unified} system architecture built around a cloud-hosted parameter server that coordinates heterogeneous clients over outbound gRPC connections, reusing one communication, compression, and fault-tolerance stack for both pretraining and a family of fine-tuning methods. We validate the design with real geo-distributed experiments on GPT-2 Medium and Llama3-1B pretraining across multiple university sites, showing stable convergence under realistic conditions. Finally, we chart the road ahead, identifying open problems that span frontier model support, elastic fault tolerance, adaptive compression, federated alignment, privacy and trust, incentive design, and system--algorithm co-design, all of which must be addressed to make democratized LLM training a reality.",
-   "authors": [
-    {
-     "name": "Ziyue Luo",
+     "name": "Md. Sadman Haque",
      "affiliations": []
     },
     {
-     "name": "Jiaxuan Cai",
+     "name": "Sreezon Das Gupta",
      "affiliations": []
     },
     {
-     "name": "Cedric LeDenmat",
+     "name": "Atiar Osman",
      "affiliations": []
     },
     {
-     "name": "Srijith Nair",
-     "affiliations": []
-    },
-    {
-     "name": "Fatemeh Nourzad",
-     "affiliations": []
-    },
-    {
-     "name": "Rohith Krishnan",
-     "affiliations": []
-    },
-    {
-     "name": "Qinhang Wu",
-     "affiliations": []
-    },
-    {
-     "name": "Jifan Zhang",
-     "affiliations": []
-    },
-    {
-     "name": "Sungjae Lee",
-     "affiliations": []
-    },
-    {
-     "name": "Zhe Li",
-     "affiliations": []
-    },
-    {
-     "name": "Peiwen Qiu",
-     "affiliations": []
-    },
-    {
-     "name": "Siddharth Shah",
-     "affiliations": []
-    },
-    {
-     "name": "Rishabh Sharma",
-     "affiliations": []
-    },
-    {
-     "name": "Sundararajan Srinivasan",
-     "affiliations": []
-    },
-    {
-     "name": "Yinglun Xia",
-     "affiliations": []
-    },
-    {
-     "name": "Xue Zheng",
-     "affiliations": []
-    },
-    {
-     "name": "Zidong Liu",
-     "affiliations": []
-    },
-    {
-     "name": "Bicheng Ying",
-     "affiliations": []
-    },
-    {
-     "name": "Kaushik Chowdhury",
-     "affiliations": []
-    },
-    {
-     "name": "Gauri Joshi",
-     "affiliations": []
-    },
-    {
-     "name": "Yingbin Liang",
-     "affiliations": []
-    },
-    {
-     "name": "Robert Nowak",
-     "affiliations": []
-    },
-    {
-     "name": "Srinivasan Parthasarathy",
-     "affiliations": []
-    },
-    {
-     "name": "Saurav Prakash",
-     "affiliations": []
-    },
-    {
-     "name": "Balaraman Ravindran",
-     "affiliations": []
-    },
-    {
-     "name": "Sanjay Shakkottai",
-     "affiliations": []
-    },
-    {
-     "name": "Ness B. Shroff",
-     "affiliations": []
-    },
-    {
-     "name": "Haibo Yang",
-     "affiliations": []
-    },
-    {
-     "name": "Aylin Yener",
-     "affiliations": []
-    },
-    {
-     "name": "Jia Liu",
+     "name": "Md. Abu Obaida Zishan",
      "affiliations": []
     }
    ],
    "categories": [
     "cs.DC",
-    "cs.LG"
+    "cs.AI"
    ],
    "primary_category": "cs.DC",
-   "date": "2026-10-23",
-   "url": "https://arxiv.org/abs/2610.32215",
+   "date": "2026-10-24",
+   "url": "https://arxiv.org/abs/2610.33475",
    "matched_terms": [
+    "datacenters"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "LLMs in Cloud: A Discussion on Architecture, Orchestration, and Inference Jannatun Noor Email: jannatun@cse.uiu.ac.bd Affiliation: Computing for Sustainability and Social Good (C2SG) Research Group, Department of Computer Science and Engineering, United International University, Dhaka, Dhaka 1212, Bangladesh Athar Noor Mohammad Rafee Email: noor.mohammad.rafee@g.bracu.ac.bd Affiliation: Computing for Sustainability and Social Good (C2SG) Research Group, Department of Computer Science and Engineering, United International University, Dhaka, Dhaka 1212, Bangladesh Affiliation: Department of Computer Science and Engineering, School of Data & Computational Sciences, BRAC University, Dhaka, Dhaka 1212, Bangladesh Md. Sadman Haque Email: mhaque2620015@mscse.uiu.ac.bd Affiliation: Computing for Sustainability and Social Good (C2SG) Research Group, Department of Computer Science and Engineering, United International University, Dhaka, Dhaka 1212, Bangladesh Sreezon Das Gupta Email: sreezon23@gmail.com Affiliation: Department of Computer Science and Engineering, School of Data & Computational Sciences, BRAC University, Dhaka, Dhaka 1212, Bangladesh Atiar Osman Email: atiar.osman@g.bracu.ac.bd Affiliation: Department of Computer Science and Engineering, School of Data & Computational Sciences, BRAC University, Dhaka, Dhaka 1212, Bangladesh Md. Abu Obaida Zishan Email: md.abu.obaida.zishan@g.bracu.ac.bd Affiliation: Computing for Sustainability and Social Good (C2SG) Research Group, Department of Computer Science and Engineering, United International University, Dhaka, Dhaka 1212, Bangladesh Affiliation: Department of Computer Science and Engineering, School of Data & Computational Sciences, BRAC University, Dhaka, Dhaka 1212, Bangladesh Abstract The widespread deployment of foundational Large Language Models (LLM) across cloud datacenters marks a fundamental paradigm shift from stateless deep learning toward distributed, memory-intensive generative workloads. However, serving massive foundation models under stringent Service Level Objectives (SLO) exposes critical physical and system bottlenecks. These challenges include the persistent High Bandwidth Memory (HBM) wall, operational asymmetry between compute-bound prefilling and memory-bandwidth-bound decoding, explosive Key-Value (KV) cache expansion, prohibitive serverless cold starts, and hardware reliability vulnerabilities. Existing literature reviews remain layer-siloed, decoupling low-level accelerator virtuali"
+  },
+  {
+   "key": "arxiv:2610.33300",
+   "source": "arXiv",
+   "id": "2610.33300",
+   "title": "How AI Load Swings Reduce Datacenter Power Conversion Efficiency",
+   "abstract": "AI training and inference workloads make GPU power swing repeatedly between compute and communication phases. As a result, the cascaded converters in a datacenter rack keep moving between operating points with different efficiencies. This paper uses an energy based, cycle averaged method to quantify that effect along a 240 V AC to 400 V DC to 51 V DC rack power path, using measured efficiency curves of commercially available GaN based PFC and LLC converters. For a 1 Hz, 50% duty-cycle load swinging between 5 kW and 510 W, conversion efficiency falls to 95.97%, compared with 96.82% at the equivalent constant average load, a loss of 0.88%. When 51/48V to 1V point of load conversion to the chip rail is included, it is shown that the loss grows to 1.66% (89.45% vs. 90.96%). These results show that efficiency rated at average load overstates real world performance, and that the penalty grows with each load dependent conversion stage between the grid and the GPU.",
+   "authors": [
+    {
+     "name": "Heetarth Joshi",
+     "affiliations": []
+    },
+    {
+     "name": "Ali Alenezi",
+     "affiliations": []
+    },
+    {
+     "name": "Fang Chen Lin",
+     "affiliations": []
+    },
+    {
+     "name": "Prasad Enjeti",
+     "affiliations": []
+    },
+    {
+     "name": "Xiaoyang Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Xin Chen",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.AR",
+    "eess.SY"
+   ],
+   "primary_category": "cs.AR",
+   "date": "2026-10-23",
+   "url": "https://arxiv.org/abs/2610.33300",
+   "matched_terms": [
+    "ai load",
+    "datacenter"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(HTML version not available: HTTPError)"
+  },
+  {
+   "key": "arxiv:2610.33148",
+   "source": "arXiv",
+   "id": "2610.33148",
+   "title": "Modeling Liquid-Cooled Data Centers in EnergyPlus",
+   "abstract": "As AI workloads accelerate data center transition toward high-density racks with direct-to-chip (DTC) liquid cooling, existing simulation tools remain limited in evaluating whole-building and multi-year efficiency. To bridge this gap, we develop a native EnergyPlus object, ElectricEquipment:ITE:LiquidCooled, that models DTC liquid cooling for chilled-water and warm-water architectures as plant-loop components. It couples facility-water loops, rack-side secondary loops, coolant distribution units, and chip-junction temperatures within a single solver. Validation against an independent Modelica implementation across 21 operating conditions, including two full-year runs compared at one-minute resolution, yields loop-temperature RMSE at or below 0.021 K, well within the 0.1 K acceptance threshold. Our case study demonstrates that warm-water liquid cooling reduces annual PUE from 1.43 to 1.25, eliminates on-site water use, and cuts total facility energy by 37.9% relative to an air-cooled baseline. By embedding liquid-cooling logic into EnergyPlus, our work provides whole-building, long-term energy modeling for high-density AI infrastructure within an open-source framework.",
+   "authors": [
+    {
+     "name": "Yun-Dam Ko",
+     "affiliations": []
+    },
+    {
+     "name": "Dipashreya A. Sur",
+     "affiliations": []
+    },
+    {
+     "name": "Cade Napier",
+     "affiliations": []
+    },
+    {
+     "name": "Carlos D. Díaz-Marín",
+     "affiliations": []
+    },
+    {
+     "name": "Rishee K. Jain",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY",
+    "cs.CE",
+    "cs.DC",
+    "cs.LG"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-10-23",
+   "url": "https://arxiv.org/abs/2610.33148",
+   "matched_terms": [
+    "ai infrastructure",
+    "data center",
     "data centers"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Democratizing LLM Training with the Edge: Challenges, Systems, and the Road Ahead Ziyue Luo Affiliation: The Ohio State University; Jiaxuan Cai Affiliation: The Ohio State University; Cedric Le Denmat Affiliation: The Ohio State University; Srijith Nair Affiliation: The Ohio State University; Fatemeh Nourzad Affiliation: The Ohio State University; Rohith Krishnan Sudha Affiliation: The Ohio State University; Qinhang Wu Affiliation: The Ohio State University; Jifan Zhang Affiliation: University of Wisconsin–Madison; Sungjae Lee Affiliation: The Ohio State University; Zhe Li Affiliation: Rochester Institute of Technology; Peiwen Qiu Affiliation: The Ohio State University; Siddharth Shah Affiliation: Carnegie Mellon University; Rishabh Sharma Affiliation: University of Wisconsin–Madison; Sundararajan Srinivasan Affiliation: The University of Texas at Austin; Yinglun Xia Affiliation: The Ohio State University; Xue Zheng Affiliation: The Ohio State University; Zidong Liu Affiliation: ComboCurve; Bicheng Ying Affiliation: Google; Kaushik Chowdhury Affiliation: The University of Texas at Austin; Gauri Joshi Affiliation: Carnegie Mellon University; Yingbin Liang Affiliation: The Ohio State University; Robert Nowak Affiliation: University of Wisconsin–Madison; Srinivasan Parthasarathy Affiliation: The Ohio State University; Saurav Prakash Affiliation: Indian Institute of Technology Madras. * Co-primary authors with equal contribution. Balaraman Ravindran Affiliation: Indian Institute of Technology Madras. * Co-primary authors with equal contribution. Sanjay Shakkottai Affiliation: The University of Texas at Austin; Ness B. Shroff Affiliation: The Ohio State University; Haibo Yang Affiliation: Rochester Institute of Technology; Aylin Yener Affiliation: The Ohio State University; Jia Liu † † thanks: This work is supported in part by NSF Grant 2112471. Affiliation: The Ohio State University; Abstract The growing computational power of modern GPU data centers has let a few industrial giants train and deploy large language models (LLMs) on massive amounts of data. Yet the sheer scale of these models and their training data makes centralized development increasingly hard to sustain, and at the same time shuts out smaller institutions that hold relevant private data but lack comparable infrastructure. In this paper, we organize our positions on distributed LLM training around the pretraining and fine-tuning paradigms, covering federated learning, split learning, and decen"
-  },
-  {
-   "key": "doi:10.1016/j.apenergy.2026.129132",
-   "source": "journal",
-   "journal": "Applied Energy",
-   "journal_short": "Applied Energy",
-   "doi": "10.1016/j.apenergy.2026.129132",
-   "title": "Coordinating data centre microgrids and mobile power sources for distribution network resilience: A data-driven distributionally robust optimisation approach",
-   "abstract": "",
-   "abstract_source": "",
-   "authors": [
-    {
-     "name": "Yi Wang",
-     "affiliations": [
-      "Wuhan University"
-     ]
-    },
-    {
-     "name": "Liangzhong Yao",
-     "affiliations": [
-      "Wuhan University"
-     ]
-    },
-    {
-     "name": "Goran Štrbac",
-     "affiliations": [
-      "Imperial College London"
-     ]
-    }
-   ],
-   "type": "journal-article",
-   "date": "2026-10-23",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129132",
-   "matched_terms": [
-    "data centre"
-   ],
-   "screened_on": "title only",
-   "affiliation_source": "openalex"
-  },
-  {
-   "key": "doi:10.1016/j.apenergy.2026.129075",
-   "source": "journal",
-   "journal": "Applied Energy",
-   "journal_short": "Applied Energy",
-   "doi": "10.1016/j.apenergy.2026.129075",
-   "title": "Large language model-guided multi-agent reinforcement learning for low-carbon data center scheduling considering distribution-network constraint",
-   "abstract": "",
-   "abstract_source": "",
-   "authors": [
-    {
-     "name": "Chenyue Xia",
-     "affiliations": []
-    },
-    {
-     "name": "Yinliang Xu",
-     "affiliations": []
-    },
-    {
-     "name": "Hongbin Sun",
-     "affiliations": []
-    }
-   ],
-   "type": "journal-article",
-   "date": "2026-10-26",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129075",
-   "matched_terms": [
-    "data center"
-   ],
-   "screened_on": "title only",
-   "affiliation_source": "not available yet"
-  },
-  {
-   "key": "doi:10.1038/s41467-026-78509-6",
-   "source": "journal",
-   "journal": "Nature Communications",
-   "journal_short": "Nature Communications",
-   "doi": "10.1038/s41467-026-78509-6",
-   "title": "Democratizing reliable knowledge-seeking with MyGPT: a privacy-first, open-source retrieval-augmented generation platform",
-   "abstract": "Abstract Large language models (LLMs) have transformed knowledge discovery, but their use in sensitive domains is limited by privacy concerns and risks of data leakage. Moreover, LLMs may hallucinate when queried about information outside their training data, undermining their reliability for scientific, clinical, or policy-related tasks. We present MyGPT, a fully open-source, privacy-preserving retrieval-augmented-generation (RAG) platform that uses open-source LLMs and operates locally or within secure institutional environments. MyGPT empowers users to query user-defined libraries such as biomedical literature, confidential clinical documents, and multilingual global health policies, while ensuring that sensitive data never leaves the secure environment. We introduce confidence metrics, including “relevance scores” and “hallucination index,” and provide explicit source citation from the library within a single interface to assess contextual support for generated answers. MyGPT offers a cost-effective, modular, open-source alternative to commercial LLM services and democratizes knowledge-seeking across multiple domains, including use at remote facilities without internet access.",
-   "abstract_source": "crossref",
-   "authors": [
-    {
-     "name": "Jaimin N Patel",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Jude Downing",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Hugh Ferguson",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Thika You",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Duccio Malinverni",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Steve Mathew",
-     "affiliations": [
-      "St. Jude Children's Research Hospital",
-      "University of Tennessee Health Science Center"
-     ]
-    },
-    {
-     "name": "Inês Chen",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Madison Sluter",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Beth Moorefield",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Katalin Paréj",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Mukundan Ragavan",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Cindy Morris",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Dinesh Keerthi",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Desiree Becerra Armada",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Bálint Mészáros",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Vikas D. Trivedi",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Shahinur Alam",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Anthony Woodard",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Dan Alford",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Sagar Pathak",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Cai Li",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Renato Umeton",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Carlos Rodríguez‐Galindo",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Catherine G. Lam",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Stephen M Gottschalk",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "Charalampos G. Kalodimos",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    },
-    {
-     "name": "M. Madan Babu",
-     "affiliations": [
-      "St. Jude Children's Research Hospital"
-     ]
-    }
-   ],
-   "type": "journal-article",
-   "date": "2026-10-24",
-   "url": "https://doi.org/10.1038/s41467-026-78509-6",
-   "matched_terms": [
-    "large language models",
-    "llm",
-    "llms"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_source": "openalex"
+   "affiliation_block": "Modeling Liquid-Cooled Data Centers in EnergyPlus Yun-Dam Ko Note: Equal contribution. email: yundamko@stanford.edu Affiliation: Stanford University , Stanford , California , USA , Dipashreya A. Sur email: dipashre@stanford.edu Affiliation: Stanford University , Stanford , California , USA , Cade Napier email: cnapier@stanford.edu Affiliation: Stanford University , Stanford , California , USA , Carlos D. Díaz-Marín email: cdiazm@stanford.edu Affiliation: Stanford University , Stanford , California , USA and Rishee K. Jain email: rishee.jain@stanford.edu Affiliation: Stanford University , Stanford , California , USA Abstract. As AI workloads accelerate data center transition toward high-density racks with direct-to-chip (DTC) liquid cooling, existing simulation tools remain limited in evaluating whole-building and multi-year efficiency. To bridge this gap, we develop a native EnergyPlus object, ElectricEquipment:ITE:LiquidCooled , that models DTC liquid cooling for chilled-water and warm-water architectures as plant-loop components. It couples facility-water loops, rack-side secondary loops, coolant distribution units, and chip-junction temperatures within a single solver. Validation against an independent Modelica implementation across 21 operating conditions, including two full-year runs compared at one-minute resolution, yields loop-temperature RMSE at or below 0.021 K, well within the 0.1 K acceptance threshold. Our case study demonstrates that warm-water liquid cooling reduces annual PUE from 1.43 to 1.25, eliminates on-site water use, and cuts total facility energy by 37.9% relative to an air-cooled baseline. By embedding liquid-cooling logic into EnergyPlus, our work provides whole-building, long-term energy modeling for high-density AI infrastructure within an open-source framework. Keywords: Data centers, Liquid cooling, Direct-to-chip cooling, EnergyPlus, Building energy modeling"
   }
  ],
  "title_only_final": [
   {
-   "source": "Applied Energy",
-   "title": "A cooperative framework for building cluster, charging cluster, and microgrid park with coordinated sharing of energy, carbon allowances, and green electricity certificates",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129079"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Reinforcement learning based dual population evolutionary algorithm for multi objective optimal power flow with wind and photovoltaic uncertainties and contingencies",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129058"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Electrochemical-guided time-frequency transformer for battery state-of-health estimation",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129042"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Game-theoretic and multi-agent reinforcement learning-based adaptive optimization of multi-aggregator virtual power plants in coupled electricity, carbon, and green certificate markets",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129067"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Dynamic evolution of effective thermophysical parameters in lithium-ion batteries during overcharge-induced thermal runaway",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129074"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Resilient transmission proactive-hardening and post-recovery against cascading failures during typhoons under decision-dependent uncertainty",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129076"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Constraint-first energy-efficient indoor environmental control with multi-agent device coordination and knowledge-graph memory",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129054"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Entropic risk-aware end-to-end learning for stochastic optimization of renewable-rich integrated energy systems",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129096"
-  },
-  {
-   "source": "TPWRS",
-   "title": "Inverse Derivation of Locational Marginal Carbon Emission using Open-Access Incomplete Information",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3744526"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Dynamic start-up and operating window analysis of an ammonia-fueled SOFC system with flexible cracking ratio operation",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129107"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Sustainable aviation fuel production from electrified biogas reforming and SOEC-assisted Fischer-Tropsch process: Multi-product configurations and long-term projections",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129038"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "MERIF: a market-informed electricity-price risk and interval forecasting framework for renewable-rich power markets",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.128993"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Physics-constrained state-space modeling for battery state-of-charge estimation using embedded fiber-optic multiphysics sensing",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129025"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Effects of cell aspect ratio and geometric orientation on performance and thermal behavior of cross-flow planar SOFCs",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129117"
-  },
-  {
-   "source": "Nature Rev. EE",
-   "title": "Battery integration as function reassignment",
-   "url": "https://doi.org/10.1038/s44287-026-00342-2"
-  },
-  {
-   "source": "TSG",
-   "title": "Representative Photovoltaic Scenario Extraction for Multiple Stations via Anchor-Guided Bipartite Graph Clustering",
-   "url": "https://doi.org/10.1109/tsg.2026.3744799"
-  },
-  {
-   "source": "TSG",
-   "title": "Unstructured Information-Aware Load Forecasting with Sparse Fine-Tuning of Large Language Models",
-   "url": "https://doi.org/10.1109/tsg.2026.3744756"
-  },
-  {
-   "source": "TPWRS",
-   "title": "A New Neural Network Paradigm for Scalable and Generalizable Stability Analysis of Power Systems",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3744794"
-  },
-  {
-   "source": "TPWRS",
-   "title": "Privacy-Preserving Coordinated Expansion Planning of Transmission and Distribution Systems",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3744973"
-  },
-  {
-   "source": "TPWRS",
-   "title": "Robust Transient Stability-Constrained Multi-Objective Optimal Power Flow under Uncertain Load Dynamics",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3744758"
-  },
-  {
-   "source": "TPWRS",
-   "title": "A Novel Resilient Load Frequency Control with Prescribed Performance for Constrained Multi-Area Power Systems",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3745084"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Unlocking the potential benefits of intertemporal resources via explicit embedding future value of the end-of-day state in day-ahead dispatch",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129039"
-  }
- ],
- "pending_items": [
-  {
    "source": "TSG",
    "title": "Reduced-Order Observer-Based Load Frequency Control for Interconnected Power Systems Under Imperfect Communication",
-   "url": "https://doi.org/10.1109/tsg.2026.3745120",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "TSG",
-   "title": "Integer-Clustering Optimization and Energy Hub Co-Design of Hydrogen and Battery EV Fleets",
-   "url": "https://doi.org/10.1109/tsg.2026.3745289",
-   "first_seen": "2026-10-22"
+   "url": "https://doi.org/10.1109/tsg.2026.3745120"
   },
   {
    "source": "TSG",
    "title": "Hybrid DRL-SOCP Based Two-Stage Co-Optimization of GFM Siting and Multi-Resource Routing for Cyber-Physical-Transportation Resilience",
-   "url": "https://doi.org/10.1109/tsg.2026.3745141",
-   "first_seen": "2026-10-22"
+   "url": "https://doi.org/10.1109/tsg.2026.3745141"
   },
   {
    "source": "TSG",
    "title": "A Multi-Round FDIAs Approach Triggering Power System Blackouts based on POORL and GBCGAN: Frequency as a State Indicatorz",
-   "url": "https://doi.org/10.1109/tsg.2026.3745161",
-   "first_seen": "2026-10-22"
+   "url": "https://doi.org/10.1109/tsg.2026.3745161"
   },
   {
    "source": "TPWRS",
    "title": "Matrix-Recursive Synergistic Power-Carbon Flow Tracing via Holomorphic Embedding",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3745733",
-   "first_seen": "2026-10-22"
+   "url": "https://doi.org/10.1109/tpwrs.2026.3745733"
   },
   {
    "source": "TPWRS",
    "title": "Bi-Level Learning-Enabled Control Framework for Power Systems with High Inverter-Based Resource Penetration: Theory and Implementation",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3745993",
-   "first_seen": "2026-10-22"
+   "url": "https://doi.org/10.1109/tpwrs.2026.3745993"
   },
   {
    "source": "Applied Energy",
    "title": "Editorial Board",
-   "url": "https://doi.org/10.1016/s0306-2619(26)01778-2",
-   "first_seen": "2026-10-22"
+   "url": "https://doi.org/10.1016/s0306-2619(26)01778-2"
   },
   {
    "source": "Applied Energy",
    "title": "Source-attributed DLMP settlement with price-anticipating load response",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129109",
-   "first_seen": "2026-10-22"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129109"
   },
   {
    "source": "Applied Energy",
    "title": "Feasibility assessment of solar-driven underground hydrogen storage through integrated surface and subsurface modelling",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129052",
-   "first_seen": "2026-10-22"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129052"
   },
   {
    "source": "Applied Energy",
    "title": "Quantifying the power system benefits of building upgrades for passive survivability in a changing climate",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129057",
-   "first_seen": "2026-10-22"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129057"
   },
   {
    "source": "Nature Rev. EE",
    "title": "Topological highways for light",
-   "url": "https://doi.org/10.1038/s44287-026-00339-x",
-   "first_seen": "2026-10-22"
-  },
+   "url": "https://doi.org/10.1038/s44287-026-00339-x"
+  }
+ ],
+ "pending_items": [
   {
    "source": "TSG",
    "title": "Coordinated State Estimation of Integrated Electricity and Heating System Based on Thermal Circuit Method for Variable Mass Flow",
@@ -1204,66 +985,6 @@
   },
   {
    "source": "Nature Communications",
-   "title": "Structure and function of cyanobacterial Omp85 reveal Toc159/Toc90 as a chloroplast protein import pore",
-   "url": "https://doi.org/10.1038/s41467-026-78967-y",
-   "first_seen": "2026-10-26"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "A multi-functionally integrated modular catalyst for efficient chemoselective hydrogenation",
-   "url": "https://doi.org/10.1038/s41467-026-79017-3",
-   "first_seen": "2026-10-26"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Superior energy-storage performance in BaTiO3-based MLCCs via high-entropy driven multiscale optimization",
-   "url": "https://doi.org/10.1038/s41467-026-79047-x",
-   "first_seen": "2026-10-26"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "From microstructure to function: spatial visualization of magnetic permeability",
-   "url": "https://doi.org/10.1038/s41467-026-79271-5",
-   "first_seen": "2026-10-26"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "NYNRIN safeguards leukemia stem cells by sustaining thioredoxin activity to maintain redox homeostasis",
-   "url": "https://doi.org/10.1038/s41467-026-78678-4",
-   "first_seen": "2026-10-26"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Dual-point-groups engineering enable multi-ultrahigh-Q resonances via Brillouin zone folding in tetramer metasurfaces",
-   "url": "https://doi.org/10.1038/s41467-026-78953-4",
-   "first_seen": "2026-10-26"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Arabian hydroclimate and hominin population dynamics over the last 500,000 years",
-   "url": "https://doi.org/10.1038/s41467-026-78983-y",
-   "first_seen": "2026-10-26"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Holographic focused ultrasound enables multitarget EV and MSC delivery for neurovascular repair after ischemic stroke",
-   "url": "https://doi.org/10.1038/s41467-026-78847-5",
-   "first_seen": "2026-10-26"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Complementary axes of functional system integrity and integration with divergent clinical correlates characterize focal epilepsy",
-   "url": "https://doi.org/10.1038/s41467-026-79018-2",
-   "first_seen": "2026-10-26"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Molecular basis for DNA cleavage by the mini-RNA-guided endonuclease Casδ−1",
-   "url": "https://doi.org/10.1038/s41467-026-79084-6",
-   "first_seen": "2026-10-26"
-  },
-  {
-   "source": "Nature Communications",
    "title": "Trace H2O2-triggered Fenton-like reaction by secondary coordination sphere in iron-based metal-organic frameworks",
    "url": "https://doi.org/10.1038/s41467-026-79095-3",
    "first_seen": "2026-10-26"
@@ -1315,10 +1036,184 @@
    "title": "Three-dimensional dynamic random-access memory beyond two-dimensional scaling limits",
    "url": "https://doi.org/10.1038/s44287-026-00347-x",
    "first_seen": "2026-10-26"
+  },
+  {
+   "source": "TSG",
+   "title": "Real-Time Computation of Operating Flexibility Margins for Distributed Energy Resources in Distribution Networks",
+   "url": "https://doi.org/10.1109/tsg.2026.3746998",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "TSG",
+   "title": "Greedy Heuristic-Based Scalable Black-Start Optimization in DER-Rich Distribution Systems",
+   "url": "https://doi.org/10.1109/tsg.2026.3747011",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "TSG",
+   "title": "Joint State and Parameter Estimation in Distribution Grids Using Linearized Power Flow Models",
+   "url": "https://doi.org/10.1109/tsg.2026.3746899",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "TSG",
+   "title": "Cross-Layer Communication-Aware Smart EV Charging for Grid Load Shaping in Cell-Free Massive MIMO Networks",
+   "url": "https://doi.org/10.1109/tsg.2026.3746603",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Directional Breakdown and Restoration of Eigenvalue Gradient in Small-Signal Stability Optimization",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3747174",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Quantum probability-driven decision framework for sustainable electric vehicle charging station placement under cognitive biases",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129062",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Optimization and assessment of PCM-enhanced energy piles for photovoltaic-assisted geothermal harvesting",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129069",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Adaptive dynamic planning method for electric vehicle charging stations considering active interaction with EV growth",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129084",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Learning control policies from heterogeneous multi-horizon time series in battery energy management systems",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129049",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Accurate remaining useful life prediction of lithium-ion batteries via capacity curve modeling with attention fusion learning framework",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129061",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Stochastic flexibility quantification for urban integrated energy systems: Definition, modeling, and computation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129114",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Unified appliance-level flexibility modeling for residential demand response: a MILP framework considering routine disruption and thermal discomfort",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129045",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Optimisation of a grid-connected electrolyser: time-ahead dispatch and energy portfolio planning",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129153",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Risk-averse quantal response equilibrium based optimal bidding strategy of battery energy storage systems in the double-sided auction market",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129088",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Machine learning-assisted bidirectional co-optimization of catalyst and operating conditions for high-yield Fischer–Tropsch fuel production",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129171",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Organic matter composition modulates its degradation under the combined effects of iron (oxyhydr)oxides and light",
+   "url": "https://doi.org/10.1038/s41467-026-79081-9",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: Pulsed electromagnetic fields mediate sensory nerve regulation for bone formation in aging models",
+   "url": "https://doi.org/10.1038/s41467-026-79117-0",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: A decoupling strategy toward spatiotemporal regulation and biomechanical transmission of sandwiched scaffold for osteochondral regeneration",
+   "url": "https://doi.org/10.1038/s41467-026-79199-w",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "An Early Jurassic soft eggshell provides insights into the evolutionary history of dinosaur eggs",
+   "url": "https://doi.org/10.1038/s41467-026-78709-0",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: In vivo mitochondrial base editing restores genotype and visual function in a mouse model of LHON",
+   "url": "https://doi.org/10.1038/s41467-026-79197-y",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Smooth muscle DDIT4 exacerbates vascular remodeling in atherosclerosis and vascular injury by impairing PDC activity",
+   "url": "https://doi.org/10.1038/s41467-026-79145-w",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Transient efferocytosis-induced activation of IKKβ reprograms macrophages to promote tissue resolution in mice",
+   "url": "https://doi.org/10.1038/s41467-026-78229-x",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Declining spring production in the Barents Sea ice zone under climate forcing",
+   "url": "https://doi.org/10.1038/s41467-026-79272-4",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Single-cell landscape of human adipose tissue reveals THBS1 as a potential driver of fibro-inflammation in metabolic disease",
+   "url": "https://doi.org/10.1038/s41467-026-77107-w",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "DEGS1-mTORC1-driven lipid metabolic reprogramming fuels rhabdomyosarcoma progression and unveils a therapeutic vulnerability",
+   "url": "https://doi.org/10.1038/s41467-026-79206-0",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Nascent RNA-mediated recruitment and R-loop suppression underlie FUS-driven enhancement of transcription",
+   "url": "https://doi.org/10.1038/s41467-026-78861-7",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "scBOA: Bayesian optimization of single-cell analysis pipelines for robust annotation and discovery",
+   "url": "https://doi.org/10.1038/s41467-026-78718-z",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Omnidirectional photonic chiral flatband in nonlocal membrane metasurfaces",
+   "url": "https://doi.org/10.1038/s41467-026-79056-w",
+   "first_seen": "2026-10-27"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Marine heat waves in vulnerable coral reef regions are skillfully predictable on multi-year timescales",
+   "url": "https://doi.org/10.1038/s41467-026-78279-1",
+   "first_seen": "2026-10-27"
   }
  ],
- "pending_abstract": 69,
+ "pending_abstract": 77,
  "runs_utc": [
-  "2026-10-26T10:56:54+00:00"
+  "2026-10-27T10:21:48+00:00"
  ]
 }
