@@ -1,45 +1,45 @@
 {
- "date": "2026-10-28",
- "generated_utc": "2026-10-28T11:12:43+00:00",
+ "date": "2026-10-29",
+ "generated_utc": "2026-10-29T11:25:30+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-10-24",
-   "2026-10-28"
+   "2026-10-25",
+   "2026-10-29"
   ],
   "journal_doi_created": [
-   "2026-10-22",
-   "2026-10-28"
+   "2026-10-23",
+   "2026-10-29"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-   "in_window": 85,
-   "new": 33,
-   "candidates": 1
+   "in_window": 72,
+   "new": 0,
+   "candidates": 0
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-   "in_window": 50,
-   "new": 12,
-   "candidates": 1
+   "in_window": 42,
+   "new": 0,
+   "candidates": 0
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-   "in_window": 78,
-   "new": 32,
-   "candidates": 1
+   "in_window": 68,
+   "new": 0,
+   "candidates": 0
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-   "in_window": 16,
-   "new": 1,
+   "in_window": 12,
+   "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -47,7 +47,7 @@
    "source": "TPWRS",
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
-   "in_window": 7,
+   "in_window": 4,
    "new": 1,
    "candidates": 0,
    "new_with_abstract": 0
@@ -56,8 +56,8 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 43,
-   "new": 3,
+   "in_window": 39,
+   "new": 5,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -65,19 +65,19 @@
    "source": "Nature Energy",
    "journal": "Nature Energy",
    "status": "ok",
-   "in_window": 2,
-   "new": 1,
+   "in_window": 4,
+   "new": 3,
    "candidates": 0,
-   "new_with_abstract": 1
+   "new_with_abstract": 0
   },
   {
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 175,
-   "new": 24,
-   "candidates": 1,
-   "new_with_abstract": 13
+   "in_window": 184,
+   "new": 37,
+   "candidates": 0,
+   "new_with_abstract": 15
   },
   {
    "source": "Nature Rev. EE",
@@ -90,309 +90,8 @@
   }
  ],
  "errors": [],
- "candidates": [
-  {
-   "key": "arxiv:2610.37403",
-   "source": "arXiv",
-   "id": "2610.37403",
-   "title": "AuRaSim: A Ray-Tracing Based Automotive FMCW Radar Simulator for Dynamic Scenarios",
-   "abstract": "Modern simulators can generate synthetic camera and LiDAR data with accurate annotations for downstream tasks. In contrast, automotive radar simulation remains less mature because it requires not only a 3D engine to model dynamic objects in the scenes but also electromagnetic material properties, antenna configurations, wave propagation mechanisms, and coherent signal synthesis. Existing frameworks are either proprietary or overly simplified, limiting the scalability of radar raw measurements. This paper presents AuRaSim, a ray-tracing-based automotive frequency-modulated continuous wave (FMCW) radar simulation framework for dynamic scenarios. Rather than implementing all components from scratch, AuRaSim builds on Blender for efficient dynamic-scene construction and Sionna RT for graphics processing unit (GPU) accelerated electromagnetic ray tracing, while introducing radar-specific adaptations for path-resolved propagation with complex coefficients, motion-aware Doppler modeling, and subsequently coherent multi-channel analog-to-digital converter (ADC) cube synthesis based on waveform configurations. Quantitative comparison between simulated and measured range-Doppler maps in digital-twin scenarios achieves a root-mean-square error (RMSE) of 0.147 and a peak signal-to-noise ratio (PSNR) of 16.93 dB, demonstrating the accuracy and fidelity of the synthetic signal. AuRaSim therefore provides a complete and extensible platform for reproducible automotive radar simulation and research. Project homepage: https://wangzhaoze.github.io/aurasim.",
-   "authors": [
-    {
-     "name": "Zhaoze Wang",
-     "affiliations": []
-    },
-    {
-     "name": "Changxu Zhang",
-     "affiliations": []
-    },
-    {
-     "name": "Tai Fei",
-     "affiliations": []
-    },
-    {
-     "name": "Christopher Grimm",
-     "affiliations": []
-    },
-    {
-     "name": "Yi Jin",
-     "affiliations": []
-    },
-    {
-     "name": "Claas Tebruegge",
-     "affiliations": []
-    },
-    {
-     "name": "Markus Gardill",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.RO",
-    "eess.SP"
-   ],
-   "primary_category": "cs.RO",
-   "date": "2026-10-27",
-   "url": "https://arxiv.org/abs/2610.37403",
-   "matched_terms": [
-    "gpu"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "AuRaSim: A Ray-Tracing Based Automotive FMCW Radar Simulator for Dynamic Scenarios Zhaoze Wang Changxu Zhang Tai Fei Christopher Grimm Yi Jin Claas Tebruegge and Markus Gardill † † thanks: Zhaoze Wang, Changxu Zhang, Christopher Grimm, Yi Jin, and Claas Tebruegge are with HELLA GmbH & Co. KGaA, 59552 Lippstadt, Germany (e-mail: {zhaoze.wang, changxu.zhang, christopher.grimm, yi.jin, claas.tebruegge}@forvia.com). † † thanks: Tai Fei is with the Department of Information Technology, Dortmund University of Applied Sciences and Arts, 44139 Dortmund, Germany (e-mail: tai.fei@fh-dortmund.de). † † thanks: Markus Gardill is with the Department of Electronic Systems and Sensors, Brandenburg University of Technology, 03046 Cottbus, Germany (e-mail: markus.gardill@b-tu.de). † † thanks: Manuscript received 2026. Abstract Modern simulators can generate synthetic camera and LiDAR data with accurate annotations for downstream tasks. In contrast, automotive radar simulation remains less mature because it requires not only a 3D engine to model dynamic objects in the scenes but also electromagnetic material properties, antenna configurations, wave propagation mechanisms, and coherent signal synthesis. Existing frameworks are either proprietary or overly simplified, limiting the scalability of radar raw measurements. This paper presents AuRaSim, a ray-tracing-based automotive frequency-modulated continuous-wave (FMCW) radar simulation framework for dynamic scenarios. Rather than implementing all components from scratch, AuRaSim builds on Blender for efficient dynamic-scene construction and Sionna RT for graphics processing unit (GPU) -accelerated electromagnetic ray tracing, while introducing radar-specific adaptations for path-resolved propagation with complex coefficients, motion-aware Doppler modeling, and subsequently coherent multi-channel analog-to-digital converter (ADC) cube synthesis based on waveform configurations. Quantitative comparison between simulated and measured range–Doppler maps in digital-twin scenarios achieves a root-mean-square error (RMSE) of 0.147 and a peak signal-to-noise ratio (PSNR) of 16.93 dB, demonstrating the accuracy and fidelity of the synthetic signal. AuRaSim therefore provides a complete and extensible platform for reproducible automotive radar simulation and research. Project homepage: https://wangzhaoze.github.io/aurasim . Index Terms: Automotive radar, modelling and simulation, sensor technology, autonomous driving"
-  },
-  {
-   "key": "arxiv:2610.36589",
-   "source": "arXiv",
-   "id": "2610.36589",
-   "title": "InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?",
-   "abstract": "Coding agents are beginning to develop the production-grade AI infrastructure that trains and serves large models, yet existing benchmarks cover only single kernels or single-GPU tasks, and grade with tests and prompts that misjudge both correct and incorrect patches. We introduce InfraDev, a benchmark of 36 tasks built from real-world pull requests to Megatron-LM, vLLM, and verl, covering infrastructure development for training, inference, and reinforcement learning. Each task asks an agent to reimplement a real change that spans many files and must run correctly across many GPUs. To grade such changes, we jointly synthesize hidden probes, which enforce the requirements the original tests leave unchecked, and a prompt that states every interface the probes call without revealing the solution. We also design a shared execution environment that reuses dependencies and artifacts across tasks, cutting storage by 52-57% and build time by 13-14% on Megatron-LM and vLLM. Across six frontier models, the best resolves only 38.9% of the tasks; the probes reject 32% of the submissions that pass every official test, and with the original pull request descriptions as prompts, no model resolves a single task. Failure analysis shows that structural and state errors dominate and that agents' own tests rarely check memory, time, or traffic. Turning these findings into an agent skill raises the resolved rate of a frontier model on the Megatron-LM tasks by 10.5%.",
-   "authors": [
-    {
-     "name": "Yangshen Deng",
-     "affiliations": []
-    },
-    {
-     "name": "Jiaqi Ruan",
-     "affiliations": []
-    },
-    {
-     "name": "Yeqi Huang",
-     "affiliations": []
-    },
-    {
-     "name": "Nick Lau",
-     "affiliations": []
-    },
-    {
-     "name": "Guangming Sheng",
-     "affiliations": []
-    },
-    {
-     "name": "Luo Mai",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.AI",
-    "cs.DC"
-   ],
-   "primary_category": "cs.AI",
-   "date": "2026-10-27",
-   "url": "https://arxiv.org/abs/2610.36589",
-   "matched_terms": [
-    "ai infrastructure"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell? Yangshen Deng † † thanks: Co-first authors. Jiaqi Ruan 1 1 footnotemark: 1 Yeqi Huang 1 1 footnotemark: 1 Nick Lau Affiliation: University of Edinburgh Tencent Hunyuan Guangming Sheng Affiliation: University of Edinburgh Tencent Hunyuan Luo Mai Abstract Coding agents are beginning to develop the production-grade AI infrastructure that trains and serves large models, yet existing benchmarks cover only single kernels or single-GPU tasks, and grade with tests and prompts that misjudge both correct and incorrect patches. We introduce InfraDev, a benchmark of 36 tasks built from real-world pull requests to Megatron-LM, vLLM, and verl, covering infrastructure development for training, inference, and reinforcement learning. Each task asks an agent to reimplement a real change that spans many files and must run correctly across many GPUs. To grade such changes, we jointly synthesize hidden probes, which enforce the requirements the original tests leave unchecked, and a prompt that states every interface the probes call without revealing the solution. We also design a shared execution environment that reuses dependencies and artifacts across tasks, cutting storage by 52–57% and build time by 13–14% on Megatron-LM and vLLM. Across six frontier models, the best resolves only 38.9% of the tasks; the probes reject 32% of the submissions that pass every official test, and with the original pull request descriptions as prompts, no model resolves a single task. Failure analysis shows that structural and state errors dominate and that agents’ own tests rarely check memory, time, or traffic. Turning these findings into an agent skill raises the resolved rate of a frontier model on the Megatron-LM tasks by 10.5%. luo.mai@ed.ac.uk , petersheng@tencent.com"
-  },
-  {
-   "key": "arxiv:2610.36441",
-   "source": "arXiv",
-   "id": "2610.36441",
-   "title": "Phase-Coordinated Model Predictive Control for AI Training Power Smoothing",
-   "abstract": "Periodic power fluctuations from artificial intelligence (AI) training workloads can excite oscillations in power systems. This paper proposes a model predictive control (MPC) framework that exploits short start-time delays to mitigate power fluctuations at the computing source. By coordinating the relative phases of independent training jobs, the proposed method reduces the superposition of oscillatory power components without interrupting running jobs or requiring additional power-smoothing hardware. To obtain a tractable optimization formulation, cosine and sine projections are employed to quantify the dominant oscillatory power components, and their magnitudes are used to construct a convex quadratic power-smoothing objective. The receding-horizon framework updates launch decisions as new workload information becomes available while maintaining scheduling feasibility under limited computation time. Numerical results demonstrate reductions of 74.39\\% in mean-square power fluctuations within the 0.2--2-Hz band and 46.6\\% in power standard deviation, with an average launch delay of 2.188~s. All launch deadlines are satisfied, and the maximum end-to-end computation time is 0.390~s, below the 0.50-s MPC update period.",
-   "authors": [
-    {
-     "name": "Jie Zhu",
-     "affiliations": []
-    },
-    {
-     "name": "Ye Tian",
-     "affiliations": []
-    },
-    {
-     "name": "Yinliang Xu",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SY"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-10-27",
-   "url": "https://arxiv.org/abs/2610.36441",
-   "matched_terms": [
-    "ai training"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Phase-Coordinated Model Predictive Control for AI Training Power Smoothing Thanks: This work was supported by the National Key Research and Development Program under Grant 2024YFB4206500. Jie Zhu, Ye Tian, and Yinliang Xu* Affiliation: Shenzhen International Graduate School Tsinghua University Shenzhen, China zhuj24@mails.tsinghua.edu.cn, tiany25@mails.tsinghua.edu.cn, xu.yinliang@sz.tsinghua.edu.cn Affiliation: Abstract Periodic power fluctuations from artificial intelligence (AI) training workloads can excite oscillations in power systems. This paper proposes a model predictive control (MPC) framework that exploits short start-time delays to mitigate power fluctuations at the computing source. By coordinating the relative phases of independent training jobs, the proposed method reduces the superposition of oscillatory power components without interrupting running jobs or requiring additional power-smoothing hardware. To obtain a tractable optimization formulation, cosine and sine projections are employed to quantify the dominant oscillatory power components, and their magnitudes are used to construct a convex quadratic power-smoothing objective. The receding-horizon framework updates launch decisions as new workload information becomes available while maintaining scheduling feasibility under limited computation time. Numerical results demonstrate reductions of 74.39% in mean-square power fluctuations within the 0.2–2-Hz band and 46.6% in power standard deviation, with an average launch delay of 2.188 s. All launch deadlines are satisfied, and the maximum end-to-end computation time is 0.390 s, below the 0.50-s MPC update period. Index Terms: AI workloads, data centers, model predictive control, power smoothing, start-time scheduling."
-  },
-  {
-   "key": "doi:10.1038/s41467-026-78533-6",
-   "source": "journal",
-   "journal": "Nature Communications",
-   "journal_short": "Nature Communications",
-   "doi": "10.1038/s41467-026-78533-6",
-   "title": "Multiproperty optimization of therapeutic antibodies through sequence editing via large language model and reinforcement learning",
-   "abstract": "Discovering antibodies with multiple beneficial properties is essential for therapeutic drug development, but experimentally identified antibodies require further optimization. Joint optimization remains challenging because sequence space is vast, annotations are sparse and property tradeoffs are common. Herein, we propose AbOptimizer, a reinforcement learning framework for multiproperty antibody optimization through parallel multisite sequence editing. AbOptimizer identifies promising editing sites and edit actions, including ‘reservation’, ‘substitution’ and optional ‘insertion’ or ‘deletion’, before recommending mutations from protein language models, while surrogate evaluation and Pareto rewards shape policy training. We evaluate AbOptimizer on three therapeutic antibodies across multiproperty, data-limited and indel-inclusive optimization. In silico, AbOptimizer improves optimized properties and outperforms baseline methods. In vitro, selected variants show affinity-specificity co-optimization for emibetuzumab, improved affinity and specificity with largely maintained thermal stability for siltuximab, and indel-inclusive affinity optimization for trastuzumab. These results validate AbOptimizer as a practical framework for therapeutic antibody optimization. This study presents AbOptimizer, a computational framework that edits antibody sequences to improve multiple therapeutic properties. Tests on three antibodies show improved affinity, specificity and stability-related profiles.",
-   "abstract_source": "openalex",
-   "authors": [
-    {
-     "name": "Minyao Qiu",
-     "affiliations": [
-      "Huazhong Agricultural University"
-     ]
-    },
-    {
-     "name": "Zhiwei Wang",
-     "affiliations": [
-      "Huazhong Agricultural University"
-     ]
-    },
-    {
-     "name": "Xuan Liu",
-     "affiliations": [
-      "Huazhong Agricultural University"
-     ]
-    },
-    {
-     "name": "Hongzhun Wang",
-     "affiliations": [
-      "Huazhong Agricultural University"
-     ]
-    },
-    {
-     "name": "华权高",
-     "affiliations": [
-      "Wuhan Donghu University"
-     ]
-    },
-    {
-     "name": "Qin Shu",
-     "affiliations": [
-      "Wuhan Donghu University"
-     ]
-    },
-    {
-     "name": "Shaoxiang Luo",
-     "affiliations": [
-      "Wuhan Donghu University"
-     ]
-    },
-    {
-     "name": "Mengxi Niu",
-     "affiliations": [
-      "Wuhan Donghu University"
-     ]
-    },
-    {
-     "name": "Feng Ma",
-     "affiliations": [
-      "Wuhan Donghu University"
-     ]
-    },
-    {
-     "name": "Feng F. Huang",
-     "affiliations": [
-      "Huazhong Agricultural University"
-     ]
-    },
-    {
-     "name": "Yongkang Wang",
-     "affiliations": [
-      "Huazhong Agricultural University"
-     ]
-    },
-    {
-     "name": "Zhankun Xiong",
-     "affiliations": [
-      "Huazhong Agricultural University"
-     ]
-    },
-    {
-     "name": "Wen Zhang",
-     "affiliations": [
-      "Huazhong Agricultural University"
-     ]
-    }
-   ],
-   "type": "journal-article",
-   "date": "2026-10-26",
-   "url": "https://doi.org/10.1038/s41467-026-78533-6",
-   "matched_terms": [
-    "large language model"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_source": "openalex"
-  }
- ],
- "title_only_final": [
-  {
-   "source": "TSG",
-   "title": "Coordinated State Estimation of Integrated Electricity and Heating System Based on Thermal Circuit Method for Variable Mass Flow",
-   "url": "https://doi.org/10.1109/tsg.2026.3745745"
-  },
-  {
-   "source": "TSG",
-   "title": "Secure Distributed Control of Wind Turbine Systems: A Smooth State Recovery and Active Boundary Expansion Performance Approach",
-   "url": "https://doi.org/10.1109/tsg.2026.3745774"
-  },
-  {
-   "source": "TSG",
-   "title": "Resilient Data-Driven LFC With Event-Triggering for Power Systems Against DoS Attacks",
-   "url": "https://doi.org/10.1109/tsg.2026.3745620"
-  },
-  {
-   "source": "TSG",
-   "title": "Interpretable Failure Rate Prediction for Grouped Smart Meters using Bayesian Network–enhanced Survival Modeling",
-   "url": "https://doi.org/10.1109/tsg.2026.3745893"
-  },
-  {
-   "source": "TPWRS",
-   "title": "IEEE Power & Energy Society Publication Information",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3741435"
-  },
-  {
-   "source": "TPWRS",
-   "title": "Blank Page",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3741439"
-  },
-  {
-   "source": "TPWRS",
-   "title": "IEEE Transactions on Power Systems Information for Authors",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3741437"
-  },
-  {
-   "source": "TPWRS",
-   "title": "Table of Contents",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3741433"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Energy management of pumped thermal electricity storage: a framework integrating a rule-based expert system with robust data-driven control",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129115"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Coopetition and coordination mechanisms between energy and peak-shaving benefits in giant cascade hydropower systems: From mechanism identification to operational application",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129126"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Optimizing biochar quality and economics across feedstocks and pyrolysis temperatures in a 50,000 t/year carbonization demonstration",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129089"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Static reconfiguration techniques for PV under the corn canopy with deep reinforcement learning",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129144"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "From atomic structure to catalytic function: Morphology engineering of MXene for Electrocatalytic energy conversion",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129145"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Synthesis of ammonia and its application in the sustainable steel process: A review",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129154"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Topology and evolution of global transcriptional regulatory networks across the Klebsiella pneumoniae pan-genome",
-   "url": "https://doi.org/10.1038/s41467-026-78154-z"
-  }
- ],
+ "candidates": [],
+ "title_only_final": [],
  "pending_items": [
   {
    "source": "TSG",
@@ -582,12 +281,6 @@
   },
   {
    "source": "Applied Energy",
-   "title": "Adaptive dynamic planning method for electric vehicle charging stations considering active interaction with EV growth",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129084",
-   "first_seen": "2026-10-27"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Accurate remaining useful life prediction of lithium-ion batteries via capacity curve modeling with attention fusion learning framework",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129061",
    "first_seen": "2026-10-27"
@@ -606,12 +299,6 @@
   },
   {
    "source": "Applied Energy",
-   "title": "Optimisation of a grid-connected electrolyser: time-ahead dispatch and energy portfolio planning",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129153",
-   "first_seen": "2026-10-27"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Risk-averse quantal response equilibrium based optimal bidding strategy of battery energy storage systems in the double-sided auction market",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129088",
    "first_seen": "2026-10-27"
@@ -623,63 +310,9 @@
    "first_seen": "2026-10-27"
   },
   {
-   "source": "Nature Communications",
-   "title": "Declining spring production in the Barents Sea ice zone under climate forcing",
-   "url": "https://doi.org/10.1038/s41467-026-79272-4",
-   "first_seen": "2026-10-27"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "DEGS1-mTORC1-driven lipid metabolic reprogramming fuels rhabdomyosarcoma progression and unveils a therapeutic vulnerability",
-   "url": "https://doi.org/10.1038/s41467-026-79206-0",
-   "first_seen": "2026-10-27"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Nascent RNA-mediated recruitment and R-loop suppression underlie FUS-driven enhancement of transcription",
-   "url": "https://doi.org/10.1038/s41467-026-78861-7",
-   "first_seen": "2026-10-27"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "scBOA: Bayesian optimization of single-cell analysis pipelines for robust annotation and discovery",
-   "url": "https://doi.org/10.1038/s41467-026-78718-z",
-   "first_seen": "2026-10-27"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Omnidirectional photonic chiral flatband in nonlocal membrane metasurfaces",
-   "url": "https://doi.org/10.1038/s41467-026-79056-w",
-   "first_seen": "2026-10-27"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Marine heat waves in vulnerable coral reef regions are skillfully predictable on multi-year timescales",
-   "url": "https://doi.org/10.1038/s41467-026-78279-1",
-   "first_seen": "2026-10-27"
-  },
-  {
    "source": "TSG",
    "title": "Direct-to-Satellite UAV Nest Siting Strategy for Coordinated Routine Inspection and Emergency Response of Distribution Networks",
    "url": "https://doi.org/10.1109/tsg.2026.3747784",
-   "first_seen": "2026-10-28"
-  },
-  {
-   "source": "TPWRS",
-   "title": "A Gradient-Based Capacity Accreditation Framework in Resource Adequacy: Formulation, Computation, and Practical Implications",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3747887",
-   "first_seen": "2026-10-28"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Electrochemical impedance spectroscopy for proton exchange membrane fuel cells: From implementation to application",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129127",
-   "first_seen": "2026-10-28"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "The benefits of concentrating solar hybrid systems: A unified benchmarking framework",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129093",
    "first_seen": "2026-10-28"
   },
   {
@@ -690,50 +323,14 @@
   },
   {
    "source": "Nature Communications",
-   "title": "Inflammatory memory primes the intestine for enhanced regenerative potential",
-   "url": "https://doi.org/10.1038/s41467-026-79014-6",
-   "first_seen": "2026-10-28"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Dynorphin counteracts excitatory co-transmission in a lateral hypothalamus–locus coeruleus circuit underlying stress-induced anxiety",
-   "url": "https://doi.org/10.1038/s41467-026-78989-6",
-   "first_seen": "2026-10-28"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Ventral CA1 perineuronal nets modulate morphine-associated contextual memory via vCA1–NAcC synaptic remodeling in male mice",
-   "url": "https://doi.org/10.1038/s41467-026-79300-3",
-   "first_seen": "2026-10-28"
-  },
-  {
-   "source": "Nature Communications",
    "title": "Enantioselective cobalt-catalyzed intermolecular [3+2] cycloaddition of cyclopropenes with terminal alkynes to access chiral cyclopentadienes",
    "url": "https://doi.org/10.1038/s41467-026-78714-3",
    "first_seen": "2026-10-28"
   },
   {
    "source": "Nature Communications",
-   "title": "Facet engineering enables efficient H2O2 piezo-synthesis and self-activation for decentralized water purification",
-   "url": "https://doi.org/10.1038/s41467-026-78931-w",
-   "first_seen": "2026-10-28"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Author Correction: Generation and characterization of neutralizing antibodies against M1R and B6R proteins of monkeypox virus",
-   "url": "https://doi.org/10.1038/s41467-026-79110-7",
-   "first_seen": "2026-10-28"
-  },
-  {
-   "source": "Nature Communications",
    "title": "Genetic mechanisms underlying the associations between brain structure and mental health",
    "url": "https://doi.org/10.1038/s41467-026-79115-2",
-   "first_seen": "2026-10-28"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Orbital engineering of asymmetric Cu sites in MOFs for fenton reaction towards atomic surface manufacturing",
-   "url": "https://doi.org/10.1038/s41467-026-79001-x",
    "first_seen": "2026-10-28"
   },
   {
@@ -753,10 +350,196 @@
    "title": "Computational modeling and preclinical evaluation support targeting somatic instability for Huntington’s disease treatment",
    "url": "https://doi.org/10.1038/s41467-026-78769-2",
    "first_seen": "2026-10-28"
+  },
+  {
+   "source": "TPWRS",
+   "title": "2026 Index IEEE Transactions on Power Systems",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3747672",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Solar-driven cogeneration of electricity and water vapor via photovoltaic-enabled contactless evaporation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129147",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "A scenario-based risk control framework for medium-term dispatch of hydro-wind-solar hybrid systems under consecutive multi-day extreme events",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129163",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Adaptive decision-making model predictive control for multi-objective optimal energy management of hybrid ships",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129159",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "A city-scale modelling framework for equitable EV charging station planning using the comprehensive charging duration metric",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128953",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Terrain-aware end-to-end deep learning for temporally flexible rooftop photovoltaic potential assessment",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128986",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Energy",
+   "title": "Translating sulfur flow batteries into deployable systems",
+   "url": "https://doi.org/10.1038/s41560-026-02152-0",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Energy",
+   "title": "Perovskite lattice compliance enables efficient and stable bifacial perovskite/silicon tandem photovoltaics",
+   "url": "https://doi.org/10.1038/s41560-026-02162-y",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Energy",
+   "title": "Chemical-linkage-regulated single-phase crystallization and uniform gallium alloying for efficient solution-processed chalcopyrite solar cells",
+   "url": "https://doi.org/10.1038/s41560-026-02157-9",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Lipid stoichiometry and biomarkers reflect microbial acclimation and nutrient stress across the Atlantic Ocean",
+   "url": "https://doi.org/10.1038/s41467-026-79011-9",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Nonlinear responses induced by inhomogeneous edge states in a centrosymmetric topological insulator",
+   "url": "https://doi.org/10.1038/s41467-026-78979-8",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "The integrated environmental zoning-based regulation further enhances sustainable development in China",
+   "url": "https://doi.org/10.1038/s41467-026-78846-6",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Updated global estimates of carbon burial in seagrass sediments",
+   "url": "https://doi.org/10.1038/s41467-026-79150-z",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Genetic integration reveals causal effects of chromatin accessibility on nucleosome positioning across diverse muscle cells",
+   "url": "https://doi.org/10.1038/s41467-026-78760-x",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Long-read sequencing reveals telomere inheritance patterns from human trios",
+   "url": "https://doi.org/10.1038/s41467-026-78944-5",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Lipidated macrocyclic peptide S-880008 inhibits SARS-CoV-2 fusion by suppressing protomer dissociation at conserved spike sites",
+   "url": "https://doi.org/10.1038/s41467-026-79042-2",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Serine supplementation reinvigorates anti-tumor immunity by counteracting tumor cell SLC1A4-induced T cell starvation",
+   "url": "https://doi.org/10.1038/s41467-026-78913-y",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Glacial CO2 drawdown by plankton metabolic balance",
+   "url": "https://doi.org/10.1038/s41467-026-78422-y",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Stabilization of insulin receptor mRNA by Star-PAP in metabolic homeostasis",
+   "url": "https://doi.org/10.1038/s41467-026-78465-1",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Proximity labeling of the Listeria monocytogenes surface reveals pathogen control of a host deubiquitinase",
+   "url": "https://doi.org/10.1038/s41467-026-79162-9",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A training-free, domain-extensible LLM-based approach for automated extraction of standardized preparation procedures",
+   "url": "https://doi.org/10.1038/s41467-026-78605-7",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Viral tRNA-like structure hijacks host ribosomes for poly(A)-independent translation",
+   "url": "https://doi.org/10.1038/s41467-026-78898-8",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Probing spin order via magnon transmission across quantum Hall ferromagnet heterojunctions",
+   "url": "https://doi.org/10.1038/s41467-026-79281-3",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "The accuracy-safety trade-off of large reasoning models in clinical diagnostics",
+   "url": "https://doi.org/10.1038/s41467-026-78520-x",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Cryo-EM reveals major proteolysis independent substrate rearrangements in a complement C5 convertase surrogate complex(es)",
+   "url": "https://doi.org/10.1038/s41467-026-78941-8",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Tree shrew more closely recapitulates primate spermatogenesis than the mouse in cross-species single-cell transcriptomic analyses",
+   "url": "https://doi.org/10.1038/s41467-026-77781-w",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Darutigenol ameliorates experimental colitis via promoting Akkermansia muciniphila-mediated proline synthesis",
+   "url": "https://doi.org/10.1038/s41467-026-78308-z",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Local albumin excess exacerbates Candida albicans-induced inflammasome activation linked with hyperinflammation during vulvovaginal candidiasis",
+   "url": "https://doi.org/10.1038/s41467-026-78761-w",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Global arable land redistribution toward the tropics and drylands under human settlement expansion",
+   "url": "https://doi.org/10.1038/s41467-026-79126-z",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Aberrant thymic architecture and enhanced interferon signaling in Down syndrome",
+   "url": "https://doi.org/10.1038/s41467-026-78824-y",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Deuteration of arenes in D2O exclusively driven by single-atom Pt sites under visible light",
+   "url": "https://doi.org/10.1038/s41467-026-79132-1",
+   "first_seen": "2026-10-29"
   }
  ],
- "pending_abstract": 60,
+ "pending_abstract": 74,
  "runs_utc": [
-  "2026-10-28T11:12:43+00:00"
+  "2026-10-29T11:25:30+00:00"
  ]
 }
