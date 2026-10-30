@@ -1,45 +1,45 @@
 {
- "date": "2026-10-29",
- "generated_utc": "2026-10-29T11:25:30+00:00",
+ "date": "2026-10-30",
+ "generated_utc": "2026-10-30T11:17:32+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-10-25",
-   "2026-10-29"
+   "2026-10-26",
+   "2026-10-30"
   ],
   "journal_doi_created": [
-   "2026-10-23",
-   "2026-10-29"
+   "2026-10-24",
+   "2026-10-30"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-   "in_window": 72,
-   "new": 0,
-   "candidates": 0
+   "in_window": 120,
+   "new": 64,
+   "candidates": 4
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-   "in_window": 42,
-   "new": 0,
-   "candidates": 0
+   "in_window": 66,
+   "new": 36,
+   "candidates": 5
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-   "in_window": 68,
-   "new": 0,
-   "candidates": 0
+   "in_window": 102,
+   "new": 52,
+   "candidates": 3
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-   "in_window": 12,
-   "new": 0,
+   "in_window": 8,
+   "new": 3,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -47,8 +47,8 @@
    "source": "TPWRS",
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
-   "in_window": 4,
-   "new": 1,
+   "in_window": 12,
+   "new": 9,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -56,8 +56,8 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 39,
-   "new": 5,
+   "in_window": 36,
+   "new": 7,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -65,32 +65,687 @@
    "source": "Nature Energy",
    "journal": "Nature Energy",
    "status": "ok",
-   "in_window": 4,
-   "new": 3,
-   "candidates": 0,
-   "new_with_abstract": 0
+   "in_window": 9,
+   "new": 5,
+   "candidates": 1,
+   "new_with_abstract": 1
   },
   {
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 184,
-   "new": 37,
+   "in_window": 178,
+   "new": 29,
    "candidates": 0,
-   "new_with_abstract": 15
+   "new_with_abstract": 9
   },
   {
    "source": "Nature Rev. EE",
    "journal": "Nature Reviews Electrical Engineering",
    "status": "ok",
    "in_window": 1,
-   "new": 0,
+   "new": 1,
    "candidates": 0,
    "new_with_abstract": 0
   }
  ],
  "errors": [],
- "candidates": [],
+ "candidates": [
+  {
+   "key": "arxiv:2610.40494",
+   "source": "arXiv",
+   "id": "2610.40494",
+   "title": "AI in the EGI e-infrastructure -- Past experiences and future strategies",
+   "abstract": "The EGI Federation has provided federated e-infrastructure services to European and global science for over 15 years. We review EGI's early experiences with AI in the interTwin and iMagine Horizon Europe projects, which built digital twins in physics and environmental sciences and an image-analysis platform for aquatic research. We then examine how the AI landscape has changed since 2023 and argue that the focus of AI in science has shifted from model training to adapting and applying AI to specific domains, projects and questions. Building on these lessons, we present the AI strategy emerging from the EGI Federation Strategy 2026-2030, organised around three enablers: (1) an AI-ready infrastructure connecting compute, data and application resources across the continuum; (2) human skills to know what is possible with AI and how to implement it; and (3) trust, to run AI with confidence even in high-risk environments. We describe the projects implementing each enabler, including federated LLM inference, AI-ready data platforms and AI competence centres, and discuss a division of labour with EuroHPC's AI Factories, RAISE, research infrastructures and EOSC, in which EGI specialises in the customisation and long-term operation of AI for research.",
+   "authors": [
+    {
+     "name": "Gergely Sipos",
+     "affiliations": []
+    },
+    {
+     "name": "Sergio Andreozzi",
+     "affiliations": []
+    },
+    {
+     "name": "Marco Rorro",
+     "affiliations": []
+    },
+    {
+     "name": "Andrea Manzi",
+     "affiliations": []
+    },
+    {
+     "name": "Tiziana Ferrari",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.AI",
+    "cs.CY"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-29",
+   "url": "https://arxiv.org/abs/2610.40494",
+   "matched_terms": [
+    "ai factories"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "AI in the EGI e-infrastructure – Past experiences and future strategies \\firstname Gergely \\lastname Sipos \\fnsep † † thanks: Email: gergely.sipos@egi.eu Affiliation: EGI Foundation, 1098 XG Amsterdam, The Netherlands \\firstname Sergio \\lastname Andreozzi Affiliation: EGI Foundation, 1098 XG Amsterdam, The Netherlands \\firstname Marco \\lastname Rorro Affiliation: EGI Foundation, 1098 XG Amsterdam, The Netherlands \\firstname Andrea \\lastname Manzi Affiliation: EGI Foundation, 1098 XG Amsterdam, The Netherlands \\firstname Tiziana \\lastname Ferrari Affiliation: EGI Foundation, 1098 XG Amsterdam, The Netherlands Abstract The EGI Federation has provided federated e-infrastructure services to European and global science for over 15 years. We review EGI’s early experiences with AI in the interTwin and iMagine Horizon Europe projects, which built digital twins in physics and environmental sciences and an image-analysis platform for aquatic research. We then examine how the AI landscape has changed since 2023 and argue that the focus of AI in science has shifted from model training to adapting and applying AI to specific domains, projects and questions. Building on these lessons, we present the AI strategy emerging from the EGI Federation Strategy 2026–2030, organised around three enablers: (1) an AI-ready infrastructure connecting compute, data and application resources across the continuum; (2) human skills to know what is possible with AI and how to implement it; and (3) trust, to run AI with confidence even in high-risk environments. We describe the projects implementing each enabler, including federated LLM inference, AI-ready data platforms and AI competence centres, and discuss a division of labour with EuroHPC’s AI Factories, RAISE, research infrastructures and EOSC, in which EGI specialises in the customisation and long-term operation of AI for research."
+  },
+  {
+   "key": "arxiv:2610.40493",
+   "source": "arXiv",
+   "id": "2610.40493",
+   "title": "SPECTRUM: A Strategic Framework and Technical Blueprint for European Exascale Research Data and Compute Infrastructure",
+   "abstract": "The HiLumi LHC, the SKA Observatory and LOFAR 2.0 will take High Energy Physics (HEP) and Radio Astronomy (RA) towards exabyte-scale data within the next decade, beyond the capacity of today's infrastructure. The SPECTRUM project responded with two documents built on the same evidence. A Technical Blueprint describes a European compute and data continuum as a capability map, consolidates the gaps found in HEP, RA and related use cases, and recommends technical actions in eight areas. A Strategic Research, Innovation and Deployment Agenda (SRIDA) organises thirteen priorities in four pillars, maps them to investment areas and European funding instruments, and phases them over a roadmap set against the timelines of the three instruments. This paper, by editors and contributors of both documents, summarises them, their consultative method and the impact the SRIDA expects.",
+   "authors": [
+    {
+     "name": "Sergio Andreozzi",
+     "affiliations": []
+    },
+    {
+     "name": "Stefano Bagnasco",
+     "affiliations": []
+    },
+    {
+     "name": "Florian Berberich",
+     "affiliations": []
+    },
+    {
+     "name": "Tommaso Boccali",
+     "affiliations": []
+    },
+    {
+     "name": "Concezio Bozzi",
+     "affiliations": []
+    },
+    {
+     "name": "Luis Cifuentes",
+     "affiliations": []
+    },
+    {
+     "name": "Luca dell'Agnello",
+     "affiliations": []
+    },
+    {
+     "name": "Amaël Ellien",
+     "affiliations": []
+    },
+    {
+     "name": "Chiara Ferrari",
+     "affiliations": []
+    },
+    {
+     "name": "Luciano Gaido",
+     "affiliations": []
+    },
+    {
+     "name": "Maria Girone",
+     "affiliations": []
+    },
+    {
+     "name": "Hanno Holties",
+     "affiliations": []
+    },
+    {
+     "name": "Hans-Christian Hoppe",
+     "affiliations": []
+    },
+    {
+     "name": "Valentin Jay Blanchard",
+     "affiliations": []
+    },
+    {
+     "name": "Corentin Lefevre",
+     "affiliations": []
+    },
+    {
+     "name": "Kristen Lutz",
+     "affiliations": []
+    },
+    {
+     "name": "Andrea Manzi",
+     "affiliations": []
+    },
+    {
+     "name": "Shan Mignot",
+     "affiliations": []
+    },
+    {
+     "name": "Raymond Oonk",
+     "affiliations": []
+    },
+    {
+     "name": "Xavier Salazar Forn",
+     "affiliations": []
+    },
+    {
+     "name": "David Southwick",
+     "affiliations": []
+    },
+    {
+     "name": "John Swinbank",
+     "affiliations": []
+    },
+    {
+     "name": "Jeff Wagg",
+     "affiliations": []
+    },
+    {
+     "name": "Eric Wulff",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "astro-ph.IM"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-29",
+   "url": "https://arxiv.org/abs/2610.40493",
+   "matched_terms": [
+    "compute infrastructure"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "SPECTRUM: A Strategic Framework and Technical Blueprint for European Exascale Research Data and Compute Infrastructure \\firstname Sergio \\lastname Andreozzi \\fnsep † † thanks: Email: sergio.andreozzi@egi.eu Affiliation: EGI Foundation, Amsterdam, Netherlands \\firstname Stefano \\lastname Bagnasco Affiliation: INFN Sezione di Torino, Torino, Italy \\firstname Florian \\lastname Berberich Affiliation: Forschungszentrum Jülich, Jülich Supercomputing Centre, Jülich, Germany \\firstname Tommaso \\lastname Boccali Affiliation: INFN Sezione di Pisa, Pisa, Italy \\firstname Concezio \\lastname Bozzi Affiliation: INFN Sezione di Ferrara, Ferrara, Italy \\firstname Luis \\lastname Cifuentes Affiliation: Forschungszentrum Jülich, Jülich Supercomputing Centre, Jülich, Germany \\firstname Luca \\lastname dell’Agnello Affiliation: INFN CNAF, Bologna, Italy \\firstname Amaël \\lastname Ellien Affiliation: Observatoire de la Côte d’Azur, Université Côte d’Azur, CNRS, Nice, France \\firstname Chiara \\lastname Ferrari Affiliation: Observatoire de la Côte d’Azur, Université Côte d’Azur, CNRS, Nice, France \\firstname Luciano \\lastname Gaido Affiliation: INFN Sezione di Torino, Torino, Italy \\firstname Maria \\lastname Girone Affiliation: CERN, Geneva, Switzerland \\firstname Hanno \\lastname Holties Affiliation: ASTRON, Netherlands Institute for Radio Astronomy, Dwingeloo, Netherlands \\firstname Hans-Christian \\lastname Hoppe Affiliation: Forschungszentrum Jülich, Jülich Supercomputing Centre, Jülich, Germany \\firstname Valentin \\lastname Jay Blanchard Affiliation: NEOVIA Innovation, Paris, France \\firstname Corentin \\lastname Lefevre Affiliation: NEOVIA Innovation, Paris, France \\firstname Kristen \\lastname Lutz Affiliation: SURF B.V., Utrecht, Netherlands \\firstname Andrea \\lastname Manzi Affiliation: EGI Foundation, Amsterdam, Netherlands \\firstname Shan \\lastname Mignot Affiliation: Observatoire de la Côte d’Azur, Université Côte d’Azur, CNRS, Nice, France \\firstname Raymond \\lastname Oonk Affiliation: SURF B.V., Utrecht, Netherlands \\firstname Xavier \\lastname Salazar Forn Affiliation: EGI Foundation, Amsterdam, Netherlands \\firstname David \\lastname Southwick Affiliation: CERN, Geneva, Switzerland \\firstname John \\lastname Swinbank Affiliation: ASTRON, Netherlands Institute for Radio Astronomy, Dwingeloo, Netherlands \\firstname Jeff \\lastname Wagg Affiliation: Observatoire de la Côte d’Azur, Université Côte d’Azur, CNRS, Nice, France \\firstname Eric \\lastname Wulff Affiliation: CERN, Ge"
+  },
+  {
+   "key": "arxiv:2610.40306",
+   "source": "arXiv",
+   "id": "2610.40306",
+   "title": "True 3D Holography: A Communication Service of Tomorrow and Its Requirements for a New Converged Cloud and Network Architecture on the Path to 6G",
+   "abstract": "Research project 6G NeXt is considering true 3D holography as a use case, setting requirements on the communication as well as the computing infrastructure. In a future holographic communication service, clients are widely spread in the network and cooperatively interact with each other. Especially for holographic communication high processing power is required as well. This makes a high-speed distributed backbone computing infrastructure, which realizes the concept of split computing, inevitable. Furthermore, tight integration between processing facilities and wireless networks is required in order to provide an immersive user experience. This paper illustrates true 3D holographic communication and its requirements. Afterward, an appropriate solution approach is elaborated. Here, novel technological approaches are discussed based on a proposed overall communication and computing architecture.",
+   "authors": [
+    {
+     "name": "Ingo Friese",
+     "affiliations": []
+    },
+    {
+     "name": "Mandy Galkow-Schneider",
+     "affiliations": []
+    },
+    {
+     "name": "Louay Bassbouss",
+     "affiliations": []
+    },
+    {
+     "name": "Alexander Zoubarev",
+     "affiliations": []
+    },
+    {
+     "name": "Andy Neparidze",
+     "affiliations": []
+    },
+    {
+     "name": "Sergiy Melnyk",
+     "affiliations": []
+    },
+    {
+     "name": "Qiuheng Zhou",
+     "affiliations": []
+    },
+    {
+     "name": "Hans D. Schotten",
+     "affiliations": []
+    },
+    {
+     "name": "Tobias Pfandzelter",
+     "affiliations": []
+    },
+    {
+     "name": "David Bermbach",
+     "affiliations": []
+    },
+    {
+     "name": "Arndt Kritzner",
+     "affiliations": []
+    },
+    {
+     "name": "Enrico Zschau",
+     "affiliations": []
+    },
+    {
+     "name": "Prasenjit Dhara",
+     "affiliations": []
+    },
+    {
+     "name": "Steve Göring",
+     "affiliations": []
+    },
+    {
+     "name": "William Menz",
+     "affiliations": []
+    },
+    {
+     "name": "Alexander Raake",
+     "affiliations": []
+    },
+    {
+     "name": "Wolfgang Rüther-Kindel",
+     "affiliations": []
+    },
+    {
+     "name": "Fabian Quaeck",
+     "affiliations": []
+    },
+    {
+     "name": "Nick Stuckert",
+     "affiliations": []
+    },
+    {
+     "name": "Robert Vilter",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.NI",
+    "cs.DC",
+    "eess.SP"
+   ],
+   "primary_category": "cs.NI",
+   "date": "2026-10-29",
+   "url": "https://arxiv.org/abs/2610.40306",
+   "matched_terms": [
+    "computing infrastructure"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "True 3D Holography: A Communication Service of Tomorrow and Its Requirements for a New Converged Cloud and Network Architecture on the Path to 6G Ingo Friese 1 , Mandy Galkow-Schneider 1 , Louay Bassbouss 2 , Alexander Zoubarev 2 , Andy Neparidze 2 , Sergiy Melnyk 3 , Qiuheng Zhou 3 , Hans D. Schotten 3 4 , Tobias Pfandzelter 5 , David Bermbach 5 , Arndt Kritzner 6 , Enrico Zschau 7 , Prasenjit Dhara 8 , Steve Göring 8 , William Menz 8 , Alexander Raake 8 , Wolfgang Rüther-Kindel 9 , Fabian Quaeck 9 , Nick Stuckert 9 , Robert Vilter 9 Affiliation: 1 Deutsche Telekom AG, Berlin, Germany Email: {ingo.friese, mandy.galkow-schneider}@telekom.de Affiliation: 2 Fraunhofer FOKUS, Berlin, Germany Email: {louay.bassbouss, alexander.zoubarev, andy.neparidze}@fokus.fraunhofer.de Affiliation: 3 Intelligent Networks, German Research Center for Artificial Intelligence (DFKI GmbH), Kaiserslautern, Germany Email: {sergiy.melnyk, qiuheng.zhou, hans_dieter.schotten}@dfki.de Affiliation: 4 Institute for Wireless Communication and Navigation, University of Kaiserslautern-Landau, Kaiserslautern, Germany Email: schotten@rptu.de Affiliation: 5 Mobile Cloud Computing Group, Technische Universität Berlin & ECDF, Berlin, Germany Email: {tp, db}@mcc.tu-berlin.de Affiliation: 6 Logic Way GmbH, Schwerin, Germany Email: kritzner@logicway.de Affiliation: 7 SeeReal Technologies GmbH, Dresden, Germany Email: ez@seereal.com Affiliation: 8 Audiovisual Technology Group, Technische Universität Ilmenau, Ilmenau, Germany Email: {prasenjit.dhara, steve.goering, william.menz, alexander.raake}@tu-ilmenau.de Affiliation: 9 Aviation Engineering Group, Technical University of Applied Sciences Wildau, Wildau, Germany Email: {wkindel, quaeck, stuckert, vilter}@th-wildau.de Abstract Research project 6G NeXt is considering true 3D holography as a use case, setting requirements on the communication as well as the computing infrastructure. In a future holographic communication service, clients are widely spread in the network and cooperatively interact with each other. Especially for holographic communication high processing power is required as well. This makes a high-speed distributed backbone computing infrastructure, which realizes the concept of split computing, inevitable. Furthermore, tight integration between processing facilities and wireless networks is required in order to provide an immersive user experience. This paper illustrates true 3D holographic communication and its requirements. Afterwa"
+  },
+  {
+   "key": "arxiv:2610.40287",
+   "source": "arXiv",
+   "id": "2610.40287",
+   "title": "Only Accepted Tokens Count: An Energy Accounting of Speculative Decoding Under Latency Targets",
+   "abstract": "Large language model serving is limited by facility power. Energy per token determines how many tokens a datacenter can serve, while a latency target bounds how quickly each user receives them. During decode, every weight is read from memory for every generated token. Batching amortizes this read across users but makes no individual user faster. Speculative decoding does: a drafter proposes several future tokens, and the target model verifies them in a single forward pass that reuses the same weight read. Because every drafted token must be verified whether or not it is accepted, the energy speculation saves depends on how many drafted tokens are accepted. This saving is hard to pin down. It varies across target models from different attention families and across drafting schemes, and it depends on the text being served. Every drafter we evaluate accepts fewer tokens on conversation than on code, and every trained drafter accepts fewer on Romansh, a low-resource language, than on English. We measure speculative decoding under production serving conditions (SGLang, CUDA graphs enabled) on H100 and H200 GPUs, at batch sizes up to 64 across 5 corpora. On dense models, verification, not drafting, dominates the energy cost. The saving shrinks as the batch grows, because batching has already shared the weight read that speculation would divide among the accepted tokens. At large batch sizes, block drafters push verification past the balance point between arithmetic and memory traffic into the compute-bound regime, where the saving becomes a loss, and a drafter with low acceptance raises energy per token. Meeting a tighter latency target with speculation then costs additional energy. Larger batches lower energy per token without speculation. Speculation adds to that saving only when acceptance is high, and on the model we tested it leaves little headroom for latency-preserving DVFS.",
+   "authors": [
+    {
+     "name": "Bole Ma",
+     "affiliations": []
+    },
+    {
+     "name": "Ayesha Afzal",
+     "affiliations": []
+    },
+    {
+     "name": "Jan Eitzinger",
+     "affiliations": []
+    },
+    {
+     "name": "Harald Koestler",
+     "affiliations": []
+    },
+    {
+     "name": "Gerhard Wellein",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.AI",
+    "cs.LG",
+    "cs.PF"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-10-29",
+   "url": "https://arxiv.org/abs/2610.40287",
+   "matched_terms": [
+    "datacenter"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Only Accepted Tokens Count: An Energy Accounting of Speculative Decoding Under Latency Targets Bole Ma Affiliation: Erlangen National High Performance Computing Center , Erlangen , Germany email: bole.ma@fau.de , Ayesha Afzal Affiliation: Erlangen National High Performance Computing Center , Erlangen , Germany email: ayesha.afzal@fau.de , Jan Eitzinger Affiliation: Erlangen National High Performance Computing Center , Erlangen , Germany email: jan.eitzinger@fau.de , Harald Koestler Affiliation: Erlangen National High Performance Computing Center , Erlangen , Germany email: harald.koestler@fau.de and Gerhard Wellein Affiliation: Erlangen National High Performance Computing Center , Erlangen , Germany email: gerhard.wellein@fau.de © none Abstract. Large language model serving is limited by facility power. Energy per token determines how many tokens a datacenter can serve, while a latency target bounds how quickly each user receives them. During decode, every weight is read from memory for every generated token. Batching amortizes this read across users but makes no individual user faster. Speculative decoding does: a drafter proposes several future tokens, and the target model verifies them in a single forward pass that reuses the same weight read. Because every drafted token must be verified whether or not it is accepted, the energy speculation saves depends on how many drafted tokens are accepted. This saving is hard to pin down. It varies across target models from different attention families and across drafting schemes, and it depends on the text being served. Every drafter we evaluate accepts fewer tokens on conversation than on code, and every trained drafter accepts fewer on Romansh, a low-resource language, than on English. We measure speculative decoding under production serving conditions (SGLang, CUDA graphs enabled) on H100 and H200 GPUs, at batch sizes up to 64 64 across 5 corpora. On dense models, verification, not drafting, dominates the energy cost. The saving shrinks as the batch grows, because batching has already shared the weight read that speculation would divide among the accepted tokens. At large batch sizes, block drafters push verification past the balance point between arithmetic and memory traffic into the compute-bound regime, where the saving becomes a loss, and a drafter with low acceptance raises energy per token. Meeting a tighter latency target with speculation then costs additional energy. Larger batches lower energy per tok"
+  },
+  {
+   "key": "arxiv:2610.39703",
+   "source": "arXiv",
+   "id": "2610.39703",
+   "title": "Computing with Coupled Oscillator Networks: Optimization, Memory, and Modern AI Primitives",
+   "abstract": "We explore how synchronization in coupled oscillator networks may be employed to perform a variety of computing tasks. These systems are becoming more attractive as an alternative to conventional digital computers due to the increasing energy demands of the latter, particularly for large-scale problems in machine learning and artificial intelligence. The ubiquity of coupled oscillator networks means that oscillator-based computing can be thought of as a universal computing paradigm encompassing systems with a diversity of physical realizations, e.g. as analog circuits, neurological systems, spintronic systems. The bridge between the dynamics of coupled oscillator networks and computational primitives they implement is the Ising model, which originates in statistical physics, and when applied to oscillator networks, explains the emergence of globally complex and disordered synchronization patterns from local interactions in the network. We discuss the application of coupled oscillator networks to three fundamental computing operations. First, oscillator networks as specialized hardware solvers of NP-hard combinatorial optimization problems, with the solution encoded in the synchrony patterns. Second, oscillator networks as associative memory systems, enabling storage and retrieval of data represented through phases of oscillations. Finally, oscillator networks as a dynamical implementation of attention, with synchronization providing the mechanism for the alignment of keys to queries. The ability of oscillator networks to implement these computational primitives paves the way for novel realizations of intelligent systems through a variety of physical substrates.",
+   "authors": [
+    {
+     "name": "Ahmed Allibhoy",
+     "affiliations": []
+    },
+    {
+     "name": "Fabio Pasqualetti",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY",
+    "cond-mat.dis-nn",
+    "nlin.AO"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-10-29",
+   "url": "https://arxiv.org/abs/2610.39703",
+   "matched_terms": [
+    "computing tasks"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Computing with Coupled Oscillator Networks: \\stitle Optimization, Memory, and Modern AI Primitives Journal: IEEE CONTROL SYSTEMS Ahmed Allibhoy Fabio Pasqualetti Affiliation: Department of Electrical Engineering and Computer Science University of California, Irvine. \\dois \\chapterinitial Synchronization of oscillations in networks of interacting components occurs in countless examples of systems in biology, physics, and engineering [ 1 , 2 , 3 ] . Often, synchronous oscillations play a crucial functional role in the settings they emerge from, e.g. carefully choreographed electrical activity of pacemaker cells in cardiac tissue regulates heart rhythm, and animal locomotion is driven by precisely timed phase differences in oscillating nerve cells that control gait (cf. [ 4 , 5 ] ). Though these phenomena are numerous and diverse, they are governed by a set of universal mathematical principles, which capture how patterns of synchrony arise from the complex interplay between the dynamics, local interactions, and network interconnection structure of the system. In this article, we show how these mathematical models also inform the design of oscillator-based computers. Specifically, by emulating neural oscillations underlying human cognition and learning, coupled oscillator networks can perform computing operations that form the basis of artificial intelligence models, eventually enabling the construction of efficient and intelligent devices. The hegemonic paradigm of computation today is digital, with information encoded through binary-valued variables (called bits ), and computation carried out by sequentially performing logical or arithmetic operations on them. Composing these operations in the correct manner, combined with the ability to store and retrieve digitally encoded data, allows digital computers to perform the extremely complex calculations necessary for the modern information age. Although the foundations for this approach were established as early as the 1940s, it nonetheless continues to be followed by nearly all modern-day computers. Two factors explain its persistence. First, the information encoding scheme and fundamental computational primitives are agnostic to hardware implementation . This provides for a theory of computing abstracted away from problems of physics and engineering, as well as the flexibility to translate digital computing architectures to new devices as better technology becomes available, e.g. with transistors and magnetic "
+  },
+  {
+   "key": "arxiv:2610.39380",
+   "source": "arXiv",
+   "id": "2610.39380",
+   "title": "Learning to Formulate: Agentic Hardware-Software Co-Design of AI Infrastructure through Progressive Optimization and Verification",
+   "abstract": "AI infrastructure, the chips and software that train and serve AI models, is designed in layers. Layers make the system manageable, but they also fix which choices an optimizer can consider. Gains that need the chip and its software to change together are excluded before optimization begins: the formulation leaves them out. Language-model agents make it possible to revisit these boundaries, but an agent's proposal cannot show by itself that a design is correct or optimal. We present Formulaic, a flow that divides the work. The agent writes the formulation, a mathematical solver optimizes within it, and verification and measurement check its assumptions and results. The agent refines the problem step by step, from the computation graph toward the chip. Each step is a template: a family of programs with the conditions under which they are correct. Wall relaxation searches the chip by pricing the hardware limits that bind the software. This paper takes a first step, through separate studies rather than one end-to-end run. On NVIDIA GB10, templates the agent wrote run complete Qwen3-8B layers $1.075\\times$ faster than SGLang. In a simulated Ventus GPU study, joint design cuts the worst-scenario cycles of Qwen2.5-0.5B to 0.428 of the reference, against 0.934 for software alone. On a five-step GEMM refinement chain, reusing proofs makes checking $2.51\\times$ faster.",
+   "authors": [
+    {
+     "name": "Yi Ding",
+     "affiliations": []
+    },
+    {
+     "name": "Li Shang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.AR",
+    "cs.AI",
+    "cs.DC"
+   ],
+   "primary_category": "cs.AR",
+   "date": "2026-10-29",
+   "url": "https://arxiv.org/abs/2610.39380",
+   "matched_terms": [
+    "ai infrastructure"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Learning to Formulate: Agentic Hardware–Software Co-Design of AI Infrastructure through Progressive Optimization and Verification Yi Ding Affiliation: Shenzhen Loop Area Institute (SLAI) Email: yiding@slai.edu.cn Li Shang Affiliation: National University of Singapore Email: li.shang@nus.edu.sg October 27, 2026 Abstract AI infrastructure, the chips and software that train and serve AI models, is designed in layers. Layers make the system manageable, but they also fix which choices an optimizer can consider. Gains that need the chip and its software to change together are excluded before optimization begins: the formulation leaves them out. Language-model agents make it possible to revisit these boundaries, but an agent’s proposal cannot show by itself that a design is correct or optimal. We present Formulaic, a flow that divides the work. The agent writes the formulation, a mathematical solver optimizes within it, and verification and measurement check its assumptions and results. The agent refines the problem step by step, from the computation graph toward the chip. Each step is a template: a family of programs with the conditions under which they are correct. Wall relaxation searches the chip by pricing the hardware limits that bind the software. This paper takes a first step, through separate studies rather than one end-to-end run. On NVIDIA GB10, templates the agent wrote run complete Qwen3-8B layers 1.075 × \\times faster than SGLang. In a simulated Ventus GPU study, joint design cuts the worst-scenario cycles of Qwen2.5-0.5B to 0.428 of the reference, against 0.934 for software alone. On a five-step GEMM refinement chain, reusing proofs makes checking 2.51 × \\times faster."
+  },
+  {
+   "key": "arxiv:2610.39254",
+   "source": "arXiv",
+   "id": "2610.39254",
+   "title": "Common Offset Gathers for Efficient Multistatic Beamforming in Frequency Domain",
+   "abstract": "Frequency-domain beamformers reconstruct ultrasound images with far fewer operations than delay-and-sum (DAS). However, for multistatic synthetic aperture data, they require Fourier transforms over the full transmit-receive aperture and large amounts of memory, limiting their use for volumetric imaging. Here, we adapt common offset gathers (COG) from seismic imaging to frequency-domain beamforming: transmit-receive pairs with the same offset are beamformed independently using a bistatic formulation, holding only one offset gather in memory at a time. We combine COG with the range-Doppler algorithm (RDA) and evaluate COG RDA against DAS and conventional multistatic RDA using simulated, phantom, and in vivo acquisitions. For linear arrays, COG RDA reduced memory requirements by two orders of magnitude relative to conventional RDA and beamformed up to 25x faster than DAS, with comparable image quality. For a 32x32-element matrix array, COG RDA requires only 2-D instead of 4-D Fourier transforms, and reconstructed a volume on a GPU 32x faster and with 67x less energy than DAS. COG RDA makes frequency-domain multistatic beamforming practical for matrix arrays and power-constrained devices.",
+   "authors": [
+    {
+     "name": "Marko Jakovljevic",
+     "affiliations": []
+    },
+    {
+     "name": "Xiaohong Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Ion Candel",
+     "affiliations": []
+    },
+    {
+     "name": "Anthony E. Samir",
+     "affiliations": []
+    },
+    {
+     "name": "Kai Thomenius",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "physics.med-ph",
+    "eess.SP"
+   ],
+   "primary_category": "physics.med-ph",
+   "date": "2026-10-29",
+   "url": "https://arxiv.org/abs/2610.39254",
+   "matched_terms": [
+    "gpu"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Common Offset Gathers for Efficient Multistatic Beamforming in Frequency Domain Marko Jakovljevic Xiaohong Wang Ion Candel Anthony E. Samir Kai Thomenius † † thanks: Corresponding author: Marko Jakovljevic, email: mjakovljevic@mgh.harvard.edu † † thanks: M.˜Jakovljevic, X.˜Wang, I.˜Candel, A.˜E.˜Samir and K.˜Thomenius are with the Department of Radiology, Massachusetts General Hospital, Boston, MA 02114, USA. Abstract Frequency-domain beamformers reconstruct ultrasound images with far fewer operations than delay-and-sum (DAS). However, for multistatic synthetic aperture data, they require Fourier transforms over the full transmit-receive aperture and large amounts of memory, limiting their use for volumetric imaging. Here, we adapt common offset gathers (COG) from seismic imaging to frequency-domain beamforming: transmit-receive pairs with the same offset are beamformed independently using a bistatic formulation, holding only one offset gather in memory at a time. We combine COG with the range-Doppler algorithm (RDA) and evaluate COG RDA against DAS and conventional multistatic RDA using simulated, phantom, and in vivo acquisitions. For linear arrays, COG RDA reduced memory requirements by two orders of magnitude relative to conventional RDA and beamformed up to 25 × 25\\times faster than DAS, with comparable image quality. For a 32 × 32 32\\times 32 -element matrix array, COG RDA requires only 2-D instead of 4-D Fourier transforms, and reconstructed a volume on a GPU 32 × 32\\times faster and with 67 × 67\\times less energy than DAS. COG RDA makes frequency-domain multistatic beamforming practical for matrix arrays and power-constrained devices. Index Terms: common offset gather, frequency-domain beamforming, range-Doppler algorithm, synthetic aperture, volumetric (3-D) ultrasound"
+  },
+  {
+   "key": "arxiv:2610.38558",
+   "source": "arXiv",
+   "id": "2610.38558",
+   "title": "REVBRAIN: Real-time Probabilistic EEG Forecasting Using Residual Vector Quantization",
+   "abstract": "Real-time forecasting of resting-state EEG signals is required by applications like brain-state-dependent stimulation, where computer generated actions are coupled with ongoing neural oscillations. Recently, the deep learning model WaveNet was proposed for the forecasting task. It shows superior accuracy compared to the prevailing method, the linear autoregressive (AR) model, and provides a built-in uncertainty measure due to its probabilistic modeling framework. However, inference using WaveNet is too slow for real-time use due to its sample-by-sample autoregressive operation: a single forecast requires evaluating the model tens or hundreds of times depending on the length of the prediction window. In this paper, we present REVBRAIN, a probabilistic deep learning method that produces forecasts in real time by generating the forecast over the whole prediction horizon at once. This is achieved by tokenizing the output space using residual vector quantization (RVQ) and generating forecasts over the items in the tokenized space. We tested REVBRAIN for forecasting 200 ms of EEG time series in the alpha-frequency band (8-13 Hz) and compared our results against WaveNet model. We found that REVBRAIN achieved real-time inference on a laptop GPU and an over $50\\times$ speedup compared to WaveNet, while reaching superior prediction accuracy. By achieving real-time inference speed, REVBRAIN enables incorporating accurate and probabilistic EEG forecasting into BCI applications, opening up new ways for investigating the functioning of the human brain.",
+   "authors": [
+    {
+     "name": "Hanna Pankka",
+     "affiliations": []
+    },
+    {
+     "name": "Jaakko Lehtinen",
+     "affiliations": []
+    },
+    {
+     "name": "Timo Roine",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.LG",
+    "eess.SP",
+    "q-bio.NC"
+   ],
+   "primary_category": "cs.LG",
+   "date": "2026-10-28",
+   "url": "https://arxiv.org/abs/2610.38558",
+   "matched_terms": [
+    "gpu"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "REVBRAIN: Real-time Probabilistic EEG Forecasting Using Residual Vector Quantization Hanna Pankka Jaakko Lehtinen Timo Roine Abstract Real-time forecasting of resting-state EEG signals is required by applications like brain-state-dependent stimulation, where computer generated actions are coupled with ongoing neural oscillations. Recently, the deep learning model WaveNet was proposed for the forecasting task. It shows superior accuracy compared to the prevailing method, the linear autoregressive (AR) model, and provides a built-in uncertainty measure due to its probabilistic modeling framework. However, inference using WaveNet is too slow for real-time use due to its sample-by-sample autoregressive operation: a single forecast requires evaluating the model tens or hundreds of times depending on the length of the prediction window. In this paper, we present REVBRAIN, a probabilistic deep learning method that produces forecasts in real time by generating the forecast over the whole prediction horizon at once. This is achieved by tokenizing the output space using residual vector quantization (RVQ) and generating forecasts over the items in the tokenized space. We tested REVBRAIN for forecasting 200 ms of EEG time series in the alpha-frequency band (8–13 Hz) and compared our results against WaveNet model. We found that REVBRAIN achieved real-time inference on a laptop GPU and an over 50 × 50\\times speedup compared to WaveNet, while reaching superior prediction accuracy. By achieving real-time inference speed, REVBRAIN enables incorporating accurate and probabilistic EEG forecasting into BCI applications, opening up new ways for investigating the functioning of the human brain. Our implementation is available at https://github.com/hpankka/revbrain. 1 Department of Neuroscience and Biomedical Engineering, Aalto University 1 School of Science, Finland 2 Department of Computer Science, Aalto University School of Science, Finland 3 NVIDIA, Finland 4 School of Smart Solutions, Metropolia University of Applied Sciences, Finland"
+  },
+  {
+   "key": "arxiv:2610.38315",
+   "source": "arXiv",
+   "id": "2610.38315",
+   "title": "LLM-PowerTrace: A Dataset of Time-Resolved GPU Power Traces for AI Compute",
+   "abstract": "AI compute is becoming large and fast-changing electrical loads. Its impacts on data center infrastructure and power grids depend not only on total energy consumption, but also on how their power draw moves over sub-second to minute timescales, including peaks, ramps, and synchronized fluctuations across accelerators. Existing energy benchmarks for large language models (LLMs) report aggregate quantities such as joules per token and rarely release the underlying time-series measurements, leaving these power dynamics poorly characterized and difficult to model. We introduce LLM-PowerTrace, an open dataset of time-resolved, per-GPU power traces for LLM fine-tuning and inference, sampled every 100\\,ms on varying NVIDIA platforms paired with complete workload and system metadata. For fine-tuning, LLM-PowerTrace profiles open model families spanning a wide range of model sizes and fine-tuning methods, together with controlled sweeps over batch size, sequence length, precision, parallelism, and checkpointing. For inference, it covers variations in concurrency, GPU frequency, KV-cache and weight quantization, prompt and output lengths, and request-arrival patterns. LLM-PowerTrace profiles a set of open model families across a wide range of model sizes, and controlled sweeps over batch size, sequence length, precision, parallelism, and checkpointing for fine-tuning, and it sweeps concurrency, GPU frequency, KV cache and weight quantization, prompt and output lengths, and request arrival patterns for inference. Built upon power traces, we define power-grid-facing metrics as well as AI-compute power\\&energy scaling law for extrapolating beyond the measured settings. Together, LLM-PowerTrace provides a dataset foundation for modeling, forecasting, and managing the fast-changing electrical behavior of AI compute.",
+   "authors": [
+    {
+     "name": "Jiansheng Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Jaskeerat Singh",
+     "affiliations": []
+    },
+    {
+     "name": "Haochen Xu",
+     "affiliations": []
+    },
+    {
+     "name": "Xinyi Li",
+     "affiliations": []
+    },
+    {
+     "name": "Mingyuan Yan",
+     "affiliations": []
+    },
+    {
+     "name": "Shaohui Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Yuzhuo Li",
+     "affiliations": []
+    },
+    {
+     "name": "Yize Chen",
+     "affiliations": []
+    },
+    {
+     "name": "Wenqi Cui",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY",
+    "cs.AI",
+    "cs.OS"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-10-28",
+   "url": "https://arxiv.org/abs/2610.38315",
+   "matched_terms": [
+    "data center"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "LLM-PowerTrace : A Dataset of Time-Resolved GPU Power Traces for AI Compute Jiansheng Wang † † thanks: Equal contribution; jw9461@nyu.edu, jaskeer1@ualberta.ca, hx2493@nyu.edu Affiliation: New York University, New York, NY, USA Jaskeerat Singh Haochen Xu Xinyi Li Affiliation: New York University, New York, NY, USA Mingyuan Yan Affiliation: New York University, New York, NY, USA Shaohui Liu Affiliation: Massachusetts Institute of Technology, Cambridge, MA, USA Yuzhuo Li Affiliation: University of Alberta, Edmonton, AB, Canada Yize Chen † † thanks: Equal advising; yize.chen@ualberta.ca, wenqicui@nyu.edu Affiliation: University of Alberta, Edmonton, AB, Canada Wenqi Cui Abstract AI compute is becoming large and fast-changing electrical loads. Its impacts on data center infrastructure and power grids depend not only on total energy consumption, but also on how their power draw moves over sub-second to minute timescales, including peaks, ramps, and synchronized fluctuations across accelerators. Existing energy benchmarks for large language models (LLMs) report aggregate quantities such as joules per token and rarely release the underlying time-series measurements, leaving these power dynamics poorly characterized and difficult to model. We introduce LLM-PowerTrace , an open dataset of time-resolved, per-GPU power traces for LLM fine-tuning and inference, sampled every 100 ms on varying NVIDIA platforms paired with complete workload and system metadata. For fine-tuning, LLM-PowerTrace profiles open model families spanning a wide range of model sizes and fine-tuning methods, together with controlled sweeps over batch size, sequence length, precision, parallelism, and checkpointing. For inference, it covers variations in concurrency, GPU frequency, KV-cache and weight quantization, prompt and output lengths, and request-arrival patterns. Built upon power traces, we define power-grid-facing metrics as well as AI-compute power&energy scaling law for extrapolating beyond the measured settings. Together, LLM-PowerTrace provides a dataset foundation for modeling, forecasting, and managing the fast-changing electrical behavior of AI compute 1 1 1 Code and dataset are available at https://systems-power-review.github.io/training-power-trace-explorer/ ."
+  },
+  {
+   "key": "arxiv:2610.38216",
+   "source": "arXiv",
+   "id": "2610.38216",
+   "title": "Data Center Load Reductions: Attribution, Measurement Limits, and Estimation",
+   "abstract": "Hundreds of gigawatts of data center loads are seeking interconnection in the United States given the massive growth of artificial intelligence and cloud computing. In recent years, several incidents of data centers reducing their loads by hundreds to thousands of megawatts have been documented, raising grid reliability concerns. U.S. regulators have since ordered reliability standards for the integration of computational loads, and the North American Electric Reliability Corporation (NERC) now calls on transmission owners to install disturbance recorders at these facilities to support root cause analysis. Such recorders usually observe only electrical quantities at the point of interconnection (POI). A sudden load reduction can be caused by a change in workload or a switch to backup supply. This work shows when POI measurements can distinguish the two mechanisms. It is established that they can produce identical POI voltage and current in a quasi-static constant power model, and during the transient their separation depends on the reduction relative to measurement noise, the clearing time, the dynamics through which workload reaches the POI, and the recorder bandwidth. When POI data are insufficient, an estimator that uses workload data is proposed to determine how much of the facility stayed connected. The results of this work identify the measurements and grid information utilities need to determine why data center load dropped.",
+   "authors": [
+    {
+     "name": "Abdallah Alalem Albustami",
+     "affiliations": []
+    },
+    {
+     "name": "Ahmad F. Taha",
+     "affiliations": []
+    },
+    {
+     "name": "Mohammad Alwahdanee",
+     "affiliations": []
+    },
+    {
+     "name": "Zuhaib Shakeel Muhammad",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-10-28",
+   "url": "https://arxiv.org/abs/2610.38216",
+   "matched_terms": [
+    "data center",
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Data Center Load Reductions: Attribution, Measurement Limits, and Estimation Abdallah Alalem Albustami Ahmad F. Taha Mohammad Alwahdanee Zuhaib Shakeel Muhammad † † thanks: A.˜Alalem Albustami and A.˜F.˜Taha are with the Department of Civil and Environmental Engineering, Vanderbilt University, Nashville, TN 37235, USA (e-mail: {abdallah.b.alalem.albustami, ahmad.taha}@vanderbilt.edu). † † thanks: M.˜Alwahdanee is an independent researcher (e-mail: mohahmwah@gmail.com). † † thanks: Z.˜S.˜Muhammad is with Sibel Health, Seoul, South Korea (e-mail: zuhaib.shakeel@sibelhealth.com). Abstract Hundreds of gigawatts of data center loads are seeking interconnection in the United States given the massive growth of artificial intelligence and cloud computing. In recent years, several incidents of data centers reducing their loads by hundreds to thousands of megawatts have been documented, raising grid reliability concerns. U.S. regulators have since ordered reliability standards for the integration of computational loads, and the North American Electric Reliability Corporation (NERC) now calls on transmission owners to install disturbance recorders at these facilities to support root cause analysis. Such recorders usually observe only electrical quantities at the point of interconnection (POI). A sudden load reduction can be caused by a change in workload or a switch to backup supply. This work shows when POI measurements can distinguish the two mechanisms. It is established that they can produce identical POI voltage and current in a quasi-static constant power model, and during the transient their separation depends on the reduction relative to measurement noise, the clearing time, the dynamics through which workload reaches the POI, and the recorder bandwidth. When POI data are insufficient, an estimator that uses workload data is proposed to determine how much of the facility stayed connected. The results of this work identify the measurements and grid information utilities need to determine why data center load dropped. Index Terms: Computational loads, data centers, event analysis, identifiability, load modeling, ride-through."
+  },
+  {
+   "key": "arxiv:2610.38180",
+   "source": "arXiv",
+   "id": "2610.38180",
+   "title": "Machine learning-guided real-time AC optimal transmission switching",
+   "abstract": "The operation of power grids has substantial economic consequences, affecting generation costs and, ultimately, electricity prices. The Optimal Transmission Switching (OTS) problem seeks to reduce these costs by selectively switching off transmission lines. However, OTS gives rise to a challenging mixed-integer nonlinear optimization problem that is difficult to solve at operationally relevant timescales, particularly as rapidly changing loads create a need for real-time switching decisions. To address this challenge, we develop a machine learning-guided method that identifies high quality line switching decisions in real time. Specifically, we construct a grid-specific switching-value model that rapidly estimates the generation-cost reduction associated with opening transmission lines by fine-tuning a pretrained model for AC optimal power flow (AC-OPF). The switching-value model provides signals to guide promising switching decisions, and topologies proposed by the model are evaluated using exact AC-OPF solvers to verify feasibility and obtain the actual generation cost. We develop multiple strategies that use the ML surrogate to efficiently explore the combinatorial space of transmission topologies, including Fixed-Rank Search, Adaptive-Rank Search, and Swap-Enhanced Search. Across multiple benchmark networks, our proposed algorithms identify line switching decisions that significantly reduce generation cost within a 50s computational budget. In particular, under a realistic data center buildout scenario on the 2,000-bus synthetic Texas grid, our approach reduces generation costs by 31.97% and gross nodal load payments by 94.34%. More broadly, our results demonstrate that a fine-tuned surrogate can effectively guide search even without guaranteeing feasibility, enabling classical optimization methods to tackle large nonlinear combinatorial problems on operationally relevant timescales.",
+   "authors": [
+    {
+     "name": "Weimin Huang",
+     "affiliations": []
+    },
+    {
+     "name": "Weiwei Yang",
+     "affiliations": []
+    },
+    {
+     "name": "Bistra Dilkina",
+     "affiliations": []
+    },
+    {
+     "name": "Konstantina Mellou",
+     "affiliations": []
+    },
+    {
+     "name": "Ishai Menache",
+     "affiliations": []
+    },
+    {
+     "name": "Marco Molinaro",
+     "affiliations": []
+    },
+    {
+     "name": "Chris White",
+     "affiliations": []
+    },
+    {
+     "name": "Baosen Zhang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-10-28",
+   "url": "https://arxiv.org/abs/2610.38180",
+   "matched_terms": [
+    "data center"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Machine learning-guided real-time AC optimal transmission switching Weimin Huang Affiliation: Microsoft Research Affiliation: University of Southern California Weiwei Yang Affiliation: Microsoft Research Affiliation: asemic.ai Affiliation: Corresponding author: weiwei@asemic.ai Bistra Dilkina Affiliation: University of Southern California Konstantina Mellou Affiliation: Microsoft Research Ishai Menache Affiliation: Microsoft Research Marco Molinaro Affiliation: Microsoft Research Chris White Affiliation: Microsoft Research Baosen Zhang Affiliation: Microsoft Research Affiliation: University of Washington * Equal contribution, listed alphabetically. Abstract The operation of power grids has substantial economic consequences, affecting generation costs and, ultimately, electricity prices. The Optimal Transmission Switching (OTS) problem seeks to reduce these costs by selectively switching off transmission lines. However, OTS gives rise to a challenging mixed-integer nonlinear optimization problem that is difficult to solve at operationally relevant timescales, particularly as rapidly changing loads create a need for real-time switching decisions. To address this challenge, we develop a machine learning-guided method that identifies high-quality line switching decisions in real time. Specifically, we construct a grid-specific switching-value model that rapidly estimates the generation-cost reduction associated with opening transmission lines by fine-tuning a pretrained model for AC optimal power flow (AC-OPF). The switching-value model provides signals to guide promising switching decisions, and topologies proposed by the model are evaluated using exact AC-OPF solvers to verify feasibility and obtain the actual generation cost. We develop multiple strategies that use the ML surrogate to efficiently explore the combinatorial space of transmission topologies, including Fixed-Rank Search, Adaptive-Rank Search, and Swap-Enhanced Search. Across multiple benchmark networks, our proposed algorithms identify line switching decisions that significantly reduce generation cost within a 50s computational budget. In particular, under a realistic data center build-out scenario on the 2,000-bus synthetic Texas grid, our approach reduces generation costs by 31.97% and gross nodal load payments by 94.34%. More broadly, our results demonstrate that a fine-tuned surrogate can effectively guide search even without guaranteeing feasibility, enabling classical optimization methods"
+  },
+  {
+   "key": "doi:10.1038/s41560-026-02144-0",
+   "source": "journal",
+   "journal": "Nature Energy",
+   "journal_short": "Nature Energy",
+   "doi": "10.1038/s41560-026-02144-0",
+   "title": "One-minute frequency disturbances from unintended synchronization in cyber–physical power systems",
+   "abstract": "Abstract Electric power systems are evolving into cyber–physical infrastructures shaped by power electronics and digital control. As inverter-based generation alters system dynamics and digitalization heightens vulnerability to errors and attacks, cyber–physical coupling can also introduce subtle system-level effects. Here we show that grid-frequency time series worldwide exhibit a persistent 1-min oscillatory pattern whose origin has remained unexplained. We show that clock-synchronized control software in digitally controlled energy devices, particularly uninterruptible power supplies and battery energy storage systems, generates periodic power-demand peaks that propagate across voltage levels and can give rise to the observed pattern. The pattern amplitude has increased substantially in several grids over recent years, contributing to wear and tear in hydropower systems and motivating stricter frequency-control requirements. The rapid expansion of battery storage, data centres and the Internet-of-Things may further amplify such cyber–physical power oscillations, highlighting the need for improved control design.",
+   "abstract_source": "crossref",
+   "authors": [
+    {
+     "name": "Carsten Hartmann",
+     "affiliations": []
+    },
+    {
+     "name": "Edoardo De Din",
+     "affiliations": []
+    },
+    {
+     "name": "Daniele Carta",
+     "affiliations": []
+    },
+    {
+     "name": "Florian Middelkoop",
+     "affiliations": []
+    },
+    {
+     "name": "Arndt Neubauer",
+     "affiliations": []
+    },
+    {
+     "name": "Johannes Kruse",
+     "affiliations": []
+    },
+    {
+     "name": "Ulrich Oberhofer",
+     "affiliations": []
+    },
+    {
+     "name": "Richard Jumar",
+     "affiliations": []
+    },
+    {
+     "name": "Benjamin Schäfer",
+     "affiliations": []
+    },
+    {
+     "name": "Thiemo Pesch",
+     "affiliations": []
+    },
+    {
+     "name": "Andrea Benigni",
+     "affiliations": []
+    },
+    {
+     "name": "Dirk Witthaut",
+     "affiliations": []
+    }
+   ],
+   "type": "journal-article",
+   "date": "2026-10-30",
+   "url": "https://doi.org/10.1038/s41560-026-02144-0",
+   "matched_terms": [
+    "data centres"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_source": "not available yet"
+  }
+ ],
  "title_only_final": [],
  "pending_items": [
   {
@@ -323,32 +978,8 @@
   },
   {
    "source": "Nature Communications",
-   "title": "Enantioselective cobalt-catalyzed intermolecular [3+2] cycloaddition of cyclopropenes with terminal alkynes to access chiral cyclopentadienes",
-   "url": "https://doi.org/10.1038/s41467-026-78714-3",
-   "first_seen": "2026-10-28"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Genetic mechanisms underlying the associations between brain structure and mental health",
-   "url": "https://doi.org/10.1038/s41467-026-79115-2",
-   "first_seen": "2026-10-28"
-  },
-  {
-   "source": "Nature Communications",
    "title": "Construction of planar-chiral macrocyclic phenanthridinones and their analogues through palladium/norbornene catalysis",
    "url": "https://doi.org/10.1038/s41467-026-78892-0",
-   "first_seen": "2026-10-28"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Strand- and replication timing-dependent functions of DNA polymerase η in human DNA replication",
-   "url": "https://doi.org/10.1038/s41467-026-78467-z",
-   "first_seen": "2026-10-28"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Computational modeling and preclinical evaluation support targeting somatic instability for Huntington’s disease treatment",
-   "url": "https://doi.org/10.1038/s41467-026-78769-2",
    "first_seen": "2026-10-28"
   },
   {
@@ -536,10 +1167,274 @@
    "title": "Deuteration of arenes in D2O exclusively driven by single-atom Pt sites under visible light",
    "url": "https://doi.org/10.1038/s41467-026-79132-1",
    "first_seen": "2026-10-29"
+  },
+  {
+   "source": "TSG",
+   "title": "A Self-Improving LLM-based DRL Framework for Automated Multi-Task V2G Scheduling",
+   "url": "https://doi.org/10.1109/tsg.2026.3748504",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "TSG",
+   "title": "Pricing for Information Revelation in Demand Response: A Strategic Communication Approach",
+   "url": "https://doi.org/10.1109/tsg.2026.3748649",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "TSG",
+   "title": "TSO–DSO Coordinated Reactive Power Dispatch for IEEE 1547 Smart Inverters with Multiple Control Modes Under Limited Observability",
+   "url": "https://doi.org/10.1109/tsg.2026.3748848",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Development and Validation of Unbalanced RMS Models for Large Scale Renewable Energy Systems",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3748393",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Structured Serialization and Full Fine-Tuning of Large Language Models for ACOPF Solution",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3748720",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Automatic Generation Control Incorporating Energy Storage State of Charge Management",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3748463",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Synthesis of IBR Models Through Systematic Analysis of OEM Black-Box Representations",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3748408",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Stability and Oscillation Analysis of Discrete-Time Automatic Voltage Control Systems With Saturation and Delay",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3748533",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Deep Learning-Accelerated Shapley Value for Fair Allocation in Power Systems: The Case of Carbon Emission Responsibility",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3748050",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "TPWRS",
+   "title": "DC Voltage Control Dominated Oscillations in Electromechanical Frequency Range — Insights from Synchronous Coefficient Reduction Effect of IBR Plants and Network Interactions",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3748529",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Inertia Power Extraction from DC Link of IBRs with Inclusion in Unit Commitment",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3748709",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Delay, Noise, and False Data Aware Adaptive Estimation Framework for Enhanced Dynamic State Tracking in Power Systems",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3748452",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Modeling the electricity system in integrated assessment models - a time-series clustering approach for diverse futures",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129068",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Field-calibrated surrogate prediction and uncertainty-aware decision diagnostics for multi-unit geothermal organic Rankine cycle plants",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129097",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Balancing-aware observability and joint state estimation for unmanned aerial vehicle battery packs",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129182",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "The role of aggregated EV battery storage in managing future load peaks: A New York state case study",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129165",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Global sensitivity analysis of optimal capacity planning for green ammonia production under grid dependency and energy curtailment constraints",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129158",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Low-carbon collaborative scheduling of industrial microgrids with electrolytic aluminum load considering electricity-carbon trading",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129155",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Single- and few-layer materials: synthesis, structure–property relationships, integration of AI/ML, and energy storage applications",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129172",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Energy",
+   "title": "Durable reactive CO2 capture exceeding 1,000 h via self-reinforcing molecular catalysts",
+   "url": "https://doi.org/10.1038/s41560-026-02159-7",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Energy",
+   "title": "Ironing out oxygen instability",
+   "url": "https://doi.org/10.1038/s41560-026-02153-z",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Energy",
+   "title": "An extra beat every minute",
+   "url": "https://doi.org/10.1038/s41560-026-02156-w",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Energy",
+   "title": "Caloric cooling devices and systems",
+   "url": "https://doi.org/10.1038/s41560-026-02143-1",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: Paired NLRs originated from Triticum dicoccoides coordinately confer resistance to powdery mildew in wheat",
+   "url": "https://doi.org/10.1038/s41467-026-79070-y",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: Applying Artificial Intelligence and machine learning in precision nutrition",
+   "url": "https://doi.org/10.1038/s41467-026-77960-9",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: Transcription regulation of African swine fever virus: dual role of M1249L",
+   "url": "https://doi.org/10.1038/s41467-026-79189-y",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: Integrating central nervous system metagenomics and host response for diagnosis of tuberculosis meningitis and its mimics",
+   "url": "https://doi.org/10.1038/s41467-026-79080-w",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: Metabolic regulation of telomere silencing by SESAME complex-catalyzed H3T11 phosphorylation",
+   "url": "https://doi.org/10.1038/s41467-026-78172-x",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: Single nucleotide variants drive evolutionary phage-host arms race in anaerobic carbon dioxide-converting microbiome",
+   "url": "https://doi.org/10.1038/s41467-026-79140-1",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: CBX4 stabilizes NEUROD1 through SUMO-ubiquitin crosstalk to delay β-cell senescence",
+   "url": "https://doi.org/10.1038/s41467-026-79200-6",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Publisher Correction: Extracellular-matrix mediated stresses spatially bias myoblast fusion and myotube growth",
+   "url": "https://doi.org/10.1038/s41467-026-79196-z",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Layer-wise Prediction for Interpretation of Hidden Representations in Deep Neural Networks through Evolving Probability Distributions",
+   "url": "https://doi.org/10.1038/s41467-026-78340-z",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Wavelength selective fragmentation of metastable photoresponsive platelets via light irradiation",
+   "url": "https://doi.org/10.1038/s41467-026-79215-z",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Increasing prevalence and expanding diversity of tet(X4)-carrying Salmonella in China",
+   "url": "https://doi.org/10.1038/s41467-026-79004-8",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Secondary organic aerosol formation from sequential oxidation of toluene and cresols",
+   "url": "https://doi.org/10.1038/s41467-026-78858-2",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Hydrogen-bond-mediated quasi-two-dimensional covalent organic frameworks for ultrahigh gold extraction",
+   "url": "https://doi.org/10.1038/s41467-026-78532-7",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Weakened association between sequential phenological events corresponds to interphase extension",
+   "url": "https://doi.org/10.1038/s41467-026-79161-w",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "B7-H4‒directed antibody-drug conjugate AZD8205 (puxitatug samrotecan) in patients with advanced/metastatic solid tumors: the Phase 1/2a (BLUESTAR), first-in-human study",
+   "url": "https://doi.org/10.1038/s41467-026-78925-8",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "One Health genomic surveillance identifies potential genetic links of antimicrobial-resistant foodborne pathogens across sectors",
+   "url": "https://doi.org/10.1038/s41467-026-78530-9",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Spatial patterning of hierarchical lamellar-cellular structured hydrogels for programmable deformation-coupled information encryption",
+   "url": "https://doi.org/10.1038/s41467-026-79008-4",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Enzymes can activate and mobilize dense biomolecular condensates across scales",
+   "url": "https://doi.org/10.1038/s41467-026-77666-y",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Canopy nutrient balance predicts autumn senescence across U.S. forests",
+   "url": "https://doi.org/10.1038/s41467-026-78891-1",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Towards the real diamond formation conditions: insights and perspective",
+   "url": "https://doi.org/10.1038/s41467-026-79094-4",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "Nature Rev. EE",
+   "title": "Hunting dark matter with gravitational-wave interferometers",
+   "url": "https://doi.org/10.1038/s44287-026-00350-2",
+   "first_seen": "2026-10-30"
   }
  ],
- "pending_abstract": 74,
+ "pending_abstract": 114,
  "runs_utc": [
-  "2026-10-29T11:25:30+00:00"
+  "2026-10-30T11:17:32+00:00"
  ]
 }
