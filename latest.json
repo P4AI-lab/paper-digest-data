@@ -1,45 +1,45 @@
 {
- "date": "2026-11-05",
- "generated_utc": "2026-11-05T13:02:00+00:00",
+ "date": "2026-11-06",
+ "generated_utc": "2026-11-06T12:49:52+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-11-01",
-   "2026-11-05"
+   "2026-11-02",
+   "2026-11-06"
   ],
   "journal_doi_created": [
-   "2026-10-30",
-   "2026-11-05"
+   "2026-10-31",
+   "2026-11-06"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-   "in_window": 136,
-   "new": 37,
-   "candidates": 2
+   "in_window": 165,
+   "new": 47,
+   "candidates": 1
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-   "in_window": 93,
+   "in_window": 97,
    "new": 23,
-   "candidates": 4
+   "candidates": 3
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-   "in_window": 115,
-   "new": 36,
-   "candidates": 1
+   "in_window": 121,
+   "new": 30,
+   "candidates": 2
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-   "in_window": 8,
-   "new": 1,
+   "in_window": 16,
+   "new": 11,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -47,8 +47,8 @@
    "source": "TPWRS",
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
-   "in_window": 3,
-   "new": 1,
+   "in_window": 2,
+   "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -56,17 +56,17 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 45,
-   "new": 9,
-   "candidates": 0,
+   "in_window": 46,
+   "new": 7,
+   "candidates": 1,
    "new_with_abstract": 0
   },
   {
    "source": "Nature Energy",
    "journal": "Nature Energy",
    "status": "ok",
-   "in_window": 9,
-   "new": 1,
+   "in_window": 4,
+   "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -74,8 +74,8 @@
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 210,
-   "new": 35,
+   "in_window": 191,
+   "new": 26,
    "candidates": 0,
    "new_with_abstract": 12
   },
@@ -83,7 +83,7 @@
    "source": "Nature Rev. EE",
    "journal": "Nature Reviews Electrical Engineering",
    "status": "ok",
-   "in_window": 3,
+   "in_window": 2,
    "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
@@ -92,26 +92,170 @@
  "errors": [],
  "candidates": [
   {
-   "key": "arxiv:2611.06179",
+   "key": "arxiv:2611.08470",
    "source": "arXiv",
-   "id": "2611.06179",
-   "title": "Chiron: Cache Management Empowered by LLM Intelligence for AI Workloads",
-   "abstract": "AI clusters keep data in remote object stores and rely on local caches to stop GPUs from waiting for data. A cache performs well only when its prefetching and eviction policies match the access pattern, yet these patterns differ across AI workloads and change between phases of one workflow. Existing methods either need code changes, which compromises user transparency, or use low-end heuristics, which cannot follow such changes. Large language models (LLMs) can infer access behavior without user hints, but direct LLM control of cache actions suffers from long reasoning delay, high token cost, and poor decision quality. We present Chiron, a cache system based on advisory switching control. An LLM asynchronously diagnoses the access pattern and recommends a policy. A deterministic harness gates this advice, executes expert-designed policies locally, and returns cache feedback for review. We implement Chiron atop JuiceFS and evaluate it on nine AI workloads. It reduces job completion time by 14.3-41.2% over the best baseline on popular AI workloads.",
+   "id": "2611.08470",
+   "title": "Joint Electricity Price and Load Forecasting for Data Center Battery Dispatch Using Polynomial Diffusion Models",
+   "abstract": "The rapid growth of large-scale data centers (DCs) is increasing electricity demand, market volatility, and operating costs. Battery energy storage systems (BESSs) can mitigate these challenges by shifting electricity purchases from high-price to low-price periods. This paper proposes a real-time BESS dispatch framework using polynomial diffusion models (PDMs) to forecast both electricity prices and DC loads. Leveraging the closed-form conditional expectations of PDMs, the forecasts are integrated into a dynamic programming (DP) framework to minimize electricity procurement costs. Across the evaluated BESS configurations, the proposed approach achieves 2.63 times the cost savings of a rule-based (RB) strategy.",
    "authors": [
     {
-     "name": "Bohan Zhang",
+     "name": "Matthew Van Ham",
      "affiliations": []
     },
     {
-     "name": "Renshu Ge",
+     "name": "Yiping Liu",
      "affiliations": []
     },
     {
-     "name": "Tianze Wang",
+     "name": "Xiaozhe Wang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-05",
+   "url": "https://arxiv.org/abs/2611.08470",
+   "matched_terms": [
+    "data center",
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Joint Electricity Price and Load Forecasting for Data Center Battery Dispatch Using Polynomial Diffusion Models Thanks: This work was supported by the Natural Sciences and Engineering Research Council (NSERC) Discovery Grant, NSERC RGPIN-2022-03236 and by Fonds de recherche du Québec under Grant FRQ-NT PR-378486 (https://doi.org/10.69777/378486). Matthew Van Ham Yiping Liu Xiaozhe Wang Abstract The rapid growth of large-scale data centers (DCs) is increasing electricity demand, market volatility, and operating costs. Battery energy storage systems (BESSs) can mitigate these challenges by shifting electricity purchases from high-price to low-price periods. This paper proposes a real-time BESS dispatch framework using polynomial diffusion models (PDMs) to forecast both electricity prices and DC loads. Leveraging the closed-form conditional expectations of PDMs, the forecasts are integrated into a dynamic programming (DP) framework to minimize electricity procurement costs. Across the evaluated BESS configurations, the proposed approach achieves 2.63 times the cost savings of a rule-based (RB) strategy. Index Terms: data center, polynomial diffusion models (PDMs), electricity price modeling, power load modeling"
+  },
+  {
+   "key": "arxiv:2611.08060",
+   "source": "arXiv",
+   "id": "2611.08060",
+   "title": "xDSL-CCPP: An alternative code generator for atmospheric modelling",
+   "abstract": "The Common Community Physics Package (CCPP) is a framework designed to simplify the exchange of physics packages between state-of-the-art atmospheric models. A core software component of CCPP is a code generator: a bespoke Python-based application that uses regular expressions to transform an input specification into Fortran source code. While the code generator initially provided a simple transformation capability, the demands of state-of-the-art atmospheric models have resulted in significant increases in its complexity. Furthermore, ongoing code modernisation efforts to enable GPU-based computing have placed additional demands on the code generator for which it was never designed. Domain Specific Languages (DSLs) have proven to be highly effective in High Performance Computing (HPC), offering the ability to simplify code modernisation efforts. However, traditionally the effort and specialist skills required in the development of a DSL have been a blocker to adoption. In recent years, however, there have been great advances in compiler technologies, and frameworks such as MLIR and xDSL have the potential to greatly lower this barrier to entry. In this paper, we present xDSL-CCPP, a new application-specific code generator based upon the latest MLIR and xDSL compiler technologies, for CCPP. Demonstrating a reduction in bespoke tooling code of around three times, from approximately 15,000 LoC to 5,000 LoC, we highlight the opportunities provided by these compiler frameworks and demonstrate how they significantly lower the barrier to development of HPC application-specific DSLs whilst maintaining application performance and promoting flexibility.",
+   "authors": [
+    {
+     "name": "Nick Brown",
      "affiliations": []
     },
     {
-     "name": "Chen Chen",
+     "name": "John Dennis",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-05",
+   "url": "https://arxiv.org/abs/2611.08060",
+   "matched_terms": [
+    "gpu",
+    "hpc"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "xDSL-CCPP: An alternative code generator for atmospheric modelling Nick Brown Affiliation: EPCC at the University of Edinburgh, Edinburgh, UK John Dennis Affiliation: National Center for Atmospheric Research (NCAR), Boulder, USA Abstract The Common Community Physics Package (CCPP) is a framework designed to simplify the exchange of physics packages between state-of-the-art atmospheric models. A core software component of CCPP is a code generator: a bespoke Python-based application that uses regular expressions to transform an input specification into Fortran source code. While the code generator initially provided a simple transformation capability, the demands of state-of-the-art atmospheric models have resulted in significant increases in its complexity. Furthermore, ongoing code modernisation efforts to enable GPU-based computing have placed additional demands on the code generator for which it was never designed. Domain Specific Languages (DSLs) have proven to be highly effective in High Performance Computing (HPC), offering the ability to simplify code modernisation efforts. However, traditionally the effort and specialist skills required in the development of a DSL have been a blocker to adoption. In recent years, however, there have been great advances in compiler technologies, and frameworks such as MLIR and xDSL have the potential to greatly lower this barrier to entry. In this paper, we present xDSL-CCPP, a new application-specific code generator based upon the latest MLIR and xDSL compiler technologies, for CCPP. Demonstrating a reduction in bespoke tooling code of around three times, from approximately 15,000 LoC to 5,000 LoC, we highlight the opportunities provided by these compiler frameworks and demonstrate how they significantly lower the barrier to development of HPC application-specific DSLs whilst maintaining application performance and promoting flexibility. Keywords: MLIR, xDSL, Common Community Physics Package, Domain Specific Language (DSL)"
+  },
+  {
+   "key": "arxiv:2611.07685",
+   "source": "arXiv",
+   "id": "2611.07685",
+   "title": "SVM + CFAR + OR: A Hybrid Machine-Learning-CFAR Receiver for Low-False-Alarm PRACH Preamble Detection in 5G NR and Beyond",
+   "abstract": "The physical random access channel (PRACH) enables initial access between user equipment and the base station, making reliable preamble detection essential for cellular networks. Growing device density in 5G and beyond-5G networks, massive machine-type communication, and the shift towards machine-learning-driven radio interfaces challenge conventional analytical detectors, particularly in complex radio environments and at low signal-to-noise ratios. This article formulates preamble detection as a 64-class classification problem and introduces two model-agnostic contributions: a robust adaptive threshold implementing the constant false alarm rate (CFAR) principle in the classifier decision-score domain (MAD-CFAR), and a hybrid receiver combining a learned detector with a conventional power-delay-profile CFAR detector through a logical OR rule. The learned branch is evaluated using two models trained on the same GPU-generated dataset: a support vector machine (SVM) with principal component analysis and a lightweight one-dimensional convolutional neural network (CNN). On a held-out test set, the SVM achieves 98.58% accuracy (macro-AUC 0.9991), while the CNN reaches 99.29% accuracy (macro-AUC 1.0000) at lower inference cost and memory footprint. MAD-CFAR reduces the learned branch's false alarm rate to near zero on the noise calibration campaign. The OR hybrid retains the analytical detector's low, standard-compliant false alarm rate while extending detection capability. Across six propagation channels and 258 conformance-style tests, the SVM-based hybrid improves low-SNR sensitivity by several decibels without increasing missed detections relative to the analytical detector. Under the same false alarm constraint, the CNN is competitive in some channels but currently trails the SVM in high-delay-spread multipath conditions.",
+   "authors": [
+    {
+     "name": "Filip Ferenc",
+     "affiliations": []
+    },
+    {
+     "name": "Michal Szczachor",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SP"
+   ],
+   "primary_category": "eess.SP",
+   "date": "2026-11-05",
+   "url": "https://arxiv.org/abs/2611.07685",
+   "matched_terms": [
+    "gpu"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Filip Ferenc † † thanks: Corresponding author: 263578@student.pwr.edu.pl Affiliation: Faculty of Information and Communication Technology, Wrocław University of Science and Technology, Wrocław, Poland Michał Szczachor Affiliation: Nokia, Wrocław, Poland Abstract The physical random access channel (PRACH) is the initial access channel between the user equipment and the base station, and the ability to initiate transmission in a cellular network depends on its reliable operation. The growing device density in 5G and beyond-5G networks, massive machine-type communication, and the trend towards a machine-learning-driven radio interface make analytical preamble detectors increasingly limited in their ability to adapt to complex and dynamic radio environments, particularly at low signal-to-noise ratios. This article recasts preamble detection as a 64-class classification problem and introduces two model-agnostic contributions: a robust adaptive threshold that realizes the constant-false-alarm-rate (CFAR) principle directly in the domain of a classifier’s decision scores (MAD-CFAR), and a hybrid receiver that fuses the learned detector with a classical CFAR detector on the power delay profile through a logical OR rule. Because both mechanisms are independent of the underlying classifier, the learned branch is instantiated with two models trained on the same fivefold-enlarged, GPU-generated dataset: a support vector machine (SVM) with principal component analysis, retained for its interpretability and analyzed with a nonlinear embedding and post-hoc attribution, and a lightweight one-dimensional convolutional neural network (CNN). On a held-out test set the SVM reaches 98.58% accuracy (macro-averaged area under the curve, AUC, of 0.9991), whereas a lightweight CNN reaches 99.29% accuracy (macro-AUC 1.0000) at substantially lower inference cost and memory footprint. The MAD-CFAR threshold drives the learned branch’s false alarm rate to near zero on its noise calibration campaign, and the OR hybrid inherits the analytical detector’s low, standard-compliant false alarm rate while widening the range of correct detection. Across six propagation channels and 258 conformance-style tests, the SVM-based hybrid gains several decibels of low-SNR sensitivity with no missed-detection regression relative to the analytical branch, a property that follows directly from the OR construction. Under the same false-alarm control the CNN is competitive in some channels and, at present,"
+  },
+  {
+   "key": "arxiv:2611.07656",
+   "source": "arXiv",
+   "id": "2611.07656",
+   "title": "Joint Flexible Beamforming, Resource Allocation, and Task Buffering for Movable-Antenna Enabled MEC Systems",
+   "abstract": "The proliferation of computation-intensive applications, such as generative artificial intelligence and low-altitude economy services, demands mobile edge computing (MEC) systems that are both energy-efficient and adaptable to highly dynamic workloads. However, conventional MEC architectures rely on fixed-position antennas with limited spatial flexibility and rigid single-slot task execution models, which fail to accommodate bursty traffic and time-varying channels. To address these challenges, this paper proposes a novel MEC framework empowered by movable antennas (MAs) and task buffering. Unlike traditional approaches, our system enables continuous antenna repositioning to maximize array gains and decouples task generation from immediate execution via buffer queues, allowing for flexible multi-slot scheduling. We formulate a stochastic optimization problem to minimize long-term energy consumption by jointly optimizing receive beamforming, MA positions, and computing resources. Leveraging Lyapunov optimization, we transform the long-term problem into tractable per-slot subproblems and develop an efficient alternating optimization algorithm. Simulation results demonstrate that the proposed scheme significantly outperforms the benchmark schemes in terms of energy consumption, while maintaining stable task queues under unpredictable traffic conditions.",
+   "authors": [
+    {
+     "name": "Hao Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Chunjie Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Lingtong Ma",
+     "affiliations": []
+    },
+    {
+     "name": "Wenchao Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Kan Yu",
+     "affiliations": []
+    },
+    {
+     "name": "Jinke Ren",
+     "affiliations": []
+    },
+    {
+     "name": "Yanyan Shen",
+     "affiliations": []
+    },
+    {
+     "name": "Xuhui Zhang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SP",
+    "cs.IT"
+   ],
+   "primary_category": "eess.SP",
+   "date": "2026-11-05",
+   "url": "https://arxiv.org/abs/2611.07656",
+   "matched_terms": [
+    "computing resources",
+    "edge computing"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Hao Wang Chunjie Wang Lingtong Ma Wenchao Liu Kan Yu Jinke Ren Yanyan Shen Xuhui Zhang † † thanks: Hao Wang and Lingtong Ma are with the Department of Networks, China Mobile Communications Group Co., Ltd., Beijing 100033, China (e-mail: wanghaowl@chinamobile.com; malingtong@chinamobile.com). † † thanks: Chunjie Wang is with Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Guangdong 518055, China, and also with the University of Chinese Academy of Sciences, Beijing 100049, China (e-mail: cj.wang@siat.ac.cn). † † thanks: Wenchao Liu is with the School of Automation and Intelligent Manufacturing, Southern University of Science and Technology, Shenzhen 518055, China (e-mail: wc.liu@foxmail.com). † † thanks: Kan Yu is with the Key Laboratory of Universal Wireless Communications, Ministry of Education, Beijing University of Posts and Telecommunications, Beijing, 100876, China (e-mail: kanyu1108@126.com). † † thanks: Jinke Ren and Xuhui Zhang are with the Shenzhen Future Network of Intelligence Institute, the School of Science and Engineering, and the Guangdong Provincial Key Laboratory of Future Networks of Intelligence, The Chinese University of Hong Kong, Shenzhen, Guangdong 518172, China (e-mail: jinkeren@cuhk.edu.cn; xu.hui.zhang@foxmail.com). † † thanks: Yanyan Shen is with Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Guangdong 518055, China (e-mail: yy.shen@siat.ac.cn). Abstract The proliferation of computation-intensive applications, such as generative artificial intelligence and low-altitude economy services, demands mobile edge computing (MEC) systems that are both energy-efficient and adaptable to highly dynamic workloads. However, conventional MEC architectures rely on fixed-position antennas with limited spatial flexibility and rigid single-slot task execution models, which fail to accommodate bursty traffic and time-varying channels. To address these challenges, this paper proposes a novel MEC framework empowered by movable antennas (MAs) and task buffering. Unlike traditional approaches, our system enables continuous antenna repositioning to maximize array gains and decouples task generation from immediate execution via buffer queues, allowing for flexible multi-slot scheduling. We formulate a stochastic optimization problem to minimize long-term energy consumption by jointly optimizing receive beamforming, MA positions, and computing resources. Leveraging Lyapunov optimization, we transform the l"
+  },
+  {
+   "key": "arxiv:2611.07496",
+   "source": "arXiv",
+   "id": "2611.07496",
+   "title": "ZYFA: Speed and Accuracy of FP8 FlashAttention on AMD CDNA4",
+   "abstract": "Attention is a core building block of frontier models and often dominates compute-bound prefill at long context. FP8 matrix instructions offer twice the peak throughput of BF16, but they accelerate only matrix multiplication, and the softmax between the two matrix multiplications of attention runs on vector units that FP8 does not accelerate. On the AMD Instinct MI355X, the vendor's AITER kernels reach 39% of peak FP8 matrix throughput at 32K tokens, compared with 49% in BF16. Attention is also more numerically sensitive to quantization than feed-forward layers, and unlike NVIDIA's Hopper and Blackwell GPUs, the MI355X does not track the completion of matrix instructions in hardware, so overlapping the softmax with the matrix multiplications depends on instruction order. We present ZYFA, prefill kernels for the MI355X built on three techniques: (1) computing each FP8 probability directly from its score with a multiply-add and an integer conversion instead of an exponential; (2) a ping-pong schedule in which one group of threads computes its softmax while another executes its matrix multiplications; and (3) scaling each block of probabilities up by a power of two before rounding, and normalizing by the sum of the rounded probabilities. On attention inputs captured from three models and timed at sustained clock speeds, ZYFA achieves 1.16-1.76x the throughput of AITER. On the Gaussian inputs of kernel benchmarks at 32K tokens, it achieves 1.26-1.37x at head dimension 128 and 1.99x for DeepSeek-style multi-head latent attention. The sustained clock of the MI355X depends on operand values, so throughput on random inputs does not reliably predict throughput on real model activations. At head dimension 128, ZYFA's numerical error is within a few percent of that of Composable Kernel and Triton and 62-78% lower than that of AITER's. The source code is available at https://github.com/Zyphra/zyfa.",
+   "authors": [
+    {
+     "name": "Quentin Anthony",
+     "affiliations": []
+    },
+    {
+     "name": "Ganesh Bikshandi",
+     "affiliations": []
+    },
+    {
+     "name": "Praneeth Medepalli",
+     "affiliations": []
+    },
+    {
+     "name": "Stephen Ebert",
      "affiliations": []
     }
    ],
@@ -120,304 +264,109 @@
     "cs.LG"
    ],
    "primary_category": "cs.DC",
-   "date": "2026-11-04",
-   "url": "https://arxiv.org/abs/2611.06179",
+   "date": "2026-11-05",
+   "url": "https://arxiv.org/abs/2611.07496",
    "matched_terms": [
-    "ai clusters",
-    "ai workloads",
-    "gpus",
-    "large language models",
-    "llm",
-    "llms"
+    "gpus"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "(author block not found in HTML)"
+   "affiliation_block": "ZYFA: Speed and Accuracy of FP8 FlashAttention on AMD CDNA4 Quentin Anthony * Ganesh Bikshandi Praneeth Medepalli Stephen Ebert Affiliation: Zyphra Affiliation: San Francisco, CA Abstract Attention is a core building block of frontier models and often dominates compute-bound prefill at long context. FP8 matrix instructions offer twice the peak throughput of BF16, but they accelerate only matrix multiplication, so a GPU kernel’s total speedup from FP8 shrinks as other operations take a larger share of the overall kernel time. For example in attention, the softmax between the two matrix multiplications is on vector units which FP8 does not accelerate. On the AMD Instinct MI355X, the vendor’s AITER kernels (AMD’s library of inference kernels) reach 39% of peak FP8 matrix throughput at 32 32 K tokens, compared with 49% in BF16. Unlike NVIDIA’s Hopper and Blackwell GPUs, the MI355X also does not track the completion of matrix instructions in hardware, so fine-grained instruction order must be carried out via more manual methods like assembly instruction ordering, which is vital for attention kernels such as overlapping the softmax with the matrix multiplications. Finally, attention is more numerically sensitive to quantization than feed-forward layers, so considerable numerical analysis must be done to ensure fidelity. To overcome these challenges, we present ZYFA, prefill kernels for the MI355X built on three techniques: (1) computing each FP8 probability directly from its score with a multiply-add and an integer conversion instead of an exponential, since an FP8 bit pattern approximates a scaled base-2 logarithm of its raw value; (2) a ping-pong schedule in which one group of threads computes its softmax while another executes its matrix multiplications; and (3) scaling each block of probabilities up by a power of two before rounding, so that far fewer small probabilities round to zero, and normalizing by the sum of the rounded probabilities, so that the attention weights still sum to one. On attention inputs captured from three representative models and timed at sustained clock speeds (the lower, steady clock that the GPU settles at after a few seconds of back-to-back launches), ZYFA achieves 1.16–1.76 × \\times the throughput of AITER. On the random Gaussian inputs of kernel benchmarks at 32 32 K tokens, ZYFA achieves 1.26–1.37 × \\times the throughput of AITER at head dimension 128 128 and 1.99 × \\times for DeepSeek-style multi-head latent attention. The sus"
   },
   {
-   "key": "arxiv:2611.06122",
+   "key": "arxiv:2611.07105",
    "source": "arXiv",
-   "id": "2611.06122",
-   "title": "Ab Initio Accuracy Beyond the Cutoff: Distributed Message-Passing Equivariant Attention at Tens-of-Millions-of-Atom Scale",
-   "abstract": "Molecular dynamics predicts molecular motion from atomic forces and trajectory integration. Density functional theory (DFT) provides first-principles forces, but its $O(N^3)$ cost limits simulations to thousands of atoms; empirical force fields scale to millions but miss bond breaking and charge transfer. Equivariant message-passing Transformers learn the ab initio potential at linear cost. Stacked layers propagate information beyond a single cutoff, giving four layers a receptive field up to 23Å. At this frontier, scale is limited by communication: layers exchange boundary features across devices, force backpropagation repeats the exchange, and moving atoms change neighbor graphs and tensor shapes. We present Tessera, a distributed runtime that fixes workload shapes between rebuilds. It sorts atoms along a space-filling curve into equal-count shards, ensuring identical atom counts and tensor shapes per rank. Peer sets scale as $K^{0.5}$, not $K$. A conservative neighbor skin preserves topology across updates, enabling each rebuild interval to replay as one CUDA Graph. Fused kernels, three-level neighbor search, and overlapped All-to-All complete it. On 512 GPUs, Tessera sustains 30.7M atoms at 89.7% weak-scaling efficiency (77--90% across three per-GPU loads); per-step time rises 1.11--1.29x as machine and problem grow 16x. Graph reuse cuts full-step time $1.87\\times$. Across an $8\\times$ device increase, neighbor-search cost grows $1.7\\times$, versus $3.0\\times$ for Morton order. In a live $10.24$M-atom salt solution, NVE energy drift is $0.42\\,μ$eV/atom/ps over $10$ ps, and structure matches a serial reference. A 10.06M-atom Norovirus capsid sustains 100 ps of NVT at $\\approx 8$ ps/day on 256 A100 GPUs. Over 200,000 steps, it has no broken bonds or anomalously close pairs and uses three compiled variants, with no graph breaks or eager fallbacks.",
+   "id": "2611.07105",
+   "title": "NUMA-Torch: Compiler-Driven NUMA-Aware LLM Prefill on Multi-Socket CPUs",
+   "abstract": "For sufficiently large transformer-based Large Language Models (LLMs), whose parameters cannot be retained in on-chip caches, prefill throughput on multi-socket CPUs is often limited by sustainable DRAM bandwidth rather than peak floating-point throughput. In the standard PyTorch compilation (i.e., TorchInductor) path, model weights are allocated without considering the Non-Uniform Memory Access (NUMA) topology: specifically, the affinity between memory banks and compute cores is disregarded. This causes a substantial fraction of weight accesses to traverse the inter-socket interconnect, severely degrading the effective memory bandwidth available to each socket. We address this bottleneck through a compiler-level solution that makes TorchInductor NUMA-aware. Treating each NUMA socket as an independent tensor-parallel partition, we introduce NUMA-aware Tensor Parallelism (NUMA-TP). This approach transparently shards weights across sockets and schedules compute kernels such that thread pools and memory allocations remain strictly local to their respective sockets using CPU affinity. We evaluate the approach on GPT-2 (117M, 345M, 762M) and BERT (Small, Large), which exercise standard multi-head attention and MLP, as well as Gemma 3 270M, which combines Multi-Query Attention with a GeGLU-gated MLP. By strictly enforcing data locality, our approach successfully mitigates cross-socket traffic, achieving prefill speedups of up to 2.63x on a dual-socket Haswell platform, up to 1.87x on a dual-socket Cascade Lake platform, and up to 2.27x on a four-socket Haswell-EX platform.",
    "authors": [
     {
-     "name": "Allex Kan",
-     "affiliations": []
+     "name": "Thisara Rathnayaka Weerakoon",
+     "affiliations": [
+      "Department of Computer Science & Engineering, University of Moratuwa, Sri Lanka"
+     ]
     },
     {
-     "name": "Ji Zhang",
-     "affiliations": []
+     "name": "Ishan Dewpura",
+     "affiliations": [
+      "Department of Computer Science & Engineering, University of Moratuwa, Sri Lanka"
+     ]
     },
     {
-     "name": "Hao Yin",
-     "affiliations": []
+     "name": "Niman Ransindu",
+     "affiliations": [
+      "Department of Computer Science & Engineering, University of Moratuwa, Sri Lanka"
+     ]
     },
     {
-     "name": "Hao Li",
-     "affiliations": []
+     "name": "Shavin Anjitha",
+     "affiliations": [
+      "Department of Computer Science & Engineering, University of Moratuwa, Sri Lanka"
+     ]
     },
     {
-     "name": "Owen Fu",
-     "affiliations": []
+     "name": "Tharindu R. Patabandi",
+     "affiliations": [
+      "Independent Researcher, San Jose, CA, USA"
+     ]
     },
     {
-     "name": "Xunxing Chen",
-     "affiliations": []
-    },
-    {
-     "name": "Lin Huang",
-     "affiliations": []
-    },
-    {
-     "name": "Zion Wang",
-     "affiliations": []
-    },
-    {
-     "name": "Lucas Li",
-     "affiliations": []
-    },
-    {
-     "name": "Jiajun Cheng",
-     "affiliations": []
-    },
-    {
-     "name": "Arthur Jiang",
-     "affiliations": []
-    },
-    {
-     "name": "Junping Zhao",
-     "affiliations": []
-    },
-    {
-     "name": "Jia Zhang",
-     "affiliations": []
+     "name": "Sanath Jayasena",
+     "affiliations": [
+      "Department of Computer Science & Engineering, University of Moratuwa, Sri Lanka"
+     ]
     }
    ],
    "categories": [
     "cs.DC",
-    "cs.AI",
-    "physics.bio-ph"
+    "cs.PF",
+    "cs.PL"
    ],
    "primary_category": "cs.DC",
    "date": "2026-11-04",
-   "url": "https://arxiv.org/abs/2611.06122",
-   "matched_terms": [
-    "gpu",
-    "gpus"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Ab Initio Accuracy Beyond the Cutoff: Distributed Message-Passing Equivariant Attention at Tens-of-Millions-of-Atom Scale Allex Kan, Ji Zhang, Hao Yin, Hao Li, Owen Fu, Xunxing Chen, Lin Huang, Zion Wang, Lucas Li, Jiajun Cheng, Arthur Jiang * , Junping Zhao * , and Jia Zhang * IQuest Research, UBio Team and HPC Team, China Abstract Molecular dynamics predicts how molecules move and interact by computing the force on every atom and integrating its motion. Density functional theory supplies those forces from first principles, but its O ⁡ ( N 3 ) O(N^{3}) cost stops at thousands of atoms; empirical force fields reach millions and miss bond breaking and charge transfer. Message-passing equivariant Transformers regress the ab initio surface at linear cost, and their stacked layers carry information past any single cutoff, compounding four layers into a receptive field of up to 23 23 Å. That is where the accuracy frontier now sits. Getting there at scale is a communication problem: every layer exchanges boundary features across devices, the conservative force repeats that exchange in the backward pass, and the neighbor graph is re-derived from moving atoms, so tensor shapes keep changing under a runtime that would rather capture them once. We present Tessera , a distributed runtime that holds the workload’s shape fixed between rebuilds. It sorts atoms along a space-filling curve and cuts the sorted order into equal-count shards: every rank holds the same number of atoms, every tensor has one shape, and each rank’s peer set grows sublinearly, roughly as K 0.5 K^{0.5} rather than K K over the device counts we measure. A conservative neighbor skin keeps that topology valid across many coordinate updates, so the forward and backward passes of an entire rebuild interval replay as one captured CUDA Graph. Fused kernels, a three-level neighbor search, and an overlapped All-to-All complete it. On 512 GPUs Tessera sustains 30.7 30.7 M atoms at 89.7 % 89.7\\% weak-scaling efficiency ( 77 77 – 90 % 90\\% across three per-GPU loads), with per-step time rising 1.11 1.11 – 1.29 × 1.29\\times as machine and problem grow 16 × 16\\times . Graph reuse cuts full-step time 1.87 × 1.87\\times , and neighbor-search cost grows 1.7 × 1.7\\times over an 8 × 8\\times device increase where a Morton-order baseline grows 3.0 × 3.0\\times . On a live 10.24 10.24 M-atom salt solution, energy drift stays at 0.42 ​ μ 0.42\\,\\mu eV/atom/ps over 10 10 ps of NVE, and structure matches a serial reference. "
-  },
-  {
-   "key": "arxiv:2611.06084",
-   "source": "arXiv",
-   "id": "2611.06084",
-   "title": "Shallow Encoding Emits Deep Memories",
-   "abstract": "Hybrid language models interleave a few softmax-attention layers with many linear-attention or state-space layers, so every layer keeps a memory of earlier tokens: a key-value cache or a fixed-size recurrent state. Serving them spends more compute and high-bandwidth memory on these memories than the output requires. The prefill runs every layer for every prompt token, and every decode step loads and stores whole recurrent states, which on Qwen3.8-Flash-Next take as many bytes per request as the attention cache of thousands of tokens. We find two properties of trained hybrids that locate this excess. First, writes are easier than reads: writing a deep layer's memory of a token needs little of the deep computation that predicting the next token needs. Trained copies of the deep layers' write paths, which we call emitters, therefore write a prompt's deep memories from the residual stream of a shallower anchor layer, and all prompt tokens but the last run as few as 63% of the layers. Second, recurrent states have a state sink: most of their energy lies in a rank-one term along a fixed direction of each head, and the rest is a low-rank working memory. SEED builds on both: it makes the prefill shallow in depth and the decode state shallow in representation. Each recurrent state is stored as its sink plus low-rank factors, which the Gated DeltaNet, Kimi Delta Attention and Mamba-2 updates extend exactly; we prove that the open-loop error of the periodic compressions back to low rank is bounded independently of their number. SEED keeps the original weights frozen, compresses no attention cache, and runs all layers for every generated token. On six checkpoints of five production hybrids of 30B to over 300B parameters, it is nearly lossless on eleven official exams. Served with SGLang on NVIDIA GB300 GPUs on an agentic-coding trace, it raises the per-GPU throughput of Qwen3.8-Flash-Next 1.2-1.4x.",
-   "authors": [
-    {
-     "name": "Mingyuan Ma",
-     "affiliations": []
-    },
-    {
-     "name": "Yangmin Li",
-     "affiliations": []
-    },
-    {
-     "name": "Harris Nover",
-     "affiliations": []
-    },
-    {
-     "name": "Zheyu Fu",
-     "affiliations": []
-    },
-    {
-     "name": "Po-Han Huang",
-     "affiliations": []
-    },
-    {
-     "name": "Alex Settle",
-     "affiliations": []
-    },
-    {
-     "name": "Ashwin Nanjappa",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.LG",
-    "cs.DC"
-   ],
-   "primary_category": "cs.LG",
-   "date": "2026-11-04",
-   "url": "https://arxiv.org/abs/2611.06084",
-   "matched_terms": [
-    "gpu",
-    "gpus"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Shallow Encoding Emits Deep Memories Mingyuan Ma * Yangmin Li * Harris Nover Zheyu Fu Po-Han Huang Alex Settle Ashwin NanjappaNVIDIA Project page Corresponding author: Ashwin Nanjappa † . * Equal contribution: Mingyuan Ma and Yangmin Li co-led the project, and their order was decided at random. 2026-11-03 Abstract Hybrid language models interleave a few softmax-attention layers with many linear-attention or state-space layers, so every layer keeps a memory of earlier tokens: a key–value cache or a fixed-size recurrent state. Serving them spends more compute and high-bandwidth memory (HBM) on these memories than the output requires. The prefill runs every layer for every prompt token, although only the last token’s prediction is used, and every decode step loads and stores whole recurrent states, which on Qwen3.8-Flash-Next take as many bytes per request as the attention cache of thousands of tokens. We find two properties of trained hybrids that locate this excess. First, writes are easier than reads: writing a deep layer’s memory of a token needs little of the deep computation that predicting the next token needs. Trained copies of the deep layers’ write paths, which we call emitters , therefore write a prompt’s deep memories from the residual stream of a shallower anchor layer , and all prompt tokens but the last run as few as 63% of the layers. Second, recurrent states have a state sink : most of their energy lies in a rank-one term along a fixed direction of each head, and the rest is a low-rank working memory. SEED (Shallow Encoding Emits Deep Memories) builds on both: it makes the prefill shallow in depth and the decode state shallow in representation. Each recurrent state is stored as its sink plus low-rank factors, which the Gated DeltaNet, Kimi Delta Attention and Mamba-2 updates extend exactly; we prove that the open-loop error of the periodic compressions back to low rank is bounded independently of their number. SEED keeps the original weights frozen, compresses no attention cache, and runs all layers for every generated token. On six checkpoints of five production hybrids of 30B to over 300B parameters, it is nearly lossless on eleven official exams. Served with SGLang on NVIDIA GB300 GPUs on an agentic-coding trace, it raises the per-GPU throughput of Qwen3.8-Flash-Next 1.2–1.4 × \\times . Neither property was designed into these models. keywords LLM inference, hybrid models, linear attention, recurrent state, prefill, algorithm–system co-desi"
-  },
-  {
-   "key": "arxiv:2611.05958",
-   "source": "arXiv",
-   "id": "2611.05958",
-   "title": "Transmission Expansion with Large, Discrete Data Center Realization Uncertainty",
-   "abstract": "Large data center projects introduce a distinct transmission planning uncertainty because of their large scale, discrete project realization nature, and strong locational impacts on the transmission network. On the one hand, conventional deterministic treatments can either overbuild the network by assuming that all candidate projects materialize; on the other, they can leave the system underprepared by prematurely screening out projects. This paper develops a project-realization-based framework for systematically modeling, planning, and evaluating transmission expansion under uncertain data center realization. Candidate data center projects are represented through alternative realization scenarios and associated probabilities, enabling different planning strategies to be modeled and quantitatively assessed under a common framework. Within this framework, numerical case studies demonstrate the effectiveness of the proposed framework and the benefits of stochastic planning approach. The results show that stochastic planning can use realization probabilities to hedge multiple plausible futures, providing a more balanced tradeoff between transmission investment and reliability exposure than deterministic approaches under correctly specified and misspecified realization probabilities.",
-   "authors": [
-    {
-     "name": "Lin Dong",
-     "affiliations": []
-    },
-    {
-     "name": "Samuel Talkington",
-     "affiliations": []
-    },
-    {
-     "name": "Le Xie",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SY"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-04",
-   "url": "https://arxiv.org/abs/2611.05958",
-   "matched_terms": [
-    "data center"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Transmission Expansion with Large, Discrete Data Center Realization Uncertainty Lin Dong Samuel Talkington and Le Xie † † thanks: Lin˜Dong is with the Department of Electrical and Computer Engineering, Texas A&M University, College Station, TX, 77840 USA (e-mail: lin.dong@tamu.edu ). † † thanks: Samuel˜Talkington is with the School of Engineering and Applied Sciences, Harvard University, Allston, MA 02134 USA, and is also with the Department of Electrical Engineering and Computer Science, University of Michigan, Ann Arbor, MI 48109 USA (e-mail: talks@umich.edu ). † † thanks: Le˜Xie is with the School of Engineering and Applied Sciences, Harvard University, Allston, MA 02134 USA (e-mail: xie@seas.harvard.edu ). Abstract Large data center projects introduce a distinct transmission planning uncertainty because of their large scale, discrete project realization nature, and strong locational impacts on the transmission network. On the one hand, conventional deterministic treatments can either overbuild the network by assuming that all candidate projects materialize; on the other, they can leave the system underprepared by prematurely screening out projects. This paper develops a project-realization-based framework for systematically modeling, planning, and evaluating transmission expansion under uncertain data center realization. Candidate data center projects are represented through alternative realization scenarios and associated probabilities, enabling different planning strategies to be modeled and quantitatively assessed under a common framework. Within this framework, numerical case studies demonstrate the effectiveness of the proposed framework and the benefits of stochastic planning approach. The results show that stochastic planning can use realization probabilities to hedge multiple plausible futures, providing a more balanced tradeoff between transmission investment and reliability exposure than deterministic approaches under correctly specified and misspecified realization probabilities. Index Terms: Transmission expansion planning, data centers, discrete project realization, stochastic planning."
-  },
-  {
-   "key": "arxiv:2611.05939",
-   "source": "arXiv",
-   "id": "2611.05939",
-   "title": "Adaptive Grid-Mode-Aware Hybrid Energy Storage Control for AI Data Center Oscillation Mitigation",
-   "abstract": "Oscillatory power components in AI data-center demand can produce large frequency deviations when they coincide with vulnerable grid modes. Mode-aware hybrid energy storage systems (HESSs) can selectively suppress these components, but their effectiveness degrades when the grid mode changes while the control target remains fixed. This paper proposes a closed-loop grid-mode-adaptive HESS control framework that integrates measurement-based modal identification with mode-selective control. A sliding-window N4SID estimator identifies the local grid dynamics from grid-side power and frequency measurements, and the resulting natural-frequency estimate is used to retune the modal suppression branch assigned to the supercapacitor. The framework is evaluated under a grid-mode shift from 0.50 to 1.35Hz while maintaining equal physical damping and approximately equal load excitation at both frequencies. Compared with the fixed-target controller, the adaptive method reduces the post-change grid-side modal power component from 8.78 to 2.02MW, corresponding to a 76.94% reduction, and substantially lowers the resulting frequency deviation.",
-   "authors": [
-    {
-     "name": "Quang Manh Hoang",
-     "affiliations": []
-    },
-    {
-     "name": "Sina Mohammadi",
-     "affiliations": []
-    },
-    {
-     "name": "Phi Long Nguyen",
-     "affiliations": []
-    },
-    {
-     "name": "Wencong Su",
-     "affiliations": []
-    },
-    {
-     "name": "Van-Hai Bui",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SY"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-04",
-   "url": "https://arxiv.org/abs/2611.05939",
-   "matched_terms": [
-    "data center",
-    "data-center"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Adaptive Grid-Mode-Aware Hybrid Energy Storage Control for AI Data Center Oscillation Mitigation Thanks: Corresponding author: Van-Hai Bui (vhbui@umich.edu). Quang Manh Hoang 1 , Sina Mohammadi 1 , Phi Long Nguyen 2,3 , Wencong Su 1 , Van-Hai Bui 1,* Affiliation: 1 Department of Electrical and Computer Engineering, University of Michigan-Dearborn, USA 2 School of Electrical and Electronic Engineering, Hanoi University of Industry, Hanoi, Vietnam. 3 Center for Environmental Intelligence, VinUniversity, Hanoi, Vietnam Affiliation: Abstract Oscillatory power components in AI data-center demand can produce large frequency deviations when they coincide with vulnerable grid modes. Mode-aware hybrid energy storage systems (HESSs) can selectively suppress these components, but their effectiveness degrades when the grid mode changes while the control target remains fixed. This paper proposes a closed-loop grid-mode-adaptive HESS control framework that integrates measurement-based modal identification with mode-selective control. A sliding-window N4SID estimator identifies the local grid dynamics from grid-side power and frequency measurements, and the resulting natural-frequency estimate is used to retune the modal suppression branch assigned to the supercapacitor. The framework is evaluated under a grid-mode shift from 0.50 to 1.35 Hz while maintaining equal physical damping and approximately equal load excitation at both frequencies. Compared with the fixed-target controller, the adaptive method reduces the post-change grid-side modal power component from 8.78 to 2.02 MW, corresponding to a 76.94% reduction, and substantially lowers the resulting frequency deviation. Index Terms: AI data center, adaptive control, forced oscillation, hybrid energy storage, modal estimation, N4SID. † † aftertitle:"
-  },
-  {
-   "key": "arxiv:2611.05887",
-   "source": "arXiv",
-   "id": "2611.05887",
-   "title": "Agentic Wireless Optimization: Workflow Automation, Algorithm Design, and Multi-Timescale Network Operations",
-   "abstract": "Optimization is fundamental to wireless communications, from characterizing channel capacity and designing transmission schemes to allocating network resources. However, conventional workflows require substantial expertise and manual effort, particularly for high-dimensional or nonconvex problems, black-box objectives, and interdependent decisions across time scales. Recent advances in agentic artificial intelligence (AI), particularly agents based on large language models (LLMs), offer new opportunities to address these challenges by integrating reasoning, tool use, and numerical feedback. This article presents an overview of agentic AI for wireless optimization, focusing on workflow automation, algorithm design, and multi-timescale network operations. First, LLM-based agents streamline optimization workflows by automating problem formulation, code generation, numerical solution, and result verification in a closed loop. Second, they facilitate algorithm design by combining and configuring existing numerical methods and refining learning-based optimizers, using numerical feedback to improve solution quality and computational efficiency for nonconvex and black-box problems. Third, they support multi-timescale network operations by decomposing coupled problems into interdependent subtasks and coordinating their solutions to satisfy network-level objectives and service requirements. A multicast beamforming case study demonstrates performance gains from agent-developed solvers, particularly in execution time, and a network energy-saving example illustrates how agents coordinate dynamic base station activation, user association, and beamforming across time scales. Finally, we discuss open challenges and research opportunities in agentic wireless optimization.",
-   "authors": [
-    {
-     "name": "Yuan Guo",
-     "affiliations": []
-    },
-    {
-     "name": "Zixiang Ren",
-     "affiliations": []
-    },
-    {
-     "name": "Ruihua Luo",
-     "affiliations": []
-    },
-    {
-     "name": "Yilong Chen",
-     "affiliations": []
-    },
-    {
-     "name": "Ya-Feng Liu",
-     "affiliations": []
-    },
-    {
-     "name": "Xianghao Yu",
-     "affiliations": []
-    },
-    {
-     "name": "Derrick Wing Kwan Ng",
-     "affiliations": []
-    },
-    {
-     "name": "Jie Xu",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SP"
-   ],
-   "primary_category": "eess.SP",
-   "date": "2026-11-04",
-   "url": "https://arxiv.org/abs/2611.05887",
+   "url": "https://arxiv.org/abs/2611.07105",
    "matched_terms": [
     "large language models",
     "llm",
     "llms"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Agentic Wireless Optimization: Workflow Automation, Algorithm Design, and Multi-Timescale Network Operations Yuan Guo Zixiang Ren Ruihua Luo Yilong Chen Ya-Feng Liu Xianghao Yu Derrick Wing Kwan Ng Jie Xu † † thanks: Yuan Guo, Ruihua Luo, Yilong Chen, and Jie Xu are with the School of Science and Engineering (SSE), the Shenzhen Future Network of Intelligence Institute (FNii-Shenzhen), and the Guangdong Provincial Key Laboratory of Future Networks of Intelligence, The Chinese University of Hong Kong (Shenzhen), Guangdong 518172, China (e-mail: guoyuan@cuhk.edu.cn ; ruihualuo@link.cuhk.edu.cn ; yilongchen@link.cuhk.edu.cn ; xujie@cuhk.edu.cn ). ( Corresponding author: Jie Xu .) † † thanks: Zixiang Ren is with the Department of Electrical and Computer Engineering, National University of Singapore, Singapore (e-mail: zixiang_ren@nus.edu.sg ). † † thanks: Ya-Feng Liu is with the School of Mathematical Sciences, Beijing University of Posts and Telecommunications, Beijing, China (e-mail: yafengliu@bupt.edu.cn ). † † thanks: Xianghao Yu is with the Department of Electrical Engineering, City University of Hong Kong, Hong Kong (e-mail: alex.yu@cityu.edu.hk ). † † thanks: Derrick Wing Kwan Ng is with the School of Electrical Engineering and Telecommunications, University of New South Wales, Sydney, NSW 2052, Australia (e-mail: w.k.ng@unsw.edu.au ). Abstract Optimization is fundamental to wireless communications, from characterizing channel capacity and designing transmission schemes to allocating network resources. However, conventional optimization workflows require substantial domain expertise and manual effort, particularly when addressing high-dimensional or nonconvex problems, optimizing black-box objectives, or coordinating interdependent decisions across multiple time scales. Recent advances in agentic artificial intelligence (AI), particularly the development of agents based on large language models (LLMs), offer new opportunities to address these challenges by integrating reasoning, tool use, and numerical feedback. This article presents an overview of agentic AI for wireless optimization, focusing on workflow automation, algorithm design, and multi-timescale network operations. First, LLM-based agents can streamline optimization workflows by automating problem formulation, code generation, numerical solution, and result verification in a closed loop. Second, they facilitate algorithm design by combining and configuring existing numerical methods and refinin"
+   "affiliation_block": "NUMA-Torch : Compiler-Driven NUMA-Aware LLM Prefill on Multi-Socket CPUs Thanks: © 2026 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works. Accepted for publication in the 2026 IEEE 33rd International Conference on High Performance Computing, Data, and Analytics (HiPC), Bengaluru, India, December 16–19, 2026. This is the authors’ accepted version; the final published version will appear in IEEE Xplore. Thisara Rathnayaka Weerakoon 1 , Ishan Dewpura 1 , Niman Ransindu 1 , Shavin Anjitha 1 , Tharindu R. Patabandi 2 , Sanath Jayasena 1 Affiliation: 1 Dept. of Computer Science & Engineering, University of Moratuwa, Sri Lanka {thisara.21, ishandewpura.21, niman.21, shavin.21, sanath}@cse.mrt.ac.lk Affiliation: 2 Independent Researcher, San Jose, CA, USA tharindu@protonmail.com Affiliation: Abstract For sufficiently large transformer-based Large Language Models (LLMs), whose parameters cannot be retained in on-chip caches, prefill throughput on multi-socket CPUs is often limited by sustainable DRAM bandwidth rather than peak floating-point throughput. In the standard PyTorch compilation (i.e., TorchInductor) path, model weights are allocated without considering the Non-Uniform Memory Access (NUMA) topology—specifically, the affinity between memory banks and compute cores is disregarded. This causes a substantial fraction of weight accesses to traverse the inter-socket interconnect, severely degrading the effective memory bandwidth available to each socket. We address this bottleneck through a compiler-level solution that makes TorchInductor NUMA-aware. Treating each NUMA socket as an independent tensor-parallel partition, we introduce NUMA-aware Tensor Parallelism (NUMA-TP). This approach transparently shards weights across sockets and schedules compute kernels such that thread pools and memory allocations remain strictly local to their respective sockets using CPU affinity. We evaluate the approach on GPT-2 [ 1 ] (117M, 345M, 762M) and BERT [ 2 ] (Small, Large), which exercise standard multi-head attention and MLP, as well as Gemma 3 270M [ 3 ] , which combines Multi-Query Attention with a GeGLU-gated MLP. By strictly enforcing data locality,"
   },
   {
-   "key": "arxiv:2611.05748",
-   "source": "arXiv",
-   "id": "2611.05748",
-   "title": "Energy-Efficient Reinforcement Learning for Large Language Models",
-   "abstract": "Reinforcement learning for language models alternates between generating responses and training the policy. These stages place different demands on GPUs, creating opportunities to reduce clock frequency with little loss in throughput. Selecting frequencies online is difficult because response lengths change and frequency trials themselves consume time and energy. We present EE-RL (energy-efficient RL), an online controller that selects separate frequencies for generation and training during RL execution. It compares candidate settings with a prediction of the default GPU governor on the same token workload, and keeps the most energy-efficient setting that meets a throughput threshold. The controller then monitors throughput and energy and adjusts frequencies as the workload changes. Fixed-frequency sweeps on H100 and GB200 show GPU energy savings of up to 28.2% per valid training token across synchronous and asynchronous execution, while largely preserving throughput. EE-RL turns this headroom into online savings, reducing GPU energy per valid training token by up to 16.9% at a modest throughput cost.",
+   "key": "doi:10.1016/j.apenergy.2026.129214",
+   "source": "journal",
+   "journal": "Applied Energy",
+   "journal_short": "Applied Energy",
+   "doi": "10.1016/j.apenergy.2026.129214",
+   "title": "Data center cooling in the AI era: cross-scale challenges and system-level outlook",
+   "abstract": "",
+   "abstract_source": "",
    "authors": [
     {
-     "name": "Rahul Sharma",
+     "name": "Hyunjun Oh",
      "affiliations": []
     },
     {
-     "name": "Nitin Vegesna",
+     "name": "Josh McTigue",
      "affiliations": []
     },
     {
-     "name": "Yanxin Zhang",
+     "name": "Jiazhen Ling",
+     "affiliations": []
+    },
+    {
+     "name": "Guangdong Zhu",
      "affiliations": []
     }
    ],
-   "categories": [
-    "cs.DC"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-11-03",
-   "url": "https://arxiv.org/abs/2611.05748",
+   "type": "journal-article",
+   "date": "2026-11-05",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129214",
    "matched_terms": [
-    "gpu",
-    "gpus",
-    "large language models"
+    "data center"
    ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "(author block not found in HTML)"
+   "screened_on": "title only",
+   "affiliation_source": "not available yet"
   }
  ],
  "title_only_final": [],
@@ -456,12 +405,6 @@
    "source": "Applied Energy",
    "title": "A performance-based framework for assessing underground hydrogen storage under reservoir and infrastructure constraints: Application to offshore wind curtailment mitigation",
    "url": "https://doi.org/10.1016/j.apenergy.2026.128387",
-   "first_seen": "2026-11-02"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Cyber-physical security and resilience in microgrids: a comprehensive review of attack scenarios, detection methods, and defense mechanisms",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129098",
    "first_seen": "2026-11-02"
   },
   {
@@ -646,26 +589,8 @@
   },
   {
    "source": "Nature Communications",
-   "title": "Tailoring modulus and hardness of AuAgCu alloys via three-dimensional coherent dual-phase structures",
-   "url": "https://doi.org/10.1038/s41467-026-78338-7",
-   "first_seen": "2026-11-04"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Spatial protein interactomics in solid primary human tissue",
-   "url": "https://doi.org/10.1038/s41467-026-79134-z",
-   "first_seen": "2026-11-04"
-  },
-  {
-   "source": "Nature Communications",
    "title": "Author Correction: Renal resistive index-guided mean arterial pressure titration in sepsis: a prospective single-center, single-blind, parallel-group randomized controlled trial",
    "url": "https://doi.org/10.1038/s41467-026-79236-8",
-   "first_seen": "2026-11-04"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Precision probabilistic mapping reveals personalized functional topography in the early postnatal human brain",
-   "url": "https://doi.org/10.1038/s41467-026-79265-3",
    "first_seen": "2026-11-04"
   },
   {
@@ -687,66 +612,6 @@
    "first_seen": "2026-11-04"
   },
   {
-   "source": "Nature Communications",
-   "title": "Systematic screen of RNA binding proteins that enhance circular RNA translation",
-   "url": "https://doi.org/10.1038/s41467-026-77614-w",
-   "first_seen": "2026-11-04"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Highly efficient and durable Ga-doped Ni/Al2O3 catalyst enhanced by interfacial Ga3+ for low-temperature ammonia decomposition",
-   "url": "https://doi.org/10.1038/s41467-026-78934-7",
-   "first_seen": "2026-11-04"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Publisher Correction: Soft microgel networks stabilize and extend nozzle-free water jets",
-   "url": "https://doi.org/10.1038/s41467-026-78674-8",
-   "first_seen": "2026-11-04"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Author Correction: Asian summer monsoon orbital variability directly paced by CO2 and precession, not eccentricity",
-   "url": "https://doi.org/10.1038/s41467-026-78966-z",
-   "first_seen": "2026-11-04"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Driving catalysts to the intrinsic optical selectivity limit for accelerating photothermal catalysis",
-   "url": "https://doi.org/10.1038/s41467-026-79268-0",
-   "first_seen": "2026-11-04"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Author Correction: Tocilizumab versus sarilumab among adults hospitalised with COVID-19: target trial emulation across England and Scotland",
-   "url": "https://doi.org/10.1038/s41467-026-78874-2",
-   "first_seen": "2026-11-04"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Author Correction: Adipose HuR protects against diet-induced obesity and insulin resistance",
-   "url": "https://doi.org/10.1038/s41467-026-79109-0",
-   "first_seen": "2026-11-04"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Author Correction: Cytoplasmic LIF reprograms invasive mode to enhance NPC dissemination through modulating YAP1-FAK/PXN signaling",
-   "url": "https://doi.org/10.1038/s41467-026-79112-5",
-   "first_seen": "2026-11-04"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Autoantibodies associate with clinical outcome in patients with melanoma treated with a dendritic cell-based vaccine",
-   "url": "https://doi.org/10.1038/s41467-026-78893-z",
-   "first_seen": "2026-11-04"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "UNMASC: modelling non-monotonic dose responses to cytokine combinations",
-   "url": "https://doi.org/10.1038/s41467-026-78355-6",
-   "first_seen": "2026-11-04"
-  },
-  {
    "source": "TSG",
    "title": "2026 Index IEEE Transactions on Smart Grid",
    "url": "https://doi.org/10.1109/tsg.2026.3749047",
@@ -756,12 +621,6 @@
    "source": "TPWRS",
    "title": "Characterizing High-Voltage Neighborhood with Unique AC Power Flow Solution",
    "url": "https://doi.org/10.1109/tpwrs.2026.3750409",
-   "first_seen": "2026-11-05"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Optimization of power allocation scheduling and component sizing in battery-assisted electrolyser systems",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129164",
    "first_seen": "2026-11-05"
   },
   {
@@ -780,12 +639,6 @@
    "source": "Applied Energy",
    "title": "A network-aware combinatorial auction mechanism for local multi-energy markets with coupled conversion",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129212",
-   "first_seen": "2026-11-05"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Unlocking flexibility in buildings through batteries: a case study of the Netherlands",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129215",
    "first_seen": "2026-11-05"
   },
   {
@@ -820,42 +673,6 @@
   },
   {
    "source": "Nature Communications",
-   "title": "Pressure-driven regime shifts in graphitization rewrite carbon fate during metamorphism",
-   "url": "https://doi.org/10.1038/s41467-026-79246-6",
-   "first_seen": "2026-11-05"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Nanoscopic cation heterogeneity dictates the ambient stability of halide perovskites",
-   "url": "https://doi.org/10.1038/s41467-026-79158-5",
-   "first_seen": "2026-11-05"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "A sublattice polarimeter to probe the quantum geometry of synthetic photonic lattices",
-   "url": "https://doi.org/10.1038/s41467-026-78322-1",
-   "first_seen": "2026-11-05"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Agentic intelligent data engine for scientific large language models",
-   "url": "https://doi.org/10.1038/s41467-026-78887-x",
-   "first_seen": "2026-11-05"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Decoding microprotein interactome via a minimal genetically encoded photocatalytic proximity labeling system",
-   "url": "https://doi.org/10.1038/s41467-026-78409-9",
-   "first_seen": "2026-11-05"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "A nanomolar-affinity antibody enabling sensitive labeling and high-resolution genomic mapping of O-GlcNAc",
-   "url": "https://doi.org/10.1038/s41467-026-79188-z",
-   "first_seen": "2026-11-05"
-  },
-  {
-   "source": "Nature Communications",
    "title": "Von Hippel-Lindau (VHL) prevents excessive protein aggregation and mediates aggrephagy by modulating the liquidity of p62 condensates",
    "url": "https://doi.org/10.1038/s41467-026-79256-4",
    "first_seen": "2026-11-05"
@@ -870,12 +687,6 @@
    "source": "Nature Communications",
    "title": "Triply convergent carbenylative Suzuki–Miyaura coupling enabled by palladium/copper co-catalysis",
    "url": "https://doi.org/10.1038/s41467-026-79085-5",
-   "first_seen": "2026-11-05"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Multi-ancestry genome-wide and transcriptome-wide association analyses identify new risk loci and genes for inflammatory bowel disease",
-   "url": "https://doi.org/10.1038/s41467-026-79302-1",
    "first_seen": "2026-11-05"
   },
   {
@@ -900,18 +711,6 @@
    "source": "Nature Communications",
    "title": "Global MORBs reveal a warmer present-day ambient mantle and moderate secular cooling of Earth",
    "url": "https://doi.org/10.1038/s41467-026-79310-1",
-   "first_seen": "2026-11-05"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "An accessible Python framework for real-time magnetic tweezers microscope control and image processing",
-   "url": "https://doi.org/10.1038/s41467-026-78849-3",
-   "first_seen": "2026-11-05"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Bell nonlocality with directly generated telecom-band spin–photon entanglement",
-   "url": "https://doi.org/10.1038/s41467-026-79099-z",
    "first_seen": "2026-11-05"
   },
   {
@@ -955,10 +754,196 @@
    "title": "Coordination-directed synthesis of two-dimensional metal-organic covalent organic frameworks",
    "url": "https://doi.org/10.1038/s41467-026-79250-w",
    "first_seen": "2026-11-05"
+  },
+  {
+   "source": "TSG",
+   "title": "Flexible Load Control and Feasible Region Characterization for Distribution Network Operation under Physiology Constraints in Aquaculture",
+   "url": "https://doi.org/10.1109/tsg.2026.3750228",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "TSG",
+   "title": "Cyber-Physical Deception for Cyber Resilience Enhancement of Networked Microgrids",
+   "url": "https://doi.org/10.1109/tsg.2026.3750261",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "TSG",
+   "title": "A Closed-Form Analysis of Bad Data Detection Under Budget-Limited False Data Injection Attacks",
+   "url": "https://doi.org/10.1109/tsg.2026.3750697",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "TSG",
+   "title": "Nonlinear Robust Smart Meter Data Recovery via Deep Learning Enhanced Hankel Matrix Completion",
+   "url": "https://doi.org/10.1109/tsg.2026.3750164",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "TSG",
+   "title": "Multi-Unit Coordinated Regional Preventive Dispatch in Flexible Distribution Systems Based on Secure Adjustment Feasible Operation Regions",
+   "url": "https://doi.org/10.1109/tsg.2026.3750690",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "TSG",
+   "title": "A Stability-Anchoring Stationary and Rapid-Response Transportable Energy Storage-driven Resilience Enhancement Method under Extreme Weather",
+   "url": "https://doi.org/10.1109/tsg.2026.3750306",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "TSG",
+   "title": "Attack-Aware Distributed Secondary Control of DC Microgrids via Impulsive Sampling",
+   "url": "https://doi.org/10.1109/tsg.2026.3750866",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "TSG",
+   "title": "Trustworthy Smart Meter Data Collection via Optimal Blockchain Node Placement",
+   "url": "https://doi.org/10.1109/tsg.2026.3750558",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "TSG",
+   "title": "Delay-Resilient Load Frequency Control via Adaptive Multi-Stage ESO: Theoretical Foundations and Hierarchical ADRC Design for Hybrid Microgrids",
+   "url": "https://doi.org/10.1109/tsg.2026.3750331",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "TSG",
+   "title": "Dual-Horizon Adaptive Restoration for Transmission Systems Under Multi-Round Cyber-Physical Attacks Considering Progressive Repair Uncertainty",
+   "url": "https://doi.org/10.1109/tsg.2026.3750561",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "TSG",
+   "title": "Non-Stationary Residential Load Forecasting: A Dynamic Cloud-Edge Collaboration Approach",
+   "url": "https://doi.org/10.1109/tsg.2026.3750673",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Capacity design in district energy systems with thermal energy storage – a new planning paradigm",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129160",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Accelerating wind-farm AEP evaluation by exploiting near-low-rank wake structure",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129175",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Co-optimization of intraday and frequency containment reserve bids for battery energy storage",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129228",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Distributionally robust bidding of a hybrid high-temperature thermal and compressed air energy storage system in power markets under wind power uncertainty",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129176",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Optimal co-planning of hybrid energy hubs and integrated electricity-hydrogen transmission infrastructure",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129189",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Climate-driven screening maps and design rules for PCM-assisted cooling of photovoltaic modules",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129231",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Effective enzyme engineering through modeling kinetic parameter changes upon mutations with geometric deep learning",
+   "url": "https://doi.org/10.1038/s41467-026-79287-x",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Resident cardiac macrophage-like cells induced by an ILC2 cytokine cocktail confer cardioprotection through enhanced efferocytosis in a mouse model of myocardial infarction",
+   "url": "https://doi.org/10.1038/s41467-026-79157-6",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: Hippocampal-prefrontal orchestration supports higher-order learning for creative ideation",
+   "url": "https://doi.org/10.1038/s41467-026-78748-7",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Pathology-adapted peptide–oligonucleotide nanohybrid mitigates glucocorticoid-induced bone loss",
+   "url": "https://doi.org/10.1038/s41467-026-79320-z",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Engineering filamentous myosins for optical control of contractility",
+   "url": "https://doi.org/10.1038/s41467-026-78828-8",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A language model-informed minimalistic design of functional coacervate vesicles",
+   "url": "https://doi.org/10.1038/s41467-026-78912-z",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Personalized adjunctive phage therapy for difficult-to-treat musculoskeletal infections",
+   "url": "https://doi.org/10.1038/s41467-026-79305-y",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Genomic language models decode bidirectional promoter activity and reveal conserved regulatory patterns across plant species",
+   "url": "https://doi.org/10.1038/s41467-026-79328-5",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Agentic AI needs a science of interaction",
+   "url": "https://doi.org/10.1038/s41467-026-78879-x",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Full-sunlight-driven photocatalytic recovery of critical metals from spent lithium-ion batteries via organic acid leaching",
+   "url": "https://doi.org/10.1038/s41467-026-78307-0",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Rescue treatment for medium vessel occlusion by intra-arterial tenecteplase: the RESCUE-TNK randomized clinical trial",
+   "url": "https://doi.org/10.1038/s41467-026-79062-y",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Intra-arterial tenecteplase for acute basilar artery occlusion with sufficient recanalization after thrombectomy: the INSIST-IT randomized clinical trial",
+   "url": "https://doi.org/10.1038/s41467-026-79177-2",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Intra-arterial tenecteplase during thrombectomy for acute ischemic stroke: the BRETIS-TNK2 trial",
+   "url": "https://doi.org/10.1038/s41467-026-79178-1",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Fe(III) hydrolysis-driven Fe(III)/Fe(IV) redox couple for iron sludge-free Fenton-like oxidation",
+   "url": "https://doi.org/10.1038/s41467-026-79181-6",
+   "first_seen": "2026-11-06"
   }
  ],
- "pending_abstract": 89,
+ "pending_abstract": 95,
  "runs_utc": [
-  "2026-11-05T13:02:00+00:00"
+  "2026-11-06T12:49:52+00:00"
  ]
 }
