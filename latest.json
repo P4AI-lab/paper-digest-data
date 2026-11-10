@@ -1,83 +1,74 @@
 {
- "date": "2026-11-09",
- "generated_utc": "2026-11-09T13:45:33+00:00",
+ "date": "2026-11-10",
+ "generated_utc": "2026-11-10T13:24:07+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-11-05",
-   "2026-11-09"
+   "2026-11-06",
+   "2026-11-10"
   ],
   "journal_doi_created": [
-   "2026-11-03",
-   "2026-11-09"
+   "2026-11-04",
+   "2026-11-10"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
-   "status": "ok",
-   "in_window": 79,
-   "new": 34,
-   "candidates": 7
+   "status": "error: RuntimeError(\"giving up on https://export.arxiv.org/api/query?search_query=%28cat%3Aeess.SY+OR+cat%3Acs.DC+OR+cat%3Aeess.SP%29+AND+submittedDate%3A: TimeoutError('The read operation timed out')\")"
   },
   {
    "source": "arXiv cs.DC",
-   "status": "ok",
-   "in_window": 42,
-   "new": 28,
-   "candidates": 6
+   "status": "error: RuntimeError(\"giving up on https://export.arxiv.org/api/query?search_query=%28cat%3Aeess.SY+OR+cat%3Acs.DC+OR+cat%3Aeess.SP%29+AND+submittedDate%3A: TimeoutError('The read operation timed out')\")"
   },
   {
    "source": "arXiv eess.SP",
-   "status": "ok",
-   "in_window": 58,
-   "new": 30,
-   "candidates": 1
+   "status": "error: RuntimeError(\"giving up on https://export.arxiv.org/api/query?search_query=%28cat%3Aeess.SY+OR+cat%3Acs.DC+OR+cat%3Aeess.SP%29+AND+submittedDate%3A: TimeoutError('The read operation timed out')\")"
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-   "in_window": 15,
-   "new": 3,
-   "candidates": 1,
-   "new_with_abstract": 3
+   "in_window": 19,
+   "new": 4,
+   "candidates": 0,
+   "new_with_abstract": 0
   },
   {
    "source": "TPWRS",
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
-   "in_window": 4,
-   "new": 2,
+   "in_window": 6,
+   "new": 3,
    "candidates": 0,
-   "new_with_abstract": 2
+   "new_with_abstract": 0
   },
   {
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 40,
-   "new": 15,
+   "in_window": 38,
+   "new": 3,
    "candidates": 0,
-   "new_with_abstract": 1
+   "new_with_abstract": 0
   },
   {
    "source": "Nature Energy",
    "journal": "Nature Energy",
    "status": "ok",
-   "in_window": 2,
+   "in_window": 3,
    "new": 1,
-   "candidates": 1,
+   "candidates": 0,
    "new_with_abstract": 0
   },
   {
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 171,
-   "new": 57,
-   "candidates": 1,
-   "new_with_abstract": 46
+   "in_window": 144,
+   "new": 8,
+   "candidates": 0,
+   "new_with_abstract": 5
   },
   {
    "source": "Nature Rev. EE",
@@ -89,1028 +80,58 @@
    "new_with_abstract": 0
   }
  ],
- "errors": [],
- "candidates": [
-  {
-   "key": "arxiv:2611.09789",
-   "source": "arXiv",
-   "id": "2611.09789",
-   "title": "On PMU Adequacy for Wideband Dynamics Tracking Beyond Attenuation Assumptions",
-   "abstract": "Recent work highlights the inadequacy of standard synchrophasors in capturing high-frequency grid dynamics, including data center oscillations, primarily due to filtering and windowing attenuation during phasor estimation. This letter shows how synchrophasor ambient data spectrum itself contains information on attenuation, which provides a way to identify critically impacted measurements and potentially estimate and undo the effect. Results are shown for synthetic data as well as actual synchrophasor estimates from digital fault recorders (DFRs) within the Dominion Energy system.",
-   "authors": [
-    {
-     "name": "Chetan Mishra",
-     "affiliations": []
-    },
-    {
-     "name": "Luigi Vanfretti",
-     "affiliations": []
-    },
-    {
-     "name": "Jaime Delaree Jr. and",
-     "affiliations": []
-    },
-    {
-     "name": "Kevin D. Jones",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SP"
-   ],
-   "primary_category": "eess.SP",
-   "date": "2026-11-06",
-   "url": "https://arxiv.org/abs/2611.09789",
-   "matched_terms": [
-    "data center"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "(HTML version not available: HTTPError)"
-  },
-  {
-   "key": "arxiv:2611.09651",
-   "source": "arXiv",
-   "id": "2611.09651",
-   "title": "Concurrent Use of FP32 and FP64 Computing Units on GPUs and Mixed-Precision Placement in WENO Reconstruction",
-   "abstract": "Scientific computing often requires FP64 arithmetic, although FP64 performance is limited on NVIDIA GPUs. Double-float (DF) emulation, which represents a value using two FP32 values with about 48 bits of significand, outperforms native FP64 where FP64 units are limited. On the other hand, mixed-precision strategies offload to FP32 the operations that do not determine accuracy. In both approaches, the native FP64 units remain idle during FP32 instruction execution. We investigated whether this idle resource can be recovered on A100, GH200, GB200, and RTX PRO 6000 Blackwell Max-Q. A microbenchmark shows that co-resident FP32 and native-FP64 kernels exceed the throughput of the faster kernel alone on A100 but not on GH200 and GB200; on RTX 6000 Blackwell, they do so against FFMA but, against DF emulation, only when the issue density of the DF kernel is reduced. We then tested whether this gain carries over to computing the WENO-Z reconstruction with the nonlinear weights in FP32 and the candidate polynomials in native FP64 (W32P64). We observe substantial overlap on A100, whereas GH200, GB200, and RTX 6000 Blackwell show little overlap. Importantly, the fastest placement does not always preserve the design accuracy of WENO-Z: for a one-dimensional entropy wave problem, W32P64 fails to achieve the design order of accuracy for WENO7 and WENO9. In contrast, DF emulation of the entire reconstruction comes close to it on the grids tested for WENO5, WENO7, and WENO9 while delivering a $2.51-3.94 \\times$ speedup over FP64 on RTX 6000 Blackwell. For WENO5 on the two-dimensional Euler vortex problem the W32P64 error at $n=256$ is $1.26 \\times$ that of FP64 and 1/104 of that of the all-FP32 reconstruction.",
-   "authors": [
-    {
-     "name": "Jun Hatayama",
-     "affiliations": []
-    },
-    {
-     "name": "Daichi Mukunoki",
-     "affiliations": []
-    },
-    {
-     "name": "Yusuke Onishi",
-     "affiliations": []
-    },
-    {
-     "name": "Atsushi Sekimoto",
-     "affiliations": []
-    },
-    {
-     "name": "Toshinori Kouchi",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-11-06",
-   "url": "https://arxiv.org/abs/2611.09651",
-   "matched_terms": [
-    "gpus"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Concurrent Use of FP32 and FP64 Computing Units on GPUs and Mixed-Precision Placement in WENO Reconstruction Jun Hatayama Affiliation: Graduate School of Environmental, Life, Natural Science and Technology, Okayama University , Okayama , Japan email: jhatayama@s.okayama-u.ac.jp , Daichi Mukunoki Affiliation: Information Technology Center, Nagoya University , Nagoya , Japan email: mukunoki@cc.nagoya-u.ac.jp , Yusuke Onishi Affiliation: Graduate School of Environmental, Life, Natural Science and Technology, Okayama University , Okayama , Japan email: p62d9qiy@s.okayama-u.ac.jp , Atsushi Sekimoto Affiliation: Faculty of Environmental, Life, Natural Science and Technology, Okayama University , Okayama , Japan email: asekimoto@okayama-u.ac.jp and Toshinori Kouchi Affiliation: Faculty of Environmental, Life, Natural Science and Technology, Okayama University , Okayama , Japan email: kouchi@okayama-u.ac.jp © , 2026 Abstract. Scientific computing, including computational fluid dynamics (CFD), often requires FP64 arithmetic, although FP64 performance is severely limited on consumer- and workstation-class GPUs, and the shift of GPU resources toward low-precision units for AI workloads may extend this limitation to data-center GPUs. Double-float (DF) emulation, which represents a value using two FP32 values with about 48 bits of significand, outperforms native FP64 where FP64 units are limited. On the other hand, mixed-precision strategies offload to FP32 the operations that do not determine accuracy. In both approaches, the native FP64 units remain idle during FP32 instruction execution because they are physically separate from the FP32 units. We investigated whether this idle resource can be recovered on A100, GH200, GB200, and RTX PRO 6000 Blackwell Max-Q. A microbenchmark shows that co-resident FP32 and native-FP64 kernels exceed the throughput of the faster kernel alone on A100 but not on GH200 and GB200; on RTX 6000 Blackwell, they do so against FFMA but, against DF emulation, only when the issue density of the DF kernel is reduced. We then tested whether this gain carries over to computing the WENO-Z reconstruction, a standard high-order shock-capturing scheme in CFD, with the nonlinear weights in FP32 and the candidate polynomials in native FP64 (W32P64). The weights are candidates for lower precision, although the precision they need depends on the order, problem, and implementation. We observe substantial overlap on A100, whereas GH200, GB200, and RTX 6000 "
-  },
-  {
-   "key": "arxiv:2611.09624",
-   "source": "arXiv",
-   "id": "2611.09624",
-   "title": "TPIC: Energy-Conserving Space Plasma Simulations on GPU Supercomputers",
-   "abstract": "Artificial heating and numerical damping affect particle energization in kinetic space plasma simulations, even when the numerical scheme remains stable. Implicit and semi implicit energy conserving Particle-in-Cell (PIC) methods eliminate these errors in the discrete energy balance while relaxing explicit stability constraints. We present TPIC, a massively parallel implementation of the Energy Conserving Semi-Implicit Method (ECSIM) for GPU supercomputers. We extend the exact energy conservation in the ECSIM formulation to closed domains with conducting boundaries by deriving and canceling a spurious term in the discrete Poynting flux theorem. TPIC executes the complete particle and field cycle on NVIDIA and AMD GPUs, combining matrix-engine acceleration with asynchronous communication and computation. We validate TPIC in a variety of electrostatic and electrodynamic test cases relevant for space plasma physics applications, including quasineutral plasma expansion, two-stream instability, Whistler waves, Weibel instability, Whistler turbulence, and three-dimensional magnetic reconnection with conducting walls and 12.3 billion particles. We show that in all scenarios, TPIC agrees with the corresponding analytical theory or reference numerical results, and preserves the total system energy to machine precision. On 4,096 AMD GPUs, TPIC advances 1.9 trillion particles with 96.8\\% weak scaling efficiency.",
-   "authors": [
-    {
-     "name": "Luca Pennati",
-     "affiliations": []
-    },
-    {
-     "name": "Ivy Peng",
-     "affiliations": []
-    },
-    {
-     "name": "Stefano Markidis",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.CE",
-    "cs.DC",
-    "cs.PF"
-   ],
-   "primary_category": "cs.CE",
-   "date": "2026-11-06",
-   "url": "https://arxiv.org/abs/2611.09624",
-   "matched_terms": [
-    "gpu",
-    "gpus",
-    "supercomputers"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "TPIC: Energy-Conserving Space Plasma Simulations on GPU Supercomputers Luca Pennati pennati@kth.se Ivy Peng Stefano Markidis organization=KTH Royal Institute of Technology, city=Stockholm, country=Sweden Abstract Artificial heating and numerical damping affect particle energization in kinetic space plasma simulations, even when the numerical scheme remains stable. Implicit and semi implicit energy conserving Particle-in-Cell (PIC) methods eliminate these errors in the discrete energy balance while relaxing explicit stability constraints. We present TPIC, a massively parallel implementation of the Energy Conserving Semi-Implicit Method (ECSIM) for GPU supercomputers. We extend the exact energy conservation in the ECSIM formulation to closed domains with conducting boundaries by deriving and canceling a spurious term in the discrete Poynting flux theorem. TPIC executes the complete particle and field cycle on NVIDIA and AMD GPUs, combining matrix-engine acceleration with asynchronous communication and computation. We validate TPIC in a variety of electrostatic and electrodynamic test cases relevant for space plasma physics applications, including quasineutral plasma expansion, two-stream instability, Whistler waves, Weibel instability, Whistler turbulence, and three-dimensional magnetic reconnection with conducting walls and 12.3 billion particles. We show that in all scenarios, TPIC agrees with the corresponding analytical theory or reference numerical results, and preserves the total system energy to machine precision. On 4,096 AMD GPUs, TPIC advances 1.9 trillion particles with 96.8% weak scaling efficiency. keywords Particle-in-Cell ,Energy-conserving semi-implicit method ,Space plasma physics ,Magnetic reconnection ,GPU acceleration ,Matrix engines † † corresponding: Corresponding author."
-  },
-  {
-   "key": "arxiv:2611.09305",
-   "source": "arXiv",
-   "id": "2611.09305",
-   "title": "An Optimal Power-Flow Grouping Topology for Single-Isolation-Stage Multi-Output Solid-State Transformers",
-   "abstract": "Electric-vehicle dc fast-charging stations and data centers require multiple high-power dc outputs with independently varying demands. Conventional multi-output solid-state transformers typically establish a common dc bus and use downstream dc/dc converters for port-level regulation and, where required, galvanic isolation. A single-isolation-stage solid-state transformer can eliminate this additional high-power interface stage by directly forming multiple isolated outputs from its submodule dc/dc stages. However, because one submodule is generally insufficient for an individual output port, multiple submodules must be connected in parallel, while inter-submodule balancing circuits redistribute power under unbalanced loading. The submodule grouping therefore determines the internal balancing-power paths. Sequential grouping can create long transfer paths and accumulated balancing power, increasing current stress and losses. This paper proposes an optimal power-flow grouping topology that interleaves submodules assigned to different output ports, thereby localizing power redistribution and reducing the power processed by the balancing circuits. Analytical models quantify the required balancing power and its reduction relative to sequential grouping. A coordinated submodule-bypass strategy is also developed, and the remaining output-power capability under different fault scenarios is evaluated. A six-submodule prototype validates the proposed topology. Under the same highly unbalanced operating conditions, the proposed topology reduces the maximum submodule dc-link voltage difference by 63\\% and the peak balancing current by 14.5%, while improving the measured efficiency by approximately 5.6% at rated power. Stable post-fault operation is also experimentally demonstrated.",
-   "authors": [
-    {
-     "name": "Yi Hao",
-     "affiliations": []
-    },
-    {
-     "name": "Krzysztof Puczko",
-     "affiliations": []
-    },
-    {
-     "name": "Levy Ferreira Costa",
-     "affiliations": []
-    },
-    {
-     "name": "Liangcai Shu",
-     "affiliations": []
-    },
-    {
-     "name": "Dongsheng Yang",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SY"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-06",
-   "url": "https://arxiv.org/abs/2611.09305",
-   "matched_terms": [
-    "data centers"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "An Optimal Power-Flow Grouping Topology for Single-Isolation-Stage Multi-Output Solid-State Transformers Yi Hao Krzysztof Puczko Levy Ferreira Costa Liangcai Shu Dongsheng Yang † † thanks: This work was supported by the European Union’s Horizon Europe research and innovation programme under the Marie Skłodowska-Curie Actions (MSCA) Doctoral Networks grant agreement No. 101072414 (E2GO). † † thanks: Y. Hao is with the Department of Electrical Engineering, Eindhoven University of Technology, 5612 AP Eindhoven, The Netherlands, and also with Delta Electronics EMEA, 02-822 Warsaw, Poland (e-mail: y.hao@tue.nl). L. F. Costa and D. Yang are with the Department of Electrical Engineering, Eindhoven University of Technology, 5612 AP Eindhoven, The Netherlands (e-mail: l.costa@tue.nl; d.yang1@tue.nl). K. Puczko is with Delta Electronics EMEA, 02-822 Warsaw, Poland (e-mail: krzysztof.puczko@deltaww.com). L. Shu is with Delta Electronics (Shanghai) Co., Ltd., Hangzhou, China (e-mail: alan.shu@deltaww.com). Abstract Electric-vehicle dc fast-charging stations and data centers require multiple high-power dc outputs with independently varying demands. Conventional multi-output solid-state transformers typically establish a common dc bus and use downstream dc/dc converters for port-level regulation and, where required, galvanic isolation. A single-isolation-stage solid-state transformer can eliminate this additional high-power interface stage by directly forming multiple isolated outputs from its submodule dc/dc stages. However, because one submodule is generally insufficient for an individual output port, multiple submodules must be connected in parallel, while inter-submodule balancing circuits redistribute power under unbalanced loading. The submodule grouping therefore determines the internal balancing-power paths. Sequential grouping can create long transfer paths and accumulated balancing power, increasing current stress and losses. This paper proposes an optimal power-flow grouping topology that interleaves submodules assigned to different output ports, thereby localizing power redistribution and reducing the power processed by the balancing circuits. Analytical models quantify the required balancing power and its reduction relative to sequential grouping. A coordinated submodule-bypass strategy is also developed, and the remaining output-power capability under different fault scenarios is evaluated. A six-submodule prototype validates the proposed topology. Under t"
-  },
-  {
-   "key": "arxiv:2611.09251",
-   "source": "arXiv",
-   "id": "2611.09251",
-   "title": "Green500: Adventure in Qualifying a Cluster",
-   "abstract": "Energy effciency has become a key metric for evaluating High Performance Computing (HPC) systems, as reflected by the Green500 ranking. However, energy effciency alone does not capture the full environmental impact of an HPC cluster. Using the Kuma cluster at EPFL, we report on two Green500 measurement campaigns at Level 2 and Level 3, and extend this analysis to a full carbon footprint assessment using the MITSI life-cycle based methodology. GPU power capping experiments show that energy effciency peaks at 450 W, achieving an 11% performance loss offset by a 20% reduction in energy consumption. When embodied emissions are accounted for, the optimal power cap for carbon effciency shifts to 500 W under Switzerland's low-carbon electrical grid, revealing a tension between minimizing usage and embodied contributions. We discuss the challenges of generalizing this approach into a broader carbon-based HPC ranking, and argue that moving beyond energy effciency is both necessary and feasible.",
-   "authors": [
-    {
-     "name": "Nicolas Richart",
-     "affiliations": []
-    },
-    {
-     "name": "Xavier Ouvrard",
-     "affiliations": []
-    },
-    {
-     "name": "Julia Paolini",
-     "affiliations": []
-    },
-    {
-     "name": "Manuel Cubero-Castan",
-     "affiliations": []
-    },
-    {
-     "name": "Gilles Fourestey",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-11-06",
-   "url": "https://arxiv.org/abs/2611.09251",
-   "matched_terms": [
-    "gpu",
-    "hpc"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Green500: Adventure in Qualifying a Cluster Nicolas Richart Affiliation: SCITAS, École Polytechnique Fédérale de Lausanne (EPFL), 1015 Lausanne, Switzerland E-mail nicolas.richart@epfl.ch Julia Paolini Affiliation: EcoCloud, École Polytechnique Fédérale de Lausanne (EPFL), 1015 Lausanne, Switzerland Xavier Ouvrard Affiliation: EcoCloud, École Polytechnique Fédérale de Lausanne (EPFL), 1015 Lausanne, Switzerland Manuel Cubero-Castan Affiliation: Sustainability, École Polytechnique Fédérale de Lausanne (EPFL), 1015 Lausanne, Switzerland Gilles Fourestey Affiliation: SCITAS, École Polytechnique Fédérale de Lausanne (EPFL), 1015 Lausanne, Switzerland E-mail nicolas.richart@epfl.ch Abstract Energy efficiency has become a key metric for evaluating High Performance Computing (HPC) systems, as reflected by the Green500 ranking. However, energy efficiency alone does not capture the full environmental impact of an HPC cluster. Using the Kuma cluster at EPFL, we report on two Green500 measurement campaigns at Level 2 and Level 3, and extend this analysis to a full carbon footprint assessment using the MITSI life-cycle based methodology. GPU power capping experiments show that energy efficiency peaks at 450 W 450\\text{\\,}\\mathrm{W} , achieving an 11% performance loss offset by a 20% reduction in energy consumption. When embodied emissions are accounted for, the optimal power cap for carbon efficiency shifts to 500 W 500\\text{\\,}\\mathrm{W} under Switzerland’s low-carbon electrical grid, revealing a tension between minimizing usage and embodied contributions. We discuss the challenges of generalizing this approach into a broader carbon-based HPC ranking, and argue that moving beyond energy efficiency is both necessary and feasible. Keywords: Green500 HPC energy efficiency carbon efficiencycarbon footprint GPU power capping life-cycle assessment"
-  },
-  {
-   "key": "arxiv:2611.09187",
-   "source": "arXiv",
-   "id": "2611.09187",
-   "title": "Real-Time Nonlinear Mixed-Integer Model Predictive Control With Horizon-Tail Relaxations",
-   "abstract": "Model predictive control (MPC) of nonlinear systems with discrete decisions leads to mixed-integer nonlinear programs (MINLPs) whose combinatorial complexity often prevents real-time deployment. In this paper, we propose a decomposition-based MPC method that reorders and reduces computations to shorten the delay between receiving a state measurement and applying the control input. Before the measurement arrives, we solve a continuous relaxation of the MINLP at a predicted state and construct a mixed-integer quadratic program (MIQP). Once the measured state is available, we solve the MIQP that reconstructs the discrete controls and simultaneously performs one sequential quadratic programming step toward the corresponding nonlinear solution. To reduce the combinatorial complexity in the horizon length, we either fix the integer controls or relax their integrality over the prediction horizon tail, while retaining an integer-feasible first control input. We derive error bounds relating the nonlinear objective values obtained with the horizon-tail approximations to the optimal value of the original mixed-integer problem. In a data center cooling example, the proposed method reduces mean feedback computation time by 94% relative to a state-of-the-art MINLP method with a total closed-loop cost difference of less than 1%.",
-   "authors": [
-    {
-     "name": "Armin Nurkanović",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "math.OC",
-    "eess.SY"
-   ],
-   "primary_category": "math.OC",
-   "date": "2026-11-06",
-   "url": "https://arxiv.org/abs/2611.09187",
-   "matched_terms": [
-    "data center"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Armin Nurkanović † † thanks: *This research was supported by DFG via projects 504452366 (SPP 2364), 560056112 (robust MPC), 535860958 (ALeSCo) and 525018088 (MAWERO), and by BMWK via 03EN3054B. † † thanks: The author thanks Nathalie Janes and Moritz Diehl for interesting discussions on mixed-integer optimal control. OpenAI’s Codex was used to assist with drafting and language editing, as well as implementing the accompanying code. The author reviewed and verified all AI-assisted content and takes full responsibility for the final manuscript and results. Affiliation: Systems Control and Optimization Laboratory, Department of Microsystems Engineering (IMTEK), University of Freiburg, Germany, armin.nurkanovic@imtek.uni-freiburg.de Abstract Model predictive control (MPC) of nonlinear systems with discrete decisions leads to mixed-integer nonlinear programs (MINLPs) whose combinatorial complexity often prevents real-time deployment. In this paper, we propose a decomposition-based MPC method that reorders and reduces computations to shorten the delay between receiving a state measurement and applying the control input. Before the measurement arrives, we solve a continuous relaxation of the MINLP at a predicted state and construct a mixed-integer quadratic program (MIQP). Once the measured state is available, we solve the MIQP that reconstructs the discrete controls and simultaneously performs one sequential quadratic programming step toward the corresponding nonlinear solution. To reduce the combinatorial complexity in the horizon length, we either fix the integer controls or relax their integrality over the prediction horizon tail, while retaining an integer-feasible first control input. We derive error bounds relating the nonlinear objective values obtained with the horizon-tail approximations to the optimal value of the original mixed-integer problem. In a data center cooling example, the proposed method reduces mean feedback computation time by 94 % 94\\% relative to a state-of-the-art MINLP method with a total closed-loop cost difference of less than 1 % 1\\% ."
-  },
-  {
-   "key": "arxiv:2611.09159",
-   "source": "arXiv",
-   "id": "2611.09159",
-   "title": "UniExit: A Unified Latency-Aware Early-Exit Runtime for Heterogeneous Edge AI",
-   "abstract": "Edge applications increasingly combine CNN-based perception with edge-deployable Transformer-based language models, but deploying such heterogeneous workloads on resource-constrained devices is challenging because inference latency varies with both input difficulty and runtime hardware state. Early-exit inference reduces computation by terminating at intermediate stages, yet existing methods are often model-specific and rely on static latency profiles that become stale under dynamic edge conditions. This paper presents UniExit, a unified latency-aware early-exit runtime for heterogeneous edge AI. UniExit abstracts CNN blocks and Transformer layers as ordered stages and applies a common latency-aware routing policy while retaining model-specific quality mechanisms. It predicts the cost of reaching the next exit from runtime state and inference progress to make budget-aware continue-or-exit decisions. UniExit combines runtime-state-aware latency prediction, cache-based prediction reuse, trend-aware fallback, and CNN-specific exit stabilization to provide low-overhead and robust online control. We implement UniExit on multiple edge and edge-cloud platforms and evaluate it with representative CNN and Transformer-based language-model workloads. Across single-workload, concurrent heterogeneous, and edge-cloud settings, UniExit consistently improves deadline satisfaction and latency-accuracy trade-offs over existing progressive inference baselines, while reducing redundant exit-module computation and task-level energy consumption.",
-   "authors": [
-    {
-     "name": "Yuhang Guan",
-     "affiliations": []
-    },
-    {
-     "name": "Huanle Zhang",
-     "affiliations": []
-    },
-    {
-     "name": "Xiaomin Ouyang",
-     "affiliations": []
-    },
-    {
-     "name": "Zhidan Liu",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-11-06",
-   "url": "https://arxiv.org/abs/2611.09159",
-   "matched_terms": [
-    "cloud platforms",
-    "edge ai"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "UniExit : A Unified Latency-Aware Early-Exit Runtime for Heterogeneous Edge AI Conference: The International Conference on Embedded Artificial Intelligence and Sensing Systems; 2027; Boulder, CO, USA Yuhang Guan Affiliation: The Hong Kong University of Science and Technology (Guangzhou) , Guangzhou , China email: asterism178@163.com , Huanle Zhang Affiliation: Shandong University , Qingdao , China email: dtczhang@sdu.edu.cn , Xiaomin Ouyang Affiliation: The Hong Kong University of Science and Technology , Hong Kong , China email: xmouyang@cse.ust.hk and Zhidan Liu Note: Corresponding author. Affiliation: The Hong Kong University of Science and Technology (Guangzhou) , Guangzhou , China email: zhidanliu@hkust-gz.edu.cn Abstract. Edge applications increasingly combine CNN-based perception with edge-deployable Transformer-based language models, but deploying such heterogeneous workloads on resource-constrained devices is challenging because inference latency varies with both input difficulty and runtime hardware state. Early-exit inference reduces computation by terminating at intermediate stages, yet existing methods are often model-specific and rely on static latency profiles that become stale under dynamic edge conditions. This paper presents UniExit , a unified latency-aware early-exit runtime for heterogeneous edge AI. UniExit abstracts CNN blocks and Transformer layers as ordered stages and applies a common latency-aware routing policy while retaining model-specific quality mechanisms. It predicts the cost of reaching the next exit from runtime state and inference progress to make budget-aware continue-or-exit decisions. UniExit combines runtime-state-aware latency prediction, cache-based prediction reuse, trend-aware fallback, and CNN-specific exit stabilization to provide low-overhead and robust online control. We implement UniExit on multiple edge and edge–cloud platforms and evaluate it with representative CNN and Transformer-based language-model workloads. Across single-workload, concurrent heterogeneous, and edge–cloud settings, UniExit consistently improves deadline satisfaction and latency–accuracy trade-offs over existing progressive inference baselines, while reducing redundant exit-module computation and task-level energy consumption. Figure 1 . From model-specific early exits to a shared stage-wise runtime view. (a) CNN early-exit methods use branch classifiers and confidence checks. (b) Transformer-based language-model methods use intermedi"
-  },
-  {
-   "key": "arxiv:2611.09001",
-   "source": "arXiv",
-   "id": "2611.09001",
-   "title": "Supporting Data Center Grid Integration via Co-Optimized Battery Energy Storage Sizing and Capacity Allocation",
-   "abstract": "Interconnecting large data centers can be delayed by grid requirements on demand flexibility, ramping limits, and ride-through performance. This paper proposes an optimization-based framework to size a Battery Energy Storage System (BESS) that accelerates data center grid integration by providing BESS capacity required to meet selected flexibility and grid-support requirements. The model co-optimizes BESS power rating and energy capacity while allocating capability across three services: (i) demand response over a specified duration, (ii) mitigation of high-magnitude, high-frequency load fluctuations through reserved active power with zero net state-of-charge change, and (iii) voltage support via reactive power capability at the point of common coupling. Minute-level operational scheduling enforces state-of-charge feasibility and load ramp constraints, and incorporates a controllable queue of delay-insensitive computing tasks to enhance flexibility. A case study using a real data center load profile demonstrates the proposed method and quantifies the BESS power-energy requirements and operational trade-offs needed to satisfy the multi-service constraints, providing practical guidance for interconnection planning and deployment.",
-   "authors": [
-    {
-     "name": "Wei Wang",
-     "affiliations": []
-    },
-    {
-     "name": "Himanshu Sharma",
-     "affiliations": []
-    },
-    {
-     "name": "Thiagarajan Ramachandran",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SY",
-    "math.OC"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-06",
-   "url": "https://arxiv.org/abs/2611.09001",
-   "matched_terms": [
-    "data center",
-    "data centers"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Supporting Data Center Grid Integration via Co-Optimized Battery Energy Storage Sizing and Capacity Allocation Wei Wang Email: w.wang@pnnl.gov Affiliation: Pacific Northwest National Laboratory, Richland, WA 99352, United States Himanshu Sharma Email: himanshu.sharma@pnnl.gov Corresponding author: Corresponding author Affiliation: Pacific Northwest National Laboratory, Richland, WA 99352, United States Thiagarajan Ramachandran Email: thiagarajan.ramachandran@pnnl.gov Affiliation: Pacific Northwest National Laboratory, Richland, WA 99352, United States Abstract Interconnecting large data centers can be delayed by grid requirements on demand flexibility, ramping limits, and ride-through performance. This paper proposes an optimization-based framework to size a Battery Energy Storage System (BESS) that accelerates data center grid integration by providing BESS capacity required to meet selected flexibility and grid-support requirements. The model co-optimizes BESS power rating and energy capacity while allocating capability across three services: (i) demand response over a specified duration, (ii) mitigation of high-magnitude, high-frequency load fluctuations through reserved active power with zero net state-of-charge change, and (iii) voltage support via reactive power capability at the point of common coupling. Minute-level operational scheduling enforces state-of-charge feasibility and load ramp constraints, and incorporates a controllable queue of delay-insensitive computing tasks to enhance flexibility. A case study using a real data center load profile demonstrates the proposed method and quantifies the BESS power-energy requirements and operational trade-offs needed to satisfy the multi-service constraints, providing practical guidance for interconnection planning and deployment. Keywords: energy storage sizing , data center , demand response , voltage support , load fluctuation smoothing"
-  },
-  {
-   "key": "arxiv:2611.08929",
-   "source": "arXiv",
-   "id": "2611.08929",
-   "title": "Grid-Oriented Probabilistic Load Forecasting for AI Data Centers",
-   "abstract": "Probabilistic load forecasts for AI data centers need to represent both uncertainty under changing workloads and temporal dependence to support grid operations. This paper develops an open, grid-oriented benchmark using measured GPU power from a 448-GPU AI cluster. Forecasts are evaluated through four stages: probabilistic prediction, online uncertainty calibration, temporal scenario generation, and horizon-wide reserve sizing. Following a change in cluster utilization, a quantile LightGBM forecast achieves only 63.4% coverage for a nominal 90% interval, while online regime-conditioned calibration increases coverage to 87.3%. Even with well-calibrated marginal forecasts, independent sampling produces unrealistic ramp distributions and excessive reserve procurement. Reconstructing temporal dependence from historical forecast errors reduces the discrepancy in ramp statistics and lowers realized reserve cost by 7.4-10.6% across three forecasting tasks. These findings show that marginal forecast quality alone is insufficient for operational decisions and motivate joint evaluation of calibration, temporal structure, and decision outcomes.",
-   "authors": [
-    {
-     "name": "Qingyi Yao",
-     "affiliations": []
-    },
-    {
-     "name": "Ding Lin",
-     "affiliations": []
-    },
-    {
-     "name": "Tianqiao Zhao",
-     "affiliations": []
-    },
-    {
-     "name": "Meng Yue",
-     "affiliations": []
-    },
-    {
-     "name": "Jianhui Wang",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SY",
-    "cs.LG"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-06",
-   "url": "https://arxiv.org/abs/2611.08929",
-   "matched_terms": [
-    "data centers"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Grid-Oriented Probabilistic Load Forecasting for AI Data Centers Qingyi Yao 1 , Ding Lin 1 , Tianqiao Zhao 2 , Meng Yue 3 , and Jianhui Wang 1 Affiliation: 1 Southern Methodist University, Dallas, TX, USA 2 The University of Texas at Arlington, Arlington, TX, USA 3 Brookhaven National Laboratory, Upton, NY, USA Abstract Probabilistic load forecasts for AI data centers need to represent both uncertainty under changing workloads and temporal dependence to support grid operations. This paper develops an open, grid-oriented benchmark using measured GPU power from a 448-GPU AI cluster. Forecasts are evaluated through four stages: probabilistic prediction, online uncertainty calibration, temporal scenario generation, and horizon-wide reserve sizing. Following a change in cluster utilization, a quantile LightGBM forecast achieves only 63.4% coverage for a nominal 90% interval, while online regime-conditioned calibration increases coverage to 87.3%. Even with well-calibrated marginal forecasts, independent sampling produces unrealistic ramp distributions and excessive reserve procurement. Reconstructing temporal dependence from historical forecast errors reduces the discrepancy in ramp statistics and lowers realized reserve cost by 7.4–10.6% across three forecasting tasks. These findings show that marginal forecast quality alone is insufficient for operational decisions and motivate joint evaluation of calibration, temporal structure, and decision outcomes. Index Terms: AI data centers, probabilistic load forecasting, conformal prediction, scenario generation, operating reserve."
-  },
-  {
-   "key": "arxiv:2611.08867",
-   "source": "arXiv",
-   "id": "2611.08867",
-   "title": "Extending Grid Foundation Models for Phasor-Domain Dynamic Simulation",
-   "abstract": "Grid Foundation Models (GridFMs) are emerging as a powerful framework for learning and transferring knowledge across power grids and grid analysis tasks. This work extends GridFMs from steady-state analysis to dynamic simulation. We present DynGridFM, which uses component-wise tokenization and a structured latent operator to learn shared dynamic representations across heterogeneous grids and enable transfer to unseen systems. Pretrained on nine grids, DynGridFM is adapted to a held-out 48-machine grid, where fine-tuning on 64 trajectories achieves accuracy comparable to training from scratch on 128. On a single GPU, it achieves 924x to 1232x speedup over numerical simulators on one CPU core.",
-   "authors": [
-    {
-     "name": "Boyang Zhao",
-     "affiliations": []
-    },
-    {
-     "name": "Yifan Zhou",
-     "affiliations": []
-    },
-    {
-     "name": "Alban Puech",
-     "affiliations": []
-    },
-    {
-     "name": "Tilman Bockhacker",
-     "affiliations": []
-    },
-    {
-     "name": "Hendrik Hamann",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SY",
-    "cs.LG"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-06",
-   "url": "https://arxiv.org/abs/2611.08867",
-   "matched_terms": [
-    "gpu"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Extending Grid Foundation Models for Phasor-Domain Dynamic Simulation Thanks: This work was supported in part by the Department of Navy award N000142512374 and in part by DOE’s Office of Critical Minerals and Energy Innovation under PRIME-54805-EGI-FY25. Boyang Zhao 1 , Yifan Zhou 1 , Alban Puech 2 , Tilman Bockhacker 3 , and Hendrik Hamann 1 3 4 Affiliation: 1 Department of Electrical and Computer Engineering, Stony Brook University, Stony Brook, NY, USA {boyang.zhao.1,yifan.zhou.1,tilman.bockhacker,hendrik.hamann}@stonybrook.edu Affiliation: 2 IBM Research, ETH Zürich, Zurich, Switzerland {alban.puech2}@ibm.com Affiliation: 3 School of Marine and Atmospheric Sciences, Stony Brook University, Stony Brook, NY, USA Affiliation: 4 Brookhaven National Laboratory, Upton, NY, USA Abstract Grid Foundation Models (GridFMs) are emerging as a powerful framework for learning and transferring knowledge across power grids and grid analysis tasks. This work extends GridFMs from steady-state analysis to dynamic simulation. We present DynGridFM, which uses component-wise tokenization and a structured latent operator to learn shared dynamic representations across heterogeneous grids and enable transfer to unseen systems. Pretrained on nine grids, DynGridFM is adapted to a held-out 48-machine grid, where fine-tuning on 64 trajectories achieves accuracy comparable to training from scratch on 128. On a single GPU, it achieves 924 × 924\\times to 1,232 × 1{,}232\\times speedup over numerical simulators on one CPU core. Index Terms: Foundation models, phasor-domain simulation, power system dynamics, graph transformers, latent dynamics."
-  },
-  {
-   "key": "arxiv:2611.08777",
-   "source": "arXiv",
-   "id": "2611.08777",
-   "title": "Reducing Data-Center Load Transfers with Ride-Through-Aware Voltage Control",
-   "abstract": "Fault-induced transfers of large data centers to backup supply can cause abrupt reductions in grid-served demand. Coordinating reactive-power support to mitigate these transfers requires consideration of facility-specific voltage--duration ride-through characteristics, particularly when support capacity is limited. This paper develops a ride-through-aware extension of quadratic voltage control that assesses voltage deviations relative to the admissible margins specified by these characteristics. We establish four design requirements that jointly express envelope-based severity, duration dependence, and preventive voltage-restoration incentives. Within a multiplicatively gated quadratic class, we derive necessary and sufficient conditions for satisfying these requirements and construct an explicit family of envelope-normalized objectives. We apply the proposed objectives to reactive-power coordination and evaluate their performance on the IEEE 14-bus, New England 39-bus, and NPCC 140-bus systems. Comparisons with Volt/VAR control, conventional nominal-voltage tracking, and recent data-center voltage-control methods demonstrate improved data-center retention under matched reactive-power support constraints. In the IEEE 14-bus study, the proposed controller reduces the mean data-center disconnection rate by 44.8\\% and grid-demand loss by 27.4\\% compared with the best-performing baseline. These results highlight the benefit of incorporating data-center ride-through requirements into reactive-power allocation.",
-   "authors": [
-    {
-     "name": "Siyu Lu",
-     "affiliations": []
-    },
-    {
-     "name": "Yang Weng",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SY"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-05",
-   "url": "https://arxiv.org/abs/2611.08777",
-   "matched_terms": [
-    "data centers",
-    "data-center"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Reducing Data-Center Load Transfers with Ride-Through-Aware Voltage Control Siyu Lu and Yang Weng † † thanks: S. Lu and Y. Weng are with the School of Electrical, Computer and Energy Engineering at Arizona State University, Tempe, AZ 85281 USA, e-mail: {siyulu12, yang.weng}@asu.edu. Abstract Fault-induced transfers of large data centers to backup supply can cause abrupt reductions in grid-served demand. Coordinating reactive-power support to mitigate these transfers requires consideration of facility-specific voltage–duration ride-through characteristics, particularly when support capacity is limited. This paper develops a ride-through-aware extension of quadratic voltage control that assesses voltage deviations relative to the admissible margins specified by these characteristics. We establish four design requirements that jointly express envelope-based severity, duration dependence, and preventive voltage-restoration incentives. Within a multiplicatively gated quadratic class, we derive necessary and sufficient conditions for satisfying these requirements and construct an explicit family of envelope-normalized objectives. We apply the proposed objectives to reactive-power coordination and evaluate their performance on the IEEE 14-bus, New England 39-bus, and NPCC 140-bus systems. Comparisons with Volt/VAR control, conventional nominal-voltage tracking, and recent data-center voltage-control methods demonstrate improved data-center retention under matched reactive-power support constraints. In the IEEE 14-bus study, the proposed controller reduces the mean data-center disconnection rate by 44.8% and grid-demand loss by 27.4% compared with the best-performing baseline. These results highlight the benefit of incorporating data-center ride-through requirements into reactive-power allocation. Index Terms: Data centers, voltage ride-through, voltage control, voltage–duration envelopes, reactive power control."
-  },
-  {
-   "key": "arxiv:2611.08665",
-   "source": "arXiv",
-   "id": "2611.08665",
-   "title": "Dynamic GPU Voxel Grids and Voxel-sequential Processing in NanoVDB",
-   "abstract": "We introduce two fundamental advances to the NanoVDB data structure: dynamic GPU-native topological updates, and a voxel-sequential access paradigm that dramatically accelerates point-wise and stencil-based operators on sparse grids. NanoVDB's linearized memory layout has delivered strong GPU performance, and the Index-Grid concept introduced in the fVDB framework [Williams et al 2024] provided topology/data separation and optimal compactness of storage in sparse machine learning workloads. However, all these prior iterations of NanoVDB assume a static topology that has precluded use of this data structure in simulation and dynamic geometric processes. We eliminate this limitation by introducing a suite of dynamic topology operators -- morphological dilation, grid merging, pruning, and cross-resolution coarsening and refinement. These operators use bit-parallel algorithms to reconstruct grids containing hundreds of millions of voxels in just a few milliseconds. We also introduce a voxel-sequential access paradigm and data structure for GPU kernels operating on sparse data. We stream active voxels as a flat linear sequence, minimizing or eliminating the need for tree traversal in the process. This achieves compute density and regularity that allow even complex stencil-based operators to approach peak memory bandwidth, with minimal storage overhead. Together, these contributions remove the read-only constraint from NanoVDB, establishing it as a high-performance primary representation for dynamic GPU simulation and geometry manipulation. We evaluate the efficacy of our newly introduced operators in benchmarks sourced from applications such as 3D reconstruction, fluid simulation, and large-scale mesh voxelization.",
-   "authors": [
-    {
-     "name": "Eftychios Sifakis",
-     "affiliations": []
-    },
-    {
-     "name": "Francis Williams",
-     "affiliations": []
-    },
-    {
-     "name": "Christopher Horvath",
-     "affiliations": []
-    },
-    {
-     "name": "Rohan Sawhney",
-     "affiliations": []
-    },
-    {
-     "name": "Mark Harris",
-     "affiliations": []
-    },
-    {
-     "name": "Jonathan Swartz",
-     "affiliations": []
-    },
-    {
-     "name": "Ken Museth",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.GR",
-    "cs.CV",
-    "cs.DC"
-   ],
-   "primary_category": "cs.GR",
-   "date": "2026-11-05",
-   "url": "https://arxiv.org/abs/2611.08665",
-   "matched_terms": [
-    "gpu"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Dynamic GPU Sparse Grids and Voxel-sequential Processing in NanoVDB​ 2109 Journal: TOG Volume: 45 6 225 12 DOI: 10.1145/3842564 CCS: Computing methodologies Vector / streaming algorithms CCS: Computing methodologies Volumetric models CCS: Computing methodologies Graphics processors CCS: Information systems Data structures Eftychios Sifakis Affiliation: NVIDIA , USA email: esifakis@nvidia.com Affiliation: University of Wisconsin-Madison , USA email: sifakis@cs.wisc.edu , Francis Williams email: francis@fwilliams.info Affiliation: NVIDIA , USA , Christopher Horvath email: chorvath@nvidia.com Affiliation: NVIDIA , USA , Rohan Sawhney email: rsawhney@nvidia.com Affiliation: NVIDIA , USA , Mark Harris email: mharris@nvidia.com Affiliation: NVIDIA , Australia , Jonathan Swartz email: jswartz@nvidia.com Affiliation: NVIDIA , New Zealand and Ken Museth email: kmuseth@nvidia.com Affiliation: NVIDIA , USA 2026 Figure 1. We demonstrate our enhancements to NanoVDB in three diverse applications that rely on dynamic sparse grids. From left to right: Large-Scale Voxelization of a 2.8M-triangle hairball mesh ( McGuire, 2017 ) (left hemisphere in green), our MeshToGrid implementation generates a sparse index grid with 9.88 9.88 B active voxels and UDF values stored in a sidecar (right hemisphere in blue) in 3.24 3.24 s; Fluid Simulation of fire using the ghost fluid method ( Nguyen et al., 2002 ; Nguyen et al., 2001 ; Hong et al., 2007 ) to track the combustion flame front using a truncated signed distance field; a Reality Capture processing pipeline which fuses a TSDF surface mesh, on the left, and derives a Euclidean signed distance field (ESDF), on the right, to facilitate collision checking and path planning from an input LiDAR sweep or a sequence of depth images. Hardware details in Appendix A . Abstract. We introduce two fundamental advances to the NanoVDB data structure: dynamic GPU-native topological updates, and a voxel-sequential access paradigm that dramatically accelerates point-wise and stencil-based operators on sparse grids. NanoVDB’s linearized memory layout has delivered strong GPU performance, and the Index-Grid concept introduced in the fVDB framework ( Williams et al., 2024 ) provided topology/data separation and optimal compactness of storage in sparse machine learning workloads. However, all these prior iterations of NanoVDB assume a static topology that has precluded use of this data structure in simulation and dynamic geometric processes. We elimina"
-  },
-  {
-   "key": "arxiv:2611.08660",
-   "source": "arXiv",
-   "id": "2611.08660",
-   "title": "AutoParallel: Composable, PyTorch-Native Automatic Parallelism for Production Training",
-   "abstract": "Training large models requires multiple interacting forms of parallelism. As models and clusters scale, finding and maintaining efficient parallelization plans becomes essential for training performance. Diverse model architectures, workloads, and hardware topologies demand flexible strategies, yet production PyTorch systems typically rely on hand-written recipes that are costly to adapt and tend to reuse familiar patterns, which may be suboptimal for a given workload. We present AutoParallel, a PyTorch-native planner for distributed model training. AutoParallel searches parallelization choices jointly across the training computation, allowing established techniques to be combined and unconventional strategies to emerge. It expresses its decisions using native PyTorch abstractions and produces ordinary PyTorch programs, avoiding a separate execution runtime while composing directly with the PyTorch compilation and training stack. AutoParallel also composes automatic decisions with model-specific distributed code, allowing dynamic or specialized regions to remain under user control. Plans are inspectable and replayable artifacts. Across dense, hybrid, and mixture-of-experts models on meshes of up to four dimensions and 128 NVIDIA H100 GPUs, AutoParallel matches or exceeds expert-written TorchTitan recipes on most configurations, with throughput gains of up to 18.3%, and discovers plans that uniform expert recipes do not express.",
-   "authors": [
-    {
-     "name": "Kaijian Wang",
-     "affiliations": []
-    },
-    {
-     "name": "Sanket Purandare",
-     "affiliations": []
-    },
-    {
-     "name": "Aditya Venkataraman",
-     "affiliations": []
-    },
-    {
-     "name": "Will Constable",
-     "affiliations": []
-    },
-    {
-     "name": "Ivan Kobzarev",
-     "affiliations": []
-    },
-    {
-     "name": "Elias Ellison",
-     "affiliations": []
-    },
-    {
-     "name": "Simon Fan",
-     "affiliations": []
-    },
-    {
-     "name": "Edward Z. Yang",
-     "affiliations": []
-    },
-    {
-     "name": "Davide Italiano",
-     "affiliations": []
-    },
-    {
-     "name": "Patrick Labatut",
-     "affiliations": []
-    },
-    {
-     "name": "Yuke Wang",
-     "affiliations": []
-    },
-    {
-     "name": "Francisco Massa",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-11-05",
-   "url": "https://arxiv.org/abs/2611.08660",
-   "matched_terms": [
-    "gpus"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "AutoParallel: Composable, PyTorch-Native Automatic Parallelism for Production Training Kaijian Wang Affiliation: Meta Superintelligence Labs Affiliation: Rice University Work done during an internship at Meta Sanket Purandare Affiliation: Meta Superintelligence Labs Aditya Venkataraman Affiliation: Meta Superintelligence Labs Will Constable Affiliation: Meta Superintelligence Labs Ivan Kobzarev Affiliation: Meta Superintelligence Labs Elias Ellison Affiliation: Meta Superintelligence Labs Simon Fan Affiliation: Meta Superintelligence Labs Edward Z. Yang Affiliation: Meta Superintelligence Labs Davide Italiano Affiliation: Meta Superintelligence Labs Patrick Labatut Affiliation: Meta Superintelligence Labs Yuke Wang Affiliation: Rice University Francisco Massa Affiliation: Meta Superintelligence Labs Project lead Abstract Training large models requires multiple interacting forms of parallelism. As models and clusters scale, finding and maintaining efficient parallelization plans becomes essential for training performance. Diverse model architectures, workloads, and hardware topologies demand flexible strategies, yet production PyTorch systems typically rely on hand-written recipes that are costly to adapt and tend to reuse familiar patterns, which may be suboptimal for a given workload. We present AutoParallel , a PyTorch-native planner for distributed model training. AutoParallel searches parallelization choices jointly across the training computation, allowing established techniques to be combined and unconventional strategies to emerge. It expresses its decisions using native PyTorch abstractions and produces ordinary PyTorch programs, avoiding a separate execution runtime while composing directly with the PyTorch compilation and training stack. AutoParallel also composes automatic decisions with model-specific distributed code, allowing dynamic or specialized regions to remain under user control. Plans are inspectable and replayable artifacts. Across dense, hybrid, and mixture-of-experts models on meshes of up to four dimensions and 128 NVIDIA H100 GPUs, AutoParallel matches or exceeds expert-written TorchTitan recipes on most configurations, with throughput gains of up to 18.3%, and discovers plans that uniform expert recipes do not express. † † date: October 30, 2026 † † Code: https://github.com/meta-pytorch/autoparallel \\FloatBarrier"
-  },
-  {
-   "key": "arxiv:2611.08614",
-   "source": "arXiv",
-   "id": "2611.08614",
-   "title": "EMT Modeling and Coordinated Mode-Transition Ride-Through Control of Modern Data Centers",
-   "abstract": "Large data centers are emerging as power-electronic loads whose response to grid voltage disturbances can affect bulk-system stability. This paper presents the composition and control characteristics of a proprietary electromagnetic transient (EMT) model of a modern data center comprising an uninterruptible power supply (UPS) with battery energy storage, induction-motor cooling loads, a computer room air handler (CRAH) driven by a variable-frequency drive (VFD), and an aggregated server load. A voltage-based state machine coordinates three aspects of the facility response: the UPS operating mode (eco, double conversion, or battery), the supply path of the CRAH, and a ramped reconnection of the grid-side UPS converter after the disturbance clears. A 100 MW facility is implemented in PSCAD/EMTDC and benchmarked against the PSSE PERC1 aggregate data center model under a symmetrical three-phase fault and low- and high-voltage ride-through (LVRT/HVRT) events. The two models agree closely in their voltage and active-power trajectories, while the EMT model also resolves the converter and motor-reacceleration transients that the phasor-domain model cannot.",
-   "authors": [
-    {
-     "name": "Junyuan Zheng",
-     "affiliations": []
-    },
-    {
-     "name": "Salish Maharjan",
-     "affiliations": []
-    },
-    {
-     "name": "Min Lwin",
-     "affiliations": []
-    },
-    {
-     "name": "Soummya Roy",
-     "affiliations": []
-    },
-    {
-     "name": "Zhaoyu Wang",
-     "affiliations": []
-    },
-    {
-     "name": "Wenlong Shi",
-     "affiliations": []
-    },
-    {
-     "name": "Feng Qiu",
-     "affiliations": []
-    },
-    {
-     "name": "Rajarshi Roychowdhury",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SY"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-05",
-   "url": "https://arxiv.org/abs/2611.08614",
-   "matched_terms": [
-    "data center",
-    "data centers"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "EMT Modeling and Coordinated Mode-Transition Ride-Through Control of Modern Data Centers Junyuan Zheng Affiliation: Iowa State University, IA, USA { zhengjy, wshi5, wzy } @iastate.edu Affiliation: Junyuan Zheng and Salish Maharjan contributed equally to this work and share first authorship. Salish Maharjan Affiliation: INS Engineering, TX, USA { smaharjan, mlwin, sroy } @ins-engineering.com Affiliation: Junyuan Zheng and Salish Maharjan contributed equally to this work and share first authorship. Min Lwin Affiliation: INS Engineering, TX, USA { smaharjan, mlwin, sroy } @ins-engineering.com Soummya Roy Affiliation: INS Engineering, TX, USA { smaharjan, mlwin, sroy } @ins-engineering.com Zhaoyu Wang Affiliation: Iowa State University, IA, USA { zhengjy, wshi5, wzy } @iastate.edu Wenlong Shi Affiliation: Iowa State University, IA, USA { zhengjy, wshi5, wzy } @iastate.edu Feng Qiu Affiliation: Argonne National Laboratory, IL, USA fqiu@anl.gov Rajarshi Roychowdhury Affiliation: Xcel Energy, CO, USA raj.roychowdhury@xcelenergy.com Abstract Large data centers are emerging as power-electronic loads whose response to grid voltage disturbances can affect bulk-system stability. This paper presents the composition and control characteristics of a proprietary electromagnetic transient (EMT) model of a modern data center comprising an uninterruptible power supply (UPS) with battery energy storage, induction-motor cooling loads, a computer room air handler (CRAH) driven by a variable-frequency drive (VFD), and an aggregated server load. A voltage-based state machine coordinates three aspects of the facility response: the UPS operating mode (eco, double conversion, or battery), the supply path of the CRAH, and a ramped reconnection of the grid-side UPS converter after the disturbance clears. A 100 MW facility is implemented in PSCAD/EMTDC and benchmarked against the PSS®E PERC1 aggregate data center model under a symmetrical three-phase fault and low- and high-voltage ride-through (LVRT/HVRT) events. The two models agree closely in their voltage and active-power trajectories, while the EMT model also resolves the converter and motor-reacceleration transients that the phasor-domain model cannot. This work has been submitted to the IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible. Keywords: Data center, EMT modeling, fault ride-through, mode transition, UPS, power electronic loads."
-  },
-  {
-   "key": "doi:10.1109/tsg.2026.3750936",
-   "source": "journal",
-   "journal": "IEEE Transactions on Smart Grid",
-   "journal_short": "TSG",
-   "doi": "10.1109/tsg.2026.3750936",
-   "title": "Optimal Planning of Data Center Coupled with On-site Electricity–Heat–Cooling Conversion",
-   "abstract": "Amid escalating energy demands from data centers (DCs), waste heat recovery (WHR) emerges as a critical approach for enhancing energy sustainability and reducing carbon emissions. Existing WHR solutions for DCs remain limited in practice, constrained by limited heat-delivery distance and highly seasonal heat demand. To overcome these limitations, this paper develops an optimal planning framework for a hybrid cooling system, in which the adsorption chiller (ADS) operates in coordination with workload scheduling to enable on-site electricity-heat-cooling conversion. Firstly, an on-site electricity-heat-cooling operation model is developed to describe the coupling among server heat generation, waste heat recovery, and heat-driven refrigeration. Subsequently, a planning strategy for hybrid cooling systems is proposed to minimize the total annualized cost, including annualized investment cost and operation cost, via a discrete-difference-based Benders decomposition algorithm. Furthermore, a tailored reformulation method is designed to improve the tractability of the on-site electricity-heat-cooling operation model. Temperature-dependent ADS characteristics and related nonlinearities are modeled using two-dimensional SOS2 approximation to reformulate the problem into a mixed-integer linear problem for computational efficiency. Case studies demonstrate the effectiveness of the proposed planning strategy in realizing energy savings and carbon emission reductions.",
-   "abstract_source": "openalex",
-   "authors": [
-    {
-     "name": "Kang Wang",
-     "affiliations": [
-      "University of Macau"
-     ]
-    },
-    {
-     "name": "Hongxun Hui",
-     "affiliations": [
-      "University of Macau"
-     ]
-    },
-    {
-     "name": "Chengjin Ye",
-     "affiliations": [
-      "Zhejiang University"
-     ]
-    },
-    {
-     "name": "Yi Ding",
-     "affiliations": [
-      "Zhejiang University"
-     ]
-    }
-   ],
-   "type": "journal-article",
-   "date": "2026-11-06",
-   "url": "https://doi.org/10.1109/tsg.2026.3750936",
-   "matched_terms": [
-    "data center",
-    "data centers"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_source": "crossref"
-  },
-  {
-   "key": "doi:10.1038/s41560-026-02163-x",
-   "source": "journal",
-   "journal": "Nature Energy",
-   "journal_short": "Nature Energy",
-   "doi": "10.1038/s41560-026-02163-x",
-   "title": "Data centres asymmetrically exacerbate energy burdens through wholesale price increases and regressive grid cost shifting",
-   "abstract": "",
-   "abstract_source": "",
-   "authors": [
-    {
-     "name": "Cheng Feng",
-     "affiliations": []
-    },
-    {
-     "name": "Fengqi You",
-     "affiliations": []
-    }
-   ],
-   "type": "journal-article",
-   "date": "2026-11-09",
-   "url": "https://doi.org/10.1038/s41560-026-02163-x",
-   "matched_terms": [
-    "data centres"
-   ],
-   "screened_on": "title only",
-   "affiliation_source": "not available yet"
-  },
-  {
-   "key": "doi:10.1038/s41467-026-79026-2",
-   "source": "journal",
-   "journal": "Nature Communications",
-   "journal_short": "Nature Communications",
-   "doi": "10.1038/s41467-026-79026-2",
-   "title": "Silicon photonics provides a unified solution for all-distance optical communications",
-   "abstract": "Optical links underpin global communications from chip-to-chip interconnects to transoceanic fibre networks. Conventional architectures remain distance-dependent: long-haul systems rely on coherent transmission for high spectral efficiency and capacity, while short-reach links favour intensity modulation due to hardware complexity and power constraints. This divide impedes scalability for AI-driven intra-data-centre traffic and low-latency, flexible cloud-to-edge connectivity. Here we demonstrate a unified silicon photonic coherent solution for all-distance optical communications. By employing an ultralow-loss silicon nitride external cavity, we achieve 70 mW of direct laser output with a sub-kHz linewidth and 13.7% wall-plug efficiency. Paired with silicon photonic transceivers, this platform enables short-distance transmission without optical amplification across 256 wavelength channels, corresponding to an aggregate data rate of 81.92 Tb/s, as well as transmission exceeding 4400 km. It also supports wavelength switching and transmission re-establishment at tens-of-microseconds timescales. These results indicate the potential to simplify optical interfaces and enable flexible wavelength-routed connectivity. The authors demonstrate a silicon-photonic coherent platform using a high-power tunable laser and silicon-photonic transceivers, enabling broadband unamplified short-reach transmission, links beyond 4400 km and rapid wavelength switching.",
-   "abstract_source": "openalex",
-   "authors": [
-    {
-     "name": "Zixuan Zhou",
-     "affiliations": [
-      "Peking University"
-     ]
-    },
-    {
-     "name": "Jiahui Huang",
-     "affiliations": [
-      "Peking University"
-     ]
-    },
-    {
-     "name": "Yiqing Liu",
-     "affiliations": [
-      "Peking University"
-     ]
-    },
-    {
-     "name": "Xuguang Zhang",
-     "affiliations": [
-      "Peking University"
-     ]
-    },
-    {
-     "name": "Yong‐Shi Chen",
-     "affiliations": [
-      "Peking University"
-     ]
-    },
-    {
-     "name": "Xu Gao",
-     "affiliations": [
-      "Peking University"
-     ]
-    },
-    {
-     "name": "Gang Qiao",
-     "affiliations": [
-      "Peking University"
-     ]
-    },
-    {
-     "name": "Zhou Fang",
-     "affiliations": [
-      "SiFotonics Technologies Co., Ltd., Beijing, China"
-     ]
-    },
-    {
-     "name": "Ning Zhang",
-     "affiliations": [
-      "SiFotonics Technologies Co., Ltd., Beijing, China"
-     ]
-    },
-    {
-     "name": "Yadong Liu",
-     "affiliations": [
-      "Peking University"
-     ]
-    },
-    {
-     "name": "Pengfei Cai",
-     "affiliations": [
-      "SiFotonics Technologies Co., Ltd., Beijing, China"
-     ]
-    },
-    {
-     "name": "Lei Zhang",
-     "affiliations": [
-      "Peking University"
-     ]
-    },
-    {
-     "name": "Zhangyuan Chen",
-     "affiliations": [
-      "Peking University"
-     ]
-    },
-    {
-     "name": "Xin Fu",
-     "affiliations": [
-      "Chinese Academy of Sciences",
-      "Institute of Semiconductors"
-     ]
-    },
-    {
-     "name": "Lin Yang",
-     "affiliations": [
-      "Chinese Academy of Sciences",
-      "Institute of Semiconductors"
-     ]
-    },
-    {
-     "name": "Lin Chang",
-     "affiliations": [
-      "Peking University"
-     ]
-    }
-   ],
-   "type": "journal-article",
-   "date": "2026-11-05",
-   "url": "https://doi.org/10.1038/s41467-026-79026-2",
-   "matched_terms": [
-    "data-centre"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_source": "openalex"
-  }
+ "errors": [
+  "arXiv: RuntimeError(\"giving up on https://export.arxiv.org/api/query?search_query=%28cat%3Aeess.SY+OR+cat%3Acs.DC+OR+cat%3Aeess.SP%29+AND+submittedDate%3A: TimeoutError('The read operation timed out')\")"
  ],
+ "candidates": [],
  "title_only_final": [
-  {
-   "source": "TPWRS",
-   "title": "Voltage Synchronization and Proportional Current Sharing of Grid-Forming Inverters",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3749976"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Research progress and prospect of thermo−hydro−mechanical−chemical−sand multi−field coupling evolution in natural gas hydrate reservoirs",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129206"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Market-driven closed-loop multi-stage planning framework for electricity-hydrogen coupled systems under decision-dependent uncertainty",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129099"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Network-aware energy storage engaged peer-to-peer energy trading considering battery degradation and ancillary service",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129174"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Systemic and simultaneous optimization of speed planning and energy management for fuel cell hybrid electric vehicles under slippery road conditions",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129204"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "A feature-engineered machine learning framework for voltage prediction of sodium-ion batteries under an unseen high C-rate operating condition",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129205"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "A model-uncertainty-aware fault location method for active distribution networks with high-penetration renewable energy sources",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129195"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "A hypergraph-based constrained reinforcement learning method for electric vehicle charging navigation in coupled power-transportation networks",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129055"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Vulnerability assessment of buildings-power distribution networks under compound heatwaves and power outages",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129208"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Comparative field deployment of model-based reinforcement learning and model predictive control for residential HVAC",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129077"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Author Correction: Renal resistive index-guided mean arterial pressure titration in sepsis: a prospective single-center, single-blind, parallel-group randomized controlled trial",
-   "url": "https://doi.org/10.1038/s41467-026-79236-8"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "MMC-seq enables efficient long-read eccDNA profiling from low-input samples",
-   "url": "https://doi.org/10.1038/s41467-026-79221-1"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Podocyte-derived palmitic acid drives p53 S-palmitoylation and CD103+ CD4+ T cell differentiation in humanized mouse model of systemic lupus erythematosus",
-   "url": "https://doi.org/10.1038/s41467-026-79251-9"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Author Correction: Non-parasite genome encoded virus-like RNAs reprogram the pathogenicity of human blood flukes",
-   "url": "https://doi.org/10.1038/s41467-026-79194-1"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Dual-layer energy management of photovoltaic hydrogen production under limited battery capacity: An FLC–MPC framework for fluctuation mitigation",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129080"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "The travelling charger problem: Energy-coupled fleet optimisation for autonomous EV charging robots",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129167"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Hierarchical electricity rationing with decomposable demand-fulfillment disparity constraints in multi-microgrid distribution systems under persistent power shortages",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129181"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Comparative assessment of charging regulation strategies for high-efficiency wide-range operation of compressed air energy storage",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129157"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Power-point-shifted adaptive frequency regulation for grid-forming PEM fuel cells considering multi-physical effects and health degradation",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129198"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "A performance-based framework for assessing underground hydrogen storage under reservoir and infrastructure constraints: Application to offshore wind curtailment mitigation",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.128387"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Multi-domain spectral feature fusion and ensemble learning for simultaneous online determination of vanadium concentration and SOC in VRFB positive electrolytes",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129162"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Public electric vehicle charging under price changes and ambient temperature: Behavioral heterogeneity and managed-charging trade-offs",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129177"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "A multi-metric framework for tidal stream resource and load characterization: Application to Cook Inlet, Alaska",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129166"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Large-scale station-level electric vehicle charging load forecasting via complexity-adaptive ensemble learning",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129185"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "System-level impacts of aeroponics in the bioenergy supply chain: biomass allocation and socio-economic effects",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129191"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Towards smart city energy-transportation coupling system resilience enhancement via multi-type mobile emergency resources: a hybrid data-model driven approach",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129197"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Security-oriented optimization method for enhancing resilient operation of urban integrated energy cyber-physical system",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129192"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "A tailored exact column generation method for China's large-scale inter-provincial path-based market clearing: Decomposition, optimality, and scalability",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129143"
-  },
-  {
-   "source": "Nature Energy",
-   "title": "Directing solvent reactivity",
-   "url": "https://doi.org/10.1038/s41560-026-02150-2"
-  },
-  {
-   "source": "Nature Energy",
-   "title": "Stable anode-free sodium batteries enabled by controlled oligomerization",
-   "url": "https://doi.org/10.1038/s41560-026-02154-y"
-  },
-  {
-   "source": "Nature Energy",
-   "title": "Grain boundary engineering using metallomesogen in formamidinium–caesium lead triiodide for stable perovskite/silicon tandem solar cells",
-   "url": "https://doi.org/10.1038/s41560-026-02161-z"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "pH-responsive Keto-Enol tautomerism in a β-ketoenamine covalent organic framework for selective thorium(IV) capture",
-   "url": "https://doi.org/10.1038/s41467-026-79312-z"
-  },
-  {
-   "source": "Nature Rev. EE",
-   "title": "The 2026 IEEE/JSAP Symposium on VLSI Technology & Circuits",
-   "url": "https://doi.org/10.1038/s44287-026-00353-z"
-  },
-  {
-   "source": "Nature Rev. EE",
-   "title": "Urban building energy modelling in the electrification era",
-   "url": "https://doi.org/10.1038/s44287-026-00348-w"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Cell-to-cell thermal and capacity fade progression in lithium-ion battery pack under fast and conventional charging",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129190"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "When does on-site renewable hydrogen pay off? Vehicle-gate co-design of an ALK/PEM multi-electrolyzer system under alkaline electrolyzer cycling limits",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129184"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Application of the template methods in nano-structural design of proton exchange membranes for fuel cells and water electrolyzers",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129202"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Identification of highly representative safety-oriented battery features in real-world electric vehicles via a novel statistical method",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129108"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Coupled capacity-scheduling optimization of hybrid renewable hydrogen systems under multi-year resource variability",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129201"
-  },
-  {
-   "source": "Nature Rev. EE",
-   "title": "Aligning aqueous battery development with grid needs",
-   "url": "https://doi.org/10.1038/s44287-026-00349-9"
-  }
- ],
- "pending_items": [
   {
    "source": "TSG",
    "title": "2026 Index IEEE Transactions on Smart Grid",
-   "url": "https://doi.org/10.1109/tsg.2026.3749047",
-   "first_seen": "2026-11-05"
+   "url": "https://doi.org/10.1109/tsg.2026.3749047"
   },
   {
    "source": "Applied Energy",
    "title": "Distributionally robust configuration optimization of climate-resilient active distribution networks for enhancing flexibility dispatchability",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129207",
-   "first_seen": "2026-11-05"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129207"
   },
   {
    "source": "Applied Energy",
    "title": "Shipping big data informed maritime decarbonisation strategies for green and digital shipping corridors",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129209",
-   "first_seen": "2026-11-05"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129209"
   },
   {
    "source": "Applied Energy",
    "title": "A network-aware combinatorial auction mechanism for local multi-energy markets with coupled conversion",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129212",
-   "first_seen": "2026-11-05"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129212"
   },
   {
    "source": "Applied Energy",
    "title": "Distributionally robust coordinated optimization of IES-HPP-SAP based on P2P network game",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.128980",
-   "first_seen": "2026-11-05"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.128980"
   },
   {
    "source": "Applied Energy",
    "title": "Advances in sorption-based thermochemical energy storage: from material properties to prototype-level performance",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129200",
-   "first_seen": "2026-11-05"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129200"
   },
   {
    "source": "Applied Energy",
    "title": "Two-stage robust coordinated scheduling of port integrated energy systems for resilience enhancement with flexible resource collaboration",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129180",
-   "first_seen": "2026-11-05"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129180"
   },
   {
    "source": "Applied Energy",
    "title": "Long-term stochastic modelling and economic assessment of a centralised CCU network",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129221",
-   "first_seen": "2026-11-05"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129221"
   },
   {
    "source": "Nature Energy",
    "title": "Author Correction: Perovskite lattice compliance enables efficient and stable bifacial perovskite/silicon tandem photovoltaics",
-   "url": "https://doi.org/10.1038/s41560-026-02180-w",
-   "first_seen": "2026-11-05"
-  },
+   "url": "https://doi.org/10.1038/s41560-026-02180-w"
+  }
+ ],
+ "pending_items": [
   {
    "source": "TSG",
    "title": "Flexible Load Control and Feasible Region Characterization for Distribution Network Operation under Physiology Constraints in Aquaculture",
@@ -1215,24 +236,6 @@
   },
   {
    "source": "Nature Communications",
-   "title": "Selective depolymerization of poly(ethylene terephthalate) for economical closed-loop recycling of mixed textiles",
-   "url": "https://doi.org/10.1038/s41467-026-78713-4",
-   "first_seen": "2026-11-09"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Fully Integrated Deep-Ocean Flexible Temperature–Depth Sensor with Neural Network Compensation",
-   "url": "https://doi.org/10.1038/s41467-026-78009-7",
-   "first_seen": "2026-11-09"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Fractional quantum Hall states and oscillatory Landau charge squeezing in Bernal tetralayer graphene",
-   "url": "https://doi.org/10.1038/s41467-026-79149-6",
-   "first_seen": "2026-11-09"
-  },
-  {
-   "source": "Nature Communications",
    "title": "Cancer-associated fibroblasts as architects of tumor immune geography and lymphoid organization",
    "url": "https://doi.org/10.1038/s41467-026-79106-3",
    "first_seen": "2026-11-09"
@@ -1278,10 +281,94 @@
    "title": "Retraction Note: Senescent immune cells accumulation promotes brown adipose tissue dysfunction during aging",
    "url": "https://doi.org/10.1038/s41467-026-79227-9",
    "first_seen": "2026-11-09"
+  },
+  {
+   "source": "TSG",
+   "title": "Encoding Frequency Dynamics into Economic Operation of IBR-Penetrated Power Systems: Quantification, Integration, and Validation",
+   "url": "https://doi.org/10.1109/tsg.2026.3752129",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "source": "TSG",
+   "title": "CITrade: A Decentralized Energy Data Trading System With Enhanced Confidentiality and Integrity",
+   "url": "https://doi.org/10.1109/tsg.2026.3752240",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "source": "TSG",
+   "title": "A Quantitative Method for the Demand Response Potential of 5G Base Station Clusters Under Dynamic Traffic and Thermal Conditions",
+   "url": "https://doi.org/10.1109/tsg.2026.3751494",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "source": "TSG",
+   "title": "Risk-Aware Distributed Economic MPC for Microgrid Energy Management Using Tube-Cooperative Hierarchical Coordination",
+   "url": "https://doi.org/10.1109/tsg.2026.3750915",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Transient Stability Preventive Control Using Active Learning With Surrogate Model",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3751304",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "source": "TPWRS",
+   "title": "AC Reduced-Order System Modeling for Zonal Autonomous Control in Renewable-Dominated Grids",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3752002",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Two-stage Equal Incremental Rate Principle for Power Distribution of Secondary Frequency Regulation",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3751657",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Deep reinforcement learning-based emergency load shedding for power system frequency security with knowledge-guided decision refinement and experience augmentation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129213",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Hydrogen crossover of chemically degraded PEMFC membranes: Microstructural-driven transport and cross-scale mitigation insights",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129227",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Enhancing photovoltaic hydrogen production by interfacial thermal–moisture nexus regulation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129234",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "source": "Nature Energy",
+   "title": "Author Correction: Heat treatment in an oxygen-rich environment to suppress deep-level traps in Cu2ZnSnS4 solar cell with 11.51% certified efficiency",
+   "url": "https://doi.org/10.1038/s41560-026-02181-9",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A national baseline for methane sink habitats and methanotroph diversity",
+   "url": "https://doi.org/10.1038/s41467-026-79316-9",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Global environmental genomics reveals vast uncultivated protist diversity and taxonomic blind spots",
+   "url": "https://doi.org/10.1038/s41467-026-78712-5",
+   "first_seen": "2026-11-10"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Toward personalized deep brain stimulation via white matter stimulation and microstructure in depression",
+   "url": "https://doi.org/10.1038/s41467-026-79289-9",
+   "first_seen": "2026-11-10"
   }
  ],
- "pending_abstract": 37,
+ "pending_abstract": 39,
  "runs_utc": [
-  "2026-11-09T13:45:33+00:00"
+  "2026-11-10T13:24:07+00:00"
  ]
 }
