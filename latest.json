@@ -1,36 +1,45 @@
 {
- "date": "2026-11-10",
- "generated_utc": "2026-11-10T13:24:07+00:00",
+ "date": "2026-11-11",
+ "generated_utc": "2026-11-11T12:35:28+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-11-06",
-   "2026-11-10"
+   "2026-11-07",
+   "2026-11-11"
   ],
   "journal_doi_created": [
-   "2026-11-04",
-   "2026-11-10"
+   "2026-11-05",
+   "2026-11-11"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
-   "status": "error: RuntimeError(\"giving up on https://export.arxiv.org/api/query?search_query=%28cat%3Aeess.SY+OR+cat%3Acs.DC+OR+cat%3Aeess.SP%29+AND+submittedDate%3A: TimeoutError('The read operation timed out')\")"
+   "status": "ok",
+   "in_window": 126,
+   "new": 126,
+   "candidates": 8
   },
   {
    "source": "arXiv cs.DC",
-   "status": "error: RuntimeError(\"giving up on https://export.arxiv.org/api/query?search_query=%28cat%3Aeess.SY+OR+cat%3Acs.DC+OR+cat%3Aeess.SP%29+AND+submittedDate%3A: TimeoutError('The read operation timed out')\")"
+   "status": "ok",
+   "in_window": 61,
+   "new": 61,
+   "candidates": 11
   },
   {
    "source": "arXiv eess.SP",
-   "status": "error: RuntimeError(\"giving up on https://export.arxiv.org/api/query?search_query=%28cat%3Aeess.SY+OR+cat%3Acs.DC+OR+cat%3Aeess.SP%29+AND+submittedDate%3A: TimeoutError('The read operation timed out')\")"
+   "status": "ok",
+   "in_window": 75,
+   "new": 75,
+   "candidates": 3
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-   "in_window": 19,
-   "new": 4,
+   "in_window": 18,
+   "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -39,7 +48,7 @@
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
    "in_window": 6,
-   "new": 3,
+   "new": 1,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -47,8 +56,8 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 38,
-   "new": 3,
+   "in_window": 34,
+   "new": 6,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -59,97 +68,908 @@
    "in_window": 3,
    "new": 1,
    "candidates": 0,
-   "new_with_abstract": 0
+   "new_with_abstract": 1
   },
   {
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 144,
-   "new": 8,
+   "in_window": 119,
+   "new": 12,
    "candidates": 0,
-   "new_with_abstract": 5
+   "new_with_abstract": 4
   },
   {
    "source": "Nature Rev. EE",
    "journal": "Nature Reviews Electrical Engineering",
    "status": "ok",
-   "in_window": 0,
-   "new": 0,
+   "in_window": 1,
+   "new": 1,
    "candidates": 0,
    "new_with_abstract": 0
   }
  ],
- "errors": [
-  "arXiv: RuntimeError(\"giving up on https://export.arxiv.org/api/query?search_query=%28cat%3Aeess.SY+OR+cat%3Acs.DC+OR+cat%3Aeess.SP%29+AND+submittedDate%3A: TimeoutError('The read operation timed out')\")"
+ "errors": [],
+ "candidates": [
+  {
+   "key": "arxiv:2611.13802",
+   "source": "arXiv",
+   "id": "2611.13802",
+   "title": "Scaling Shapley Energy Attribution to Large LLM Batches",
+   "abstract": "LLM services have become essential infrastructure for applications such as chat assistants and coding agents. Service providers need to attribute resource consumption to individual requests for purposes such as billing. Among these resources, energy is a key metric for assessing the cost of serving each request. However, serving engines batch requests together, and GPUs report only aggregate energy consumption. Providers typically estimate each request's share in proportion to its token consumption, but this approach can produce substantially unfair estimates. The Shapley value provides a principled solution to fair energy allocation, but computing it directly requires $2^N-1$ GPU runs for $N$ requests, which is infeasible for large batches. To address this problem, we propose StepSplit. Across GPU generations, we observe that the energy consumed by each inference step, a forward pass over a batch, consists of a shared energy, largely due to reading model weights, and a request-specific energy. We derive a closed-form Shapley value: each request is charged its own energy plus an equal part of the shared energy of every step in which it participates. A microbenchmark of 2.5-17.8 minutes calibrates both parts of the step energy once per model and GPU configuration. Under static batching, StepSplit uses this closed form in a single pass over the scheduler log. Under continuous batching, removing a request can change how the remaining requests are batched, so StepSplit adds a correction to the closed form, computed by replaying the scheduler on a CPU. We evaluate StepSplit against Shapley values measured using 529,513 GPU runs. Under static batching with batch sizes of 8-256, StepSplit achieves an $L_1$ error of 0.4-4.3%, compared with 13.4-61.3% for token-proportional allocation. Under continuous batching with 8-128 requests, the corresponding errors are 0.5-6.4% and 20.6-71.7%.",
+   "authors": [
+    {
+     "name": "Qi Luo",
+     "affiliations": []
+    },
+    {
+     "name": "Ziwen Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Kunlin Li",
+     "affiliations": []
+    },
+    {
+     "name": "Changxi Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Yun Chen",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.AR",
+    "cs.PF"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-10",
+   "url": "https://arxiv.org/abs/2611.13802",
+   "matched_terms": [
+    "gpu",
+    "gpus",
+    "llm"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Scaling Shapley Energy Attribution to Large LLM Batches Qi Luo email: qluo615@connect.hkust-gz.edu.cn Affiliation: The Hong Kong University of Science and Technology (Guangzhou) , Guangzhou , China , Ziwen Wang email: zwang578@connect.hkust-gz.edu.cn Affiliation: The Hong Kong University of Science and Technology (Guangzhou) , Guangzhou , China , Kunlin Li email: kli082@connect.hkust-gz.edu.cn Affiliation: The Hong Kong University of Science and Technology (Guangzhou) , Guangzhou , China , Changxi Liu email: changxiliu@hkust-gz.edu.cn Affiliation: The Hong Kong University of Science and Technology (Guangzhou) , Guangzhou , China and Yun Chen Note: Corresponding author. email: yunchen@hkust-gz.edu.cn Affiliation: The Hong Kong University of Science and Technology (Guangzhou) , Guangzhou , China © none Abstract. LLM services have become essential infrastructure for a wide range of applications, such as chat assistants and coding agents. Usually, service providers need to attribute resource consumption to individual requests for purposes such as billing. Among these resources, energy is a key metric for assessing the cost of serving each request. However, serving engines batch requests together, and GPUs report only aggregate energy consumption, making it difficult to attribute energy use to individual requests. Providers typically estimate each request’s share in proportion to its token consumption, but this approach can produce substantially unfair estimates, especially when requests vary significantly in length or computational complexity. The Shapley value provides a principled solution to fair energy allocation, but computing it directly requires 2 N − 1 2^{N}-1 GPU runs for N N requests, which is infeasible for large batches. To address this problem, we propose StepSplit , an efficient method for attributing energy consumption to individual LLM requests. Across GPU generations, we observe that the energy consumed by each inference step, a forward pass over a batch, consists of a shared energy, largely due to reading model weights, and a request-specific energy. Based on this observation, we derive a closed-form Shapley value: each request is charged its own energy plus an equal part of the shared energy of every step in which it participates. A one-time microbenchmark lasting 2.5–17.8 minutes calibrates both parts of the step energy for each model and GPU configuration. Under static batching, StepSplit uses this closed form in a single pass over the sch"
+  },
+  {
+   "key": "arxiv:2611.13740",
+   "source": "arXiv",
+   "id": "2611.13740",
+   "title": "Multi-Objective Scheduling of LLM-Based Multi-Agent Workflows in Cloud Computing",
+   "abstract": "Large language models (LLMs) have been increasingly composed into multi-agent workflows to accomplish complex and multi-step tasks. As the open-weight models continue to close the performance gap with the proprietary ones, model parameters are becoming a less significant source of competitive advantage in the artificial intelligence market. Yet how these models are efficiently scheduled onto distributed infrastructure such as the cloud, with respect to overall latency, monetary cost and resource utilization, remains largely unaddressed in the literature despite being an increasingly critical problem. Existing agentic workflow frameworks mostly focus on output quality and task success rates over popular benchmarks, rarely accounting for execution dynamics of LLM-based agents such as inference latency, computation power of heterogeneous resources, cloud-specific billing period and resource provisioning overheads. Therefore, this paper formulates multi-agent scheduling in cloud computing as a multi-objective optimization problem that jointly minimizes makespan and cost while maximizing resource utilization. Building on this formulation, we propose MO-SAIC (Multi-Objective Scheduling of Multi-Agent Workflows in Cloud Computing), a scheduling framework comprising four multi-objective schedulers with Non-Dominated Sorting Genetic Algorithm II (NSGA-II), Weighted-Sum Genetic Algorithm (W-GA), a multi-objective adaptation of Heterogeneous Earliest Finish Time (MO-HEFT) and a random baseline (RAND). We evaluate the schedulers from the workflow scheduling, multi-objective optimization and system perspectives to measure their overall performance, quality of their Pareto-optimal fronts and impacts of workflow topology, cloud resource composition and scalability parameters. We report the experimental results with their statistical significance via the Wilcoxon test.",
+   "authors": [
+    {
+     "name": "Goshgar Can Ismayilov",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-10",
+   "url": "https://arxiv.org/abs/2611.13740",
+   "matched_terms": [
+    "cloud computing",
+    "large language models",
+    "llm",
+    "llms"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Multi-Objective Scheduling of LLM-Based Multi-Agent Workflows in Cloud Computing Goshgar Can Ismayilov Affiliation: Istanbul , Turkey email: goshgar.ismayilov@boun.edu.tr © none Abstract. Large language models (LLMs) have been increasingly composed into multi-agent workflows to accomplish complex and multi-step tasks. As the open-weight models continue to close the performance gap with the proprietary ones, model parameters are becoming a less significant source of competitive advantage in the artificial intelligence market. Yet how these models are efficiently scheduled onto distributed infrastructure such as the cloud, with respect to overall latency, monetary cost and resource utilization, remains largely unaddressed in the literature despite being an increasingly critical problem. Existing agentic workflow frameworks mostly focus on output quality and task success rates over popular benchmarks, rarely accounting for execution dynamics of LLM-based agents such as inference latency, computation power of heterogeneous resources, cloud-specific billing period and resource provisioning overheads. Therefore, this paper formulates multi-agent scheduling in cloud computing as a multi-objective optimization problem that jointly minimizes makespan and cost while maximizing resource utilization. Building on this formulation, we propose MO-SAIC ( M ulti- O bjective S cheduling of Multi- A gent Workflows i n C loud Computing), a scheduling framework comprising four multi-objective schedulers with Non-Dominated Sorting Genetic Algorithm II (NSGA-II), Weighted-Sum Genetic Algorithm (W-GA), a multi-objective adaptation of Heterogeneous Earliest Finish Time (MO-HEFT) and a random baseline (RAND). We evaluate the schedulers from the workflow scheduling, multi-objective optimization and system perspectives to measure their overall performance, quality of their Pareto-optimal fronts and impacts of workflow topology, cloud resource composition and scalability parameters. We report the experimental results with their statistical significance via the Wilcoxon test. Lastly, we discuss the limitations of MO-SAIC as well as future research directions. Keywords: Large Language Models, Multi-Agent Workflows, Workflow Scheduling, Multi-Objective Optimization, Cloud Computing, Evolutionary Algorithms"
+  },
+  {
+   "key": "arxiv:2611.13694",
+   "source": "arXiv",
+   "id": "2611.13694",
+   "title": "Decision-Focused Learning via Neural Optimization Layers for Battery-Assisted Grid-Import Smoothing in AI Data Centers",
+   "abstract": "Rapid AI data-center power fluctuations challenge grid integration. Sustained grid-import smoothing requires allocating limited battery power and energy under uncertain demand. We formulate risk-aware BESS scheduling that coordinates advance reserve commitments and demand-responsive dispatch, accounting for operating costs, grid-ramp penalties, and their conditional value-at-risk. We develop battery scheduling decision-focused learning (BS-DFL) with a constraint-aware neural optimization layer trained directly from this objective without optimal-solution labels. The trained layer is then frozen to guide demand-predictor learning through scheduling costs and ramping risk, enabling solver-free rolling-horizon scheduling. In a 10,000-minute simulation using loads derived from measured AI workloads, BS-DFL reduces mean absolute minute-to-minute grid-import changes by 71.70% and total scheduling cost by 18.01% relative to an MSE-trained predictor coupled with a mixed-integer linear programming solver, with an average decision time of 18.77 ms.",
+   "authors": [
+    {
+     "name": "Xinda Zheng",
+     "affiliations": []
+    },
+    {
+     "name": "Canchen Jiang",
+     "affiliations": []
+    },
+    {
+     "name": "Frits de Nijs",
+     "affiliations": []
+    },
+    {
+     "name": "Edward Lam",
+     "affiliations": []
+    },
+    {
+     "name": "Markus Wagner",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY",
+    "cs.LG",
+    "math.OC"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-10",
+   "url": "https://arxiv.org/abs/2611.13694",
+   "matched_terms": [
+    "data centers",
+    "data-center"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Decision-Focused Learning via Neural Optimization Layers for Battery-Assisted Grid-Import Smoothing in AI Data Centers Thanks: *Corresponding author: Canchen Jiang (canchen.jiang1@monash.edu). Xinda Zheng 1 , Canchen Jiang 1* , Frits de Nijs 1 , Edward Lam 1 , Markus Wagner 1 Affiliation: 1 Department of Data Science and AI, Faculty of Information Technology, Monash University, Australia Affiliation: Abstract Rapid AI data-center power fluctuations challenge grid integration. Sustained grid-import smoothing requires allocating limited battery power and energy under uncertain demand. We formulate risk-aware BESS scheduling that coordinates advance reserve commitments and demand-responsive dispatch, accounting for operating costs, grid-ramp penalties, and their conditional value-at-risk. We develop battery scheduling decision-focused learning (BS-DFL) with a constraint-aware neural optimization layer trained directly from this objective without optimal-solution labels. The trained layer is then frozen to guide demand-predictor learning through scheduling costs and ramping risk, enabling solver-free rolling-horizon scheduling. In a 10,000-minute simulation using loads derived from measured AI workloads, BS-DFL reduces mean absolute minute-to-minute grid-import changes by 71.70% and total scheduling cost by 18.01% relative to an MSE-trained predictor coupled with a mixed-integer linear programming solver, with an average decision time of 18.77 ms. Index Terms: AI data centers, Battery energy storage systems, Grid-import ramp mitigation, Decision-focused learning."
+  },
+  {
+   "key": "arxiv:2611.13673",
+   "source": "arXiv",
+   "id": "2611.13673",
+   "title": "Priority-Aware Firm and Flexible Capacity Quantification for Large-Load Interconnection",
+   "abstract": "We study how to unlock existing transmission capacity to accelerate large-load interconnection under differentiated quality-of-service (QoS) requirements. We establish an efficient framework to quantify firm and flexible hosting capacities and assess marginal values of grid upgrades. Specifically, we define multiple flexible capacity tiers with differentiated QoS limits and design a two-layer priority rule to allocate curtailment among tiers. We then formulate a mixed-integer chance-constrained model to jointly quantify firm and flexible capacities under QoS and priority constraints. To improve computational efficiency, we derive an equivalent aggregate formulation that eliminates individual curtailment variables and priority binaries without changing the feasible capacity set. Numerical results show the computational advantage of aggregation. Multi-tier flexible capacity increases total admitted capacity by 45.0\\% over the firm-only hosting capacity.",
+   "authors": [
+    {
+     "name": "Shaoze Li",
+     "affiliations": []
+    },
+    {
+     "name": "Bohang Fang",
+     "affiliations": []
+    },
+    {
+     "name": "Junjie Qin",
+     "affiliations": []
+    },
+    {
+     "name": "Cong Chen",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-10",
+   "url": "https://arxiv.org/abs/2611.13673",
+   "matched_terms": [
+    "large-load"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Priority-Aware Firm and Flexible Capacity Quantification for Large-Load Interconnection Shaoze Li Bohang Fang Junjie Qin Cong Chen † † thanks: $ˆ1$Shaoze Li, Bohang Fang, and Cong Chen are with the Thayer School of Engineering, Dartmouth College, Hanover, NH, USA. {Shaoze.Li.TH, Bohang.Fang, Cong.Chen}@dartmouth.edu . $ˆ2$Junjie Qin is with the Elmore Family School of Electrical and Computer Engineering, Purdue University, West Lafayette, IN, USA. {jq@purdue.edu} . *Corresponding author: Cong Chen. Abstract We study how to unlock existing transmission capacity to accelerate large-load interconnection under differentiated quality-of-service (QoS) requirements. We establish an efficient framework to quantify firm and flexible hosting capacities and assess marginal values of grid upgrades. Specifically, we define multiple flexible capacity tiers with differentiated QoS limits and design a two-layer priority rule to allocate curtailment among tiers. We then formulate a mixed-integer chance-constrained model to jointly quantify firm and flexible capacities under QoS and priority constraints. To improve computational efficiency, we derive an equivalent aggregate formulation that eliminates individual curtailment variables and priority binaries without changing the feasible capacity set. Numerical results show the computational advantage of aggregation. Multi-tier flexible capacity increases total admitted capacity by 45.0% over the firm-only hosting capacity. Index Terms: Large-load interconnection, flexible capacity, curtailment priority."
+  },
+  {
+   "key": "arxiv:2611.13566",
+   "source": "arXiv",
+   "id": "2611.13566",
+   "title": "Metamorphic testing of learned AC optimal power flow surrogates reveals representation dependence",
+   "abstract": "Evaluating a learned AC optimal power flow (AC-OPF) surrogate on one grid serialization cannot show whether its accuracy depends on that encoding. We test this dependence with thirteen metamorphic relations, each specifying when a transformation is valid and how to compare its outputs. Our audit covers 17 model and pipeline configurations: two released trained checkpoints and 15 random-weight architecture or mechanism controls. Every configuration violates at least six relations, even at reporting tolerances ten times tighter or looser. For GridSFM-Open v1.1, source inspection and intermediate-tensor interventions point to an indexing bug and three noncanonical or numerically unstable preprocessing choices; a repaired checkpoint remains untested. In a separate case500 training experiment, augmentation lowers transformed-view error in three of four models and median discrepancy and constraint-violation P95 in all four. These benefits depend on the training protocol: some relations worsen, and every evaluated prediction remains AC infeasible. A GPU/CPU eigensolver mismatch accounts for most of the large raw-Laplacian-baseline gain. We recommend reporting representation consistency alongside accuracy, feasibility, and cost. These results establish neither deployment readiness nor universal invariance.",
+   "authors": [
+    {
+     "name": "Stephen Peng",
+     "affiliations": []
+    },
+    {
+     "name": "Vineet Jagadeesan Nair",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.LG",
+    "cs.AI",
+    "eess.SY",
+    "math.OC"
+   ],
+   "primary_category": "cs.LG",
+   "date": "2026-11-10",
+   "url": "https://arxiv.org/abs/2611.13566",
+   "matched_terms": [
+    "gpu"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Metamorphic testing of learned AC optimal power flow surrogates reveals representation dependence Stephen Peng † † thanks: Equal contribution. Affiliation: AI Science Institute, Boston Consulting Group Vineet Jagadeesan Nair 1 1 footnotemark: 1 Affiliation: Peng.Stephen@bcg.com , JagadeesanNair.Vineet@bcg.com Abstract Evaluating a learned AC optimal power flow (AC-OPF) surrogate on one grid serialization cannot show whether its accuracy depends on that encoding. We test this dependence with thirteen metamorphic relations, each specifying when a transformation is valid and how to compare its outputs. Our audit covers 17 model and pipeline configurations: two released trained checkpoints and 15 random-weight architecture or mechanism controls. Every configuration violates at least six relations, even at reporting tolerances ten times tighter or looser. For GridSFM-Open v1.1 , source inspection and intermediate-tensor interventions point to an indexing bug and three noncanonical or numerically unstable preprocessing choices; a repaired checkpoint remains untested. In a separate case500 training experiment, augmentation lowers transformed-view error in three of four models and median discrepancy and constraint-violation P95 in all four. These benefits depend on the training protocol: some relations worsen, and every evaluated prediction remains AC infeasible. A GPU/CPU eigensolver mismatch accounts for most of the large raw-Laplacian-baseline gain. We recommend reporting representation consistency alongside accuracy, feasibility, and cost. These results establish neither deployment readiness nor universal invariance."
+  },
+  {
+   "key": "arxiv:2611.13490",
+   "source": "arXiv",
+   "id": "2611.13490",
+   "title": "Design and Over-the-Air Evaluation of a Digital Twin-Driven Site-Specific Neural Receiver for 5G NR on NVIDIA DGX Spark",
+   "abstract": "We design and evaluate a site-specific neural receiver for the 5G New Radio (NR) uplink. A corridor digital twin built from a radar scan and refined manually provides 28,671 ray-traced channel records for training an eight-round convolutional graph neural network with pilot-aware inputs and auxiliary channel supervision. The GPU on NVIDIA DGX Spark evaluates time--frequency convolutions in parallel across the received grid to accelerate inference. The receiver uses the standard NR uplink waveform and reference signals and feeds soft bits to the existing transport-block decoder. In over-the-air tests with NI USRP B210 radios under common radio settings, the site-trained receiver achieves the highest mean uplink rate at all five positions. At a non-line-of-sight corner, it reaches 16.2 Mb/s, compared with 4.1 Mb/s for the conventional receiver and 2.4 Mb/s for the 3GPP-trained neural receiver. These results demonstrate the feasibility of integrating neural reception into the 5G NR physical layer and show its potential for AI-RAN deployments.",
+   "authors": [
+    {
+     "name": "Qiuyuan Chen",
+     "affiliations": []
+    },
+    {
+     "name": "Chengyang Yao",
+     "affiliations": []
+    },
+    {
+     "name": "Liuchang Zhuo",
+     "affiliations": []
+    },
+    {
+     "name": "Yuquan Sun",
+     "affiliations": []
+    },
+    {
+     "name": "Cunhua Pan",
+     "affiliations": []
+    },
+    {
+     "name": "Hong Ren",
+     "affiliations": []
+    },
+    {
+     "name": "Jiangzhou Wang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SP"
+   ],
+   "primary_category": "eess.SP",
+   "date": "2026-11-10",
+   "url": "https://arxiv.org/abs/2611.13490",
+   "matched_terms": [
+    "gpu"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Design and Over-the-Air Evaluation of a Digital Twin-Driven Site-Specific Neural Receiver for 5G NR on NVIDIA DGX Spark Qiuyuan Chen, Chengyang Yao, Liuchang Zhuo, Yuquan Sun, Cunhua Pan † , Hong Ren, Jiangzhou Wang Affiliation: National Mobile Communications Research Laboratory, Southeast University, Nanjing, China Email: njcqy2021@qq.com, {220260879, 230248854, yq.sun, cpan, hren, j.wang}@seu.edu.cn Abstract We design and evaluate a site-specific neural receiver for the 5G New Radio (NR) uplink. A corridor digital twin built from a radar scan and refined manually provides 28,671 ray-traced channel records for training an eight-round convolutional graph neural network with pilot-aware inputs and auxiliary channel supervision. The GPU on NVIDIA DGX Spark evaluates time–frequency convolutions in parallel across the received grid to accelerate inference. The receiver uses the standard NR uplink waveform and reference signals and feeds soft bits to the existing transport-block decoder. In over-the-air tests with NI USRP B210 radios under common radio settings, the site-trained receiver achieves the highest mean uplink rate at all five positions. At a non-line-of-sight corner, it reaches 16.2 Mb/s, compared with 4.1 Mb/s for the conventional receiver and 2.4 Mb/s for the 3GPP-trained neural receiver. These results demonstrate the feasibility of integrating neural reception into the 5G NR physical layer and show its potential for AI-RAN deployments. Index Terms: 5G NR, neural receiver, digital twin, site-specific training, ray tracing, AI-RAN, over-the-air testbed."
+  },
+  {
+   "key": "arxiv:2611.13326",
+   "source": "arXiv",
+   "id": "2611.13326",
+   "title": "ARIA: An AI-Powered Radio-Channel Inference and Analysis Pipeline",
+   "abstract": "Statistical channel models play a key role in the design and standardization of next-generation wireless systems. The models substitute for costly and time-consuming field measurements when fitted distributions accurately reproduce the measured channel impulse responses. Future wireless systems will operate in global spectrum allocations from 1 to 150 GHz. Over the full span, analytically chosen distribution families fitted to scarce measurement data fail to deliver the required accuracy. Generative AI models instead learn each distribution from the radio-propagation data itself, adapt to the measured structure at every frequency, and scale across the entire band. We present ARIA, an AI-powered Radio-channel Inference and Analysis pipeline that learns each channel-parameter distribution from the measurements. The pipeline extracts power-delay profiles and recovers the channel parameters with time-cluster spatial-lobe (TCSL) analysis. Three neural density estimators, namely mixture density networks, neural spline flows (NSF), and denoising diffusion implicit models, learn each parameter's distribution. A composite rank across goodness-of-fit metrics with Friedman-Nemenyi testing identifies the best estimator, and a maximum-likelihood step anchored to the measured samples converts its density into closed-form parametric families. We instantiate ARIA on the NYU WIRELESS 16.95 GHz InH campaign and find that NSF outperforms the other estimators on every metric. We also show that a conditional NSF with feature-wise linear modulation, trained jointly on the 6.75 and 16.95 GHz measurements, improves over single-frequency training. We feed the fitted distributions into the NYUSIM simulator and reproduce the measured omnidirectional RMS delay spread medians within 2 ns, the per-lobe azimuth and zenith spread medians within 1 degree, and the omnidirectional zenith spread medians within 0.5 degrees.",
+   "authors": [
+    {
+     "name": "Homa Nikbakht",
+     "affiliations": []
+    },
+    {
+     "name": "Mingjun Ying",
+     "affiliations": []
+    },
+    {
+     "name": "Dipankar Shakya",
+     "affiliations": []
+    },
+    {
+     "name": "Daniel Abraham",
+     "affiliations": []
+    },
+    {
+     "name": "Theodore S. Rappaport",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.IT",
+    "eess.SP"
+   ],
+   "primary_category": "cs.IT",
+   "date": "2026-11-09",
+   "url": "https://arxiv.org/abs/2611.13326",
+   "matched_terms": [
+    "generative ai"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "ARIA: An AI-Powered Radio-Channel Inference and Analysis Pipeline Thanks: This work was supported by the NYU WIRELESS Industrial Affiliates Program and NYU Technology Acceleration and Commercialization Award. Thanks: H. Nikbakht, M. Ying, D. Shakya, D. Abraham, and T. S. Rappaport are with NYU WIRELESS, New York University, Tandon School of Engineering, Brooklyn, NY, USA (emails: {homa.n, yingmingjun, dshakya, dan.abraham, tsr}@nyu.edu). Homa Nikbakht, Mingjun Ying, Dipankar Shakya, Daniel Abraham, and Theodore S. Rappaport Affiliation: Abstract Statistical channel models play a key role in the design and standardization of next-generation wireless systems. The models substitute for costly and time-consuming field measurements when fitted distributions accurately reproduce the measured channel impulse responses. Future wireless systems will operate in global spectrum allocations from 1 1 to 150 150 GHz. Over the full span, analytically chosen distribution families fitted to scarce measurement data fail to deliver the required accuracy. Generative artificial intelligence (AI) models instead learn each distribution from the radio-propagation data itself, adapt to the measured structure at every frequency, and scale across the entire band. We present ARIA , an AI-powered Radio-channel Inference and Analysis pipeline that learns each channel-parameter distribution directly from the measurements. The pipeline first extracts power-delay profiles from the raw data and recovers the primary channel parameters through time-cluster spatial-lobe (TCSL) analysis. Three neural density estimators, namely mixture density networks (MDN), neural spline flows (NSF), and denoising diffusion implicit models (DDIM), then learn each parameter’s distribution, with kernel density estimation (KDE) as a classical baseline. To identify the best estimator, we use a composite rank across goodness-of-fit metrics with Friedman–Nemenyi significance testing. A maximum-likelihood step, anchored to the measured samples, then converts the density learned by the best estimator into closed-form parametric distribution families. We instantiate ARIA on the NYU WIRELESS 16.95 16.95 GHz indoor hotspot (InH) campaign and find that NSF outperforms the other estimators on every metric. We also show that a conditional NSF based on feature-wise linear modulation (FiLM), trained jointly on the 6.75 6.75 GHz and 16.95 16.95 GHz measurements, improves over training on the single frequency alone. We feed th"
+  },
+  {
+   "key": "arxiv:2611.13176",
+   "source": "arXiv",
+   "id": "2611.13176",
+   "title": "SHADOWPREFILL: Keeping Your Next Model Warm for Per-Step Model Routing in Agentic LLM Serving",
+   "abstract": "Per-step model routers send each LLM call of an agent to the cost-optimal model dynamically within each session. However, every model switch discards prefix-cache reuse: KV caches are per model, so the new model must prefill the relevant context before it emits a token. Across representative agentic workloads, including a production coding-agent trace with a mean context of 63K tokens, the prefix hit rate falls from 80-89% on same model calls to 44-65% after a switch, and a switch call takes 1.5-3.2x as long. We present SHADOWPREFILL, which prefills the session's context on the model the router has not chosen, in capacity that instances serving normal traffic leave idle, so the next switch finds its prefix cached. SHADOWPREFILL harvests the per-iteration SLO slack of requests in flight, protects routed calls, spills shadow KV to host memory, and falls back to a cold switch whenever the shadow is incomplete. With LLMRouter routing 24 model pairs over five agentic benchmark suites, SHADOWPREFILL cuts switch-call latency by 8.5-21.4%, LLM-call latency by 3.7-17.7%, and routed token cost by 22.5-46.1%, while normal traffic keeps its SLO and energy per request rises by 0.4%.",
+   "authors": [
+    {
+     "name": "Haoran Qiu",
+     "affiliations": []
+    },
+    {
+     "name": "Rohan Mahapatra",
+     "affiliations": []
+    },
+    {
+     "name": "Rodrigo Fonseca",
+     "affiliations": []
+    },
+    {
+     "name": "Mark Russinovich",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-09",
+   "url": "https://arxiv.org/abs/2611.13176",
+   "matched_terms": [
+    "llm"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(author block not found in HTML)"
+  },
+  {
+   "key": "arxiv:2611.12621",
+   "source": "arXiv",
+   "id": "2611.12621",
+   "title": "Reshaping Checkpoint-Induced Power Variations Through Inference Workload Scheduling",
+   "abstract": "Synchronous checkpoints in large language model training cause rapid power variations that challenge frequency regulation in islanded data-center microgrids. This paper proposes a checkpoint-aware two-layer framework that schedules flexible inference workloads to compensate for checkpoint-induced disturbances. Using measured GPU power profiles and anticipated checkpoint power deficits, the upper layer coordinates heterogeneous task selection and launch times, while the lower layer adjusts the batch sizes of newly launched tasks online to correct power-tracking errors. Early launching (EL) and staged retirement (SR) further smooth power transitions at checkpoint onset and recovery, respectively. PSCAD/EMTDC simulations with reference checkpoint drops of 1-3 MW demonstrate reductions of 41.6-61.6% in maximum absolute frequency deviation and 68.5-89.6% in mean absolute frequency deviation relative to no scheduling. Battery energy storage system (BESS) peak charging power and charging energy decrease by 65.1-100% and 89.7-100%, respectively. These benefits exceed those of greedy scheduling when GPU resources are relatively abundant.",
+   "authors": [
+    {
+     "name": "Yu Ma",
+     "affiliations": []
+    },
+    {
+     "name": "Ziheng Sheng",
+     "affiliations": []
+    },
+    {
+     "name": "Anna Andriiko",
+     "affiliations": []
+    },
+    {
+     "name": "Chau-Wai Wong",
+     "affiliations": []
+    },
+    {
+     "name": "Jong Ha Woo",
+     "affiliations": []
+    },
+    {
+     "name": "Zishuo Yang",
+     "affiliations": []
+    },
+    {
+     "name": "Aaditya Pandey",
+     "affiliations": []
+    },
+    {
+     "name": "Wenyuan Tang",
+     "affiliations": []
+    },
+    {
+     "name": "Ning Lu",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-09",
+   "url": "https://arxiv.org/abs/2611.12621",
+   "matched_terms": [
+    "data-center"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Reshaping Checkpoint-Induced Power Variations Through Inference Workload Scheduling Thanks: This research is sponsored in part by M.C. Dean. Yu Ma, Ziheng Sheng, Anna Andriiko, Chau-Wai Wong, Jong Ha Woo, Zishuo Yang, Aaditya Pandey, Wenyuan Tang, Ning Lu Affiliation: North Carolina State University Raleigh, NC 27606, USA {yma47, zsheng2, cwong9, jwoo6, zyang66, apande26, wtang8, nlu2}@ncsu.edu Andrew Meyers, George Navarro Affiliation: M.C. Dean Tysons, VA 22102, USA {andrew.meyers, george.navarro}@mcdean.com Abstract Synchronous checkpoints in large language model training cause rapid power variations that challenge frequency regulation in islanded data-center microgrids. This paper proposes a checkpoint-aware two-layer framework that schedules flexible inference workloads to compensate for checkpoint-induced disturbances. Using measured GPU power profiles and anticipated checkpoint power deficits, the upper layer coordinates heterogeneous task selection and launch times, while the lower layer adjusts the batch sizes of newly launched tasks online to correct power-tracking errors. Early launching (EL) and staged retirement (SR) further smooth power transitions at checkpoint onset and recovery, respectively. PSCAD/EMTDC simulations with reference checkpoint drops of 1–3 MW demonstrate reductions of 41.6–61.6% in maximum absolute frequency deviation and 68.5–89.6% in mean absolute frequency deviation relative to no scheduling. Battery energy storage system (BESS) peak charging power and charging energy decrease by 65.1–100% and 89.7–100%, respectively. These benefits exceed those of greedy scheduling when GPU resources are relatively abundant. Index Terms: data center, frequency response, IT workload scheduling, microgrid"
+  },
+  {
+   "key": "arxiv:2611.12555",
+   "source": "arXiv",
+   "id": "2611.12555",
+   "title": "Degradation-Aware Participation of Battery Storage in Frequency Regulation Markets",
+   "abstract": "As data centers make the load on the power grid fluctuate faster, frequency regulation grows more valuable. Battery energy storage systems (BESSs) are well suited to provide frequency regulation, but providing this service speeds up aging, especially during operation at extreme state of charge (SoC). In the PJM interconnection, the grid operator supplies a regulation signal that a participating BESS is expected to follow, within a capacity that it must bid before the signal is known. Accordingly, we decompose the degradation-aware frequency regulation problem into a bidding layer and an operations layer. For bidding, we propose an adaptive strategy, assuming perfect tracking in which the bid depends on the SoC expected at the start of the bid period by means of choosing basepoints. For operation, the BESS further protects its battery by deliberately giving up a perfect performance score, to keep its SoC away from the extremes. On the PJM regulation signal and prices of 2023, adaptive bids lengthen the battery life by $31\\%$ against bidding full capacity, for $2.2\\%$ of the revenue. Giving up a perfect score in operation lengthens the battery life of constant bids by $10\\%$ to $27\\%$, at a change in revenue of at most $0.2\\%$.",
+   "authors": [
+    {
+     "name": "Anand Gokhale",
+     "affiliations": []
+    },
+    {
+     "name": "Siddharth Bhela",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY",
+    "math.OC"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-09",
+   "url": "https://arxiv.org/abs/2611.12555",
+   "matched_terms": [
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Degradation-Aware Participation of Battery Storage in Frequency Regulation Markets Anand Gokhale 1,2 and Siddharth Bhela 1 Affiliation: Affiliation: 1 Siemens Foundational Technology, Princeton, NJ, USA Affiliation: Affiliation: 2 University of California Santa Barbara, Santa Barbara, CA, USA anand_gokhale@ucsb.edu, siddharth.bhela@siemens.com Abstract As data centers make the load on the power grid fluctuate faster, frequency regulation grows more valuable. Battery energy storage systems (BESSs) are well suited to provide frequency regulation, but providing this service speeds up aging, especially during operation at extreme state of charge (SoC). In the PJM interconnection, the grid operator supplies a regulation signal that a participating BESS is expected to follow, within a capacity that it must bid before the signal is known. Accordingly, we decompose the degradation-aware frequency regulation problem into a bidding layer and an operations layer. For bidding, we propose an adaptive strategy, assuming perfect tracking in which the bid depends on the SoC expected at the start of the bid period by means of choosing basepoints. For operation, the BESS further protects its battery by deliberately giving up a perfect performance score, to keep its SoC away from the extremes. On the PJM regulation signal and prices of 2023, adaptive bids lengthen the battery life by 31 % 31\\% against bidding full capacity, for 2.2 % 2.2\\% of the revenue. Giving up a perfect score in operation lengthens the battery life of constant bids by 10 % 10\\% to 27 % 27\\% , at a change in revenue of at most 0.2 % 0.2\\% ."
+  },
+  {
+   "key": "arxiv:2611.12425",
+   "source": "arXiv",
+   "id": "2611.12425",
+   "title": "Neural Multipath Fields for 6G FR3 Digital Twins: Latent Adaptation from Sparse Data",
+   "abstract": "Wireless digital twins are essential for environment-aware 6G communications, motivating the investigation of frequency range 3 (FR3), an emerging mid-band regime offering a promising balance between bandwidth and propagation characteristics. Neural Radio Frequency (RF) fields provide continuous surrogates for site-specific radio propagation, but adapting a scene-specific field to a new environment can require substantial measurements and retraining. To this end, we propose the Latent-Adaptive Neural Multipath Field (LANMF), a scene-conditioned FR3 model that predicts path-resolved delays, complex channel impulse response (CIR) coefficients, and arrival and departure directions from transmitter-receiver coordinates. LANMF learns shared propagation representations across source environments and adapts to unseen scenes by optimizing only a 16-dimensional scene latent. Evaluated on six ray-traced indoor scenes at 7.5 GHz, latent-only adaptation yields improvements in prediction with just 5-10 target links (0.42-0.83% of available links). Compared with full-network fine-tuning, it updates only 16 persistent target parameters, reducing adaptation time by 28-30% and incremental peak GPU memory by 82-85%. While the proposed solution supports various wireless applications, we demonstrate its utility through beam-candidate reduction using a 64-beam codebook, retaining measurement-based final beam selection.",
+   "authors": [
+    {
+     "name": "Srijita Sanyal",
+     "affiliations": []
+    },
+    {
+     "name": "Adam Umra",
+     "affiliations": []
+    },
+    {
+     "name": "Aydin Sezgin",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SP"
+   ],
+   "primary_category": "eess.SP",
+   "date": "2026-11-09",
+   "url": "https://arxiv.org/abs/2611.12425",
+   "matched_terms": [
+    "gpu"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Neural Multipath Fields for 6G FR3 Digital Twins: Latent Adaptation from Sparse Data Thanks: This work was supported in part by the German Federal Ministry of Research, Technology and Space (BMFTR) in the course of the 6GEM+ Transfer Hub under grant 16KIS2411 and in part by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Project–ID 287022738 TRR 196 for Project S02. Srijita Sanyal, Adam Umra, Aydin Sezgin Affiliation: Institute of Digital Communication Systems, Ruhr University Bochum, Germany {srijita.sanyal, adam.umra, aydin.sezgin}@rub.de Abstract Wireless digital twins are essential for environment-aware 6G communications, motivating the investigation of frequency range 3 (FR3), an emerging mid-band regime offering a promising balance between bandwidth and propagation characteristics. Neural Radio Frequency (RF) fields provide continuous surrogates for site-specific radio propagation, but adapting a scene-specific field to a new environment can require substantial measurements and retraining. To this end, we propose the Latent-Adaptive Neural Multipath Field (LANMF), a scene-conditioned FR3 model that predicts path-resolved delays, complex channel impulse response (CIR) coefficients, and arrival and departure directions from transmitter–receiver coordinates. LANMF learns shared propagation representations across source environments and adapts to unseen scenes by optimizing only a 16-dimensional scene latent. Evaluated on six ray-traced indoor scenes at 7.5 GHz, latent-only adaptation yields improvements in prediction with just 5–10 target links (0.42–0.83% of available links). Compared with full-network fine-tuning, it updates only 16 persistent target parameters, reducing adaptation time by 28–30% and incremental peak GPU memory by 82–85%. While the proposed solution supports various wireless applications, we demonstrate its utility through beam-candidate reduction using a 64-beam codebook, retaining measurement-based final beam selection. Index Terms: Digital twin, FR3, Neural Radiance Field, integrated sensing and communication, RF-NeRF, few-shot adaptation, beam management"
+  },
+  {
+   "key": "arxiv:2611.12370",
+   "source": "arXiv",
+   "id": "2611.12370",
+   "title": "Adapting Multi-Stage Distributed Real-Time Systems Design to Vehicular Edge Computing",
+   "abstract": "Vehicular Edge Computing (VEC) aims to support computation-intensive applications in intelligent transportation systems while meeting stringent latency requirements. When processed remotely, applications require access to different resource types in a specific sequence, forming a multi-stage processing pipeline. This structure closely resembles multi-stage distributed applications executing across heterogeneous resources, making established multi-stage distributed real-time scheduling techniques well suited for modeling VEC systems. The resulting model accommodates diverse resource configurations and access patterns. Building on this model, we propose a joint mapping and scheduling approach that accounts for vehicle mobility and real-time constraints. The proposed heuristic extends optimal priority assignment for multi-stage systems to the VEC setting, to construct feasible schedules while minimizing local-device energy consumption and ensuring that offloaded jobs meet their deadlines. Extensive simulations show that the proposed approach consistently outperforms both a baseline based on the same delay-composition framework and a deadline decomposition-based approach.",
+   "authors": [
+    {
+     "name": "Niraj Kumar",
+     "affiliations": []
+    },
+    {
+     "name": "Anant Gautam",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-09",
+   "url": "https://arxiv.org/abs/2611.12370",
+   "matched_terms": [
+    "edge computing"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Adapting Multi-Stage Distributed Real-Time Systems Design to Vehicular Edge Computing Niraj Kumar, Anant Gautam Affiliation: Indian Institute Of Technology Goa, India Email: {niraj, anant2413101}@iitgoa.ac.in Abstract Vehicular Edge Computing (VEC) aims to support computation-intensive applications in intelligent transportation systems while meeting stringent latency requirements. When processed remotely, applications require access to different resource types in a specific sequence, forming a multi-stage processing pipeline. This structure closely resembles multi-stage distributed applications executing across heterogeneous resources, making established multi-stage distributed real-time scheduling techniques well suited for modeling VEC systems. The resulting model accommodates diverse resource configurations and access patterns. Building on this model, we propose a joint mapping and scheduling approach that accounts for vehicle mobility and real-time constraints. The proposed heuristic extends optimal priority assignment for multi-stage systems to the VEC setting, to construct feasible schedules while minimizing local-device energy consumption and ensuring that offloaded jobs meet their deadlines. Extensive simulations show that the proposed approach consistently outperforms both a baseline based on the same delay-composition framework and a deadline decomposition-based approach. Index Terms: Real-Time Systems, Vehicular Edge Computing, Scheduling, Mapping"
+  },
+  {
+   "key": "arxiv:2611.12319",
+   "source": "arXiv",
+   "id": "2611.12319",
+   "title": "Mitigating SM-Level Load Imbalance in 3D Gaussian Splatting on GPUs",
+   "abstract": "3D Gaussian Splatting (3DGS) enables photorealistic, real-time rendering on commodity GPUs and is increasingly adopted in generative world models and autonomous driving simulators. However, existing optimizations rely on algorithmic changes that often require retraining, or on specialized accelerators that lack flexibility across evolving 3DGS variants. In this paper, we identify a fundamental inefficiency in GPU-based 3DGS rendering: severe SM-level load imbalance caused by uneven workloads across screen tiles. This imbalance creates a long execution tail, leaving most SMs idle while a few process computationally intensive tiles, particularly in large-scale urban scenes. To address this, we present a software-defined GPU scheduling approach that mitigates the execution tail. Our approach uses a persistent kernel to schedule heavy tiles first and selectively chunks outlier tiles across multiple CTAs. A lightweight per-frame policy determines when and how much to chunk using tile statistics already available in the rendering pipeline. Our approach requires neither retraining nor specialized hardware and can be applied orthogonally to existing optimizations across diverse 3DGS variants. Averaged per scene, it accelerates alpha blending by up to 2.93x on a large-scale urban scene, and by up to 5.6x on its most imbalanced frames, while retaining the original alpha blending formulation.",
+   "authors": [
+    {
+     "name": "Junha Ryu",
+     "affiliations": []
+    },
+    {
+     "name": "Hoi-Jun Yoo",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.CV",
+    "cs.GR",
+    "cs.LG"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-09",
+   "url": "https://arxiv.org/abs/2611.12319",
+   "matched_terms": [
+    "gpu",
+    "gpus"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(author block not found in HTML)"
+  },
+  {
+   "key": "arxiv:2611.12304",
+   "source": "arXiv",
+   "id": "2611.12304",
+   "title": "Evolving Infra: Agent-Adaptive LLM Serving at Scale",
+   "abstract": "Agentic workloads are a major source of LLM inference demand. Existing prefill--decode (PD) disaggregated serving systems offer limited flexibility for runtime adaptation of compute allocation and KV cache management, and rely on coarse signals that only partly capture the diverse and dynamic agent workload. These limitations lead to load imbalance between prefill and decode nodes and eviction of KV caches that agents will reuse. We present Evolving Infra, an agent-adaptive serving framework that adapts compute allocation to agent workloads and KV cache management to agent context management at runtime. We decouple compute allocation from key--value (KV) cache management, allowing nodes to switch efficiently between prefill and decode. Building on this design, an online planner matches the PD split to workload composition, while an agent-aware distributed KV manager guides cache eviction and transfer with signals from agent context management. Across coding, math, and computer-use tasks with GLM-5.2 and Kimi K2.6 on up to 256 GB300 GPUs, Evolving Infra reduces mean end-to-end request latency and P95 TTFT by up to 4.1x and 14x over Dynamo, NVIDIA's production framework.",
+   "authors": [
+    {
+     "name": "Hao Kang",
+     "affiliations": []
+    },
+    {
+     "name": "Weili Xu",
+     "affiliations": []
+    },
+    {
+     "name": "Ziyang Li",
+     "affiliations": []
+    },
+    {
+     "name": "Zheng Du",
+     "affiliations": []
+    },
+    {
+     "name": "Hanchen Li",
+     "affiliations": []
+    },
+    {
+     "name": "Tian Xia",
+     "affiliations": []
+    },
+    {
+     "name": "Song Bian",
+     "affiliations": []
+    },
+    {
+     "name": "Tushar Krishna",
+     "affiliations": []
+    },
+    {
+     "name": "Huizi Mao",
+     "affiliations": []
+    },
+    {
+     "name": "Ion Stoica",
+     "affiliations": []
+    },
+    {
+     "name": "Song Han",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-09",
+   "url": "https://arxiv.org/abs/2611.12304",
+   "matched_terms": [
+    "gpus",
+    "llm"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Evolving Infra: Agent-Adaptive LLM Serving at Scale Hao Kang Weili Xu Ziyang Li * Zheng Du Hanchen Li Tian Xia Song Bian Tushar Krishna Huizi Mao Ion Stoica Song Han Abstract Agentic workloads are a major source of LLM inference demand. Existing prefill–decode (PD) disaggregated serving systems offer limited flexibility for runtime adaptation of compute allocation and KV cache management, and rely on coarse signals that only partly capture the diverse and dynamic agent workload. These limitations lead to load imbalance between prefill and decode nodes and eviction of KV caches that agents will reuse. We present Evolving Infra , an agent-adaptive serving framework that adapts compute allocation to agent workloads and KV cache management to agent context management at runtime. We decouple compute allocation from key–value (KV) cache management, allowing nodes to switch efficiently between prefill and decode. Building on this design, an online planner matches the PD split to workload composition, while an agent-aware distributed KV manager guides cache eviction and transfer with signals from agent context management. Across coding, math, and computer-use tasks with GLM-5.2 and Kimi K2.6 on up to 256 GB300 GPUs, Evolving Infra reduces mean end-to-end request latency and P95 TTFT by up to 4.1 × \\times and 14 × \\times over Dynamo, NVIDIA’s production framework. 1 Georgia Institute of Technology , 2 University of Illinois Urbana-Champaign 3 University of California, Berkeley , 4 NVIDIA , 5 OpenAI , 6 Massachusetts Institute of Technology * Equal contribution. Corresponding author: hao.kang.sys@gmail.com Shared host memory Evicted when full KV referenced by n branches n 4 4 3 3 2 2 2 2 1 1 1 1 3 2 0 1 GPU GPU GPU GPU GPU GPU GPU GPU GPU GPU Router P D Request Prefill resources Decode resources Memory adaptation Compute adaptation Figure 1 : Overview and speedup of Evolving Infra ."
+  },
+  {
+   "key": "arxiv:2611.12056",
+   "source": "arXiv",
+   "id": "2611.12056",
+   "title": "One number per hour is not enough: directional carbon intensity of data-center ramps on the PJM fleet",
+   "abstract": "A data-center campus can change its load by hundreds of megawatts within an hour, yet every carbon signal in use gives one value per hour for a load change, whatever its size or direction. We compute the directional carbon intensity, the emission caused or avoided per megawatt-hour of a finite upward or downward ramp, for every hour of 2025 on the PJM Interconnection's fossil fleet, and compare it with the locational marginal emission rate (LME) and the regional average. The LME misstates a 1 GW ramp by more than 10% in 60% to 83% of hours in eleven months. Upward and downward ramps differ in a quarter to three quarters of hours but agree on their monthly mean. Location-based reporting assigns 47% to 59% of a ramp's emission to other consumers. A campus should schedule on the signal for its ramp's size and direction and report the emission it causes.",
+   "authors": [
+    {
+     "name": "Xiaoying Shi",
+     "affiliations": []
+    },
+    {
+     "name": "Jinyue Yan",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-09",
+   "url": "https://arxiv.org/abs/2611.12056",
+   "matched_terms": [
+    "data-center"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(HTML version not available: HTTPError)"
+  },
+  {
+   "key": "arxiv:2611.13019",
+   "source": "arXiv",
+   "id": "2611.13019",
+   "title": "Two-Tier Task Offloading for Satellite-Assisted Marine Networks: A Hybrid Stackelberg-Bargaining Game Approach",
+   "abstract": "The proliferation of maritime activities has spurred the emergence of numerous computation-intensive and delay-sensitive marine applications and services. Given the inherent rationality, selfish nature, and limited computational abilities of marine devices, devising effective strategies to incentivize their participation in task processing become a critical challenge. In this paper, we investigate the satellite-assisted marine multi-access edge computing (MEC) and propose a two-tier task offloading scheme through a hybrid Stackelberg-Bargaining game approach to enhance offloading efficiency and maximize the utility of marine devices. Specifically, for the underwater acoustic communication, we consider the scenario where multiple autonomous underwater vehicles (AUVs), managed by maritime autonomous surface ships (MASSs), upload their collected data using non-orthogonal multiple access(NOMA) to optimize channel utilization. For the data transmission above the sea surface, we consider the scenario where a low earth orbit satellite (LEOS) functions as a space edge server to provide computing services, and MASS offloads workloads to LEOS through frequency division multiple access(FDMA) to prevent co-channel interference. we define the utility of AUVs, MASSs and LEOSs, and model the offloading process between AUVs and MASSs as a Stackelberg game, while representing the offloading interaction between MASSs and LEOSs as a Bargaining game. Additionally, we propose efficient algorithms to optimize AUV offloading strategies and MASS pricing strategies, while refining the bidding strategies for both MASSs and LEOSs. Simulation results demonstrate that the proposed algorithms significantly outperform benchmark schemes in achieving optimal solutions.",
+   "authors": [
+    {
+     "name": "Zhen Wang",
+     "affiliations": [
+      "John"
+     ]
+    },
+    {
+     "name": "Bin Lin",
+     "affiliations": [
+      "John"
+     ]
+    },
+    {
+     "name": "Qiang",
+     "affiliations": [
+      "John"
+     ]
+    },
+    {
+     "name": "Ye",
+     "affiliations": []
+    },
+    {
+     "name": "Haixia Peng",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-09",
+   "url": "https://arxiv.org/abs/2611.13019",
+   "matched_terms": [
+    "edge computing",
+    "edge server"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Two-Tier Task Offloading for Satellite-Assisted Marine Networks: A Hybrid Stackelberg-Bargaining Game Approach Zhen Wang Bin Lin Qiang (John) Ye Haixia Peng † † thanks: Copyright (c) 20xx IEEE. Personal use of this material is permitted. However, permission to use this material for any other purposes must be obtained from the IEEE by sending a request to pubs-permissions@ieee.org. † † thanks: (Corresponding author: Bin Lin.) † † thanks: Zhen Wang is with the Department of Information Science and Technology of Dalian Maritime University, Dalian, China, and Communication Engineering of Dalian Neusoft University of Information, Dalian, China. E-mail: wangzhen ˜ jsj@neusoft.edu.cn. † † thanks: Bin Lin and is with the Department of Information Science and Technology of Dalian Maritime University, Dalian, China. E-mail: binlin@dlmu.edu.cn. † † thanks: Qiang (John) Ye is with the Department of Electrical and Software Engineering, Schulich School of Engineering, University of Calgary, 2500 University Drive NW, Calgary, AB T2N 1N4. Email: qiang.ye@ucalgary.ca. † † thanks: Haixia Peng is with the School of Information and Communications Engineering, Xi’an Jiaotong University, Xi’an 710049, China. E-mail: haixia.peng@xjtu.edu.cn. † † thanks: This manuscript has been accepted by IEEE Internet of Things Journal, DOI:10.1109/jiot.2024.3523527. Abstract The proliferation of maritime activities has spurred the emergence of numerous computation-intensive and delay-sensitive marine applications and services. Given the inherent rationality, selfish nature, and limited computational abilities of marine devices, devising effective strategies to incentivize their participation in task processing become a critical challenge. In this paper, we investigate the satellite-assisted marine multi-access edge computing (MEC) and propose a two-tier task offloading scheme through a hybrid Stackelberg-Bargaining game approach to enhance offloading efficiency and maximize the utility of marine devices. Specifically, for the underwater acoustic communication, we consider the scenario where multiple autonomous underwater vehicles (AUVs), managed by maritime autonomous surface ships (MASSs), upload their collected data using non-orthogonal multiple access(NOMA) to optimize channel utilization. For the data transmission above the sea surface, we consider the scenario where a low earth orbit satellite (LEOS) functions as a space edge server to provide computing services, and MASS offloads worklo"
+  },
+  {
+   "key": "arxiv:2611.11218",
+   "source": "arXiv",
+   "id": "2611.11218",
+   "title": "Edge Computing for Computer Vision in IoT: Feasibility and Directions",
+   "abstract": "The convergence of decentralized architectures integrating Machine Learning, Computer Vision and Low Power Wide Area Networks is increasingly becoming an integral part of our daily existence. Internet of Things serves as a real-time data conduit enhancing decision making via embedded technology and continuous data exchange. This paper explores the feasibility of Edge Computing as a foundational pillar in this evolving landscape. We experiment under real world, dynamic conditions, evaluate the technological aspects, strategies, process flows and key observations under the broad Edge Computing domain. Research pathways include Multi-access Edge topologies in future 6G networks, model quantization, and satellite-enhanced communication platforms. Additionally, a discussion is added supporting the advanced AI functionalities, including zero-shot learning, multi modal perception, and decentralized generative AI, thereby broadening the scope of intelligent applications across various domains. The significance and research objective of this study are threefold: (1) evaluation of LoRaWAN and satellite IoT communication strategies, (2) analysis of CV workloads on edge hardware and (3) future research directions where Edge Computing can support low-latency, energy-efficient and socially impactful IoT applications. By explicitly addressing these aspects, we aim to establish a clear link between the technological feasibility, ultimately with a practical and socioeconomic relevance.",
+   "authors": [
+    {
+     "name": "Panagiotis Savvidis",
+     "affiliations": []
+    },
+    {
+     "name": "George A. Papakostas",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.NI",
+    "cs.CV",
+    "cs.DC"
+   ],
+   "primary_category": "cs.NI",
+   "date": "2026-11-08",
+   "url": "https://arxiv.org/abs/2611.11218",
+   "matched_terms": [
+    "edge computing",
+    "generative ai"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(HTML version not available: HTTPError)"
+  },
+  {
+   "key": "arxiv:2611.11215",
+   "source": "arXiv",
+   "id": "2611.11215",
+   "title": "Spot Markets for AI Inference: Dynamic Capacity Allocation and Pricing on a Shared Accelerator Fleet",
+   "abstract": "Inference providers size their accelerator fleets for the interactive peak and sell spare capacity through fixed discounts, such as batch tiers at half price. However, inference differs from conventional cloud capacity in four respects: capacity depends on the latency tier through batching, moving weights between models is slow and costly, spot demand can wait until its deadline, and power can bind. In this paper, we develop a framework for dynamic capacity allocation and pricing of AI inference on a shared accelerator fleet. We consider a provider that serves several models under a power cap and sells each model in an interactive tier with a speed promise and in a spot tier for preemptible work with a deadline. In each period, the provider chooses how many replicas of each model to keep loaded and what spot price to quote. We show that one interactive token displaces a fixed number $ρ_m>1$ of spot tokens, and that the optimal spot price lies midway between the interactive price and the effective cost of capacity in the deadline window, which is close to the prevailing half price only when the fleet is slack. We further show that a spot tier raises the optimal reliability of the interactive tier, and that placement should follow persistent demand shifts while prices absorb transients. Building on these results, we design a model predictive controller based on a linear program with explicit approximation bounds, which solves each period in milliseconds. Numerical experiments on a simulated week with a measured daily demand profile, a flash crowd, and a grid curtailment show that the controller raises profit by 7.4% over fixed half-price practice, captures 93% of the gain available with perfect forecasts, keeps the interactive promise through both events, and leaves spot buyers better off.",
+   "authors": [
+    {
+     "name": "Quanyan Zhu",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-08",
+   "url": "https://arxiv.org/abs/2611.11215",
+   "matched_terms": [
+    "ai inference"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Spot Markets for AI Inference Quanyan Zhu 8 November 2026 Abstract Inference providers size their accelerator fleets for the interactive peak and sell spare capacity through fixed discounts, such as batch tiers at half price. However, inference differs from conventional cloud capacity in four respects: capacity depends on the latency tier through batching, moving weights between models is slow and costly, spot demand can wait until its deadline, and power can bind. In this paper, we develop a framework for dynamic capacity allocation and pricing of AI inference on a shared accelerator fleet. We consider a provider that serves several models under a power cap and sells each model in an interactive tier with a speed promise and in a spot tier for preemptible work with a deadline. In each period, the provider chooses how many replicas of each model to keep loaded and what spot price to quote. We show that one interactive token displaces a fixed number ρ m > 1 \\rho_{m}>1 of spot tokens, and that the optimal spot price lies midway between the interactive price and the effective cost of capacity in the deadline window, which is close to the prevailing half price only when the fleet is slack. We further show that a spot tier raises the optimal reliability of the interactive tier, and that placement should follow persistent demand shifts while prices absorb transients. Building on these results, we design a model predictive controller based on a linear program with explicit approximation bounds, which solves each period in milliseconds. Numerical experiments on a simulated week with a measured daily demand profile, a flash crowd, and a grid curtailment show that the controller raises profit by 7.4 % 7.4\\% over fixed half-price practice, captures 93 % 93\\% of the gain available with perfect forecasts, keeps the interactive promise through both events, and leaves spot buyers better off."
+  },
+  {
+   "key": "arxiv:2611.11043",
+   "source": "arXiv",
+   "id": "2611.11043",
+   "title": "GARDEN: Efficient GPU-Accelerated Billion-Scale GNN Training via Caching-Sampling-Batching Co-Design",
+   "abstract": "Graph Neural Networks (GNNs) have shown impressive performance in diverse tasks such as social network analysis and recommendation systems. However, scaling their training to billion-edge graphs is hindered by the memory wall: GPU memory capacity falls short of the massive storage requirements for node features and topology. Sampling-based GNN training frameworks mitigate this by streaming subgraphs from CPU to GPU, but they incur prohibitive PCIe data transfers and non-coalesced memory accesses, resulting in bandwidth underutilization and low compute efficiency. We propose GARDEN, a GPU-accelerated sampling-based system that co-designs caching, sampling, and batching to eliminate these bottlenecks. GARDEN introduces three key innovations: (1) an Adaptive High-Fidelity Cache Allocator (AHFCA) that combines offline reuse profiling and online hotness tracking to dynamically cache features and adjacency lists within a fixed GPU memory budget, avoiding static allocation waste; (2) a Grouping-based Parallel Sampler that reorders stochastic neighborhood accesses(GPS) to maximize warp occupancy and hide latency on power-law graphs; and (3) a Super-batch Degree Classifier(SDC) that fuses mini-batches into degree-homogeneous groups, enabling cache-friendly coalesced transfers and high GPU utilization. Evaluations on real-world billion-scale graphs demonstrate that GARDEN achieves 4.54x, 1.27x, and 2.97x end-to-end training speedups over DGL-UVA, DUCATI, and FastGL, respectively, while maintaining model convergence and accuracy.",
+   "authors": [
+    {
+     "name": "Qingrui Zhu",
+     "affiliations": []
+    },
+    {
+     "name": "Lei Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Yushu Cai",
+     "affiliations": []
+    },
+    {
+     "name": "Kai Sheng",
+     "affiliations": []
+    },
+    {
+     "name": "Zhiwen Chen",
+     "affiliations": []
+    },
+    {
+     "name": "Xin He",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-08",
+   "url": "https://arxiv.org/abs/2611.11043",
+   "matched_terms": [
+    "gpu"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "GARDEN: Efficient GPU-Accelerated Billion-Scale GNN Training via Caching-Sampling-Batching Co-Design Qingrui Zhu Lei Liu Yushu Cai Kai Sheng Zhiwen Chen Xin He † † thanks: Corresponding author: Xin He. † † thanks: Qingrui Zhu, Lei Liu, Yushu Cai, Kai Sheng, and Xin He are with the Guangzhou Institute of Technology, Xidian University, Guangzhou 510530, China (e-mail: zhuqingrui@stu.xidian.edu.cn; liulei2303@stu.xidian.edu.cn; yushucai@stu.xidian.edu.cn; kaisheng@xidian.edu.cn; hexin@xidian.edu.cn). † † thanks: Zhiwen Chen is with the School of Computer Science, Xiangtan University, Xiangtan 411105, China (e-mail: zhiwenchen@xtu.edu.cn). Abstract Graph Neural Networks (GNNs) have shown impressive performance in diverse tasks such as social network analysis and recommendation systems. However, scaling their training to billion-edge graphs is hindered by the memory wall: GPU memory capacity falls short of the massive storage requirements for node features and topology. Sampling-based GNN training frameworks mitigate this by streaming subgraphs from CPU to GPU, but they incur prohibitive PCIe data transfers and non-coalesced memory accesses, resulting in bandwidth underutilization and low compute efficiency. We propose GARDEN, a GPU-accelerated sampling-based system that co-designs caching, sampling, and batching to eliminate these bottlenecks. GARDEN introduces three key innovations: (1) an Adaptive High-Fidelity Cache Allocator (AHFCA) that combines offline reuse profiling and online hotness tracking to dynamically cache features and adjacency lists within a fixed GPU memory budget, avoiding static allocation waste; (2) a Grouping-based Parallel Sampler that reorders stochastic neighborhood accesses(GPS) to maximize warp occupancy and hide latency on power-law graphs; and (3) a Super-batch Degree Classifier(SDC) that fuses mini-batches into degree-homogeneous groups, enabling cache-friendly coalesced transfers and high GPU utilization. Evaluations on real-world billion-scale graphs demonstrate that GARDEN achieves 4.54 × \\times , 1.27 × \\times , and 2.97 × \\times end-to-end training speedups over DGL-UVA, DUCATI, and FastGL, respectively, while maintaining model convergence and accuracy. Index Terms: Graph Neural Networks, GPU Acceleration, Sampling-based GNN Training, adaptive caching, neighborhood sampling"
+  },
+  {
+   "key": "arxiv:2611.10804",
+   "source": "arXiv",
+   "id": "2611.10804",
+   "title": "DICOMPUTE: An Economic and Privacy-Aware Framework for Distributed Artificial Intelligence Inference",
+   "abstract": "The prevailing design of large-scale artificial intelligence inference concentrates accelerators, model weights, and request processing in centralized computing facilities. Centralization offers important benefits in accelerator utilization, high-bandwidth interconnects, operational control, and serving efficiency. Yet centralized infrastructure is not always the least-cost or most governance-compatible choice for every inference workload. This paper develops a research framework for DICOMPUTE, a heterogeneous distributed inference architecture in which policy-constrained scheduling can allocate suitable requests across privately controlled, regional, and independently operated computing resources. We derive a full-cost comparison that accounts for capital amortization, energy, network transfer, orchestration, utilization, failures, and trust-related expenses; characterize conditions under which distributed inference can outperform centralized alternatives; and specify a privacy model separating data residency, transport confidentiality, execution confidentiality, and verifiable accounting. We propose falsifiable hypotheses and a reproducible experimental design, without presenting simulated examples as measured performance. Our central conclusion is conditional: distributed inference is most promising for divisible, latency-tolerant or locality-sensitive workloads on underutilized compatible hardware, while centralized clusters retain structural advantages for tightly coupled, memory-intensive, high-throughput inference. The framework is intended to support rigorous evaluation rather than to assert universal superiority.",
+   "authors": [
+    {
+     "name": "Atul Khekade",
+     "affiliations": []
+    },
+    {
+     "name": "Ritesh Kakkad",
+     "affiliations": []
+    },
+    {
+     "name": "Anil Chinchawale",
+     "affiliations": []
+    },
+    {
+     "name": "Omkar Mestry",
+     "affiliations": []
+    },
+    {
+     "name": "Behnam Mohammadkhani",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-07",
+   "url": "https://arxiv.org/abs/2611.10804",
+   "matched_terms": [
+    "computing resources"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Ritesh Kakkad Affiliation: XDC Network Research and Engineering Team Atul Khekade Affiliation: XDC Network Research and Engineering Team Anil Chinchawale Affiliation: XDC Network Research and Engineering Team Omkar Mestry Affiliation: XDC Network Research and Engineering Team Behnam Mohammadkhani Affiliation: XDC Network Research and Engineering Team November 2026 Abstract The prevailing design of large-scale artificial intelligence inference concentrates accelerators, model weights, and request processing in centralized computing facilities. Centralization offers important benefits in accelerator utilization, high-bandwidth interconnects, operational control, and serving efficiency. Yet centralized infrastructure is not always the least-cost or most governance-compatible choice for every inference workload. This paper develops a research framework for DICOMPUTE, a heterogeneous distributed inference architecture in which policy-constrained scheduling can allocate suitable requests across privately controlled, regional, and independently operated computing resources. We derive a full-cost comparison that accounts for capital amortization, energy, network transfer, orchestration, utilization, failures, and trust-related expenses; characterize conditions under which distributed inference can outperform centralized alternatives; and specify a privacy model separating data residency, transport confidentiality, execution confidentiality, and verifiable accounting. We propose falsifiable hypotheses and a reproducible experimental design, without presenting simulated examples as measured performance. Our central conclusion is conditional: distributed inference is most promising for divisible, latency-tolerant or locality-sensitive workloads on underutilized compatible hardware, while centralized clusters retain structural advantages for tightly coupled, memory-intensive, high-throughput inference. The framework is intended to support rigorous evaluation rather than to assert universal superiority. Keywords: distributed inference; heterogeneous computing; inference economics; data sovereignty; privacy; edge AI; scheduling; decentralized infrastructure"
+  },
+  {
+   "key": "arxiv:2611.10673",
+   "source": "arXiv",
+   "id": "2611.10673",
+   "title": "Two-Timescale Trajectory Control, Task Reassignment and Resource Scheduling for Multi-UAV Cooperative Mobile Edge Computing",
+   "abstract": "Uncrewed aerial vehicle (UAV)-assisted mobile edge computing (MEC) is a promising technology, leveraging the advantages of UAVs including flexible deployment, wide coverage, and reliable wireless communication. In this paper, we study the task reassignment and offloading problem in a multi-UAV cooperative operating environment, and consider the real occurrence that the computing tasks arrive more frequently than UAVs make flight decisions. In addition, we also take into account the position offset of the UAV during flight and the unavailability of the UAV due to external interference. We propose a two-timescale optimization framework, where the trajectory of the UAV is carried out on a large timescale, while the task reassignment and computing resource allocation are jointly optimized on a small timescale. The core objective is to maximize the long-term average system gain, which takes both energy consumption and task delay into account. To address the UAV trajectory optimization problem under large timescale constraints, we propose a constrained multi-agent deep reinforcement learning algorithm. For decision-making within small timescale, to jointly optimize task offloading decisions and computing resource allocation, we integrate convex optimization with a heuristic algorithm. Finally, we conduct extensive simulations to evaluate the proposed algorithms against the baseline, achieving a 24% reduction in latency and a 28% reduction in total system cost.",
+   "authors": [
+    {
+     "name": "Bin Li",
+     "affiliations": []
+    },
+    {
+     "name": "Shiyu Sun",
+     "affiliations": []
+    },
+    {
+     "name": "Lei Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Zesong Fei",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-07",
+   "url": "https://arxiv.org/abs/2611.10673",
+   "matched_terms": [
+    "computing resource",
+    "computing tasks",
+    "edge computing"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Two-Timescale Trajectory Control, Task Reassignment and Resource Scheduling for Multi-UAV Cooperative Mobile Edge Computing Bin Li Shiyu Sun Lei Liu Zesong Fei † † thanks: Bin Li and Shiyu Sun are with the School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, China (e-mail: bin.li@nuist.edu.cn; 202512201138@nuist.edu.cn). † † thanks: Lei Liu is with the Guangzhou Institute of Technology, Xidian University, Guangzhou 510555, China (e-mail: leiliu@xidian.edu.cn). † † thanks: Zesong Fei is with the School of Information and Electronics, Beijing Institute of Technology, Beijing 100081, China (e-mail: feizesong@bit.edu.cn). Abstract Uncrewed aerial vehicle (UAV)-assisted mobile edge computing (MEC) is a promising technology, leveraging the advantages of UAVs including flexible deployment, wide coverage, and reliable wireless communication. In this paper, we study the task reassignment and offloading problem in a multi-UAV cooperative operating environment, and consider the real occurrence that the computing tasks arrive more frequently than UAVs make flight decisions. In addition, we also take into account the position offset of the UAV during flight and the unavailability of the UAV due to external interference. We propose a two-timescale optimization framework, where the trajectory of the UAV is carried out on a large timescale, while the task reassignment and computing resource allocation are jointly optimized on a small timescale. The core objective is to maximize the long-term average system gain, which takes both energy consumption and task delay into account. To address the UAV trajectory optimization problem under large timescale constraints, we propose a constrained multi-agent deep reinforcement learning algorithm. For decision-making within small timescale, to jointly optimize task offloading decisions and computing resource allocation, we integrate convex optimization with a heuristic algorithm. Finally, we conduct extensive simulations to evaluate the proposed algorithms against the baseline, achieving a 24% reduction in latency and a 28% reduction in total system cost. Index Terms: UAV trajectory optimization, computation task reassignment, robust two-timescale optimization algorithms, deep reinforcement learning."
+  },
+  {
+   "key": "arxiv:2611.10498",
+   "source": "arXiv",
+   "id": "2611.10498",
+   "title": "EmbodiedIntentBench: Benchmarking Intent-Driven Runtime Adaptation for Mobile Robotic Missions",
+   "abstract": "Mobile robotic sensing systems must adapt to operator requirements, limited resources, changing connectivity, and observation opportunities shaped by physical motion. Evaluating runtime strategies therefore requires assessing whether their decisions fulfill mission objectives, beyond isolated perception accuracy or execution efficiency. We present EmbodiedIntentBench, a benchmark for intent-driven runtime adaptation in mobile robotic missions. It represents mission intent through structured contracts for coverage, temporal evidence, reporting, urgency, and resources, and couples simulated unmanned aerial vehicle (UAV) workloads with causal, resource-accounted execution. Computation decisions affect mission time, resource use, and which observations can contribute evidence. We evaluate fixed and adaptive perception strategies in multi-phase missions and under changing urgency, connectivity, and battery conditions. In the multi-phase Depot study, a configuration with 87.5% full-bank target recall across visible target observations completes only 1 of 16 missions, whereas a lower-recall configuration completes 14. In an ablation, ignoring execution-induced observation loss increases aggregate mission success and reverses the ordering of two runtime strategies. Replays using Jetson AGX Orin CPU and GPU profiles change the relative success of local and remote strategies. In selected Jetson GPU-profile replays, intent-driven adaptation reduces modeled task energy by up to 28% with unchanged mission success. EmbodiedIntentBench provides an extensible framework for evaluating runtime decisions against mission fulfillment under physical and resource constraints.",
+   "authors": [
+    {
+     "name": "Rajat Bhattacharjya",
+     "affiliations": []
+    },
+    {
+     "name": "Changwoon Lee",
+     "affiliations": []
+    },
+    {
+     "name": "Hyeonjong Ju",
+     "affiliations": []
+    },
+    {
+     "name": "Sing-Yao Wu",
+     "affiliations": []
+    },
+    {
+     "name": "Hamidreza Alikhani",
+     "affiliations": []
+    },
+    {
+     "name": "Zhuoyi Yang",
+     "affiliations": []
+    },
+    {
+     "name": "Ian Harris",
+     "affiliations": []
+    },
+    {
+     "name": "Nalini Venkatasubramanian",
+     "affiliations": []
+    },
+    {
+     "name": "Nikil Dutt",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.RO",
+    "cs.AR",
+    "cs.CV",
+    "cs.DC",
+    "cs.LG"
+   ],
+   "primary_category": "cs.RO",
+   "date": "2026-11-07",
+   "url": "https://arxiv.org/abs/2611.10498",
+   "matched_terms": [
+    "gpu"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "EmbodiedIntentBench : Benchmarking Intent-Driven Runtime Adaptation for Mobile Robotic Missions Rajat Bhattacharjya Note: Correspondence: rajatb1@uci.edu . Paper is currently under review. Authors’ version posted for personal use and not for redistribution. Copyright may be transferred without notice, after which this version may no longer be accessible. Affiliation: University of California, Irvine , USA , Changwoon Lee Affiliation: Yonsei University , South Korea , Hyeonjong Ju Affiliation: Yonsei University , South Korea , Sing-Yao Wu Affiliation: University of California, Irvine , USA , Hamidreza Alikhani Affiliation: University of California, Irvine , USA , Zhuoyi Yang Affiliation: University of California, Irvine , USA , Ian Harris Affiliation: University of California, Irvine , USA , Nalini Venkatasubramanian Affiliation: University of California, Irvine , USA and Nikil Dutt Affiliation: University of California, Irvine , USA © none Abstract. Mobile robotic sensing systems must adapt to operator requirements, limited resources, changing connectivity, and observation opportunities shaped by physical motion. Evaluating runtime strategies therefore requires assessing whether their decisions fulfill mission objectives, beyond isolated perception accuracy or execution efficiency. We present EmbodiedIntentBench , a benchmark for intent-driven runtime adaptation in mobile robotic missions. It represents mission intent through structured contracts for coverage, temporal evidence, reporting, urgency, and resources, and couples simulated unmanned aerial vehicle (UAV) workloads with causal, resource-accounted execution. Computation decisions affect mission time, resource use, and which observations can contribute evidence. We evaluate fixed and adaptive perception strategies in multi-phase missions and under changing urgency, connectivity, and battery conditions. In the multi-phase Depot study, a configuration with 87.5% full-bank target recall across visible target observations completes only 1 of 16 missions, whereas a lower-recall configuration completes 14. In an ablation, ignoring execution-induced observation loss increases aggregate mission success and reverses the ordering of two runtime strategies. Replays using Jetson AGX Orin CPU and GPU profiles change the relative success of local and remote strategies. In selected Jetson GPU-profile replays, intent-driven adaptation reduces modeled task energy by up to 28% with unchanged mission success. Embodied"
+  }
  ],
- "candidates": [],
  "title_only_final": [
   {
    "source": "TSG",
-   "title": "2026 Index IEEE Transactions on Smart Grid",
-   "url": "https://doi.org/10.1109/tsg.2026.3749047"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Distributionally robust configuration optimization of climate-resilient active distribution networks for enhancing flexibility dispatchability",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129207"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Shipping big data informed maritime decarbonisation strategies for green and digital shipping corridors",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129209"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "A network-aware combinatorial auction mechanism for local multi-energy markets with coupled conversion",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129212"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Distributionally robust coordinated optimization of IES-HPP-SAP based on P2P network game",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.128980"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Advances in sorption-based thermochemical energy storage: from material properties to prototype-level performance",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129200"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Two-stage robust coordinated scheduling of port integrated energy systems for resilience enhancement with flexible resource collaboration",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129180"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Long-term stochastic modelling and economic assessment of a centralised CCU network",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129221"
-  },
-  {
-   "source": "Nature Energy",
-   "title": "Author Correction: Perovskite lattice compliance enables efficient and stable bifacial perovskite/silicon tandem photovoltaics",
-   "url": "https://doi.org/10.1038/s41560-026-02180-w"
-  }
- ],
- "pending_items": [
-  {
-   "source": "TSG",
    "title": "Flexible Load Control and Feasible Region Characterization for Distribution Network Operation under Physiology Constraints in Aquaculture",
-   "url": "https://doi.org/10.1109/tsg.2026.3750228",
-   "first_seen": "2026-11-06"
+   "url": "https://doi.org/10.1109/tsg.2026.3750228"
   },
   {
    "source": "Applied Energy",
    "title": "Accelerating wind-farm AEP evaluation by exploiting near-low-rank wake structure",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129175",
-   "first_seen": "2026-11-06"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129175"
   },
   {
    "source": "Applied Energy",
    "title": "Climate-driven screening maps and design rules for PCM-assisted cooling of photovoltaic modules",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129231",
-   "first_seen": "2026-11-06"
-  },
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129231"
+  }
+ ],
+ "pending_items": [
   {
    "source": "Applied Energy",
    "title": "Robotic inspection and maintenance for energy infrastructure: a systematic review and future perspectives",
@@ -206,12 +1026,6 @@
   },
   {
    "source": "Applied Energy",
-   "title": "Regional infrastructure repurposing: Pathways from assessment to geothermal energy production and storage",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129168",
-   "first_seen": "2026-11-09"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Physics-guided multimodal ultra-short-term solar irradiance forecasting via predictive sky imaging",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129237",
    "first_seen": "2026-11-09"
@@ -232,54 +1046,6 @@
    "source": "Applied Energy",
    "title": "Editorial Board",
    "url": "https://doi.org/10.1016/s0306-2619(26)01899-4",
-   "first_seen": "2026-11-09"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Cancer-associated fibroblasts as architects of tumor immune geography and lymphoid organization",
-   "url": "https://doi.org/10.1038/s41467-026-79106-3",
-   "first_seen": "2026-11-09"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "SimPoly: Simulation of polymers with machine learning force fields derived from first principles",
-   "url": "https://doi.org/10.1038/s41467-026-78736-x",
-   "first_seen": "2026-11-09"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Hydration water drives elastin’s entropic elasticity",
-   "url": "https://doi.org/10.1038/s41467-026-78799-w",
-   "first_seen": "2026-11-09"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Reply to: Comment on “Self-organizing neuromorphic nanowire networks as stochastic dynamical systems”",
-   "url": "https://doi.org/10.1038/s41467-026-77956-5",
-   "first_seen": "2026-11-09"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "LLM ensemble PREVIA predicts future PTSD risk from emergency department trauma narratives with expert-level accuracy",
-   "url": "https://doi.org/10.1038/s41467-026-78768-3",
-   "first_seen": "2026-11-09"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Comment on “Self-organizing neuromorphic nanowire networks as stochastic dynamical systems\"",
-   "url": "https://doi.org/10.1038/s41467-026-77954-7",
-   "first_seen": "2026-11-09"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Absolute quantification and profiling of cellular tRNAs by nanopore sequencing and a deep learning classifier",
-   "url": "https://doi.org/10.1038/s41467-026-78563-0",
-   "first_seen": "2026-11-09"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Retraction Note: Senescent immune cells accumulation promotes brown adipose tissue dysfunction during aging",
-   "url": "https://doi.org/10.1038/s41467-026-79227-9",
    "first_seen": "2026-11-09"
   },
   {
@@ -365,10 +1131,106 @@
    "title": "Toward personalized deep brain stimulation via white matter stimulation and microstructure in depression",
    "url": "https://doi.org/10.1038/s41467-026-79289-9",
    "first_seen": "2026-11-10"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Topology-Aware Convex Graph Learning for Optimal Power Flow With Zero-Shot Generalization",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3751154",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Data-driven analysis of demand side management for improved load matching in PV-integrated buildings considering storage, HVAC control, and consumption behavior",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129246",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Forecast-free real-time V2B control of battery swapping stations as distributed battery assets via imitation learning",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129239",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "A physics-guided reservoir computing approach for real-world electric vehicle charging voltage profile reconstruction",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129187",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "AI-driven explainable analysis of coal retirement and renewable-storage expansion decisions: from correlation to causal analysis methodology",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129223",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "The Iberian blackout: A black swan or a gray rhino? A protection-aware dynamic voltage security assessment",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129216",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Decoupling instantaneous and cumulative stress: Physics-guided capacity prediction for lithium-ion batteries under stochastic cycling",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129236",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "High-entropy alloy aerogels promote selective glycerol oxidation to tartronate at industrial current densities",
+   "url": "https://doi.org/10.1038/s41467-026-78330-1",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Cryo-EM reveals conserved baseplate-architecture and distinct accessory-protein assemblies in mycobacteriophages Claus, Corndog and Mysterious",
+   "url": "https://doi.org/10.1038/s41467-026-79213-1",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Electric vehicle battery materials supply disruptions can be mitigated with chemistry changes and recycling",
+   "url": "https://doi.org/10.1038/s41467-026-79046-y",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Pico-X: a 24.9 nanowatt microcontroller for long-duration autonomous operation in flexible landing-pad sensor networks",
+   "url": "https://doi.org/10.1038/s41467-026-79332-9",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "OsCPK17- and OsMPK6-mediated dual phosphorylation of OsPUB12 maintains OsPUB2-regulated OsPUB12 homeostasis and balances rice immunity",
+   "url": "https://doi.org/10.1038/s41467-026-79063-x",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Toward triggered generation of indistinguishable single photons from MoTe2 quantum emitters",
+   "url": "https://doi.org/10.1038/s41467-026-78808-y",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Topographical mismatch sustains open microchannels in living soft tissue for non-destructive protein biopsy",
+   "url": "https://doi.org/10.1038/s41467-026-78755-8",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Functionally divergent RHOA mutations drive peripheral T cell lymphoma development by engaging a common neomorphic pathway",
+   "url": "https://doi.org/10.1038/s41467-026-79260-8",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "source": "Nature Rev. EE",
+   "title": "A unified view of system identification in the learning era",
+   "url": "https://doi.org/10.1038/s44287-026-00345-z",
+   "first_seen": "2026-11-11"
   }
  ],
- "pending_abstract": 39,
+ "pending_abstract": 43,
  "runs_utc": [
-  "2026-11-10T13:24:07+00:00"
+  "2026-11-11T12:35:28+00:00"
  ]
 }
