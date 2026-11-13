@@ -1,45 +1,45 @@
 {
- "date": "2026-11-12",
- "generated_utc": "2026-11-12T13:39:11+00:00",
+ "date": "2026-11-13",
+ "generated_utc": "2026-11-13T12:57:51+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-11-08",
-   "2026-11-12"
+   "2026-11-09",
+   "2026-11-13"
   ],
   "journal_doi_created": [
-   "2026-11-06",
-   "2026-11-12"
+   "2026-11-07",
+   "2026-11-13"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-   "in_window": 107,
-   "new": 0,
-   "candidates": 0
+   "in_window": 167,
+   "new": 78,
+   "candidates": 13
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-   "in_window": 49,
-   "new": 0,
-   "candidates": 0
+   "in_window": 71,
+   "new": 35,
+   "candidates": 8
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-   "in_window": 58,
-   "new": 0,
-   "candidates": 0
+   "in_window": 104,
+   "new": 56,
+   "candidates": 4
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-   "in_window": 8,
-   "new": 1,
+   "in_window": 7,
+   "new": 2,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -47,7 +47,7 @@
    "source": "TPWRS",
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
-   "in_window": 6,
+   "in_window": 4,
    "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
@@ -56,8 +56,8 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 30,
-   "new": 4,
+   "in_window": 26,
+   "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -66,7 +66,7 @@
    "journal": "Nature Energy",
    "status": "ok",
    "in_window": 4,
-   "new": 1,
+   "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -74,10 +74,10 @@
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 111,
-   "new": 24,
+   "in_window": 101,
+   "new": 20,
    "candidates": 0,
-   "new_with_abstract": 11
+   "new_with_abstract": 6
   },
   {
    "source": "Nature Rev. EE",
@@ -90,7 +90,1127 @@
   }
  ],
  "errors": [],
- "candidates": [],
+ "candidates": [
+  {
+   "key": "arxiv:2611.17206",
+   "source": "arXiv",
+   "id": "2611.17206",
+   "title": "PACER: GPU Excursion Management for ML Workloads",
+   "abstract": "Variability is an inherent characteristic of modern GPU systems, arising from a combination of process variation, dynamic environmental conditions, and power management decisions. Prior work has characterized inter-GPU variability and found consistent performance differences across GPUs. However, we observe that modern workloads, particularly large language models (LLMs), exhibit significant intra-GPU variability. Their short-running kernels interact poorly with the coarse granularity of dynamic power management mechanisms, leading to unpredictable performance. A key source of this intra-GPU transient variability is power excursions, also referred to as electrical design power peaks (EDP$_{p}$), where power temporarily exceeds the GPU's rated power limits. While power management mechanisms are designed to ensure reliable operation despite the presence of EDP$_{p}$ sustained power peaks cause throttling that detrimentally impacts overall application performance. To the best of our knowledge, our work is the first to characterize the magnitude and frequency of EDP$_{p}$, showing that frequent, significant power overshoots are especially common in ML workloads, which combine high power draw, short kernels, and rapidly changing compute demands. To address this, we design and leverage hardware and firmware mechanisms to provide consistent power management behavior that reduces intra-GPU variability due to EDP$_{p}$ and improves overall performance. We evaluate our techniques across a range of popular workloads. Our approach improves performance by 3-12% over state-of-the-art GPU power management and comes within 3% of an oracular solution.",
+   "authors": [
+    {
+     "name": "Rutwik Jain",
+     "affiliations": []
+    },
+    {
+     "name": "Nathaniel Morris",
+     "affiliations": []
+    },
+    {
+     "name": "Yiwei Jiang",
+     "affiliations": []
+    },
+    {
+     "name": "Shidhartha Das",
+     "affiliations": []
+    },
+    {
+     "name": "Gary Kao",
+     "affiliations": []
+    },
+    {
+     "name": "Indrani Paul",
+     "affiliations": []
+    },
+    {
+     "name": "Shivaram Venkataraman",
+     "affiliations": []
+    },
+    {
+     "name": "Srilatha Manne",
+     "affiliations": []
+    },
+    {
+     "name": "Matthew D. Sinclair",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-12",
+   "url": "https://arxiv.org/abs/2611.17206",
+   "matched_terms": [
+    "compute demand",
+    "gpu",
+    "gpus",
+    "large language models",
+    "llms"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "PACER: GPU Excursion Management for ML Workloads CCS: Hardware Chip-level power issues CCS: Computer systems organization Parallel architectures Rutwik Jain Note: Work done as intern at Advanced Micro Devices, Inc. Affiliation: University of Wisconsin-Madison , Madison , USA email: rnjain@wisc.edu , Nathaniel Morris Affiliation: Advanced Micro Devices, Inc. , Austin , USA email: Nathaniel.Morris@amd.com , Yiwei Jiang Affiliation: University of Wisconsin-Madison , Madison , Wisconsin , USA email: jiang357@wisc.edu , Shidhartha Das Affiliation: Advanced Micro Devices, Inc. , Santa Clara , California , USA email: Sid.Das@amd.com , Gary Kao Affiliation: Advanced Micro Devices, Inc. , Santa Clara , California , USA email: Tzyy-juin.Kao@amd.com , Indrani Paul Affiliation: Advanced Micro Devices, Inc. , Santa Clara , California , USA email: Indrani.Paul@amd.com , Shivaram Venkataraman Affiliation: University of Wisconsin-Madison , Madison , Wisconsin , USA email: shivaram@cs.wisc.edu , Srilatha Manne Affiliation: Advanced Micro Devices, Inc. , Santa Clara , California , USA email: Srilatha.Manne@amd.com and Matthew D. Sinclair Affiliation: University of Wisconsin-Madison , Madison , Wisconsin , USA email: sinclair@cs.wisc.edu Abstract. Variability is an inherent characteristic of modern GPU systems, arising from a combination of process variation, dynamic environmental conditions, and power management decisions. Prior work has characterized inter-GPU variability and found consistent performance differences across GPUs. However, we observe that modern workloads, particularly large language models (LLMs), exhibit significant intra-GPU variability. Their short-running kernels interact poorly with the coarse granularity of dynamic power management mechanisms, leading to unpredictable performance. A key source of this intra-GPU transient variability is power excursions, also referred to as electrical design power peaks (EDP p ), where power temporarily exceeds the GPU’s rated power limits. While power management mechanisms are designed to ensure reliable operation despite the presence of EDP p , sustained power peaks cause throttling that detrimentally impacts overall application performance. To the best of our knowledge, our work is the first to characterize the magnitude and frequency of EDP p , showing that frequent, significant power overshoots are especially common in ML workloads, which combine high power draw, short kernels, and rapidly changing compute demands"
+  },
+  {
+   "key": "arxiv:2611.17098",
+   "source": "arXiv",
+   "id": "2611.17098",
+   "title": "Speed-to-Power Dominates Energy Costs for AI Data Centers: Technoeconomic Analysis of Powering AI in the Continental United States",
+   "abstract": "The rapid growth of artificial intelligence is driving demand for new data centers at large scale and on short deployment timelines. To power them, firms connect to the commercial grid or contract generation directly, but interconnection and gas-turbine delays now incentivize on-site generation. We compare grid-connected and off-grid data center energy infrastructure (AC- and DC-coupled solar-plus-storage, islanded natural gas, and grid interconnection) across the continental U.S. Using an open-source technoeconomic framework built on empirically calibrated AI training loads, climate-driven cooling, stage-by-stage power conversion, and physics-based battery degradation, we model designs providing equivalent energy services. Our central contribution is a speed-adjusted cost of energy that values the compute unlocked by faster construction, making options with different deployment timelines directly comparable on one physically consistent basis. We find DC coupling reduces lifetime energy costs by 18% ($0.09/ kWh) on average versus AC counterparts by eliminating inverters and improving efficiency. Though rarely cheapest on unadjusted energy cost, DC-coupled microgrids' faster deployment makes them the lowest-cost modeled option in 85% of U.S. locations once foregone compute is valued, or 55% under accelerated natural gas timelines. For AI infrastructure, deployment speed rather than unit energy cost determines the economically preferred path to power.",
+   "authors": [
+    {
+     "name": "Alex C. Newkirk",
+     "affiliations": []
+    },
+    {
+     "name": "Daniel L. Gerber",
+     "affiliations": []
+    },
+    {
+     "name": "Erica R. H. Fuchs",
+     "affiliations": []
+    },
+    {
+     "name": "Alex Hubbard",
+     "affiliations": []
+    },
+    {
+     "name": "M. Granger Morgan",
+     "affiliations": []
+    },
+    {
+     "name": "Arman Shehabi",
+     "affiliations": []
+    },
+    {
+     "name": "Sarah J. Smith",
+     "affiliations": []
+    },
+    {
+     "name": "Constantine Samaras",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.AI",
+    "eess.SY"
+   ],
+   "primary_category": "cs.AI",
+   "date": "2026-11-12",
+   "url": "https://arxiv.org/abs/2611.17098",
+   "matched_terms": [
+    "ai infrastructure",
+    "data center",
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Speed-to-Power Dominates Energy Costs for AI Data Centers: Technoeconomic Analysis of Powering AI in the Continental United States Alex C. Newkirk † † thanks: Corresponding author: anewkirk@andrew.cmu.edu Affiliation: Department of Engineering and Public Policy, Carnegie Mellon University, Pittsburgh, PA Affiliation: University of California, Berkeley, Berkeley, CA Daniel L. Gerber Affiliation: University of California, Berkeley, Berkeley, CA Erica R. H. Fuchs Affiliation: Department of Engineering and Public Policy, Carnegie Mellon University, Pittsburgh, PA Alex Hubbard Affiliation: University of California, Berkeley, Berkeley, CA M. Granger Morgan Affiliation: Department of Engineering and Public Policy, Carnegie Mellon University, Pittsburgh, PA Arman Shehabi Affiliation: University of California, Berkeley, Berkeley, CA Sarah J. Smith Affiliation: University of California, Berkeley, Berkeley, CA Constantine Samaras Affiliation: Department of Engineering and Public Policy, Carnegie Mellon University, Pittsburgh, PA Affiliation: Department of Civil and Environmental Engineering, Carnegie Mellon University, Pittsburgh, PA Affiliation: Wilton E. Scott Institute for Energy Innovation, Carnegie Mellon University, Pittsburgh, PA Abstract The rapid growth of artificial intelligence is driving demand for new data centers at large scale and on short deployment timelines. To power them, firms connect to the commercial grid or contract generation directly, but interconnection and gas-turbine delays now incentivize on-site generation. We compare grid-connected and off-grid data center energy infrastructure (AC- and DC-coupled solar-plus-storage, islanded natural gas, and grid interconnection) across the continental U.S. Using an open-source technoeconomic framework built on empirically calibrated AI training loads, climate-driven cooling, stage-by-stage power conversion, and physics-based battery degradation, we model designs providing equivalent energy services. Our central contribution is a speed-adjusted cost of energy that values the compute unlocked by faster construction, making options with different deployment timelines directly comparable on one physically consistent basis. We find DC coupling reduces lifetime energy costs by 18% (9¢/kWh) on average versus AC counterparts by eliminating inverters and improving efficiency. Though rarely cheapest on unadjusted energy cost, DC-coupled microgrids’ faster deployment makes them the lowest-cost modeled option in "
+  },
+  {
+   "key": "arxiv:2611.17097",
+   "source": "arXiv",
+   "id": "2611.17097",
+   "title": "Broadcast, Don't Replicate: Eliminating Weight HBM in Datacenter LLM Serving",
+   "abstract": "Large language model (LLM) inference at datacenter scale is fundamentally bottlenecked by memory capacity and bandwidth limits. Because model weights are read-only and identical across instances, conventional architectures that replicate these parameters across the local DRAM of tens of thousands of accelerators incur massive capital expenditures, significant static power dissipation, and redundant memory-fetch energy. A recent proposal to use optical fiber loops as delay-line memory alleviates these issues, but its recirculating loop must hold the whole model: loop length grows with model size, slack is fixed when the ring is built, and the layouts that serve modern Mixture of Experts (MoE) models efficiently do not fit in it. We propose Optical Broadcast Memory (OBM), an open-ended hierarchical Tap-and-Amplify fiber architecture that generalizes and replaces the optical ring paradigm. A centralized memory server continuously broadcasts weights to distributed inference nodes that passively tap the data stream using receive-only co-packaged optics, delivering parameters directly to compute units without intermediate buffering. To overcome the limitations of continuous weight streaming, we use dynamically-sized slack to accommodate large and variable context lengths. We show how removing the restrictions of the optical ring allows OBM to efficiently serve MoE models. Evaluated at a datacenter scale of 80,000 accelerators, OBM eliminates petabytes of HBM while being competitive or better in throughput and energy per token than an HBM-based system.",
+   "authors": [
+    {
+     "name": "Hannah Atmer",
+     "affiliations": []
+    },
+    {
+     "name": "Yuan Yao",
+     "affiliations": []
+    },
+    {
+     "name": "Thiemo Voigt",
+     "affiliations": []
+    },
+    {
+     "name": "Stefanos Kaxiras",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.AR",
+    "cs.DC",
+    "cs.ET",
+    "cs.NI"
+   ],
+   "primary_category": "cs.AR",
+   "date": "2026-11-12",
+   "url": "https://arxiv.org/abs/2611.17097",
+   "matched_terms": [
+    "datacenter"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Broadcast, Don’t Replicate: Eliminating Weight HBM in Datacenter LLM Serving Hannah Atmer Affiliation: Uppsala University Uppsala, Sweden hannah.atmer@it.uu.se Yuan Yao Affiliation: Uppsala University Uppsala, Sweden yuan.yao@it.uu.se Thiemo Voigt Affiliation: Uppsala University Uppsala, Sweden thiemo.voigt@angstrom.uu.se Stefanos Kaxiras Affiliation: Uppsala University Uppsala, Sweden stefanos.kaxiras@it.uu.se Abstract Large language model (LLM) inference at datacenter scale is fundamentally bottlenecked by memory capacity and bandwidth limits. Because model weights are read-only and identical across instances, conventional architectures that replicate these parameters across the local DRAM of tens of thousands of accelerators incur massive capital expenditures, significant static power dissipation, and redundant memory-fetch energy. A recent proposal to use optical fiber loops as delay-line memory alleviates these issues, but its recirculating loop must hold the whole model: loop length grows with model size, slack is fixed when the ring is built, and the layouts that serve modern Mixture of Experts (MoE) models efficiently do not fit in it. We propose Optical Broadcast Memory (OBM), an open-ended hierarchical Tap-and-Amplify fiber architecture that generalizes and replaces the optical ring paradigm. A centralized memory server continuously broadcasts weights to distributed inference nodes that passively tap the data stream using receive-only co-packaged optics, delivering parameters directly to compute units without intermediate buffering. To overcome the limitations of continuous weight streaming, we use dynamically-sized slack to accommodate large and variable context lengths. We show how removing the restrictions of the optical ring allows OBM to efficiently serve MoE models. Evaluated at a datacenter scale of 80,000 accelerators, OBM eliminates petabytes of HBM while being competitive or better in throughput and energy per token than an HBM-based system."
+  },
+  {
+   "key": "arxiv:2611.16569",
+   "source": "arXiv",
+   "id": "2611.16569",
+   "title": "Can STATCOM and UPS-Based Voltage Support Mitigate Fault-Induced Reductions in AI Data Center Grid Power Draw?",
+   "abstract": "Artificial intelligence data centers (AIDCs) are rapidly increasing in number and capacity. These large electronic loads are interfaced through power electronic devices and can sharply reduce grid power intake during fault-induced voltage sags. Disturbances exceeding equipment ride-through capabilities may also trigger protective disconnection, posing risks to power system security. Static synchronous compensators (STATCOMs) and appropriately controlled AIDC uninterruptible power supply (UPS) rectifiers can provide reactive power support during voltage sags. This paper compares the individual and combined effectiveness of STATCOM and UPS-based voltage support in mitigating fault-induced reductions in grid power intake through electromagnetic transient simulations of a 1 GW AIDC connected to an IEEE nine-bus system. Simulation results show that STATCOM support better preserves short-term intake in milder tested faults, whereas UPS coordination maintains rectifier operation under deeper sags by reducing active intake to reserve reactive current capacity. Combined support improves auxiliary load retention and recovery in selected cases. However, severe tested sags still cause substantial grid-demand reductions even with combined support.",
+   "authors": [
+    {
+     "name": "Ziang Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Yimeng Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Francis Yunhe Hou",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-12",
+   "url": "https://arxiv.org/abs/2611.16569",
+   "matched_terms": [
+    "data center",
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Can STATCOM and UPS-Based Voltage Support Mitigate Fault-Induced Reductions in AI Data Center Grid Power Draw? Ziang Liu 1 , Yimeng Liu 1 , Francis Yunhe Hou 1 Affiliation: 1 Department of Electrical and Computer Engineering, The University of Hong Kong, Hong Kong, China liuziang1119@163.com, liuyimen25@connect.hku.hk, yhhou@eee.hku.hk Affiliation: Abstract Artificial intelligence data centers (AIDCs) are rapidly increasing in number and capacity. These large electronic loads are interfaced through power electronic devices and can sharply reduce grid power intake during fault-induced voltage sags. Disturbances exceeding equipment ride-through capabilities may also trigger protective disconnection, posing risks to power system security. Static synchronous compensators (STATCOMs) and appropriately controlled AIDC uninterruptible power supply (UPS) rectifiers can provide reactive power support during voltage sags. This paper compares the individual and combined effectiveness of STATCOM and UPS-based voltage support in mitigating fault-induced reductions in grid power intake through electromagnetic transient simulations of a 1 GW AIDC connected to an IEEE nine-bus system. Simulation results show that STATCOM support better preserves short-term intake in milder tested faults, whereas UPS coordination maintains rectifier operation under deeper sags by reducing active intake to reserve reactive current capacity. Combined support improves auxiliary load retention and recovery in selected cases. However, severe tested sags still cause substantial grid-demand reductions even with combined support. Index Terms: AI Data centers, momentary cessation, STATCOM, uninterruptible power supplies, voltage support."
+  },
+  {
+   "key": "arxiv:2611.16524",
+   "source": "arXiv",
+   "id": "2611.16524",
+   "title": "A Joint LLM and Optimization Agent Solution for Drone Scheduling in Victim Search Missions",
+   "abstract": "Victim search in wilderness areas is time-critical. Drones enable rapid area search, but scheduling them is challenging because victims may continue moving, detection results are uncertain, and effective decisions must combine structured mission information with unstructured contextual clues and domain knowledge. To address this, we propose an agent-aided drone scheduling system. The system employs an agent at the ground control station (GCS) to coordinate multiple drones over successive search cycles. In each cycle, the agent applies a scheduling policy that combines a large language model (LLM) for reasoning about where to search with an optimizer for determining how to dispatch the drones under energy constraints. Simulation results show that the proposed system consistently completes the victim-search mission, whereas none of the six non-LLM baselines does so and direct LLM scheduling is considerably less reliable. The source code is publicly available at https://github.com/1643204431/llm-uav-victim-search.",
+   "authors": [
+    {
+     "name": "Yinghao Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Yalin Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Hong-Ning Dai",
+     "affiliations": []
+    },
+    {
+     "name": "Yan Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Qubeijian Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Bishenghui Tao",
+     "affiliations": []
+    },
+    {
+     "name": "Yaohan Li",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY",
+    "cs.AI",
+    "cs.ET"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-12",
+   "url": "https://arxiv.org/abs/2611.16524",
+   "matched_terms": [
+    "large language model",
+    "llm"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "A Joint LLM and Optimization Agent Solution for Drone Scheduling in Victim Search Missions Thanks: ¶ Corresponding author. Thanks: This work was supported in part by the Research Grants Council of the Hong Kong Special Administrative Region, China, under Project UGC/FDS16/E15/24, in part by the Hong Kong Metropolitan University Research Grant under Project PFDS/2025/34, in part by the UGC Research Matching Grant Scheme under Project 2024/3003 and Gekko Lab, and in part by Hong Kong Metropolitan University Research Grant (No.2025/26 S&T). Yinghao Zhang 1 , Yalin Liu 1 ¶, Hong-Ning Dai 2 , Yan Zhang 3 , Qubeijian Wang 4 , Bishenghui Tao 1 , and Yaohan Li 1 Affiliation: 1 Hong Kong Metropolitan University, 2 Hong Kong Baptist University, Hong Kong, China 3 University of Electronic Science and Technology of China, 4 Northwestern Polytechnical University, China Affiliation: Emails: {zhangyi, ylliu, btao, yahli}@hkmu.edu.hk, {hndai, yanzhang}@ieee.org, qubeijian.wang@nwpu.edu.cn Affiliation: Abstract Victim search in wilderness areas is time-critical. Drones enable rapid area search, but scheduling them is challenging because victims may continue moving, detection results are uncertain, and effective decisions must combine structured mission information with unstructured contextual clues and domain knowledge. To address this, we propose an agent-aided drone scheduling system. The system employs an agent at the ground control station (GCS) to coordinate multiple drones over successive search cycles. In each cycle, the agent applies a scheduling policy that combines a large language model (LLM) for reasoning about where to search with an optimizer for determining how to dispatch the drones under energy constraints. Simulation results show that the proposed system consistently completes the victim-search mission, whereas none of the six non-LLM baselines does so and direct LLM scheduling is considerably less reliable. The source code is publicly available at https://github.com/1643204431/llm-uav-victim-search . Index Terms: Large Language Models, Multi-Drone Scheduling, Artificial Intelligence Agent, Victim Search Missions † † aftertitle:"
+  },
+  {
+   "key": "arxiv:2611.16467",
+   "source": "arXiv",
+   "id": "2611.16467",
+   "title": "SS-HSDP: Efficient and Flexible Sharded Data Parallelism via Runtime-Update Decoupling",
+   "abstract": "Sharded data parallelism enables memory-efficient training of large models. While efficient training kernels favor packed, kernel-specific data layouts, optimizers may require variant data structures as optimization units. Existing sharded data-parallel frameworks couple these two choices, limiting runtime efficiency and optimization flexibility. To address this, we present \\textbf{\\our}, a training framework that separates runtime parameters from update parameters, allowing computation layouts and optimization units to be organized independently. Through shared data views and hierarchical sharding, \\our supports this separation while avoiding redundant data movement. This design supports a broad range of optimizers, including matrix-based methods such as Muon, and performance optimizations such as fully zero-copy execution. Experiments on video and language model workloads with MXFP8 training show that \\our achieves higher Model FLOPs Utilization (MFU) than FSDP2, veScale-FSDP, and Megatron-FSDP. At 128 GPUs, MFU improves by up to 21.7\\% over the fastest evaluated baseline, with comparable or lower peak memory usage.",
+   "authors": [
+    {
+     "name": "Chendong Xiang",
+     "affiliations": []
+    },
+    {
+     "name": "Pengle Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Jinliang Li",
+     "affiliations": []
+    },
+    {
+     "name": "Zichen Liang",
+     "affiliations": []
+    },
+    {
+     "name": "Jintao Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Fan Bao",
+     "affiliations": []
+    },
+    {
+     "name": "Jun Zhu",
+     "affiliations": []
+    },
+    {
+     "name": "Jianfei Chen",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-12",
+   "url": "https://arxiv.org/abs/2611.16467",
+   "matched_terms": [
+    "gpus"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "SS-HSDP: Efficient and Flexible Sharded Data Parallelism via Runtime–Update Decoupling Chendong Xiang Pengle Zhang Jinliang Li Zichen Liang Jintao Zhang Fan Bao Jun Zhu Jianfei Chen Affiliation: Tsinghua University, Shengshu Technology https://www.vidu.com/ Abstract Sharded data parallelism enables memory-efficient training of large models. While efficient training kernels favor packed, kernel-specific data layouts, optimizers may require variant data structures as optimization units. Existing sharded data-parallel frameworks couple these two choices, limiting runtime efficiency and optimization flexibility. To address this, we present SS-HSDP , a training framework that separates runtime parameters from update parameters, allowing computation layouts and optimization units to be organized independently. Through shared data views and hierarchical sharding, SS-HSDP supports this separation while avoiding redundant data movement. This design supports a broad range of optimizers, including matrix-based methods such as Muon, and performance optimizations such as fully zero-copy execution. Experiments on video and language model workloads with MXFP8 training show that SS-HSDP achieves higher Model FLOPs Utilization (MFU) than FSDP2, veScale-FSDP, and Megatron-FSDP. At 128 GPUs, MFU improves by up to 21.7% over the fastest evaluated baseline, with comparable or lower peak memory usage. † † footnotetext: *Core contributors, co-first authorship. ‡ \\ddagger Advisors."
+  },
+  {
+   "key": "arxiv:2611.16219",
+   "source": "arXiv",
+   "id": "2611.16219",
+   "title": "GC-MoE on SM120: Overlapping Expert-Parallel Token Dispatch with Warp-Level FP8xFP4 Block-Scaled MMA on Consumer Blackwell",
+   "abstract": "Expert-parallel Mixture-of-Experts decoding is latency bound: each layer serializes a token exchange, a grouped GEMM over routed experts, and a combine, while only a few tokens per rank are in flight. Prior GC-MoE fused these phases into one persistent, Green-Context-partitioned CUDA Graph on Hopper (SM90) and datacenter Blackwell (SM100). This paper rebuilds the operator for SM120 (compute capability 12.0, e.g. RTX PRO 5000) over PCIe. SM120 exposes block-scaled tensor cores only through warp-level mma.sync.aligned.kind::mxf8f6f4: no tensor memory, no two-CTA MMA, no cluster multicast. We rebuild the kernel around a swap-AB warp-level block-scaled MMA with FP4 weights in the register A operand and FP8 activations in B, plus SM120-specific mechanisms: scale-byte selection through MMA immediates, a compact-weights path, an adaptive token-tile geometry, an expert-granular streaming dispatch with a batched bulk-pull engine and a 64-bit deduplicating pull cache, full-width BF16 returns drained by resident relay copiers over a position-major arena, and shared experts folded into the compute role. On 8xRTX PRO 5000 over PCIe the operator is 1.522x and 1.387x faster than the FlashInfer CuTe DSL W4A8 MegaMoE and the Cake MegaMoE across 18 decode points (18/18 wins each), and 1.388x faster than Cake with shared experts fused; all 94 numerical cases and 752 per-rank checks pass, at cross-operator cosine similarity of at least 0.9999997.",
+   "authors": [
+    {
+     "name": "Yong Li",
+     "affiliations": []
+    },
+    {
+     "name": "Haoyu Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Kan Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Tao Lan",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.LG"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-12",
+   "url": "https://arxiv.org/abs/2611.16219",
+   "matched_terms": [
+    "datacenter"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Yong Li Haoyu Wang Kan Liu Tao Lan Alibaba Inc. {brucelee.ly, why492961, liukan.lk, tao.lant}@alibaba-inc.com Abstract Expert-parallel (EP) Mixture-of-Experts (MoE) decoding is a latency problem before it is a throughput problem: every layer serializes a token exchange over the interconnect, a grouped GEMM over the routed experts, and a combine, while only a few tokens per rank are in flight. Prior GC-MoE work attacks this serialization on Hopper (SM90) and datacenter Blackwell (SM100) by co-scheduling the communication and the compute of one layer inside one persistent, Green-Context-partitioned CUDA Graph. This paper describes GC-MoE for SM120 (compute capability 12.0, e.g. RTX PRO 5000), the consumer/workstation Blackwell variant. SM120 is not a mechanical port of the datacenter design. It exposes block-scaled tensor cores only through warp-level mma.sync.aligned.kind::mxf8f6f4 , so there is no tensor memory, no two-CTA MMA and no cluster-wide multicast to lean on; FP4 weight nibbles must be presented to the MMA per warp; the SM budget that can be partitioned between communication and compute is small; and the inter-GPU fabric is PCIe. We therefore rebuild the kernel around a swap-AB warp-level block-scaled MMA in which FP4 weights occupy the register A A operand and FP8 activations the B B operand, and we add a set of SM120-specific mechanisms: packed block-scale byte selection through MMA immediates that removes all scale-byte shuffling from the inner loop; a compact-weights path that halves weight staging and expands FP4 in registers; a run-time adaptive token-tile geometry that selects among register/SMEM/global handoffs; an expert-granular streaming dispatch with a batched bulk-pull engine, a 64-bit pull cache that deduplicates activation reads by (source rank, token), and packed-route and mirrored-metadata exchange; full-width BF16 returns that are coalesced into bulk stores on the direct path and drained by resident relay copiers over a position-major arena; and shared experts folded into the compute role, which reuses the routed role’s shared-memory budget instead of occupying a kernel of its own. On 8 × \\times RTX PRO 5000 over PCIe, the resulting operator is on average 1.522 × 1.522\\times faster than the FlashInfer CuTe DSL W4A8 MegaMoE and 1.387 × 1.387\\times faster than the Cake MegaMoE across 18 decode points and two model shapes (18/18 wins each), and 1.388 × 1.388\\times faster than Cake on the fused shared-expert variant; all 94 numerical"
+  },
+  {
+   "key": "arxiv:2611.16177",
+   "source": "arXiv",
+   "id": "2611.16177",
+   "title": "Real-Time Low-Complexity Zak-OTFS with Superimposed Spread Pilots on GPUs",
+   "abstract": "Orthogonal time frequency space (OTFS) modulation offers robust performance under high-mobility scenarios. Spread pilots distribute pilot energy across the delay-Doppler grid and are superimposed with data symbols, enabling full-grid resource utilization. However, pilot-data separation challenges the design of the real-time receiver pipeline: cross-ambiguity in channel sensing incurs high computational complexity, and pilot-data interference cancellation requires repeated processing through turbo iterations. Leveraging the chirp structure of OTFS spread pilots, we reduce cross-ambiguity to a single 2D IFFT with element-wise chirp operations, achieving over 7000x speedup compared to partially vectorized direct evaluation on GPUs at a frame size of (M, N)=(2053, 31). Our real-time GPU baseband processing pipeline for OTFS with superimposed spread pilots supports (M, N)=(2053, 31) with one turbo iteration within a 1.03 ms latency budget. We further show that larger frames increase processing gain, allowing lower pilot power and near-converged bit error rate (BER) after one turbo iteration.",
+   "authors": [
+    {
+     "name": "Chung-Hsuan Tung",
+     "affiliations": []
+    },
+    {
+     "name": "Junyao Zheng",
+     "affiliations": []
+    },
+    {
+     "name": "Vineetha Yogesh",
+     "affiliations": []
+    },
+    {
+     "name": "Mudasir Ahmad Sheikh",
+     "affiliations": []
+    },
+    {
+     "name": "Danish Nisar",
+     "affiliations": []
+    },
+    {
+     "name": "Robert Calderbank",
+     "affiliations": []
+    },
+    {
+     "name": "Tingjun Chen",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SP"
+   ],
+   "primary_category": "eess.SP",
+   "date": "2026-11-12",
+   "url": "https://arxiv.org/abs/2611.16177",
+   "matched_terms": [
+    "gpu",
+    "gpus"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Real-Time Low-Complexity Zak-OTFS with Superimposed Spread Pilots on GPUs Thanks: This work was supported in part by NSF under grants 2434131, 2443137, 2450567, 2503010, and 2554552, and an NVIDIA Academic Grant. The work of Robert Calderbank, Danish Nisar, and Mudasir Sheikh is supported in part by NSF under grant 2342690 and by Cohere Technologies. Chung-Hsuan Tung Junyao Zheng Vineetha Yogesh * † † thanks: * These authors contributed equally to this work. Mudasir Ahmad Sheikh * Danish Nisar * Affiliation: Robert Calderbank, and Tingjun Chen Affiliation: Department of Electrical and Computer Engineering, Duke University, Durham, NC 27708, USA Affiliation: Abstract Orthogonal time frequency space (OTFS) modulation offers robust performance under high-mobility scenarios. Spread pilots distribute pilot energy across the delay–Doppler grid and are superimposed with data symbols, enabling full-grid resource utilization. However, pilot–data separation challenges the design of the real-time receiver pipeline: cross-ambiguity in channel sensing incurs high computational complexity, and pilot–data interference cancellation requires repeated processing through turbo iterations. Leveraging the chirp structure of OTFS spread pilots, we reduce cross-ambiguity to a single 2D IFFT with element-wise chirp operations, achieving over 7000 × 7000\\times speedup compared to partially vectorized direct evaluation on GPUs at a frame size of ( M , N ) = ( 2053 , 31 ) (M,N)=(2053,31) . Our real-time GPU baseband processing pipeline for OTFS with superimposed spread pilots supports ( M , N ) = ( 2053 , 31 ) (M,N)=(2053,31) with one turbo iteration within a 1.03 1.03 ms latency budget. We further show that larger frames increase processing gain, allowing lower pilot power and near-converged bit error rate (BER) after one turbo iteration. Index Terms: OTFS, spread pilot, cross-ambiguity, GPU, real-time baseband processing"
+  },
+  {
+   "key": "arxiv:2611.16095",
+   "source": "arXiv",
+   "id": "2611.16095",
+   "title": "Data-center growth impacts household electricity costs more through wholesale prices than through grid reinforcement",
+   "abstract": "Rapid data-center expansion is raising concerns about electricity affordability, yet how the costs of serving these large new loads reach residential customers remains poorly understood. Here, we quantify the potential impact of 371 announced Texas data-center projects, totaling 38.9 GW by 2030, on residential electricity costs by linking power system expansion, wholesale electricity markets, transmission reinforcement, and retail cost allocation. We find that accommodating this demand increases modeled residential electricity costs in one representative case by 1.64 cents/kWh, with 68% arising from higher wholesale electricity prices and 32% from regulated transmission charges. Allowing new gas generation near data centers reduces the 2023 residential cost increase to 0.92 cents/kWh, whereas excluding data centers from the transmission cost-sharing base raises it to 1.87 cents/kWh. These findings reveal that the residential cost burden of data-center growth is driven primarily by wholesale electricity price increases, rather than direct transmission investment costs, and depends critically on generation siting, infrastructure planning, and cost allocation.",
+   "authors": [
+    {
+     "name": "Lingdong Zhou",
+     "affiliations": []
+    },
+    {
+     "name": "Wenjia Xia",
+     "affiliations": []
+    },
+    {
+     "name": "Jiyu Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Fei Ding",
+     "affiliations": []
+    },
+    {
+     "name": "Xiangqi Zhu",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY",
+    "econ.GN"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-11",
+   "url": "https://arxiv.org/abs/2611.16095",
+   "matched_terms": [
+    "data centers",
+    "data-center"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Data-center growth impacts household electricity costs more through wholesale prices than through grid reinforcement Lingdong Zhou Affiliation: School of Electrical Engineering and Computer Science, Oregon State University, Corvallis, OR, USA Wenjia Xia Affiliation: School of Electrical Engineering and Computer Science, Oregon State University, Corvallis, OR, USA Jiyu Wang Affiliation: Power Systems Engineering Center, National Laboratory of the Rockies, Golden, CO, USA † These authors contributed equally to this work. * Correspondence: Fei Ding ( Fei.Ding@nlr.gov ) and Xiangqi Zhu ( xiangqi.zhu@oregonstate.edu ) Fei Ding Affiliation: Power Systems Engineering Center, National Laboratory of the Rockies, Golden, CO, USA † These authors contributed equally to this work. * Correspondence: Fei Ding ( Fei.Ding@nlr.gov ) and Xiangqi Zhu ( xiangqi.zhu@oregonstate.edu ) Xiangqi Zhu Affiliation: School of Electrical Engineering and Computer Science, Oregon State University, Corvallis, OR, USA Abstract Rapid data-center expansion is raising concerns about electricity affordability, yet how the costs of serving these large new loads reach residential customers remains poorly understood. Here, we quantify the potential impact of 371 announced Texas data-center projects, totaling 38.9 GW by 2030, on residential electricity costs by linking power system expansion, wholesale electricity markets, transmission reinforcement, and retail cost allocation. We find that accommodating this demand increases modeled residential electricity costs in one representative case by 1.64 cents/kWh, with 68% arising from higher wholesale electricity prices and 32% from regulated transmission charges. Allowing new gas generation near data centers reduces the 2023 residential cost increase to 0.92 cents/kWh, whereas excluding data centers from the transmission cost-sharing base raises it to 1.87 cents/kWh. These findings reveal that the residential cost burden of data-center growth is driven primarily by wholesale electricity price increases, rather than direct transmission investment costs, and depends critically on generation siting, infrastructure planning, and cost allocation."
+  },
+  {
+   "key": "arxiv:2611.15942",
+   "source": "arXiv",
+   "id": "2611.15942",
+   "title": "An Open-Architecture Dual-Core STM32-Based Neural Interface with Low-Latency On-Device AI for Neuromodulation Applications",
+   "abstract": "We present an open-architecture bidirectional neural interface for closed-loop neuromodulation built around a dual-core STM32H747 microcontroller and commercial Intan recording and stimulation front-ends. The system supports up to 128 recording channels at 20 kSps and 64 stimulation channels while enabling low-latency on-device AI inference through a dual-core processing architecture and a two-stream memory hierarchy. To validate the machine learning pipeline, we demonstrate two neural decoding models, a compact multilayer perceptron executing entirely from on-chip memory and a larger temporal neural decoder utilizing external memory staging. Both models successfully decode fingertip velocity from neural spiking activity. As a proof of concept for closed-loop operation, we implement spike-triggered stimulation and achieve an end-to-end latency of $189 \\pm 14\\,μ$s, representing an improvement of three orders of magnitude over a host-PC-mediated closed-loop pathway. These results demonstrate that resource-constrained embedded platforms can support high-channel-count neural interfacing, flexible on-device AI, and sub-millisecond closed-loop neuromodulation.",
+   "authors": [
+    {
+     "name": "Sipeng Liang",
+     "affiliations": []
+    },
+    {
+     "name": "Kun Cheng",
+     "affiliations": []
+    },
+    {
+     "name": "Xiao Wu",
+     "affiliations": []
+    },
+    {
+     "name": "Lyu Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Savanna Blade",
+     "affiliations": []
+    },
+    {
+     "name": "Jiaxi Wei",
+     "affiliations": []
+    },
+    {
+     "name": "Ruoheng Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Zhecheng Yin",
+     "affiliations": []
+    },
+    {
+     "name": "Johnson Song",
+     "affiliations": []
+    },
+    {
+     "name": "Tristan J. Lawson",
+     "affiliations": []
+    },
+    {
+     "name": "Alisha Baldwin",
+     "affiliations": []
+    },
+    {
+     "name": "Muhammad Shan Sohail",
+     "affiliations": []
+    },
+    {
+     "name": "Luka Milosevic",
+     "affiliations": []
+    },
+    {
+     "name": "Xilin Liu",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SP"
+   ],
+   "primary_category": "eess.SP",
+   "date": "2026-11-11",
+   "url": "https://arxiv.org/abs/2611.15942",
+   "matched_terms": [
+    "ai inference"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "An Open-Architecture Dual-Core STM32-Based Neural Interface with Low-Latency On-Device AI for Neuromodulation Applications Sipeng Liang 1 , Kun Cheng 1 , Xiao Wu 1 , Lyu Wang 1 , Savanna Blade 1 , Jiaxi Wei 1 , Ruoheng Wang 1 , Zhecheng Yin 1 , Johnson Song 1 , Tristan J. Lawson 2 , Alisha Baldwin 2 , Muhammad Shan Sohail 2 , Luka Milosevic 2 , and Xilin Liu 1 Affiliation: 1 Department of Electrical and Computer Engineering (ECE), University of Toronto, Toronto, ON, Canada 2 Krembil Brain Institute, Toronto Western Hospital, University Health Network (UHN), Toronto, ON, Canada Abstract We present an open-architecture bidirectional neural interface for closed-loop neuromodulation built around a dual-core STM32H747 microcontroller and commercial Intan recording and stimulation front-ends. The system supports up to 128 recording channels at 20 kSps and 64 stimulation channels while enabling low-latency on-device AI inference through a dual-core processing architecture and a two-stream memory hierarchy. To validate the machine learning pipeline, we demonstrate two neural decoding models: a compact multilayer perceptron executing entirely from on-chip memory and a larger temporal neural decoder utilizing external memory staging. Both models successfully decode fingertip velocity from neural spiking activity. As a proof of concept for closed-loop operation, we implement spike-triggered stimulation and achieve an end-to-end latency of 189 ± \\pm 14 μ \\mu s, representing an improvement of three orders of magnitude over a host-PC-mediated closed-loop pathway. These results demonstrate that resource-constrained embedded platforms can support high-channel-count neural interfacing, flexible on-device AI, and sub-millisecond closed-loop neuromodulation. Index Terms: Bidirectional Neural Interface, edge AI, closed-loop neuromodulation, dual-core embedded system"
+  },
+  {
+   "key": "arxiv:2611.15926",
+   "source": "arXiv",
+   "id": "2611.15926",
+   "title": "NVIDIA Vera: A Microarchitecture-Level Comparison with Grace, Turin, and Granite Rapids",
+   "abstract": "The majority of new HPC systems are centered around NVIDIA, AMD, or Intel CPUs. Vera is NVIDIA's latest data-center CPU, including its first custom data-center core design, Olympus. This paper investigates Vera in comparison to AMD Turin and Intel Granite Rapids, using NVIDIA Grace as a baseline. We navigate up the performance ladder, from microbenchmarks that isolate performance metrics, through NAS kernels and miniapps, to single-socket performance of a range of scientific codes. We find that Vera achieves the best performance of the architectures evaluated in most codes tested, and that this gain is primarily attributed to its high memory bandwidth, effective Spatial Multithreading implementation, and low-latency memory subsystem aided by the architecture's predictive structures. While Vera represents a major leap over its predecessor, we show that its comparatively modest floating-point performance trails Intel and AMD in a small number of compute-bound workloads reflecting NVIDIA's GPU focus for such workloads.",
+   "authors": [
+    {
+     "name": "Joseph Moore",
+     "affiliations": []
+    },
+    {
+     "name": "Thomas Green",
+     "affiliations": []
+    },
+    {
+     "name": "Simon McIntosh-Smith",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.AR",
+    "cs.PF"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-11",
+   "url": "https://arxiv.org/abs/2611.15926",
+   "matched_terms": [
+    "data-center"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(HTML version not available: HTTPError)"
+  },
+  {
+   "key": "arxiv:2611.15903",
+   "source": "arXiv",
+   "id": "2611.15903",
+   "title": "Impact of Grid-Interactive Data Center Microgrids on Grid Reliability",
+   "abstract": "Traditional data centers, operating as passive loads with standby backup resources, present significant challenges for grid integration due to their scale, rapid load fluctuations, and limited operational flexibility. This article investigates the transformative potential of grid-interactive data center microgrids, which integrate battery energy storage, on-site generation, and intelligent microgrid controllers to actively support both facility and grid operations. The proposed simulation framework enables the study comparing conventional and grid-interactive architectures under a range of steady-state and contingency scenarios. Results reveal that grid-interactive microgrids can substantially reduce peak grid demand, improve voltage stability, and improve system reliability especially when data center and system load peaks coincide. The findings highlight the critical role of coordinated resource management in enabling the reliable and efficient integration of large data center loads, and provide a practical methodology for assessing their system-level impacts.",
+   "authors": [
+    {
+     "name": "Kiran Kumar Challa",
+     "affiliations": []
+    },
+    {
+     "name": "Kumarsinh Jhala",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-11",
+   "url": "https://arxiv.org/abs/2611.15903",
+   "matched_terms": [
+    "data center",
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Impact of Grid-Interactive Data Center Microgrids on Grid Reliability Kiran Kumar Challa Kumarsinh Jhala † † thanks: K. K. Challa and Kumarsinh Jhala are with Argonne National Laboratory, Lemont, IL, USA (e-mail: kchalla@anl.gov, kjhala@anl.gov). † † thanks: The submitted manuscript has been created by UChicago Argonne, LLC, Operator of Argonne National Laboratory (“Argonne”). Argonne National Laboratory’s work was supported by the U.S. Department of Energy, Office of Electricity, under contract DE-AC02-06CH11357. The U.S. Government retains for itself, and others acting on its behalf, a paid-up nonexclusive, irrevocable worldwide license in said article to reproduce, prepare derivative works, distribute copies to the public, and perform publicly and display publicly, by or on behalf of the Government. Abstract Traditional data centers, operating as passive loads with standby backup resources, present significant challenges for grid integration due to their scale, rapid load fluctuations, and limited operational flexibility. This article investigates the transformative potential of grid-interactive data center microgrids, which integrate battery energy storage, on-site generation, and intelligent microgrid controllers to actively support both facility and grid operations. The proposed simulation framework enables the study comparing conventional and grid-interactive architectures under a range of steady-state and contingency scenarios. Results reveal that grid-interactive microgrids can substantially reduce peak grid demand, improve voltage stability, and improve system reliability—especially when data center and system load peaks coincide. The findings highlight the critical role of coordinated resource management in enabling the reliable and efficient integration of large data center loads, and provide a practical methodology for assessing their system-level impacts. Index Terms: Data center microgrids, large-load integration, battery energy storage systems, power system reliability."
+  },
+  {
+   "key": "arxiv:2611.15712",
+   "source": "arXiv",
+   "id": "2611.15712",
+   "title": "Scalable Reference Electrical Architectures for Modern Data Centers",
+   "abstract": "The rapid growth of cloud computing, artificial intelligence (AI), and high-performance computing is driving the deployment of data centers with electrical demands ranging from tens of megawatts to multi-gigawatt campuses, creating significant challenges for utility interconnection and power system planning. This paper presents scalable, vendor-neutral reference electrical architectures for colocation, hyperscale, and AI data centers. The proposed framework integrates modular Power PODs, hierarchical HV/MV/LV distribution, standby generation, uninterruptible power supplies (UPS), battery energy storage systems (BESS), and scalable utility interfaces into a unified planning methodology. Three representative Power POD configurations are developed to support systematic capacity expansion while maintaining consistent electrical topology and equipment sizing. The proposed architectures facilitate utility interconnection studies, equipment demand forecasting, transmission planning, and grid infrastructure assessment, providing an open and reproducible benchmark for evaluating the impacts of large-scale data center deployment on future power systems.",
+   "authors": [
+    {
+     "name": "Kiran Kumar Challa",
+     "affiliations": [
+      "Joann"
+     ]
+    },
+    {
+     "name": "Yan",
+     "affiliations": [
+      "Joann"
+     ]
+    },
+    {
+     "name": "Zhou",
+     "affiliations": []
+    },
+    {
+     "name": "Kumarsinh Jhala",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-11",
+   "url": "https://arxiv.org/abs/2611.15712",
+   "matched_terms": [
+    "data center",
+    "data centers",
+    "hyperscale"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Scalable Reference Electrical Architectures for Modern Data Centers Kiran Kumar Challa Yan (Joann) Zhou Kumarsinh Jhala † † thanks: K. K. Challa, Yan (Joann) Zhou, and Kumarsinh Jhala are with Argonne National Laboratory, Lemont, IL, USA (e-mail: kchalla@anl.gov, yzhou@anl.gov, kjhala@anl.gov). † † thanks: The submitted manuscript has been created by UChicago Argonne, LLC, Operator of Argonne National Laboratory (“Argonne”) for Department of Energy under Contract No. DE-AC02-06CH11357. The work is funded by Office of Technology Commercialization and Analysis and Strategy Office of DOE. Abstract The rapid growth of cloud computing, artificial intelligence (AI), and high-performance computing is driving the deployment of data centers with electrical demands ranging from tens of megawatts to multi-gigawatt campuses, creating significant challenges for utility interconnection and power system planning. This paper presents scalable, vendor-neutral reference electrical architectures for colocation, hyperscale, and AI data centers. The proposed framework integrates modular Power PODs, hierarchical HV/MV/LV distribution, standby generation, uninterruptible power supplies (UPS), battery energy storage systems (BESS), and scalable utility interfaces into a unified planning methodology. Three representative Power POD configurations are developed to support systematic capacity expansion while maintaining consistent electrical topology and equipment sizing. The proposed architectures facilitate utility interconnection studies, equipment demand forecasting, transmission planning, and grid infrastructure assessment, providing an open and reproducible benchmark for evaluating the impacts of large-scale data center deployment on future power systems. Index Terms: Data centers, electrical architecture, utility interconnection, STATCOM, grid planning."
+  },
+  {
+   "key": "arxiv:2611.15704",
+   "source": "arXiv",
+   "id": "2611.15704",
+   "title": "Assessing Data Center Hosting Capacity Considering Electromagnetic Transient Dynamics",
+   "abstract": "Hosting capacity is commonly assessed with steady-state optimization, which leaves the dynamic response of the data center and the grid at the resulting operating point untested. This paper assesses candidate data center capacities by coupling a unit commitment (UC) model with electromagnetic transient (EMT) simulation. During the capacity search, the UC model determines the economic dispatch for each tested data center capacity, and the resulting operating points are tested for settling with the generators committed online by the UC model and after a selected synchronous generator outage. Three nested capacities are obtained: the optimization-based steady-state capacity, the dynamic pre-outage capacity, and the post-outage dynamic capacity, each bounded by the previous one. On a test system with a detailed data center model, both dynamic capacities fall well below the optimization capacity, and the ranking of connection locations changes with the assessment stage and with the outage. In the most severe outage case at each candidate bus, the capacity is about 30% below the steady-state capacity. Thus, the dynamic response of the data center and the grid should be part of the hosting capacity assessment, and the comparison of connection locations should be made on the post-outage dynamic capacity.",
+   "authors": [
+    {
+     "name": "Fan Jiang",
+     "affiliations": []
+    },
+    {
+     "name": "Xingpeng Li",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-11",
+   "url": "https://arxiv.org/abs/2611.15704",
+   "matched_terms": [
+    "data center"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(HTML version not available: HTTPError)"
+  },
+  {
+   "key": "arxiv:2611.15363",
+   "source": "arXiv",
+   "id": "2611.15363",
+   "title": "Agreement Is Not Assurance: Evidence-Independent Safety Gates for Agentic AI in DER-Rich Distribution Grids",
+   "abstract": "Physics-based safety gates for large language model (LLM) agents can approve unsafe actions when the agent and gate rely on the same corrupted measurements or network records. We formulate this shared-evidence failure for voltage-constrained distributed energy resource (DER) export decisions and analyze how nearly critical DER telemetry can bias state estimation while evading residual-based bad-data detection. We propose evidence-independent verification (EIV), which combines advanced metering infrastructure (AMI) voltage readings, measurement selection based on predicted voltage rise, and bounded physical probes. An IEEE 123-bus hidden-truth testbed evaluates 1,654 near-limit requests under telemetry attacks and record errors. For telemetry attacks targeting the nominal gate, an AC-twin gate with bad-data detection approved 95% of unsafe requests, compared with 3.1% for EIV; EIV rejected 22% of safe clean requests. At matched false-rejection settings, direct AMI checks outperformed incorporating the same readings into state estimation. Gate-targeted attacks exposed a vulnerability in telemetry-based response prediction. Command-based prediction removed that route, but targeted attacks on fresh validation cases still produced a 20% unsafe-approval rate under the tested attack pool. LLM agents frequently sought independent evidence voluntarily, but injected instructions and phase-label errors caused unsafe decisions. When offered the EIV checker as a tool, they used it in 93-100% of episodes; mandatory use did not reduce observed violations, which primarily reflected checker errors. These results distinguish enforcement of verification from reliability of the verifier itself.",
+   "authors": [
+    {
+     "name": "Qianxue Xia",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-11",
+   "url": "https://arxiv.org/abs/2611.15363",
+   "matched_terms": [
+    "large language model",
+    "llm"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Agreement Is Not Assurance: Evidence-Independent Safety Gates for Agentic AI in DER-Rich Distribution Grids Qianxue Xia † † thanks: The author is with the Department of Electrical Engineering and Computer Science, University of Arkansas, Fayetteville, AR 72701 USA (e-mail: qxia@uark.edu). Abstract In the emerging safety pattern for large-language-model (LLM) agents in power systems, the agent proposes an action and a physics-based gate decides whether it executes. In distribution grids rich in distributed energy resources (DERs), the gate checks the action against the same state estimate, network records and device settings the agent used, so if that evidence is corrupted, their agreement carries no independent assurance. We formalize this shared-evidence failure: nearly critical DER telemetry lets an adversary shift the estimate while bad-data statistics barely change. We propose an evidence-independent verification (EIV) gate that re-establishes the safety claim at the action’s footprint with advanced-metering (AMI) readings anchored to the predicted voltage rise, corroboration points the adversary cannot steer, and a bounded probe. On a hidden-truth IEEE 123-bus testbed with 1,654 near-limit requests, stealthy false data made an AC twin gate with bad-data detection approve 95% of unsafe requests and EIV 3.1%. At matched false rejections, the same four readings fed into the state estimator stopped far fewer attacks (32% versus 8% of unsafe requests approved). Gate-specific attacks exposed a route through the twin’s predicted rise, closed by predicting from commanded set-points; they then got 20% of unsafe requests through EIV and 78% through the AMI-augmented estimator. LLM agents usually verified on their own, but an injected note and phase-label errors led them to unsafe approvals. Given the gate as a tool, they used it in 93–100% of episodes; requiring it did not reduce violations, which were the checker’s own misses. Index Terms: Agentic AI, large language models, distribution system state estimation, false data injection, DER cybersecurity, runtime assurance, safety gate, AMI."
+  },
+  {
+   "key": "arxiv:2611.15181",
+   "source": "arXiv",
+   "id": "2611.15181",
+   "title": "Towards Efficient Edge AI for Power Flow in Renewable-Rich Grids with Volt/VAR Control",
+   "abstract": "AI models of the power grid must capture how wind and solar plants support the voltage, adjusting their reactive power to the local voltage along a grid-code Q(V) characteristic. This research examines whether grid foundation models, fast neural network models for power-flow analysis, can represent this behaviour. We introduce the Q(V) bus, a new bus type for the open-source GridFM GraphKit, whose physics decoder evaluates the reactive injection from the plant characteristic at the predicted voltage in every correction step. Training data comprise 7882 hourly operating points of a modified IEEE 118-bus system, matched to Energinet DK1/DK2 measurements and solved with pandapower. Compared with a physics-informed baseline that represents the parks as negative load, the Q(V) bus lowers the voltage-magnitude RMSE 2.3-fold, reduces the power-balance mismatch at the parks from 25 to 0.66 MVA, and raises the F1 score for voltage-band violations from 0.40 to 0.76. An ablation over five configurations shows that the Q(V) bus type provides the accuracy and the physics loss provides the power balance. For edge monitoring, we distil the trained $2.0\\times10^{7}$-parameter model into students of $6\\times10^{5}$ and $1.3\\times10^{6}$ parameters; a flat-start initialisation prevents their collapse into an incorrect low-voltage state in which the characteristic saturates. With output distillation, the 12-step student reaches 1.4 times the teacher's error and, for edge inference on an NVIDIA Jetson Orin Nano (15 W), solves an hourly scenario in 12.2 ms, within the 20 ms synchrophasor interval.",
+   "authors": [
+    {
+     "name": "Shahariya R. R. Puthanpurayil",
+     "affiliations": [
+      "AAU Energy, Aalborg University, Aalborg, Denmark"
+     ]
+    },
+    {
+     "name": "Vlad A. Sanduleac",
+     "affiliations": [
+      "National University of Science and Technology POLITEHNICA Bucharest, Bucharest, Romania"
+     ]
+    },
+    {
+     "name": "Remus Teodorescu",
+     "affiliations": [
+      "AAU Energy, Aalborg University, Aalborg, Denmark"
+     ]
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-11",
+   "url": "https://arxiv.org/abs/2611.15181",
+   "matched_terms": [
+    "edge ai"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Towards Efficient Edge AI for Power Flow in Renewable-Rich Grids with Volt/VAR Control Shahariya R. R. Puthanpurayil Email: srrp@energy.aau.dk Affiliation: AAU Energy, Aalborg University, Pontoppidanstræde 111, 9220 Aalborg, Denmark Vlad A. Sanduleac Email: vlad.sanduleac@upb.ro Affiliation: National University of Science and Technology POLITEHNICA Bucharest, Bucharest, Romania Remus Teodorescu Email: ret@energy.aau.dk Affiliation: AAU Energy, Aalborg University, Pontoppidanstræde 111, 9220 Aalborg, Denmark Abstract AI models of the power grid must capture how wind and solar plants support the voltage, adjusting their reactive power to the local voltage along a grid-code Q(V) characteristic. This research examines whether grid foundation models, fast neural network models for power-flow analysis, can represent this behaviour. We introduce the Q(V) bus , a new bus type for the open-source GridFM GraphKit, whose physics decoder evaluates the reactive injection from the plant characteristic at the predicted voltage in every correction step. Training data comprise 7 882 hourly operating points of a modified IEEE 118-bus system, matched to Energinet DK1/DK2 measurements and solved with pandapower. Compared with a physics-informed baseline that represents the parks as negative load, the Q(V) bus lowers the voltage-magnitude RMSE 2.3-fold, reduces the power-balance mismatch at the parks from 25 to 0.66 MVA, and raises the F1 score for voltage-band violations from 0.40 to 0.76. An ablation over five configurations shows that the Q(V) bus type provides the accuracy and the physics loss , the power balance. For edge monitoring, we distil the trained 2.0 × 10 7 2.0\\times 10^{7} -parameter model into students of 6 × 10 5 6\\times 10^{5} and 1.3 × 10 6 1.3\\times 10^{6} parameters; a flat-start initialisation prevents their collapse into an incorrect low-voltage state in which the characteristic saturates. With output distillation, the 12-step student reaches 1.4 times the teacher’s error and, for edge inference on an NVIDIA Jetson Orin Nano (15 W), solves an hourly scenario in 12.2 ms, within the 20 ms synchrophasor interval. keywords Grid foundation model, Volt/VAR control, Physics informed NN, Knowledge distillation, Edge AI, Power flow, Renewable energy"
+  },
+  {
+   "key": "arxiv:2611.15012",
+   "source": "arXiv",
+   "id": "2611.15012",
+   "title": "TDMOpt: LLM-Driven Cross-layer Dispatch for Transmission-Distribution-Microgrid Systems",
+   "abstract": "Coordinating transmission networks, distribution networks, and microgrids enables distributed flexibility to support renewable energy integration and low-carbon operation. However, heterogeneous resources, cross-layer coupling, and varying operating requirements complicate the selection of models and coordination schemes that are both physically adequate and computationally tractable. This paper proposes TDMOpt, a LLM-driven multi-agent framework that replaces fixed modeling configurations with adaptive model composition. A layered component library provides executable network, resource, objective, constraint, and coordination models. Guided by retrieved physics and component knowledge, the agents infer specific modeling requirements and jointly select compatible components across layers according to operating conditions and computational budgets. The model compositions undergo independent AC power flow validation, since feasibility in a simplified formulation does not ensure compliance with physical network limits. A refinement mechanism interprets numerical feedback to identify modeling requirements for reconsideration and revise relevant component selections. Case studies on different scale systems illustrate the framework's ability to adapt model combinations and obtain validated dispatch solutions through targeted refinement under varying operating conditions.",
+   "authors": [
+    {
+     "name": "Jiayang Tu",
+     "affiliations": []
+    },
+    {
+     "name": "Bojun Du",
+     "affiliations": []
+    },
+    {
+     "name": "Jijun Shui",
+     "affiliations": []
+    },
+    {
+     "name": "Ershun Du",
+     "affiliations": []
+    },
+    {
+     "name": "Qin Wang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-11",
+   "url": "https://arxiv.org/abs/2611.15012",
+   "matched_terms": [
+    "llm"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "TDMOpt: LLM-Driven Cross-layer Dispatch for Transmission-Distribution-Microgrid Systems Thanks: Jiayang Tu, Jijun Shui and Qin Wang are with the Department of Electrical and Electronic Engineering, The Hong Kong Polytechnic University, Hong Kong. Thanks: Bojun Du is with the Department of Electrical Engineering, Tsinghua University, Beijing 100084, China Thanks: Ershun Du is with the Laboratory of Low Carbon Energy, Tsinghua University, Beijing 100084, China. Jiayang Tu Bojun Du Jijun Shui Affiliation: Ershun Du, and Qin Wang, Abstract Coordinating transmission networks, distribution networks, and microgrids enables distributed flexibility to support renewable energy integration and low-carbon operation. However, heterogeneous resources, cross-layer coupling, and varying operating requirements complicate the selection of models and coordination schemes that are both physically adequate and computationally tractable. This paper proposes TDMOpt, a LLM-driven multi-agent framework that replaces fixed modeling configurations with adaptive model composition. A layered component library provides executable network, resource, objective, constraint, and coordination models. Guided by retrieved physics and component knowledge, the agents infer specific modeling requirements and jointly select compatible components across layers according to operating conditions and computational budgets. The model compositions undergo independent AC power flow validation, since feasibility in a simplified formulation does not ensure compliance with physical network limits. A refinement mechanism interprets numerical feedback to identify modeling requirements for reconsideration and revise relevant component selections. Case studies on different scale systems illustrate the framework’s ability to adapt model combinations and obtain validated dispatch solutions through targeted refinement under varying operating conditions. Index Terms: large language models, multi-agent systems, low-carbon dispatch, adaptive modelling, transmission–distribution–microgrid system."
+  },
+  {
+   "key": "arxiv:2611.15003",
+   "source": "arXiv",
+   "id": "2611.15003",
+   "title": "LLM-Enhanced Deep Reinforcement Learning with Human-in-the-Loop Calibration for Real-Time Optimal Power Flow",
+   "abstract": "Real-time optimal power flow (RT-OPF) requires fast and reliable decision-making under time-varying operating conditions. However, many practical operating preferences and safety related requirements are difficult to encode using conventional numerical rewards alone, which limits the effectiveness and controllability of deep reinforcement learning (DRL) for RT-OPF. To address this issue, this paper proposes an LLM-enhanced DRL framework with human-in-the-loop (HITL) for RT-OPF. The proposed method augments the physics-based reward with sparse language evaluative feedback during offline training, so that semantic operational requirements can be incorporated into policy learning. To improve reliability in RT-OPF, a selective HITL calibration mechanism is further introduced to inspect and correct questionable LLM judgments before they continuously shape the learning process. Case studies on the IEEE 30-bus and IEEE 118-bus systems show that LLM feedback improves policy safety over vanilla TD3, while further HITL calibration achieves the best overall performance and more stable training behavior. These results demonstrate the effectiveness of combining language guidance and expert calibration for RT-OPF.",
+   "authors": [
+    {
+     "name": "Jiayang Tu",
+     "affiliations": []
+    },
+    {
+     "name": "Bozhen Jiang",
+     "affiliations": []
+    },
+    {
+     "name": "Bojun Du",
+     "affiliations": []
+    },
+    {
+     "name": "Yunxiao Ling",
+     "affiliations": []
+    },
+    {
+     "name": "Ershun Du",
+     "affiliations": []
+    },
+    {
+     "name": "Qin Wang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY",
+    "cs.AI"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-11",
+   "url": "https://arxiv.org/abs/2611.15003",
+   "matched_terms": [
+    "llm"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "LLM-Enhanced Deep Reinforcement Learning with Human-in-the-Loop Calibration for Real-Time Optimal Power Flow Thanks: Jiayang Tu, Bozhen Jiang, Yunxiao Ling and Qin Wang are with the Department of Electrical and Electronic Engineering, The Hong Kong Polytechnic University, Hong Kong. Thanks: Ershun Du is with the Laboratory of Low Carbon Energy, Tsinghua University, Beijing 100084, China. Thanks: Bojun Du is with the Department of Electrical Engineering, Tsinghua University, Beijing 100084, China Thanks: Corresponding authors: Ershun Du and Qin Wang Jiayang Tu Bozhen Jiang Bojun Du Yunxiao Ling Affiliation: Ershun Du, and Qin Wang, Abstract Real-time optimal power flow (RT-OPF) requires fast and reliable decision-making under time-varying operating conditions. However, many practical operating preferences and safety related requirements are difficult to encode using conventional numerical rewards alone, which limits the effectiveness and controllability of deep reinforcement learning (DRL) for RT-OPF. To address this issue, this paper proposes an LLM-enhanced DRL framework with human-in-the-loop (HITL) for RT-OPF. The proposed method augments the physics-based reward with sparse language evaluative feedback during offline training, so that semantic operational requirements can be incorporated into policy learning. To improve reliability in RT-OPF, a selective HITL calibration mechanism is further introduced to inspect and correct questionable LLM judgments before they continuously shape the learning process. Case studies on the IEEE 30-bus and IEEE 118-bus systems show that LLM feedback improves policy safety over vanilla TD3, while further HITL calibration achieves the best overall performance and more stable training behavior. These results demonstrate the effectiveness of combining language guidance and expert calibration for RT-OPF. Index Terms: Real-time optimal power flow, deep reinforcement learning, large language model, human-in-the-loop, reward shaping."
+  },
+  {
+   "key": "arxiv:2611.14969",
+   "source": "arXiv",
+   "id": "2611.14969",
+   "title": "Scaling VLA Serving Under Robotic Execution Constraints",
+   "abstract": "Vision-language-action (VLA) models have emerged as a promising paradigm for general-purpose robotic manipulation. In our production setting, hundreds of VLA-powered robots are already operating in real-world environments, creating an immediate need for efficient fleet serving. We present XInfer, a production-deployed VLA serving system designed to reduce the inference infrastructure cost of large-scale robotic deployments. XInfer jointly coordinates heterogeneous VLA computation with the evolving response requirements of robotic execution. By exploiting computational parallelism while managing interference, XInfer improves GPU efficiency while protecting time-critical robotic feedback. We evaluate XInfer across three VLA models using production-derived workloads, achieving 1.26-3.75 times the effective robot capacity (ERC) of state-of-the-art systems under physical-execution constraints. Our implementation is publicly available at https://github.com/X-Square-Robot/xinfer.",
+   "authors": [
+    {
+     "name": "Yue Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Zicong Ye",
+     "affiliations": []
+    },
+    {
+     "name": "Lufang Chen",
+     "affiliations": []
+    },
+    {
+     "name": "Dance Yang",
+     "affiliations": []
+    },
+    {
+     "name": "Mingyang Li",
+     "affiliations": []
+    },
+    {
+     "name": "Zhenwei Duan",
+     "affiliations": []
+    },
+    {
+     "name": "Michael Zhao",
+     "affiliations": []
+    },
+    {
+     "name": "Ziye Deng",
+     "affiliations": []
+    },
+    {
+     "name": "Starrick Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Ruizhi Chengze",
+     "affiliations": []
+    },
+    {
+     "name": "YongHua Chen",
+     "affiliations": []
+    },
+    {
+     "name": "SongAo Han",
+     "affiliations": []
+    },
+    {
+     "name": "Yu Sun",
+     "affiliations": []
+    },
+    {
+     "name": "Ran Yu",
+     "affiliations": []
+    },
+    {
+     "name": "Xiaofan Li",
+     "affiliations": []
+    },
+    {
+     "name": "Ruyi Gan",
+     "affiliations": []
+    },
+    {
+     "name": "Hao Wang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.RO",
+    "cs.DC"
+   ],
+   "primary_category": "cs.RO",
+   "date": "2026-11-11",
+   "url": "https://arxiv.org/abs/2611.14969",
+   "matched_terms": [
+    "gpu"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(author block not found in HTML)"
+  },
+  {
+   "key": "arxiv:2611.14962",
+   "source": "arXiv",
+   "id": "2611.14962",
+   "title": "FIRE: Failure Isolation and Reliability for Production-Connected Experiments at Scale",
+   "abstract": "Pre-production changes are usually tested in isolated environments to prevent their side effects from reaching production. Some record-and-replay platforms allow a production-connected mode: candidate changes receive recorded production requests while selected downstream calls reach production dependencies. This improves fidelity before deployment, but it also introduces reliability risks. At hyperscale, experimental traffic can fan out across shared services, trigger latent defects, or send malformed input to systems serving user requests. In this paper, we show how production-connected experimentation can operate reliably in a large-scale recommendation serving system. To contain downstream effects without sacrificing realistic dependency behavior, the platform uses three complementary guardrails. Isolated tiers redirect replay traffic away from shared dependencies where replication is practical. Dependency monitors observe downstream health and experiment-attributed errors and terminate experiments after sustained violations. Traffic pinning limits experimental calls to a designated subset of downstream workers when full replication would require scarce capacity. Isolated ranking tiers process billions of replayed requests per day using under 1% of the corresponding serving capacity. Over 90 days, these tiers experienced more than 200,000 abnormal worker exits without directly affecting production-serving workers. During a separate three-month window, dependency monitors cancelled approximately 5% of experiments for the measured ranking service and accounted for 87% of its cancellations. Dependency-aware triggering also reduced code-review experiment executions by 25%. These results show that high-fidelity, production-connected experimentation can operate at scale when downstream effects are isolated where possible, bounded where necessary, and continuously monitored and attributed.",
+   "authors": [
+    {
+     "name": "Shripad Nadgowda",
+     "affiliations": []
+    },
+    {
+     "name": "Gaurav Mitra",
+     "affiliations": []
+    },
+    {
+     "name": "Sing Sing Ma",
+     "affiliations": []
+    },
+    {
+     "name": "Vipul Chaskar",
+     "affiliations": []
+    },
+    {
+     "name": "Pradipta Ghosh",
+     "affiliations": []
+    },
+    {
+     "name": "Canturk Isci",
+     "affiliations": []
+    },
+    {
+     "name": "Onkar Deshpande",
+     "affiliations": []
+    },
+    {
+     "name": "Edgardo Aviles-Lopez",
+     "affiliations": []
+    },
+    {
+     "name": "Ryan Feng",
+     "affiliations": []
+    },
+    {
+     "name": "Ján Ondrušek",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.SE",
+    "cs.DC"
+   ],
+   "primary_category": "cs.SE",
+   "date": "2026-11-11",
+   "url": "https://arxiv.org/abs/2611.14962",
+   "matched_terms": [
+    "hyperscale"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "FIRE: Failure Isolation and Reliability for Production-Connected Experiments at Scale Shripad Nadgowda Affiliation: Meta, Inc. , USA email: shri.nadgowda@gmail.com , Gaurav Mitra Affiliation: Meta, Inc. , USA email: gmitra@meta.com , Sing Sing Ma Affiliation: Meta, Inc. , USA email: singsing@meta.com , Vipul Chaskar Affiliation: Meta, Inc. , USA email: vchaskar@meta.com , Pradipta Ghosh Affiliation: Meta, Inc. , USA email: iampradipta@meta.com , Canturk Isci Affiliation: Meta, Inc. , USA email: cisci@meta.com , Onkar Deshpande Affiliation: Meta, Inc. , USA email: odeshpande@meta.com , Edgardo Aviles-Lopez Affiliation: Meta, Inc. , USA email: edgardo@meta.com , Ryan Feng Affiliation: Meta, Inc. , USA email: zhengliangfeng@meta.com and Ján Ondrušek Affiliation: Meta, Inc. , USA email: ondrusek@meta.com © none Abstract. Pre-production changes are usually tested in isolated environments to prevent their side effects from reaching production. Some record-and-replay platforms allow a production-connected mode: candidate changes receive recorded production requests while selected downstream calls reach production dependencies. This improves fidelity before deployment, but it also introduces reliability risks. At hyperscale, experimental traffic can fan out across shared services, trigger latent defects, or send malformed input to systems serving user requests. In this paper, we show how production-connected experimentation can operate reliably in a large-scale recommendation serving system. To contain downstream effects without sacrificing realistic dependency behavior, the platform uses three complementary guardrails. Isolated tiers redirect replay traffic away from shared dependencies where replication is practical. Dependency monitors observe downstream health and experiment-attributed errors and terminate experiments after sustained violations. Traffic pinning limits experimental calls to a designated subset of downstream workers when full replication would require scarce capacity. Isolated ranking tiers process billions of replayed requests per day using under 1% of the corresponding serving capacity. Over 90 days, these tiers experienced more than 200,000 abnormal worker exits without directly affecting production-serving workers. During a separate three-month window, dependency monitors cancelled approximately 5% of experiments for the measured ranking service and accounted for 87% of its cancellations. Dependency-aware triggering also reduced code-review "
+  },
+  {
+   "key": "arxiv:2611.14854",
+   "source": "arXiv",
+   "id": "2611.14854",
+   "title": "AgentiGrid: Agentic AI for Steady State and Transient Studies",
+   "abstract": "As power systems worldwide struggle to meet in- creasing loads or higher penetration of inverter based resources, dynamic studies become of increasing importance. The rise of artificial intelligence (AI) capabilities allows to automate some of these resource intensive studies. Coupled with parallel computing, AI is a promising technology to conduct transient and stability studies on an unprecedented scale. This study provides a proof of concept agentic AI capable of parallel or sequential execution of phasor domain studies for a 10,000 bus system. The agent first executes a standalone simulation of a three phase symmetric fault and then executes a series of actions, by first adding a large load to a bus and then applying the fault to the same bus to stress the system. The results of the agentic simulation are consistent with human counterfactual across four vendor backends.",
+   "authors": [
+    {
+     "name": "Eve Tsybina",
+     "affiliations": []
+    },
+    {
+     "name": "Selma Grebovic",
+     "affiliations": []
+    },
+    {
+     "name": "Samim Konjicija",
+     "affiliations": []
+    },
+    {
+     "name": "Kaleb Brunhoeber",
+     "affiliations": []
+    },
+    {
+     "name": "Slaven Peles",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-11",
+   "url": "https://arxiv.org/abs/2611.14854",
+   "matched_terms": [
+    "large load"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "AgentiGrid: Agentic AI for Steady State and Transient Studies Thanks: This manuscript has been authored by UT-Battelle, LLC under Contract No. DE-AC05-00OR22725 with the U.S. Department of Energy. The publisher acknowledges the US government license to provide public access under the DOE Public Access Plan (http://energy.gov/downloads/doe-publicaccess-plan). Eve Tsybina Affiliation: Oak Ridge National Laboratory Oak Ridge, TN, USA tsybinae@ornl.gov Affiliation: Kaleb Brunhoeber Affiliation: Oak Ridge National Laboratory Oak Ridge, TN, USA brunhoeberkx@ornl.gov Selma Grebović Affiliation: University of Sarajevo Sarajevo, Bosnia and Herzegovina sgrebovic@etf.unsa.ba Affiliation: Slaven Peles Affiliation: Oak Ridge National Laboratory Oak Ridge, TN, USA peless@ornl.gov Samim Konjicija Affiliation: University of Sarajevo Sarajevo, Bosnia and Herzegovina skonjicija@etf.unsa.ba Affiliation: Abstract As power systems worldwide struggle to meet increasing loads or higher penetration of inverter based resources, dynamic studies become of increasing importance. The rise of ai ( ai ) capabilities allows to automate some of these resource intensive studies. Coupled with parallel computing, ai is a promising technology to conduct transient and stability studies on an unprecedented scale. This study provides a proof of concept agentic ai capable of parallel or sequential execution of phasor domain studies for a 10,000 bus system. The agent first executes a standalone simulation of a three phase symmetric fault and then executes a series of actions, by first adding a large load to a bus and then applying the fault to the same bus to stress the system. The results of the agentic simulation are consistent with human counterfactual across four vendor backends. Index Terms: agentic AI, high performance computing, transient stability, optimal power flow."
+  },
+  {
+   "key": "arxiv:2611.14759",
+   "source": "arXiv",
+   "id": "2611.14759",
+   "title": "U.S. Data Center Growth Through 2030: A Critical Review of Grid Adequacy and Transmission Expansion Planning",
+   "abstract": "The growth of large data centers raises questions about both supply adequacy and the suitability of load representations used in connection studies. This paper critically reviews the U.S. demand, generation, and transmission outlook through 2030 and examines the implications for transmission expansion planning (TEP). Comparison of public forecasts highlights distinctions among annual average demand, peak demand, and grid connection capacity. National generating-capacity totals cannot establish a dependable surplus because resource availability, regional adequacy, transmission constraints, and project timing determine supply capability. Recent grid events and published dynamic studies demonstrate that faults can trigger substantial data-center transfers to backup supply, followed by delayed or coordinated demand recovery. These behaviors require appropriate representation within the conventional planning framework, alongside assessment of the requested maximum grid import. The selected literature reveals limited integration of validated data-center dynamic models into the technical screening and economic comparison of expansion alternatives. The review identifies the need to establish whether fault response and recovery change feasible connection capacity, required reinforcement, or the preferred transmission investment.",
+   "authors": [
+    {
+     "name": "Babak Porkar",
+     "affiliations": []
+    },
+    {
+     "name": "Mona Ghassemi",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-10",
+   "url": "https://arxiv.org/abs/2611.14759",
+   "matched_terms": [
+    "data center",
+    "data centers",
+    "data-center"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "(HTML version not available: HTTPError)"
+  },
+  {
+   "key": "arxiv:2611.14757",
+   "source": "arXiv",
+   "id": "2611.14757",
+   "title": "Performance Analysis of Quantization-Aware Neural Channel Estimation with Low-Precision Inference",
+   "abstract": "Neural channel estimators can improve radio performance of 5G receivers, but real-time deployment in the radio access network (RAN) imposes strict latency and power budgets. Prior studies of quantized neural channel estimators assess this cost through mean-squared error or analytic operation counts. In this paper, we train a 1D convolutional neural network (CNN) channel estimator for the 5G NR physical uplink shared channel (PUSCH) with INT8 and FP8 quantization-aware training (QAT), and we evaluate its radio performance together with its latency, power, and energy on an NVIDIA H100 GPU. On TDL-A and TDL-C channels at user equipment (UE) speeds up to 35 m/s, both 8-bit models stay within 0.025 dB of FP32 at 10% block error rate (BLER). At batch size 128, INT8 reduces the latency by 16%, the incremental GPU power by 33%, and the energy per query by 26%, compared with 6%, 26%, and 21% for FP8. INT8 is therefore the preferred format.",
+   "authors": [
+    {
+     "name": "Joonas Törmälä",
+     "affiliations": []
+    },
+    {
+     "name": "SaiKrishna Saketh Yellapragada",
+     "affiliations": []
+    },
+    {
+     "name": "Eeli Susan",
+     "affiliations": []
+    },
+    {
+     "name": "Esa Ollila",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SP"
+   ],
+   "primary_category": "eess.SP",
+   "date": "2026-11-10",
+   "url": "https://arxiv.org/abs/2611.14757",
+   "matched_terms": [
+    "gpu"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Performance Analysis of Quantization-Aware Neural Channel Estimation with Low-Precision Inference Joonas Törmälä 2 , SaiKrishna Saketh Yellapragada 1 , Eeli Susan 2 , Esa Ollila 1 Affiliation: 2 Nokia Solutions and Networks Oy, Finland , 1 Aalto University, Finland Abstract Neural channel estimators can improve radio performance of 5G receivers, but real-time deployment in Radio Access Network (RAN) imposes strict latency and power budgets. Prior studies of quantized neural channel estimators assess this cost through mean-squared error or analytic operation counts. In this paper, we train a 1D- Convolutional Neural Network (CNN) channel estimator for the 5G New-Radio (NR) Physical Uplink Shared Channel (PUSCH) with INT8 and FP8 Quantization-Aware Training (QAT) , and we evaluate its radio performance together with its latency, power, and energy on an NVIDIA H100 Graphics Processing Unit (GPU) . On TDL-A and TDL-C channel at User Equipment (UE) speeds up to 35 ​ m / s 35~\\mathrm{m/s} , both 8-bit models stay within 0.025 ​ dB 0.025~\\mathrm{dB} of FP32 at 10 % 10\\% Block Error Rate (BLER) . At batch size 128, INT8 reduces the latency by 16 % 16\\% , the incremental GPU power by 33 % 33\\% , and the energy per query by 26 % 26\\% , compared with 6 % 6\\% , 26 % 26\\% , and 21 % 21\\% for FP8. INT8 is therefore the preferred format. Index Terms: channel estimation, quantization-aware training, QAT, convolutional neural networks, 5G NR, PUSCH, INT8, FP8"
+  },
+  {
+   "key": "arxiv:2611.14741",
+   "source": "arXiv",
+   "id": "2611.14741",
+   "title": "Reconstructing Fine-grained Memory Reuse Structure in GPU Kernels",
+   "abstract": "Optimizing GPU data movement requires knowing which instructions access the same data and across which execution scopes reuse occurs. Existing profilers can attribute memory behavior to individual instructions but do not expose the reuse relations among them, while aliasing, dynamic indexing, and runtime parameters prevent static analysis from establishing these relations in general. Cycle-level simulation can reconstruct such relations, but at costs prohibitive for production workloads. We introduce two abstractions for representing this structure: Topological Distance, which labels each dynamic memory access with the smallest execution scope (thread, warp, block, or grid) containing its most recent reuse, and PCDepGraph, which organizes these labels into a PC-level graph of the kernel's memory reuse structure. Defined over logical execution scopes rather than transient hardware state, the representation remains stable across runs and GPU targets while directly indicating the sharing scope that candidate optimization mechanisms must cover. Our tool, cuVein, reconstructs PCDepGraph directly from optimized binaries, without sampling, at generally under 10x overhead. Across HPC and AI workloads on NVIDIA RTX 4090 and H100, optimizations guided by PCDepGraph eliminate up to 90.18% of memory instructions and yield up to 2.84x kernel speedup; reuse-scope distributions remain consistent across platforms, supporting that the representation captures program structure rather than transient hardware behavior.",
+   "authors": [
+    {
+     "name": "Yanbo Zhao",
+     "affiliations": []
+    },
+    {
+     "name": "Yueming Hao",
+     "affiliations": []
+    },
+    {
+     "name": "Zecheng Li",
+     "affiliations": []
+    },
+    {
+     "name": "Mao Lin",
+     "affiliations": []
+    },
+    {
+     "name": "Shuyin Jiao",
+     "affiliations": []
+    },
+    {
+     "name": "Keren Zhou",
+     "affiliations": []
+    },
+    {
+     "name": "Xu Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Jiajia Li",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.PF",
+    "cs.PL"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-10",
+   "url": "https://arxiv.org/abs/2611.14741",
+   "matched_terms": [
+    "ai workloads",
+    "gpu",
+    "hpc"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Reconstructing Fine-grained Memory Reuse Structure in GPU Kernels DOI: XXXXXXX.XXXXXXX Conference: Make sure to enter the correct conference title from your rights confirmation email; June 03–05, 2018; Woodstock, NY ISBN: 978-1-4503-XXXX-X/2018/06 Conference: ; CCS: Do Not Use This Code Generate the Correct Terms for Your Paper CCS: Do Not Use This Code Generate the Correct Terms for Your Paper CCS: Do Not Use This Code Generate the Correct Terms for Your Paper CCS: Do Not Use This Code Generate the Correct Terms for Your Paper Yanbo Zhao Affiliation: North Carolina State University , Raleigh , NC , USA email: yzhao62@ncsu.edu , Yueming Hao Affiliation: Meta , Menlo Park , CA , USA email: yhao@meta.com , Zecheng Li Affiliation: North Carolina State University , Raleigh , NC , USA email: zli94@ncsu.edu , Mao Lin Affiliation: University of California, Merced , Merced , CA , USA email: mlin59@ucmerced.edu , Shuyin Jiao Affiliation: North Carolina State University , Raleigh , NC , USA email: sjiao2@ncsu.edu , Keren Zhou Affiliation: George Mason University , Fairfax , VA , USA email: kzhou6@gmu.edu , Xu Liu Affiliation: North Carolina State University , Raleigh , NC , USA email: xliu88@ncsu.edu and Jiajia Li Affiliation: North Carolina State University , Raleigh , NC , USA email: jiajia.li@ncsu.edu © , Abstract. Optimizing GPU data movement requires knowing which instructions access the same data and across which execution scopes reuse occurs. Existing profilers can attribute memory behavior to individual instructions but do not expose the reuse relations among them, while aliasing, dynamic indexing, and runtime parameters prevent static analysis from establishing these relations in general. Cycle-level simulation can reconstruct such relations, but at costs prohibitive for production workloads. We introduce two abstractions for representing this structure: Topological Distance , which labels each dynamic memory access with the smallest execution scope (thread, warp, block, or grid) containing its most recent reuse, and PCDepGraph , which organizes these labels into a PC-level graph of the kernel’s memory reuse structure. Defined over logical execution scopes rather than transient hardware state, the representation remains stable across runs and GPU targets while directly indicating the sharing scope that candidate optimization mechanisms must cover. Our tool, cuVein , reconstructs PCDepGraph directly from optimized binaries, without sampling, at generally und"
+  },
+  {
+   "key": "arxiv:2611.14696",
+   "source": "arXiv",
+   "id": "2611.14696",
+   "title": "Risk-Aware Joint Inference and Resource Control for Physical AI in 6G Networks",
+   "abstract": "Wireless edge inference enables Physical-AI devices to execute edge-inferred actions using transmitted sensory inputs. Since the risk of incorrect actions vary across observations and tasks, the associated uplink transmission of sensory inputs requires different levels of wireless reliability. For instance, applying a fixed signal-to-interference-plus-noise ratio (SINR) requirement can overprovision low-risk tasks while underprovisioning high-risk ones. Therefore, we propose risk-aware control for edge inference (RACE), which maps predicted action-failure probability and task criticality to adaptive SINR targets and combines them with deadline-derived SINR requirements. A slow-timescale large language model (LLM) proposes task requirements for deterministic validation, while a fast hybrid actor selects inference configurations and transmit power levels, complemented by analytical receive beamforming and finite power restoration. Simulations show $11\\%$ improvement in the average accuracy-latency-energy objective over fixed-high-SINR control, with near-zero constraint outage.",
+   "authors": [
+    {
+     "name": "Amin Farajzadeh",
+     "affiliations": []
+    },
+    {
+     "name": "Melike Erol-Kantarci",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.NI",
+    "cs.AI",
+    "cs.LG",
+    "eess.SP"
+   ],
+   "primary_category": "cs.NI",
+   "date": "2026-11-10",
+   "url": "https://arxiv.org/abs/2611.14696",
+   "matched_terms": [
+    "large language model",
+    "llm"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Risk-Aware Joint Inference and Resource Control for Physical AI in 6G Networks Amin Farajzadeh Member IEEE Melike Erol-Kantarci Fellow IEEE † † thanks: A. Farajzadeh and M. Erol-Kantarci are with the NETCORE Lab, School of Electrical Engineering and Computer Science, University of Ottawa, Ottawa, ON K1N 6N5, Canada (e-mails: {amin.farajzadeh, melike.erolkantarci}@uottawa.ca). Abstract Wireless edge inference enables Physical-AI devices to execute edge-inferred actions using transmitted sensory inputs. Since the risk of incorrect actions vary across observations and tasks, the associated uplink transmission of sensory inputs requires different levels of wireless reliability. For instance, applying a fixed signal-to-interference-plus-noise ratio (SINR) requirement can overprovision low-risk tasks while underprovisioning high-risk ones. Therefore, we propose risk-aware control for edge inference (RACE), which maps predicted action-failure probability and task criticality to adaptive SINR targets and combines them with deadline-derived SINR requirements. A slow-timescale large language model (LLM) proposes task requirements for deterministic validation, while a fast hybrid actor selects inference configurations and transmit power levels, complemented by analytical receive beamforming and finite power restoration. Simulations show 11 % 11\\% improvement in the average accuracy–latency–energy objective over fixed-high-SINR control, with near-zero constraint outage. Index Terms: Physical-AI, wireless edge inference, risk-aware resource allocation, hybrid actor–critic, LLMs, 6G."
+  }
+ ],
  "title_only_final": [],
  "pending_items": [
   {
@@ -227,44 +1347,8 @@
   },
   {
    "source": "Applied Energy",
-   "title": "The Iberian blackout: A black swan or a gray rhino? A protection-aware dynamic voltage security assessment",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129216",
-   "first_seen": "2026-11-11"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Decoupling instantaneous and cumulative stress: Physics-guided capacity prediction for lithium-ion batteries under stochastic cycling",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129236",
-   "first_seen": "2026-11-11"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Electric vehicle battery materials supply disruptions can be mitigated with chemistry changes and recycling",
-   "url": "https://doi.org/10.1038/s41467-026-79046-y",
-   "first_seen": "2026-11-11"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "OsCPK17- and OsMPK6-mediated dual phosphorylation of OsPUB12 maintains OsPUB2-regulated OsPUB12 homeostasis and balances rice immunity",
-   "url": "https://doi.org/10.1038/s41467-026-79063-x",
-   "first_seen": "2026-11-11"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Toward triggered generation of indistinguishable single photons from MoTe2 quantum emitters",
-   "url": "https://doi.org/10.1038/s41467-026-78808-y",
-   "first_seen": "2026-11-11"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Topographical mismatch sustains open microchannels in living soft tissue for non-destructive protein biopsy",
-   "url": "https://doi.org/10.1038/s41467-026-78755-8",
-   "first_seen": "2026-11-11"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Functionally divergent RHOA mutations drive peripheral T cell lymphoma development by engaging a common neomorphic pathway",
-   "url": "https://doi.org/10.1038/s41467-026-79260-8",
    "first_seen": "2026-11-11"
   },
   {
@@ -311,18 +1395,6 @@
   },
   {
    "source": "Nature Communications",
-   "title": "Frequency-tagged fMRI reveals dual mechanisms of attentional enhancement and suppression",
-   "url": "https://doi.org/10.1038/s41467-026-79329-4",
-   "first_seen": "2026-11-12"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Ferrocene heteroconjugation enables charge transport in DNA monolayers",
-   "url": "https://doi.org/10.1038/s41467-026-79212-2",
-   "first_seen": "2026-11-12"
-  },
-  {
-   "source": "Nature Communications",
    "title": "Geometrically and chemically dual-adaptive COFs for selective recognition of multiple uranium species in complex waters",
    "url": "https://doi.org/10.1038/s41467-026-79383-y",
    "first_seen": "2026-11-12"
@@ -349,12 +1421,6 @@
    "source": "Nature Communications",
    "title": "Pigment repression protects fungus from ferroptosis to maintain virulence",
    "url": "https://doi.org/10.1038/s41467-026-79446-0",
-   "first_seen": "2026-11-12"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "ATR promotes genome instability via CENP-A eviction from centromeres after prolonged exposure to genotoxic stress",
-   "url": "https://doi.org/10.1038/s41467-026-79517-2",
    "first_seen": "2026-11-12"
   },
   {
@@ -386,10 +1452,106 @@
    "title": "Cobalt based anode for highly stable alkaline water electrolysis under operation conditions beyond industrial requirements",
    "url": "https://doi.org/10.1038/s41467-026-79537-y",
    "first_seen": "2026-11-12"
+  },
+  {
+   "source": "TSG",
+   "title": "Flexible Consistency Scheduling Strategy for BTB-DC Electric Springs in DC Microgrids",
+   "url": "https://doi.org/10.1109/tsg.2026.3753477",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "TSG",
+   "title": "PV Hosting Capacity Enhancement in Distribution Network via Multi-Objective Volt/Var Control with a Voltage Rise Index",
+   "url": "https://doi.org/10.1109/tsg.2026.3753224",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A prefrontal microcircuit computes trial-wise discount of reinforcement during threat learning in male mice",
+   "url": "https://doi.org/10.1038/s41467-026-79254-6",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Evolution of the molybdenum and vanadium cycles through time and their impact on ancient nitrogen fixation",
+   "url": "https://doi.org/10.1038/s41467-026-79171-8",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Engineering CAR-Vδ2 T cells to boost persistence and anti-tumor function",
+   "url": "https://doi.org/10.1038/s41467-026-79155-8",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Emergent stoichiometric host-guest recognition on ligated colloidal surfaces via dynamic ligand reorientation",
+   "url": "https://doi.org/10.1038/s41467-026-79264-4",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Constructing exclusive Pt@WOx interfacial sites enables selective C–O bond activation",
+   "url": "https://doi.org/10.1038/s41467-026-79789-8",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A single NLS directs AGO1 import shaping small RNA loading and silencing outputs in Arabidopsis",
+   "url": "https://doi.org/10.1038/s41467-026-79175-4",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "scMomer: a pretraining framework for inferring robust cellular representations from single-cell transcriptomes",
+   "url": "https://doi.org/10.1038/s41467-026-78811-3",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Anion manipulation for breaking through 3.0 V of aluminium–graphite batteries",
+   "url": "https://doi.org/10.1038/s41467-026-79156-7",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "The posterior paraventricular nucleus of the thalamus to nucleus accumbens medial shell circuit mediates an anti-pruritic response",
+   "url": "https://doi.org/10.1038/s41467-026-78362-7",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Thermodynamic-guided tailoring of single-atom coordination environments via oxygen chemical potential for efficient C-N coupling",
+   "url": "https://doi.org/10.1038/s41467-026-79091-7",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Post-pandemic immunity debt and environmental decoupling reshape urban influenza transmission",
+   "url": "https://doi.org/10.1038/s41467-026-79600-8",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Sublevel-selective electron spin hyperpolarization of triplet radical pairs in metal–organic frameworks",
+   "url": "https://doi.org/10.1038/s41467-026-79262-6",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Photonic-assisted ingenious agile non-periodic oscillator (PIANO)",
+   "url": "https://doi.org/10.1038/s41467-026-79422-8",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Author Correction: The conformation-selective PI3Kδ inhibitor roginolisib in patients with advanced or metastatic cancer, including metastatic uveal melanoma: first-in-human clinical trial",
+   "url": "https://doi.org/10.1038/s41467-026-79579-2",
+   "first_seen": "2026-11-13"
   }
  ],
- "pending_abstract": 49,
+ "pending_abstract": 56,
  "runs_utc": [
-  "2026-11-12T13:39:11+00:00"
+  "2026-11-13T12:57:51+00:00"
  ]
 }
