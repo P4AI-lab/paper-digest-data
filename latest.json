@@ -1,45 +1,45 @@
 {
- "date": "2026-11-19",
- "generated_utc": "2026-11-19T14:16:18+00:00",
+ "date": "2026-11-20",
+ "generated_utc": "2026-11-20T13:55:52+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-11-15",
-   "2026-11-19"
+   "2026-11-16",
+   "2026-11-20"
   ],
   "journal_doi_created": [
-   "2026-11-13",
-   "2026-11-19"
+   "2026-11-14",
+   "2026-11-20"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-   "in_window": 181,
-   "new": 43,
-   "candidates": 9
+   "in_window": 196,
+   "new": 40,
+   "candidates": 5
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-   "in_window": 49,
-   "new": 20,
+   "in_window": 60,
+   "new": 18,
    "candidates": 2
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-   "in_window": 80,
-   "new": 29,
-   "candidates": 0
+   "in_window": 99,
+   "new": 30,
+   "candidates": 1
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
    "in_window": 3,
-   "new": 0,
+   "new": 2,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -47,8 +47,8 @@
    "source": "TPWRS",
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
-   "in_window": 6,
-   "new": 2,
+   "in_window": 4,
+   "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -56,28 +56,28 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 40,
-   "new": 6,
-   "candidates": 0,
+   "in_window": 45,
+   "new": 5,
+   "candidates": 1,
    "new_with_abstract": 0
   },
   {
    "source": "Nature Energy",
    "journal": "Nature Energy",
    "status": "ok",
-   "in_window": 2,
-   "new": 1,
+   "in_window": 4,
+   "new": 2,
    "candidates": 0,
-   "new_with_abstract": 0
+   "new_with_abstract": 1
   },
   {
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 185,
-   "new": 43,
+   "in_window": 188,
+   "new": 37,
    "candidates": 0,
-   "new_with_abstract": 21
+   "new_with_abstract": 15
   },
   {
    "source": "Nature Rev. EE",
@@ -92,26 +92,26 @@
  "errors": [],
  "candidates": [
   {
-   "key": "arxiv:2611.24506",
+   "key": "arxiv:2611.26527",
    "source": "arXiv",
-   "id": "2611.24506",
-   "title": "Quantifying the hosting capacity value of workload flexibility for AI data centers: A two-stage electricity-computation co-optimization framework",
-   "abstract": "Grid connection constraints increasingly limit the expansion of AI data centers, yet the additional hosting capacity enabled by computational workload flexibility remains insufficiently quantified. This paper develops a two-stage electricity--computation co-optimization framework to quantify the individual and coordinated hosting capacity values of spatial and temporal workload flexibility. Data center capacities are determined endogenously, with computational task arrivals scaling with admitted capacity. Spatial routing of eligible interactive requests and temporal deferral of batch workloads are linked to server operation and facility power demand, subject to workload completion requirements and transmission constraints. The first stage maximizes aggregate hosting capacity; the second fixes the resulting site capacities and optimizes annual workload scheduling and generation dispatch to minimize generation and carbon costs. An 8760-hour case study with three data centers on a modified IEEE 118-bus system shows that temporal and spatial flexibility individually increase hosting capacity by 21.26\\% and 5.37\\%, respectively. Their coordinated use raises hosting capacity from 4635.1~MW to 6231.5~MW, a 34.44\\% increase without network reinforcement. The coordinated gain exceeds the sum of the individual gains by 361.9~MW, demonstrating complementarity between spatial migration and temporal deferral. By redistributing computational demand across locations and operating hours, these mechanisms enable fuller utilization of existing transmission capacity. The findings establish workload flexibility as a quantifiable planning resource for accommodating additional data center capacity within existing transmission networks.",
+   "id": "2611.26527",
+   "title": "Thermal-Guided Ensemble Reinforcement Learning for Regime-Adaptive Short-Term GPU Power Forecasting in AI Data Centers",
+   "abstract": "AI data centers (AIDCs) introduce bursty and regime-dependent load patterns, posing significant challenges for reliable energy management and predictive grid control. To address these challenges, this letter proposes a thermal-guided ensemble reinforcement learning framework for probabilistic AIDC load forecasting. A soft actor-critic (SAC) agent with a simplex-preserving policy adaptively weights LSTM, TCN, and Transformer predictors at every time step based on their realized errors. A thermal-guided neural correction estimates the ensemble residual, while a sensitivity-projection regularizer enforces the non-negative sensitivity of power to GPU utilization and temperature. The corrected ensemble output is further processed by a Bayesian probabilistic layer to produce predictive distributions and quantify forecasting uncertainty. Case studies on 1-second MIT Supercloud telemetry show that the proposed method reduces the normalized mean absolute error to about 1% across all computing regimes, compared with 4-11% for deep learning-based and ensemble learning benchmarks, and converges faster with narrower prediction intervals than a DRL ensemble without thermal guidance.",
    "authors": [
     {
-     "name": "Jiakai Wu",
+     "name": "Yuanshuo Zhang",
      "affiliations": []
     },
     {
-     "name": "Wei Sun",
+     "name": "Ying Zhang",
      "affiliations": []
     },
     {
-     "name": "Pengyu Ren",
+     "name": "Ziying Wang",
      "affiliations": []
     },
     {
-     "name": "Yifan Wang",
+     "name": "Fanping Sui",
      "affiliations": []
     }
    ],
@@ -119,258 +119,256 @@
     "eess.SY"
    ],
    "primary_category": "eess.SY",
-   "date": "2026-11-18",
-   "url": "https://arxiv.org/abs/2611.24506",
+   "date": "2026-11-19",
+   "url": "https://arxiv.org/abs/2611.26527",
    "matched_terms": [
-    "data center",
     "data centers"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Quantifying the hosting capacity value of workload flexibility for AI data centers: A two-stage electricity–computation co-optimization framework Journal: Applied Energy Jiakai Wu Email: s2902684@ed.ac.uk Address: School of Engineering, The University of Edinburgh, Edinburgh EH9 3FB, Scotland, United Kingdom Pengyu Ren Email: s2192464@ed.ac.uk Address: School of Engineering, The University of Edinburgh, Edinburgh EH9 3FB, Scotland, United Kingdom Yifan Wang Email: s2154060@ed.ac.uk Address: School of Engineering, The University of Edinburgh, Edinburgh EH9 3FB, Scotland, United Kingdom Wei Sun Email: w.sun@ed.ac.uk Corresponding author: Corresponding author. Address: School of Engineering, The University of Edinburgh, Edinburgh EH9 3FB, Scotland, United Kingdom Abstract Grid connection constraints increasingly limit the expansion of AI-era data centers, yet the additional hosting capacity enabled by computational workload flexibility remains insufficiently quantified. This paper develops a two-stage electricity–computation co-optimization framework to quantify the individual and coordinated hosting capacity values of spatial and temporal workload flexibility. Data center capacities are determined endogenously, with computational task arrivals scaling with admitted capacity. Spatial routing of eligible interactive requests and temporal deferral of batch workloads are linked to server operation and facility power demand, subject to workload completion requirements and transmission constraints. The first stage maximizes aggregate hosting capacity; the second fixes the resulting site capacities and optimizes annual workload scheduling and generation dispatch to minimize generation and carbon costs. An 8760-hour case study with three data centers on a modified IEEE 118-bus system shows that temporal and spatial flexibility individually increase hosting capacity by 21.26% and 5.37%, respectively. Their coordinated use raises hosting capacity from 4635.1 MW to 6231.5 MW, a 34.44% increase without network reinforcement. The coordinated gain exceeds the sum of the individual gains by 361.9 MW, demonstrating complementarity between spatial migration and temporal deferral. By redistributing computational demand across locations and operating hours, these mechanisms enable fuller utilization of existing transmission capacity. The findings establish workload flexibility as a quantifiable planning resource for accommodating additional data center capacity within existing"
+   "affiliation_block": "Thermal-Guided Ensemble Reinforcement Learning for Regime-Adaptive Short-Term GPU Power Forecasting in AI Data Centers Thanks: This research was supported by the National Science Foundation through award number 2346213 and 2418359. Yuanshuo Zhang, Ying Zhang, Ziying Wang Affiliation: School of Electrical and Computer Engineering Oklahoma State University Stillwater, OK, USA {yuanshuo.zhang, y.zhang, zy.wang}@okstate.edu Fanping Sui Affiliation: Department of Mechanical Engineering University of California Berkeley Berkeley, CA, USA fpsui@berkeley.edu Abstract AI data centers (AIDCs) introduce bursty and regime-dependent load patterns, posing significant challenges for reliable energy management and predictive grid control. To address these challenges, this letter proposes a thermal-guided ensemble reinforcement learning framework for probabilistic AIDC load forecasting. A soft actor-critic (SAC) agent with a simplex-preserving policy adaptively weights LSTM, TCN, and Transformer predictors at every time step based on their realized errors. A thermal-guided neural correction estimates the ensemble residual, while a sensitivity-projection regularizer enforces the non-negative sensitivity of power to GPU utilization and temperature. The corrected ensemble output is further processed by a Bayesian probabilistic layer to produce predictive distributions and quantify forecasting uncertainty. Case studies on 1-second MIT Supercloud telemetry show that the proposed method reduces the normalized mean absolute error to about 1% across all computing regimes, compared with 4–11% for deep learning-based and ensemble learning benchmarks, and converges faster with narrower prediction intervals than a DRL ensemble without thermal guidance. Index Terms: AI data center, load forecasting, probabilistic forecasting, reinforcement learning, physics-informed neural networks, uncertainty, thermal."
   },
   {
-   "key": "arxiv:2611.24493",
+   "key": "arxiv:2611.26480",
    "source": "arXiv",
-   "id": "2611.24493",
-   "title": "N-1 Security constrained Hosting Capacity Assessment for Ultra Large-scale Data Center with Workload Flexibility",
-   "abstract": "Transmission network security can substantially alter where large-scale data centers can connect and how much workload flexibility can unlock. This paper develops a hosting-capacity framework that couples computing demand, batch workload scheduling, and N-1 security constraints. A modified IEEE 118-bus case study reveals that two data center sites with identical hosting capacities under normal operation differ by 874.5 MW under the contingencies operation when workload flexibility is enabled. Six-hour batch deferral increases N-1 hosting capacity by up to 24.5\\% relative to immediate execution. These gains arise from reducing demand at critical hours while accommodating deferred tasks within subsequent transmission limits and deadlines. At bus 92, a four-hour window captures 90.9\\% of the six-hour capacity gain. The findings establish workload flexibility as a location-dependent connection resource whose capacity value requires joint assessment of contingency exposure and deadline constrainted workload recovery, beyond the power reduction available at a single critical hour.",
+   "id": "2611.26480",
+   "title": "Held While Waiting: What LLM Agent Sessions Reserve on Serverless and Agent Runtimes",
+   "abstract": "LLM agents spend nearly all their time waiting for the model. On Amazon Bedrock AgentCore, our agents waited a median of 2.7 seconds for each model reply, then computed for an estimated 5 to 40 milliseconds. AgentCore does not charge for CPU during the wait. But it reserves a separate environment, a virtual machine with its own memory, for every conversation, and keeps it reserved until the conversation is closed. So 1,000 conversations reserve 1,000 environments to do the work of 2 to 15 processor cores. A service runs out of environments long before it runs out of processing power. The shortage has two causes, and each has a fix. An environment stays reserved after its conversation ends: in the customer-service benchmark we ran, a conversation lasts 33 seconds on average, but its environment is held for 15 minutes more unless the client closes it. And an environment serves only one conversation, which is mostly waiting: in our simulation, 64 conversations sharing one environment need 59 times fewer environments, and 99 of every 100 replies are delayed by at most 40 milliseconds. The milliseconds are an estimate because they are hard to measure: a stubbed model, a timer around the model call, and steps run back to back each gave a plausible number that was too low. We show how to avoid all three. Of the two fixes, closing needs only the client. Sharing needs the platform, and of the agent runtimes we surveyed only one allows it, in part. They keep conversations apart because an agent runs tools, and sometimes code, chosen by a model. The open problem is to keep them apart without reserving an environment for each while it waits.",
    "authors": [
     {
-     "name": "Jiakai Wu",
-     "affiliations": []
-    },
-    {
-     "name": "Pengyu Ren",
-     "affiliations": []
-    },
-    {
-     "name": "Yifan Wang",
-     "affiliations": []
-    },
-    {
-     "name": "Wei Sun",
+     "name": "Mekhala Hithyshini Sreenivasa",
      "affiliations": []
     }
    ],
    "categories": [
-    "eess.SY"
+    "cs.PF",
+    "cs.DC",
+    "cs.SE"
    ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-18",
-   "url": "https://arxiv.org/abs/2611.24493",
+   "primary_category": "cs.PF",
+   "date": "2026-11-19",
+   "url": "https://arxiv.org/abs/2611.26480",
    "matched_terms": [
-    "data center",
-    "data centers"
+    "llm"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "N-1 Security constrained Hosting Capacity Assessment for Ultra Large-scale Data Center with Workload Flexibility Jiakai Wu, Pengyu Ren, Yifan Wang, and Wei Sun Affiliation: School of Engineering, The University of Edinburgh Edinburgh EH9 3FB, Scotland, United Kingdom Abstract Transmission network security can substantially alter where large-scale data centers can connect and how much workload flexibility can unlock. This paper develops a hosting-capacity framework that couples computing demand, batch workload scheduling, and N-1 security constraints. A modified IEEE 118-bus case study reveals that two data center sites with identical hosting capacities under normal operation differ by 874.5 MW under the contingencies operation when workload flexibility is enabled. Six-hour batch deferral increases N-1 hosting capacity by up to 24.5% relative to immediate execution. These gains arise from reducing demand at critical hours while accommodating deferred tasks within subsequent transmission limits and deadlines. At bus 92, a four-hour window captures 90.9% of the six-hour capacity gain. The findings establish workload flexibility as a location-dependent connection resource whose capacity value requires joint assessment of contingency exposure and deadline constrainted workload recovery, beyond the power reduction available at a single critical hour. Index Terms: Large-scale data center, Hosting capacity, Workload flexibility, Power system security, Electricity-computation co-optimization Fig. 1: Illustration of data center hosting capacity under line outages with workload flexibility."
+   "affiliation_block": "Held While Waiting: What LLM Agent Sessions Reserve on Serverless and Agent Runtimes Mekhala Hithyshini Sreenivasa Note: The author is employed by Amazon Web Services, which provides two of the platforms studied here (Amazon Bedrock AgentCore Runtime and AWS Lambda). This work was done independently, outside that employment, using the author’s own accounts and funds. It uses no non-public Amazon information, and the views expressed are the author’s own and do not necessarily reflect those of Amazon. Affiliation: Amazon Web Services , Seattle , USA email: mekhal@amazon.com Abstract. LLM agents spend nearly all their time waiting for the model. On Amazon Bedrock AgentCore, our agents waited a median of 2.7 seconds for each model reply, then computed for an estimated 5 to 40 milliseconds. AgentCore does not charge for CPU during the wait. But it reserves a separate environment, a virtual machine with its own memory, for every conversation, and keeps it reserved until the conversation is closed. So 1,000 conversations reserve 1,000 environments to do the work of 2 to 15 processor cores. A service runs out of environments long before it runs out of processing power. The shortage has two causes, and each has a fix. An environment stays reserved after its conversation ends: in the customer-service benchmark we ran, a conversation lasts 33 seconds on average, but its environment is held for 15 minutes more unless the client closes it. And an environment serves only one conversation, which is mostly waiting: in our simulation, 64 conversations sharing one environment need 59 times fewer environments, and 99 of every 100 replies are delayed by at most 40 milliseconds. The milliseconds are an estimate because they are hard to measure: a stubbed model, a timer around the model call, and steps run back to back each gave a plausible number that was too low. We show how to avoid all three. Of the two fixes, closing needs only the client. Sharing needs the platform, and of the agent runtimes we surveyed only one allows it, in part. They keep conversations apart because an agent runs tools, and sometimes code, chosen by a model. The open problem is to keep them apart without reserving an environment for each while it waits."
   },
   {
-   "key": "arxiv:2611.24444",
+   "key": "arxiv:2611.25947",
    "source": "arXiv",
-   "id": "2611.24444",
-   "title": "Efficient simulation of variational quantum circuits: representation, accuracy and CPU/GPU allocation",
-   "abstract": "Classical circuit simulation supports quantum software development and verification and provides a baseline for assessing quantum advantage. We compare gate-based statevector simulation, direct Pauli evolution and matrix product states for molecular and spin Variational Hamiltonian Ansatze and hardware-efficient ansatze on CPU/GPU systems, varying width, depth, precision and resource allocation. In the tested implementations, direct Pauli evolution benefits complex molecular VHA, whereas GPUs accelerate wider spin and hardware efficient circuits. Matrix product state is useful when limited entanglement permits accurate compression; corrected CPU FP32 can meet the tested tolerance while costing more than FP64. Workload size, startup, worker memory and task-specific profiling can change the preferred allocation. Matched NumPy Pauli updates accelerate two-layer full LiH by 3.45-fold; the GPU gives approximately 30-fold acceleration over 18-thread Aer for 28-qubit, four-layer TFIM, both in FP64. We provide a procedure for choosing representation, precision and worker allocation jointly, comparing the cost of complete energy evaluations under accuracy, memory and core constraints.",
+   "id": "2611.25947",
+   "title": "Matching Architecture to Workload: Comparing RISC-V Parallel Accelerators for Energy-Efficient Embedded Computing",
+   "abstract": "Embedded computing demands high performance and energy efficiency across workloads with widely different computational characteristics. Choosing the most suitable execution model therefore requires a quantitative understanding of how each model maps to different workload classes. In this paper, we compare three execution models for energy-efficient embedded computing: scalar multicore, stream ing multicore, and vector processing. We use three open-source RISC-V accelerators as representative implementations: the PULP Cluster, the Snitch Cluster, and Spatz, respectively. Their open-source hardware and software stacks enable a controlled comparison based on implementations in the same 12 nm technology and a common benchmark suite. Our results reveal that no single execution model performs best across all workload classes. Spatz delivers the greatest benefits for regular and highly vectorizable compute-intensive applications, achieving up to 4.29x higher performance and 5.17x greater energy efficiency than the other architectures. However, its effectiveness strongly depends on the availability of data-level parallelism and regular computation and memory-access patterns, making it the most sensitive to workload characteristics. The Snitch Cluster performs particularly well on applications with limited parallelism and streamable memory-access patterns, providing up to 5.53x higher performance and 1.45x greater energy efficiency. Conversely, the PULP Cluster is most effective on irregular and control-dominated applications, achieving improvements of up to 5.66x in performance and 2.80x in energy efficiency. Compared with Spatz, however, the greater flexibility offered by PULP and Snitch comes at a non-negligible cost in terms of both area and power.",
    "authors": [
     {
-     "name": "Vojtěch Novák",
+     "name": "Luca Colombo",
      "affiliations": []
     },
     {
-     "name": "Radovan Rečka",
+     "name": "Luigi Ghionda",
      "affiliations": []
     },
     {
-     "name": "Ondřej Knebl",
+     "name": "Amirhossein Kiamarzi",
      "affiliations": []
     },
     {
-     "name": "Ivan Zelinka",
+     "name": "Yvan Tortorella",
+     "affiliations": []
+    },
+    {
+     "name": "Riccardo Giunti",
+     "affiliations": []
+    },
+    {
+     "name": "Niccolò Giuliani",
+     "affiliations": []
+    },
+    {
+     "name": "Samuele Colmi",
+     "affiliations": []
+    },
+    {
+     "name": "Angelo Garofalo",
+     "affiliations": []
+    },
+    {
+     "name": "Giuseppe Tagliavini",
+     "affiliations": []
+    },
+    {
+     "name": "Davide Rossi",
      "affiliations": []
     }
    ],
    "categories": [
-    "quant-ph",
-    "cs.DC"
-   ],
-   "primary_category": "quant-ph",
-   "date": "2026-11-18",
-   "url": "https://arxiv.org/abs/2611.24444",
-   "matched_terms": [
-    "gpu",
-    "gpus"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Efficient simulation of variational quantum circuits: representation, accuracy and CPU/GPU allocation Journal: Journal of Systems Architecture Vojtěch Novák Email: vojtech.novak.st1@vsb.cz Corresponding author: Corresponding author. Affiliation: Department of Computer Science, Faculty of Electrical Engineering and Computer Science, VSB-Technical University of Ostrava, Ostrava, Czech Republic Affiliation: IT4Innovations National Supercomputing Center, VSB-Technical University of Ostrava, Ostrava, 708 00, Czech Republic Affiliation: Department of Informatics and Statistics, Marine Research Institute, Klaipeda University, Klaipeda, Lithuania Radovan Rečka Affiliation: Department of Computer Science, Faculty of Electrical Engineering and Computer Science, VSB-Technical University of Ostrava, Ostrava, Czech Republic Ondřej Knebl Affiliation: Department of Computer Science, Faculty of Electrical Engineering and Computer Science, VSB-Technical University of Ostrava, Ostrava, Czech Republic Ivan Zelinka Affiliation: Department of Computer Science, Faculty of Electrical Engineering and Computer Science, VSB-Technical University of Ostrava, Ostrava, Czech Republic Affiliation: IT4Innovations National Supercomputing Center, VSB-Technical University of Ostrava, Ostrava, 708 00, Czech Republic Affiliation: Department of Informatics and Statistics, Marine Research Institute, Klaipeda University, Klaipeda, Lithuania Abstract Classical circuit simulation supports quantum software development and verification and provides a baseline for assessing quantum advantage. We compare gate-based statevector simulation, direct Pauli evolution and matrix product states for molecular and spin Variational Hamiltonian Ansatze and hardware-efficient ansatze on CPU/GPU systems, varying width, depth, precision and resource allocation. In the tested implementations, direct Pauli evolution benefits complex molecular VHA, whereas GPUs accelerate wider spin and hardware efficient circuits. Matrix product state is useful when limited entanglement permits accurate compression; corrected CPU FP32 can meet the tested tolerance while costing more than FP64. Workload size, startup, worker memory and task-specific profiling can change the preferred allocation. Matched NumPy Pauli updates accelerate two-layer full LiH by 3.45-fold; the GPU gives approximately 30-fold acceleration over 18-thread Aer for 28-qubit, four-layer TFIM, both in FP64. We provide a procedure for choosing representation, precisi"
-  },
-  {
-   "key": "arxiv:2611.24119",
-   "source": "arXiv",
-   "id": "2611.24119",
-   "title": "eFAIR: Fair LLM Serving under Hourly Electricity Commitments",
-   "abstract": "Datacenters can procure electricity in day-ahead markets by committing to energy purchases for individual hours. For LLM services operating within these hourly budgets, maximizing aggregate throughput alone may still leave individual requests waiting or receiving much slower service than desired. Fair serving therefore requires improving service for poorly served requests while reserving electricity for later arrivals whose timing and demand are unknown. To compare service across requests, we define normalized throughput as each request's actual output rate divided by the product of its standalone throughput and its service entitlement, a positive weight representing its desired service level. Using this measure, we formulate fair serving as leximin optimization under an hourly electricity constraint, prioritizing requests with the lowest normalized throughput. To address this problem, we present eFAIR, an online scheduler that coordinates request dispatching, electricity budget allocation, and GPU frequency selection through a common normalized-throughput target. Specifically, request dispatching prioritizes requests by desired service level and progress; electricity budget allocation reserves electricity for current and expected future work; and frequency selection uses electricity savings to raise GPU frequencies for requests with higher desired service levels. Evaluations on H20 and H200 configurations, each with 32 replicas, show that eFAIR improves the tenth percentile of normalized throughput by 28.0%-31.0% over the best budget-feasible baseline, while keeping absolute deviations from the hourly electricity commitment below 0.26%. eFAIR also improves throughput balance among concurrent requests and aligns electricity allocation more closely with service demand over time. Together, these results demonstrate how eFAIR improves request-level fairness within an hourly commitment.",
-   "authors": [
-    {
-     "name": "You Peng",
-     "affiliations": []
-    },
-    {
-     "name": "Youhe Jiang",
-     "affiliations": []
-    },
-    {
-     "name": "Chen Wang",
-     "affiliations": []
-    },
-    {
-     "name": "Binhang Yuan",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC"
+    "cs.DC",
+    "cs.AR"
    ],
    "primary_category": "cs.DC",
-   "date": "2026-11-18",
-   "url": "https://arxiv.org/abs/2611.24119",
+   "date": "2026-11-19",
+   "url": "https://arxiv.org/abs/2611.25947",
    "matched_terms": [
-    "datacenters"
+    "computing demand"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "e e FAIR : Fair LLM Serving under Hourly Electricity Commitments You Peng 1 ∗ Youhe Jiang 1 ∗ Chen Wang 1 Binhang Yuan 1 Affiliation: 1 HKUST Abstract Datacenters can procure electricity in day-ahead markets by committing to energy purchases for individual hours. For LLM services operating within these hourly budgets, maximizing aggregate throughput alone may still leave individual requests waiting or receiving much slower service than desired. Fair serving therefore requires improving service for poorly served requests while reserving electricity for later arrivals whose timing and demand are unknown. To compare service across requests, we define normalized throughput as each request’s actual output rate divided by the product of its standalone throughput and its service entitlement, a positive weight representing its desired service level. Using this measure, we formulate fair serving as leximin optimization under an hourly electricity constraint, prioritizing requests with the lowest normalized throughput. To address this problem, we present e e FAIR , an online scheduler that coordinates request dispatching, electricity budget allocation, and GPU frequency selection through a common normalized-throughput target. Specifically, request dispatching prioritizes requests by desired service level and progress; electricity budget allocation reserves electricity for current and expected future work; and frequency selection uses electricity savings to raise GPU frequencies for requests with higher desired service levels. Evaluations on H20 and H200 configurations, each with 32 32 replicas, show that e e FAIR improves the tenth percentile of normalized throughput by 28.0 % 28.0\\% – 31.0 % 31.0\\% over the best budget-feasible baseline, while keeping absolute deviations from the hourly electricity commitment below 0.26 % 0.26\\% . e e FAIR also improves throughput balance among concurrent requests and aligns electricity allocation more closely with service demand over time. Together, these results demonstrate how e e FAIR improves request-level fairness within an hourly commitment."
+   "affiliation_block": "(HTML version not available: HTTPError)"
   },
   {
-   "key": "arxiv:2611.23977",
+   "key": "arxiv:2611.25800",
    "source": "arXiv",
-   "id": "2611.23977",
-   "title": "OMNIS+: Semantic RAN Slicing and Quantization for Dynamic Split Neural Networks",
-   "abstract": "Edge computing enables resource-constrained devices to execute machine learning (ML) applications via task offloading, with radio access network (RAN) slicing playing a crucial role in provisioning joint communication and computing resources. However, existing RAN slicing frameworks rely on static computing models, limiting their ability to exploit dynamic semantic data representations enabled by modern neural architectures. To address this limitation, we propose OMNIS+, a semantic RAN slicing framework for multi-cell edge computing built upon a new generation of dynamic split neural models. OMNIS+ incorporates dynamic neural compression paired with adaptive quantization for task offloading, providing a versatile decision space across communication payload and compute dimensions. We leveraged a novel ``box'' quantization scheme that markedly enhances resilience to transmission bit errors across diverse compression rates. Considering partial system observability and distinct node objectives, we formulate two interdependent optimization problems: (i)~mobile devices (MDs) maximize inference accuracy under quality-of-service (QoS) and queue-stability constraints by jointly adapting dynamic split deep neural network (DNN) branches and cell association; and (ii)~each edge server (ES) allocates bandwidth, graphics processing unit (GPU) frequency, and modulation and coding scheme (MCS) to maximize the max--min inference accuracy among associated MDs under cell capacity limits. We solve these problems using a multi-agent distributed optimization framework, where MDs act as causal contextual multi-armed bandit (MAB) agents under backlog-aware Lyapunov control, while each ES executes resource allocation via block coordinate descent (BCD). Compared with state-of-the-art baselines, OMNIS+ reduces the QoS violation probability by up to 1.75 while achieving a better accuracy--violation trade-off.",
+   "id": "2611.25800",
+   "title": "Personalized Privacy-Aware MARL Offloading in the Edge-Cloud Continuum",
+   "abstract": "Task offloading in End-Edge-Cloud computing enables resource-constrained User Devices (UDs) to execute computation-intensive applications with reduced latency and energy consumption. However, existing task offloading schemes generally overlook the heterogeneous privacy requirements of users, leading to inefficient privacy-aware offloading decisions. In this paper, we propose a personalized privacy-aware task offloading framework, where the privacy requirement of each task is quantified through a User-Centric Privacy (UCP) model that considers task sensitivity, user privacy preferences, and task urgency. The task offloading problem is formulated as a Markov Decision Process (MDP) to jointly optimize the offloading ratio and the target computing server while minimizing the long-term system cost under latency, energy, and privacy constraints. To efficiently solve the resulting high-dimensional continuous optimization problem, we develop an Advantage-Weighted Actor-Critic (AWAC)-enhanced Proximal Policy Optimization (PPO)-based Multi-Agent Reinforcement Learning (MARL) algorithm under the Centralized Training and Decentralized Execution (CTDE) paradigm. Simulation results demonstrate that the proposed framework achieves lower average system cost, lower energy consumption, and higher task success rate than representative baselines under diverse privacy requirements.",
    "authors": [
     {
-     "name": "Langtian Qin",
+     "name": "Muhammad Rafid",
      "affiliations": []
     },
     {
-     "name": "Avishkar Dnyaneshwar Kawadgave",
+     "name": "Golshan Famitafreshi",
      "affiliations": []
     },
     {
-     "name": "Ian Andrew Harshbarger",
+     "name": "Kostas Ramantas",
      "affiliations": []
     },
     {
-     "name": "Leïla Nasraoui",
+     "name": "Luis Alonso",
      "affiliations": []
     },
     {
-     "name": "Carla Fabiana Chiasserini",
-     "affiliations": []
-    },
-    {
-     "name": "Marco Levorato",
+     "name": "Christos Verikoukis",
      "affiliations": []
     }
    ],
    "categories": [
+    "eess.SP"
+   ],
+   "primary_category": "eess.SP",
+   "date": "2026-11-19",
+   "url": "https://arxiv.org/abs/2611.25800",
+   "matched_terms": [
+    "cloud computing"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Personalized Privacy-Aware MARL Offloading in the Edge-Cloud Continuum Affiliation: Muhammad Rafid, Golshan Famitafreshi ‡ , Kostas Ramantas ‡ , Luis Alonso, Christos Verikoukis Affiliation: † ISI/ATHENA RC, 26504 Patra, Greece (e-mail: {mrafid, cveri}@isi.gr) Universitat Politècnica de Catalunya (UPC), Barcelona, Spain (e-mail: {luis.g.alonso}@upc.edu) * University of Patras, 26504 Patra, Greece ‡ Iquadrat Informatica S. L., Barcelona, Spain (e-mail: {g.famitafreshi, kramantas}@iquadrat.com) Abstract Task offloading in End–Edge–Cloud computing enables resource-constrained User Devices (UDs) to execute computation-intensive applications with reduced latency and energy consumption. However, existing task offloading schemes generally overlook the heterogeneous privacy requirements of users, leading to inefficient privacy-aware offloading decisions. In this paper, we propose a personalized privacy-aware task offloading framework, where the privacy requirement of each task is quantified through a User-Centric Privacy (UCP) model that considers task sensitivity, user privacy preferences, and task urgency. The task offloading problem is formulated as a Markov Decision Process (MDP) to jointly optimize the offloading ratio and the target computing server while minimizing the long-term system cost under latency, energy, and privacy constraints. To efficiently solve the resulting high-dimensional continuous optimization problem, we develop an Advantage-Weighted Actor-Critic (AWAC)-enhanced Proximal Policy Optimization (PPO)-based Multi-Agent Reinforcement Learning (MARL) algorithm under the Centralized Training and Decentralized Execution (CTDE) paradigm. Simulation results demonstrate that the proposed framework achieves lower average system cost, lower energy consumption, and higher task success rate than representative baselines under diverse privacy requirements. Index Terms: 6G networks, Task offloading, Edge-Cloud Continuum, Multi-agent reinforcement learning."
+  },
+  {
+   "key": "arxiv:2611.25512",
+   "source": "arXiv",
+   "id": "2611.25512",
+   "title": "Physics-Guided Multi-Output Surrogate Modeling of a Centralized-UPS Data Center",
+   "abstract": "Data centers supplied through centralized uninterruptible power supplies (UPSs) are converter-dominated loads whose grid response reflects IT demand, power-conversion controls, energy storage, cooling, and site-support dynamics. This paper develops and electrically realizes a causal multi-output surrogate for a nominal 1-MW, 0.48-kV simulated data center. Four physics-informed terminal features-normalized IT demand, positive-sequence voltage deviation, voltage-unbalance ratio, and frequency deviation-are used to predict active and reactive power at both the point of common coupling (PCC) and UPS output. Six causal surrogate families are evaluated using separate training, validation, and held-out trajectories. A ridge-regularized low-order nonlinear autoregressive model with exogenous inputs (NARX) achieves the lowest validation and test errors, with mean four-output errors of 0.1959\\% and 0.1441\\% on a 1-MVA base, respectively. The selected surrogate is then coupled to a three-phase electrical interface in MATLAB/Simulink, where predicted PCC active power controls a variable resistive load and predicted reactive power is realized through controlled current sources synchronized to the PCC voltage. Across two 41-s AI workload profiles, including an additional pipeline parallelism trajectory, the electrical realization tracks the NARX commands with active- and reactive-power RMSEs of 0.604 kW and 0.353 kVAR for Evaluation Profile A and 1.539 kW and 0.442 kVAR for Evaluation Profile B, respectively. The results demonstrate a compact terminal surrogate that can reproduce both predicted power trajectories and their corresponding three-phase electrical behavior under measured PCC excitation.",
+   "authors": [
+    {
+     "name": "Jesus D. Vasquez-Plaza",
+     "affiliations": []
+    },
+    {
+     "name": "Sunil Subedi",
+     "affiliations": []
+    },
+    {
+     "name": "Jin Dong",
+     "affiliations": []
+    },
+    {
+     "name": "Joao Pereira Pinto",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-19",
+   "url": "https://arxiv.org/abs/2611.25512",
+   "matched_terms": [
+    "data center",
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Physics-Guided Multi-Output Surrogate Modeling of a Centralized-UPS Data Center Thanks: Preprint submitted to IEEE PESGM 2027. This work has been submitted to the IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible. Thanks: This manuscript has been authored by UT-Battelle, LLC, under contract DE-AC05-00OR22725 with the US Department of Energy (DOE). The US government retains and the publisher, by accepting the article for publication, acknowledges that the US government retains a nonexclusive, paid-up, irrevocable, worldwide license to publish or reproduce the published form of this manuscript or allow others to do so for US government purposes. DOE will provide public access to these results of federally sponsored research in accordance with the DOE Public Access Plan (http://energy.gov/downloads/doe-public-access-plan). Thanks: The Authors are from the Electrification and Energy Infrastructures Division, Oak Ridge National Laboratory, Oak Ridge, TN, USA, (email: vasquezplazj, subedis, dongj, pintoj@ornl.gov). * : Corresponding Authors Jesus D. Vasquez-Plaza*, Sunil Subedi*, Jin Dong, Joao Pereira Pinto Affiliation: Abstract Data centers supplied through centralized uninterruptible power supplies (UPSs) are converter-dominated loads whose grid response reflects IT demand, power-conversion controls, energy storage, cooling, and site-support dynamics. This paper develops and electrically realizes a causal multi-output surrogate for a nominal 1-MW, 0.48-kV simulated data center. Four physics-informed terminal features—normalized IT demand, positive-sequence voltage deviation, voltage-unbalance ratio, and frequency deviation—are used to predict active and reactive power at both the point of common coupling (PCC) and UPS output. Six causal surrogate families are evaluated using separate training, validation, and held-out trajectories. A ridge-regularized low-order nonlinear autoregressive model with exogenous inputs (NARX) achieves the lowest validation and test errors, with mean four-output errors of 0.1959% and 0.1441% on a 1-MVA base, respectively. The selected surrogate is then coupled to a three-phase electrical interface in MATLAB/Simulink, where predicted PCC active power controls a variable resistive load and predicted reactive power is realized through controlled current sources synchronized to the PCC voltage. Across two 41-s AI workload profiles, including an additional Pip"
+  },
+  {
+   "key": "arxiv:2611.25471",
+   "source": "arXiv",
+   "id": "2611.25471",
+   "title": "A four-level executable validation protocol for evaluating LLM-generated topology specifications of physics-based HVAC digital twins",
+   "abstract": "Physics-based digital twins of air conditioning, a principal energy consumer in manufacturing and buildings, can be generated automatically from a declarative specification of its equipment, connections, and sizing. Large language models (LLMs) now write such specifications from plain-language descriptions. Evaluations of these specifications stop at parse success, completed runs, or textual similarity, and cannot reject a model that converges in simulation but is physically wrong. In this study, a four-level protocol is proposed that tests whether an LLM-written specification not only executes but also yields a physically valid digital twin. Each specification is executed through static validity, model build, simulation convergence, and behavioral equivalence with a hidden reference model within bands calibrated by $\\pm$20% sizing perturbations. The protocol was applied to eight LLMs and fourteen HVAC topologies, five describing an existing low-humidity test chamber. To test for authorship bias, engineers and a second model family also described six topologies. Within three repairs, seven of eight models built in 98.6 to 100% of trials, with simulations converging in at least 80.0%, but reached behavioral equivalence in only 50.0 to 98.6%. About half of the failed trials converged, but not to the reference steady state, mostly in desiccant rotor systems. Pooled pass rates varied by under five percentage points across description authors. These results imply that the physics hardest to model in each field, here the desiccant rotor, must enter the generation framework as validation levels. The protocol can be adapted to other fields that generate executable digital twins from declarative specifications.",
+   "authors": [
+    {
+     "name": "Younghwan Joo",
+     "affiliations": []
+    },
+    {
+     "name": "Jeonghoon Han",
+     "affiliations": []
+    },
+    {
+     "name": "Sanghyun Oh",
+     "affiliations": []
+    },
+    {
+     "name": "Soosik Bang",
+     "affiliations": []
+    },
+    {
+     "name": "Sung-il Kim",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY",
+    "cs.AI",
     "cs.LG",
-    "cs.NI",
-    "eess.SY"
-   ],
-   "primary_category": "cs.LG",
-   "date": "2026-11-18",
-   "url": "https://arxiv.org/abs/2611.23977",
-   "matched_terms": [
-    "computing resources",
-    "edge computing",
-    "edge server",
-    "gpu"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "OMNIS+: Semantic RAN Slicing and Quantization for Dynamic Split Neural Networks Langtian Qin Avishkar Dnyaneshwar Kawadgave Ian Andrew Harshbarger Leïla Nasraoui Carla Fabiana Chiasserini Marco Levorato † † thanks: L.˜Qin, A.˜D. ˜Kawadgave, I.˜A.˜Harshbarger, and M.˜Levorato are with the Donald Bren School of Information and Computer Sciences, University of California, Irvine, USA. L.˜Nasraoui is with the National School of Computer Science (ENSI), University of Manouba, Tunisia. C. F.˜Chiasserini is with Politecnico di Torino, Italy. C. F.˜Chiasserini is also with CNIT, Parma, Italy, and Chalmers University of Technology, Sweden. This work was supported in part by the U.S. National Science Foundation under grant CCF 2140154. A preliminary version of this work was presented at the IEEE International Conference on Computer Communications (INFOCOM), 2026˜ [ 1 ] . Abstract Edge computing enables resource-constrained devices to execute machine learning (ML) applications via task offloading, with radio access network (RAN) slicing playing a crucial role in provisioning joint communication and computing resources. However, existing RAN slicing frameworks rely on static computing models, limiting their ability to exploit dynamic semantic data representations enabled by modern neural architectures. To address this limitation, we propose OMNIS+, a semantic RAN slicing framework for multi-cell edge computing built upon a new generation of dynamic split neural models. OMNIS+ incorporates dynamic neural compression paired with adaptive quantization for task offloading, providing a versatile decision space across communication payload and compute dimensions. Unlike prior work, we explicitly investigate the interplay between neural compression and information quantization in computer vision tasks. To this end, we design a novel “box” quantization scheme that markedly enhances resilience to transmission bit errors across diverse compression rates. Considering partial system observability and distinct node objectives, we formulate two interdependent optimization problems: (i) mobile devices (MDs) maximize inference accuracy under quality-of-service (QoS) and queue-stability constraints by jointly adapting dynamic split deep neural network (DNN) branches and cell association; and (ii) each edge server (ES) allocates bandwidth, graphics processing unit (GPU) frequency, and modulation and coding scheme (MCS) to maximize the max–min inference accuracy among associated MDs und"
-  },
-  {
-   "key": "arxiv:2611.23771",
-   "source": "arXiv",
-   "id": "2611.23771",
-   "title": "Mitigating the Grid Impact of Gigawatt-Scale AI Data Centers via High-Fidelity Model Flexibility",
-   "abstract": "Gigawatt-scale artificial intelligence data centers (AIDCs) are being connected at a single point of interconnection (POI) faster than transmission can be reinforced, yet studies of their flexibility rely on DC power flow and simplified load envelopes that omit voltage, cooling dynamics, and workload deadlines. This paper addresses this gap by embedding a high-fidelity AIDC model, with separate inference and training pools, hall thermal mass, PV, a battery energy storage system (BESS) with reactive capability, and a STATCOM, in a five-minute multi-period AC optimal power flow. Simulations on the RTS-GMLC test system show that active-power flexibility mitigates local price spikes and relieves congestion, whereas reactive support from the BESS inverter or a STATCOM is needed to keep the POI voltage away from sagging around its 0.95~pu limit. Sensitivity analyses show that cost-driven charging of large batteries can induce new morning congestion and that storage largely substitutes for wider workload deferral.",
-   "authors": [
-    {
-     "name": "Eihab E. E. Ahmed",
-     "affiliations": []
-    },
-    {
-     "name": "Saeed Manshadi",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SY",
-    "math.OC"
+    "cs.SE"
    ],
    "primary_category": "eess.SY",
-   "date": "2026-11-18",
-   "url": "https://arxiv.org/abs/2611.23771",
+   "date": "2026-11-19",
+   "url": "https://arxiv.org/abs/2611.25471",
    "matched_terms": [
-    "data centers"
+    "large language models",
+    "llm",
+    "llms"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Mitigating the Grid Impact of Gigawatt-Scale AI Data Centers via High-Fidelity Model Flexibility Eihab E. E. Ahmed Affiliation: Electrical and Computer Engineering San Diego State University and University of California San Diego San Diego, CA, USA eelgailyelmuks5457@sdsu.edu Saeed Manshadi Affiliation: Electrical and Computer Engineering San Diego State University San Diego, CA, USA smanshadi@sdsu.edu Abstract Gigawatt-scale artificial intelligence data centers (AIDCs) are being connected at a single point of interconnection (POI) faster than transmission can be reinforced, yet studies of their flexibility rely on DC power flow and simplified load envelopes that omit voltage, cooling dynamics, and workload deadlines. This paper addresses this gap by embedding a high-fidelity AIDC model, with separate inference and training pools, hall thermal mass, PV, a battery energy storage system (BESS) with reactive capability, and a STATCOM, in a five-minute multi-period AC optimal power flow. Simulations on the RTS-GMLC test system show that active-power flexibility mitigates local price spikes and relieves congestion, whereas reactive support from the BESS inverter or a STATCOM is needed to keep the POI voltage away from sagging around its 0.95 pu limit. Sensitivity analyses show that cost-driven charging of large batteries can induce new morning congestion and that storage largely substitutes for wider workload deferral. Index Terms: AI data centers, AC optimal power flow, large loads, flexibility, transmission congestion"
+   "affiliation_block": "(HTML version not available: HTTPError)"
   },
   {
-   "key": "arxiv:2611.23666",
+   "key": "arxiv:2611.25176",
    "source": "arXiv",
-   "id": "2611.23666",
-   "title": "Rented Oscillations: Multi-Tenant Data Center Workload Synchronization Attacks and Mitigation",
-   "abstract": "Multi-tenant data center (DC) facilities rent computing capacity on demand, placing controllable load within reach of anyone willing to pay for it. This paper considers a stealthy adversary who rents workstations and runs deliberately unoptimized large language model (LLM) training, synchronizing their consumption into large periodic oscillations while each workload remains individually indistinguishable from benign training. The periodicity of such workloads is characterized experimentally and used to model facility consumption, showing that oscillations emerge from the interaction of concurrent workloads, whether aligned by an adversary or arising naturally. A combined small- and large-signal assessment, under a hardware-grounded threat model whose feasibility is supported by experiments on a supercomputer, locates the oscillatory weak points of the network. MW-scale oscillations are shown to saturate the generators' control limiters, amplifying their effect, while Floquet analysis reveals a lightly damped mode emerging near the forcing frequency. To counter both origins, signal-energy-based detection and mitigation are proposed, the latter re-timing the workloads to minimize the facility's oscillatory energy. The approach is validated through power hardware-in-the-loop (PHIL) experiments and real-time simulations on a surrogate model of the Saudi Arabian transmission network.",
+   "id": "2611.25176",
+   "title": "Reliability-based Sizing of Energy Storage for Large Load Integration",
+   "abstract": "The number of large loads connected to the bulk power system has been increasing rapidly worldwide. Emerging high-demand facilities, particularly AI data centers, are introducing new challenges for power system planners. In absence of appropriate planning mechanisms, the addition of high volumes of data center loads will lead to an increase in outages, thus degrading reliability of the system. Energy storage systems (ESS) offer a promising solution to mitigate the reliability impacts of these large loads, due to their flexibility and fast-ramping characteristics. However, ESS should be judiciously sized and sited to maximize the reliability benefits to the grid. This paper presents a framework for the optimal sizing and siting of ESS to minimize the adverse reliability impacts of large load additions. First, a stochastic semi-Markov model is developed to model the load of AI data centers and generate profiles for several such facilities. These profiles are then incorporated into a Markov-chain Monte Carlo simulation-based composite system reliability assessment framework. A detailed nodal network model is used to quantify the reliability impacts of adding data centers and to identify buses most affected by large loads. Resource adequacy metrics are used to evaluate the overall system reliability impacts. ESS are then strategically sized and sited based on this analysis to mitigate the negative impacts of large loads on overall system reliability. The proposed framework is demonstrated using the RTS-GMLC 72-bus test system. The results show how ESS can effectively enhance system reliability in the presence of rapidly growing large-load demand. This framework provides system planners, utilities, and regulators with a practical tool for maintaining reliable power system operation using energy storage as more large loads are integrated into the grid.",
    "authors": [
     {
-     "name": "Zaint A. Alexakis",
+     "name": "Atri Bera",
      "affiliations": []
     },
     {
-     "name": "Li Zhou",
+     "name": "Chandan Chaudhary",
      "affiliations": []
     },
     {
-     "name": "S. Gokul Krishnan",
+     "name": "Dilip Pandit",
      "affiliations": []
     },
     {
-     "name": "Charalambos Konstantinou",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SY",
-    "cs.CR"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-18",
-   "url": "https://arxiv.org/abs/2611.23666",
-   "matched_terms": [
-    "data center"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Zaint A. Alexakis Li Zhou S. Gokul Krishnan Charalambos Konstantinou Abstract Multi-tenant dc ( dc ) facilities rent computing capacity on demand, placing controllable load within reach of anyone willing to pay for it. This paper considers a stealthy adversary who rents workstations and runs deliberately unoptimized llm ( llm ) training, synchronizing their consumption into large periodic oscillations while each workload remains individually indistinguishable from benign training. The periodicity of such workloads is characterized experimentally and used to model facility consumption, showing that oscillations emerge from the interaction of concurrent workloads, whether aligned by an adversary or arising naturally. A combined small- and large-signal assessment, under a hardware-grounded threat model whose feasibility is supported by experiments on a supercomputer, locates the oscillatory weak points of the network. MW-scale oscillations are shown to saturate the generators’ control limiters, amplifying their effect, while Floquet analysis reveals a lightly damped mode emerging near the forcing frequency. To counter both origins, signal-energy-based detection and mitigation are proposed, the latter re-timing the workloads to minimize the facility’s oscillatory energy. The approach is validated through phil ( phil ) experiments and real-time simulations on a surrogate model of the Saudi Arabian transmission network. Index Terms: Data centers, AI workloads, load altering attacks, forced oscillations, cybersecurity, power system stability. † † aftertitle:"
-  },
-  {
-   "key": "arxiv:2611.23652",
-   "source": "arXiv",
-   "id": "2611.23652",
-   "title": "A Dynamic Model and Stability Analysis of a Grid-Interactive Data Center",
-   "abstract": "The rapid growth of data centers is creating new interactions between computational workload and power-system dynamics, with potentially significant implications for grid stability. We develop a four-dimensional nonlinear dynamical model of a data center campus interconnected with the bulk power system through a modified Single Machine Infinite Bus system. The model couples generator swing dynamics with a fluid-limit model of computational workload backlog and a grid-interactive data center power controller that incorporates both frequency feedback and computational backpressure. This formulation captures the coupled evolution of generator frequency, rotor angle, computational workload, and data center power consumption, providing a framework for studying the stability implications of flexible data center operation.",
-   "authors": [
-    {
-     "name": "Advith Natarajan",
+     "name": "Cody J. Newlun",
      "affiliations": []
     },
     {
-     "name": "Xinyang Zhou",
+     "name": "Tu A. Nguyen",
      "affiliations": []
     },
     {
-     "name": "Guido Cavraro",
+     "name": "Raymond H. Byrne",
+     "affiliations": []
+    },
+    {
+     "name": "Joydeep Mitra",
      "affiliations": []
     }
    ],
@@ -379,125 +377,78 @@
    ],
    "primary_category": "eess.SY",
    "date": "2026-11-18",
-   "url": "https://arxiv.org/abs/2611.23652",
+   "url": "https://arxiv.org/abs/2611.25176",
    "matched_terms": [
     "data center",
     "data centers"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Advith Natarajan Xinyang Zhou Guido Cavraro † † thanks: A. Natarajan is wiith the Electrical Engineering and Computer Sciences department, UC Berkeley. Email: advith@berkeley.edu † † thanks: X. Zhou and G. Cavraro are with the Power Systems Engineering Center, National Laboratory of the Rockies. Email: xinyang.zhou@nlr.gov, guido.cavraro@nlr.gov † † thanks: This work was authored in part by the National Laboratory of the Rockies for the U.S. Department of Energy (DOE) under Contract No. DE-AC36-08GO28308. Funding provided by the Advanced Modeling Grid Research Program at the Office of Electricity, U.S. Department of Energy. The views expressed in the article do not necessarily represent the views of the DOE or the U.S. Government. The U.S. Government retains and the publisher, by accepting the article for publication, acknowledges that the U.S. Government retains a nonexclusive, paid-up, irrevocable, worldwide license to publish or reproduce the published form of this work, or allow others to do so, for U.S. Government purposes. Abstract The rapid growth of data centers is creating new interactions between computational workload and power-system dynamics, with potentially significant implications for grid stability. We develop a four-dimensional nonlinear dynamical model of a data center campus interconnected with the bulk power system through a modified Single Machine Infinite Bus system. The model couples generator swing dynamics with a fluid-limit model of computational workload backlog and a grid-interactive data center power controller that incorporates both frequency feedback and computational backpressure. This formulation captures the coupled evolution of generator frequency, rotor angle, computational workload, and data center power consumption, providing a framework for studying the stability implications of flexible data center operation."
+   "affiliation_block": "(HTML version not available: HTTPError)"
   },
   {
-   "key": "arxiv:2611.23623",
+   "key": "arxiv:2611.24979",
    "source": "arXiv",
-   "id": "2611.23623",
-   "title": "Modeling and Stability of Power Systems With Coupled Data Center and Grid Dynamics",
-   "abstract": "The growing deployment of data centers poses challenges for power-system operation. However, data centers possess flexible resources that can be leveraged to mitigate their impact on the grid and provide grid services. This paper develops a linear-affine dynamic model of a transmission network with multiple data centers, explicitly coupling electromechanical grid dynamics with data center power demand and computational backlog. Grid-aware computing policies are incorporated to represent how data centers adjust their computational power in response to grid frequency deviations and workload backlog. The proposed framework provides a tractable means of investigating the interactions between multiple data centers and the transmission grid and assessing the potential of flexible computing to support power-system stability.",
+   "id": "2611.24979",
+   "title": "Trace2ST: Recovering PLC Structured Text from I/O Traces with LLM Generation and Verification",
+   "abstract": "Programmable logic controllers (PLCs), the industrial computers that operate power and process plants, often run programs whose source code is no longer available; however, every input and output of the controller is logged continuously. This paper therefore asks whether a large language model (LLM) can recover an executable program in Structured Text (ST), the standard PLC language of IEC 61131-3, from such input/output records (traces) alone and, equally important, how the recovered program can be verified. To answer this question, we build a generate-replay-feedback pipeline. First, the LLM writes a candidate program from a compressed summary of the trace, without ever seeing the original program. The candidate is then executed one control cycle (scan) at a time and compared with the recording, and whenever a mismatch occurs the corresponding part of the trace is returned to the LLM, for at most three revisions. Because every result depends on the software that executes the candidates, we first validate it against two independent open-source PLC runtimes and find no unexplained difference. On this basis, we evaluate 47 third-party programs from two public benchmarks. The recovered programs reproduce the recorded trace exactly in 43 cases and agree with the original on 94% of scans for unseen inputs. The remaining errors, however, lie mostly in program branches that the trace never exercised; once a trace that targets these branches is added, agreement on unseen adversarial inputs rises from 0.80 to 0.98. By contrast, a classical automata-learning baseline without an LLM fits the recording but falls to 0.40 on unseen inputs, which indicates that recovering program structure is the hard part. Finally, on real data from a public water-treatment testbed, the recovered control laws match unseen measurements closely ($R^2 > 0.99$) and expose the only actuator attack in the dataset.",
    "authors": [
     {
-     "name": "Guido Cavraro",
+     "name": "Hsi Chang",
+     "affiliations": []
+    },
+    {
+     "name": "Irfan Khan",
      "affiliations": []
     }
    ],
    "categories": [
+    "cs.SE",
+    "cs.AI",
+    "cs.CY",
+    "cs.PL",
     "eess.SY"
    ],
-   "primary_category": "eess.SY",
+   "primary_category": "cs.SE",
    "date": "2026-11-17",
-   "url": "https://arxiv.org/abs/2611.23623",
+   "url": "https://arxiv.org/abs/2611.24979",
    "matched_terms": [
-    "data center",
-    "data centers"
+    "large language model",
+    "llm"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Guido Cavraro † † thanks: G. Cavraro is with the Power Systems Engineering Center, National Laboratory of the Rockies. Email: guido.cavraro@nlr.gov † † thanks: The work of E. Dall’Anese was supported in part by the National Science Foundation Award 2504084. This work was authored in part by the National Laboratory of the Rockies for the U.S. Department of Energy (DOE), operated under Contract No. DE-AC36-08GO28308. This work was supported in part by the Laboratory Directed Research and Development (LDRD) Program at the National Laboratory of the Rockies. The views expressed in the article do not necessarily represent the views of the DOE or the U.S. Government. The U.S. Government retains and the publisher, by accepting the article for publication, acknowledges that the U.S. Government retains a nonexclusive, paid-up, irrevocable, worldwide license to publish or reproduce the published form of this work, or allow others to do so, for U.S. Government purposes. Abstract The growing deployment of data centers poses challenges for power-system operation. However, data centers possess flexible resources that can be leveraged to mitigate their impact on the grid and provide grid services. This paper develops a linear-affine dynamic model of a transmission network with multiple data centers, explicitly coupling electromechanical grid dynamics with data center power demand and computational backlog. Grid-aware computing policies are incorporated to represent how data centers adjust their computational power in response to grid frequency deviations and workload backlog. The proposed framework provides a tractable means of investigating the interactions between multiple data centers and the transmission grid and assessing the potential of flexible computing to support power-system stability."
+   "affiliation_block": "Trace2ST: Recovering PLC Structured Text from I/O Traces with LLM Generation and Verification Hsi Chang Affiliation: School of Electrical, Computer and Energy Engineering Arizona State University Phoenix, Arizona, USA xhan570@asu.edu Irfan Khan Affiliation: Clean and Resilient Energy Systems (CARES) Lab Marine Engineering Technology, in a joint affiliate appointment with Electrical and Computer Engineering Texas A&M University, College Station, USA irfankhan@tamu.edu Abstract Programmable logic controllers (PLCs), the industrial computers that operate power and process plants, often run programs whose source code is no longer available; however, every input and output of the controller is logged continuously. This paper therefore asks whether a large language model (LLM) can recover an executable program in Structured Text (ST), the standard PLC language of IEC 61131-3, from such input/output records (traces) alone and, equally important, how the recovered program can be verified. To answer this question, we build a generate–replay–feedback pipeline. First, the LLM writes a candidate program from a compressed summary of the trace, without ever seeing the original program. The candidate is then executed one control cycle (scan) at a time and compared with the recording, and whenever a mismatch occurs the corresponding part of the trace is returned to the LLM, for at most three revisions. Because every result depends on the software that executes the candidates, we first validate it against two independent open-source PLC runtimes and find no unexplained difference. On this basis, we evaluate 47 third-party programs from two public benchmarks. The recovered programs reproduce the recorded trace exactly in 43 cases and agree with the original on 94 % of scans for unseen inputs. The remaining errors, however, lie mostly in program branches that the trace never exercised; once a trace that targets these branches is added, agreement on unseen adversarial inputs rises from 0.80 to 0.98. By contrast, a classical automata-learning baseline without an LLM fits the recording but falls to 0.40 on unseen inputs, which indicates that recovering program structure is the hard part. Finally, on real data from a public water-treatment testbed, the recovered control laws match unseen measurements closely ( R 2 > 0.99 R^{2}>0.99 ) and expose the only actuator attack in the dataset. Index Terms: PLC, IEC 61131-3, Structured Text, large language models, program recovery, differ"
   },
   {
-   "key": "arxiv:2611.23594",
-   "source": "arXiv",
-   "id": "2611.23594",
-   "title": "Comparison of Open-Source PSCAD EMT Models for Large-Scale AI Data Centers in Smart Grids",
-   "abstract": "The rapid deployment of artificial intelligence data centers (AIDCs) introduces gigawatt-scale, highly nonlinear, and fast-varying electronic loads that challenge grid voltage regulation, frequency stability, and disturbance ride-through. Capturing their transient behavior during grid faults and rapid computational workload swings requires high-fidelity electromagnetic transient (EMT) simulations rather than root mean square models. However, limited methodologies exist to audit the component-level adequacy of EMT AIDC models. This paper proposes a software-agnostic, 41-point fidelity framework spanning 11 categories that synthesizes 37 criteria from an existing modeling guideline with four novel requirements: frequency ride-through compliance, disaggregated fan and chiller cooling loads, temperature-dependent thermal response, and DC information technology (IT) load representations. Applying this framework to the four publicly available AIDC models in PSCAD/EMTDC reveals varying degrees of completeness: while the models capture IT load transitions, uninterruptible power supplies, and transfer switches for bulk stability studies, critical gaps remain in electro-thermal cooling coupling, internal protective relaying, and site-level controls. Addressing these gaps will enable comprehensive protection coordination and ride-through compliance studies.",
+   "key": "doi:10.1016/j.apenergy.2026.129287",
+   "source": "journal",
+   "journal": "Applied Energy",
+   "journal_short": "Applied Energy",
+   "doi": "10.1016/j.apenergy.2026.129287",
+   "title": "Technology trajectories and critical raw materials in sodium-ion battery innovation: An LLM-assisted patent analysis",
+   "abstract": "",
+   "abstract_source": "",
    "authors": [
     {
-     "name": "Alex Chen",
-     "affiliations": [
-      "University of Toronto"
-     ]
-    },
-    {
-     "name": "Ahmad Mohammad Saber",
-     "affiliations": [
-      "University of Toronto"
-     ]
-    },
-    {
-     "name": "Deepa Kundur",
-     "affiliations": [
-      "University of Toronto"
-     ]
-    }
-   ],
-   "categories": [
-    "eess.SY"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-17",
-   "url": "https://arxiv.org/abs/2611.23594",
-   "matched_terms": [
-    "data centers"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Comparison of Open-Source PSCAD EMT Models for Large-Scale AI Data Centers in Smart Grids Alex Chen , Ahmad Mohammad Saber , and Deepa Kundur Affiliation: Department of Electrical and Computer Engineering, University of Toronto, Toronto, ON, Canada Abstract The rapid deployment of artificial intelligence data centers (AIDCs) introduces gigawatt-scale, highly nonlinear, and fast-varying electronic loads that challenge grid voltage regulation, frequency stability, and disturbance ride-through. Capturing their transient behavior during grid faults and rapid computational workload swings requires high-fidelity electromagnetic transient (EMT) simulations rather than root mean square models. However, limited methodologies exist to audit the component-level adequacy of EMT AIDC models. This paper proposes a software-agnostic, 41-point fidelity framework spanning 11 categories that synthesizes 37 criteria from an existing modeling guideline with four novel requirements: frequency ride-through compliance, disaggregated fan and chiller cooling loads, temperature-dependent thermal response, and DC information technology (IT) load representations. Applying this framework to the four publicly available AIDC models in PSCAD/EMTDC reveals varying degrees of completeness: while the models capture IT load transitions, uninterruptible power supplies, and transfer switches for bulk stability studies, critical gaps remain in electro-thermal cooling coupling, internal protective relaying, and site-level controls. Addressing these gaps will enable comprehensive protection coordination and ride-through compliance studies. Index Terms: AI data centers, electromagnetic transients, load modeling, power system simulation"
-  },
-  {
-   "key": "arxiv:2611.23504",
-   "source": "arXiv",
-   "id": "2611.23504",
-   "title": "Profile Screening and Frequency-Secure Operating Limit Derivation for Data Center Microgrids",
-   "abstract": "Rapid power variations from artificial intelligence (AI) workloads pose frequency-security challenges for islanded data-center microgrids. This paper proposes a generator step- response-based framework to rapidly screen candidate load pro- files and derive frequency-secure operating limits for IT workload scheduling. Identified generator responses are superimposed to assess the cumulative frequency effects of successive load changes without repeated dynamic simulations. The framework identifies potentially unsafe intervals and determines allowable load magni- tudes, ramp rates, and minimum event spacing, while accounting for prediction uncertainty and governor limits. Validation on a 2.5 MVA islanded microgrid with eight generator configurations and 14 synthetic AI workload profiles shows that 94.75% of 40,208 assessment windows receive decisive screening labels, with no frequency-violating windows classified as secure.",
-   "authors": [
-    {
-     "name": "Zishuo Yang",
+     "name": "Niklas Smit",
      "affiliations": []
     },
     {
-     "name": "Yu Ma",
+     "name": "Tim Greitemeier",
      "affiliations": []
     },
     {
-     "name": "Jong Ha Woo",
-     "affiliations": []
-    },
-    {
-     "name": "Aaditya Pandey",
-     "affiliations": []
-    },
-    {
-     "name": "Wenyuan Tang",
-     "affiliations": []
-    },
-    {
-     "name": "Chau-Wai Wong",
-     "affiliations": []
-    },
-    {
-     "name": "Ning Lu",
+     "name": "Simon Lux",
      "affiliations": []
     }
    ],
-   "categories": [
-    "eess.SY"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-17",
-   "url": "https://arxiv.org/abs/2611.23504",
+   "type": "journal-article",
+   "date": "2026-11-19",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129287",
    "matched_terms": [
-    "data center",
-    "data-center"
+    "llm"
    ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Profile Screening and Frequency-Secure Operating Limit Derivation for Data Center Microgrids Thanks: This research is sponsored in part by M.C. Dean. Zishuo Yang, Yu Ma, Jong Ha Woo, Aaditya Pandey, Wenyuan Tang, Chau-Wai Wong, Ning Lu Affiliation: North Carolina State University Raleigh, NC 27606, USA {zyang66, nlu2}@ncsu.edu Andrew Meyers, George Navarro Affiliation: M.C. Dean Tysons, VA 22102, USA {andrew.meyers, george.navarro}@mcdean.com Abstract Rapid power variations from artificial intelligence (AI) workloads pose frequency-security challenges for islanded data-center microgrids. This paper proposes a generator step-response-based framework to rapidly screen candidate load profiles and derive frequency-secure operating limits for IT workload scheduling. Identified generator responses are superimposed to assess the cumulative frequency effects of successive load changes without repeated dynamic simulations. The framework identifies potentially unsafe intervals and determines allowable load magnitudes, ramp rates, and minimum event spacing, while accounting for prediction uncertainty and governor limits. Validation on a 2.5 MVA islanded microgrid with eight generator configurations and 14 synthetic AI workload profiles shows that 94.75% of 40,208 assessment windows receive decisive screening labels, with no frequency-violating windows classified as secure. Index Terms: AI data centers, frequency security, islanded microgrids, load-profile screening, step-response superposition"
+   "screened_on": "title only",
+   "affiliation_source": "not available yet"
   }
  ],
  "title_only_final": [],
@@ -540,18 +491,6 @@
   },
   {
    "source": "Applied Energy",
-   "title": "Pressurized entrained-flow gasification of biogenic waste in regime I and II: from global CO2-char burnout kinetics to industrial design implications",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129261",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Towards reliable DER integration: A critical review of transmission, distribution, and microgrid coordination requirements",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129262",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Collaborative multi-objective dispatch of cascade hydro-wind-solar systems based on adaptive density reshaping evolutionary algorithm",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129263",
    "first_seen": "2026-11-17"
@@ -582,24 +521,6 @@
   },
   {
    "source": "Applied Energy",
-   "title": "Multicyclic operation of a closed-circuit fixed-bed calcium looping system for modular thermochemical energy storage under low-pressure conditions",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129275",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Toward real-world-representative durability testing of fuel cells for heavy-duty transport",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129277",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "TrajBattFM: battery state of health trajectory forecasting by integrating short-window features with a foundation model",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129284",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Interpretable day-ahead sister interval forecasting of distributed photovoltaic power under generalized weather scenarios",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129273",
    "first_seen": "2026-11-17"
@@ -624,18 +545,6 @@
   },
   {
    "source": "Applied Energy",
-   "title": "Optimal integration of Power-to-Vehicle and Power-to-Heat systems to support renewable deployment in smart urban energy districts",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129286",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Data-driven distributionally robust planning of coastal distribution networks and PV-storage-EV stations for low-carbon energy transition",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129199",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Secure microgrid formation–oriented uncertainty-aware frequency-constrained proactive scheduling in resilient distribution systems",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129247",
    "first_seen": "2026-11-17"
@@ -645,18 +554,6 @@
    "title": "Unlocking cycle life of lithium-metal batteries",
    "url": "https://doi.org/10.1038/s44287-026-00356-w",
    "first_seen": "2026-11-17"
-  },
-  {
-   "source": "TSG",
-   "title": "Life-Cycle Resilience Enhancement of Power Distribution Grids against Wildfire Risks",
-   "url": "https://doi.org/10.1109/tsg.2026.3754914",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "source": "TPWRS",
-   "title": "Acceleration of Gas-to-Power Cascading Fault Simulation Using Variable-Order-Variable-Step Numerical Differentiation Formulae",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3754751",
-   "first_seen": "2026-11-18"
   },
   {
    "source": "Applied Energy",
@@ -671,75 +568,9 @@
    "first_seen": "2026-11-18"
   },
   {
-   "source": "Applied Energy",
-   "title": "A retrieval-augmented generation (RAG)-enhanced framework for knowledge-guided campus-scale building retrofit design",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129218",
-   "first_seen": "2026-11-18"
-  },
-  {
    "source": "Nature Energy",
    "title": "Targeted technology coadoption for reconciling energy savings and equity gains in the residential energy transition",
    "url": "https://doi.org/10.1038/s41560-026-02164-w",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "In vivo dynamics of ovulation and oocyte entrance into the oviduct in mice",
-   "url": "https://doi.org/10.1038/s41467-026-79562-x",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Lysine-R2HGylation-C5 identified as a post-translational modification in R2HG-elevated cancers",
-   "url": "https://doi.org/10.1038/s41467-026-79668-2",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Coherence and pairing enhancement in a trilayer cuprate with layer-selective charge order",
-   "url": "https://doi.org/10.1038/s41467-026-78722-3",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "An ingestible, bio-inspired self-powered electrocapsule for in situ ethanol clearance mitigates systemic and neurobehavioral toxicity",
-   "url": "https://doi.org/10.1038/s41467-026-79347-2",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Morphogenesis of the muscular ventricular septum is driven by retinoic acid signalling to myocardium",
-   "url": "https://doi.org/10.1038/s41467-026-79350-7",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Whole-brain modeling of dynamic causal circuits in human cognition using amortized variational inference",
-   "url": "https://doi.org/10.1038/s41467-026-79293-z",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "GTP hydrolysis by Ras proceeds without a stabilized nucleophilic water molecule",
-   "url": "https://doi.org/10.1038/s41467-026-79248-4",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Chromosomally unstable cancer cells exhibit heightened dependence on the mitotic SKA complex",
-   "url": "https://doi.org/10.1038/s41467-026-79311-0",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "VapC40 diverts autophagic flux from xenophagy to mitophagy via ammonia-dependent metabolic toxicity",
-   "url": "https://doi.org/10.1038/s41467-026-79313-y",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Impact of Comorbid Depression and Anxiety on the Mortality among Adults with Cardiometabolic Diseases",
-   "url": "https://doi.org/10.1038/s41467-026-79803-z",
    "first_seen": "2026-11-18"
   },
   {
@@ -798,36 +629,6 @@
   },
   {
    "source": "Nature Communications",
-   "title": "A spatiotemporal scaffold in the human subiculum supports episodic memory and its enhancement through navigation training",
-   "url": "https://doi.org/10.1038/s41467-026-79267-1",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Dual-functional-unit modulation enables superior energy storage in high-entropy relaxor ferroelectrics",
-   "url": "https://doi.org/10.1038/s41467-026-79434-4",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "A master gene for Drosophila male courtship prevents the behavior in females via a truncated protein",
-   "url": "https://doi.org/10.1038/s41467-026-79460-2",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Supervised deep learning for efficient cryo-EM image alignment in drug discovery with cryoPARES",
-   "url": "https://doi.org/10.1038/s41467-026-78403-1",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Distinct DNA-binding modes of Sp8 and Sp6 shape a hierarchical regulatory network in limb ectoderm",
-   "url": "https://doi.org/10.1038/s41467-026-77755-y",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
    "title": "LRRK2-mediated phosphorylation of exocytic RABs disrupts neurotrophin/neuropeptide secretion",
    "url": "https://doi.org/10.1038/s41467-026-77820-6",
    "first_seen": "2026-11-19"
@@ -836,12 +637,6 @@
    "source": "Nature Communications",
    "title": "Selective mTOR inhibition via FLCN drives TFE3-dependent VLDL-TG secretion and protects from MAFLD/MASH",
    "url": "https://doi.org/10.1038/s41467-026-79397-6",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Real estate wealth inequality and exposure to natural disasters with evidence from France",
-   "url": "https://doi.org/10.1038/s41467-026-77386-3",
    "first_seen": "2026-11-19"
   },
   {
@@ -927,10 +722,184 @@
    "title": "Facial photographs reveal mortality risk beyond triage and clinical risk scores",
    "url": "https://doi.org/10.1038/s41467-026-79581-8",
    "first_seen": "2026-11-19"
+  },
+  {
+   "source": "TSG",
+   "title": "A Vine Copula Conformal Approach to State Estimation for Low-Voltage Distribution Feeders",
+   "url": "https://doi.org/10.1109/tsg.2026.3755945",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "TSG",
+   "title": "Real-Time Neural Distributed Energy Resources Dispatch with Feasibility Guarantees",
+   "url": "https://doi.org/10.1109/tsg.2026.3755951",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Operating-point-dependent power-flow linearisation for joint siting, sizing, and dispatch of long-duration energy storage in distribution grids",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129280",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "From one cycle to full life: Ultra-early battery degradation assessment for operational assessment and rapid screening",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129292",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "A risk-averse bidding and scheduling strategy for process industry VPPs in demand response markets based on thermodynamically-enhanced RTN",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129293",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Traffic-scenario-recognition-based energy management strategy with variable prediction horizon for connected fuel cell buses",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129296",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Energy",
+   "title": "Improving compatibility in mixed-matrix membranes",
+   "url": "https://doi.org/10.1038/s41560-026-02174-8",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Symmetry-breaking antibody binding reveals extensive capsid malleability in pandemic human norovirus",
+   "url": "https://doi.org/10.1038/s41467-026-79222-0",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Asymmetric coordination triggers dual-site synergy in gold nanoclusters for efficient aerobic oxidation",
+   "url": "https://doi.org/10.1038/s41467-026-79369-w",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Atomically ordered few-layer molybdenum boride MBenes for enhanced electromagnetic response",
+   "url": "https://doi.org/10.1038/s41467-026-79512-7",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Hybrid-parity sliding multiferroics",
+   "url": "https://doi.org/10.1038/s41467-026-79435-3",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Bordetella pertussis adapts to human nasal mucosa through biofilm-associated virulence reprogramming and host-defense attenuation",
+   "url": "https://doi.org/10.1038/s41467-026-79522-5",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A metal ion-assisted workflow for practical and scalable enrichment of small extracellular vesicles from biofluids",
+   "url": "https://doi.org/10.1038/s41467-026-79613-3",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Interfacial mechanisms of gas-bubble friction",
+   "url": "https://doi.org/10.1038/s41467-026-79472-y",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Twist-engineered arbitrary polarization detection for intelligent polarimetric sensing",
+   "url": "https://doi.org/10.1038/s41467-026-79650-y",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "SMC5/6 safeguards chromatin compartments and TAD boundaries for genome stability",
+   "url": "https://doi.org/10.1038/s41467-026-79493-7",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Efficient n–i–p all-perovskite tandem solar cells enabled by interconnection layer engineering",
+   "url": "https://doi.org/10.1038/s41467-026-79553-y",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "var2csa transcription implicates variant surface antigen switching in cerebral malaria pathogenesis",
+   "url": "https://doi.org/10.1038/s41467-026-78682-8",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Expert operating skills learning-based intelligent shared control method for a CT-guided percutaneous biopsy robot",
+   "url": "https://doi.org/10.1038/s41467-026-79622-2",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Soybean Pb encodes a WD40 protein regulating pubescence tip morphology and seed size during domestication",
+   "url": "https://doi.org/10.1038/s41467-026-79473-x",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "High-κ bismuth molybdate single-crystalline dielectric for high-temperature two-dimensional transistors",
+   "url": "https://doi.org/10.1038/s41467-026-79576-5",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A renewable autologous biomaterial for reprogramming cellular metabolism",
+   "url": "https://doi.org/10.1038/s41467-026-79560-z",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Endocrine, nutritional and metabolic diseases drive cancer risk through subtype-specific and shared proteomic mediators",
+   "url": "https://doi.org/10.1038/s41467-026-78791-4",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Genome-wide association study identifies a functional myostatin variant increasing lean mass in humans",
+   "url": "https://doi.org/10.1038/s41467-026-77766-9",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Cholesterol dysregulation contributes to hematopoietic failure in parn-mutant zebrafish with implications for dyskeratosis congenita",
+   "url": "https://doi.org/10.1038/s41467-026-79105-4",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Pathway-dependent chiral toroid self-assembly and topological transformations based on large π-conjugated dipeptides",
+   "url": "https://doi.org/10.1038/s41467-026-79527-0",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Nanofriction strengthened mechanically adaptive electrolytes for safe lithium metal batteries",
+   "url": "https://doi.org/10.1038/s41467-026-78955-2",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Intravenous phage therapy for difficult-to-treat infections: a systematic review and meta-analysis of individual patient data",
+   "url": "https://doi.org/10.1038/s41467-026-79491-9",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Wafer-scale thin-film PZT photonic integrated circuits enabling multi-terabit optical transmission",
+   "url": "https://doi.org/10.1038/s41467-026-79721-0",
+   "first_seen": "2026-11-20"
   }
  ],
- "pending_abstract": 71,
+ "pending_abstract": 74,
  "runs_utc": [
-  "2026-11-19T14:16:18+00:00"
+  "2026-11-20T13:55:52+00:00"
  ]
 }
