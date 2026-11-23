@@ -1,45 +1,45 @@
 {
- "date": "2026-11-20",
- "generated_utc": "2026-11-20T13:55:52+00:00",
+ "date": "2026-11-23",
+ "generated_utc": "2026-11-23T15:50:09+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-11-16",
-   "2026-11-20"
+   "2026-11-19",
+   "2026-11-23"
   ],
   "journal_doi_created": [
-   "2026-11-14",
-   "2026-11-20"
+   "2026-11-17",
+   "2026-11-23"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-   "in_window": 196,
-   "new": 40,
-   "candidates": 5
+   "in_window": 61,
+   "new": 31,
+   "candidates": 4
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-   "in_window": 60,
-   "new": 18,
-   "candidates": 2
+   "in_window": 28,
+   "new": 16,
+   "candidates": 3
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-   "in_window": 99,
-   "new": 30,
-   "candidates": 1
+   "in_window": 44,
+   "new": 17,
+   "candidates": 0
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
    "in_window": 3,
-   "new": 2,
+   "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -56,17 +56,17 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 45,
-   "new": 5,
-   "candidates": 1,
-   "new_with_abstract": 0
+   "in_window": 36,
+   "new": 13,
+   "candidates": 0,
+   "new_with_abstract": 2
   },
   {
    "source": "Nature Energy",
    "journal": "Nature Energy",
    "status": "ok",
-   "in_window": 4,
-   "new": 2,
+   "in_window": 5,
+   "new": 1,
    "candidates": 0,
    "new_with_abstract": 1
   },
@@ -74,16 +74,16 @@
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 188,
-   "new": 37,
-   "candidates": 0,
-   "new_with_abstract": 15
+   "in_window": 196,
+   "new": 69,
+   "candidates": 1,
+   "new_with_abstract": 59
   },
   {
    "source": "Nature Rev. EE",
    "journal": "Nature Reviews Electrical Engineering",
    "status": "ok",
-   "in_window": 1,
+   "in_window": 0,
    "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
@@ -92,509 +92,472 @@
  "errors": [],
  "candidates": [
   {
-   "key": "arxiv:2611.26527",
+   "key": "arxiv:2611.27686",
    "source": "arXiv",
-   "id": "2611.26527",
-   "title": "Thermal-Guided Ensemble Reinforcement Learning for Regime-Adaptive Short-Term GPU Power Forecasting in AI Data Centers",
-   "abstract": "AI data centers (AIDCs) introduce bursty and regime-dependent load patterns, posing significant challenges for reliable energy management and predictive grid control. To address these challenges, this letter proposes a thermal-guided ensemble reinforcement learning framework for probabilistic AIDC load forecasting. A soft actor-critic (SAC) agent with a simplex-preserving policy adaptively weights LSTM, TCN, and Transformer predictors at every time step based on their realized errors. A thermal-guided neural correction estimates the ensemble residual, while a sensitivity-projection regularizer enforces the non-negative sensitivity of power to GPU utilization and temperature. The corrected ensemble output is further processed by a Bayesian probabilistic layer to produce predictive distributions and quantify forecasting uncertainty. Case studies on 1-second MIT Supercloud telemetry show that the proposed method reduces the normalized mean absolute error to about 1% across all computing regimes, compared with 4-11% for deep learning-based and ensemble learning benchmarks, and converges faster with narrower prediction intervals than a DRL ensemble without thermal guidance.",
+   "id": "2611.27686",
+   "title": "Learning in Symbiosis: Heterogeneous Federated Learning with ANNs and SNNs",
+   "abstract": "Spiking Neural Networks (SNNs), widely regarded as the third generation of neural networks, represent a promising neuromorphic computing paradigm with the potential to reduce the energy footprint of Artificial Intelligence (AI). Their en-ergy efficiency makes SNNs particularly attractive for resource-constrained Edge AI devices, motivating growing research interest in Federated Learning (FL) with SNNs. Despite these advantages, integrating SNNs into existing FL systems remains challenging, as replacing all conventional Artificial Neural Network (ANN) devices with SNN-based alternatives is impractical. Instead, we envision a gradual transition toward neuromorphic Edge AI, where ANN and SNN devices coexist and collaboratively participate in FL. To facilitate this transition, we propose Hybrid Neuromorphic Federated Learning (HNFL), a framework that enables joint training of heterogeneous ANN and SNN devices within an FL environment. Through experiments on CIFAR-10 using both VGG9 and ResNet architectures, we demonstrate the mutual benefits of collaborative ANN-SNN training. Specifically, HNFL achieves an average improvement of 16.85% when incorporating SNN devices into ANN-based FL and 8.02% when incorporating ANN devices into SNN-based FL. Furthermore, HNFL produces sparser spiking activity in the trained SNN models, with reductions of 12.4% for SResNet and 22.4% for SVGG9. To the best of our knowledge, this is the first work to demonstrate that ANNs and SNNs can coexist and mutually benefit from collaborative training in FL, providing a practical path toward the gradual integration of neuromorphic computing into existing Edge AI systems.",
    "authors": [
     {
-     "name": "Yuanshuo Zhang",
+     "name": "Manh V. Nguyen",
      "affiliations": []
     },
     {
-     "name": "Ying Zhang",
+     "name": "Liang Zhao",
      "affiliations": []
     },
     {
-     "name": "Ziying Wang",
+     "name": "Bobin Deng",
      "affiliations": []
     },
     {
-     "name": "Fanping Sui",
+     "name": "Xinyue Zhang",
+     "affiliations": []
+    },
+    {
+     "name": "Shaoen Wu",
      "affiliations": []
     }
    ],
    "categories": [
-    "eess.SY"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-19",
-   "url": "https://arxiv.org/abs/2611.26527",
-   "matched_terms": [
-    "data centers"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Thermal-Guided Ensemble Reinforcement Learning for Regime-Adaptive Short-Term GPU Power Forecasting in AI Data Centers Thanks: This research was supported by the National Science Foundation through award number 2346213 and 2418359. Yuanshuo Zhang, Ying Zhang, Ziying Wang Affiliation: School of Electrical and Computer Engineering Oklahoma State University Stillwater, OK, USA {yuanshuo.zhang, y.zhang, zy.wang}@okstate.edu Fanping Sui Affiliation: Department of Mechanical Engineering University of California Berkeley Berkeley, CA, USA fpsui@berkeley.edu Abstract AI data centers (AIDCs) introduce bursty and regime-dependent load patterns, posing significant challenges for reliable energy management and predictive grid control. To address these challenges, this letter proposes a thermal-guided ensemble reinforcement learning framework for probabilistic AIDC load forecasting. A soft actor-critic (SAC) agent with a simplex-preserving policy adaptively weights LSTM, TCN, and Transformer predictors at every time step based on their realized errors. A thermal-guided neural correction estimates the ensemble residual, while a sensitivity-projection regularizer enforces the non-negative sensitivity of power to GPU utilization and temperature. The corrected ensemble output is further processed by a Bayesian probabilistic layer to produce predictive distributions and quantify forecasting uncertainty. Case studies on 1-second MIT Supercloud telemetry show that the proposed method reduces the normalized mean absolute error to about 1% across all computing regimes, compared with 4–11% for deep learning-based and ensemble learning benchmarks, and converges faster with narrower prediction intervals than a DRL ensemble without thermal guidance. Index Terms: AI data center, load forecasting, probabilistic forecasting, reinforcement learning, physics-informed neural networks, uncertainty, thermal."
-  },
-  {
-   "key": "arxiv:2611.26480",
-   "source": "arXiv",
-   "id": "2611.26480",
-   "title": "Held While Waiting: What LLM Agent Sessions Reserve on Serverless and Agent Runtimes",
-   "abstract": "LLM agents spend nearly all their time waiting for the model. On Amazon Bedrock AgentCore, our agents waited a median of 2.7 seconds for each model reply, then computed for an estimated 5 to 40 milliseconds. AgentCore does not charge for CPU during the wait. But it reserves a separate environment, a virtual machine with its own memory, for every conversation, and keeps it reserved until the conversation is closed. So 1,000 conversations reserve 1,000 environments to do the work of 2 to 15 processor cores. A service runs out of environments long before it runs out of processing power. The shortage has two causes, and each has a fix. An environment stays reserved after its conversation ends: in the customer-service benchmark we ran, a conversation lasts 33 seconds on average, but its environment is held for 15 minutes more unless the client closes it. And an environment serves only one conversation, which is mostly waiting: in our simulation, 64 conversations sharing one environment need 59 times fewer environments, and 99 of every 100 replies are delayed by at most 40 milliseconds. The milliseconds are an estimate because they are hard to measure: a stubbed model, a timer around the model call, and steps run back to back each gave a plausible number that was too low. We show how to avoid all three. Of the two fixes, closing needs only the client. Sharing needs the platform, and of the agent runtimes we surveyed only one allows it, in part. They keep conversations apart because an agent runs tools, and sometimes code, chosen by a model. The open problem is to keep them apart without reserving an environment for each while it waits.",
-   "authors": [
-    {
-     "name": "Mekhala Hithyshini Sreenivasa",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.PF",
+    "cs.AI",
     "cs.DC",
-    "cs.SE"
+    "cs.LG"
    ],
-   "primary_category": "cs.PF",
-   "date": "2026-11-19",
-   "url": "https://arxiv.org/abs/2611.26480",
+   "primary_category": "cs.AI",
+   "date": "2026-11-20",
+   "url": "https://arxiv.org/abs/2611.27686",
    "matched_terms": [
-    "llm"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Held While Waiting: What LLM Agent Sessions Reserve on Serverless and Agent Runtimes Mekhala Hithyshini Sreenivasa Note: The author is employed by Amazon Web Services, which provides two of the platforms studied here (Amazon Bedrock AgentCore Runtime and AWS Lambda). This work was done independently, outside that employment, using the author’s own accounts and funds. It uses no non-public Amazon information, and the views expressed are the author’s own and do not necessarily reflect those of Amazon. Affiliation: Amazon Web Services , Seattle , USA email: mekhal@amazon.com Abstract. LLM agents spend nearly all their time waiting for the model. On Amazon Bedrock AgentCore, our agents waited a median of 2.7 seconds for each model reply, then computed for an estimated 5 to 40 milliseconds. AgentCore does not charge for CPU during the wait. But it reserves a separate environment, a virtual machine with its own memory, for every conversation, and keeps it reserved until the conversation is closed. So 1,000 conversations reserve 1,000 environments to do the work of 2 to 15 processor cores. A service runs out of environments long before it runs out of processing power. The shortage has two causes, and each has a fix. An environment stays reserved after its conversation ends: in the customer-service benchmark we ran, a conversation lasts 33 seconds on average, but its environment is held for 15 minutes more unless the client closes it. And an environment serves only one conversation, which is mostly waiting: in our simulation, 64 conversations sharing one environment need 59 times fewer environments, and 99 of every 100 replies are delayed by at most 40 milliseconds. The milliseconds are an estimate because they are hard to measure: a stubbed model, a timer around the model call, and steps run back to back each gave a plausible number that was too low. We show how to avoid all three. Of the two fixes, closing needs only the client. Sharing needs the platform, and of the agent runtimes we surveyed only one allows it, in part. They keep conversations apart because an agent runs tools, and sometimes code, chosen by a model. The open problem is to keep them apart without reserving an environment for each while it waits."
-  },
-  {
-   "key": "arxiv:2611.25947",
-   "source": "arXiv",
-   "id": "2611.25947",
-   "title": "Matching Architecture to Workload: Comparing RISC-V Parallel Accelerators for Energy-Efficient Embedded Computing",
-   "abstract": "Embedded computing demands high performance and energy efficiency across workloads with widely different computational characteristics. Choosing the most suitable execution model therefore requires a quantitative understanding of how each model maps to different workload classes. In this paper, we compare three execution models for energy-efficient embedded computing: scalar multicore, stream ing multicore, and vector processing. We use three open-source RISC-V accelerators as representative implementations: the PULP Cluster, the Snitch Cluster, and Spatz, respectively. Their open-source hardware and software stacks enable a controlled comparison based on implementations in the same 12 nm technology and a common benchmark suite. Our results reveal that no single execution model performs best across all workload classes. Spatz delivers the greatest benefits for regular and highly vectorizable compute-intensive applications, achieving up to 4.29x higher performance and 5.17x greater energy efficiency than the other architectures. However, its effectiveness strongly depends on the availability of data-level parallelism and regular computation and memory-access patterns, making it the most sensitive to workload characteristics. The Snitch Cluster performs particularly well on applications with limited parallelism and streamable memory-access patterns, providing up to 5.53x higher performance and 1.45x greater energy efficiency. Conversely, the PULP Cluster is most effective on irregular and control-dominated applications, achieving improvements of up to 5.66x in performance and 2.80x in energy efficiency. Compared with Spatz, however, the greater flexibility offered by PULP and Snitch comes at a non-negligible cost in terms of both area and power.",
-   "authors": [
-    {
-     "name": "Luca Colombo",
-     "affiliations": []
-    },
-    {
-     "name": "Luigi Ghionda",
-     "affiliations": []
-    },
-    {
-     "name": "Amirhossein Kiamarzi",
-     "affiliations": []
-    },
-    {
-     "name": "Yvan Tortorella",
-     "affiliations": []
-    },
-    {
-     "name": "Riccardo Giunti",
-     "affiliations": []
-    },
-    {
-     "name": "Niccolò Giuliani",
-     "affiliations": []
-    },
-    {
-     "name": "Samuele Colmi",
-     "affiliations": []
-    },
-    {
-     "name": "Angelo Garofalo",
-     "affiliations": []
-    },
-    {
-     "name": "Giuseppe Tagliavini",
-     "affiliations": []
-    },
-    {
-     "name": "Davide Rossi",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC",
-    "cs.AR"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-11-19",
-   "url": "https://arxiv.org/abs/2611.25947",
-   "matched_terms": [
-    "computing demand"
+    "edge ai"
    ],
    "screened_on": "title+abstract",
    "affiliation_block": "(HTML version not available: HTTPError)"
   },
   {
-   "key": "arxiv:2611.25800",
+   "key": "arxiv:2611.27576",
    "source": "arXiv",
-   "id": "2611.25800",
-   "title": "Personalized Privacy-Aware MARL Offloading in the Edge-Cloud Continuum",
-   "abstract": "Task offloading in End-Edge-Cloud computing enables resource-constrained User Devices (UDs) to execute computation-intensive applications with reduced latency and energy consumption. However, existing task offloading schemes generally overlook the heterogeneous privacy requirements of users, leading to inefficient privacy-aware offloading decisions. In this paper, we propose a personalized privacy-aware task offloading framework, where the privacy requirement of each task is quantified through a User-Centric Privacy (UCP) model that considers task sensitivity, user privacy preferences, and task urgency. The task offloading problem is formulated as a Markov Decision Process (MDP) to jointly optimize the offloading ratio and the target computing server while minimizing the long-term system cost under latency, energy, and privacy constraints. To efficiently solve the resulting high-dimensional continuous optimization problem, we develop an Advantage-Weighted Actor-Critic (AWAC)-enhanced Proximal Policy Optimization (PPO)-based Multi-Agent Reinforcement Learning (MARL) algorithm under the Centralized Training and Decentralized Execution (CTDE) paradigm. Simulation results demonstrate that the proposed framework achieves lower average system cost, lower energy consumption, and higher task success rate than representative baselines under diverse privacy requirements.",
+   "id": "2611.27576",
+   "title": "Unlocking Heterogeneous Accelerator Flexibility in AI Data Centers: Sizing and Workload Allocation",
+   "abstract": "AI data centers are an emerging electricity demand, but limited local grid capacity could delay their connection and expansion. While existing operational strategies consider spatio-temporal workload flexibility, few studies address the strategic sizing and allocation of diverse accelerator archetypes with different capital and energy-efficiency trade-offs. This paper unlocks the flexibility potential of heterogeneous accelerators by jointly sizing and allocating different AI workloads (training, delay-tolerant batch work, and online inference requests) across sites and hours to meet the time-varying grid constraint at minimum cost. Workload-specific throughput and energy coefficients link these decisions to facility power. In a representative two-site case, heterogeneous sizing reduces daily cost by 6.5% relative to spatio-temporal scheduling with fixed capacity. When evaluated using workload-specific performance, a capacity design based on workload-averaged hardware coefficients costs 7.7% more than the proposed design. The proposed design also eliminates the envelope violations of an unconstrained design at a 0.25\\% daily cost increase. These results show how hardware heterogeneity and workload flexibility jointly shape economical, grid-compliant capacity plans.",
    "authors": [
     {
-     "name": "Muhammad Rafid",
+     "name": "Chenghao Lyu",
      "affiliations": []
     },
     {
-     "name": "Golshan Famitafreshi",
+     "name": "Ying Yu",
      "affiliations": []
     },
     {
-     "name": "Kostas Ramantas",
+     "name": "Wangkun Xu",
      "affiliations": []
     },
     {
-     "name": "Luis Alonso",
-     "affiliations": []
-    },
-    {
-     "name": "Christos Verikoukis",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SP"
-   ],
-   "primary_category": "eess.SP",
-   "date": "2026-11-19",
-   "url": "https://arxiv.org/abs/2611.25800",
-   "matched_terms": [
-    "cloud computing"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Personalized Privacy-Aware MARL Offloading in the Edge-Cloud Continuum Affiliation: Muhammad Rafid, Golshan Famitafreshi ‡ , Kostas Ramantas ‡ , Luis Alonso, Christos Verikoukis Affiliation: † ISI/ATHENA RC, 26504 Patra, Greece (e-mail: {mrafid, cveri}@isi.gr) Universitat Politècnica de Catalunya (UPC), Barcelona, Spain (e-mail: {luis.g.alonso}@upc.edu) * University of Patras, 26504 Patra, Greece ‡ Iquadrat Informatica S. L., Barcelona, Spain (e-mail: {g.famitafreshi, kramantas}@iquadrat.com) Abstract Task offloading in End–Edge–Cloud computing enables resource-constrained User Devices (UDs) to execute computation-intensive applications with reduced latency and energy consumption. However, existing task offloading schemes generally overlook the heterogeneous privacy requirements of users, leading to inefficient privacy-aware offloading decisions. In this paper, we propose a personalized privacy-aware task offloading framework, where the privacy requirement of each task is quantified through a User-Centric Privacy (UCP) model that considers task sensitivity, user privacy preferences, and task urgency. The task offloading problem is formulated as a Markov Decision Process (MDP) to jointly optimize the offloading ratio and the target computing server while minimizing the long-term system cost under latency, energy, and privacy constraints. To efficiently solve the resulting high-dimensional continuous optimization problem, we develop an Advantage-Weighted Actor-Critic (AWAC)-enhanced Proximal Policy Optimization (PPO)-based Multi-Agent Reinforcement Learning (MARL) algorithm under the Centralized Training and Decentralized Execution (CTDE) paradigm. Simulation results demonstrate that the proposed framework achieves lower average system cost, lower energy consumption, and higher task success rate than representative baselines under diverse privacy requirements. Index Terms: 6G networks, Task offloading, Edge-Cloud Continuum, Multi-agent reinforcement learning."
-  },
-  {
-   "key": "arxiv:2611.25512",
-   "source": "arXiv",
-   "id": "2611.25512",
-   "title": "Physics-Guided Multi-Output Surrogate Modeling of a Centralized-UPS Data Center",
-   "abstract": "Data centers supplied through centralized uninterruptible power supplies (UPSs) are converter-dominated loads whose grid response reflects IT demand, power-conversion controls, energy storage, cooling, and site-support dynamics. This paper develops and electrically realizes a causal multi-output surrogate for a nominal 1-MW, 0.48-kV simulated data center. Four physics-informed terminal features-normalized IT demand, positive-sequence voltage deviation, voltage-unbalance ratio, and frequency deviation-are used to predict active and reactive power at both the point of common coupling (PCC) and UPS output. Six causal surrogate families are evaluated using separate training, validation, and held-out trajectories. A ridge-regularized low-order nonlinear autoregressive model with exogenous inputs (NARX) achieves the lowest validation and test errors, with mean four-output errors of 0.1959\\% and 0.1441\\% on a 1-MVA base, respectively. The selected surrogate is then coupled to a three-phase electrical interface in MATLAB/Simulink, where predicted PCC active power controls a variable resistive load and predicted reactive power is realized through controlled current sources synchronized to the PCC voltage. Across two 41-s AI workload profiles, including an additional pipeline parallelism trajectory, the electrical realization tracks the NARX commands with active- and reactive-power RMSEs of 0.604 kW and 0.353 kVAR for Evaluation Profile A and 1.539 kW and 0.442 kVAR for Evaluation Profile B, respectively. The results demonstrate a compact terminal surrogate that can reproduce both predicted power trajectories and their corresponding three-phase electrical behavior under measured PCC excitation.",
-   "authors": [
-    {
-     "name": "Jesus D. Vasquez-Plaza",
-     "affiliations": []
-    },
-    {
-     "name": "Sunil Subedi",
-     "affiliations": []
-    },
-    {
-     "name": "Jin Dong",
-     "affiliations": []
-    },
-    {
-     "name": "Joao Pereira Pinto",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SY"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-19",
-   "url": "https://arxiv.org/abs/2611.25512",
-   "matched_terms": [
-    "data center",
-    "data centers"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Physics-Guided Multi-Output Surrogate Modeling of a Centralized-UPS Data Center Thanks: Preprint submitted to IEEE PESGM 2027. This work has been submitted to the IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible. Thanks: This manuscript has been authored by UT-Battelle, LLC, under contract DE-AC05-00OR22725 with the US Department of Energy (DOE). The US government retains and the publisher, by accepting the article for publication, acknowledges that the US government retains a nonexclusive, paid-up, irrevocable, worldwide license to publish or reproduce the published form of this manuscript or allow others to do so for US government purposes. DOE will provide public access to these results of federally sponsored research in accordance with the DOE Public Access Plan (http://energy.gov/downloads/doe-public-access-plan). Thanks: The Authors are from the Electrification and Energy Infrastructures Division, Oak Ridge National Laboratory, Oak Ridge, TN, USA, (email: vasquezplazj, subedis, dongj, pintoj@ornl.gov). * : Corresponding Authors Jesus D. Vasquez-Plaza*, Sunil Subedi*, Jin Dong, Joao Pereira Pinto Affiliation: Abstract Data centers supplied through centralized uninterruptible power supplies (UPSs) are converter-dominated loads whose grid response reflects IT demand, power-conversion controls, energy storage, cooling, and site-support dynamics. This paper develops and electrically realizes a causal multi-output surrogate for a nominal 1-MW, 0.48-kV simulated data center. Four physics-informed terminal features—normalized IT demand, positive-sequence voltage deviation, voltage-unbalance ratio, and frequency deviation—are used to predict active and reactive power at both the point of common coupling (PCC) and UPS output. Six causal surrogate families are evaluated using separate training, validation, and held-out trajectories. A ridge-regularized low-order nonlinear autoregressive model with exogenous inputs (NARX) achieves the lowest validation and test errors, with mean four-output errors of 0.1959% and 0.1441% on a 1-MVA base, respectively. The selected surrogate is then coupled to a three-phase electrical interface in MATLAB/Simulink, where predicted PCC active power controls a variable resistive load and predicted reactive power is realized through controlled current sources synchronized to the PCC voltage. Across two 41-s AI workload profiles, including an additional Pip"
-  },
-  {
-   "key": "arxiv:2611.25471",
-   "source": "arXiv",
-   "id": "2611.25471",
-   "title": "A four-level executable validation protocol for evaluating LLM-generated topology specifications of physics-based HVAC digital twins",
-   "abstract": "Physics-based digital twins of air conditioning, a principal energy consumer in manufacturing and buildings, can be generated automatically from a declarative specification of its equipment, connections, and sizing. Large language models (LLMs) now write such specifications from plain-language descriptions. Evaluations of these specifications stop at parse success, completed runs, or textual similarity, and cannot reject a model that converges in simulation but is physically wrong. In this study, a four-level protocol is proposed that tests whether an LLM-written specification not only executes but also yields a physically valid digital twin. Each specification is executed through static validity, model build, simulation convergence, and behavioral equivalence with a hidden reference model within bands calibrated by $\\pm$20% sizing perturbations. The protocol was applied to eight LLMs and fourteen HVAC topologies, five describing an existing low-humidity test chamber. To test for authorship bias, engineers and a second model family also described six topologies. Within three repairs, seven of eight models built in 98.6 to 100% of trials, with simulations converging in at least 80.0%, but reached behavioral equivalence in only 50.0 to 98.6%. About half of the failed trials converged, but not to the reference steady state, mostly in desiccant rotor systems. Pooled pass rates varied by under five percentage points across description authors. These results imply that the physics hardest to model in each field, here the desiccant rotor, must enter the generation framework as validation levels. The protocol can be adapted to other fields that generate executable digital twins from declarative specifications.",
-   "authors": [
-    {
-     "name": "Younghwan Joo",
-     "affiliations": []
-    },
-    {
-     "name": "Jeonghoon Han",
-     "affiliations": []
-    },
-    {
-     "name": "Sanghyun Oh",
-     "affiliations": []
-    },
-    {
-     "name": "Soosik Bang",
-     "affiliations": []
-    },
-    {
-     "name": "Sung-il Kim",
+     "name": "Fei Teng",
      "affiliations": []
     }
    ],
    "categories": [
     "eess.SY",
-    "cs.AI",
-    "cs.LG",
-    "cs.SE"
+    "cs.AI"
    ],
    "primary_category": "eess.SY",
-   "date": "2026-11-19",
-   "url": "https://arxiv.org/abs/2611.25471",
+   "date": "2026-11-20",
+   "url": "https://arxiv.org/abs/2611.27576",
+   "matched_terms": [
+    "data centers"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Unlocking Heterogeneous Accelerator Flexibility in AI Data Centers: Sizing and Workload Allocation Chenghao Lyu, Ying Yu, Wangkun Xu, and Fei Teng Affiliation: Department of Electrical and Electronic Engineering, Imperial College London , London, UK {chenghao.lyu26, ying.yu24, wangkun.xu18, f.teng}@imperial.ac.uk Abstract AI data centers are an emerging electricity demand, but limited local grid capacity could delay their connection and expansion. While existing operational strategies consider spatio-temporal workload flexibility, few studies address the strategic sizing and allocation of diverse accelerator archetypes with different capital and energy-efficiency trade-offs. This paper unlocks the flexibility potential of heterogeneous accelerators by jointly sizing and allocating different AI workloads (training, delay-tolerant batch work, and online inference requests) across sites and hours to meet the time-varying grid constraint at minimum cost. Workload-specific throughput and energy coefficients link these decisions to facility power. In a representative two-site case, heterogeneous sizing reduces daily cost by 6.5% relative to spatio-temporal scheduling with fixed capacity. When evaluated using workload-specific performance, a capacity design based on workload-averaged hardware coefficients costs 7.7% more than the proposed design. The proposed design also eliminates the envelope violations of an unconstrained design at a 0.25% daily cost increase. These results show how hardware heterogeneity and workload flexibility jointly shape economical, grid-compliant capacity plans. Index Terms: AI data centers, capacity sizing, grid power envelopes, hardware heterogeneity, spatio-temporal workload scheduling."
+  },
+  {
+   "key": "arxiv:2611.27489",
+   "source": "arXiv",
+   "id": "2611.27489",
+   "title": "Efficient Natural Language to Temporal Logic Translation for Real-Time Physical AI",
+   "abstract": "Robots can be controlled to perform tasks with guaranteed correctness when the task instructions are stated in a formal language. Large language models (LLMs) have been widely used to allow users to provide such instructions in natural language (NL), by translating NL into formal language. When deploying such translators on a robot, however, we face limited computing and energy resources, while offloading computation or data to the cloud may be infeasible or undesirable. Yet an LLM is a general-purpose text generator, whereas a formula in a fixed formal language fragment follows a well-defined syntax. We therefore ask whether text generation is needed at all. For the formal language of linear temporal logic (LTL), we show that this translation can instead be broken down into answering a set of questions with pre-defined answers. We then construct a System-One model, a recent class of NL-based classifier, to provide such answers and enable us to translate a natural language instruction into an LTL instruction. On three benchmarks, our translator matches or exceeds the accuracy of the best local LLMs available, at up to one order of magnitude lower runtime and energy consumption. We show that it generalizes to unseen atomic propositions and temporal patterns.",
+   "authors": [
+    {
+     "name": "Oliver Schön",
+     "affiliations": []
+    },
+    {
+     "name": "Adrien Banse",
+     "affiliations": []
+    },
+    {
+     "name": "John Lygeros",
+     "affiliations": []
+    },
+    {
+     "name": "Lars Lindemann",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LO",
+    "cs.RO",
+    "eess.SY"
+   ],
+   "primary_category": "cs.AI",
+   "date": "2026-11-20",
+   "url": "https://arxiv.org/abs/2611.27489",
    "matched_terms": [
     "large language models",
     "llm",
     "llms"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "(HTML version not available: HTTPError)"
+   "affiliation_block": "Efficient Natural Language to Temporal Logic Translation for Real-Time Physical AI Oliver Schön Email: oschoen@ethz.ch Adrien Banse Email: abanse@ethz.ch John Lygeros Email: jlygeros@ethz.ch Lars Lindemann Email: llindemann@ethz.ch Affiliation: Automatic Control Laboratory, ETH Zürich, Switzerland Abstract Robots can be controlled to perform tasks with guaranteed correctness when the task instructions are stated in a formal language. Large language models (LLMs) have been widely used to allow users to provide such instructions in natural language (NL), by translating NL into formal language. When deploying such translators on a robot, however, we face limited computing and energy resources, while offloading computation or data to the cloud may be infeasible or undesirable. Yet an LLM is a general-purpose text generator, whereas a formula in a fixed formal language fragment follows a well-defined syntax. We therefore ask whether text generation is needed at all. For the formal language of linear temporal logic (LTL), we show that this translation can instead be broken down into answering a set of questions with pre-defined answers. We then construct a System-One model, a recent class of NL-based classifier, to provide such answers and enable us to translate a natural language instruction into an LTL instruction. On three benchmarks, our translator matches or exceeds the accuracy of the best local LLMs available, at up to one order of magnitude lower runtime and energy consumption. We show that it generalizes to unseen atomic propositions and temporal patterns. keywords Natural Language Translation, Formal Language, System-One Models"
   },
   {
-   "key": "arxiv:2611.25176",
+   "key": "arxiv:2611.27169",
    "source": "arXiv",
-   "id": "2611.25176",
-   "title": "Reliability-based Sizing of Energy Storage for Large Load Integration",
-   "abstract": "The number of large loads connected to the bulk power system has been increasing rapidly worldwide. Emerging high-demand facilities, particularly AI data centers, are introducing new challenges for power system planners. In absence of appropriate planning mechanisms, the addition of high volumes of data center loads will lead to an increase in outages, thus degrading reliability of the system. Energy storage systems (ESS) offer a promising solution to mitigate the reliability impacts of these large loads, due to their flexibility and fast-ramping characteristics. However, ESS should be judiciously sized and sited to maximize the reliability benefits to the grid. This paper presents a framework for the optimal sizing and siting of ESS to minimize the adverse reliability impacts of large load additions. First, a stochastic semi-Markov model is developed to model the load of AI data centers and generate profiles for several such facilities. These profiles are then incorporated into a Markov-chain Monte Carlo simulation-based composite system reliability assessment framework. A detailed nodal network model is used to quantify the reliability impacts of adding data centers and to identify buses most affected by large loads. Resource adequacy metrics are used to evaluate the overall system reliability impacts. ESS are then strategically sized and sited based on this analysis to mitigate the negative impacts of large loads on overall system reliability. The proposed framework is demonstrated using the RTS-GMLC 72-bus test system. The results show how ESS can effectively enhance system reliability in the presence of rapidly growing large-load demand. This framework provides system planners, utilities, and regulators with a practical tool for maintaining reliable power system operation using energy storage as more large loads are integrated into the grid.",
+   "id": "2611.27169",
+   "title": "Which Data-Center Load Models Can Be Trusted? An Evidence-Graded Review of Dynamic Modeling and Validation for Large Computational Loads",
+   "abstract": "Grid operators now require dynamic models of data centers and other large computational loads, and new ride-through rules assume that these models predict how facilities respond to disturbances. This review asks what evidence supports that assumption. We coded 160 documents, screened from 1,424 de-duplicated database and seed records plus 65 added documents, by the strongest reference object each presents, from grid-side records to simulation only. Across 19 field-evidence entries, 15 requirement documents from three continents and nine model classes, we find two comparisons of a standard library model with measured data-center events: with default parameters the model failed both, and refitting it to each event separately reduced the error but was never tested on an unseen event. Among the sources reviewed, we found no successful held-out validation of a frozen, facility-specific data-center model against an independent measured disturbance, and 25 of the 33 model-phenomenon combinations with any evidence involve no electrical measurement. The features that distinguish the new rules (memory of repeated dips, recovery within 0.5-3 s, proportional power reduction during the sag, overvoltage response) are those current phasor models cannot represent or have never been tested against. In the operator procedures examined, simulations and model-to-model benchmarks are accepted as evidence of model fidelity, unlike the measured validation required of generators, and proposed mitigations have mostly been evaluated on unvalidated facility models. We propose context-of-use gates that separate calibration from validation, release labels for model claims, a minimum validation protocol with acceptance criteria, and a research agenda.",
    "authors": [
     {
-     "name": "Atri Bera",
-     "affiliations": []
-    },
-    {
-     "name": "Chandan Chaudhary",
-     "affiliations": []
-    },
-    {
-     "name": "Dilip Pandit",
-     "affiliations": []
-    },
-    {
-     "name": "Cody J. Newlun",
-     "affiliations": []
-    },
-    {
-     "name": "Tu A. Nguyen",
-     "affiliations": []
-    },
-    {
-     "name": "Raymond H. Byrne",
-     "affiliations": []
-    },
-    {
-     "name": "Joydeep Mitra",
+     "name": "Dileep Cheerla",
      "affiliations": []
     }
    ],
    "categories": [
-    "eess.SY"
+    "eess.SY",
+    "cs.SE"
    ],
    "primary_category": "eess.SY",
-   "date": "2026-11-18",
-   "url": "https://arxiv.org/abs/2611.25176",
+   "date": "2026-11-20",
+   "url": "https://arxiv.org/abs/2611.27169",
    "matched_terms": [
-    "data center",
-    "data centers"
+    "data centers",
+    "data-center"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "(HTML version not available: HTTPError)"
+   "affiliation_block": "Which Data-Center Load Models Can Be Trusted? An Evidence-Graded Review of Dynamic Modeling and Validation for Large Computational Loads Dileep Cheerla † † thanks: D. Cheerla is an independent researcher, Lewisville, TX, USA (e-mail: dileepreddy.cheerla@gmail.com; ORCID 0009-0004-6581-1899). Preprint, November 2026. This manuscript is a preprint and has not been peer reviewed. † † thanks: This work received no external funding. Abstract Grid operators now require dynamic models of data centers and other large computational loads, and new ride-through rules assume that these models predict how facilities respond to disturbances. This review asks what evidence supports that assumption. We coded 160 documents, screened from 1,424 de-duplicated database and seed records plus 65 added documents, by the strongest reference object each presents, from grid-side records to simulation only. Across 19 field-evidence entries, 15 requirement documents and nine model classes, we find two comparisons of a standard library model with measured data-center events: with default parameters both reported a mismatch, though neither stated an acceptance criterion, and per-event refitting reduced the error but was never tested on an unseen event. Among the sources reviewed, we found no successful held-out validation of a frozen, facility-specific data-center model against an independent measured disturbance, and 25 of the 33 model–phenomenon combinations with any evidence involve no electrical measurement. The features that distinguish the new rules (memory of repeated dips, recovery within 0.5–3 s, proportional power reduction during the sag, overvoltage response) are those current phasor models cannot represent or have never been tested against. In the operator procedures examined, no step compares the submitted model with a measured facility response, unlike the validation required of generators, and proposed mitigations have mostly been evaluated on unvalidated facility models. We propose context-of-use gates that separate calibration from validation, release labels for model claims, a minimum validation protocol with acceptance criteria, and a research agenda. Index Terms: Data centers, electromagnetic transients, evidence grading, large computational loads, load modeling, model validation, power system dynamics, ride-through."
   },
   {
-   "key": "arxiv:2611.24979",
+   "key": "arxiv:2611.26980",
    "source": "arXiv",
-   "id": "2611.24979",
-   "title": "Trace2ST: Recovering PLC Structured Text from I/O Traces with LLM Generation and Verification",
-   "abstract": "Programmable logic controllers (PLCs), the industrial computers that operate power and process plants, often run programs whose source code is no longer available; however, every input and output of the controller is logged continuously. This paper therefore asks whether a large language model (LLM) can recover an executable program in Structured Text (ST), the standard PLC language of IEC 61131-3, from such input/output records (traces) alone and, equally important, how the recovered program can be verified. To answer this question, we build a generate-replay-feedback pipeline. First, the LLM writes a candidate program from a compressed summary of the trace, without ever seeing the original program. The candidate is then executed one control cycle (scan) at a time and compared with the recording, and whenever a mismatch occurs the corresponding part of the trace is returned to the LLM, for at most three revisions. Because every result depends on the software that executes the candidates, we first validate it against two independent open-source PLC runtimes and find no unexplained difference. On this basis, we evaluate 47 third-party programs from two public benchmarks. The recovered programs reproduce the recorded trace exactly in 43 cases and agree with the original on 94% of scans for unseen inputs. The remaining errors, however, lie mostly in program branches that the trace never exercised; once a trace that targets these branches is added, agreement on unseen adversarial inputs rises from 0.80 to 0.98. By contrast, a classical automata-learning baseline without an LLM fits the recording but falls to 0.40 on unseen inputs, which indicates that recovering program structure is the hard part. Finally, on real data from a public water-treatment testbed, the recovered control laws match unseen measurements closely ($R^2 > 0.99$) and expose the only actuator attack in the dataset.",
+   "id": "2611.26980",
+   "title": "Contexture: Runtime Context Eviction for High-Throughput Agent Serving",
+   "abstract": "LLM agents such as Hermes, OpenClaw, and Codex repeatedly resend growing execution histories, increasing shared GPU key-value (KV) cache demand in high-bandwidth memory (HBM). We show that shared KV capacity limits agent-serving throughput. Existing context-reduction methods lack global cache-state visibility, while runtime KV managers lack tool-execution information. Tracing tokens to their originating tool operations reveals that later operations supersede earlier outputs and associated turns, identifying 64% of recorded final-history tokens as removal candidates. We present Contexture, a harness- and model-agnostic architecture for runtime context eviction. Contexture separates the harness's full conversation history from the model's execution context, reducing subsequent requests' KV demand without modifying harness logic or model execution. It combines tool-execution information with global visibility into shared KV pressure and prefix residency: supersession identifies removal candidates, while runtime state determines when removal justifies sacrificing cached computation. This coordination reduces memory demand and decode KV traffic while limiting re-prefill interference with concurrent decoding, without additional model calls or training. Across two models, two harnesses, and two benchmarks, Contexture improves throughput under SLO by 20-73% over the best of no eviction, harness compaction, AgentDiet, and Continuum, and by 7-63% over observation masking in five of eight configurations, and reduces GPU energy per completed session by up to 11%. It also raises throughput under SLO by 23% over LMCache alone on H100. Live-agent experiments show a mean accuracy improvement of 1.4 percentage points over unloaded no eviction, with a worst-case loss of 3.7 points, while observation masking loses 3-28 points.",
    "authors": [
     {
-     "name": "Hsi Chang",
+     "name": "Colin Hong",
      "affiliations": []
     },
     {
-     "name": "Irfan Khan",
+     "name": "Bryan Shan",
+     "affiliations": []
+    },
+    {
+     "name": "Wei Siong Pang",
+     "affiliations": []
+    },
+    {
+     "name": "Chengzhi Lu",
+     "affiliations": []
+    },
+    {
+     "name": "Xu Guo",
+     "affiliations": []
+    },
+    {
+     "name": "Nitin Shivaraman",
+     "affiliations": []
+    },
+    {
+     "name": "Tao Luo",
+     "affiliations": []
+    },
+    {
+     "name": "Esha Choukse",
+     "affiliations": []
+    },
+    {
+     "name": "Kisson Lin",
+     "affiliations": []
+    },
+    {
+     "name": "Dmitrii Ustiugov",
      "affiliations": []
     }
    ],
    "categories": [
-    "cs.SE",
+    "cs.DC",
     "cs.AI",
-    "cs.CY",
-    "cs.PL",
-    "eess.SY"
+    "cs.MA",
+    "cs.OS"
    ],
-   "primary_category": "cs.SE",
-   "date": "2026-11-17",
-   "url": "https://arxiv.org/abs/2611.24979",
+   "primary_category": "cs.DC",
+   "date": "2026-11-20",
+   "url": "https://arxiv.org/abs/2611.26980",
    "matched_terms": [
-    "large language model",
+    "gpu",
     "llm"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Trace2ST: Recovering PLC Structured Text from I/O Traces with LLM Generation and Verification Hsi Chang Affiliation: School of Electrical, Computer and Energy Engineering Arizona State University Phoenix, Arizona, USA xhan570@asu.edu Irfan Khan Affiliation: Clean and Resilient Energy Systems (CARES) Lab Marine Engineering Technology, in a joint affiliate appointment with Electrical and Computer Engineering Texas A&M University, College Station, USA irfankhan@tamu.edu Abstract Programmable logic controllers (PLCs), the industrial computers that operate power and process plants, often run programs whose source code is no longer available; however, every input and output of the controller is logged continuously. This paper therefore asks whether a large language model (LLM) can recover an executable program in Structured Text (ST), the standard PLC language of IEC 61131-3, from such input/output records (traces) alone and, equally important, how the recovered program can be verified. To answer this question, we build a generate–replay–feedback pipeline. First, the LLM writes a candidate program from a compressed summary of the trace, without ever seeing the original program. The candidate is then executed one control cycle (scan) at a time and compared with the recording, and whenever a mismatch occurs the corresponding part of the trace is returned to the LLM, for at most three revisions. Because every result depends on the software that executes the candidates, we first validate it against two independent open-source PLC runtimes and find no unexplained difference. On this basis, we evaluate 47 third-party programs from two public benchmarks. The recovered programs reproduce the recorded trace exactly in 43 cases and agree with the original on 94 % of scans for unseen inputs. The remaining errors, however, lie mostly in program branches that the trace never exercised; once a trace that targets these branches is added, agreement on unseen adversarial inputs rises from 0.80 to 0.98. By contrast, a classical automata-learning baseline without an LLM fits the recording but falls to 0.40 on unseen inputs, which indicates that recovering program structure is the hard part. Finally, on real data from a public water-treatment testbed, the recovered control laws match unseen measurements closely ( R 2 > 0.99 R^{2}>0.99 ) and expose the only actuator attack in the dataset. Index Terms: PLC, IEC 61131-3, Structured Text, large language models, program recovery, differ"
+   "affiliation_block": "Contexture: Runtime Context Eviction for High-Throughput Agent Serving Colin Hong Affiliation: Nanyang Technological University , Singapore , Bryan Shan Affiliation: Nanyang Technological University , Singapore , Wei Siong Pang Affiliation: Nanyang Technological University , Singapore , Chengzhi Lu Affiliation: Nanyang Technological University , Singapore , Xu Guo Affiliation: Nanyang Technological University , Singapore , Nitin Shivaraman Affiliation: IAIC, A*STAR , Singapore , Tao Luo Affiliation: IAIC, A*STAR , Singapore , Esha Choukse Affiliation: Microsoft , USA , Kisson Lin Affiliation: SuperMem Pte. Ltd. , Singapore and Dmitrii Ustiugov Affiliation: Nanyang Technological University , Singapore Abstract. LLM agents such as Hermes, OpenClaw, and Codex repeatedly resend growing execution histories, increasing shared GPU key-value (KV) cache demand in high-bandwidth memory (HBM). We show that shared KV capacity limits agent-serving throughput. Existing context-reduction methods lack global cache-state visibility, while runtime KV managers lack tool-execution information. Tracing tokens to their originating tool operations reveals that later operations supersede earlier outputs and associated turns, identifying 64% of recorded final-history tokens as removal candidates. We present Contexture, a harness- and model-agnostic architecture for runtime context eviction. Contexture separates the harness’s full conversation history from the model’s execution context, reducing subsequent requests’ KV demand without modifying harness logic or model execution. It combines tool-execution information with global visibility into shared KV pressure and prefix residency: supersession identifies removal candidates, while runtime state determines when removal justifies sacrificing cached computation. This coordination reduces memory demand and decode KV traffic while limiting re-prefill interference with concurrent decoding, without additional model calls or training. Across two models, two harnesses, and two benchmarks, Contexture improves throughput under SLO by 20–73% over the best of no eviction, harness compaction, AgentDiet, and Continuum, and by 7–63% over observation masking in five of eight configurations, and reduces GPU energy per completed session by up to 11%. It also raises throughput under SLO by 23% over LMCache alone on H100. Live-agent experiments show a mean accuracy improvement of 1.4 percentage points over unloaded no eviction, with a worst-case loss "
   },
   {
-   "key": "doi:10.1016/j.apenergy.2026.129287",
-   "source": "journal",
-   "journal": "Applied Energy",
-   "journal_short": "Applied Energy",
-   "doi": "10.1016/j.apenergy.2026.129287",
-   "title": "Technology trajectories and critical raw materials in sodium-ion battery innovation: An LLM-assisted patent analysis",
-   "abstract": "",
-   "abstract_source": "",
+   "key": "arxiv:2611.26840",
+   "source": "arXiv",
+   "id": "2611.26840",
+   "title": "Contention-Aware Flexible Execution for Machine Learning Workloads",
+   "abstract": "Concurrent kernel execution is a ubiquitous paradigm in artificial intelligence (AI) and machine learning (ML) across both training and inference. That said, concurrency causes potential slowdown as concurrent kernels contend for limited GPU resources (cores, caches, memory bandwidth), which are shared between these kernels rather than exclusively available to one, as in isolated execution. This raises an important research question: to what extent does concurrency slow down kernel execution and how can it be mitigated. To answer this question, our work presents two studies. First, we characterize concurrent kernel execution extensively for the first time, to our knowledge. We conduct not just performance analysis of concurrent kernels but also memory behavior under concurrency on state-of-the-art AMD Instinct MI300X GPUs designed for datacenter AI, using the AMD-internal millisecond sampler. Based on the observations, we share insights on the slowdown along two dimensions (memory vs. compute bound, large vs. small kernels) to inform future optimizations. Second, we put the derived insights to use, aiming to deliver higher performance via targeted, flexible overlap of ML operators. Frameworks today make the simple decision of early-first for concurrent kernels, which is suboptimal. Noticing the opportunity that ML dataflow has inherent flexibility in which operators can be overlapped and how hardware resources can be allocated, we deduce simple heuristics to tune both overlap anchors and resource allocation for concurrent kernels to improve performance. We evaluate our proposed contention-aware flexible execution (termed CAFEML) across a variety of ML scenarios (inference decode, inference prefill, training) and demonstrate a speedup of up to 13% end-to-end with simple scheduling changes and no kernel rewrites.",
    "authors": [
     {
-     "name": "Niklas Smit",
+     "name": "Marco Kurzynski",
      "affiliations": []
     },
     {
-     "name": "Tim Greitemeier",
+     "name": "Shaizeen Aga",
      "affiliations": []
     },
     {
-     "name": "Simon Lux",
+     "name": "Di Wu",
      "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-19",
+   "url": "https://arxiv.org/abs/2611.26840",
+   "matched_terms": [
+    "datacenter"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Contention-Aware Flexible Execution for Machine Learning Workloads Marco Kurzynski Note: This work was done while the author was an intern with AMD Research. Affiliation: University of Central Florida , Orlando , Florida , USA email: marco.kurzynski@ucf.edu , Shaizeen Aga Affiliation: Advanced Micro Devices, Inc. , Santa Clara , California , USA email: shaizeen.aga@amd.com and Di Wu Affiliation: University of Central Florida , Orlando , Florida , USA email: di.wu@ucf.edu © none Abstract. Concurrent kernel execution is a ubiquitous paradigm in artificial intelligence (AI) and machine learning (ML) across both training and inference. That said, concurrency causes potential slowdown as concurrent kernels contend for limited GPU resources (cores, caches, memory bandwidth), which are shared between these kernels rather than exclusively available to one, as in isolated execution. This raises an important research question: to what extent does concurrency slow down kernel execution and how can it be mitigated. To answer this question, our work presents two studies. First, we characterize concurrent kernel execution extensively for the first time, to our knowledge. We conduct not just performance analysis of concurrent kernels but also memory behavior under concurrency on state-of-the-art AMD Instinct ™ MI300X GPUs designed for datacenter AI, using the AMD-internal millisecond sampler. Based on the observations, we share insights on the slowdown along two dimensions (memory vs. compute bound, large vs. small kernels) to inform future optimizations. Second, we put the derived insights to use, aiming to deliver higher performance via targeted, flexible overlap of ML operators. Frameworks today make the simple decision of early-first for concurrent kernels, which is suboptimal. Noticing the opportunity that ML dataflow has inherent flexibility in which operators can be overlapped and how hardware resources can be allocated, we deduce simple heuristics to tune both overlap anchors and resource allocation for concurrent kernels to improve performance. We evaluate our proposed contention-aware flexible execution (termed CAFEML 1 1 1 CAFEML , pronounced as “cafe-mal” is a reference to a camel’s targeted flexibility. ) across a variety of ML scenarios (inference decode, inference prefill, training) and demonstrate a speedup of up to 13% end-to-end with simple scheduling changes and no kernel rewrites. Keywords: Machine Learning, Concurrency Characterization, Flexible Over"
+  },
+  {
+   "key": "arxiv:2611.26763",
+   "source": "arXiv",
+   "id": "2611.26763",
+   "title": "Search-Informed MPPI for Kinodynamic Motion Planning via Monte Carlo Tree Expansion",
+   "abstract": "Kinodynamic motion planning in large-scale, cluttered environments remains challenging, as dynamically feasible, collision-free trajectories must be computed efficiently over long horizons. Monte Carlo Tree Search (MCTS) can strategically explore long-horizon alternatives but faces large branching factors in continuous control spaces and often relies on random default-policy rollouts, whereas Model Predictive Path Integral (MPPI) efficiently optimizes local trajectories yet remains susceptible to obstacle-induced local minima. To overcome these challenges, we propose Search-Informed MPPI (SI-MPPI), a unified framework that embeds MPPI trajectory optimization within MCTS-based tree search. The core concept is to fuse the expansion and default-policy simulation stages of MCTS into a single MPPI expansion stage guided by structured intermediate targets, termed baits. During each expansion, an adaptive bait-handling rule retains geometrically valid baits as local targets for GPU-batched MPPI optimizations that generate dynamically feasible candidate motion segments. Feasibility gating then checks these candidates for collision safety and sufficient progress, and top-$k$ selection admits the lowest-cost accepted candidates as tree edges, yielding sparse, directed tree growth; thereafter, effective sample size (ESS)-guided adaptation warm-starts subsequent expansions, while cost-based backpropagation updates tree statistics. Extensive simulations across four large-scale, cluttered 2D occupancy-grid maps demonstrate that SI-MPPI consistently produces the smallest search trees and smoothest angular control profiles compared with three kinodynamic baselines, while maintaining competitive planning times and path lengths. Ablation results further highlight the importance of GPU batching, adaptive bait handling, and retaining multiple expansion candidates for planning efficiency and robustness.",
+   "authors": [
+    {
+     "name": "Ihab S. Mohamed",
+     "affiliations": []
+    },
+    {
+     "name": "Lantao Liu",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.RO",
+    "eess.SY"
+   ],
+   "primary_category": "cs.RO",
+   "date": "2026-11-19",
+   "url": "https://arxiv.org/abs/2611.26763",
+   "matched_terms": [
+    "gpu"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Search-Informed MPPI for Kinodynamic Motion Planning via Monte Carlo Tree Expansion Ihab S. Mohamed Lantao Liu † † thanks: Authors are with the Luddy School of Informatics, Computing, and Engineering, Indiana University, Bloomington, IN 47408, USA (e-mail: {mohamedi & lantao}@iu.edu ). Note to Practitioners Autonomous mobile robots in warehouses, factories, hospitals, and greenhouses must plan long routes through cluttered layouts while respecting how they can physically move. Widely used planners involve practical trade-offs: sampling-based planners such as the asymptotically optimal Rapidly-exploring Random Tree (RRT ∗ ) and its variants may spend considerable computation exploring regions irrelevant to the task, grid-based planners depend on map resolution, and lattice-based planners often rely on predefined motion primitives. This paper presents SI-MPPI, a planner that uses tree search to decide which routes are worth exploring and MPPI to optimize many short, dynamically feasible motion candidates in parallel on a laptop-grade GPU, retaining low-cost candidates that satisfy collision-safety and progress checks. The planner operates directly on standard 2D occupancy-grid maps, using the robot’s motion model for trajectory generation and its footprint for collision checking. In simulations on four 100 m × 100 m $100\\text{\\,}\\mathrm{m}$\\times$100\\text{\\,}\\mathrm{m}$ cluttered maps, SI-MPPI consistently produced the smoothest steering commands under a common parameter configuration, potentially reducing actuator wear and payload disturbance. Averaged across these maps, it built search trees roughly 7 7 – 15 × 15\\times smaller than those of the evaluated baselines and planned about 10 10 – 27 × 27\\times faster than the RRT ∗ -based planners, while maintaining comparable or shorter path lengths. Practitioners should note that the proposed framework currently targets static, known maps, does not guarantee the shortest route, and produces planned trajectories with relatively low speeds; for higher-speed execution, however, a separate receding-horizon MPPI controller can track the resulting waypoints, as illustrated in the supplementary video. Future work will extend the approach to robots with more complex dynamics and to speed-aware planning. Index Terms: Kinodynamic motion planning, Monte Carlo tree search, model predictive path integral control, GPU-accelerated motion planning, autonomous mobile robots."
+  },
+  {
+   "key": "doi:10.1038/s41467-026-78715-2",
+   "source": "journal",
+   "journal": "Nature Communications",
+   "journal_short": "Nature Communications",
+   "doi": "10.1038/s41467-026-78715-2",
+   "title": "Automated data to model transformation for constraint programming with AI",
+   "abstract": "Artificial intelligence for combinatorial optimization depends on high-quality, structured training data, yet transforming ambiguous natural-language descriptions into precise, executable formal models remains a major bottleneck, traditionally requiring extensive manual effort and domain expertise. We develop CPAM-LLM, an automated constraint-programming modeling framework based on large language models that converts unstructured problem specifications into validated and executable formal models. The framework integrates retrieval-augmented generation grounded in formal concept analysis for structural validation, chaos-mapping-based data augmentation to enhance cross-domain generalization, and dynamic constraint adaptation to accommodate evolving problem settings. We demonstrate its effectiveness across five scenarios, including DNA sequence design, reconfigurable energy storage systems, and unmanned vehicle logistics. The results show that the framework can automate the data-to-model pipeline while adapting reliably to changing requirements, providing a practical approach to automated data formalization and indicating the importance of accessible, high-quality structured data for reliable downstream artificial intelligence applications.",
+   "abstract_source": "openalex",
+   "authors": [
+    {
+     "name": "Zhengqi Shi",
+     "affiliations": [
+      "Huazhong University of Science and Technology"
+     ]
+    },
+    {
+     "name": "Jin Huang",
+     "affiliations": [
+      "Huazhong University of Science and Technology"
+     ]
+    },
+    {
+     "name": "Xinyu Li",
+     "affiliations": [
+      "Huazhong University of Science and Technology"
+     ]
+    },
+    {
+     "name": "Hao Zhang",
+     "affiliations": [
+      "Huazhong University of Science and Technology"
+     ]
+    },
+    {
+     "name": "Mingming Peng",
+     "affiliations": [
+      "Huazhong University of Science and Technology"
+     ]
+    },
+    {
+     "name": "Xinyi Yang",
+     "affiliations": [
+      "Huazhong University of Science and Technology"
+     ]
+    },
+    {
+     "name": "Qihao Liu",
+     "affiliations": [
+      "Huazhong University of Science and Technology"
+     ]
+    },
+    {
+     "name": "Shaosen Su",
+     "affiliations": [
+      "Huazhong University of Science and Technology"
+     ]
+    },
+    {
+     "name": "Chunjiang Zhang",
+     "affiliations": [
+      "Huazhong University of Science and Technology"
+     ]
+    },
+    {
+     "name": "Peigen Li",
+     "affiliations": [
+      "Huazhong University of Science and Technology"
+     ]
+    },
+    {
+     "name": "Liang Gao",
+     "affiliations": [
+      "Huazhong University of Science and Technology"
+     ]
     }
    ],
    "type": "journal-article",
    "date": "2026-11-19",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129287",
+   "url": "https://doi.org/10.1038/s41467-026-78715-2",
    "matched_terms": [
+    "large language models",
     "llm"
    ],
-   "screened_on": "title only",
-   "affiliation_source": "not available yet"
+   "screened_on": "title+abstract",
+   "affiliation_source": "openalex"
   }
  ],
- "title_only_final": [],
- "pending_items": [
-  {
-   "source": "Applied Energy",
-   "title": "An adaptive fusion-based feature selection pipeline for battery pack state-of-health estimation within a machine learning framework",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129188",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Bio-based deep eutectic solvents as advanced phase change media for solar thermal storage: Mechanisms, computational design, and industrial deployment challenges",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129210",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "An integrated spectrally selective photovoltaic and radiative-cooling system for power generation and all-day atmospheric water harvesting",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129217",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Parametric PINNs for redox flow batteries: Physics-constrained flow field modeling and prediction",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129222",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Modeling and performance assessment of a dual-function collector featuring a transparent compound parabolic concentrator for simultaneous solar energy harvesting and radiative cooling",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129253",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Deliverability-aware ancillary service coordination for grid-forming dynamic virtual power plants",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129255",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Collaborative multi-objective dispatch of cascade hydro-wind-solar systems based on adaptive density reshaping evolutionary algorithm",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129263",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Transmission–distribution–microgrid coordination for hierarchical power grid integration: A low-carbon perspective",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129264",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Adaptive evaluation framework for computationally expensive bi-level hybrid energy storage system planning under renewable uncertainty",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129268",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "MAC-at-risk: a climate-risk-hedged marginal abatement cost framework for CSP-based green hydrogen under 2026–2050 scenarios",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129269",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Decarbonizing residential buildings: Evaluating heat pump solar and battery renovation pathways",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129270",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Interpretable day-ahead sister interval forecasting of distributed photovoltaic power under generalized weather scenarios",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129273",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "From accelerated aging to standard cycling: timescale-aligned state-of-health trajectory prediction for lithium-ion batteries",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129265",
-   "first_seen": "2026-11-17"
-  },
+ "title_only_final": [
   {
    "source": "Applied Energy",
    "title": "Learnable delay-stability coupling for energy-information co-optimization in smart grids",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129248",
-   "first_seen": "2026-11-17"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129248"
   },
   {
    "source": "Applied Energy",
    "title": "Continual reinforcement learning for adaptive ship energy efficiency optimization: A LoRA-enabled low-parameter incremental framework",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129272",
-   "first_seen": "2026-11-17"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129272"
   },
   {
    "source": "Applied Energy",
    "title": "Secure microgrid formation–oriented uncertainty-aware frequency-constrained proactive scheduling in resilient distribution systems",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129247",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "source": "Nature Rev. EE",
-   "title": "Unlocking cycle life of lithium-metal batteries",
-   "url": "https://doi.org/10.1038/s44287-026-00356-w",
-   "first_seen": "2026-11-17"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129247"
   },
   {
    "source": "Applied Energy",
    "title": "Physical field coupling in hydrogen production: A critical review from single-field to multi-field synergistic mechanisms",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129301",
-   "first_seen": "2026-11-18"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129301"
   },
   {
    "source": "Applied Energy",
    "title": "Flexibility-oriented hierarchical energy management for transmission–distribution–microgrid coordination",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129251",
-   "first_seen": "2026-11-18"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129251"
   },
   {
    "source": "Nature Energy",
    "title": "Targeted technology coadoption for reconciling energy savings and equity gains in the residential energy transition",
-   "url": "https://doi.org/10.1038/s41560-026-02164-w",
-   "first_seen": "2026-11-18"
+   "url": "https://doi.org/10.1038/s41560-026-02164-w"
   },
   {
-   "source": "TPWRS",
-   "title": "Balancing In-Distribution Performance and Distribution-Shift Robustness in Distributionally Robust Optimal Power Flow through Deep Ensemble-Based Uncertainty Quantification",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3754517",
-   "first_seen": "2026-11-19"
+   "source": "Applied Energy",
+   "title": "An adaptive fusion-based feature selection pipeline for battery pack state-of-health estimation within a machine learning framework",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129188"
   },
   {
-   "source": "TPWRS",
-   "title": "Unified Dissipating Energy Flow for Data-Driven Identification of Oscillation Source Locations",
-   "url": "https://doi.org/10.1109/tpwrs.2026.3754890",
-   "first_seen": "2026-11-19"
+   "source": "Applied Energy",
+   "title": "Bio-based deep eutectic solvents as advanced phase change media for solar thermal storage: Mechanisms, computational design, and industrial deployment challenges",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129210"
   },
+  {
+   "source": "Applied Energy",
+   "title": "An integrated spectrally selective photovoltaic and radiative-cooling system for power generation and all-day atmospheric water harvesting",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129217"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Parametric PINNs for redox flow batteries: Physics-constrained flow field modeling and prediction",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129222"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Modeling and performance assessment of a dual-function collector featuring a transparent compound parabolic concentrator for simultaneous solar energy harvesting and radiative cooling",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129253"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Deliverability-aware ancillary service coordination for grid-forming dynamic virtual power plants",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129255"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Collaborative multi-objective dispatch of cascade hydro-wind-solar systems based on adaptive density reshaping evolutionary algorithm",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129263"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Transmission–distribution–microgrid coordination for hierarchical power grid integration: A low-carbon perspective",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129264"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Adaptive evaluation framework for computationally expensive bi-level hybrid energy storage system planning under renewable uncertainty",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129268"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "MAC-at-risk: a climate-risk-hedged marginal abatement cost framework for CSP-based green hydrogen under 2026–2050 scenarios",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129269"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Decarbonizing residential buildings: Evaluating heat pump solar and battery renovation pathways",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129270"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Interpretable day-ahead sister interval forecasting of distributed photovoltaic power under generalized weather scenarios",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129273"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "From accelerated aging to standard cycling: timescale-aligned state-of-health trajectory prediction for lithium-ion batteries",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129265"
+  },
+  {
+   "source": "Nature Rev. EE",
+   "title": "Unlocking cycle life of lithium-metal batteries",
+   "url": "https://doi.org/10.1038/s44287-026-00356-w"
+  }
+ ],
+ "pending_items": [
   {
    "source": "Applied Energy",
    "title": "A probabilistic region-based model for evaluating the integrated hosting capacity of photovoltaics and electric vehicles in power distribution networks",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129064",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Comparative analysis of PV allocation rules in heterogeneous energy communities for collective self-consumption",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129279",
    "first_seen": "2026-11-19"
   },
   {
@@ -608,138 +571,6 @@
    "title": "Unified regime partitioning and dominant energy-domain identification for heterogeneous energy-coupling systems",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129295",
    "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "A continental dilemma: Is centralized or decentralized renewable hydrogen cheaper?",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129254",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Stochastic assessment of eight emergency electricity supply configurations for urban shelters: Performance limits and the role of vehicle-to-shelter",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129291",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Energy",
-   "title": "Exploring the distributional implications of targeted residential electrification in California",
-   "url": "https://doi.org/10.1038/s41560-026-02155-x",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "LRRK2-mediated phosphorylation of exocytic RABs disrupts neurotrophin/neuropeptide secretion",
-   "url": "https://doi.org/10.1038/s41467-026-77820-6",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Selective mTOR inhibition via FLCN drives TFE3-dependent VLDL-TG secretion and protects from MAFLD/MASH",
-   "url": "https://doi.org/10.1038/s41467-026-79397-6",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Structure-guided design of a dual-antigen mRNA vaccine conferring broad protection against Henipaviruses",
-   "url": "https://doi.org/10.1038/s41467-026-79459-9",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Interstitial proton buffering enables decoupled transfer dynamics for acidic wastewater decontamination",
-   "url": "https://doi.org/10.1038/s41467-026-78926-7",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "The evolutionary plateau of efflux-mediated drug resistance in mycobacteria",
-   "url": "https://doi.org/10.1038/s41467-026-79513-6",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Atom-level pinning effect reinforced electrooxidative coupling of anilines into azos",
-   "url": "https://doi.org/10.1038/s41467-026-79417-5",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Automated data to model transformation for constraint programming with AI",
-   "url": "https://doi.org/10.1038/s41467-026-78715-2",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Macrophage-exacerbated viral lung injury and mechanical overdistension-driven bacterial superinfection replicated in a human lung chip",
-   "url": "https://doi.org/10.1038/s41467-026-78889-9",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Numerosity is directly sensed and dynamically transformed in the human brain",
-   "url": "https://doi.org/10.1038/s41467-026-79330-x",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Bicyclo[2.1.1]hexanes as saturated bioisosteres of meta-benzene",
-   "url": "https://doi.org/10.1038/s41467-026-79402-y",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Vertically aligned dual-channel metal-organic framework nanosheet membranes for gas separation",
-   "url": "https://doi.org/10.1038/s41467-026-77853-x",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Rapid and selective metal-free O2 reduction to H2O2 using a molecular CpN3 electrocatalyst",
-   "url": "https://doi.org/10.1038/s41467-026-79096-2",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Governing cryospheric risk beyond political timeframes",
-   "url": "https://doi.org/10.1038/s41467-026-79617-z",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "A defence-in-depth strategy for securing AI-driven biological sequence design",
-   "url": "https://doi.org/10.1038/s41467-026-78758-5",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "In vivo programming of dual-targeted CAR-T cells facilitates vascular disruption and T-cell infiltration in solid tumors",
-   "url": "https://doi.org/10.1038/s41467-026-79342-7",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Facial photographs reveal mortality risk beyond triage and clinical risk scores",
-   "url": "https://doi.org/10.1038/s41467-026-79581-8",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "source": "TSG",
-   "title": "A Vine Copula Conformal Approach to State Estimation for Low-Voltage Distribution Feeders",
-   "url": "https://doi.org/10.1109/tsg.2026.3755945",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "source": "TSG",
-   "title": "Real-Time Neural Distributed Energy Resources Dispatch with Feasibility Guarantees",
-   "url": "https://doi.org/10.1109/tsg.2026.3755951",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Operating-point-dependent power-flow linearisation for joint siting, sizing, and dispatch of long-duration energy storage in distribution grids",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129280",
-   "first_seen": "2026-11-20"
   },
   {
    "source": "Applied Energy",
@@ -766,140 +597,134 @@
    "first_seen": "2026-11-20"
   },
   {
-   "source": "Nature Communications",
-   "title": "Symmetry-breaking antibody binding reveals extensive capsid malleability in pandemic human norovirus",
-   "url": "https://doi.org/10.1038/s41467-026-79222-0",
-   "first_seen": "2026-11-20"
+   "source": "Applied Energy",
+   "title": "Integrating farm and solar business practices for agrivoltaics financial analysis",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129078",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Evacuation route optimization for mixed bus fleets nder energy consumption uncertainty prior to typhoon landfall",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129308",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Industry–region interactions shape decarbonisation policy effectiveness while renewable deliverability bounds transferability",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129299",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "State of temperature estimation for cylindrical lithium-ion batteries: challenges and solutions",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129297",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Risk-aware operation of electric vehicle aggregators in uncertain electricity markets using game theory and Markowitz framework",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129312",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Agentic predictive control for residential PV-battery systems: from natural-language scheduling requests to receding-horizon dispatch",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129173",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Structural separation of adjacent photovoltaic arrays for area-based capacity attribution from high-resolution remote sensing imagery",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129278",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Unlocking public EV charging flexibility for grid balancing: A year-long empirical assessment of unidirectional and bidirectional smart charging in Prague",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129307",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "An asymmetric multi-scale time-frequency fusion network with dynamic sparse experts and adaptive optimization for ultra-short-term load forecasting",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129310",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "System-level optimization of seawater-based water supply and cooling for large-scale green hydrogen and ammonia production under variable renewable operation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129271",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Comparative multi-criteria assessment of hydrogen production pathways for nuclear microreactor deployment",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129300",
+   "first_seen": "2026-11-23"
   },
   {
    "source": "Nature Communications",
-   "title": "Asymmetric coordination triggers dual-site synergy in gold nanoclusters for efficient aerobic oxidation",
-   "url": "https://doi.org/10.1038/s41467-026-79369-w",
-   "first_seen": "2026-11-20"
+   "title": "ORE1 stabilizes PIF4 protein through a UBP12/UBP13-dependent regulatory module in thermomorphogenesis",
+   "url": "https://doi.org/10.1038/s41467-026-79802-0",
+   "first_seen": "2026-11-23"
   },
   {
    "source": "Nature Communications",
-   "title": "Atomically ordered few-layer molybdenum boride MBenes for enhanced electromagnetic response",
-   "url": "https://doi.org/10.1038/s41467-026-79512-7",
-   "first_seen": "2026-11-20"
+   "title": "Non Hermitian synthetic phase shifter with topologically protected phase control via tunable losses",
+   "url": "https://doi.org/10.1038/s41467-026-79534-1",
+   "first_seen": "2026-11-23"
   },
   {
    "source": "Nature Communications",
-   "title": "Hybrid-parity sliding multiferroics",
-   "url": "https://doi.org/10.1038/s41467-026-79435-3",
-   "first_seen": "2026-11-20"
+   "title": "Marine volatile organic compounds air-sea exchange dynamics across a summer-to-autumn ecosystem transition",
+   "url": "https://doi.org/10.1038/s41467-026-79437-1",
+   "first_seen": "2026-11-23"
   },
   {
    "source": "Nature Communications",
-   "title": "Bordetella pertussis adapts to human nasal mucosa through biofilm-associated virulence reprogramming and host-defense attenuation",
-   "url": "https://doi.org/10.1038/s41467-026-79522-5",
-   "first_seen": "2026-11-20"
+   "title": "CARM1-mediated methylation controls interactions of ALIX with key partners important for cytokinesis",
+   "url": "https://doi.org/10.1038/s41467-026-79275-1",
+   "first_seen": "2026-11-23"
   },
   {
    "source": "Nature Communications",
-   "title": "A metal ion-assisted workflow for practical and scalable enrichment of small extracellular vesicles from biofluids",
-   "url": "https://doi.org/10.1038/s41467-026-79613-3",
-   "first_seen": "2026-11-20"
+   "title": "3D-printed Eutectic high-entropy alloys with dynamic protection for tribological damage resistance",
+   "url": "https://doi.org/10.1038/s41467-026-79276-0",
+   "first_seen": "2026-11-23"
   },
   {
    "source": "Nature Communications",
-   "title": "Interfacial mechanisms of gas-bubble friction",
-   "url": "https://doi.org/10.1038/s41467-026-79472-y",
-   "first_seen": "2026-11-20"
+   "title": "Prioritizing the next decade of research in bat infectious disease (batID)",
+   "url": "https://doi.org/10.1038/s41467-026-79693-1",
+   "first_seen": "2026-11-23"
   },
   {
    "source": "Nature Communications",
-   "title": "Twist-engineered arbitrary polarization detection for intelligent polarimetric sensing",
-   "url": "https://doi.org/10.1038/s41467-026-79650-y",
-   "first_seen": "2026-11-20"
+   "title": "Biomass-based platform for pesticide management balancing field efficacy with postharvest residue via dynamic adhesion switch",
+   "url": "https://doi.org/10.1038/s41467-026-79321-y",
+   "first_seen": "2026-11-23"
   },
   {
    "source": "Nature Communications",
-   "title": "SMC5/6 safeguards chromatin compartments and TAD boundaries for genome stability",
-   "url": "https://doi.org/10.1038/s41467-026-79493-7",
-   "first_seen": "2026-11-20"
+   "title": "Harnessing plant cells as oral drug delivery capsules for synergistic therapy of ulcerative colitis",
+   "url": "https://doi.org/10.1038/s41467-026-79509-2",
+   "first_seen": "2026-11-23"
   },
   {
    "source": "Nature Communications",
-   "title": "Efficient n–i–p all-perovskite tandem solar cells enabled by interconnection layer engineering",
-   "url": "https://doi.org/10.1038/s41467-026-79553-y",
-   "first_seen": "2026-11-20"
+   "title": "Mesophase-induced vitrification in coordination polymers via aliphatic chain dynamics",
+   "url": "https://doi.org/10.1038/s41467-026-79687-z",
+   "first_seen": "2026-11-23"
   },
   {
    "source": "Nature Communications",
-   "title": "var2csa transcription implicates variant surface antigen switching in cerebral malaria pathogenesis",
-   "url": "https://doi.org/10.1038/s41467-026-78682-8",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Expert operating skills learning-based intelligent shared control method for a CT-guided percutaneous biopsy robot",
-   "url": "https://doi.org/10.1038/s41467-026-79622-2",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Soybean Pb encodes a WD40 protein regulating pubescence tip morphology and seed size during domestication",
-   "url": "https://doi.org/10.1038/s41467-026-79473-x",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "High-κ bismuth molybdate single-crystalline dielectric for high-temperature two-dimensional transistors",
-   "url": "https://doi.org/10.1038/s41467-026-79576-5",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "A renewable autologous biomaterial for reprogramming cellular metabolism",
-   "url": "https://doi.org/10.1038/s41467-026-79560-z",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Endocrine, nutritional and metabolic diseases drive cancer risk through subtype-specific and shared proteomic mediators",
-   "url": "https://doi.org/10.1038/s41467-026-78791-4",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Genome-wide association study identifies a functional myostatin variant increasing lean mass in humans",
-   "url": "https://doi.org/10.1038/s41467-026-77766-9",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Cholesterol dysregulation contributes to hematopoietic failure in parn-mutant zebrafish with implications for dyskeratosis congenita",
-   "url": "https://doi.org/10.1038/s41467-026-79105-4",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Pathway-dependent chiral toroid self-assembly and topological transformations based on large π-conjugated dipeptides",
-   "url": "https://doi.org/10.1038/s41467-026-79527-0",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Nanofriction strengthened mechanically adaptive electrolytes for safe lithium metal batteries",
-   "url": "https://doi.org/10.1038/s41467-026-78955-2",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Intravenous phage therapy for difficult-to-treat infections: a systematic review and meta-analysis of individual patient data",
-   "url": "https://doi.org/10.1038/s41467-026-79491-9",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Wafer-scale thin-film PZT photonic integrated circuits enabling multi-terabit optical transmission",
-   "url": "https://doi.org/10.1038/s41467-026-79721-0",
-   "first_seen": "2026-11-20"
+   "title": "A multimodal ultrasound foundation model for diagnosis of unexplained lymphadenopathy",
+   "url": "https://doi.org/10.1038/s41467-026-79690-4",
+   "first_seen": "2026-11-23"
   }
  ],
- "pending_abstract": 74,
+ "pending_abstract": 28,
  "runs_utc": [
-  "2026-11-20T13:55:52+00:00"
+  "2026-11-23T15:50:09+00:00"
  ]
 }
