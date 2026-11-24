@@ -1,44 +1,44 @@
 {
- "date": "2026-11-23",
- "generated_utc": "2026-11-23T15:50:09+00:00",
+ "date": "2026-11-24",
+ "generated_utc": "2026-11-24T15:41:33+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-11-19",
-   "2026-11-23"
+   "2026-11-20",
+   "2026-11-24"
   ],
   "journal_doi_created": [
-   "2026-11-17",
-   "2026-11-23"
+   "2026-11-18",
+   "2026-11-24"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-   "in_window": 61,
-   "new": 31,
+   "in_window": 91,
+   "new": 66,
    "candidates": 4
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-   "in_window": 28,
-   "new": 16,
+   "in_window": 47,
+   "new": 33,
    "candidates": 3
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-   "in_window": 44,
-   "new": 17,
-   "candidates": 0
+   "in_window": 67,
+   "new": 53,
+   "candidates": 2
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-   "in_window": 3,
+   "in_window": 2,
    "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
@@ -47,8 +47,8 @@
    "source": "TPWRS",
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
-   "in_window": 4,
-   "new": 0,
+   "in_window": 3,
+   "new": 1,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -56,35 +56,35 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 36,
-   "new": 13,
+   "in_window": 29,
+   "new": 3,
    "candidates": 0,
-   "new_with_abstract": 2
+   "new_with_abstract": 0
   },
   {
    "source": "Nature Energy",
    "journal": "Nature Energy",
    "status": "ok",
    "in_window": 5,
-   "new": 1,
+   "new": 0,
    "candidates": 0,
-   "new_with_abstract": 1
+   "new_with_abstract": 0
   },
   {
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 196,
-   "new": 69,
-   "candidates": 1,
-   "new_with_abstract": 59
+   "in_window": 188,
+   "new": 25,
+   "candidates": 0,
+   "new_with_abstract": 13
   },
   {
    "source": "Nature Rev. EE",
    "journal": "Nature Reviews Electrical Engineering",
    "status": "ok",
-   "in_window": 0,
-   "new": 0,
+   "in_window": 1,
+   "new": 1,
    "candidates": 0,
    "new_with_abstract": 0
   }
@@ -92,233 +92,63 @@
  "errors": [],
  "candidates": [
   {
-   "key": "arxiv:2611.27686",
+   "key": "arxiv:2611.30978",
    "source": "arXiv",
-   "id": "2611.27686",
-   "title": "Learning in Symbiosis: Heterogeneous Federated Learning with ANNs and SNNs",
-   "abstract": "Spiking Neural Networks (SNNs), widely regarded as the third generation of neural networks, represent a promising neuromorphic computing paradigm with the potential to reduce the energy footprint of Artificial Intelligence (AI). Their en-ergy efficiency makes SNNs particularly attractive for resource-constrained Edge AI devices, motivating growing research interest in Federated Learning (FL) with SNNs. Despite these advantages, integrating SNNs into existing FL systems remains challenging, as replacing all conventional Artificial Neural Network (ANN) devices with SNN-based alternatives is impractical. Instead, we envision a gradual transition toward neuromorphic Edge AI, where ANN and SNN devices coexist and collaboratively participate in FL. To facilitate this transition, we propose Hybrid Neuromorphic Federated Learning (HNFL), a framework that enables joint training of heterogeneous ANN and SNN devices within an FL environment. Through experiments on CIFAR-10 using both VGG9 and ResNet architectures, we demonstrate the mutual benefits of collaborative ANN-SNN training. Specifically, HNFL achieves an average improvement of 16.85% when incorporating SNN devices into ANN-based FL and 8.02% when incorporating ANN devices into SNN-based FL. Furthermore, HNFL produces sparser spiking activity in the trained SNN models, with reductions of 12.4% for SResNet and 22.4% for SVGG9. To the best of our knowledge, this is the first work to demonstrate that ANNs and SNNs can coexist and mutually benefit from collaborative training in FL, providing a practical path toward the gradual integration of neuromorphic computing into existing Edge AI systems.",
+   "id": "2611.30978",
+   "title": "Data Center-Aware Load Pickup in Power System Restoration",
+   "abstract": "Data centers requiring continuous operation rely on onsite generation and battery storage during blackouts. Their return to grid supply must be coordinated with the restoration of other loads because demand fluctuations can affect system frequency. This paper adds constraints to a restoration optimization problem that coordinates load pickup, grid supply to data centers, onsite generation, and battery operation. These constraints reserve battery power and energy to accommodate bounded demand changes while maintaining approved grid supply to data centers. The method accounts for processing delays and checks resource limits using updated operating states before applying commands. Phasor-domain simulations of a low-inertia restoration scenario show that the method serves 760 MW of load outside the data centers and satisfies all tested operating limits. Nominal and frequency-aware benchmarks serve 840 MW and 800 MW, respectively, but violate operating limits.",
    "authors": [
     {
-     "name": "Manh V. Nguyen",
+     "name": "Yousef Abudyak",
      "affiliations": []
     },
     {
-     "name": "Liang Zhao",
+     "name": "Saleh Sadeghi Gougheri",
      "affiliations": []
     },
     {
-     "name": "Bobin Deng",
+     "name": "Mohsen Alizadeh",
      "affiliations": []
     },
     {
-     "name": "Xinyue Zhang",
-     "affiliations": []
-    },
-    {
-     "name": "Shaoen Wu",
+     "name": "Wei Sun",
      "affiliations": []
     }
    ],
    "categories": [
-    "cs.AI",
-    "cs.DC",
-    "cs.LG"
-   ],
-   "primary_category": "cs.AI",
-   "date": "2026-11-20",
-   "url": "https://arxiv.org/abs/2611.27686",
-   "matched_terms": [
-    "edge ai"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "(HTML version not available: HTTPError)"
-  },
-  {
-   "key": "arxiv:2611.27576",
-   "source": "arXiv",
-   "id": "2611.27576",
-   "title": "Unlocking Heterogeneous Accelerator Flexibility in AI Data Centers: Sizing and Workload Allocation",
-   "abstract": "AI data centers are an emerging electricity demand, but limited local grid capacity could delay their connection and expansion. While existing operational strategies consider spatio-temporal workload flexibility, few studies address the strategic sizing and allocation of diverse accelerator archetypes with different capital and energy-efficiency trade-offs. This paper unlocks the flexibility potential of heterogeneous accelerators by jointly sizing and allocating different AI workloads (training, delay-tolerant batch work, and online inference requests) across sites and hours to meet the time-varying grid constraint at minimum cost. Workload-specific throughput and energy coefficients link these decisions to facility power. In a representative two-site case, heterogeneous sizing reduces daily cost by 6.5% relative to spatio-temporal scheduling with fixed capacity. When evaluated using workload-specific performance, a capacity design based on workload-averaged hardware coefficients costs 7.7% more than the proposed design. The proposed design also eliminates the envelope violations of an unconstrained design at a 0.25\\% daily cost increase. These results show how hardware heterogeneity and workload flexibility jointly shape economical, grid-compliant capacity plans.",
-   "authors": [
-    {
-     "name": "Chenghao Lyu",
-     "affiliations": []
-    },
-    {
-     "name": "Ying Yu",
-     "affiliations": []
-    },
-    {
-     "name": "Wangkun Xu",
-     "affiliations": []
-    },
-    {
-     "name": "Fei Teng",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SY",
-    "cs.AI"
+    "eess.SY"
    ],
    "primary_category": "eess.SY",
-   "date": "2026-11-20",
-   "url": "https://arxiv.org/abs/2611.27576",
+   "date": "2026-11-23",
+   "url": "https://arxiv.org/abs/2611.30978",
    "matched_terms": [
+    "data center",
     "data centers"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Unlocking Heterogeneous Accelerator Flexibility in AI Data Centers: Sizing and Workload Allocation Chenghao Lyu, Ying Yu, Wangkun Xu, and Fei Teng Affiliation: Department of Electrical and Electronic Engineering, Imperial College London , London, UK {chenghao.lyu26, ying.yu24, wangkun.xu18, f.teng}@imperial.ac.uk Abstract AI data centers are an emerging electricity demand, but limited local grid capacity could delay their connection and expansion. While existing operational strategies consider spatio-temporal workload flexibility, few studies address the strategic sizing and allocation of diverse accelerator archetypes with different capital and energy-efficiency trade-offs. This paper unlocks the flexibility potential of heterogeneous accelerators by jointly sizing and allocating different AI workloads (training, delay-tolerant batch work, and online inference requests) across sites and hours to meet the time-varying grid constraint at minimum cost. Workload-specific throughput and energy coefficients link these decisions to facility power. In a representative two-site case, heterogeneous sizing reduces daily cost by 6.5% relative to spatio-temporal scheduling with fixed capacity. When evaluated using workload-specific performance, a capacity design based on workload-averaged hardware coefficients costs 7.7% more than the proposed design. The proposed design also eliminates the envelope violations of an unconstrained design at a 0.25% daily cost increase. These results show how hardware heterogeneity and workload flexibility jointly shape economical, grid-compliant capacity plans. Index Terms: AI data centers, capacity sizing, grid power envelopes, hardware heterogeneity, spatio-temporal workload scheduling."
+   "affiliation_block": "Data Center-Aware Load Pickup in Power System Restoration Yousef Abudyak, Saleh Sadeghi Gougheri, Mohsen Alizadeh, and Wei Sun Affiliation: Department of Electrical and Computer Engineering, University of Central Florida, Orlando, FL, USA {yousefhusamyousef.abudyak, saleh.sadeghi, mohsen.alizadeh, sun}@ucf.edu Abstract Data centers requiring continuous operation rely on onsite generation and battery storage during blackouts. Their return to grid supply must be coordinated with the restoration of other loads because demand fluctuations can affect system frequency. This paper adds constraints to a restoration optimization problem that coordinates load pickup, grid supply to data centers, onsite generation, and battery operation. These constraints reserve battery power and energy to accommodate bounded demand changes while maintaining approved grid supply to data centers. The method accounts for processing delays and checks resource limits using updated operating states before applying commands. Phasor-domain simulations of a low-inertia restoration scenario show that the method serves 760 MW of load outside the data centers and satisfies all tested operating limits. Nominal and frequency-aware benchmarks serve 840 MW and 800 MW, respectively, but violate operating limits. Index Terms: Data centers, dynamic security, inverter-based resources, load pickup, power system restoration."
   },
   {
-   "key": "arxiv:2611.27489",
+   "key": "arxiv:2611.30776",
    "source": "arXiv",
-   "id": "2611.27489",
-   "title": "Efficient Natural Language to Temporal Logic Translation for Real-Time Physical AI",
-   "abstract": "Robots can be controlled to perform tasks with guaranteed correctness when the task instructions are stated in a formal language. Large language models (LLMs) have been widely used to allow users to provide such instructions in natural language (NL), by translating NL into formal language. When deploying such translators on a robot, however, we face limited computing and energy resources, while offloading computation or data to the cloud may be infeasible or undesirable. Yet an LLM is a general-purpose text generator, whereas a formula in a fixed formal language fragment follows a well-defined syntax. We therefore ask whether text generation is needed at all. For the formal language of linear temporal logic (LTL), we show that this translation can instead be broken down into answering a set of questions with pre-defined answers. We then construct a System-One model, a recent class of NL-based classifier, to provide such answers and enable us to translate a natural language instruction into an LTL instruction. On three benchmarks, our translator matches or exceeds the accuracy of the best local LLMs available, at up to one order of magnitude lower runtime and energy consumption. We show that it generalizes to unseen atomic propositions and temporal patterns.",
+   "id": "2611.30776",
+   "title": "Torcalia.jl: An MPI-based Runtime System for Asynchronous Task Parallelism in Julia",
+   "abstract": "Designed to address the two-language problem, the Julia programming language provides a powerful platform for developing high-performance scientific computing and machine learning applications. Such applications increasingly exhibit irregular, adaptive, or data-driven workloads for which traditional bulk-synchronous parallel (BSP) models often struggle to efficiently exploit the available parallelism. Asynchronous many-task (AMT) runtime systems offer a compelling alternative, decomposing computations into fine-grained tasks that are dynamically scheduled across the hierarchical architecture of modern HPC systems. This paper introduces Torcalia.jl, a Julia package designed to orchestrate the asynchronous execution of tasks across both shared and distributed memory environments. Built on top of MPI.jl and Julia's native multithreading, Torcalia employs a dependency-aware task scheduling scheme that combines the work-sharing and work-stealing paradigms to achieve adaptive load balancing. Tasks can be nested arbitrarily, enabling applications to exploit multiple levels of parallelism, while application-level distributed shared memory (DSM) extends task-based shared-memory programming to multi-node clusters. Beyond task-based programming, the proposed library supports skeletal programming, providing high-level abstractions that facilitate the implementation of parallel applications at scale. Evaluated on the ARIS supercomputer using four diverse workloads, Torcalia demonstrates strong scalability, reducing wall-clock time by up to 18.1% compared with Dagger, a state-of-the-art task-based engine in Julia. The source code of Torcalia.jl is publicly available at https://github.com/CEID-HPCLAB/Torcalia.jl.",
    "authors": [
     {
-     "name": "Oliver Schön",
+     "name": "Argiris Sofotasios",
      "affiliations": []
     },
     {
-     "name": "Adrien Banse",
+     "name": "Dimitris Metaxakis",
      "affiliations": []
     },
     {
-     "name": "John Lygeros",
+     "name": "Chrysostomos Stylios",
      "affiliations": []
     },
     {
-     "name": "Lars Lindemann",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.AI",
-    "cs.CL",
-    "cs.LO",
-    "cs.RO",
-    "eess.SY"
-   ],
-   "primary_category": "cs.AI",
-   "date": "2026-11-20",
-   "url": "https://arxiv.org/abs/2611.27489",
-   "matched_terms": [
-    "large language models",
-    "llm",
-    "llms"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Efficient Natural Language to Temporal Logic Translation for Real-Time Physical AI Oliver Schön Email: oschoen@ethz.ch Adrien Banse Email: abanse@ethz.ch John Lygeros Email: jlygeros@ethz.ch Lars Lindemann Email: llindemann@ethz.ch Affiliation: Automatic Control Laboratory, ETH Zürich, Switzerland Abstract Robots can be controlled to perform tasks with guaranteed correctness when the task instructions are stated in a formal language. Large language models (LLMs) have been widely used to allow users to provide such instructions in natural language (NL), by translating NL into formal language. When deploying such translators on a robot, however, we face limited computing and energy resources, while offloading computation or data to the cloud may be infeasible or undesirable. Yet an LLM is a general-purpose text generator, whereas a formula in a fixed formal language fragment follows a well-defined syntax. We therefore ask whether text generation is needed at all. For the formal language of linear temporal logic (LTL), we show that this translation can instead be broken down into answering a set of questions with pre-defined answers. We then construct a System-One model, a recent class of NL-based classifier, to provide such answers and enable us to translate a natural language instruction into an LTL instruction. On three benchmarks, our translator matches or exceeds the accuracy of the best local LLMs available, at up to one order of magnitude lower runtime and energy consumption. We show that it generalizes to unseen atomic propositions and temporal patterns. keywords Natural Language Translation, Formal Language, System-One Models"
-  },
-  {
-   "key": "arxiv:2611.27169",
-   "source": "arXiv",
-   "id": "2611.27169",
-   "title": "Which Data-Center Load Models Can Be Trusted? An Evidence-Graded Review of Dynamic Modeling and Validation for Large Computational Loads",
-   "abstract": "Grid operators now require dynamic models of data centers and other large computational loads, and new ride-through rules assume that these models predict how facilities respond to disturbances. This review asks what evidence supports that assumption. We coded 160 documents, screened from 1,424 de-duplicated database and seed records plus 65 added documents, by the strongest reference object each presents, from grid-side records to simulation only. Across 19 field-evidence entries, 15 requirement documents from three continents and nine model classes, we find two comparisons of a standard library model with measured data-center events: with default parameters the model failed both, and refitting it to each event separately reduced the error but was never tested on an unseen event. Among the sources reviewed, we found no successful held-out validation of a frozen, facility-specific data-center model against an independent measured disturbance, and 25 of the 33 model-phenomenon combinations with any evidence involve no electrical measurement. The features that distinguish the new rules (memory of repeated dips, recovery within 0.5-3 s, proportional power reduction during the sag, overvoltage response) are those current phasor models cannot represent or have never been tested against. In the operator procedures examined, simulations and model-to-model benchmarks are accepted as evidence of model fidelity, unlike the measured validation required of generators, and proposed mitigations have mostly been evaluated on unvalidated facility models. We propose context-of-use gates that separate calibration from validation, release labels for model claims, a minimum validation protocol with acceptance criteria, and a research agenda.",
-   "authors": [
-    {
-     "name": "Dileep Cheerla",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SY",
-    "cs.SE"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-20",
-   "url": "https://arxiv.org/abs/2611.27169",
-   "matched_terms": [
-    "data centers",
-    "data-center"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Which Data-Center Load Models Can Be Trusted? An Evidence-Graded Review of Dynamic Modeling and Validation for Large Computational Loads Dileep Cheerla † † thanks: D. Cheerla is an independent researcher, Lewisville, TX, USA (e-mail: dileepreddy.cheerla@gmail.com; ORCID 0009-0004-6581-1899). Preprint, November 2026. This manuscript is a preprint and has not been peer reviewed. † † thanks: This work received no external funding. Abstract Grid operators now require dynamic models of data centers and other large computational loads, and new ride-through rules assume that these models predict how facilities respond to disturbances. This review asks what evidence supports that assumption. We coded 160 documents, screened from 1,424 de-duplicated database and seed records plus 65 added documents, by the strongest reference object each presents, from grid-side records to simulation only. Across 19 field-evidence entries, 15 requirement documents and nine model classes, we find two comparisons of a standard library model with measured data-center events: with default parameters both reported a mismatch, though neither stated an acceptance criterion, and per-event refitting reduced the error but was never tested on an unseen event. Among the sources reviewed, we found no successful held-out validation of a frozen, facility-specific data-center model against an independent measured disturbance, and 25 of the 33 model–phenomenon combinations with any evidence involve no electrical measurement. The features that distinguish the new rules (memory of repeated dips, recovery within 0.5–3 s, proportional power reduction during the sag, overvoltage response) are those current phasor models cannot represent or have never been tested against. In the operator procedures examined, no step compares the submitted model with a measured facility response, unlike the validation required of generators, and proposed mitigations have mostly been evaluated on unvalidated facility models. We propose context-of-use gates that separate calibration from validation, release labels for model claims, a minimum validation protocol with acceptance criteria, and a research agenda. Index Terms: Data centers, electromagnetic transients, evidence grading, large computational loads, load modeling, model validation, power system dynamics, ride-through."
-  },
-  {
-   "key": "arxiv:2611.26980",
-   "source": "arXiv",
-   "id": "2611.26980",
-   "title": "Contexture: Runtime Context Eviction for High-Throughput Agent Serving",
-   "abstract": "LLM agents such as Hermes, OpenClaw, and Codex repeatedly resend growing execution histories, increasing shared GPU key-value (KV) cache demand in high-bandwidth memory (HBM). We show that shared KV capacity limits agent-serving throughput. Existing context-reduction methods lack global cache-state visibility, while runtime KV managers lack tool-execution information. Tracing tokens to their originating tool operations reveals that later operations supersede earlier outputs and associated turns, identifying 64% of recorded final-history tokens as removal candidates. We present Contexture, a harness- and model-agnostic architecture for runtime context eviction. Contexture separates the harness's full conversation history from the model's execution context, reducing subsequent requests' KV demand without modifying harness logic or model execution. It combines tool-execution information with global visibility into shared KV pressure and prefix residency: supersession identifies removal candidates, while runtime state determines when removal justifies sacrificing cached computation. This coordination reduces memory demand and decode KV traffic while limiting re-prefill interference with concurrent decoding, without additional model calls or training. Across two models, two harnesses, and two benchmarks, Contexture improves throughput under SLO by 20-73% over the best of no eviction, harness compaction, AgentDiet, and Continuum, and by 7-63% over observation masking in five of eight configurations, and reduces GPU energy per completed session by up to 11%. It also raises throughput under SLO by 23% over LMCache alone on H100. Live-agent experiments show a mean accuracy improvement of 1.4 percentage points over unloaded no eviction, with a worst-case loss of 3.7 points, while observation masking loses 3-28 points.",
-   "authors": [
-    {
-     "name": "Colin Hong",
-     "affiliations": []
-    },
-    {
-     "name": "Bryan Shan",
-     "affiliations": []
-    },
-    {
-     "name": "Wei Siong Pang",
-     "affiliations": []
-    },
-    {
-     "name": "Chengzhi Lu",
-     "affiliations": []
-    },
-    {
-     "name": "Xu Guo",
-     "affiliations": []
-    },
-    {
-     "name": "Nitin Shivaraman",
-     "affiliations": []
-    },
-    {
-     "name": "Tao Luo",
-     "affiliations": []
-    },
-    {
-     "name": "Esha Choukse",
-     "affiliations": []
-    },
-    {
-     "name": "Kisson Lin",
-     "affiliations": []
-    },
-    {
-     "name": "Dmitrii Ustiugov",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC",
-    "cs.AI",
-    "cs.MA",
-    "cs.OS"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-11-20",
-   "url": "https://arxiv.org/abs/2611.26980",
-   "matched_terms": [
-    "gpu",
-    "llm"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Contexture: Runtime Context Eviction for High-Throughput Agent Serving Colin Hong Affiliation: Nanyang Technological University , Singapore , Bryan Shan Affiliation: Nanyang Technological University , Singapore , Wei Siong Pang Affiliation: Nanyang Technological University , Singapore , Chengzhi Lu Affiliation: Nanyang Technological University , Singapore , Xu Guo Affiliation: Nanyang Technological University , Singapore , Nitin Shivaraman Affiliation: IAIC, A*STAR , Singapore , Tao Luo Affiliation: IAIC, A*STAR , Singapore , Esha Choukse Affiliation: Microsoft , USA , Kisson Lin Affiliation: SuperMem Pte. Ltd. , Singapore and Dmitrii Ustiugov Affiliation: Nanyang Technological University , Singapore Abstract. LLM agents such as Hermes, OpenClaw, and Codex repeatedly resend growing execution histories, increasing shared GPU key-value (KV) cache demand in high-bandwidth memory (HBM). We show that shared KV capacity limits agent-serving throughput. Existing context-reduction methods lack global cache-state visibility, while runtime KV managers lack tool-execution information. Tracing tokens to their originating tool operations reveals that later operations supersede earlier outputs and associated turns, identifying 64% of recorded final-history tokens as removal candidates. We present Contexture, a harness- and model-agnostic architecture for runtime context eviction. Contexture separates the harness’s full conversation history from the model’s execution context, reducing subsequent requests’ KV demand without modifying harness logic or model execution. It combines tool-execution information with global visibility into shared KV pressure and prefix residency: supersession identifies removal candidates, while runtime state determines when removal justifies sacrificing cached computation. This coordination reduces memory demand and decode KV traffic while limiting re-prefill interference with concurrent decoding, without additional model calls or training. Across two models, two harnesses, and two benchmarks, Contexture improves throughput under SLO by 20–73% over the best of no eviction, harness compaction, AgentDiet, and Continuum, and by 7–63% over observation masking in five of eight configurations, and reduces GPU energy per completed session by up to 11%. It also raises throughput under SLO by 23% over LMCache alone on H100. Live-agent experiments show a mean accuracy improvement of 1.4 percentage points over unloaded no eviction, with a worst-case loss "
-  },
-  {
-   "key": "arxiv:2611.26840",
-   "source": "arXiv",
-   "id": "2611.26840",
-   "title": "Contention-Aware Flexible Execution for Machine Learning Workloads",
-   "abstract": "Concurrent kernel execution is a ubiquitous paradigm in artificial intelligence (AI) and machine learning (ML) across both training and inference. That said, concurrency causes potential slowdown as concurrent kernels contend for limited GPU resources (cores, caches, memory bandwidth), which are shared between these kernels rather than exclusively available to one, as in isolated execution. This raises an important research question: to what extent does concurrency slow down kernel execution and how can it be mitigated. To answer this question, our work presents two studies. First, we characterize concurrent kernel execution extensively for the first time, to our knowledge. We conduct not just performance analysis of concurrent kernels but also memory behavior under concurrency on state-of-the-art AMD Instinct MI300X GPUs designed for datacenter AI, using the AMD-internal millisecond sampler. Based on the observations, we share insights on the slowdown along two dimensions (memory vs. compute bound, large vs. small kernels) to inform future optimizations. Second, we put the derived insights to use, aiming to deliver higher performance via targeted, flexible overlap of ML operators. Frameworks today make the simple decision of early-first for concurrent kernels, which is suboptimal. Noticing the opportunity that ML dataflow has inherent flexibility in which operators can be overlapped and how hardware resources can be allocated, we deduce simple heuristics to tune both overlap anchors and resource allocation for concurrent kernels to improve performance. We evaluate our proposed contention-aware flexible execution (termed CAFEML) across a variety of ML scenarios (inference decode, inference prefill, training) and demonstrate a speedup of up to 13% end-to-end with simple scheduling changes and no kernel rewrites.",
-   "authors": [
-    {
-     "name": "Marco Kurzynski",
-     "affiliations": []
-    },
-    {
-     "name": "Shaizeen Aga",
-     "affiliations": []
-    },
-    {
-     "name": "Di Wu",
+     "name": "Panagiotis Hadjidoukas",
      "affiliations": []
     }
    ],
@@ -326,252 +156,296 @@
     "cs.DC"
    ],
    "primary_category": "cs.DC",
-   "date": "2026-11-19",
-   "url": "https://arxiv.org/abs/2611.26840",
+   "date": "2026-11-23",
+   "url": "https://arxiv.org/abs/2611.30776",
    "matched_terms": [
-    "datacenter"
+    "hpc",
+    "supercomputer"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Contention-Aware Flexible Execution for Machine Learning Workloads Marco Kurzynski Note: This work was done while the author was an intern with AMD Research. Affiliation: University of Central Florida , Orlando , Florida , USA email: marco.kurzynski@ucf.edu , Shaizeen Aga Affiliation: Advanced Micro Devices, Inc. , Santa Clara , California , USA email: shaizeen.aga@amd.com and Di Wu Affiliation: University of Central Florida , Orlando , Florida , USA email: di.wu@ucf.edu © none Abstract. Concurrent kernel execution is a ubiquitous paradigm in artificial intelligence (AI) and machine learning (ML) across both training and inference. That said, concurrency causes potential slowdown as concurrent kernels contend for limited GPU resources (cores, caches, memory bandwidth), which are shared between these kernels rather than exclusively available to one, as in isolated execution. This raises an important research question: to what extent does concurrency slow down kernel execution and how can it be mitigated. To answer this question, our work presents two studies. First, we characterize concurrent kernel execution extensively for the first time, to our knowledge. We conduct not just performance analysis of concurrent kernels but also memory behavior under concurrency on state-of-the-art AMD Instinct ™ MI300X GPUs designed for datacenter AI, using the AMD-internal millisecond sampler. Based on the observations, we share insights on the slowdown along two dimensions (memory vs. compute bound, large vs. small kernels) to inform future optimizations. Second, we put the derived insights to use, aiming to deliver higher performance via targeted, flexible overlap of ML operators. Frameworks today make the simple decision of early-first for concurrent kernels, which is suboptimal. Noticing the opportunity that ML dataflow has inherent flexibility in which operators can be overlapped and how hardware resources can be allocated, we deduce simple heuristics to tune both overlap anchors and resource allocation for concurrent kernels to improve performance. We evaluate our proposed contention-aware flexible execution (termed CAFEML 1 1 1 CAFEML , pronounced as “cafe-mal” is a reference to a camel’s targeted flexibility. ) across a variety of ML scenarios (inference decode, inference prefill, training) and demonstrate a speedup of up to 13% end-to-end with simple scheduling changes and no kernel rewrites. Keywords: Machine Learning, Concurrency Characterization, Flexible Over"
+   "affiliation_block": "Torcalia.jl: An MPI-based Runtime System for Asynchronous Task Parallelism in Julia Argiris Sofotasios email: a.sofotasios@ceid.upatras.gr Affiliation: Department of Computer Engineering and Informatics, University of Patras , Patras , Greece Affiliation: Archimedes Unit, Athena Research Center , Athens , Greece , Dimitris Metaxakis email: d.metaxakis@ceid.upatras.gr Affiliation: Department of Computer Engineering and Informatics, University of Patras , Patras , Greece Affiliation: Archimedes Unit, Athena Research Center , Athens , Greece , Chrysostomos Stylios email: stylios@athenarc.gr Affiliation: Department of Informatics and Telecommunications, University of Ioannina , Arta , Greece Affiliation: Industrial Systems Institute, Athena Research Center , Patras , Greece and Panagiotis Hadjidoukas email: phadjido@ceid.upatras.gr Affiliation: Department of Computer Engineering and Informatics, University of Patras , Patras , Greece Affiliation: Industrial Systems Institute, Athena Research Center , Patras , Greece Abstract. Designed to address the two-language problem, the Julia programming language provides a powerful platform for developing high-performance scientific computing and machine learning applications. Such applications increasingly exhibit irregular, adaptive, or data-driven workloads for which traditional bulk-synchronous parallel (BSP) models often struggle to efficiently exploit the available parallelism. Asynchronous many-task (AMT) runtime systems offer a compelling alternative, decomposing computations into fine-grained tasks that are dynamically scheduled across the hierarchical architecture of modern HPC systems. This paper introduces Torcalia.jl, a Julia package designed to orchestrate the asynchronous execution of tasks across both shared and distributed memory environments. Built on top of MPI.jl and Julia’s native multithreading, Torcalia employs a dependency-aware task scheduling scheme that combines the work-sharing and work-stealing paradigms to achieve adaptive load balancing. Tasks can be nested arbitrarily, enabling applications to exploit multiple levels of parallelism, while application-level distributed shared memory (DSM) extends task-based shared-memory programming to multi-node clusters. Beyond task-based programming, the proposed library supports skeletal programming, providing high-level abstractions that facilitate the implementation of parallel applications at scale. Evaluated on the ARIS supercomputer using four dive"
   },
   {
-   "key": "arxiv:2611.26763",
+   "key": "arxiv:2611.30542",
    "source": "arXiv",
-   "id": "2611.26763",
-   "title": "Search-Informed MPPI for Kinodynamic Motion Planning via Monte Carlo Tree Expansion",
-   "abstract": "Kinodynamic motion planning in large-scale, cluttered environments remains challenging, as dynamically feasible, collision-free trajectories must be computed efficiently over long horizons. Monte Carlo Tree Search (MCTS) can strategically explore long-horizon alternatives but faces large branching factors in continuous control spaces and often relies on random default-policy rollouts, whereas Model Predictive Path Integral (MPPI) efficiently optimizes local trajectories yet remains susceptible to obstacle-induced local minima. To overcome these challenges, we propose Search-Informed MPPI (SI-MPPI), a unified framework that embeds MPPI trajectory optimization within MCTS-based tree search. The core concept is to fuse the expansion and default-policy simulation stages of MCTS into a single MPPI expansion stage guided by structured intermediate targets, termed baits. During each expansion, an adaptive bait-handling rule retains geometrically valid baits as local targets for GPU-batched MPPI optimizations that generate dynamically feasible candidate motion segments. Feasibility gating then checks these candidates for collision safety and sufficient progress, and top-$k$ selection admits the lowest-cost accepted candidates as tree edges, yielding sparse, directed tree growth; thereafter, effective sample size (ESS)-guided adaptation warm-starts subsequent expansions, while cost-based backpropagation updates tree statistics. Extensive simulations across four large-scale, cluttered 2D occupancy-grid maps demonstrate that SI-MPPI consistently produces the smallest search trees and smoothest angular control profiles compared with three kinodynamic baselines, while maintaining competitive planning times and path lengths. Ablation results further highlight the importance of GPU batching, adaptive bait handling, and retaining multiple expansion candidates for planning efficiency and robustness.",
+   "id": "2611.30542",
+   "title": "GC-MoE K3: A Green-Context Role Graph for Latent Mixture-of-Experts Decode",
+   "abstract": "Kimi K3 combines a latent routed mixture of experts with full-width shared experts. A complete feed-forward evaluation must score and select experts, project tokens into the latent space, exchange tokens across expert-parallel ranks, compute the routed and shared branches, and normalize and project the routed sum before joining the branches. We present GC-MoE K3, a datacenter Blackwell implementation that schedules this entire evaluation as a CUDA Graph across two Green Contexts. Five base roles split input projection, routing, dispatch, expert computation, and finalization. Dispatch can fill the routed input ring while the compute partition evaluates shared experts. Finalize waits for the expert owners needed by each token and overlaps routed reduction and RMSNorm with loading the output projection weights. Conditional roles reuse the communication partition for routed computation and reduce split-$K$ projection partials. On GB200 at EP8, EP16, and EP32, the operator is faster at all 24 measured configurations than the paired SGLang-style reference (mean speedup $1.1324\\times$). A comparison with historical vLLM-style measurements gives $1.3651\\times$ across the same 24 shapes. Both latency comparisons time single-layer graph replay on synthetic K3-shaped inputs with a residual prefix. The separate paired numerical suite passes all 142 cases and 2,936 rank checks.",
    "authors": [
     {
-     "name": "Ihab S. Mohamed",
+     "name": "Yong Li",
      "affiliations": []
     },
     {
-     "name": "Lantao Liu",
+     "name": "Haoyu Wang",
+     "affiliations": []
+    },
+    {
+     "name": "Kan Liu",
+     "affiliations": []
+    },
+    {
+     "name": "Tao Lan",
      "affiliations": []
     }
    ],
    "categories": [
-    "cs.RO",
+    "cs.DC",
+    "cs.AI",
+    "cs.AR",
+    "cs.LG",
+    "cs.PF"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-23",
+   "url": "https://arxiv.org/abs/2611.30542",
+   "matched_terms": [
+    "datacenter"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "GC-MoE K3 A Green-Context Role Graph for Latent Mixture-of-Experts Decode Yong Li Haoyu Wang Kan Liu Tao Lan Affiliation: Alibaba Inc. Affiliation: {brucelee.ly, why492961, liukan.lk, tao.lant}@alibaba-inc.com Abstract Kimi K3 combines a latent routed mixture of experts with full-width shared experts. A complete feed-forward evaluation must score and select experts, project tokens into the latent space, exchange tokens across expert-parallel ranks, compute the routed and shared branches, and normalize and project the routed sum before joining the branches. We present GC-MoE K3, a datacenter Blackwell implementation that schedules this entire evaluation as a CUDA Graph across two Green Contexts. Five base roles split input projection, routing, dispatch, expert computation, and finalization. Dispatch can fill the routed input ring while the compute partition evaluates shared experts. Finalize waits for the expert owners needed by each token and overlaps routed reduction and RMSNorm with loading the output projection weights. Conditional roles reuse the communication partition for routed computation and reduce split- K K projection partials. On GB200 at EP8, EP16, and EP32, the operator is faster at all 24 measured configurations than the paired SGLang-style reference (mean speedup 1.1324 × 1.1324\\times ). A comparison with historical vLLM-style measurements gives 1.3651 × 1.3651\\times across the same 24 shapes. Both latency comparisons time single-layer graph replay on synthetic K3-shaped inputs with a residual prefix. The separate paired numerical suite passes all 142 cases and 2,936 rank checks."
+  },
+  {
+   "key": "arxiv:2611.29906",
+   "source": "arXiv",
+   "id": "2611.29906",
+   "title": "Voltage Ride-Through-Constrained Power Capping for Large-Scale Data Centers",
+   "abstract": "Large-scale data centers may satisfy steady-state network constraints while violating operational limits during voltage disturbances. This paper proposes a voltage ride-through (VRT)-aware power-capping framework that integrates AC optimal power flow scheduling with dynamic ride-through assessment. The proposed dynamic model captures converter limits, DC-link energy dynamics, battery support, and IT-bus voltage response. A simulation-based checker evaluates VRT constraints under prescribed faults, and the power caps are iteratively updated to obtain feasible schedules. Case studies on the IEEE 14-bus system with two data centers demonstrate that steady-state feasible operating points may violate transient voltage and power-import limits. Selective power capping achieves approximately 5\\% demand reduction during capped periods while satisfying the prescribed VRT requirements. The results highlight the necessity of incorporating dynamic security assessment into data-center operational limit determination.",
+   "authors": [
+    {
+     "name": "Jie Zhu",
+     "affiliations": []
+    },
+    {
+     "name": "Ye Tian",
+     "affiliations": []
+    },
+    {
+     "name": "Yinliang",
+     "affiliations": []
+    }
+   ],
+   "categories": [
     "eess.SY"
    ],
-   "primary_category": "cs.RO",
-   "date": "2026-11-19",
-   "url": "https://arxiv.org/abs/2611.26763",
+   "primary_category": "eess.SY",
+   "date": "2026-11-23",
+   "url": "https://arxiv.org/abs/2611.29906",
+   "matched_terms": [
+    "data centers",
+    "data-center"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Voltage Ride-Through-Constrained Power Capping for Large-Scale Data Centers Thanks: This work was supported by the National Key Research and Development Program under Grant 2024YFB4206500. Jie Zhu, Ye Tian, and Yinliang Xu* Affiliation: Shenzhen International Graduate School Tsinghua University Shenzhen, China zhuj24@mails.tsinghua.edu.cn, tiany25@mails.tsinghua.edu.cn, xu.yinliang@sz.tsinghua.edu.cn Affiliation: Abstract Large-scale data centers may satisfy steady-state network constraints while violating operational limits during voltage disturbances. This paper proposes a voltage ride-through (VRT)-aware power-capping framework that integrates AC optimal power flow scheduling with dynamic ride-through assessment. The proposed dynamic model captures converter limits, DC-link energy dynamics, battery support, and IT-bus voltage response. A simulation-based checker evaluates VRT constraints under prescribed faults, and the power caps are iteratively updated to obtain feasible schedules. Case studies on the IEEE 14-bus system with two data centers demonstrate that steady-state feasible operating points may violate transient voltage and power-import limits. Selective power capping achieves approximately 5% demand reduction during capped periods while satisfying the prescribed VRT requirements. The results highlight the necessity of incorporating dynamic security assessment into data-center operational limit determination. Index Terms: data centers, power capping, voltage ride-through, dynamic security assessment"
+  },
+  {
+   "key": "arxiv:2611.29410",
+   "source": "arXiv",
+   "id": "2611.29410",
+   "title": "Motivo: A Motif-Based Algorithm-Architecture Co-Design for Fast and Energy-Efficient Graph-Based Genome Analysis",
+   "abstract": "Read mapping, a key step of genome sequence analysis, matches each fragment of a sequenced genome (a read) to its location in a reference genome. A genome graph is a graph-based reference genome that represents the genetic diversity of a population as alternative paths, and thus improves read mapping accuracy. However, the size and complexity of a genome graph make sequence-to-graph (S2G) mapping a major bottleneck. Prior software and hardware approaches for S2G mapping perform redundant costly operations (e.g., graph traversals and dynamic programming) that do not lead to valid mappings. Our key observation is that a genome graph consists of small subgraphs that share a limited set of recurring topologies, which we call motifs. We propose Motivo, a topology-aware algorithm-architecture co-design for S2G mapping. Motivo's algorithm uses motifs in two ways. First, it stores the precomputed motifs of each node in a compact index, which replaces a graph traversal with a single memory lookup. Second, it uses the topology of a motif and the properties of its nodes to identify the few most suitable mapping paths with arithmetic operations. The algorithm enables high-performance execution on CPUs and GPUs and high-performance, low-energy execution on Motivo-ASIC, an accelerator we co-design with it. Motivo-CPU provides 2.1-18.4x, 2.8-343x, and 1.4-10.1x speedups over GraphAligner, vg, and minigraph, and Motivo-GPU provides 1.5-1.6x speedups over vg-giraffe. Motivo-ASIC provides 7.4-11.7x (138-274x) speedups over state-of-the-art CPU-based tools for short (long) reads. Compared to SeGraM (short reads) and HARP (long reads), Motivo-ASIC achieves 5.3x and 4.0-4.3x higher throughput per Watt and 1.7x and 2.7-3.0x higher throughput per mm$^2$, respectively. Motivo maintains equal or higher mapping accuracy than other tools (96.8%-99.7%) for short and long reads on two types of genome graphs.",
+   "authors": [
+    {
+     "name": "Eirini Maria Tzermpou",
+     "affiliations": []
+    },
+    {
+     "name": "Konstantina Koliogeorgi",
+     "affiliations": []
+    },
+    {
+     "name": "Konstantinos Kanellopoulos",
+     "affiliations": []
+    },
+    {
+     "name": "Ataberk Olgun",
+     "affiliations": []
+    },
+    {
+     "name": "Nisa Bostancı",
+     "affiliations": []
+    },
+    {
+     "name": "Dimitrios Soudris",
+     "affiliations": []
+    },
+    {
+     "name": "Nika Mansouri Ghiasi",
+     "affiliations": []
+    },
+    {
+     "name": "Onur Mutlu",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.AR",
+    "cs.DC",
+    "q-bio.GN",
+    "q-bio.QM"
+   ],
+   "primary_category": "cs.AR",
+   "date": "2026-11-22",
+   "url": "https://arxiv.org/abs/2611.29410",
+   "matched_terms": [
+    "gpu",
+    "gpus"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Motivo: A Motif-Based Algorithm-Architecture Co-Design for Fast and Energy-Efficient Graph-Based Genome Analysis Eirini Maria Tzermpou 1 Konstantina Koliogeorgi 1 Konstantinos Kanellopoulos 1 Ataberk Olgun 1 Nisa Bostancı 1 Dimitrios Soudris 2 Nika Mansouri Ghiasi 1 Onur Mutlu 1 1 ETH Zürich 2 NTUA Abstract Genome sequence analysis, which examines the genomic information of an organism, plays a critical role in many fields. Read mapping , a key step of genome sequence analysis, matches each fragment of a sequenced genome, called a read , to its location in a known reference genome . A genome graph is a graph-based reference genome that represents the genetic diversity of a population as alternative paths, and thus improves read mapping accuracy. However, the size and complexity of a genome graph make sequence-to-graph (S2G) mapping, i.e., mapping a read to a genome graph, a major bottleneck of genome sequence analysis. We observe that prior software and hardware approaches for S2G mapping perform redundant costly operations (e.g., graph traversals and dynamic programming) that do not lead to a valid mapping. Our goal in this work is to deliver a high-performance and energy-efficient design for S2G mapping by reducing redundant computation and replacing expensive computation with lightweight operations. Our key observation is that a genome graph consists of small subgraphs that share a limited set of recurring topologies, which we call motifs . Based on this observation, we propose Motivo , a topology-aware algorithm-architecture co-design for S2G mapping. At the core of Motivo is a new motif-based S2G mapping algorithm that replaces graph traversals and dynamic programming on every candidate path with memory lookups and arithmetic operations. The algorithm uses motifs in two ways. First, it stores the precomputed motifs of each node in a compact index, which replaces a graph traversal with a single memory lookup. Second, it uses the topology of a motif and the properties of its nodes (i.e., sequence length and base composition) to identify the few most suitable mapping paths with arithmetic operations. Motivo ’s algorithm enables ( i ) high-performance execution on two conventional hardware platforms ( Motivo-CPU and Motivo-GPU ) and ( ii ) high-performance and low-energy execution on Motivo-ASIC , a new ASIC-based accelerator that we co-design with the algorithm. Since the path selection of the algorithm uses only memory lookups and arithmetic operations,"
+  },
+  {
+   "key": "arxiv:2611.28774",
+   "source": "arXiv",
+   "id": "2611.28774",
+   "title": "R2WM: Recursive Reasoning Wireless Model for Long-Horizon mmWave Beam Prediction",
+   "abstract": "Long-horizon beam prediction aims to extend beam-training intervals while supporting beam alignment in mobile millimeter-wave systems. Although pretrained large models can improve prediction over compact recurrent baselines, their large backbones impose substantial storage and computing requirements. To address this limitation, we propose a recursive reasoning wireless model (R2WM). Given a fixed history of beam indices and angles of departure (AoDs), R2WM repeatedly updates coupled latent and prediction states using a shared causal-attention backbone before jointly decoding the future beam indices. Backbone reuse increases computational depth at fixed parameter count. In the standard 10-step DeepMIMO setting, R2WM achieves an average normalized beamforming gain of 0.9597, compared with 0.8629 for the prompt-as-prefix large language model, with 99.1% fewer parameters and 59.1% fewer counted floating-point operations. Transfer experiments show that R2WM retains normalized gain under the tested carrier-frequency and antenna-count changes, while its beam-index-only variant retains gain under the tested base-station change. Component ablations show higher gains with historical AoD conditioning and causal attention. Recursion analysis reveals a gain-computation trade-off across separately trained configurations with the same parameter count. An additional comparison with a nonrecursive Transformer of similar parameter count shows higher gain for R2WM at greater computational cost. These results support accurate long-horizon beam prediction without a large pretrained backbone.",
+   "authors": [
+    {
+     "name": "Yunxiao Tian",
+     "affiliations": []
+    },
+    {
+     "name": "Li Qiao",
+     "affiliations": []
+    },
+    {
+     "name": "Ziwei Wan",
+     "affiliations": []
+    },
+    {
+     "name": "Andrey Ivanov",
+     "affiliations": []
+    },
+    {
+     "name": "Zhen Gao",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.IT",
+    "eess.SP"
+   ],
+   "primary_category": "cs.IT",
+   "date": "2026-11-21",
+   "url": "https://arxiv.org/abs/2611.28774",
+   "matched_terms": [
+    "large language model"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "R2WM : Recursive Reasoning Wireless Model for Long-Horizon mmWave Beam Prediction PubID: pubid: © 2026 IEEE Yunxiao Tian Li Qiao Ziwei Wan Andrey Ivanov Zhen Gao † † thanks: ©˜2026 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works. † † thanks: The work was supported in part by Beijing Natural Science Foundation under Grant L242011, in part by the Natural Science Foundation of Shandong Province under Grant ZR2025QA30, in part by the National Natural Science Foundation of China (NSFC) under Grant 62471036, and in part by the Fundamental Research Funds for the Central Universities. (Corresponding˜author: Li Qiao and Zhen Gao.) † † thanks: Y. Tian is with the School of Information and Electronics, Beijing Institute of Technology, Beijing, China (e-mail: yunxiao_tian@bit.edu.cn). † † thanks: L. Qiao is with the Department of Electrical and Computer Engineering, The University of Hong Kong, Pokfulam Road, Hong Kong (e-mail: qiaoli@hku.hk). † † thanks: Z. Wan is with the Yangtze Delta Region Academy, Beijing Institute of Technology (Jiaxing), Jiaxing, China (e-mail: ziweiwan@bit.edu.cn). † † thanks: A. Ivanov is with the Project Center for Next Generation Wireless and IoT, Skolkovo Institute of Science and Technology (Skoltech), Moscow, Russia (e-mail: AN.Ivanov@skoltech.ru). † † thanks: Zhen Gao is with Beijing Institute of Technology (BIT), Zhuhai 519088, China, also with the State Key Laboratory of CNS/ATM, Beijing 100081, China, also with the MIIT Key Laboratory of Complex-Field Intelligent Sensing, Beijing 100081, China, also with the Advanced Technology Research Institute, BIT, Jinan 250307, China, also with the Yangtze Delta Region Academy, BIT, Jiaxing 314019, China, also with Zhengzhou Research Institute, BIT, Zhengzhou 450000, China, and also with Chongqing Innovation Center, BIT, Chongqing 401100, China (e-mail: gaozhen16@bit.edu.cn). Abstract Long-horizon beam prediction aims to extend beam-training intervals while supporting beam alignment in mobile millimeter-wave systems. Although pretrained large models can improve prediction over compact recurrent baselines, their large backbones impose substantial storage and computing requir"
+  },
+  {
+   "key": "arxiv:2611.28526",
+   "source": "arXiv",
+   "id": "2611.28526",
+   "title": "Energy- and Thermal-Aware Resource Management on Mobile IoT Endpoints: A Survey",
+   "abstract": "Energy-aware and thermal-aware management of computing resources on portable and mobile Internet-of-Things (IoT) endpoints is still practiced pillar by pillar: radios, processors, and flash are optimized in isolation, yet sealed system-on-chip (SoC) products share sleep states, interconnects, and thermal limits. Pillar-local joule or temperature gains therefore often disappear after integration, and published savings are frequently incomparable. This survey asks how radio, compute, and storage should be coordinated so that deep sleep remains reachable, and which reporting rules make endpoint energy and thermal claims comparable. We synthesize literature from roughly 2000 to early 2026 with three instruments: a five-phase wireless power anatomy for power-aware networking; a four-branch taxonomy for collective power--performance optimization under mixed regimes; and eight evaluation gates that separate energy outcome, control cost, thermal feasibility, and evidence quality. We qualify the radio-limited premise with compute-, storage-, and thermal-dominated counterexamples, compare modeling and monitoring families, treat thermal behaviour as a shared constraint by separating sensing interfaces, compact models, throttling actuators, and the short-peak versus sustained-throttling regimes that reverse room-temperature rankings, give an illustrative phase-budget example with a sensitivity check and a model-selection workflow, and close with open problems on composability and reproducible measurement. The intended readers work on sustainable computing, mobile systems, and embedded energy management.",
+   "authors": [
+    {
+     "name": "Yuchao Chang",
+     "affiliations": []
+    },
+    {
+     "name": "Haoran Wei",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SP"
+   ],
+   "primary_category": "eess.SP",
+   "date": "2026-11-21",
+   "url": "https://arxiv.org/abs/2611.28526",
+   "matched_terms": [
+    "computing resources"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Energy- and Thermal-Aware Resource Management on Mobile IoT Endpoints: A Survey Journal: Sustainable Computing: Informatics and Systems Yuchao Chang Email: yuchaoc@mail.ustc.edu.cn Corresponding author: Corresponding author. Accepted Manuscript, to appear in Sustainable Computing: Informatics and Systems. DOI: https://doi.org/10.1016/j.suscom.2026.101508 License: CC BY - NC - ND, not the publisher - formatted Journal Pre - proof. Affiliation: Performance and Power Group, OPPO, Shanghai, Shanghai, 200030, China Haoran Wei Email: haoranwei@foxmail.com Affiliation: Rivian and Volkswagen Group Technologies, Palo Alto, CA, 94304, USA Abstract Energy-aware and thermal-aware management of computing resources on portable and mobile Internet-of-Things (IoT) endpoints is still practiced pillar by pillar: radios, processors, and flash are optimized in isolation, yet sealed system-on-chip (SoC) products share sleep states, interconnects, and thermal limits. Pillar-local joule or temperature gains therefore often disappear after integration, and published savings are frequently incomparable. This survey asks how radio, compute, and storage should be coordinated so that deep sleep remains reachable, and which reporting rules make endpoint energy and thermal claims comparable. We synthesize literature from roughly 2000 to early 2026 with three instruments: a five-phase wireless power anatomy for power-aware networking; a four-branch taxonomy for collective power–performance optimization under mixed regimes; and eight evaluation gates that separate energy outcome, control cost, thermal feasibility, and evidence quality. We qualify the radio-limited premise with compute-, storage-, and thermal-dominated counterexamples, compare modeling and monitoring families, treat thermal behaviour as a shared constraint by separating sensing interfaces, compact models, throttling actuators, and the short-peak versus sustained-throttling regimes that reverse room-temperature rankings, give an illustrative phase-budget example with a sensitivity check and a model-selection workflow, and close with open problems on composability and reproducible measurement. The intended readers work on sustainable computing, mobile systems, and embedded energy management. Keywords: sustainable computing , energy-aware computing , thermal-aware management , mobile IoT , power-aware networking , energy measurement"
+  },
+  {
+   "key": "arxiv:2611.28423",
+   "source": "arXiv",
+   "id": "2611.28423",
+   "title": "Real-Time 250-kHz Spectral-Domain Optical Coherence Tomography Using a Jetson AGX Orin",
+   "abstract": "High-performance optical coherence tomography (OCT) relies on desktop workstations for data acquisition, reconstruction, and visualization, limiting integration into compact imaging systems. We evaluated whether an embedded GPU platform could sustain real-time operation of a 250-kHz spectral-domain OCT instrument without a desktop computer. A custom C++/CUDA OCT engine running on a NVIDIA Jetson AGX Orin 64 GB was developed and integrated with a 2048-pixel spectrometer, Camera Link frame grabber, and galvanometer scanner, and compared against an RTX A4500 workstation under the same scan protocols. Both systems maintained mean B-scan processing latency well below the corresponding B-scan acquisition intervals. Although the RTX A4500 workstation achieved lower reconstruction latency, Jetson eliminated explicit host-to-device transfer and exhibited more consistent processing latency. Furthermore, the measured active wall power was 67 W for the Jetson and 155 W for the workstation, corresponding to approximately 2.3 times greater wall-energy efficiency for the Jetson. In a separate 62.6-min GUI-enabled measurement, the Jetson processed 800,000 B-scans without frame loss while maintaining real-time reconstruction and visualization. These results demonstrate that embedded computing can support high-speed OCT acquisition, processing, and control while reducing wall-power demand and computing-platform size.",
+   "authors": [
+    {
+     "name": "Yash Nakadi",
+     "affiliations": []
+    },
+    {
+     "name": "Austin Yetter",
+     "affiliations": []
+    },
+    {
+     "name": "Toast Lobel",
+     "affiliations": []
+    },
+    {
+     "name": "Jungeun Won",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-20",
+   "url": "https://arxiv.org/abs/2611.28423",
    "matched_terms": [
     "gpu"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Search-Informed MPPI for Kinodynamic Motion Planning via Monte Carlo Tree Expansion Ihab S. Mohamed Lantao Liu † † thanks: Authors are with the Luddy School of Informatics, Computing, and Engineering, Indiana University, Bloomington, IN 47408, USA (e-mail: {mohamedi & lantao}@iu.edu ). Note to Practitioners Autonomous mobile robots in warehouses, factories, hospitals, and greenhouses must plan long routes through cluttered layouts while respecting how they can physically move. Widely used planners involve practical trade-offs: sampling-based planners such as the asymptotically optimal Rapidly-exploring Random Tree (RRT ∗ ) and its variants may spend considerable computation exploring regions irrelevant to the task, grid-based planners depend on map resolution, and lattice-based planners often rely on predefined motion primitives. This paper presents SI-MPPI, a planner that uses tree search to decide which routes are worth exploring and MPPI to optimize many short, dynamically feasible motion candidates in parallel on a laptop-grade GPU, retaining low-cost candidates that satisfy collision-safety and progress checks. The planner operates directly on standard 2D occupancy-grid maps, using the robot’s motion model for trajectory generation and its footprint for collision checking. In simulations on four 100 m × 100 m $100\\text{\\,}\\mathrm{m}$\\times$100\\text{\\,}\\mathrm{m}$ cluttered maps, SI-MPPI consistently produced the smoothest steering commands under a common parameter configuration, potentially reducing actuator wear and payload disturbance. Averaged across these maps, it built search trees roughly 7 7 – 15 × 15\\times smaller than those of the evaluated baselines and planned about 10 10 – 27 × 27\\times faster than the RRT ∗ -based planners, while maintaining comparable or shorter path lengths. Practitioners should note that the proposed framework currently targets static, known maps, does not guarantee the shortest route, and produces planned trajectories with relatively low speeds; for higher-speed execution, however, a separate receding-horizon MPPI controller can track the resulting waypoints, as illustrated in the supplementary video. Future work will extend the approach to robots with more complex dynamics and to speed-aware planning. Index Terms: Kinodynamic motion planning, Monte Carlo tree search, model predictive path integral control, GPU-accelerated motion planning, autonomous mobile robots."
+   "affiliation_block": "(HTML version not available: HTTPError)"
   },
   {
-   "key": "doi:10.1038/s41467-026-78715-2",
-   "source": "journal",
-   "journal": "Nature Communications",
-   "journal_short": "Nature Communications",
-   "doi": "10.1038/s41467-026-78715-2",
-   "title": "Automated data to model transformation for constraint programming with AI",
-   "abstract": "Artificial intelligence for combinatorial optimization depends on high-quality, structured training data, yet transforming ambiguous natural-language descriptions into precise, executable formal models remains a major bottleneck, traditionally requiring extensive manual effort and domain expertise. We develop CPAM-LLM, an automated constraint-programming modeling framework based on large language models that converts unstructured problem specifications into validated and executable formal models. The framework integrates retrieval-augmented generation grounded in formal concept analysis for structural validation, chaos-mapping-based data augmentation to enhance cross-domain generalization, and dynamic constraint adaptation to accommodate evolving problem settings. We demonstrate its effectiveness across five scenarios, including DNA sequence design, reconfigurable energy storage systems, and unmanned vehicle logistics. The results show that the framework can automate the data-to-model pipeline while adapting reliably to changing requirements, providing a practical approach to automated data formalization and indicating the importance of accessible, high-quality structured data for reliable downstream artificial intelligence applications.",
-   "abstract_source": "openalex",
+   "key": "arxiv:2611.28375",
+   "source": "arXiv",
+   "id": "2611.28375",
+   "title": "Loadability Assessment for Large-Load Integration: From Repeated Power Flow Tracing to Historical Trajectory Transfer",
+   "abstract": "Integrating large data-center loads requires utilities to evaluate voltage-stability loading margins under different generation and demand conditions. Continuation power flow (CPF) traces P--V curves through successive prediction and correction steps, but related assessments can repeatedly reconstruct similar nonlinear behavior. Reusing an operating point as an initial guess does not capture the subsequent voltage response. This paper proposes a continuation method that transfers finite segments of historical power flow (PF) trajectories. Each segment is aligned with the present state and continuation direction, supplementing the CPF tangent predictor with previously computed nonlinear curve shape. Short Newton tests evaluate compatibility with the present PF equations, and an attention-based selector combines their results with network conditions, loading patterns, and recent continuation states. Numerical correction and fold refinement determine accepted solutions and the loading limit. The analysis bounds prediction error through differences in trajectory curvature and establishes sufficient conditions for local correction and branch preservation. Studies on modified IEEE 14- and 118-bus systems under renewable-generation and data-center load variations demonstrate reduced online computation and higher observed recovery of specified continuation solutions than Adaptive CPF. For loading-limit assessment, paired online speedups are 4.88--21.62$\\times$ over Adaptive CPF and 1.53--4.77$\\times$ over holomorphic embedding with arc-length parametrization (HEAP) across the tested scenarios.",
    "authors": [
     {
-     "name": "Zhengqi Shi",
-     "affiliations": [
-      "Huazhong University of Science and Technology"
-     ]
+     "name": "Yihan Huang",
+     "affiliations": []
     },
     {
-     "name": "Jin Huang",
-     "affiliations": [
-      "Huazhong University of Science and Technology"
-     ]
-    },
-    {
-     "name": "Xinyu Li",
-     "affiliations": [
-      "Huazhong University of Science and Technology"
-     ]
-    },
-    {
-     "name": "Hao Zhang",
-     "affiliations": [
-      "Huazhong University of Science and Technology"
-     ]
-    },
-    {
-     "name": "Mingming Peng",
-     "affiliations": [
-      "Huazhong University of Science and Technology"
-     ]
-    },
-    {
-     "name": "Xinyi Yang",
-     "affiliations": [
-      "Huazhong University of Science and Technology"
-     ]
-    },
-    {
-     "name": "Qihao Liu",
-     "affiliations": [
-      "Huazhong University of Science and Technology"
-     ]
-    },
-    {
-     "name": "Shaosen Su",
-     "affiliations": [
-      "Huazhong University of Science and Technology"
-     ]
-    },
-    {
-     "name": "Chunjiang Zhang",
-     "affiliations": [
-      "Huazhong University of Science and Technology"
-     ]
-    },
-    {
-     "name": "Peigen Li",
-     "affiliations": [
-      "Huazhong University of Science and Technology"
-     ]
-    },
-    {
-     "name": "Liang Gao",
-     "affiliations": [
-      "Huazhong University of Science and Technology"
-     ]
+     "name": "Yang Weng",
+     "affiliations": []
     }
    ],
-   "type": "journal-article",
-   "date": "2026-11-19",
-   "url": "https://doi.org/10.1038/s41467-026-78715-2",
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-20",
+   "url": "https://arxiv.org/abs/2611.28375",
    "matched_terms": [
-    "large language models",
-    "llm"
+    "data-center"
    ],
    "screened_on": "title+abstract",
-   "affiliation_source": "openalex"
+   "affiliation_block": "Loadability Assessment for Large-Load Integration: From Repeated Power Flow Tracing to Historical Trajectory Transfer PubID: pubid: Yihan Huang Yang Weng † † thanks: Yihan Huang and Yang Weng are with the School of Electrical, Computer and Energy Engineering, Arizona State University, Tempe, AZ 85281 USA (e-mail: yhuan643@asu.edu; yang.weng@asu.edu) Abstract Integrating large data-center loads requires utilities to evaluate voltage-stability loading margins under different generation and demand conditions. Continuation power flow (CPF) traces P–V curves through successive prediction and correction steps, but related assessments can repeatedly reconstruct similar nonlinear behavior. Reusing an operating point as an initial guess does not capture the subsequent voltage response. This paper proposes a continuation method that transfers finite segments of historical power flow (PF) trajectories. Each segment is aligned with the present state and continuation direction, supplementing the CPF tangent predictor with previously computed nonlinear curve shape. Short Newton tests evaluate compatibility with the present PF equations, and an attention-based selector combines their results with network conditions, loading patterns, and recent continuation states. Numerical correction and fold refinement determine accepted solutions and the loading limit. The analysis bounds prediction error through differences in trajectory curvature and establishes sufficient conditions for local correction and branch preservation. Studies on modified IEEE 14- and 118-bus systems under renewable-generation and data-center load variations demonstrate reduced online computation and higher observed recovery of specified continuation solutions than Adaptive CPF. For loading-limit assessment, paired online speedups are 4.88–21.62 × \\times over Adaptive CPF and 1.53–4.77 × \\times over holomorphic embedding with arc-length parametrization (HEAP) across the tested scenarios. Index Terms: Continuation power flow, data centers, historical trajectory transfer, loadability assessment, voltage stability."
   }
  ],
  "title_only_final": [
   {
    "source": "Applied Energy",
-   "title": "Learnable delay-stability coupling for energy-information co-optimization in smart grids",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129248"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Continual reinforcement learning for adaptive ship energy efficiency optimization: A LoRA-enabled low-parameter incremental framework",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129272"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Secure microgrid formation–oriented uncertainty-aware frequency-constrained proactive scheduling in resilient distribution systems",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129247"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Physical field coupling in hydrogen production: A critical review from single-field to multi-field synergistic mechanisms",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129301"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Flexibility-oriented hierarchical energy management for transmission–distribution–microgrid coordination",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129251"
-  },
-  {
-   "source": "Nature Energy",
-   "title": "Targeted technology coadoption for reconciling energy savings and equity gains in the residential energy transition",
-   "url": "https://doi.org/10.1038/s41560-026-02164-w"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "An adaptive fusion-based feature selection pipeline for battery pack state-of-health estimation within a machine learning framework",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129188"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Bio-based deep eutectic solvents as advanced phase change media for solar thermal storage: Mechanisms, computational design, and industrial deployment challenges",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129210"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "An integrated spectrally selective photovoltaic and radiative-cooling system for power generation and all-day atmospheric water harvesting",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129217"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Parametric PINNs for redox flow batteries: Physics-constrained flow field modeling and prediction",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129222"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Modeling and performance assessment of a dual-function collector featuring a transparent compound parabolic concentrator for simultaneous solar energy harvesting and radiative cooling",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129253"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Deliverability-aware ancillary service coordination for grid-forming dynamic virtual power plants",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129255"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Collaborative multi-objective dispatch of cascade hydro-wind-solar systems based on adaptive density reshaping evolutionary algorithm",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129263"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Transmission–distribution–microgrid coordination for hierarchical power grid integration: A low-carbon perspective",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129264"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Adaptive evaluation framework for computationally expensive bi-level hybrid energy storage system planning under renewable uncertainty",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129268"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "MAC-at-risk: a climate-risk-hedged marginal abatement cost framework for CSP-based green hydrogen under 2026–2050 scenarios",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129269"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Decarbonizing residential buildings: Evaluating heat pump solar and battery renovation pathways",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129270"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Interpretable day-ahead sister interval forecasting of distributed photovoltaic power under generalized weather scenarios",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129273"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "From accelerated aging to standard cycling: timescale-aligned state-of-health trajectory prediction for lithium-ion batteries",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129265"
-  },
-  {
-   "source": "Nature Rev. EE",
-   "title": "Unlocking cycle life of lithium-metal batteries",
-   "url": "https://doi.org/10.1038/s44287-026-00356-w"
-  }
- ],
- "pending_items": [
-  {
-   "source": "Applied Energy",
    "title": "A probabilistic region-based model for evaluating the integrated hosting capacity of photovoltaics and electric vehicles in power distribution networks",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129064",
-   "first_seen": "2026-11-19"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129064"
   },
   {
    "source": "Applied Energy",
    "title": "Local optimization of CHP plant operation: an adaptively updated digital twin and linear programming",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129220",
-   "first_seen": "2026-11-19"
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129220"
   },
   {
    "source": "Applied Energy",
    "title": "Unified regime partitioning and dominant energy-domain identification for heterogeneous energy-coupling systems",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129295",
-   "first_seen": "2026-11-19"
-  },
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129295"
+  }
+ ],
+ "pending_items": [
   {
    "source": "Applied Energy",
    "title": "From one cycle to full life: Ultra-early battery degradation assessment for operational assessment and rapid screening",
@@ -664,30 +538,6 @@
   },
   {
    "source": "Nature Communications",
-   "title": "ORE1 stabilizes PIF4 protein through a UBP12/UBP13-dependent regulatory module in thermomorphogenesis",
-   "url": "https://doi.org/10.1038/s41467-026-79802-0",
-   "first_seen": "2026-11-23"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Non Hermitian synthetic phase shifter with topologically protected phase control via tunable losses",
-   "url": "https://doi.org/10.1038/s41467-026-79534-1",
-   "first_seen": "2026-11-23"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Marine volatile organic compounds air-sea exchange dynamics across a summer-to-autumn ecosystem transition",
-   "url": "https://doi.org/10.1038/s41467-026-79437-1",
-   "first_seen": "2026-11-23"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "CARM1-mediated methylation controls interactions of ALIX with key partners important for cytokinesis",
-   "url": "https://doi.org/10.1038/s41467-026-79275-1",
-   "first_seen": "2026-11-23"
-  },
-  {
-   "source": "Nature Communications",
    "title": "3D-printed Eutectic high-entropy alloys with dynamic protection for tribological damage resistance",
    "url": "https://doi.org/10.1038/s41467-026-79276-0",
    "first_seen": "2026-11-23"
@@ -712,19 +562,115 @@
   },
   {
    "source": "Nature Communications",
-   "title": "Mesophase-induced vitrification in coordination polymers via aliphatic chain dynamics",
-   "url": "https://doi.org/10.1038/s41467-026-79687-z",
-   "first_seen": "2026-11-23"
-  },
-  {
-   "source": "Nature Communications",
    "title": "A multimodal ultrasound foundation model for diagnosis of unexplained lymphadenopathy",
    "url": "https://doi.org/10.1038/s41467-026-79690-4",
    "first_seen": "2026-11-23"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Communication-Free Reactive Power Sharing Control of Multi-infeed LCC HVDC Systems for Weak Grid Interconnection",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3756495",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Scenario-adaptive Shapley allocation of multi-market benefits in renewable energy base-transmission systems through sparse interaction learning",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129298",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Nuclear energy powered hydrogen production for green metallurgy: Current status, coupling roadmaps, and techno-economic challenges",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129304",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Unlocking lithium-ion battery state of health estimation via interpretable pseudo-linear parallel deep neural network",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129311",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Fluorination‑driven σ‑bonding design enables practical aqueous zinc-vanadium‑oxide batteries",
+   "url": "https://doi.org/10.1038/s41467-026-79255-5",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "A leptin receptor–LRP1 complex in the choroid plexus and tanycytes mediates leptin entry into the mouse brain",
+   "url": "https://doi.org/10.1038/s41467-026-79556-9",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "LitMOF: An LLM Multi-Agent for Literature-Validated Metal-Organic Frameworks Database Correction and Expansion",
+   "url": "https://doi.org/10.1038/s41467-026-79242-w",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Promoted phase transition in perovskite heterojunctions via in-situ regulated 2D intermediates enables stable solar cells",
+   "url": "https://doi.org/10.1038/s41467-026-79294-y",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Host control of rhizobial proliferation in soybean nodules",
+   "url": "https://doi.org/10.1038/s41467-026-79800-2",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Dissecting the root-fungal interface in 3D reveals spatially distinct signalling landscapes",
+   "url": "https://doi.org/10.1038/s41467-026-79701-4",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Unidirectional rolling of single-crystal graphene into nanoscrolls",
+   "url": "https://doi.org/10.1038/s41467-026-79818-6",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Retraction Note: Combination of PARP and KRASG12D inhibitors enhances therapeutic efficacy by exploiting vulnerabilities in PDAC",
+   "url": "https://doi.org/10.1038/s41467-026-80283-4",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Programmable synaptic and stochastic regimes in a monolayer hBN atomristor",
+   "url": "https://doi.org/10.1038/s41467-026-79568-5",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Diminished subsurface oxygen maximum linked to rapid decline of the North Pacific Central Mode Water",
+   "url": "https://doi.org/10.1038/s41467-026-79475-9",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Catalyst-free thermal dehydropolycondensation for precise synthesis of silicon-incorporated polythiophenes",
+   "url": "https://doi.org/10.1038/s41467-026-79642-y",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "EcoVAE: a generative deep learning method for global species distribution prediction",
+   "url": "https://doi.org/10.1038/s41467-026-79791-0",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "source": "Nature Rev. EE",
+   "title": "Physically implemented nonlinear activation functions in optical neural networks",
+   "url": "https://doi.org/10.1038/s44287-026-00352-0",
+   "first_seen": "2026-11-24"
   }
  ],
- "pending_abstract": 28,
+ "pending_abstract": 37,
  "runs_utc": [
-  "2026-11-23T15:50:09+00:00"
+  "2026-11-24T15:41:33+00:00"
  ]
 }
