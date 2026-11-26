@@ -1,54 +1,54 @@
 {
- "date": "2026-11-25",
- "generated_utc": "2026-11-25T15:26:22+00:00",
+ "date": "2026-11-26",
+ "generated_utc": "2026-11-26T14:56:49+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-11-21",
-   "2026-11-25"
+   "2026-11-22",
+   "2026-11-26"
   ],
   "journal_doi_created": [
-   "2026-11-19",
-   "2026-11-25"
+   "2026-11-20",
+   "2026-11-26"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-   "in_window": 84,
-   "new": 29,
-   "candidates": 2
+   "in_window": 104,
+   "new": 37,
+   "candidates": 1
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-   "in_window": 64,
-   "new": 33,
-   "candidates": 6
+   "in_window": 70,
+   "new": 12,
+   "candidates": 3
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-   "in_window": 77,
-   "new": 29,
+   "in_window": 82,
+   "new": 19,
    "candidates": 0
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-   "in_window": 5,
-   "new": 3,
-   "candidates": 1,
-   "new_with_abstract": 1
+   "in_window": 4,
+   "new": 1,
+   "candidates": 0,
+   "new_with_abstract": 0
   },
   {
    "source": "TPWRS",
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
-   "in_window": 1,
-   "new": 0,
+   "in_window": 2,
+   "new": 1,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -56,16 +56,16 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 29,
-   "new": 4,
-   "candidates": 0,
+   "in_window": 28,
+   "new": 7,
+   "candidates": 1,
    "new_with_abstract": 0
   },
   {
    "source": "Nature Energy",
    "journal": "Nature Energy",
    "status": "ok",
-   "in_window": 4,
+   "in_window": 3,
    "new": 0,
    "candidates": 0,
    "new_with_abstract": 0
@@ -74,10 +74,10 @@
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 187,
-   "new": 28,
-   "candidates": 1,
-   "new_with_abstract": 17
+   "in_window": 170,
+   "new": 24,
+   "candidates": 0,
+   "new_with_abstract": 16
   },
   {
    "source": "Nature Rev. EE",
@@ -92,653 +92,223 @@
  "errors": [],
  "candidates": [
   {
-   "key": "arxiv:2611.32882",
+   "key": "arxiv:2611.34473",
    "source": "arXiv",
-   "id": "2611.32882",
-   "title": "Adaptive Electromagnetic Transient-level Digital Twins for Data Centers via In-Context Learning with LLMs",
-   "abstract": "The rapid growth of artificial intelligence (AI) workloads has significantly increased data center (DC) power demand. Frequent operational and configurational changes, such as load surges caused by dynamic workload allocation, can induce electromagnetic transients (EMTs) whose accurate prediction is critical for reliable DC operation and maintenance. Although high-fidelity EMT solvers are widely adopted for transient analysis, their computational cost limits large-scale and multi-scenario studies. Digital twins address this computational bottleneck by emulating the behavior of a physical system and enabling fast prediction in place of expensive high-fidelity simulation. However,data-driven digital twins are non-adaptive and fail to generalize once the DC configuration changes. To address this limitation, this paper proposes an adaptive EMT-level digital twin for DCs based on in-context learning (ICL) with large language models (LLMs). We formulate the EMT prediction task as a system identification problem under parametric uncertainty and develop a GPT-2-based framework that adapts to unseen DC configurations at inference time from a small set of EMT trajectory samples, without model retraining. The proposed framework is validated on three representative EMT scenarios and benchmarked against three baseline non-adaptive twins. Results demonstrate superior prediction accuracy, improved adaptability to unseen operating conditions, and substantial computational speedups compared to high-fidelity EMT simulation.",
+   "id": "2611.34473",
+   "title": "High-performance metapopulation models for epidemic emergencies: Scalability and performance of implicit and explicit mobility representations on CPUs and GPUs",
+   "abstract": "Epidemics form a subclass of natural disasters impacting countries or entire continents, where suitable reactions might differ substantially across spatio-temporal dimensions. Spatially resolved models based on ordinary differential equations (ODEs) are an efficient modeling approach for large and distributed populations. Commonly referred to as metapopulation models, they allow a realistic representation of spatial heterogeneities and mobility. Yet, their application in epidemic settings under high time pressure requires efficient, parallelized implementations leveraging modern supercomputers. The different ways to represent mobility in metapopulation models affect both epidemic trajectories and computational costs. In contrast to implicit mobility modeling, where populations are coupled through transition and transmission intensities, explicit Lagrangian mobility tracks traveling subpopulations according to their home and current location. In this paper, we compare metapopulation models with implicit and explicit mobility. A four-patch experiment shows that the trajectories of both formulations remain close, but differences increase with the mobility cycle length. We present CPU- and GPU-based parallelizations and analyze fully connected networks with up to 16,384 patches on 128 CPU cores and NVIDIA A100 and H100 GPUs. Roofline analyses show near-maximum performance for the most time-consuming GPU subroutines and identify data reuse and the cost of mobility events as the main performance drivers. Our results show that mobility assumptions, event frequency, numerical solvers, and available hardware need to be considered together when developing metapopulation models for epidemic emergencies. In a synthesized setting with a disease outbreak in central Europe, we show how a worldwide pandemic with 12,865 patches and four billion state variables can be simulated in 24 seconds using GPUs.",
    "authors": [
     {
-     "name": "Amit Jena",
+     "name": "Henrik Zunker",
      "affiliations": []
     },
     {
-     "name": "Bin Wang",
+     "name": "Carlotta Gerstein",
      "affiliations": []
     },
     {
-     "name": "Aoxia Chen",
-     "affiliations": []
-    },
-    {
-     "name": "Brad Chadwell",
-     "affiliations": []
-    },
-    {
-     "name": "Billy Yancey",
-     "affiliations": []
-    },
-    {
-     "name": "Le Xie",
+     "name": "Martin J. Kühn",
      "affiliations": []
     }
    ],
    "categories": [
-    "eess.SY",
-    "cs.AI"
+    "cs.DC"
    ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-24",
-   "url": "https://arxiv.org/abs/2611.32882",
+   "primary_category": "cs.DC",
+   "date": "2026-11-25",
+   "url": "https://arxiv.org/abs/2611.34473",
    "matched_terms": [
-    "data center",
-    "data centers"
+    "gpu",
+    "gpus",
+    "supercomputers"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "Adaptive Electromagnetic Transient-level Digital Twins for Data Centers via In-Context Learning with LLMs Amit Jena Bin Wang Aoxia Chen Brad Chadwell Billy Yancey and Le Xie † † thanks: A. Jena is with the Department of Electrical and Computer Engineering, Texas A&M University, College Station, TX 77843 USA (e-mail: amit_jena@tamu.edu). (Corresponding author: Amit Jena.) † † thanks: B. Wang is with Advanced Technology Solutions, ISO New England, Holyoke, MA 01040 USA (e-mail: bwang@iso-ne.com). † † thanks: A. Chen, B. Chadwell, and B. Yancey are with Electric Power Engineers (EPE), Austin, TX USA (e-mail: kchen@epeconsulting.com; bchadwell@epeconsulting.com; byancey@epeconsulting.com). † † thanks: L. Xie is with the School of Engineering and Applied Sciences, Harvard University, Boston, MA 02134 USA (e-mail: xie@seas.harvard.edu). Abstract The rapid growth of artificial intelligence (AI) workloads has significantly increased data center (DC) power demand. Frequent operational and configurational changes, such as load surges caused by dynamic workload allocation, can induce electromagnetic transients (EMTs) whose accurate prediction is critical for reliable DC operation and maintenance. Although high-fidelity EMT solvers are widely adopted for transient analysis, their computational cost limits large-scale and multi-scenario studies. Digital twins address this computational bottleneck by emulating the behavior of a physical system and enabling fast prediction in place of expensive high-fidelity simulation. However, data-driven digital twins are non-adaptive and fail to generalize once the DC configuration changes. To address this limitation, this paper proposes an adaptive EMT-level digital twin for DCs based on in-context learning (ICL) with large language models (LLMs). We formulate the EMT prediction task as a system identification problem under parametric uncertainty and develop a GPT-2-based framework that adapts to unseen DC configurations at inference time from a small set of EMT trajectory samples, without model retraining. The proposed framework is validated on three representative EMT scenarios and benchmarked against three baseline non-adaptive twins. Results demonstrate superior prediction accuracy, improved adaptability to unseen operating conditions, and substantial computational speedups compared to high-fidelity EMT simulation. Index Terms: Data Center, digital twin, electromagnetic transients, in-context learning, large language model, syst"
+   "affiliation_block": "High-performance metapopulation models for epidemic emergencies: Scalability and performance of implicit and explicit mobility representations on CPUs and GPUs Henrik Zunker Email: Henrik.Zunker@DLR.de Address: Institute of Software Technology, Department of High-Performance Computing, German Aerospace Center, Cologne, Germany Carlotta Gerstein Address: Institute of Software Technology, Department of High-Performance Computing, German Aerospace Center, Cologne, Germany Martin J. Kühn Email: Martin.Kuehn@DLR.de Corresponding author: Corresponding author Address: Institute of Software Technology, Department of High-Performance Computing, German Aerospace Center, Cologne, Germany Address: Bonn Center for Mathematical Life Sciences and Life and Medical Sciences Institute, University of Bonn, Germany Abstract Epidemics form a particular subclass of natural disasters impacting countries or entire continents, where the most suitable reaction might differ substantially across the spatio-temporal dimensions. Spatially resolved models based on ordinary differential equations (ODEs) are an efficient modeling approach for large and distributed populations. They are commonly referred to as metapopulation models and allow a realistic representation of spatial heterogeneities and mobility. Yet, their application in epidemic settings, where high time pressure prevails, requires highly efficient and parallelized implementations leveraging the potential of modern supercomputers. The different ways to represent mobility in metapopulation models affect not only epidemic trajectories but also the computational cost of the simulations. In contrast to implicit mobility modeling, where populations are coupled through transition and transmission intensities, explicit Lagrangian mobility tracks traveling subpopulations according to their home and current location. In this paper, we compare metapopulation models with implicit and explicit mobility. A four-patch experiment further shows that the epidemic trajectories of the two formulations remain close, but the differences increase with the mobility cycle length. We present CPU- and GPU-based parallelizations and analyze fully connected networks with up to 16,384 patches on 128 CPU cores as well as NVIDIA A100 and H100 GPUs. Roofline analyses show close to maximum performance for the most time-consuming GPU subroutines and identify data reuse and the cost of mobility events as the main performance drivers. Our results show that mobi"
   },
   {
-   "key": "arxiv:2611.32517",
+   "key": "arxiv:2611.34462",
    "source": "arXiv",
-   "id": "2611.32517",
-   "title": "Wi-Fi Enabled Edge Intelligence Framework for Smart City Traffic Monitoring using Low-Power IoT Cameras",
-   "abstract": "Real-time traffic monitoring in smart cities demands ultra-low latency processing to support time-critical decisions such as incident detection and congestion management. While cloud-based solutions offer robust computation, their inherent latency limits their applicability for such tasks. This work proposes a localized edge AI framework that connects low-power IoT camera sensors to a client, or applies offloading of inference to an NVIDIA Jetson Nano (GPU). Networking is achieved via Wi-Fi, enabling image classification without relying on wide-area infrastructure such as 5G, or wired networks. We evaluate two processing strategies: local inference on camera nodes and GPU-accelerated offloading to the Jetson Nano.We show that local processing is only feasible for lightweight models and low frame rates, whereas offloading enables near-realtime performance even for more complex models. These results demonstrate the viability of cost-effective, Wi-Fi-based edge AI deployments for latency-critical urban monitoring.",
+   "id": "2611.34462",
+   "title": "Same Seed, Different Top Prediction: Cross-Platform Reproducibility of AlphaFold 3 Inference on TPUs, GPUs, and CPUs",
+   "abstract": "AlphaFold 3 returns the highest-ranked of several sampled structures and computes each prediction on one device. Computing centers may schedule them on different GPU types or CPU nodes. Floating-point results can differ between devices, so the same input and seed may return another structure. Neither AlphaFold 3's documentation nor its outputs warn of this. We measure how often the device changes the returned structure, and tell users what to report and how to make devices agree. We used identical inputs, weights, seeds, and settings on two Google tensor processing unit (TPU) generations (v5e, v6e), three NVIDIA GPUs (L4, A100, H100), and an Intel Xeon CPU. On 60 protein-ligand complexes, with five seeds each, switching TPU generations changed the top-ranked sample in 18.0% of 300 predictions. Recompiling never changed it on either TPU, but did so in 7.3% on the L4 GPU. Yet the structures barely moved. The top-ranked pose switched between correct and incorrect in 3.3% to 3.7% of predictions, against about 10% for a new seed. These switches nearly always came from one validity check, with the ligand within 2 angstroms. Follow-ups found the effect again on 72 new targets and between the TPUs and the CPU. Between the A100 and H100 it exceeded recompilation, although AlphaFold 3's developers verified its numerical accuracy on both. An exploratory analysis links the changes to near-tied candidates. We recommend reporting the device and every near-tied sample. A float32 trunk with full-precision matrix products made all five accelerators agree on nearly every prediction.",
    "authors": [
     {
-     "name": "Raphael Walcher",
+     "name": "Lorenzo Pazienza",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "cs.DC",
+    "cs.PF"
+   ],
+   "primary_category": "cs.DC",
+   "date": "2026-11-25",
+   "url": "https://arxiv.org/abs/2611.34462",
+   "matched_terms": [
+    "gpu",
+    "gpus",
+    "tpu",
+    "tpus"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "Same Seed, Different Top Prediction: Cross-Platform Reproducibility of AlphaFold 3 Inference on TPUs, GPUs, and CPUs Lorenzo Pazienza Affiliation: LUISS Guido Carli University Rome, Italy lorenzo.pazienza@gmail.com Abstract AlphaFold 3 returns the highest-ranked of several sampled structures and computes each prediction on one device. Computing centers may schedule them on different GPU types or CPU nodes. Floating-point results can differ between devices, so the same input and seed may return another structure. Neither AlphaFold 3’s documentation nor its outputs warn of this. We measure how often the device changes the returned structure, and tell users what to report and how to make devices agree. We used identical inputs, weights, seeds, and settings on two Google tensor processing unit (TPU) generations (v5e, v6e), three NVIDIA GPUs (L4, A100, H100), and an Intel Xeon CPU. On 60 protein-ligand complexes, with five seeds each, switching TPU generations changed the top-ranked sample in 18.0% of 300 predictions. Recompiling never changed it on either TPU, but did so in 7.3% on the L4 GPU. Yet the structures barely moved. The top-ranked pose switched between correct and incorrect in 3.3% to 3.7% of predictions, against about 10% for a new seed. These switches nearly always came from one validity check, with the ligand within 2 Å. Follow-ups found the effect again on 72 new targets and between the TPUs and the CPU. Between the A100 and H100 it exceeded recompilation, although AlphaFold 3’s developers verified its numerical accuracy on both. An exploratory analysis links the changes to near-tied candidates. We recommend reporting the device and every near-tied sample. A float32 trunk with full-precision matrix products made all five accelerators agree on nearly every prediction. Index Terms: AlphaFold 3, protein structure prediction, high performance computing, reproducibility of results, floating-point arithmetic"
+  },
+  {
+   "key": "arxiv:2611.33661",
+   "source": "arXiv",
+   "id": "2611.33661",
+   "title": "DynaSeek: Large Language Model-Driven Hybrid Dynamic Model Discovery for Grid-Tied Inverters from Limited Measurements",
+   "abstract": "Discovering the unknown governing equations of grid-tied inverters from limited measurements is essential for the stability analysis of modern inverter-dominated power systems. However, existing identification methods struggle to jointly resolve unmeasured internal control memory and saturation-induced mode transitions from accessible terminal waveforms. To address this challenge, this paper proposes DynaSeek, a large language model (LLM)-driven framework for discovering explicit hybrid differential-algebraic equations (DAEs) of current-limited inverters. The framework integrates physics-constrained symbolic skeleton synthesis with the joint numerical estimation of shared model parameters and record-specific latent initial states across multi-island experience archives. Furthermore, two complementary structural diagnostics evaluating cross-record state closure and cross-window consistency are established to detect structural deficiencies across distinct input histories and transient stages. Guided by diagnostic feedback, DynaSeek directs variable-dimensional latent-state expansion and current-limiting and anti-windup refinement to yield self-contained hybrid DAEs unifying unsaturated regulation, current limiting, and post-fault recovery. Controller-hardware-in-the-loop (CHIL) experiments and closed-loop system-level simulations demonstrate that DynaSeek reduces transient trajectory reconstruction errors by one to two orders of magnitude compared with symbolic and neural baselines while accurately preserving reference critical clearing times, enabling reliable large-signal stability assessment of inverters with inaccessible internal controls.",
+   "authors": [
+    {
+     "name": "Hongwei Zhen",
      "affiliations": []
     },
     {
-     "name": "Kurt Horvath",
+     "name": "Chao Shen",
      "affiliations": []
     },
     {
-     "name": "Dragi Kimovski",
+     "name": "Jianfeng Niu",
      "affiliations": []
     },
     {
-     "name": "Stojan Kitanov",
+     "name": "Xin Xiang",
+     "affiliations": []
+    },
+    {
+     "name": "Wuhua Li",
+     "affiliations": []
+    },
+    {
+     "name": "Mingyang Sun",
+     "affiliations": []
+    }
+   ],
+   "categories": [
+    "eess.SY"
+   ],
+   "primary_category": "eess.SY",
+   "date": "2026-11-25",
+   "url": "https://arxiv.org/abs/2611.33661",
+   "matched_terms": [
+    "large language model",
+    "llm"
+   ],
+   "screened_on": "title+abstract",
+   "affiliation_block": "DynaSeek: Large Language Model-Driven Hybrid Dynamic Model Discovery for Grid-Tied Inverters from Limited Measurements Hongwei Zhen Chao Shen Jianfeng Niu Xin Xiang Affiliation: Wuhua Li, and Mingyang Sun, Abstract Discovering the unknown governing equations of grid-tied inverters from limited measurements is essential for the stability analysis of modern inverter-dominated power systems. However, existing identification methods struggle to jointly resolve unmeasured internal control memory and saturation-induced mode transitions from accessible terminal waveforms. To address this challenge, this paper proposes DynaSeek, a large language model (LLM)-driven framework for discovering explicit hybrid differential-algebraic equations (DAEs) of current-limited inverters. The framework integrates physics-constrained symbolic skeleton synthesis with the joint numerical estimation of shared model parameters and record-specific latent initial states across multi-island experience archives. Furthermore, two complementary structural diagnostics evaluating cross-record state closure and cross-window consistency are established to detect structural deficiencies across distinct input histories and transient stages. Guided by diagnostic feedback, DynaSeek directs variable-dimensional latent-state expansion and current-limiting and anti-windup refinement to yield self-contained hybrid DAEs unifying unsaturated regulation, current limiting, and post-fault recovery. Controller-hardware-in-the-loop (CHIL) experiments and closed-loop system-level simulations demonstrate that DynaSeek reduces transient trajectory reconstruction errors by one to two orders of magnitude compared with symbolic and neural baselines while accurately preserving reference critical clearing times, enabling reliable large-signal stability assessment of inverters with inaccessible internal controls. Index Terms: Dynamic model discovery, grid-tied inverters, large language models, limited measurements, current limiting, transient stability."
+  },
+  {
+   "key": "arxiv:2611.33542",
+   "source": "arXiv",
+   "id": "2611.33542",
+   "title": "RankCast: Phase-Aware Rank Balancing in MoE Serving",
+   "abstract": "Modern large language model (LLM) inference increasingly adopts disaggregated architectures that separate Prefill (P) and Decode (D) phases. Meanwhile, Expert Parallelism (EP) has been widely adopted in large Mixture-of-Experts (MoE) model serving. However, load imbalance still slows down MoE inference because each layer must wait for the busiest EP rank. The main source of latency differs between prefill and decode. Prefill is compute-bound, and its MoE layers' latency is determined by the maximum token count of the busiest rank. At the same time, under moderate batch sizes, Decode is memory-bound, so the latency is dominated by the maximum active-expert count across ranks. To solve both problems under a unified framework, we present RankCast, a system that reduces rank-level maximum token counts during prefill and active-expert counts during decode. For every token, RankCast preserves the predicted Top-p experts and chooses the remaining k-p from its Top-L candidates (L > k). In prefill, RankCast yields a price per rank that steers flexible assignments to less loaded ranks. In decode, RankCast closes experts on the busiest ranks while preserving the constraints for each token. Both paths are implemented and tested in the state-of-the-art inference frameworks SGLang and DeepEP. We overlap RankCast's kernels with model execution and reuse the existing DeepEP communication channel for metadata transmission. On Qwen3-235B-A22B with EP=8 and Qwen3.5-397B-A17B with EP=16, RankCast removes over 75% of the busiest rank's excess prefill load, improves prefill input throughput by up to 19%, and reduces decode time per output token by up to 10%. The quality cost is below one percentage point.",
+   "authors": [
+    {
+     "name": "Kaidi Fu",
+     "affiliations": []
+    },
+    {
+     "name": "Xu-Hao Lu",
+     "affiliations": []
+    },
+    {
+     "name": "Pingwei Sun",
+     "affiliations": []
+    },
+    {
+     "name": "Jianchao Tan",
+     "affiliations": []
+    },
+    {
+     "name": "Yuchen Xie",
+     "affiliations": []
+    },
+    {
+     "name": "Xunliang Cai",
      "affiliations": []
     }
    ],
    "categories": [
     "cs.DC",
     "cs.AI",
-    "cs.NI"
+    "cs.LG"
    ],
    "primary_category": "cs.DC",
    "date": "2026-11-24",
-   "url": "https://arxiv.org/abs/2611.32517",
+   "url": "https://arxiv.org/abs/2611.33542",
    "matched_terms": [
-    "edge ai",
-    "gpu"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Wi-Fi Enabled Edge Intelligence Framework for Smart City Traffic Monitoring using Low-Power IoT Cameras Conference: 15th International Conference on the Internet of Things; Nov 19–21, 2025; Vienna, AT ISBN: 978-1-4503-XXXX-X/2018/06 CCS: Networks Network performance evaluation CCS: Networks Network structure CCS: Networks Location based services CCS: Computing methodologies Distributed computing methodologies Raphael Walcher email: rawalcher@edu.aau.at Affiliation: University of Klagenfurt , Institute of Information Technology , Klagenfurt , Austria , Kurt Horvath email: kurt.horvath@aau.at Affiliation: University of Klagenfurt , Institute of Information Technology , Klagenfurt , Austria , Dragi Kimovski email: dragi.kimovski@aau.at Affiliation: University of Klagenfurt , Institute of Information Technology , Klagenfurt , Austria and Stojan Kitanov email: stojan.kitanov@unt.edu.mk Affiliation: Mother Teresa University , Faculty of Information Sciences , Skopje , North Macedonia © cc Abstract. Real-time traffic monitoring in smart cities demands ultra-low latency processing to support time-critical decisions such as incident detection and congestion management. While cloud-based solutions offer robust computation, their inherent latency limits their applicability for such tasks. This work proposes a localized edge AI framework that connects low-power IoT camera sensors to a client, or applies offloading of inference to an NVIDIA Jetson Nano (GPU). Networking is achieved via Wi-Fi, enabling image classification without relying on wide-area infrastructure such as 5G, or wired networks. We evaluate two processing strategies: local inference on camera nodes and GPU-accelerated offloading to the Jetson Nano. We show that local processing is only feasible for lightweight models and low frame rates, whereas offloading enables near-real-time performance even for more complex models. These results demonstrate the viability of cost-effective, Wi-Fi-based edge AI deployments for latency-critical urban monitoring. Keywords: IoT Services, Computing Continuum, Edge AI, Smart City † † cc-license: by"
-  },
-  {
-   "key": "arxiv:2611.32440",
-   "source": "arXiv",
-   "id": "2611.32440",
-   "title": "Joule is FLOP: Optimizing Tensor-Core Kernels Beyond Latency Hiding at the GPU Power Wall",
-   "abstract": "For a tensor-core kernel whose average board power stays near the GPU's power cap, runtime is approximately the energy consumed per call divided by that cap. Data movement whose latency is hidden by computation still consumes energy; reducing this traffic can raise the sustained clock and shorten execution even without reducing cycle count. We introduce Joule, a framework that accounts for this energy-frequency coupling in tensor-kernel design and scheduling. Its cost model combines hardware event counts, physical data-path energy costs, and nonlinear voltage scaling across domains to solve for sustained frequency and runtime under a power cap. Combining the model with data-movement lower bounds across memory levels and dies yields a power-aware speed of light (PSoL) that quantifies structural and implementation gaps. This analysis guides wide-tile kernels that use the full tensor memory (TMEM) capacity on B200, with fine-grained asynchronous rotation to overlap accumulator readout with tensor-core computation. It also guides power-aware spatial and temporal tile scheduling that accounts for trade-offs among read sharing, locality, and load balance. Given measured event counts, the model achieves 0.69% mean energy prediction error on B200. Across 60 dense-layer shapes, our GEMM delivers geometric-mean speedups of 4.94%, 6.64%, and 2.12% over exhaustively selected cuBLAS algorithms on B200, H100 NVL, and RTX PRO 6000, respectively. For fused Mega-MoE on eight B200 GPUs, the resulting optimizations improve performance by 2.60% to 5.17% over the upstream DeepGEMM baseline with die-local expert weights. We will open source Joule upon publication.",
-   "authors": [
-    {
-     "name": "Taowen Liu",
-     "affiliations": []
-    },
-    {
-     "name": "Zhiwen Mo",
-     "affiliations": []
-    },
-    {
-     "name": "Hongxiang Fan",
-     "affiliations": []
-    },
-    {
-     "name": "Aaron Zhao",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-11-24",
-   "url": "https://arxiv.org/abs/2611.32440",
-   "matched_terms": [
-    "gpu",
-    "gpus"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Joule is FLOP: Optimizing Tensor-Core Kernels Beyond Latency Hiding at the GPU Power Wall Taowen Liu *1 Affiliation: Imperial College London , London , United Kingdom , Zhiwen Mo *1 Affiliation: Imperial College London , London , United Kingdom , Hongxiang Fan 1 Affiliation: Imperial College London , London , United Kingdom and Aaron Zhao 1 Affiliation: Imperial College London , London , United Kingdom Abstract. For a tensor-core kernel whose average board power stays near the GPU’s power cap, runtime is approximately the energy consumed per call divided by that cap. Data movement whose latency is hidden by computation still consumes energy; reducing this traffic can raise the sustained clock and shorten execution even without reducing cycle count. We introduce Joule , a framework that accounts for this energy–frequency coupling in tensor-kernel design and scheduling. Its cost model combines hardware event counts, physical data-path energy costs, and nonlinear voltage scaling across domains to solve for sustained frequency and runtime under a power cap. Combining the model with data-movement lower bounds across memory levels and dies yields a power-aware speed of light (PSoL) that quantifies structural and implementation gaps. This analysis guides wide-tile kernels that use the full tensor memory (TMEM) capacity on B200, with fine-grained asynchronous rotation to overlap accumulator readout with tensor-core computation. It also guides power-aware spatial and temporal tile scheduling that accounts for trade-offs among read sharing, locality, and load balance. Given measured event counts, the model achieves 0.69% mean energy prediction error on B200. Across 60 dense-layer shapes, our GEMM delivers geometric-mean speedups of 4.94%, 6.64%, and 2.12% over exhaustively selected cuBLAS algorithms on B200, H100 NVL, and RTX PRO 6000, respectively. For fused Mega-MoE on eight B200 GPUs, the resulting optimizations improve performance by 2.60%–5.17% over the upstream DeepGEMM baseline with die-local expert weights. We will open source Joule upon publication. Keywords: GPU kernel, power wall, Tensor-core, power-aware kernel optimization, DVFS"
-  },
-  {
-   "key": "arxiv:2611.32057",
-   "source": "arXiv",
-   "id": "2611.32057",
-   "title": "Generalized Tensor Parallelism: Powering Trillion-Parameter LLM Training at 10+ EFLOP/s",
-   "abstract": "Pretraining state-of-the-art large language models (LLMs) with up to trillions of parameters is memory- and compute-intensive. Existing parallelization schemes compromise on either per-GPU memory or throughput: data parallelism replicates parameters; tensor parallelism and fully sharded data parallelism (FSDP) add communication of activations and parameters, respectively, to every microbatch; and pipeline parallelism leaves GPUs idle while the pipeline fills and drains. We show that, for linear layers, five commonly used parallelisms (data, tensor, sequence, context parallelism and FSDP) are special cases of one framework, generalized tensor parallelism (GTP), in which each layer's parameters and activations are partitioned and either can be re-materialized with an all-gather before use. In GTP, a parameter all-gather is an optional preprocessing step on one input of a matrix multiplication (GEMM), whereas FSDP implementations typically treat it as a step before an entire Transformer block, which can increase memory footprint and delay GEMMs. The GTP view lets us schedule all-gathers per GEMM rather than per block, issuing each early enough to hide its communication but late enough to limit memory. Our implementation is open source at https://github.com/NVIDIA/Megatron-LM; with it, an internal 2T-parameter mixture-of-experts (MoE) model reaches \\textbf{13.0 model EFLOP/s} (exaFLOP/s) on 12,288 GB300 GPUs with 98\\% weak-scaling efficiency, and runs with 1M-token sequences on 512 GPUs. On 256--1,024 GPUs, our implementation achieves \\textbf{1.05--1.55$\\times$ the throughput of Megatron-FSDP} across three MoE models and \\textbf{1.27--1.31$\\times$ that of a tuned 3D-parallel recipe with pipeline parallelism} on a DeepSeek-V4-Pro proxy model.",
-   "authors": [
-    {
-     "name": "Shiqing Fan",
-     "affiliations": []
-    },
-    {
-     "name": "Deepak Narayanan",
-     "affiliations": []
-    },
-    {
-     "name": "Jimmy Zhang",
-     "affiliations": []
-    },
-    {
-     "name": "Jiangfei Duan",
-     "affiliations": []
-    },
-    {
-     "name": "Prajwal Singhania",
-     "affiliations": []
-    },
-    {
-     "name": "Haoran Zhang",
-     "affiliations": []
-    },
-    {
-     "name": "Wanying Wang",
-     "affiliations": []
-    },
-    {
-     "name": "Philip Monk",
-     "affiliations": []
-    },
-    {
-     "name": "Xuwen Chen",
-     "affiliations": []
-    },
-    {
-     "name": "Jared Casper",
-     "affiliations": []
-    },
-    {
-     "name": "Jun Yang",
-     "affiliations": []
-    },
-    {
-     "name": "Mohammad Shoeybi",
-     "affiliations": []
-    },
-    {
-     "name": "Bryan Catanzaro",
-     "affiliations": []
-    },
-    {
-     "name": "Vijay Anand Korthikanti",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-11-24",
-   "url": "https://arxiv.org/abs/2611.32057",
-   "matched_terms": [
-    "gpu",
-    "gpus",
-    "large language models",
-    "llm",
-    "llms"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Generalized Tensor Parallelism: Powering Trillion-Parameter LLM Training at 10+ EFLOP/s Shiqing Fan Deepak Narayanan Jimmy Zhang Jiangfei Duan Prajwal Singhania Haoran Zhang Wanying Wang Philip Monk Xuwen Chen Jared Casper Jun Yang Mohammad Shoeybi Bryan Catanzaro Vijay Anand Korthikanti NVIDIA † † thanks: Leads the effort. Abstract Abstract. Pretraining state-of-the-art large language models (LLMs) with up to trillions of parameters is memory- and compute-intensive. Existing parallelization schemes compromise on either per-GPU memory or throughput: data parallelism replicates parameters; tensor parallelism and fully sharded data parallelism (FSDP) add communication of activations and parameters, respectively, to every microbatch; and pipeline parallelism leaves GPUs idle while the pipeline fills and drains. We show that, for linear layers, five commonly used parallelisms (data, tensor, sequence, context parallelism and FSDP) are special cases of one framework, generalized tensor parallelism (GTP), in which each layer’s parameters and activations are partitioned and either can be re-materialized with an all-gather before use. In GTP, a parameter all-gather is an optional preprocessing step on one input of a matrix multiplication (GEMM), whereas FSDP implementations typically treat it as a step before an entire Transformer block, which can increase memory footprint and delay GEMMs. The GTP view lets us schedule all-gathers per GEMM rather than per block, issuing each early enough to hide its communication but late enough to limit memory. Our implementation is open source at https://github.com/NVIDIA/Megatron-LM ; with it, an internal 2T-parameter mixture-of-experts (MoE) model reaches 13.0 model EFLOP/s (exaFLOP/s) on 12,288 GB300 GPUs with 98% weak-scaling efficiency, and runs with 1M-token sequences on 512 GPUs. On 256–1,024 GPUs, our implementation achieves 1.05–1.55 × \\times the throughput of Megatron-FSDP across three MoE models and 1.27–1.31 × \\times that of a tuned 3D-parallel recipe with pipeline parallelism on a DeepSeek-V4-Pro proxy model. 2 2 footnotetext: Correspondence to: Shiqing Fan < shiqingf@nvidia.com >, Deepak Narayanan < dnarayanan@nvidia.com >, and Vijay Anand Korthikanti < vkorthikanti@nvidia.com >."
-  },
-  {
-   "key": "arxiv:2611.31737",
-   "source": "arXiv",
-   "id": "2611.31737",
-   "title": "GreenDynaMix: Thermal-Aware Dynamic Mixed-Precision MoE LLM Inference Systems",
-   "abstract": "Sustained Large Language Model (LLM) inference generates significant heat that exacerbates silicon aging and reduces GPU reliability. Because GPU temperature fluctuates continuously with workload intensity and ambient conditions, keeping it in a safe range requires real-time frequency scaling, which inevitably comes at the cost of either throughput or accuracy. To address this tightly coupled challenge, we propose GreenDynaMix, the first runtime system to jointly integrate a DVFS-based thermal manager with a dynamic precision-tuning throughput compensator. A sensitivity-aware allocator leverages intrinsic importance signals from the Mixture-of-Experts (MoE) router to assign higher precision to critical experts, preserving accuracy. Experiments on server, desktop, and embedded platforms demonstrate that GreenDynaMix reduces the temperature-induced aging rate of GPUs during LLM inference by 25-33%. Without offline profiling or model retraining, it recovers throughput at a perplexity cost of 0.9-1.6% with 8-bit/4-bit mixed precision, rising to 9.4% where memory forces 4-bit/2-bit.",
-   "authors": [
-    {
-     "name": "Han-Yi Lin",
-     "affiliations": []
-    },
-    {
-     "name": "Kieran Griperay",
-     "affiliations": []
-    },
-    {
-     "name": "Qiang Zhou",
-     "affiliations": []
-    },
-    {
-     "name": "Xiangyu Zhou",
-     "affiliations": []
-    },
-    {
-     "name": "Nate Bonacci",
-     "affiliations": []
-    },
-    {
-     "name": "Zinachidi Achikeh",
-     "affiliations": []
-    },
-    {
-     "name": "Li He",
-     "affiliations": []
-    },
-    {
-     "name": "Shaofei Qi",
-     "affiliations": []
-    },
-    {
-     "name": "Hongqiang Wang",
-     "affiliations": []
-    },
-    {
-     "name": "Jeff Zhang",
-     "affiliations": []
-    },
-    {
-     "name": "Tianlong Chen",
-     "affiliations": []
-    },
-    {
-     "name": "Pi-Cheng Hsiu",
-     "affiliations": []
-    },
-    {
-     "name": "Jingtong Hu",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.AI",
-    "eess.SY"
-   ],
-   "primary_category": "cs.AI",
-   "date": "2026-11-24",
-   "url": "https://arxiv.org/abs/2611.31737",
-   "matched_terms": [
-    "gpu",
-    "gpus",
     "large language model",
     "llm"
    ],
    "screened_on": "title+abstract",
-   "affiliation_block": "GreenDynaMix: Thermal-Aware Dynamic Mixed-Precision MoE LLM Inference Systems Han-Yi Lin 1 , Kieran Griperay 1 , Qiang Zhou 1 , Xiangyu Zhou 2 , Nate Bonacci 1 , Zinachidi Achikeh 3 Li He 4 , Shaofei Qi 4 , Hongqiang Wang 4 , Jeff Zhang 2 , Tianlong Chen 5 , Pi-Cheng Hsiu 6 and Jingtong Hu 1 Affiliation: 1 University of Pittsburgh , 2 University of Arizona , 3 Carnegie Mellon University , 4 Qualcomm 5 The University of North Carolina at Chapel Hill , 6 Academia Sinica Abstract Sustained Large Language Model (LLM) inference generates significant heat that exacerbates silicon aging and reduces GPU reliability. Because GPU temperature fluctuates continuously with workload intensity and ambient conditions, keeping it in a safe range requires real-time frequency scaling, which inevitably comes at the cost of either throughput or accuracy. To address this tightly coupled challenge, we propose GreenDynaMix , the first runtime system to jointly integrate a DVFS-based thermal manager with a dynamic precision-tuning throughput compensator. A sensitivity-aware allocator leverages intrinsic importance signals from the Mixture-of-Experts (MoE) router to assign higher precision to critical experts, preserving accuracy. Experiments on server, desktop, and embedded platforms demonstrate that GreenDynaMix reduces the temperature-induced aging rate of GPUs during LLM inference by 25–33%. Without offline profiling or model retraining, it recovers throughput at a perplexity cost of 0.9–1.6% with 8-bit/4-bit mixed precision, rising to 9.4% where memory forces 4-bit/2-bit. † † aftertitle:"
+   "affiliation_block": "RankCast: Phase-Aware Rank Balancing in MoE Serving Kaidi Fu Affiliation: University of Illinois at Urbana-Champaign Email: kaidifu2@illinois.edu Xu-Hao Lu Affiliation: Meituan Email: tanjianchao02@meituan.com Pingwei Sun Affiliation: Meituan Jianchao Tan Affiliation: Meituan Yuchen Xie Affiliation: Meituan Xunliang Cai Affiliation: Meituan Abstract Modern large language model (LLM) inference increasingly adopts disaggregated architectures that separate Prefill (P) and Decode (D) phases. Meanwhile, Expert Parallelism (EP) has been widely adopted in large Mixture-of-Experts (MoE) model serving. However, load imbalance still slows down MoE inference because each layer must wait for the busiest EP rank. The main source of latency differs between prefill and decode. Prefill is compute-bound, and its MoE layers’ latency is determined by the maximum token count of the busiest rank. At the same time, under moderate batch sizes, Decode is memory-bound, so the latency is dominated by the maximum active-expert count across ranks. To solve both problems under a unified framework, we present RankCast, a system that reduces rank-level maximum token counts during prefill and active-expert counts during decode. For every token, RankCast preserves the predicted Top- p p experts and chooses the remaining k − p k-p from its Top- L L candidates ( L > k L>k ). In prefill, RankCast yields a price per rank that steers flexible assignments to less loaded ranks. In decode, RankCast closes experts on the busiest ranks while preserving the constraints for each token. Both paths are implemented and tested in the state-of-the-art inference frameworks SGLang ( Zheng et al., 2024 ) and DeepEP ( Zhao et al., 2025b ) . We overlap RankCast’s kernels with model execution and reuse the existing DeepEP communication channel for metadata transmission. On Qwen3-235B-A22B with EP = 8 =8 and Qwen3.5-397B-A17B with EP = 16 =16 , RankCast removes over 75% of the busiest rank’s excess prefill load, improves prefill input throughput by up to 19%, and reduces decode time per output token by up to 10%. The quality cost is below one percentage point. 1 1 footnotetext: Corresponding author."
   },
   {
-   "key": "arxiv:2611.31671",
-   "source": "arXiv",
-   "id": "2611.31671",
-   "title": "AeroPoint: Agentic AI for Intent-Driven Point Cloud Inspection in UAV-Edge Systems",
-   "abstract": "Unmanned Aerial Vehicle (UAV)-based Light Detection and Ranging (LiDAR) inspection generates dense point clouds that strain onboard computing and wireless bandwidth. Intent-based inspection allows operators to request objects, attributes, and spatial relationships through natural language. Answering these requests requires trans- lating intent into spatial queries and retrieving relevant evidence under UAV processing and communication constraints. This article presents AeroPoint, an agentic AI system combining onboard point cloud processing and knowledge graph construction with Large Language Model (LLM)-based retrieval planning at a ground edge server. The LLM translates inspection questions into structured requests, which the UAV executes to return selected graph evidence for answer generation. We evaluate the prototype in a power line inspection case study using 150 TS40K UAV LiDAR scenes and profile processing costs on NVIDIA Jetson Nano hardware. Retrieval experiments use graphs constructed from dataset-provided ground-truth semantic labels. Experimental results show that transmitted payload decreases from 3700 KB for complete point clouds to 3.1 KB for retrieval responses, while evaluated LLM routers achieve the highest graph retrieval completeness for relational queries.",
-   "authors": [
-    {
-     "name": "Reza Farahani",
-     "affiliations": []
-    },
-    {
-     "name": "Zoha Azimi",
-     "affiliations": []
-    },
-    {
-     "name": "Naser Hossein Motlagh",
-     "affiliations": []
-    },
-    {
-     "name": "Christian Timmerer",
-     "affiliations": []
-    },
-    {
-     "name": "Arda Goknil",
-     "affiliations": []
-    },
-    {
-     "name": "Sagar Sen",
-     "affiliations": []
-    },
-    {
-     "name": "Schahram Dustdar",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-11-23",
-   "url": "https://arxiv.org/abs/2611.31671",
-   "matched_terms": [
-    "edge server",
-    "large language model",
-    "llm"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "AeroPoint : Agentic AI for Intent-Driven Point Cloud Inspection in UAV-Edge Systems Journal: IEEE Internet Computing Reza Farahani* Affiliation: Distributed Systems Group, TU Wien, Austria Zoha Azimi Affiliation: University of Klagenfurt, Austria Naser Hossein Motlagh Affiliation: University of Helsinki, Finland Christian Timmerer Affiliation: University of Klagenfurt, Austria Arda Goknil Affiliation: Sintef, Norway Sagar Sen Affiliation: Sintef, Norway Schahram Dustdar Affiliation: Distributed Systems Group, TU Wien, Austria ∗ Corresponding author: r.farahani@dsg.tuwien.ac.at 2026 Abstract Unmanned Aerial Vehicle (UAV)-based Light Detection and Ranging (LiDAR) inspection generates dense point clouds that strain onboard computing and wireless bandwidth. Intent-based inspection allows operators to request objects, attributes, and spatial relationships through natural language. Answering these requests requires translating intent into spatial queries and retrieving relevant evidence under UAV processing and communication constraints. This article presents AeroPoint , an agentic AI system combining onboard point cloud processing and knowledge graph construction with Large Language Model (LLM)-based retrieval planning at a ground edge server. The LLM translates inspection questions into structured requests, which the UAV executes to return selected graph evidence for answer generation. We evaluate the prototype in a power line inspection case study using 150 150 TS40K UAV LiDAR scenes and profile processing costs on NVIDIA Jetson Nano hardware. Retrieval experiments use graphs constructed from dataset-provided ground-truth semantic labels. Experimental results show that transmitted payload decreases from 3700 KB 3700\\text{\\,}\\mathrm{K}\\mathrm{B} for complete point clouds to 3.1 KB 3.1\\text{\\,}\\mathrm{K}\\mathrm{B} for retrieval responses, while evaluated LLM routers achieve the highest graph retrieval completeness for relational queries."
-  },
-  {
-   "key": "arxiv:2611.31556",
-   "source": "arXiv",
-   "id": "2611.31556",
-   "title": "Real-Time AI Acceleration on a 2D Spatial Dataflow Architecture",
-   "abstract": "Machine Learning (ML) is increasingly being integrated into real-time systems, which makes the timing analysis of ML accelerators necessary. However, the most popular commercial accelerator, the Graphics Processing Unit (GPU), remains difficult to analyze as several aspects of its behavior, including scheduling of threads involved in single-instruction multiple-thread computations and memory access latency, are not fully documented. Spatial dataflow accelerators present an interesting alternative to GPUs, as they inherently support compute and memory partitioning. Data movement and computation locality are explicitly controlled by the programmer. In this work, we consider the Tenstorrent Blackhole, which is based on a commodity RISC-V architecture. It consists of a 2D grid of cores connected by Networks-on-Chip (NoCs), supporting a fully open software runtime. We profile the Blackhole platform and develop a worst-case execution time task model as a Homogeneous Synchronous Dataflow Graph. We extend this model to a preliminary analysis of multi-core workloads by considering NoC-related delays. Finally, we evaluate our model across 12,567 task configurations and workloads. Results show that the estimate derived from our model lies above the observed worst case in every configuration. For single-core workloads, the overhead is less than 100% in most cases, with a maximum of less than 200%, and for multi-core workloads, it is less than 500% using a pessimistic NoC contention analysis. This paper lays the foundations for real-time computing on a promising open accelerator design.",
-   "authors": [
-    {
-     "name": "Shriram Raja",
-     "affiliations": []
-    },
-    {
-     "name": "Anton Njavro",
-     "affiliations": []
-    },
-    {
-     "name": "Richard West",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-11-23",
-   "url": "https://arxiv.org/abs/2611.31556",
-   "matched_terms": [
-    "gpu",
-    "gpus"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Real-Time AI Acceleration on a 2D Spatial Dataflow Architecture Shriram Raja, Anton Njavro, Richard West Affiliation: Department of Computer Science Boston University Boston, MA Affiliation: {shriramr, njavro, richwest}@bu.edu Abstract Machine Learning (ML) is increasingly being integrated into real-time systems, which makes the timing analysis of ML accelerators necessary. However, the most popular commercial accelerator, the Graphics Processing Unit (GPU), remains difficult to analyze as several aspects of its behavior, including scheduling of threads involved in single-instruction multiple-thread computations and memory access latency, are not fully documented. Spatial dataflow accelerators present an interesting alternative to GPUs, as they inherently support compute and memory partitioning. Data movement and computation locality are explicitly controlled by the programmer. In this work, we consider the Tenstorrent Blackhole, which is based on a commodity RISC-V architecture. It consists of a 2D grid of cores connected by Networks-on-Chip (NoCs), supporting a fully open software runtime. We profile the Blackhole platform and develop a worst-case execution time task model as a Homogeneous Synchronous Dataflow Graph. We extend this model to a preliminary analysis of multi-core workloads by considering NoC-related delays. Finally, we evaluate our model across 12,567 12{,}567 task configurations and workloads. Results show that the estimate derived from our model lies above the observed worst case in every configuration. For single-core workloads, the overhead is less than 100% in most cases, with a maximum of less than 200%, and for multi-core workloads, it is less than 500% using a pessimistic NoC contention analysis. This paper lays the foundations for real-time computing on a promising open accelerator design. Index Terms: Spatial Dataflow Accelerators, Real-Time AI Acceleration, Worst-Case Timing Analysis"
-  },
-  {
-   "key": "arxiv:2611.31509",
-   "source": "arXiv",
-   "id": "2611.31509",
-   "title": "TokenJoule: Energy Modeling for Distributed Training and Inference of LLMs",
-   "abstract": "As large language models (LLMs) scale, energy dictates operating cost, cooling, and cluster capacity across training and inference. Early hardware design-space exploration (DSE) requires predicting energy before silicon exists, yet performance models miss hidden component work while prior energy predictors calibrate to deployed GPUs. We present TokenJoule, an open-source analytical tool that derives device kernel sequences, tiled compute, shared-memory staging, cache residency, and collective traffic, pricing activity directly with component energies. With zero workload fitting, TokenJoule achieves 3.3-6.6% activity error (151 A100/H100 runs) and 3.0-6.8% A100 energy error, guiding parallelism, memory packaging, and 3D-DRAM chip co-design.",
-   "authors": [
-    {
-     "name": "George Karfakis",
-     "affiliations": []
-    },
-    {
-     "name": "Lime Yao",
-     "affiliations": []
-    },
-    {
-     "name": "Joyjit Kundu",
-     "affiliations": []
-    },
-    {
-     "name": "Debjyoti Bhattacharjee",
-     "affiliations": []
-    },
-    {
-     "name": "Puneet Gupta",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.PF",
-    "cs.DC"
-   ],
-   "primary_category": "cs.PF",
-   "date": "2026-11-23",
-   "url": "https://arxiv.org/abs/2611.31509",
-   "matched_terms": [
-    "gpus",
-    "large language models",
-    "llms"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "TokenJoule: Energy Modeling for Distributed Training and Inference of LLMs George Karfakis 1 , Lime Yao 1 , Joyjit Kundu 2 , Debjyoti Bhattacharjee 2 , Puneet Gupta 1 Affiliation: 1 University of California, Los Angeles, USA 2 imec, Belgium Abstract As large language models (LLMs) scale, energy dictates operating cost, cooling, and cluster capacity across training and inference. Early hardware design-space exploration (DSE) requires predicting energy before silicon exists, yet performance models miss hidden component work while prior energy predictors calibrate to deployed GPUs. We present TokenJoule, an open-source analytical tool that derives device kernel sequences, tiled compute, shared-memory staging, cache residency, and collective traffic, pricing activity directly with component energies. With zero workload fitting, TokenJoule achieves 3.3–6.6% activity error (151 A100/H100 runs) and 3.0–6.8% A100 energy error, guiding parallelism, memory packaging, and 3D-DRAM chip co-design. Index Terms: large language models, energy modeling, analytical modeling, GPU, distributed systems, design-space exploration"
-  },
-  {
-   "key": "doi:10.1109/tsg.2026.3757191",
+   "key": "doi:10.1016/j.apenergy.2026.129178",
    "source": "journal",
-   "journal": "IEEE Transactions on Smart Grid",
-   "journal_short": "TSG",
-   "doi": "10.1109/tsg.2026.3757191",
-   "title": "From Tokens to Energy Flexibility: Quantization-Enabled Demand Response for Data Centers with LLM Inference Workloads",
-   "abstract": "The rapid growth of large language model (LLM) inference is creating significant data-center loads that face increasing energy-management challenges under tightening grid conditions and demand response (DR) requirements. Conventional data-center energy management mainly relies on temporal and spatial workload shifting and campus-level energy asset scheduling, but it usually treats LLM inference demand as an aggregate load. As a result, these approaches fail to exploit the internal characteristics of LLM serving and therefore overlook the flexibility offered by LLM-specific techniques such as model quantization. To unlock this flexibility, this paper proposes a quantization-enabled energy management framework for grid-responsive LLM inference data centers. First, a quantization-to-power model is established to map each model--quantization configuration to a compact set of dispatchable parameters. Second, a two-stage quantization-enabled DR model is developed to account for model instance switching, request routing, and precision selection. Third, a multi-campus co-optimization method is introduced for DR participation by integrating grid-side electricity and carbon signals with the quantization-enabled DR model. Case studies show that the proposed framework reduces total data-center operating cost by 31.8% without curtailing served token volume, validating model quantization as an effective flexibility lever for grid-responsive LLM data-center energy management.",
-   "abstract_source": "openalex",
+   "journal": "Applied Energy",
+   "journal_short": "Applied Energy",
+   "doi": "10.1016/j.apenergy.2026.129178",
+   "title": "Exploiting flexibility in workflow scheduling for coordinated operation of geo-distributed data center microgrids: A multi-agent reinforcement learning approach",
+   "abstract": "",
+   "abstract_source": "",
    "authors": [
     {
-     "name": "Bojun Du",
+     "name": "Shiyang Zhou",
      "affiliations": [
-      "Tsinghua University"
+      "Huazhong University of Science and Technology"
      ]
     },
     {
-     "name": "Xiaoyi Fan",
+     "name": "Yuanzheng Li",
      "affiliations": [
-      "Tsinghua University"
+      "Huazhong University of Science and Technology"
      ]
     },
     {
-     "name": "Ershun Du",
+     "name": "Yang Li",
      "affiliations": [
-      "Tsinghua University"
+      "Northeast Electric Power University"
      ]
     },
     {
-     "name": "Long Chen",
+     "name": "Chao Long",
      "affiliations": [
-      "The Hong Kong Polytechnic University"
+      "University of Liverpool"
      ]
     },
     {
-     "name": "Jianpei Han",
+     "name": "Lin Jiang",
      "affiliations": [
-      "North China University of Technology"
+      "University of Liverpool"
      ]
     },
     {
-     "name": "Qingchun Hou",
+     "name": "Minglei Xie",
      "affiliations": [
-      "Zhejiang University"
+      "China Southern Power Grid (China)"
      ]
     },
     {
-     "name": "Ning Zhang",
+     "name": "Yijia Cao",
      "affiliations": [
-      "Tsinghua University"
-     ]
-    },
-    {
-     "name": "Chongqing Kang",
-     "affiliations": [
-      "Tsinghua University"
+      "Changsha University of Science and Technology"
      ]
     }
    ],
    "type": "journal-article",
-   "date": "2026-11-24",
-   "url": "https://doi.org/10.1109/tsg.2026.3757191",
+   "date": "2026-11-25",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129178",
    "matched_terms": [
-    "data centers",
-    "data-center"
+    "data center"
    ],
-   "screened_on": "title+abstract",
-   "affiliation_source": "crossref"
-  },
-  {
-   "key": "doi:10.1038/s41467-026-78734-z",
-   "source": "journal",
-   "journal": "Nature Communications",
-   "journal_short": "Nature Communications",
-   "doi": "10.1038/s41467-026-78734-z",
-   "title": "A spectral-spatial interweaver for hyperdimensional photonic computing",
-   "abstract": "Photonic computing offers high bandwidth, parallelism and energy efficiency for artificial intelligence (AI), yet its scalability remains limited by bulky optical components and immature optoelectronic integration. Here we present HyperON, a thin-film lithium niobate (TFLN) hyperdimensional optical network built around a passive spectral-spatial interweaver and broadband wavelength-parallel modulators. The interweaver combines wavelength multiplexing with spatial replication in a log 2 P -stage network, delivering the full wavelength set to every spatial output without beam-combination loss. By interweaving P spectral channels with K spatial units, HyperON forms a unified P × K parallel computing framework, supporting O ( N 2 ) operations with only O ( N ) modulators, improving hardware efficiency and scalability. A 16 × 16 interweaver shows low-loss, broadband and highly uniform operation across 1523.40-1568.85 nm, with 1.30 dB average loss, 0.196 dB output-port variation and 0.414 dB cross-wavelength variation. The integrated wavelength-parallel modulators retain system-level bandwidths of 53-67 GHz after large-scale routing, while standalone devices exhibit bandwidths beyond 67 GHz. Together, these features enable the fabricated HyperON chip to deliver a projected peak throughput of 32.8 TMAC/s, with estimated energy and area efficiencies of 7.04 TMAC/s/W and 0.163 TMAC/s/mm 2 , respectively. Experimental demonstrations in image convolution, handwritten digit recognition, and 64-mode parallel computing confirm its high speed operation, versatility, and scalability for large-scale AI workloads.",
-   "abstract_source": "openalex",
-   "authors": [
-    {
-     "name": "Yun-Long Nie",
-     "affiliations": [
-      "Shanghai Jiao Tong University"
-     ]
-    },
-    {
-     "name": "Hang Song",
-     "affiliations": [
-      "Shanghai Jiao Tong University"
-     ]
-    },
-    {
-     "name": "De-Hui Huang",
-     "affiliations": [
-      "Shanghai Jiao Tong University"
-     ]
-    },
-    {
-     "name": "Yi Xie",
-     "affiliations": [
-      "Shanghai Jiao Tong University"
-     ]
-    },
-    {
-     "name": "Chao-Qian Li",
-     "affiliations": [
-      "Shanghai Jiao Tong University"
-     ]
-    },
-    {
-     "name": "Yu-Xuan Fu",
-     "affiliations": [
-      "Shanghai Jiao Tong University"
-     ]
-    },
-    {
-     "name": "Yixuan Chen",
-     "affiliations": [
-      "Shanghai Jiao Tong University"
-     ]
-    },
-    {
-     "name": "Xiao-Wen Shang",
-     "affiliations": [
-      "Shanghai Jiao Tong University"
-     ]
-    },
-    {
-     "name": "Feng Lu",
-     "affiliations": [
-      "Shanghai Jiao Tong University"
-     ]
-    },
-    {
-     "name": "Chao-Yang Zhang",
-     "affiliations": [
-      "TuringQ Co., Ltd., Shanghai, China"
-     ]
-    },
-    {
-     "name": "Yu-Quan Peng",
-     "affiliations": [
-      "TuringQ Co., Ltd., Shanghai, China"
-     ]
-    },
-    {
-     "name": "Chen-Ming Zhao",
-     "affiliations": [
-      "TuringQ Co., Ltd., Shanghai, China"
-     ]
-    },
-    {
-     "name": "Chun-Yan Jin",
-     "affiliations": [
-      "TuringQ Co., Ltd., Shanghai, China"
-     ]
-    },
-    {
-     "name": "Ya-Sen Yu",
-     "affiliations": [
-      "Shanghai Jiao Tong University"
-     ]
-    },
-    {
-     "name": "Chen-Shuo Xia",
-     "affiliations": [
-      "TuringQ Co., Ltd., Shanghai, China"
-     ]
-    },
-    {
-     "name": "Yu-Lin Yu",
-     "affiliations": [
-      "TuringQ Co., Ltd., Shanghai, China"
-     ]
-    },
-    {
-     "name": "Hai Yan",
-     "affiliations": [
-      "TuringQ Co., Ltd., Shanghai, China"
-     ]
-    },
-    {
-     "name": "Yong-Xing Zhan",
-     "affiliations": [
-      "TuringQ Co., Ltd., Shanghai, China"
-     ]
-    },
-    {
-     "name": "Jian-Peng Dou",
-     "affiliations": [
-      "Shanghai Jiao Tong University"
-     ]
-    },
-    {
-     "name": "Xiao-Yun Xu",
-     "affiliations": [
-      "Shanghai Jiao Tong University"
-     ]
-    },
-    {
-     "name": "Hao Long Tang",
-     "affiliations": [
-      "Shanghai Jiao Tong University"
-     ]
-    },
-    {
-     "name": "Xian‐Min Jin",
-     "affiliations": [
-      "Shanghai Jiao Tong University"
-     ]
-    }
-   ],
-   "type": "journal-article",
-   "date": "2026-11-24",
-   "url": "https://doi.org/10.1038/s41467-026-78734-z",
-   "matched_terms": [
-    "ai workloads"
-   ],
-   "screened_on": "title+abstract",
+   "screened_on": "title only",
    "affiliation_source": "openalex"
   }
  ],
- "title_only_final": [
-  {
-   "source": "Applied Energy",
-   "title": "From one cycle to full life: Ultra-early battery degradation assessment for operational assessment and rapid screening",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129292"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "A risk-averse bidding and scheduling strategy for process industry VPPs in demand response markets based on thermodynamically-enhanced RTN",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129293"
-  },
-  {
-   "source": "Applied Energy",
-   "title": "Traffic-scenario-recognition-based energy management strategy with variable prediction horizon for connected fuel cell buses",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129296"
-  },
-  {
-   "source": "Nature Energy",
-   "title": "Improving compatibility in mixed-matrix membranes",
-   "url": "https://doi.org/10.1038/s41560-026-02174-8"
-  }
- ],
+ "title_only_final": [],
  "pending_items": [
   {
    "source": "Applied Energy",
@@ -820,12 +390,6 @@
   },
   {
    "source": "TSG",
-   "title": "Price-Driven V2G Scheduling for Electric Vehicle Charging Stations in Residential Microgrids via Enhanced SimBa-SAC",
-   "url": "https://doi.org/10.1109/tsg.2026.3757208",
-   "first_seen": "2026-11-25"
-  },
-  {
-   "source": "TSG",
    "title": "Modeling and Controllable Region Characterization of Flexible Aquaponics Loads for Coordinated Operation with Distribution Networks",
    "url": "https://doi.org/10.1109/tsg.2026.3757064",
    "first_seen": "2026-11-25"
@@ -844,85 +408,109 @@
   },
   {
    "source": "Applied Energy",
-   "title": "Electric vehicles as mobile energy carriers: An activity-based agent-based model of residential PV origin energy flows and V2G",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129313",
-   "first_seen": "2026-11-25"
-  },
-  {
-   "source": "Applied Energy",
    "title": "A mechanism-guided Bayesian physics-informed neural network for unified battery state-of-health monitoring using field data",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129323",
    "first_seen": "2026-11-25"
   },
   {
-   "source": "Nature Communications",
-   "title": "SMYD1 trimethylates myosin K129 to restrain cardiomyocyte hypercontractility",
-   "url": "https://doi.org/10.1038/s41467-026-79720-1",
-   "first_seen": "2026-11-25"
+   "source": "TSG",
+   "title": "Sensitivity-Scale Factorization of LinDistFlow Errors for Adaptive Voltage Safety Margins in Distribution Networks",
+   "url": "https://doi.org/10.1109/tsg.2026.3757386",
+   "first_seen": "2026-11-26"
+  },
+  {
+   "source": "TPWRS",
+   "title": "Observability and Parameter Estimation of a Generic Model for Aggregated Distributed Energy Resources",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3757291",
+   "first_seen": "2026-11-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Component-resolved voltage-loss monitoring of PEM water electrolyzers from routine operating data",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129316",
+   "first_seen": "2026-11-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Consistency sorting of retired batteries using multidimensional health features derived from a simplified P2D model",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129303",
+   "first_seen": "2026-11-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Machine learning-assisted development of conductive polymer-based supercapacitor electrode materials: a review",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129289",
+   "first_seen": "2026-11-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Cost-carbon preference reversals between new and second-life batteries in stationary storage: a long-horizon comparative framework",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129306",
+   "first_seen": "2026-11-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Spatio-temporal fair allocation of active-power support among microgrids: A distributed optimization framework",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129319",
+   "first_seen": "2026-11-26"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Conditional MHA-assisted online control for BESS frequency regulation: real-time evaluation of performance-based revenue and cycle degradation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129325",
+   "first_seen": "2026-11-26"
   },
   {
    "source": "Nature Communications",
-   "title": "Hepatokine AGP2 mediates physical exercise-induced bone augmentation through liver-bone signaling communication",
-   "url": "https://doi.org/10.1038/s41467-026-79582-7",
-   "first_seen": "2026-11-25"
+   "title": "Author Correction: Learning reorganizes dendritic and stabilizes axon initial segment inhibitory synapses in CA1 pyramidal neurons",
+   "url": "https://doi.org/10.1038/s41467-026-78865-3",
+   "first_seen": "2026-11-26"
   },
   {
    "source": "Nature Communications",
-   "title": "Quantitative prediction model of FB-113-driven self-assembly nanopesticides",
-   "url": "https://doi.org/10.1038/s41467-026-79718-9",
-   "first_seen": "2026-11-25"
+   "title": "Targeting chemotherapy-induced CD200 via a nucleoside-enhanced nanocarrier for cancer immunochemotherapy",
+   "url": "https://doi.org/10.1038/s41467-026-79655-7",
+   "first_seen": "2026-11-26"
   },
   {
    "source": "Nature Communications",
-   "title": "Observationally-constrained CMIP6 projections of a snow-free Northern Hemisphere",
-   "url": "https://doi.org/10.1038/s41467-026-79797-8",
-   "first_seen": "2026-11-25"
+   "title": "Dynamic B–OH intermediates enable photocatalytic conversion of CO2 into formic acid",
+   "url": "https://doi.org/10.1038/s41467-026-79798-7",
+   "first_seen": "2026-11-26"
   },
   {
    "source": "Nature Communications",
-   "title": "Protective effect of seasonal vaccines against human-derived bovine H5N1 influenza virus",
-   "url": "https://doi.org/10.1038/s41467-026-79529-y",
-   "first_seen": "2026-11-25"
+   "title": "A quasi-particle theory for the dynamics of polycatenated architected materials",
+   "url": "https://doi.org/10.1038/s41467-026-79426-4",
+   "first_seen": "2026-11-26"
   },
   {
    "source": "Nature Communications",
-   "title": "Low-pressure operation of all-solid-state batteries enabled by an organic electrode",
-   "url": "https://doi.org/10.1038/s41467-026-79379-8",
-   "first_seen": "2026-11-25"
+   "title": "Impact-stiffening materials modulated by host–guest interactions in polypseudorotaxanes",
+   "url": "https://doi.org/10.1038/s41467-026-78743-y",
+   "first_seen": "2026-11-26"
   },
   {
    "source": "Nature Communications",
-   "title": "Giant nonlinear optical responses in the visible via lattice-controlled cascade amplification of photon avalanche",
-   "url": "https://doi.org/10.1038/s41467-026-79133-0",
-   "first_seen": "2026-11-25"
+   "title": "A long-read based haplotype panel enhances imputation and discovery of functional small and structural variants",
+   "url": "https://doi.org/10.1038/s41467-026-79471-z",
+   "first_seen": "2026-11-26"
   },
   {
    "source": "Nature Communications",
-   "title": "Evolutionary Neuroskeletal Biology",
-   "url": "https://doi.org/10.1038/s41467-026-79611-5",
-   "first_seen": "2026-11-25"
+   "title": "Choline kinase α promotes glycolysis and tumor growth by phosphorylating and activating enolase 1",
+   "url": "https://doi.org/10.1038/s41467-026-79752-7",
+   "first_seen": "2026-11-26"
   },
   {
    "source": "Nature Communications",
-   "title": "Atomic-resolution insights into interactions of rifampicin and rifamycin derivatives with orphan CYP143 of M. tuberculosis",
-   "url": "https://doi.org/10.1038/s41467-026-79387-8",
-   "first_seen": "2026-11-25"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "Iron supplementation in iron-deficient Kenyan infants: a randomised controlled trial of vaccine immunogenicity",
-   "url": "https://doi.org/10.1038/s41467-026-79504-7",
-   "first_seen": "2026-11-25"
-  },
-  {
-   "source": "Nature Communications",
-   "title": "An interaction module for mitochondrial ATP synthase assembly and maintenance in seed plants",
-   "url": "https://doi.org/10.1038/s41467-026-80080-z",
-   "first_seen": "2026-11-25"
+   "title": "Retraction Note: NMDAR-mediated modulation of gap junction circuit regulates olfactory learning in C. elegans",
+   "url": "https://doi.org/10.1038/s41467-026-80132-4",
+   "first_seen": "2026-11-26"
   }
  ],
- "pending_abstract": 30,
+ "pending_abstract": 33,
  "runs_utc": [
-  "2026-11-25T15:26:22+00:00"
+  "2026-11-26T14:56:49+00:00"
  ]
 }
