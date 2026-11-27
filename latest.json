@@ -1,53 +1,53 @@
 {
- "date": "2026-11-26",
- "generated_utc": "2026-11-26T14:56:49+00:00",
+ "date": "2026-11-27",
+ "generated_utc": "2026-11-27T14:52:46+00:00",
  "first_run": false,
  "windows": {
   "arxiv_submitted": [
-   "2026-11-22",
-   "2026-11-26"
+   "2026-11-23",
+   "2026-11-27"
   ],
   "journal_doi_created": [
-   "2026-11-20",
-   "2026-11-26"
+   "2026-11-21",
+   "2026-11-27"
   ]
  },
  "sources": [
   {
    "source": "arXiv eess.SY",
    "status": "ok",
-   "in_window": 104,
-   "new": 37,
-   "candidates": 1
+   "in_window": 93,
+   "new": 0,
+   "candidates": 0
   },
   {
    "source": "arXiv cs.DC",
    "status": "ok",
-   "in_window": 70,
-   "new": 12,
-   "candidates": 3
+   "in_window": 60,
+   "new": 0,
+   "candidates": 0
   },
   {
    "source": "arXiv eess.SP",
    "status": "ok",
-   "in_window": 82,
-   "new": 19,
+   "in_window": 67,
+   "new": 0,
    "candidates": 0
   },
   {
    "source": "TSG",
    "journal": "IEEE Transactions on Smart Grid",
    "status": "ok",
-   "in_window": 4,
+   "in_window": 5,
    "new": 1,
-   "candidates": 0,
-   "new_with_abstract": 0
+   "candidates": 1,
+   "new_with_abstract": 1
   },
   {
    "source": "TPWRS",
    "journal": "IEEE Transactions on Power Systems",
    "status": "ok",
-   "in_window": 2,
+   "in_window": 3,
    "new": 1,
    "candidates": 0,
    "new_with_abstract": 0
@@ -56,17 +56,17 @@
    "source": "Applied Energy",
    "journal": "Applied Energy",
    "status": "ok",
-   "in_window": 28,
-   "new": 7,
-   "candidates": 1,
-   "new_with_abstract": 0
+   "in_window": 36,
+   "new": 9,
+   "candidates": 0,
+   "new_with_abstract": 1
   },
   {
    "source": "Nature Energy",
    "journal": "Nature Energy",
    "status": "ok",
    "in_window": 3,
-   "new": 0,
+   "new": 2,
    "candidates": 0,
    "new_with_abstract": 0
   },
@@ -74,17 +74,17 @@
    "source": "Nature Communications",
    "journal": "Nature Communications",
    "status": "ok",
-   "in_window": 170,
-   "new": 24,
+   "in_window": 146,
+   "new": 20,
    "candidates": 0,
-   "new_with_abstract": 16
+   "new_with_abstract": 11
   },
   {
    "source": "Nature Rev. EE",
    "journal": "Nature Reviews Electrical Engineering",
    "status": "ok",
-   "in_window": 1,
-   "new": 0,
+   "in_window": 2,
+   "new": 1,
    "candidates": 0,
    "new_with_abstract": 0
   }
@@ -92,220 +92,49 @@
  "errors": [],
  "candidates": [
   {
-   "key": "arxiv:2611.34473",
-   "source": "arXiv",
-   "id": "2611.34473",
-   "title": "High-performance metapopulation models for epidemic emergencies: Scalability and performance of implicit and explicit mobility representations on CPUs and GPUs",
-   "abstract": "Epidemics form a subclass of natural disasters impacting countries or entire continents, where suitable reactions might differ substantially across spatio-temporal dimensions. Spatially resolved models based on ordinary differential equations (ODEs) are an efficient modeling approach for large and distributed populations. Commonly referred to as metapopulation models, they allow a realistic representation of spatial heterogeneities and mobility. Yet, their application in epidemic settings under high time pressure requires efficient, parallelized implementations leveraging modern supercomputers. The different ways to represent mobility in metapopulation models affect both epidemic trajectories and computational costs. In contrast to implicit mobility modeling, where populations are coupled through transition and transmission intensities, explicit Lagrangian mobility tracks traveling subpopulations according to their home and current location. In this paper, we compare metapopulation models with implicit and explicit mobility. A four-patch experiment shows that the trajectories of both formulations remain close, but differences increase with the mobility cycle length. We present CPU- and GPU-based parallelizations and analyze fully connected networks with up to 16,384 patches on 128 CPU cores and NVIDIA A100 and H100 GPUs. Roofline analyses show near-maximum performance for the most time-consuming GPU subroutines and identify data reuse and the cost of mobility events as the main performance drivers. Our results show that mobility assumptions, event frequency, numerical solvers, and available hardware need to be considered together when developing metapopulation models for epidemic emergencies. In a synthesized setting with a disease outbreak in central Europe, we show how a worldwide pandemic with 12,865 patches and four billion state variables can be simulated in 24 seconds using GPUs.",
-   "authors": [
-    {
-     "name": "Henrik Zunker",
-     "affiliations": []
-    },
-    {
-     "name": "Carlotta Gerstein",
-     "affiliations": []
-    },
-    {
-     "name": "Martin J. Kühn",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-11-25",
-   "url": "https://arxiv.org/abs/2611.34473",
-   "matched_terms": [
-    "gpu",
-    "gpus",
-    "supercomputers"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "High-performance metapopulation models for epidemic emergencies: Scalability and performance of implicit and explicit mobility representations on CPUs and GPUs Henrik Zunker Email: Henrik.Zunker@DLR.de Address: Institute of Software Technology, Department of High-Performance Computing, German Aerospace Center, Cologne, Germany Carlotta Gerstein Address: Institute of Software Technology, Department of High-Performance Computing, German Aerospace Center, Cologne, Germany Martin J. Kühn Email: Martin.Kuehn@DLR.de Corresponding author: Corresponding author Address: Institute of Software Technology, Department of High-Performance Computing, German Aerospace Center, Cologne, Germany Address: Bonn Center for Mathematical Life Sciences and Life and Medical Sciences Institute, University of Bonn, Germany Abstract Epidemics form a particular subclass of natural disasters impacting countries or entire continents, where the most suitable reaction might differ substantially across the spatio-temporal dimensions. Spatially resolved models based on ordinary differential equations (ODEs) are an efficient modeling approach for large and distributed populations. They are commonly referred to as metapopulation models and allow a realistic representation of spatial heterogeneities and mobility. Yet, their application in epidemic settings, where high time pressure prevails, requires highly efficient and parallelized implementations leveraging the potential of modern supercomputers. The different ways to represent mobility in metapopulation models affect not only epidemic trajectories but also the computational cost of the simulations. In contrast to implicit mobility modeling, where populations are coupled through transition and transmission intensities, explicit Lagrangian mobility tracks traveling subpopulations according to their home and current location. In this paper, we compare metapopulation models with implicit and explicit mobility. A four-patch experiment further shows that the epidemic trajectories of the two formulations remain close, but the differences increase with the mobility cycle length. We present CPU- and GPU-based parallelizations and analyze fully connected networks with up to 16,384 patches on 128 CPU cores as well as NVIDIA A100 and H100 GPUs. Roofline analyses show close to maximum performance for the most time-consuming GPU subroutines and identify data reuse and the cost of mobility events as the main performance drivers. Our results show that mobi"
-  },
-  {
-   "key": "arxiv:2611.34462",
-   "source": "arXiv",
-   "id": "2611.34462",
-   "title": "Same Seed, Different Top Prediction: Cross-Platform Reproducibility of AlphaFold 3 Inference on TPUs, GPUs, and CPUs",
-   "abstract": "AlphaFold 3 returns the highest-ranked of several sampled structures and computes each prediction on one device. Computing centers may schedule them on different GPU types or CPU nodes. Floating-point results can differ between devices, so the same input and seed may return another structure. Neither AlphaFold 3's documentation nor its outputs warn of this. We measure how often the device changes the returned structure, and tell users what to report and how to make devices agree. We used identical inputs, weights, seeds, and settings on two Google tensor processing unit (TPU) generations (v5e, v6e), three NVIDIA GPUs (L4, A100, H100), and an Intel Xeon CPU. On 60 protein-ligand complexes, with five seeds each, switching TPU generations changed the top-ranked sample in 18.0% of 300 predictions. Recompiling never changed it on either TPU, but did so in 7.3% on the L4 GPU. Yet the structures barely moved. The top-ranked pose switched between correct and incorrect in 3.3% to 3.7% of predictions, against about 10% for a new seed. These switches nearly always came from one validity check, with the ligand within 2 angstroms. Follow-ups found the effect again on 72 new targets and between the TPUs and the CPU. Between the A100 and H100 it exceeded recompilation, although AlphaFold 3's developers verified its numerical accuracy on both. An exploratory analysis links the changes to near-tied candidates. We recommend reporting the device and every near-tied sample. A float32 trunk with full-precision matrix products made all five accelerators agree on nearly every prediction.",
-   "authors": [
-    {
-     "name": "Lorenzo Pazienza",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC",
-    "cs.PF"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-11-25",
-   "url": "https://arxiv.org/abs/2611.34462",
-   "matched_terms": [
-    "gpu",
-    "gpus",
-    "tpu",
-    "tpus"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "Same Seed, Different Top Prediction: Cross-Platform Reproducibility of AlphaFold 3 Inference on TPUs, GPUs, and CPUs Lorenzo Pazienza Affiliation: LUISS Guido Carli University Rome, Italy lorenzo.pazienza@gmail.com Abstract AlphaFold 3 returns the highest-ranked of several sampled structures and computes each prediction on one device. Computing centers may schedule them on different GPU types or CPU nodes. Floating-point results can differ between devices, so the same input and seed may return another structure. Neither AlphaFold 3’s documentation nor its outputs warn of this. We measure how often the device changes the returned structure, and tell users what to report and how to make devices agree. We used identical inputs, weights, seeds, and settings on two Google tensor processing unit (TPU) generations (v5e, v6e), three NVIDIA GPUs (L4, A100, H100), and an Intel Xeon CPU. On 60 protein-ligand complexes, with five seeds each, switching TPU generations changed the top-ranked sample in 18.0% of 300 predictions. Recompiling never changed it on either TPU, but did so in 7.3% on the L4 GPU. Yet the structures barely moved. The top-ranked pose switched between correct and incorrect in 3.3% to 3.7% of predictions, against about 10% for a new seed. These switches nearly always came from one validity check, with the ligand within 2 Å. Follow-ups found the effect again on 72 new targets and between the TPUs and the CPU. Between the A100 and H100 it exceeded recompilation, although AlphaFold 3’s developers verified its numerical accuracy on both. An exploratory analysis links the changes to near-tied candidates. We recommend reporting the device and every near-tied sample. A float32 trunk with full-precision matrix products made all five accelerators agree on nearly every prediction. Index Terms: AlphaFold 3, protein structure prediction, high performance computing, reproducibility of results, floating-point arithmetic"
-  },
-  {
-   "key": "arxiv:2611.33661",
-   "source": "arXiv",
-   "id": "2611.33661",
-   "title": "DynaSeek: Large Language Model-Driven Hybrid Dynamic Model Discovery for Grid-Tied Inverters from Limited Measurements",
-   "abstract": "Discovering the unknown governing equations of grid-tied inverters from limited measurements is essential for the stability analysis of modern inverter-dominated power systems. However, existing identification methods struggle to jointly resolve unmeasured internal control memory and saturation-induced mode transitions from accessible terminal waveforms. To address this challenge, this paper proposes DynaSeek, a large language model (LLM)-driven framework for discovering explicit hybrid differential-algebraic equations (DAEs) of current-limited inverters. The framework integrates physics-constrained symbolic skeleton synthesis with the joint numerical estimation of shared model parameters and record-specific latent initial states across multi-island experience archives. Furthermore, two complementary structural diagnostics evaluating cross-record state closure and cross-window consistency are established to detect structural deficiencies across distinct input histories and transient stages. Guided by diagnostic feedback, DynaSeek directs variable-dimensional latent-state expansion and current-limiting and anti-windup refinement to yield self-contained hybrid DAEs unifying unsaturated regulation, current limiting, and post-fault recovery. Controller-hardware-in-the-loop (CHIL) experiments and closed-loop system-level simulations demonstrate that DynaSeek reduces transient trajectory reconstruction errors by one to two orders of magnitude compared with symbolic and neural baselines while accurately preserving reference critical clearing times, enabling reliable large-signal stability assessment of inverters with inaccessible internal controls.",
-   "authors": [
-    {
-     "name": "Hongwei Zhen",
-     "affiliations": []
-    },
-    {
-     "name": "Chao Shen",
-     "affiliations": []
-    },
-    {
-     "name": "Jianfeng Niu",
-     "affiliations": []
-    },
-    {
-     "name": "Xin Xiang",
-     "affiliations": []
-    },
-    {
-     "name": "Wuhua Li",
-     "affiliations": []
-    },
-    {
-     "name": "Mingyang Sun",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "eess.SY"
-   ],
-   "primary_category": "eess.SY",
-   "date": "2026-11-25",
-   "url": "https://arxiv.org/abs/2611.33661",
-   "matched_terms": [
-    "large language model",
-    "llm"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "DynaSeek: Large Language Model-Driven Hybrid Dynamic Model Discovery for Grid-Tied Inverters from Limited Measurements Hongwei Zhen Chao Shen Jianfeng Niu Xin Xiang Affiliation: Wuhua Li, and Mingyang Sun, Abstract Discovering the unknown governing equations of grid-tied inverters from limited measurements is essential for the stability analysis of modern inverter-dominated power systems. However, existing identification methods struggle to jointly resolve unmeasured internal control memory and saturation-induced mode transitions from accessible terminal waveforms. To address this challenge, this paper proposes DynaSeek, a large language model (LLM)-driven framework for discovering explicit hybrid differential-algebraic equations (DAEs) of current-limited inverters. The framework integrates physics-constrained symbolic skeleton synthesis with the joint numerical estimation of shared model parameters and record-specific latent initial states across multi-island experience archives. Furthermore, two complementary structural diagnostics evaluating cross-record state closure and cross-window consistency are established to detect structural deficiencies across distinct input histories and transient stages. Guided by diagnostic feedback, DynaSeek directs variable-dimensional latent-state expansion and current-limiting and anti-windup refinement to yield self-contained hybrid DAEs unifying unsaturated regulation, current limiting, and post-fault recovery. Controller-hardware-in-the-loop (CHIL) experiments and closed-loop system-level simulations demonstrate that DynaSeek reduces transient trajectory reconstruction errors by one to two orders of magnitude compared with symbolic and neural baselines while accurately preserving reference critical clearing times, enabling reliable large-signal stability assessment of inverters with inaccessible internal controls. Index Terms: Dynamic model discovery, grid-tied inverters, large language models, limited measurements, current limiting, transient stability."
-  },
-  {
-   "key": "arxiv:2611.33542",
-   "source": "arXiv",
-   "id": "2611.33542",
-   "title": "RankCast: Phase-Aware Rank Balancing in MoE Serving",
-   "abstract": "Modern large language model (LLM) inference increasingly adopts disaggregated architectures that separate Prefill (P) and Decode (D) phases. Meanwhile, Expert Parallelism (EP) has been widely adopted in large Mixture-of-Experts (MoE) model serving. However, load imbalance still slows down MoE inference because each layer must wait for the busiest EP rank. The main source of latency differs between prefill and decode. Prefill is compute-bound, and its MoE layers' latency is determined by the maximum token count of the busiest rank. At the same time, under moderate batch sizes, Decode is memory-bound, so the latency is dominated by the maximum active-expert count across ranks. To solve both problems under a unified framework, we present RankCast, a system that reduces rank-level maximum token counts during prefill and active-expert counts during decode. For every token, RankCast preserves the predicted Top-p experts and chooses the remaining k-p from its Top-L candidates (L > k). In prefill, RankCast yields a price per rank that steers flexible assignments to less loaded ranks. In decode, RankCast closes experts on the busiest ranks while preserving the constraints for each token. Both paths are implemented and tested in the state-of-the-art inference frameworks SGLang and DeepEP. We overlap RankCast's kernels with model execution and reuse the existing DeepEP communication channel for metadata transmission. On Qwen3-235B-A22B with EP=8 and Qwen3.5-397B-A17B with EP=16, RankCast removes over 75% of the busiest rank's excess prefill load, improves prefill input throughput by up to 19%, and reduces decode time per output token by up to 10%. The quality cost is below one percentage point.",
-   "authors": [
-    {
-     "name": "Kaidi Fu",
-     "affiliations": []
-    },
-    {
-     "name": "Xu-Hao Lu",
-     "affiliations": []
-    },
-    {
-     "name": "Pingwei Sun",
-     "affiliations": []
-    },
-    {
-     "name": "Jianchao Tan",
-     "affiliations": []
-    },
-    {
-     "name": "Yuchen Xie",
-     "affiliations": []
-    },
-    {
-     "name": "Xunliang Cai",
-     "affiliations": []
-    }
-   ],
-   "categories": [
-    "cs.DC",
-    "cs.AI",
-    "cs.LG"
-   ],
-   "primary_category": "cs.DC",
-   "date": "2026-11-24",
-   "url": "https://arxiv.org/abs/2611.33542",
-   "matched_terms": [
-    "large language model",
-    "llm"
-   ],
-   "screened_on": "title+abstract",
-   "affiliation_block": "RankCast: Phase-Aware Rank Balancing in MoE Serving Kaidi Fu Affiliation: University of Illinois at Urbana-Champaign Email: kaidifu2@illinois.edu Xu-Hao Lu Affiliation: Meituan Email: tanjianchao02@meituan.com Pingwei Sun Affiliation: Meituan Jianchao Tan Affiliation: Meituan Yuchen Xie Affiliation: Meituan Xunliang Cai Affiliation: Meituan Abstract Modern large language model (LLM) inference increasingly adopts disaggregated architectures that separate Prefill (P) and Decode (D) phases. Meanwhile, Expert Parallelism (EP) has been widely adopted in large Mixture-of-Experts (MoE) model serving. However, load imbalance still slows down MoE inference because each layer must wait for the busiest EP rank. The main source of latency differs between prefill and decode. Prefill is compute-bound, and its MoE layers’ latency is determined by the maximum token count of the busiest rank. At the same time, under moderate batch sizes, Decode is memory-bound, so the latency is dominated by the maximum active-expert count across ranks. To solve both problems under a unified framework, we present RankCast, a system that reduces rank-level maximum token counts during prefill and active-expert counts during decode. For every token, RankCast preserves the predicted Top- p p experts and chooses the remaining k − p k-p from its Top- L L candidates ( L > k L>k ). In prefill, RankCast yields a price per rank that steers flexible assignments to less loaded ranks. In decode, RankCast closes experts on the busiest ranks while preserving the constraints for each token. Both paths are implemented and tested in the state-of-the-art inference frameworks SGLang ( Zheng et al., 2024 ) and DeepEP ( Zhao et al., 2025b ) . We overlap RankCast’s kernels with model execution and reuse the existing DeepEP communication channel for metadata transmission. On Qwen3-235B-A22B with EP = 8 =8 and Qwen3.5-397B-A17B with EP = 16 =16 , RankCast removes over 75% of the busiest rank’s excess prefill load, improves prefill input throughput by up to 19%, and reduces decode time per output token by up to 10%. The quality cost is below one percentage point. 1 1 footnotetext: Corresponding author."
-  },
-  {
-   "key": "doi:10.1016/j.apenergy.2026.129178",
+   "key": "doi:10.1109/tsg.2026.3757077",
    "source": "journal",
-   "journal": "Applied Energy",
-   "journal_short": "Applied Energy",
-   "doi": "10.1016/j.apenergy.2026.129178",
-   "title": "Exploiting flexibility in workflow scheduling for coordinated operation of geo-distributed data center microgrids: A multi-agent reinforcement learning approach",
-   "abstract": "",
-   "abstract_source": "",
+   "journal": "IEEE Transactions on Smart Grid",
+   "journal_short": "TSG",
+   "doi": "10.1109/tsg.2026.3757077",
+   "title": "Scalable Heterogeneous Graph Foundation-Model Workflows for Data-Driven Optimal Power Flow",
+   "abstract": "Fast and reliable optimal power flow (OPF) approximation is important for power system operation, yet heterogeneous OPF graph models are often evaluated either with architecture-specific implementations or on limited training corpora. This paper presents a large-scale heterogeneous graph-learning workflow, built on HydraGNN, for data-driven OPF surrogate modeling and graph foundation-model (GFM) development. The workflow preserves buses, generators, loads, shunts, alternating-current (AC) lines, transformers, and device-to-bus relations and provides a common implementation for distributed preprocessing, multi-graphics-processing-unit (GPU) training, hyperparameter optimization (HPO), and downstream adaptation. Using approximately three million heterogeneous graphs from ten Power Grid Library for Benchmarking AC Optimal Power Flow Algorithms (PGLib-OPF) cases spanning 14 to 13,659 buses, we compare six heterogeneous graph neural network (GNN) families under a common HPO campaign on Frontier, resulting in two compact HeteroSAGE and HeteroHEAT models (~1.6-1.7 million parameters) that achieve the lowest observed validation MSE. Strong and weak scaling using up to 1,024 Frontier nodes show that 256 nodes (corresponding to 1,024 AMD MI250X GPUs) provides the best time-to-solution balance for the measured workload. Two downstream tasks evaluate task adaptation on the IEEE 118-bus case: a classification task to distinguish nominal operating conditions from artificially generated extreme-overload conditions and N-1 single-component-outage regression to predict bus voltage magnitude and phase angle. Partial fine-tuning provides the strongest balance between predictive performance and computational requirements.",
+   "abstract_source": "openalex",
    "authors": [
     {
-     "name": "Shiyang Zhou",
+     "name": "Massimiliano Lupo Pasini",
      "affiliations": [
-      "Huazhong University of Science and Technology"
+      "Oak Ridge National Laboratory"
      ]
     },
     {
-     "name": "Yuanzheng Li",
+     "name": "Yijiang Li",
      "affiliations": [
-      "Huazhong University of Science and Technology"
+      "Argonne National Laboratory, 9700 S. Cass Avenue"
      ]
     },
     {
-     "name": "Yang Li",
+     "name": "Kibaek Kim",
      "affiliations": [
-      "Northeast Electric Power University"
+      "Argonne National Laboratory, 9700 S. Cass Avenue"
      ]
     },
     {
-     "name": "Chao Long",
+     "name": "Teja Kuruganti",
      "affiliations": [
-      "University of Liverpool"
-     ]
-    },
-    {
-     "name": "Lin Jiang",
-     "affiliations": [
-      "University of Liverpool"
-     ]
-    },
-    {
-     "name": "Minglei Xie",
-     "affiliations": [
-      "China Southern Power Grid (China)"
-     ]
-    },
-    {
-     "name": "Yijia Cao",
-     "affiliations": [
-      "Changsha University of Science and Technology"
+      "Oak Ridge National Laboratory"
      ]
     }
    ],
    "type": "journal-article",
-   "date": "2026-11-25",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129178",
+   "date": "2026-11-26",
+   "url": "https://doi.org/10.1109/tsg.2026.3757077",
    "matched_terms": [
-    "data center"
+    "gpu",
+    "gpus"
    ],
-   "screened_on": "title only",
-   "affiliation_source": "openalex"
+   "screened_on": "title+abstract",
+   "affiliation_source": "crossref"
   }
  ],
  "title_only_final": [],
@@ -413,12 +242,6 @@
    "first_seen": "2026-11-25"
   },
   {
-   "source": "TSG",
-   "title": "Sensitivity-Scale Factorization of LinDistFlow Errors for Adaptive Voltage Safety Margins in Distribution Networks",
-   "url": "https://doi.org/10.1109/tsg.2026.3757386",
-   "first_seen": "2026-11-26"
-  },
-  {
    "source": "TPWRS",
    "title": "Observability and Parameter Estimation of a Generic Model for Aggregated Distributed Energy Resources",
    "url": "https://doi.org/10.1109/tpwrs.2026.3757291",
@@ -444,12 +267,6 @@
   },
   {
    "source": "Applied Energy",
-   "title": "Cost-carbon preference reversals between new and second-life batteries in stationary storage: a long-horizon comparative framework",
-   "url": "https://doi.org/10.1016/j.apenergy.2026.129306",
-   "first_seen": "2026-11-26"
-  },
-  {
-   "source": "Applied Energy",
    "title": "Spatio-temporal fair allocation of active-power support among microgrids: A distributed optimization framework",
    "url": "https://doi.org/10.1016/j.apenergy.2026.129319",
    "first_seen": "2026-11-26"
@@ -461,56 +278,134 @@
    "first_seen": "2026-11-26"
   },
   {
-   "source": "Nature Communications",
-   "title": "Author Correction: Learning reorganizes dendritic and stabilizes axon initial segment inhibitory synapses in CA1 pyramidal neurons",
-   "url": "https://doi.org/10.1038/s41467-026-78865-3",
-   "first_seen": "2026-11-26"
+   "source": "TPWRS",
+   "title": "Large Step Accurate Simulation Method for Power Systems Using Spectral Deferred Correction",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3758097",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Multi-level coordinated optimization strategy for electric-thermal shared energy storage in active distribution networks",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129302",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Editorial Board",
+   "url": "https://doi.org/10.1016/s0306-2619(26)02009-x",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Surface initiated electronic reconstruction enables bulk defect healing in directly regenerated LiFePO4 cathodes",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129329",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Editorial Board",
+   "url": "https://doi.org/10.1016/s0306-2619(26)02025-8",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Editorial Board",
+   "url": "https://doi.org/10.1016/s0306-2619(26)02031-3",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Cross-scale propagation of marine constraints in offshore wind planning: Buildable capacity, engineering feasibility, and delivered-shore value",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129219",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "A dispatchable region-driven robust planning method for flexible green ammonia synthesis system",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129318",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "source": "Applied Energy",
+   "title": "Potential for advancing rural sustainability via straw gasification poly-generation",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129338",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "source": "Nature Energy",
+   "title": "Regulation of proton transference for stable and efficient reactive capture of CO2 from air",
+   "url": "https://doi.org/10.1038/s41560-026-02158-8",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "source": "Nature Energy",
+   "title": "Molecular locking of lithium ions for improved efficiency and stability of perovskite solar cells",
+   "url": "https://doi.org/10.1038/s41560-026-02173-9",
+   "first_seen": "2026-11-27"
   },
   {
    "source": "Nature Communications",
-   "title": "Targeting chemotherapy-induced CD200 via a nucleoside-enhanced nanocarrier for cancer immunochemotherapy",
-   "url": "https://doi.org/10.1038/s41467-026-79655-7",
-   "first_seen": "2026-11-26"
+   "title": "Transcriptional nodes governing diversity and effector rewiring of a plastic liver invariant natural killer T cell ecosystem",
+   "url": "https://doi.org/10.1038/s41467-026-78497-7",
+   "first_seen": "2026-11-27"
   },
   {
    "source": "Nature Communications",
-   "title": "Dynamic B–OH intermediates enable photocatalytic conversion of CO2 into formic acid",
-   "url": "https://doi.org/10.1038/s41467-026-79798-7",
-   "first_seen": "2026-11-26"
+   "title": "Rigidity-driven molecular assembly for high-efficiency flexible perovskite/CIGS tandems",
+   "url": "https://doi.org/10.1038/s41467-026-79826-6",
+   "first_seen": "2026-11-27"
   },
   {
    "source": "Nature Communications",
-   "title": "A quasi-particle theory for the dynamics of polycatenated architected materials",
-   "url": "https://doi.org/10.1038/s41467-026-79426-4",
-   "first_seen": "2026-11-26"
+   "title": "A membrane-active cationic supramolecule to treat both fungal and bacterial keratitis",
+   "url": "https://doi.org/10.1038/s41467-026-79812-y",
+   "first_seen": "2026-11-27"
   },
   {
    "source": "Nature Communications",
-   "title": "Impact-stiffening materials modulated by host–guest interactions in polypseudorotaxanes",
-   "url": "https://doi.org/10.1038/s41467-026-78743-y",
-   "first_seen": "2026-11-26"
+   "title": "Buried stochastic interfaces enabling depth-multiplexed optical physical unclonable functions",
+   "url": "https://doi.org/10.1038/s41467-026-79605-3",
+   "first_seen": "2026-11-27"
   },
   {
    "source": "Nature Communications",
-   "title": "A long-read based haplotype panel enhances imputation and discovery of functional small and structural variants",
-   "url": "https://doi.org/10.1038/s41467-026-79471-z",
-   "first_seen": "2026-11-26"
+   "title": "Control of out-of-plane anti-damping spin torque with a canted ferromagnetic spin source",
+   "url": "https://doi.org/10.1038/s41467-026-79635-x",
+   "first_seen": "2026-11-27"
   },
   {
    "source": "Nature Communications",
-   "title": "Choline kinase α promotes glycolysis and tumor growth by phosphorylating and activating enolase 1",
-   "url": "https://doi.org/10.1038/s41467-026-79752-7",
-   "first_seen": "2026-11-26"
+   "title": "An all-in-one wearable platform offers continuous assessment and early diagnosis of acute kidney injury for outdoor workers",
+   "url": "https://doi.org/10.1038/s41467-026-79346-3",
+   "first_seen": "2026-11-27"
   },
   {
    "source": "Nature Communications",
-   "title": "Retraction Note: NMDAR-mediated modulation of gap junction circuit regulates olfactory learning in C. elegans",
-   "url": "https://doi.org/10.1038/s41467-026-80132-4",
-   "first_seen": "2026-11-26"
+   "title": "Molecular basis for thermoresponsive protein condensation in plants",
+   "url": "https://doi.org/10.1038/s41467-026-79660-w",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Dual-comb photoacoustic Brillouin spectroscopy of optomechanical dynamics in gas-filled microstructured hollow-core fibers",
+   "url": "https://doi.org/10.1038/s41467-026-79825-7",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "source": "Nature Communications",
+   "title": "Complement as an evolutionary driver of vector-microbe immune evasion enabling pathogen transmission",
+   "url": "https://doi.org/10.1038/s41467-026-79424-6",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "source": "Nature Rev. EE",
+   "title": "Transparent ultrasound transducers for bioimaging and beyond",
+   "url": "https://doi.org/10.1038/s44287-026-00354-y",
+   "first_seen": "2026-11-27"
   }
  ],
- "pending_abstract": 33,
+ "pending_abstract": 44,
  "runs_utc": [
-  "2026-11-26T14:56:49+00:00"
+  "2026-11-27T14:52:46+00:00"
  ]
 }
